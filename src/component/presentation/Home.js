@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from "react-router-dom";
+import Modal from './Modal.js';
 
 import mainicon from "../assets/mainicon.png"
 import attractionicon from "../assets/attractionicon.png"
@@ -7,9 +8,26 @@ import restauranticon from "../assets/restauranticon.png"
 import mosqueicon from "../assets/mosqueicon.png"
 
 const Home = () => {
+
+    // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
+    const [ modalOpen, setModalOpen ] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    }
+    const closeModal = () => {
+        setModalOpen(false);
+    }
+
   return (
     <div>
-      <Link to="./Language" className="lang">Aa</Link>
+      <React.Fragment>
+            <button className="lang" onClick={ openModal }>Aa</button>
+            <Modal open={ modalOpen } close={ closeModal } header="언어 설정">
+              여기 이제 아코디언 들어가야함
+            </Modal>
+        </React.Fragment>
+
       <h1 className="header">RIVERDELTA</h1>
       <img className="mainicon" src={mainicon} alt="mainicon" />
       <p className="findingplace">장소 찾기</p>
