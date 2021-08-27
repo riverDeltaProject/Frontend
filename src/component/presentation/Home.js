@@ -24,7 +24,10 @@ const Home = () => {
       <React.Fragment>
             <button className="lang" onClick={ openModal }>Aa</button>
             <Modal open={ modalOpen } close={ closeModal } header="언어 설정">
-              여기 이제 아코디언 들어가야함
+              <select className="langoption">
+                <option>한국어</option>
+                <option>English</option>
+              </select>
             </Modal>
         </React.Fragment>
 
@@ -37,7 +40,7 @@ const Home = () => {
           <p>식당</p>
         </div>
         <div>
-          <Link to="./Attraction"><img className="item" src={attractionicon} alt="attractionicon" /></Link>
+          <Link to="./Restaurant_list"><img className="item" src={attractionicon} alt="attractionicon" /></Link>
           <p>관광지</p>
         </div>
         <div>
