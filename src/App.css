@@ -231,8 +231,8 @@ html {
 .btn_submit {
   background-color: #6dd8d5;
   color: white;
-  width: 70px;
-  height: 40px;
+  width: 7rem;
+  height: 4rem;
   border: 0px;
   border-radius: 20px;
   cursor:pointer;
@@ -282,6 +282,7 @@ html {
   background-color:#f1f1f1;
   width: 100%;
   height: 20rem;
+  margin-bottom: 2rem;
 }
 
 .promotion_text{
@@ -297,7 +298,7 @@ html {
  font-size: 3rem;
  margin-top: 1rem;
  margin-right: 1rem;
- margin-bottom: 10rem;
+ margin-bottom: 8rem;
 }
 
 .scoreposition{
@@ -307,8 +308,56 @@ html {
 
 .scorestar {
   display: inline-block;
-  height: 3rem;
+  height: 3.5rem;
   width: auto;
+}
+
+.score {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.btn_class_list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-bottom: 3rem;
+}
+
+.btn_text_list {
+  height: auto;
+  line-height: normal;
+  padding: .7em .8em;
+  border-color: #6dd8d5;
+  border-radius: 20px;
+  border-width: medium;
+  margin-right: 1rem;
+  /* 클릭시 누르는 테두리 없애기 */
+  outline: 0;
+ }
+
+.btn_submit_list {
+  background-color: #6dd8d5;
+  color: white;
+  width: 7rem;
+  height: 4rem;
+  border: 0px;
+  border-radius: 20px;
+  cursor:pointer;
+  outline: 0;
+ }
+
+.icon_filter {
+  height: 4rem;
+}
+
+.button_filter{
+  background-color: transparent;
+  border: 0px;
 }
 
 /*
