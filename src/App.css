@@ -360,6 +360,23 @@ html {
   border: 0px;
 }
 
+/* 식당 모달창 */
+
+.icon_reset {
+  position: absolute;
+  width: 2.5rem;
+  height: auto;
+}
+
+.header_modal_filter{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
 /*
 .map{
   width: 100%;
