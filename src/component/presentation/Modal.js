@@ -11,7 +11,6 @@ const Modal = ( props ) => {
                 <section>
                     <header>
                         {header}
-                        <button className="close" onClick={close}> &times; </button>
                     </header>
                     <main>
                         {props.children}

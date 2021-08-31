@@ -5,6 +5,11 @@ import Modal_Restaurant from './Modal_Restaurant.js';
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
 import icon_filter from "../assets/icon_filter.png"
+import icon_halal_certified from "../assets/icon_halal_certified.png";
+import icon_muslim_friendly from "../assets/icon_muslim_friendly.png";
+import icon_pork_free from "../assets/icon_pork_free.png";
+import icon_self_certified from "../assets/icon_self_certified.png";
+
 
 const Restaurant_list = () => {
 
@@ -40,7 +45,7 @@ const Restaurant_list = () => {
             <button className="button_filter" onClick={ openModal }><img className="icon_filter" src={icon_filter} alt="icon_filter" /></button>
             <Modal_Restaurant open={ modalOpen } close={ closeModal } header="필터">
               <p className="langoption">음식 종류</p>
-              <div className="foodtype">
+              <div>
                <button className="itemList2">뷔페</button>
                <button className="itemList2">아시아</button>
                <button className="itemList2">양식</button>
@@ -55,6 +60,24 @@ const Restaurant_list = () => {
                {/* 3개 이하: 말레이시아, 모로코, 아랍, 이집트, 중동식, 중식, 튀니지, 파키스탄, 프랑스, 우즈베키스탄 분류없음 */}
               </div>
               <p className="langoption">Halal Standard</p>
+              <div className="foodtype">
+                <div>
+                 <button><img className="icon_halal" src={icon_halal_certified} alt="icon_halal_certified" /></button>
+                 <p>인증됨</p>
+                </div>
+                <div>
+                 <button><img className="icon_halal" src={icon_muslim_friendly} alt="icon_muslim_friendly" /></button>
+                 <p>무슬림 친화</p>
+                </div>
+                <div>
+                 <button><img className="icon_halal" src={icon_pork_free} alt="icon_pork_free" /></button>
+                  <p>포크프리</p>
+                </div>
+                <div>
+                  <button><img className="icon_halal" src={icon_self_certified} alt="icon_self_certified" /></button>
+                 <p>자가인증</p>
+                </div>
+              </div>
             </Modal_Restaurant>
         </React.Fragment>
       </div>

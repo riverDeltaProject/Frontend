@@ -6,8 +6,8 @@ html {
 
 .header {
   padding-bottom: 1rem;
-  border-bottom: 0.5rem solid #6dd8d5;
-  margin-bottom: 2rem;
+  border-bottom: 0.5rem solid  #D8E9D7;
+  margin-bottom: 2.7rem;
 }
 
 .mainicon {
@@ -39,21 +39,21 @@ html {
 .item {
   width: 72%;
   height: auto;
-  background-color: #6dd8d5;
+  background-color:  #D8E9D7;
   border-radius: 25px;
-  border: 2px solid #6dd8d5;
+  border: 2px solid  #D8E9D7;
 }
 
 .item:hover {
-  background-color: #f9d8ae;
-  border-color: #f9d8ae;
+  background-color:  #C0DBBD;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px inset;
 }
 
 .howto {
   font-size: 1.2rem;
   text-decoration: none;
   text-align: center;
-  background-color: #6dd8d5;
+  background-color:  #D8E9D7;
   z-index:99;
   bottom:0px;
   left:0px;
@@ -66,8 +66,7 @@ html {
 }
 
 .howto:hover {
-  background-color: #f9d8ae;
-  border-color: #f9d8ae;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px inset;
 }
 
 /* 모달창 */
@@ -124,19 +123,6 @@ html {
   font-weight: 700;
 }
 
-.modal > section > header button {
-  /* 팝업창 헤더 x버튼 */
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 30px;
-  font-size: 21px;
-  font-weight: 700;
-  text-align: center;
-  color: #999;
-  background-color: transparent;
-}
-
 .modal > section > main {
   /* 팝업창 내용 */
   padding: 16px;
@@ -188,7 +174,7 @@ html {
 
 .header2 {
   padding-bottom: 1rem;
-  border-bottom: 0.5rem solid #6dd8d5;
+  border-bottom: 0.5rem solid  #D8E9D7;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -220,7 +206,7 @@ html {
   height: auto;
   line-height: normal;
   padding: .7em .8em;
-  border-color: #6dd8d5;
+  border-color:  #C0DBBD;
   border-radius: 20px;
   border-width: medium;
   margin-right: 1rem;
@@ -229,7 +215,7 @@ html {
  }
 
 .btn_submit {
-  background-color: #6dd8d5;
+  background-color:  #C0DBBD;
   color: white;
   width: 7rem;
   height: 4rem;
@@ -332,7 +318,7 @@ html {
   height: auto;
   line-height: normal;
   padding: .7em .8em;
-  border-color: #6dd8d5;
+  border-color:  #C0DBBD;
   border-radius: 20px;
   border-width: medium;
   margin-right: 1rem;
@@ -341,7 +327,7 @@ html {
  }
 
 .btn_submit_list {
-  background-color: #6dd8d5;
+  background-color:  #C0DBBD;
   color: white;
   width: 7rem;
   height: 4rem;
@@ -376,6 +362,33 @@ html {
   flex-grow: 1;
   flex-shrink: 0;
 }
+
+.footer_modal_filter{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.foodtype {
+  text-align: center;
+  font-size: 1.6rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.icon_halal {
+  width: 10rem;
+  height: auto;
+  background-color: transparent;
+}
+
 
 /*
 .map{

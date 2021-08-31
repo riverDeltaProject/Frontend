@@ -14,15 +14,15 @@ const Modal_Restaurant = ( props ) => {
                     <header>
                         <img className="icon_reset" src={icon_reset} alt="icon_reset" />
                         <div className="header_modal_filter">
-                        {header}
+                            {header}
                         </div>
-                        <button className="close" onClick={close}> &times; </button>
                     </header>
                     <main>
                         {props.children}
                     </main>
-                    <footer>
-                        <button className="close" onClick={close}> close </button>
+                    <footer className="footer_modal_filter">
+                        <button className="close" onClick={close}> 취소 </button>
+                        <button className="close" onClick={close}> 적용 </button>
                     </footer>
                 </section>
             ) : null }
