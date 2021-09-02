@@ -51,6 +51,7 @@ html {
 
 .howto {
   font-size: 1.2rem;
+  color: black;
   text-decoration: none;
   text-align: center;
   background-color:  #D8E9D7;
@@ -389,7 +390,22 @@ html {
   background-color: transparent;
 }
 
+.rst_list_cell {
+  padding: 0.5rem 1rem;
+  border: 2px solid #C0DBBD;
+  border-radius: 5px;
+  margin: 1rem 2rem;
+}
 
+.rst_list_name {
+  font-size: 2rem;
+  border: 0px;
+  background-color: transparent;
+}
+
+.rst_list_position {
+  font-size: 1.6rem;
+}
 /*
 .map{
   width: 100%;
