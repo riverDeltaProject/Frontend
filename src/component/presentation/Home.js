@@ -44,7 +44,7 @@ const Home = () => {
           <p>관광지</p>
         </div>
         <div>
-          <Link to="./Mosque"><img className="item" src={mosqueicon} alt="mosqueicon" /></Link>
+          <Link to="./Restaurant_result"><img className="item" src={mosqueicon} alt="mosqueicon" /></Link>
           <p>모스크</p>
         </div>
       </div>
