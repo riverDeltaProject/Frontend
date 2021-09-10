@@ -7,6 +7,7 @@ import Home from './component/presentation/Home.js';
 import Restaurant from './component/presentation/Restaurant';
 import Restaurant_list from './component/presentation/Restaurant_list';
 import Restaurant_result from './component/presentation/Restaurant_result.js';
+import Attraction from './component/presentation/Attraction';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/restaurant" component={Restaurant} />
       <Route path='/restaurant_list' component={Restaurant_list} />
       <Route path="/restaurant_result" component={Restaurant_result} />
+      <Route path="/attraction" component={Attraction} />
     </div>
   );
 }

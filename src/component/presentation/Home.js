@@ -36,11 +36,11 @@ const Home = () => {
       <p className="findingplace">장소 찾기</p>
       <div className="container">
         <div>
-          <Link to="./Restaurant"><img className="item" src={restauranticon} alt="restauranticon" /></Link>
+          <Link to="./restaurant"><img className="item" src={restauranticon} alt="restauranticon" /></Link>
           <p>식당</p>
         </div>
         <div>
-          <Link to="./Restaurant_list"><img className="item" src={attractionicon} alt="attractionicon" /></Link>
+          <Link to="./attraction"><img className="item" src={attractionicon} alt="attractionicon" /></Link>
           <p>관광지</p>
         </div>
         <div>
