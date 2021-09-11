@@ -8,6 +8,7 @@ import Restaurant from './component/presentation/Restaurant';
 import Restaurant_list from './component/presentation/Restaurant_list';
 import Restaurant_result from './component/presentation/Restaurant_result.js';
 import Attraction from './component/presentation/Attraction';
+import Attraction_list from './component/presentation/Attraction_list';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/restaurant_list' component={Restaurant_list} />
       <Route path="/restaurant_result" component={Restaurant_result} />
       <Route path="/attraction" component={Attraction} />
+      <Route path="/attraction_list" component={Attraction_list}/>
     </div>
   );
 }
