@@ -673,3 +673,41 @@ html {
   border: 2px solid #D8E9D7;
   background-color: #D8E9D7;
 }
+
+/* 개별 관광지 페이지 */
+
+.att_result_prom {
+  background-color:#f1f1f1;
+  width: 100%;
+  height: 20rem;
+}
+
+.att_result_cell {
+  border-top: 0.3rem solid #f1f1f1;
+  border-bottom: 0.3rem solid #f1f1f1;
+}
+
+.att_result_name {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.att_result_position {
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+}
+
+/* .myMapAtt {
+  width: 100%;
+  margin: 0px auto;
+  height: 38rem;
+  border-bottom: 30px solid white;
+} */

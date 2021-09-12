@@ -9,6 +9,7 @@ import Restaurant_list from './component/presentation/Restaurant_list';
 import Restaurant_result from './component/presentation/Restaurant_result.js';
 import Attraction from './component/presentation/Attraction';
 import Attraction_list from './component/presentation/Attraction_list';
+import Attraction_result from './component/presentation/Attraction_result';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/restaurant_result" component={Restaurant_result} />
       <Route path="/attraction" component={Attraction} />
       <Route path="/attraction_list" component={Attraction_list}/>
+      <Route path="/attraction_result" component={Attraction_result} />
     </div>
   );
 }
