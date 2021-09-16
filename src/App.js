@@ -12,6 +12,7 @@ import Attraction_list from './component/presentation/Attraction_list';
 import Attraction_result from './component/presentation/Attraction_result';
 import Mosque_list from './component/presentation/Mosque_list';
 import Mosque_result from './component/presentation/Mosque_result';
+import Test from "./component/presentation/Test"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path="/attraction_result" component={Attraction_result} />
       <Route path="/mosque_list" component={Mosque_list}/>
       <Route path="/mosque_result" component={Mosque_result}/>
+      <Route path="/test" component={Test}/>
     </div>
   );
 }
