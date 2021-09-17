@@ -228,7 +228,7 @@ html {
 
 .containerList{
   display:flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   justify-content: space-around;
   flex-grow: 1;
@@ -238,7 +238,7 @@ html {
 .containerList2{
   display: none;
   display:flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   justify-content: space-around;
   flex-grow: 1;
