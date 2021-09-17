@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-C:\Users\direc\Desktop\P\RiverDelta\restart\Frontend\src\component\presentation\Test.js
-C:\Users\direc\Desktop\P\RiverDelta\restart\Frontend\src\component\presentation\Restaurants.js
+/src/component/presetation/Test.js
+/src/component/presetation/Restaurant.js
