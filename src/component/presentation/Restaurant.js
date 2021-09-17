@@ -1,10 +1,35 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 import backicon from "../assets/backicon.png";
 
 const Restaurant = () => {
+  const [data, setData] = useState([]);
+  const serviceKey = "GNiCxJ1fY0ZfoZUxoHREWXQNKaQYT9g8t4nGfr%2FvfkA6A5msj3bQfRLVZFgQlhftS1wt9Hh6yJJ%2FH%2FeP%2BxMHpw%3D%3D"; // 서비스키 입력 
 
+  const api = (code) =>{
+    const areaCode = code;
+    const url = `http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode?ServiceKey=${serviceKey}&areaCode=${areaCode}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest`;
+   
+    setData([]);
+
+    axios.get(url).then((res)=>{
+      console.log("SUCCESS");
+      setData(res.data.response.body.items.item);
+
+      console.log(data)
+
+      // subArea();
+    })
+  }
+
+  // const subArea = ()=>{
+  //   for (let index = 0; index < data.length; index++) {
+  //     console.log(data);
+  //   }
+  // }
+  
   return (
     <div>
       <Link to="./"><img className="backicon" src={backicon} alt="backicon" /></Link>
@@ -18,9 +43,9 @@ const Restaurant = () => {
       </div>
       <p className="findingplace">광역시</p>
       <div className="containerList">
-        <button className="itemList">서울시</button>
-        <button className="itemList">부산시</button>
-        <button className="itemList">대구시</button>
+        <button className="itemList" onClick={()=>{api(1)}}>서울시</button>
+        <button className="itemList" onClick={()=>{api(2)}}>인천시</button>
+        <button className="itemList" onClick={()=>{api(3)}}>대전시</button>
       </div>
       <p className="findingplace">시/군/구</p>
       <div className="containerList2">
