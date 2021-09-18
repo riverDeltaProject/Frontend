@@ -227,6 +227,8 @@ html {
  }
 
 .containerList{
+  width: 90%;
+  margin: 0px auto;
   display:flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -236,6 +238,8 @@ html {
 }
 
 .containerList2{
+  width: 90%;
+  margin: 0px auto;
   display: none;
   display:flex;
   flex-flow: row nowrap;
@@ -501,6 +505,8 @@ html {
  }
 
 .container_att{
+  width: 90%;
+  margin: 0px auto;
   display:flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -510,6 +516,8 @@ html {
 }
 
 .container_att2{
+  width: 90%;
+  margin: 0px auto;
   display: none;
   display:flex;
   flex-flow: row nowrap;
