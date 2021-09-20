@@ -6,8 +6,12 @@ import Attraction_list_axios from './Attraction_list_axios.js';
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
 import icon_filter from "../assets/icon_filter.png";
-// 아이콘 받기 전이라 임시로 넣어둠
-import attractionicon from "../assets/attractionicon.png";
+import icon_att from "../assets/icon_att.png";
+import icon_att_show from "../assets/icon_att_show.png";
+import icon_att_leports from "../assets/icon_att_leports.png";
+import icon_att_culture from "../assets/icon_att_culture.png";
+import icon_att_shop from "../assets/icon_att_shop.png";
+import icon_att_stay from "../assets/icon_att_stay.png";
 
 const Attraction_list = () => {
 
@@ -44,9 +48,28 @@ const Attraction_list = () => {
             <Modal_Attraction open={ modalOpen } close={ closeModal } header="테마">
               <div className="atttype">
                 <div>
-                  {/* 아이콘 받기 전이라 임시로 넣어둠 */}
-                 <button><img className="icon_att" src={attractionicon} alt="attractionicon" /></button>
-                 <p>인증됨</p>
+                 <button><img className="icon_att" src={icon_att} alt="icon_att" /></button>
+                 <p>관광지</p>
+                </div>
+                <div>
+                 <button><img className="icon_att" src={icon_att_culture} alt="icon_att_culture" /></button>
+                 <p>문화시설</p>
+                </div>
+                <div>
+                 <button><img className="icon_att" src={icon_att_show} alt="icon_att_show" /></button>
+                 <p>행사/공연</p>
+                </div>
+                <div>
+                 <button><img className="icon_att" src={icon_att_leports} alt="icon_att_leports" /></button>
+                 <p>레포츠</p>
+                </div>
+                <div>
+                 <button><img className="icon_att" src={icon_att_stay} alt="icon_att_stay" /></button>
+                 <p>숙박</p>
+                </div>
+                <div>
+                 <button><img className="icon_att" src={icon_att_shop} alt="icon_att_shop" /></button>
+                 <p>쇼핑</p>
                 </div>
               </div>
             </Modal_Attraction>
