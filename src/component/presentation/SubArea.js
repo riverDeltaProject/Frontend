@@ -5,9 +5,6 @@ import axios from 'axios';
 import backicon from "../assets/backicon.png";
 
 const SubArea = ({citylist}) => {
-
-    console.log("SubArea ",citylist);
-
     const areaBtn = (list) => {
         let tmp = [];
     
@@ -15,7 +12,6 @@ const SubArea = ({citylist}) => {
             tmp.push(<button className="itemList2" key={citylist[i]}>{citylist[i]}</button>)
         }
     
-        console.log(tmp);
         return tmp;
     }
 
