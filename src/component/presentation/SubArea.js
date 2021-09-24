@@ -5,21 +5,15 @@ import axios from 'axios';
 import backicon from "../assets/backicon.png";
 
 const SubArea = ({citylist}) => {
-    const areaBtn = (list) => {
-        let tmp = [];
-    
-        for (let i = 0; i < list.length; i++) {
-            tmp.push(<button className="itemList2" key={citylist[i]}>{citylist[i]}</button>)
-        }
-    
-        return tmp;
+    let tmp = [];
+
+    for (let i = 0; i < citylist.length; i++) {
+        tmp.push(<button className="itemList2" key={citylist[i]}>{citylist[i]}</button>)
     }
 
-    return (
-        <div className="containerList2">
-            {areaBtn(citylist)}
-        </div>
-    );
+    return (<div className="containerList2">
+        {tmp}
+    </div>);
 };
 
 export default SubArea;
