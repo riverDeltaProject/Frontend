@@ -12,10 +12,13 @@ import icon_pork_free from "../assets/icon_pork_free.png";
 import icon_self_certified from "../assets/icon_self_certified.png";
 import {restList} from "../API/rest"
 import Pagination from './Pagination.js';
+<<<<<<< HEAD
+=======
 
 // for (let index = 0; index < restList.length; index++) {   let tmp = [];   if
 // (index % 10 == 0 && index != 0) {       for (let j = index - 10; j < index;
 // j++) {           tmp.push(restList[j]);       }   }   tmp = [] }
+>>>>>>> main
 
 const Restaurant_list = () => {
     const [modalOpen, setModalOpen] = useState(false);
