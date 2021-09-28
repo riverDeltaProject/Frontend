@@ -1,4 +1,4 @@
-export const restList = [
+[
     {
         "restName": "우스마니아",
         "friendly": "무슬림 자가 인증",
@@ -2195,7 +2195,8 @@ export const restList = [
         "foodType": "아시아음식",
         "address": "강원 홍천군 서면 한치골길 262 스키장지구 메인센터 2층",
         "phonenum": "031-581-8097",
-        "runtime": "스키장 주간 운영 시 08:00 ~ 16:30\n스키장 주/심야 운영 시 08:00 ~ 24:00",
+        "runtime": "스키장 주간 운영 시 08:00 ~ 16:30\n스키장 주/심야 운영 시 08:00 ~ 24:00
+    ",
         "holiday": "",
         "parking": "O",
         "att": "홍천 비발디파크, 남노일강변유원지"
@@ -2723,7 +2724,8 @@ export const restList = [
         "foodType": "양식",
         "address": "강원 평창군 대관령면 솔봉로 325 더 홀리데이 인 리조트호텔 1층",
         "phonenum": "033-339-1310",
-        "runtime": "조식 7:00 AM ~ 11:00 AM\n중.석식 12:00 PM ~ 10:00 PM Last Order 9:30 PM",
+        "runtime": "조식 7:00 AM ~ 11:00 AM\n중.석식 12:00 PM ~ 10:00 PM
+    Last Order 9:30 PM",
         "holiday": "",
         "parking": "O",
         "att": "알펜시아 리조트, 용평스키장"
@@ -2811,7 +2813,8 @@ export const restList = [
         "foodType": "뷔페식",
         "address": "강원 평창군 대관령면 솔봉로 325 인터컨티넨탈 호텔 1층",
         "phonenum": "033-339-1237",
-        "runtime": "조식 06:30 AM ~ 11:00 AM\n중.석식 12:00 PM ~ 10:00 PM Last Order 9:30 PM",
+        "runtime": "조식 06:30 AM ~ 11:00 AM\n중.석식 12:00 PM ~ 10:00 PM
+    Last Order 9:30 PM",
         "holiday": "",
         "parking": "O",
         "att": "알펜시아 리조트, 용평스키장"
@@ -3130,7 +3133,8 @@ export const restList = [
         "foodType": "인도음식",
         "address": "서울 용산구 청파로20길 95 서울드래곤시티",
         "phonenum": "02-2223-7200",
-        "runtime": "[조식] 월-금 06:30 ~ 10:00 / 토-일 06:30 ~ 10:30\n[중식] 월-일 12:00 ~ 14:30 [석식] 월-금 18:30 ~ 21:30 / 토 1부 17:3",
+        "runtime": "[조식] 월-금 06:30 ~ 10:00 / 토-일 06:30 ~ 10:30\n[중식] 월-일 12:00 ~ 14:30
+    [석식] 월-금 18:30 ~ 21:30 / 토 1부 17:3",
         "holiday": "",
         "parking": "O",
         "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
