@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-function Restaurant_list_axios({rlist}) {
+function Restaurant_Item({rlist}) {
     let rlist_tmp = [];
 
     for (let rkey in rlist) {
@@ -23,4 +23,4 @@ function Restaurant_list_axios({rlist}) {
     </div>);
 }
 
-export default Restaurant_list_axios;
+export default Restaurant_Item;

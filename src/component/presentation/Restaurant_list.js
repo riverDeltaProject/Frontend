@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import Modal_Restaurant from './Modal_Restaurant.js';
 import Item from './Restaurant_Item.js';
@@ -11,21 +11,16 @@ import icon_muslim_friendly from "../assets/icon_muslim_friendly.png";
 import icon_pork_free from "../assets/icon_pork_free.png";
 import icon_self_certified from "../assets/icon_self_certified.png";
 import {restList} from "../API/rest"
+import Pagination from './Pagination.js';
 
 // for (let index = 0; index < restList.length; index++) {   let tmp = [];   if
 // (index % 10 == 0 && index != 0) {       for (let j = index - 10; j < index;
 // j++) {           tmp.push(restList[j]);       }   }   tmp = [] }
 
 const Restaurant_list = () => {
-    const mainList = (index) => {
-        let tmp = [];
-        for (let j = index - 6; j < index; j++) {
-            tmp.push(restList[j]);
-        }
-        return tmp;
-    }
-
     const [modalOpen, setModalOpen] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage, setPostsPerPage] = useState(6);
 
     const openModal = () => {
         setModalOpen(true);
@@ -33,6 +28,19 @@ const Restaurant_list = () => {
     const closeModal = () => {
         setModalOpen(false);
     }
+
+    const indexOfLast = currentPage * postsPerPage;
+    const indexOfFirst = indexOfLast - postsPerPage;
+
+    const currentPosts = (tmp) => {
+        return tmp.slice(indexOfFirst, indexOfLast);
+    }
+
+    const numOfFirst = currentPage - 4;
+    const numOfLast = currentPage + 4;
+
+    console.log(numOfFirst)
+    console.log(numOfLast)
 
     return (
         <div>
@@ -102,7 +110,12 @@ const Restaurant_list = () => {
                     </Modal_Restaurant>
                 </React.Fragment>
             </div>
-            <Item rlist={mainList(6)}/>
+            <Item rlist={currentPosts(restList)}/>
+            <Pagination
+                postsPerPage={postsPerPage}
+                start={numOfFirst}
+                last={numOfLast}
+                paginate={setCurrentPage}/>
         </div>
     );
 };
