@@ -1,4 +1,4 @@
-export const restList = [
+[
     {
         "name": "우스마니아",
         "friendly": "무슬림 자가 인증",
@@ -2723,7 +2723,7 @@ export const restList = [
         "foodType": "양식",
         "address": "강원 평창군 대관령면 솔봉로 325 더 홀리데이 인 리조트호텔 1층",
         "phonenum": "033-339-1310",
-        "runtime": "조식 7:00 AM ~ 11:00 AM\n중.석식 12:00 PM ~ 10:00 PM Last Order 9:30 PM",
+        "runtime": "조식 7:00 AM ~ 11:00 AM\n중.석식 12:00 PM ~ 10:00  Last Order 9:30 PM",
         "holiday": "",
         "parking": "O",
         "att": "알펜시아 리조트, 용평스키장"
