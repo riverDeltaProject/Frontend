@@ -892,3 +892,7 @@ html {
   font-weight: bolder;
   font-size : 2rem;
 }
+
+a{
+  text-decoration: none;
+}
