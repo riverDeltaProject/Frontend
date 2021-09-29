@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import Modal_Restaurant from './Modal_Restaurant.js';
-import Item from './Restaurant_Item.js';
+import Restaurant_list_axios from './Restaurant_list_axios.js';
 
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
@@ -13,7 +13,6 @@ import icon_self_certified from "../assets/icon_self_certified.png";
 import {restList} from "../API/rest"
 import Pagination from './Pagination.js';
 
-
 const Restaurant_list = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
@@ -24,8 +23,8 @@ const Restaurant_list = () => {
     }
     const closeModal = () => {
         setModalOpen(false);
-    }
-
+    } 
+    
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
@@ -116,7 +115,7 @@ const Restaurant_list = () => {
                 last={numOfLast}
                 paginate={setCurrentPage}/>
         </div>
-    );
-};
+    )
+}
 
 export default Restaurant_list;
