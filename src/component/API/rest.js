@@ -1,4 +1,4 @@
-[
+export const restList =[
     {
         "name": "우스마니아",
         "friendly": "무슬림 자가 인증",
