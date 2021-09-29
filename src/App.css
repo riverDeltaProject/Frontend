@@ -420,6 +420,10 @@ html {
   border-bottom: 0.3rem solid #f1f1f1;
 }
 
+.rst_result_cell h1{
+  padding : 0 0 0 2rem;
+}
+
 .rst_result_name {
   display: flex;
   flex-flow: row nowrap;
@@ -427,15 +431,20 @@ html {
   justify-content: space-around;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
-.rst_result_position {
-  padding-left: 2rem;
+.rst_result_position ,.infoItem>*{
+  padding: 0 1rem;
   font-size: 1.6rem;
-  padding-bottom: 2rem;
+  margin : 0 0 1rem 0 ;
+}
+
+.infoItem *:first-child{
+  color: gray;
 }
 
 /* .myMap{
@@ -775,24 +784,6 @@ html {
   outline: 0;
  }
 
-/* 모스크 리스트 axios */
-
-.mosque_list_cell {
-  padding: 0.5rem 1rem;
-  border: 2px solid #C0DBBD;
-  border-radius: 5px;
-  margin: 1rem 2rem;
-}
-
-.mosque_list_name {
-  font-size: 2rem;
-  border: 0px;
-  background-color: transparent;
-}
-
-.mosque_list_pos {
-  font-size: 1.6rem;
-}
 
 /* 모스크 모달창 */
 
@@ -864,13 +855,39 @@ html {
   padding-bottom: 2rem;
 }
 
-/* .myMapMosque {
-  width: 100%;
-  margin: 0px auto;
-  height: 38rem;
-  border-bottom: 30px solid white;
-} */
+.myMapMosque {
+  width: 30rem;
+  margin : 0 auto;
+  height: 30rem;
+  border-radius: 30px;
+}
 
+#mosqueTitle{
+  text-align: center;
+  margin: 2rem;
+}
+
+#mosqueTitle *{
+  display: inline;
+}
+
+.subInfo{
+  padding:0 0 0 10px ;
+  font-size : 1.4rem;
+  color : gray;
+}
+
+.infoItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoItem * {
+  display: inline;
+}
+
+/* pagination */
 .pagination{
   list-style: none;
   display: flex;
