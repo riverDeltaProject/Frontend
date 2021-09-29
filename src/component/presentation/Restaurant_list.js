@@ -33,11 +33,13 @@ const Restaurant_list = () => {
         return tmp.slice(indexOfFirst, indexOfLast);
     }
 
-    const numOfFirst = currentPage - 4;
-    const numOfLast = currentPage + 4;
+    let numOfFirst = currentPage - 4;
+    let numOfLast = currentPage + 4;
 
-    console.log(numOfFirst)
-    console.log(numOfLast)
+    if(numOfFirst<=0){
+      numOfFirst = 1;
+      numOfLast = 9;
+    }
 
     return (
         <div>
