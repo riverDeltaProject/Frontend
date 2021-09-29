@@ -1,6 +1,6 @@
 export const restList = [
     {
-        "restName": "우스마니아",
+        "name": "우스마니아",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "파키스탄음식",
@@ -11,7 +11,7 @@ export const restList = [
         "parking": "X",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "미스터케밥 2호점",
+        "name": "미스터케밥 2호점",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "터키음식",
@@ -22,7 +22,7 @@ export const restList = [
         "parking": "X",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "카파도키아",
+        "name": "카파도키아",
         "friendly": "무슬림 자가 인증",
         "area": "부산",
         "foodType": "터키음식",
@@ -33,7 +33,7 @@ export const restList = [
         "parking": "O",
         "att": "범어사"
     }, {
-        "restName": "올리브레스토랑",
+        "name": "올리브레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "인천",
         "foodType": "아랍음식",
@@ -44,7 +44,7 @@ export const restList = [
         "parking": "O",
         "att": "송도센트럴파크"
     }, {
-        "restName": "봄베이인도요리전문점",
+        "name": "봄베이인도요리전문점",
         "friendly": "무슬림 프렌들리",
         "area": "경남",
         "foodType": "인도음식",
@@ -55,7 +55,7 @@ export const restList = [
         "parking": "O",
         "att": "창원시립마산박물관"
     }, {
-        "restName": "고향먹거리",
+        "name": "고향먹거리",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -66,7 +66,7 @@ export const restList = [
         "parking": "O",
         "att": "안목해변, 오죽헌, 강릉 선교장"
     }, {
-        "restName": "라마앤바바나 서면점",
+        "name": "라마앤바바나 서면점",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "아시아음식",
@@ -77,7 +77,7 @@ export const restList = [
         "parking": "O",
         "att": "이기대 도시자연공원, 오륙도 스카이워크"
     }, {
-        "restName": "미가미",
+        "name": "미가미",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "일식",
@@ -88,7 +88,7 @@ export const restList = [
         "parking": "O",
         "att": "강남역, 선정릉"
     }, {
-        "restName": "패밀리아 (임페리얼팰리스 호텔)",
+        "name": "패밀리아 (임페리얼팰리스 호텔)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "뷔페식",
@@ -99,7 +99,7 @@ export const restList = [
         "parking": "O",
         "att": "봉은사, 코엑스, 선정릉"
     }, {
-        "restName": "깔리",
+        "name": "깔리",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -110,7 +110,7 @@ export const restList = [
         "parking": "X",
         "att": "창덕궁과 후원, 창경궁, 대학로"
     }, {
-        "restName": "세븐스퀘어(더 플라자호텔)",
+        "name": "세븐스퀘어(더 플라자호텔)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "뷔페식",
@@ -121,7 +121,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
     }, {
-        "restName": "도원 (더 플라자호텔)",
+        "name": "도원 (더 플라자호텔)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "중식",
@@ -132,7 +132,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
     }, {
-        "restName": "옴 레스토랑 마포/공덕점",
+        "name": "옴 레스토랑 마포/공덕점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -143,7 +143,7 @@ export const restList = [
         "parking": "O",
         "att": "효창공원"
     }, {
-        "restName": "옴 레스토랑 광화문점",
+        "name": "옴 레스토랑 광화문점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -154,7 +154,7 @@ export const restList = [
         "parking": "X",
         "att": "북촌한옥마을, 경복궁"
     }, {
-        "restName": "인도로가는길",
+        "name": "인도로가는길",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -165,7 +165,7 @@ export const restList = [
         "parking": "X",
         "att": "종묘, 인사동"
     }, {
-        "restName": "새실",
+        "name": "새실",
         "friendly": "무슬림 프렌들리",
         "area": "경북",
         "foodType": "한식",
@@ -176,7 +176,7 @@ export const restList = [
         "parking": "O",
         "att": "청도 와인터널, 대구 수성유원지"
     }, {
-        "restName": "타지",
+        "name": "타지",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -187,7 +187,7 @@ export const restList = [
         "parking": "O",
         "att": "명동, 청계천"
     }, {
-        "restName": "마지",
+        "name": "마지",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식(사찰음식)",
@@ -198,7 +198,7 @@ export const restList = [
         "parking": "O",
         "att": "서래마을"
     }, {
-        "restName": "모모야마 (롯데호텔서울)",
+        "name": "모모야마 (롯데호텔서울)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "일식",
@@ -209,7 +209,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
     }, {
-        "restName": "피에르 가니에르 서울(롯데호텔서울)",
+        "name": "피에르 가니에르 서울(롯데호텔서울)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "프랑스음식",
@@ -220,7 +220,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
     }, {
-        "restName": "무궁화 (롯데호텔서울)",
+        "name": "무궁화 (롯데호텔서울)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -231,7 +231,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
     }, {
-        "restName": "도림 (롯데호텔서울)",
+        "name": "도림 (롯데호텔서울)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "중식",
@@ -242,7 +242,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
     }, {
-        "restName": "페르시안궁전",
+        "name": "페르시안궁전",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -253,7 +253,7 @@ export const restList = [
         "parking": "X",
         "att": "대학로, 창덕궁과 후원"
     }, {
-        "restName": "원조할매복국",
+        "name": "원조할매복국",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -264,7 +264,7 @@ export const restList = [
         "parking": "O",
         "att": "해운대해수욕장, 동백섬, 해운대 달맞이길"
     }, {
-        "restName": "남이섬꼬꼬춘천닭갈비",
+        "name": "남이섬꼬꼬춘천닭갈비",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -275,7 +275,7 @@ export const restList = [
         "parking": "O",
         "att": "남이섬, 제이드가든, 가평레일파크"
     }, {
-        "restName": "럭치미",
+        "name": "럭치미",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -286,7 +286,7 @@ export const restList = [
         "parking": "X",
         "att": "여의도샛강생태공원"
     }, {
-        "restName": "포렌 레스토랑",
+        "name": "포렌 레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "인도음식",
@@ -297,7 +297,7 @@ export const restList = [
         "parking": "X",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "델리인디아",
+        "name": "델리인디아",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -308,7 +308,7 @@ export const restList = [
         "parking": "O",
         "att": "홍대, 상수동, 합정동"
     }, {
-        "restName": "마더인디아",
+        "name": "마더인디아",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -319,7 +319,7 @@ export const restList = [
         "parking": "O",
         "att": "여의도 한강공원, 63 스퀘어"
     }, {
-        "restName": "오샬",
+        "name": "오샬",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -330,7 +330,7 @@ export const restList = [
         "parking": "O",
         "att": "세종대왕기념관, 서울 정릉"
     }, {
-        "restName": "키친오브인디아",
+        "name": "키친오브인디아",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -341,7 +341,7 @@ export const restList = [
         "parking": "O",
         "att": "롯데월드, 올림픽공원"
     }, {
-        "restName": "두르가 의정부점",
+        "name": "두르가 의정부점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식,네팔음식",
@@ -352,7 +352,7 @@ export const restList = [
         "parking": "O",
         "att": "의정부 부대찌개거리"
     }, {
-        "restName": "두르가 종각점",
+        "name": "두르가 종각점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -363,7 +363,7 @@ export const restList = [
         "parking": "X",
         "att": "광화문광장, 인사동, 청계천"
     }, {
-        "restName": "두르가 본점",
+        "name": "두르가 본점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -374,7 +374,7 @@ export const restList = [
         "parking": "O",
         "att": "광화문광장, 인사동, 청계천"
     }, {
-        "restName": "두르가 여의도점",
+        "name": "두르가 여의도점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -385,7 +385,7 @@ export const restList = [
         "parking": "O",
         "att": "여의도 한강공원, 63 스퀘어"
     }, {
-        "restName": "베나레스 본점",
+        "name": "베나레스 본점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -396,7 +396,7 @@ export const restList = [
         "parking": "O",
         "att": "세종대왕기념관, 서울 정릉"
     }, {
-        "restName": "베나레스 경희대점",
+        "name": "베나레스 경희대점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -407,7 +407,7 @@ export const restList = [
         "parking": "X",
         "att": "세종대왕기념관, 홍릉수목원"
     }, {
-        "restName": "베나레스 구로디지털점(룸서비스)",
+        "name": "베나레스 구로디지털점(룸서비스)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -418,7 +418,7 @@ export const restList = [
         "parking": "O",
         "att": "보라매공원"
     }, {
-        "restName": "비나 2호점",
+        "name": "비나 2호점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -429,7 +429,7 @@ export const restList = [
         "parking": "O",
         "att": "세종대왕기념관, 서울 정릉"
     }, {
-        "restName": "비나 1호점",
+        "name": "비나 1호점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -440,7 +440,7 @@ export const restList = [
         "parking": "O",
         "att": "세종대왕기념관, 서울 정릉"
     }, {
-        "restName": "탄두리카",
+        "name": "탄두리카",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -451,7 +451,7 @@ export const restList = [
         "parking": "X",
         "att": "관악산 낙성대공원"
     }, {
-        "restName": "헬로 인디아 알와하",
+        "name": "헬로 인디아 알와하",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "인도음식",
@@ -462,7 +462,7 @@ export const restList = [
         "parking": "X",
         "att": "해운대해수욕장, 동백섬, 해운대 달맞이길"
     }, {
-        "restName": "채근담",
+        "name": "채근담",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -473,7 +473,7 @@ export const restList = [
         "parking": "O",
         "att": "봉은사, 코엑스, 선정릉"
     }, {
-        "restName": "술탄케밥",
+        "name": "술탄케밥",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "터키음식",
@@ -484,7 +484,7 @@ export const restList = [
         "parking": "X",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "루나아시아",
+        "name": "루나아시아",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -495,7 +495,7 @@ export const restList = [
         "parking": "O",
         "att": "봉은사, 코엑스, 선정릉"
     }, {
-        "restName": "수엠부",
+        "name": "수엠부",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식,네팔음식",
@@ -506,7 +506,7 @@ export const restList = [
         "parking": "X",
         "att": "수원화성, 화성행궁"
     }, {
-        "restName": "아건 레스토랑",
+        "name": "아건 레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -517,7 +517,7 @@ export const restList = [
         "parking": "X",
         "att": "서대문독립공원"
     }, {
-        "restName": "화덕닭갈비 가평점",
+        "name": "화덕닭갈비 가평점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -528,7 +528,7 @@ export const restList = [
         "parking": "O",
         "att": "남이섬, 제이드가든, 가평레일파크"
     }, {
-        "restName": "오세계향",
+        "name": "오세계향",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -539,7 +539,7 @@ export const restList = [
         "parking": "X",
         "att": "북촌한옥마을, 인사동"
     }, {
-        "restName": "진보닭갈비(구, 소양강)",
+        "name": "진보닭갈비(구, 소양강)",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -550,7 +550,7 @@ export const restList = [
         "parking": "O",
         "att": "강촌레일파크 김유정역, 소양강스카이워크, 물레길"
     }, {
-        "restName": "동명항생선숯불구이",
+        "name": "동명항생선숯불구이",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -561,7 +561,7 @@ export const restList = [
         "parking": "O",
         "att": "영랑호, 아바이마을"
     }, {
-        "restName": "아시안 패밀리 레스토랑 동문",
+        "name": "아시안 패밀리 레스토랑 동문",
         "friendly": "할랄 공식 인증",
         "area": "강원",
         "foodType": "아시아음식",
@@ -572,7 +572,7 @@ export const restList = [
         "parking": "O",
         "att": "남이섬, 제이드가든, 가평레일파크"
     }, {
-        "restName": "쌀람",
+        "name": "쌀람",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "터키음식",
@@ -583,7 +583,7 @@ export const restList = [
         "parking": "O",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "안나푸르나레스토랑",
+        "name": "안나푸르나레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식",
@@ -594,7 +594,7 @@ export const restList = [
         "parking": "X",
         "att": "웅진플레이도시 워터도시, 웅진플레이도시 실내스키장"
     }, {
-        "restName": "선사복집",
+        "name": "선사복집",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "일식",
@@ -605,7 +605,7 @@ export const restList = [
         "parking": "O",
         "att": "서울암사동유적"
     }, {
-        "restName": "에이큐브호텔",
+        "name": "에이큐브호텔",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "뷔페식",
@@ -616,7 +616,7 @@ export const restList = [
         "parking": "O",
         "att": "흥인지문, 동대문역사문화공원"
     }, {
-        "restName": "춘자대구탕",
+        "name": "춘자대구탕",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -627,7 +627,7 @@ export const restList = [
         "parking": "O",
         "att": "홍대, 선유도공원"
     }, {
-        "restName": "포탈라레스토랑 종로점",
+        "name": "포탈라레스토랑 종로점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -638,7 +638,7 @@ export const restList = [
         "parking": "X",
         "att": "종묘, 청계천"
     }, {
-        "restName": "마칸레스토랑",
+        "name": "마칸레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "한식",
@@ -649,7 +649,7 @@ export const restList = [
         "parking": "O",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "바바인디아",
+        "name": "바바인디아",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -660,7 +660,7 @@ export const restList = [
         "parking": "O",
         "att": "강남역, 선정릉"
     }, {
-        "restName": "향적원",
+        "name": "향적원",
         "friendly": "무슬림 프렌들리",
         "area": "경북",
         "foodType": "한식(사찰음식)",
@@ -671,7 +671,7 @@ export const restList = [
         "parking": "O",
         "att": "경주 불국사, 경주 석굴암"
     }, {
-        "restName": "이드",
+        "name": "이드",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "한식",
@@ -682,7 +682,7 @@ export const restList = [
         "parking": "O",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "꾸스꾸스",
+        "name": "꾸스꾸스",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "튀니지음식",
@@ -693,7 +693,7 @@ export const restList = [
         "parking": "X",
         "att": "북촌한옥마을, 경복궁"
     }, {
-        "restName": "뉴타지마할",
+        "name": "뉴타지마할",
         "friendly": "무슬림 자가 인증",
         "area": "경기",
         "foodType": "인도음식",
@@ -704,7 +704,7 @@ export const restList = [
         "parking": "O",
         "att": "오이도"
     }, {
-        "restName": "파크카페 ",
+        "name": "파크카페 ",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식",
@@ -715,7 +715,7 @@ export const restList = [
         "parking": "O",
         "att": "IFC몰, 여의도공원"
     }, {
-        "restName": "마리무슬림푸드",
+        "name": "마리무슬림푸드",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "파키스탄음식",
@@ -726,7 +726,7 @@ export const restList = [
         "parking": "X",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "바라지레스토랑",
+        "name": "바라지레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "인도음식,네팔음식",
@@ -737,7 +737,7 @@ export const restList = [
         "parking": "O",
         "att": "경상감영공원, 대구 근대골목"
     }, {
-        "restName": "두르가 김해점",
+        "name": "두르가 김해점",
         "friendly": "무슬림 프렌들리",
         "area": "경남",
         "foodType": "인도음식",
@@ -748,7 +748,7 @@ export const restList = [
         "parking": "X",
         "att": "김해수로왕릉"
     }, {
-        "restName": "뉴살라딘",
+        "name": "뉴살라딘",
         "friendly": "무슬림 자가 인증",
         "area": "대구",
         "foodType": "인도음식",
@@ -759,7 +759,7 @@ export const restList = [
         "parking": "X",
         "att": "김광석다시그리기길, 경상감영공원"
     }, {
-        "restName": "만나 닭갈비",
+        "name": "만나 닭갈비",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -770,7 +770,7 @@ export const restList = [
         "parking": "X",
         "att": "박경리문학공원"
     }, {
-        "restName": "발우공양",
+        "name": "발우공양",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식(사찰음식)",
@@ -781,7 +781,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수궁, 청계천, 인사동"
     }, {
-        "restName": "케르반레스토랑 이태원점",
+        "name": "케르반레스토랑 이태원점",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "터키음식",
@@ -792,7 +792,7 @@ export const restList = [
         "parking": "O",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "미스터케밥",
+        "name": "미스터케밥",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "터키음식",
@@ -803,7 +803,7 @@ export const restList = [
         "parking": "X",
         "att": "국립중앙박물관, 이태원 쇼핑거리"
     }, {
-        "restName": "케르반 익스프레스 GFC",
+        "name": "케르반 익스프레스 GFC",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "터키음식",
@@ -814,7 +814,7 @@ export const restList = [
         "parking": "O",
         "att": "봉은사, 코엑스, 선정릉"
     }, {
-        "restName": "케르반레스토랑 코엑스점",
+        "name": "케르반레스토랑 코엑스점",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "터키음식",
@@ -825,7 +825,7 @@ export const restList = [
         "parking": "O",
         "att": "봉은사, 코엑스, 선정릉"
     }, {
-        "restName": "롯데호텔월드 룸서비스",
+        "name": "롯데호텔월드 룸서비스",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식(룸서비스)",
@@ -836,7 +836,7 @@ export const restList = [
         "parking": "O",
         "att": "롯데월드, 올림픽공원"
     }, {
-        "restName": "흙시루",
+        "name": "흙시루",
         "friendly": "포크프리",
         "area": "부산",
         "foodType": "한식",
@@ -847,7 +847,7 @@ export const restList = [
         "parking": "O",
         "att": "해동 용궁사"
     }, {
-        "restName": "바다풍경",
+        "name": "바다풍경",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -858,7 +858,7 @@ export const restList = [
         "parking": "O",
         "att": "용두암, 한라수목원, 제주민속박물관"
     }, {
-        "restName": "비하니",
+        "name": "비하니",
         "friendly": "무슬림 프렌들리",
         "area": "인천",
         "foodType": "인도음식,네팔음식",
@@ -869,7 +869,7 @@ export const restList = [
         "parking": "O",
         "att": "부평역지하상가"
     }, {
-        "restName": "테라스 그린",
+        "name": "테라스 그린",
         "friendly": "무슬림 자가 인증",
         "area": "경기",
         "foodType": "인도음식",
@@ -880,7 +880,7 @@ export const restList = [
         "parking": "O",
         "att": "한국민속촌, 에버랜드"
     }, {
-        "restName": "라지마할",
+        "name": "라지마할",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "인도음식",
@@ -891,7 +891,7 @@ export const restList = [
         "parking": "X",
         "att": "한라수목원, 이호테우해변"
     }, {
-        "restName": "펀자브인도요리전문점 ",
+        "name": "펀자브인도요리전문점 ",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "인도음식",
@@ -902,7 +902,7 @@ export const restList = [
         "parking": "O",
         "att": "해운대해수욕장, 동백섬, 해운대 달맞이길"
     }, {
-        "restName": "타지마할 인 코리아",
+        "name": "타지마할 인 코리아",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "인도음식",
@@ -913,7 +913,7 @@ export const restList = [
         "parking": "O",
         "att": "수성유원지, 힐크레스트"
     }, {
-        "restName": "바다잔치",
+        "name": "바다잔치",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -924,7 +924,7 @@ export const restList = [
         "parking": "O",
         "att": "용두암, 제주도 민속 자연사 박물관, 삼성혈"
     }, {
-        "restName": "라마다프라자제주호텔 한식당 탐모라",
+        "name": "라마다프라자제주호텔 한식당 탐모라",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -935,7 +935,7 @@ export const restList = [
         "parking": "O",
         "att": "용두암, 사려니숲길, 한라자연생태공원"
     }, {
-        "restName": "라마다프라자제주호텔 더블루뷔페레스토랑",
+        "name": "라마다프라자제주호텔 더블루뷔페레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "양식",
@@ -946,7 +946,7 @@ export const restList = [
         "parking": "O",
         "att": "용두암, 사려니숲길, 한라자연생태공원"
     }, {
-        "restName": "춘심이네",
+        "name": "춘심이네",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -957,7 +957,7 @@ export const restList = [
         "parking": "O",
         "att": "용머리해안, 안덕계곡, 산방산"
     }, {
-        "restName": "바그다드",
+        "name": "바그다드",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "",
@@ -968,7 +968,7 @@ export const restList = [
         "parking": "O",
         "att": "삼성혈, 동문시장, 용두암"
     }, {
-        "restName": "일품당 프리미엄",
+        "name": "일품당 프리미엄",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "일식",
@@ -979,7 +979,7 @@ export const restList = [
         "parking": "O",
         "att": "경복궁, 청와대 사랑채, 서촌마을"
     }, {
-        "restName": "케르반 서울역점",
+        "name": "케르반 서울역점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -990,7 +990,7 @@ export const restList = [
         "parking": "O",
         "att": "서울로 7017, 남대문시장, 명동난타극장"
     }, {
-        "restName": "대가야삼계탕",
+        "name": "대가야삼계탕",
         "friendly": "포크프리",
         "area": "울산",
         "foodType": "한식",
@@ -1001,7 +1001,7 @@ export const restList = [
         "parking": "O",
         "att": "태화강대공원, 울산대공원, 울산대교 전망대"
     }, {
-        "restName": "해수전복",
+        "name": "해수전복",
         "friendly": "무슬림 프렌들리",
         "area": "울산",
         "foodType": "한식",
@@ -1012,7 +1012,7 @@ export const restList = [
         "parking": "O",
         "att": "장생포 고래문화마을, 장생포 고래박물관, 장생포 고래바다여행선"
     }, {
-        "restName": "와사비",
+        "name": "와사비",
         "friendly": "무슬림 프렌들리",
         "area": "울산",
         "foodType": "일식",
@@ -1023,7 +1023,7 @@ export const restList = [
         "parking": "O",
         "att": "울산디자인거리, 태화강 대공원, 신화마을"
     }, {
-        "restName": "다미헌",
+        "name": "다미헌",
         "friendly": "무슬림 프렌들리",
         "area": "울산",
         "foodType": "일식",
@@ -1034,7 +1034,7 @@ export const restList = [
         "parking": "O",
         "att": "태화강 대공원, 울산대공원, 장생포 고래생태체험관"
     }, {
-        "restName": "커피숍 사라(더 플레이트)",
+        "name": "커피숍 사라(더 플레이트)",
         "friendly": "무슬림 프렌들리",
         "area": "울산",
         "foodType": "",
@@ -1045,7 +1045,7 @@ export const restList = [
         "parking": "O",
         "att": "현대예술공원, 대왕암공원, 울기등대"
     }, {
-        "restName": "벨라모티",
+        "name": "벨라모티",
         "friendly": "무슬림 프렌들리",
         "area": "울산",
         "foodType": "",
@@ -1056,7 +1056,7 @@ export const restList = [
         "parking": "O",
         "att": "방어진항, 대왕암공원, 울기등대"
     }, {
-        "restName": "인도방랑기",
+        "name": "인도방랑기",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "",
@@ -1067,7 +1067,7 @@ export const restList = [
         "parking": "O",
         "att": "하중도, 불로동고분군, 아양기찻길"
     }, {
-        "restName": "함양옻닭",
+        "name": "함양옻닭",
         "friendly": "포크프리",
         "area": "울산",
         "foodType": "한식",
@@ -1078,7 +1078,7 @@ export const restList = [
         "parking": "O",
         "att": "태화강대공원, 울산대공원, 울산대교 전망대"
     }, {
-        "restName": "쉐라톤서울디큐브시티호텔 룸서비스",
+        "name": "쉐라톤서울디큐브시티호텔 룸서비스",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식(룸서비스)",
@@ -1089,7 +1089,7 @@ export const restList = [
         "parking": "O",
         "att": "문래창작촌 , 구로동 중국인거리, 마리오아울렛"
     }, {
-        "restName": "삼수장어 신천동로점",
+        "name": "삼수장어 신천동로점",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "한식",
@@ -1100,7 +1100,7 @@ export const restList = [
         "parking": "O",
         "att": "김광석다시그리기길, 서문시장, 대구근대골목"
     }, {
-        "restName": "샬리마 레스토랑",
+        "name": "샬리마 레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "울산",
         "foodType": "",
@@ -1111,7 +1111,7 @@ export const restList = [
         "parking": "X",
         "att": "방어진항, 대왕암공원, 울기등대"
     }, {
-        "restName": "타라",
+        "name": "타라",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "",
@@ -1122,7 +1122,7 @@ export const restList = [
         "parking": "X",
         "att": "동성로, 향촌문화관, 달성공원"
     }, {
-        "restName": "사마르칸트",
+        "name": "사마르칸트",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "",
@@ -1133,7 +1133,7 @@ export const restList = [
         "parking": "X",
         "att": "산복도로 초량이바구길, 국제시장, 보수동 책방골목"
     }, {
-        "restName": "사마르칸트",
+        "name": "사마르칸트",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "",
@@ -1144,7 +1144,7 @@ export const restList = [
         "parking": "X",
         "att": "주얼리패션타운, 경상감영공원, 북성로공구박물관"
     }, {
-        "restName": "서울삼계탕",
+        "name": "서울삼계탕",
         "friendly": "포크프리",
         "area": "부산",
         "foodType": "한식",
@@ -1155,7 +1155,7 @@ export const restList = [
         "parking": "X",
         "att": "태종대유원지, 국립해양박물관, 송도 스카이워크"
     }, {
-        "restName": "마하라자",
+        "name": "마하라자",
         "friendly": "무슬림 프렌들리",
         "area": "경남",
         "foodType": "",
@@ -1166,7 +1166,7 @@ export const restList = [
         "parking": "O",
         "att": "용지호수공원, 장복산하늘마루길, 메타세콰이어아 가로수길"
     }, {
-        "restName": "뉴리틀인디아 김해점",
+        "name": "뉴리틀인디아 김해점",
         "friendly": "무슬림 프렌들리",
         "area": "경남",
         "foodType": "",
@@ -1177,7 +1177,7 @@ export const restList = [
         "parking": "X",
         "att": "김해수로왕릉, 김해가야테마파크, 클레이아크 김해미술관"
     }, {
-        "restName": "뉴리틀인디아 부산역점 ",
+        "name": "뉴리틀인디아 부산역점 ",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "",
@@ -1188,7 +1188,7 @@ export const restList = [
         "parking": "X",
         "att": "초량이바구길, 자갈치시장, 흰여울문화마을"
     }, {
-        "restName": "뉴리틀인디아 남포점",
+        "name": "뉴리틀인디아 남포점",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "",
@@ -1199,7 +1199,7 @@ export const restList = [
         "parking": "X",
         "att": "BIFF 광장, 부산 트릭아이미술관, 자갈치시장"
     }, {
-        "restName": "미가",
+        "name": "미가",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -1210,7 +1210,7 @@ export const restList = [
         "parking": "O",
         "att": "설악 워터피아, 속초관광수산시장, 설악산 권금금"
     }, {
-        "restName": "(주)파티나라하이비스",
+        "name": "(주)파티나라하이비스",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "뷔페식",
@@ -1221,7 +1221,7 @@ export const restList = [
         "parking": "O",
         "att": "판타스틱 공연, 덕수궁 돌담길, 서울역사박물관"
     }, {
-        "restName": "발리우드",
+        "name": "발리우드",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "",
@@ -1232,7 +1232,7 @@ export const restList = [
         "parking": "O",
         "att": "광안리해수욕장, 광안대교, 광안리 해변 테마거리"
     }, {
-        "restName": "송정꽃게집",
+        "name": "송정꽃게집",
         "friendly": "무슬림 프렌들리",
         "area": "충남",
         "foodType": "한식",
@@ -1243,7 +1243,7 @@ export const restList = [
         "parking": "O",
         "att": "꽃지해수욕장, 안면도자연휴양림, 리솜오션캐슬"
     }, {
-        "restName": "러빙헛채식부페",
+        "name": "러빙헛채식부페",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -1254,7 +1254,7 @@ export const restList = [
         "parking": "O",
         "att": "국립현대미술관 과천관, 서울랜드, 렛츠런파크 서울"
     }, {
-        "restName": "별난오리",
+        "name": "별난오리",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -1265,7 +1265,7 @@ export const restList = [
         "parking": "O",
         "att": "북촌한옥마을, 경복궁"
     }, {
-        "restName": "두바이",
+        "name": "두바이",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "중동식",
@@ -1276,7 +1276,7 @@ export const restList = [
         "parking": "X",
         "att": "전쟁기념관, 경리단길, 이태원 쇼핑거리"
     }, {
-        "restName": "고마대구탕",
+        "name": "고마대구탕",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -1287,7 +1287,7 @@ export const restList = [
         "parking": "O",
         "att": "광안리 해변 테마거리, 광안대교, 광안리 바닷빛미술관"
     }, {
-        "restName": "피스트",
+        "name": "피스트",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "뷔페식",
@@ -1298,7 +1298,7 @@ export const restList = [
         "parking": "O",
         "att": "문래창작촌 , 구로동 중국인거리, 마리오아울렛"
     }, {
-        "restName": "새만금횟집",
+        "name": "새만금횟집",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "일식,한식",
@@ -1309,7 +1309,7 @@ export const restList = [
         "parking": "X",
         "att": "새만금방조제, 신시도 어촌체험마을, 선유도"
     }, {
-        "restName": "타지팰리스",
+        "name": "타지팰리스",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "",
@@ -1320,7 +1320,7 @@ export const restList = [
         "parking": "O",
         "att": "이태원 쇼핑거리, 리움 삼성미술관, 남산 케이블카"
     }, {
-        "restName": "엄마곰탕",
+        "name": "엄마곰탕",
         "friendly": "포크프리",
         "area": "경북",
         "foodType": "한식",
@@ -1331,7 +1331,7 @@ export const restList = [
         "parking": "O",
         "att": "분황사, 천군동 동서삼층석탑 , 경주월드 어뮤즈먼트"
     }, {
-        "restName": "남한강",
+        "name": "남한강",
         "friendly": "포크프리",
         "area": "충북",
         "foodType": "한식",
@@ -1342,7 +1342,7 @@ export const restList = [
         "parking": "X",
         "att": "청풍문화재단지, 청풍호관광모노레일, 청풍랜드"
     }, {
-        "restName": "닭이봉 원조춘천닭갈비",
+        "name": "닭이봉 원조춘천닭갈비",
         "friendly": "포크프리",
         "area": "경북",
         "foodType": "한식",
@@ -1353,7 +1353,7 @@ export const restList = [
         "parking": "O",
         "att": "옛길박물관, 문경새재도립공원, 문경도자기박물관"
     }, {
-        "restName": "봉학골가든",
+        "name": "봉학골가든",
         "friendly": "포크프리",
         "area": "충북",
         "foodType": "한식",
@@ -1364,7 +1364,7 @@ export const restList = [
         "parking": "O",
         "att": "봉학골산림욕장, 백야자연휴양림, 감곡매괴성모순례지성당"
     }, {
-        "restName": "봄베이브로이 BIFC점",
+        "name": "봄베이브로이 BIFC점",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "",
@@ -1375,7 +1375,7 @@ export const restList = [
         "parking": "O",
         "att": "부산타워, 40계단 문화관광테마거리, 광복로문화패션거리"
     }, {
-        "restName": "아자방",
+        "name": "아자방",
         "friendly": "포크프리",
         "area": "경남",
         "foodType": "한식",
@@ -1386,7 +1386,7 @@ export const restList = [
         "parking": "O",
         "att": "창원시립마산문신미술관, 마산어시장, 창동예술촌"
     }, {
-        "restName": "백제령",
+        "name": "백제령",
         "friendly": "포크프리",
         "area": "경남",
         "foodType": "한식",
@@ -1397,7 +1397,7 @@ export const restList = [
         "parking": "O",
         "att": "창동예술촌, 오동동 아구찜거리, 가고파 꼬부랑길 벽화마을"
     }, {
-        "restName": "구르카 레스토랑",
+        "name": "구르카 레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -1408,7 +1408,7 @@ export const restList = [
         "parking": "X",
         "att": "명동, 청계천, 남대문시장"
     }, {
-        "restName": "카페 더 가든",
+        "name": "카페 더 가든",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "양식",
@@ -1419,7 +1419,7 @@ export const restList = [
         "parking": "O",
         "att": "강원랜드 카지노, 삼탄아트마인, 정암사"
     }, {
-        "restName": "섬진강애재첩",
+        "name": "섬진강애재첩",
         "friendly": "무슬림 프렌들리",
         "area": "전남",
         "foodType": "한식",
@@ -1430,7 +1430,7 @@ export const restList = [
         "parking": "O",
         "att": "순천만국가정원, 순천만습지, 아랫장"
     }, {
-        "restName": "삼대원조나주곰탕 태양집2호점",
+        "name": "삼대원조나주곰탕 태양집2호점",
         "friendly": "포크프리",
         "area": "전남",
         "foodType": "한식",
@@ -1441,7 +1441,7 @@ export const restList = [
         "parking": "X",
         "att": "춤추는 바다분수, 갓바위, 국립해양문화재연구소"
     }, {
-        "restName": "벚꽃나들버섯집",
+        "name": "벚꽃나들버섯집",
         "friendly": "포크프리",
         "area": "대구",
         "foodType": "한식",
@@ -1452,7 +1452,7 @@ export const restList = [
         "parking": "O",
         "att": "대구수목원, 마비정벽화마을, 남평문씨본리세거지"
     }, {
-        "restName": "롤링힐스호텔 블루사파이어",
+        "name": "롤링힐스호텔 블루사파이어",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "뷔페식,한식",
@@ -1463,7 +1463,7 @@ export const restList = [
         "parking": "O",
         "att": "제부도, 궁평항, 융건릉"
     }, {
-        "restName": "가시리",
+        "name": "가시리",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "일식",
@@ -1474,7 +1474,7 @@ export const restList = [
         "parking": "O",
         "att": "군산근대역사박물관, 진포해양테마공원, 경암동철길마을"
     }, {
-        "restName": "궁중삼계탕",
+        "name": "궁중삼계탕",
         "friendly": "포크프리",
         "area": "인천",
         "foodType": "한식",
@@ -1485,7 +1485,7 @@ export const restList = [
         "parking": "O",
         "att": "인천문학경기장, 인천차이나타운, 짜장면박물관"
     }, {
-        "restName": "어부",
+        "name": "어부",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -1496,7 +1496,7 @@ export const restList = [
         "parking": "O",
         "att": "해운대해수욕장, 더베이 101, 해운대 달맞이길"
     }, {
-        "restName": "옥미아구찜",
+        "name": "옥미아구찜",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -1507,7 +1507,7 @@ export const restList = [
         "parking": "O",
         "att": "해운대 달맞이길, 누리마루 APEC 하우스, 영화의전당"
     }, {
-        "restName": "알라딘케밥",
+        "name": "알라딘케밥",
         "friendly": "무슬림 자가 인증",
         "area": "인천",
         "foodType": "",
@@ -1518,7 +1518,7 @@ export const restList = [
         "parking": "O",
         "att": "송도센트럴파크, 인천광역시립박물관, 인천상륙작전기념관"
     }, {
-        "restName": "삼수장어 두산오거리점",
+        "name": "삼수장어 두산오거리점",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "한식",
@@ -1529,7 +1529,7 @@ export const restList = [
         "parking": "O",
         "att": "수성못, 힐크레스트, 가창찐빵거리"
     }, {
-        "restName": "남천숯불장어구이",
+        "name": "남천숯불장어구이",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -1540,7 +1540,7 @@ export const restList = [
         "parking": "O",
         "att": "이기대 도시자연공원, 삼주 다이아몬드베이, 광안대교"
     }, {
-        "restName": "목석원",
+        "name": "목석원",
         "friendly": "포크프리",
         "area": "경북",
         "foodType": "한식",
@@ -1551,7 +1551,7 @@ export const restList = [
         "parking": "O",
         "att": "하회동 탈박물관, 병산서원, 하회마을"
     }, {
-        "restName": "안동집",
+        "name": "안동집",
         "friendly": "포크프리",
         "area": "경북",
         "foodType": "한식",
@@ -1562,7 +1562,7 @@ export const restList = [
         "parking": "O",
         "att": "하회동 탈박물관, 부용대, 하회마을"
     }, {
-        "restName": "하회맛집",
+        "name": "하회맛집",
         "friendly": "포크프리",
         "area": "경북",
         "foodType": "한식",
@@ -1573,7 +1573,7 @@ export const restList = [
         "parking": "O",
         "att": "하회동 탈박물관, 하회마을, 옥연정사"
     }, {
-        "restName": "대원가",
+        "name": "대원가",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -1584,7 +1584,7 @@ export const restList = [
         "parking": "X",
         "att": "용두암, 이호테우해변, 삼성혈"
     }, {
-        "restName": "러빙헛스마일",
+        "name": "러빙헛스마일",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식",
@@ -1595,7 +1595,7 @@ export const restList = [
         "parking": "O",
         "att": "양재 시민의 숲, 양재동화훼공판장 , 헌인릉"
     }, {
-        "restName": "레인보우",
+        "name": "레인보우",
         "friendly": "무슬림 프렌들리",
         "area": "경북",
         "foodType": "양식",
@@ -1606,7 +1606,7 @@ export const restList = [
         "parking": "O",
         "att": "금오산도립공원, 금오지, 금오랜드"
     }, {
-        "restName": "그랜드 힐튼 서울 에이트리움 카페",
+        "name": "그랜드 힐튼 서울 에이트리움 카페",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식,한식",
@@ -1617,7 +1617,7 @@ export const restList = [
         "parking": "O",
         "att": "안산자락길, 안산벚꽃동산, 상암 디지털미디어시티"
     }, {
-        "restName": "그랜드 힐튼 서울 뷔페레스토랑",
+        "name": "그랜드 힐튼 서울 뷔페레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "뷔페식",
@@ -1628,7 +1628,7 @@ export const restList = [
         "parking": "O",
         "att": "안산자락길, 안산벚꽃동산, 상암 디지털미디어시티"
     }, {
-        "restName": "연화정삼계탕",
+        "name": "연화정삼계탕",
         "friendly": "포크프리",
         "area": "대구",
         "foodType": "한식",
@@ -1639,7 +1639,7 @@ export const restList = [
         "parking": "O",
         "att": "국립대구과학관, 비슬산군립공원, 도동서원"
     }, {
-        "restName": "주왕산삼계탕",
+        "name": "주왕산삼계탕",
         "friendly": "포크프리",
         "area": "대구",
         "foodType": "한식",
@@ -1650,7 +1650,7 @@ export const restList = [
         "parking": "O",
         "att": "국립대구과학관, 비슬산군립공원, 도동서원"
     }, {
-        "restName": "원조현풍박소선할매집곰탕",
+        "name": "원조현풍박소선할매집곰탕",
         "friendly": "포크프리",
         "area": "대구",
         "foodType": "한식",
@@ -1661,7 +1661,7 @@ export const restList = [
         "parking": "O",
         "att": "국립대구과학관, 비슬산군립공원, 도동서원"
     }, {
-        "restName": "보문호반오리 ",
+        "name": "보문호반오리 ",
         "friendly": "포크프리",
         "area": "경북",
         "foodType": "한식",
@@ -1672,7 +1672,7 @@ export const restList = [
         "parking": "O",
         "att": "신라왕경숲, 황룡사지, 경주 동궁과 월지"
     }, {
-        "restName": "타지마할 인도요리전문점",
+        "name": "타지마할 인도요리전문점",
         "friendly": "무슬림 프렌들리",
         "area": "경남",
         "foodType": "",
@@ -1683,7 +1683,7 @@ export const restList = [
         "parking": "O",
         "att": "경화역 벚꽃길, 진해군항마을역사길, 주남저수지 철새도래지"
     }, {
-        "restName": "봄베이 브로이 해운대점",
+        "name": "봄베이 브로이 해운대점",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "",
@@ -1694,7 +1694,7 @@ export const restList = [
         "parking": "O",
         "att": "해운대해수욕장, 부산아쿠아리움, 동백공원"
     }, {
-        "restName": "봄베이 브로이 문현점",
+        "name": "봄베이 브로이 문현점",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "",
@@ -1705,7 +1705,7 @@ export const restList = [
         "parking": "O",
         "att": "국제금융센터(BIFC) 63층 스카이라운지, 전포동 카페거리, 서면먹자골목"
     }, {
-        "restName": "무궁화(롯데호텔부산)",
+        "name": "무궁화(롯데호텔부산)",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -1716,7 +1716,7 @@ export const restList = [
         "parking": "O",
         "att": "부산시민공원, 전포 카페거리, 서면 먹자골목"
     }, {
-        "restName": "마살라인디안레스토랑",
+        "name": "마살라인디안레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "양식",
@@ -1727,7 +1727,7 @@ export const restList = [
         "parking": "O",
         "att": "한국만화박물관, 웅진플레이도시 워터도시, 아인스월드"
     }, {
-        "restName": "수버인도네팔요리점",
+        "name": "수버인도네팔요리점",
         "friendly": "무슬림 프렌들리",
         "area": "충북",
         "foodType": "",
@@ -1738,7 +1738,7 @@ export const restList = [
         "parking": "O",
         "att": "오창호수공원, 청주백제유물전시관, 국립청주박물관"
     }, {
-        "restName": "복진면",
+        "name": "복진면",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -1749,7 +1749,7 @@ export const restList = [
         "parking": "O",
         "att": "백운호수, 매봉산, 청계사"
     }, {
-        "restName": "머노까머나 송도2호점",
+        "name": "머노까머나 송도2호점",
         "friendly": "무슬림 프렌들리",
         "area": "인천",
         "foodType": "",
@@ -1760,7 +1760,7 @@ export const restList = [
         "parking": "O",
         "att": "트라이볼, 센트럴파크, 솔찬공원"
     }, {
-        "restName": "머노까머나 송도1호점",
+        "name": "머노까머나 송도1호점",
         "friendly": "무슬림 프렌들리",
         "area": "인천",
         "foodType": "",
@@ -1771,7 +1771,7 @@ export const restList = [
         "parking": "O",
         "att": "송도 센트럴파크, 커넬위크, 솔찬공원"
     }, {
-        "restName": "머노까머나 신촌점",
+        "name": "머노까머나 신촌점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -1782,7 +1782,7 @@ export const restList = [
         "parking": "X",
         "att": "홍대거리, 이대, 신촌거리"
     }, {
-        "restName": "머노까머나 대학로점",
+        "name": "머노까머나 대학로점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -1793,7 +1793,7 @@ export const restList = [
         "parking": "O",
         "att": "창덕궁, 대학로, 낙산공원"
     }, {
-        "restName": "할랄 인디안레스토랑",
+        "name": "할랄 인디안레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "경기",
         "foodType": "",
@@ -1804,7 +1804,7 @@ export const restList = [
         "parking": "X",
         "att": "김포국제조각공원, 대명항, 다도박물관"
     }, {
-        "restName": "일도씨닭갈비 목동점",
+        "name": "일도씨닭갈비 목동점",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -1815,7 +1815,7 @@ export const restList = [
         "parking": "O",
         "att": "목동종합운동장, 선유도공원"
     }, {
-        "restName": "일도씨닭갈비 분당점",
+        "name": "일도씨닭갈비 분당점",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "한식",
@@ -1826,7 +1826,7 @@ export const restList = [
         "parking": "O",
         "att": "수원화성, 한국민속촌, 에버랜드"
     }, {
-        "restName": "일도씨닭갈비 방배점",
+        "name": "일도씨닭갈비 방배점",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -1837,7 +1837,7 @@ export const restList = [
         "parking": "O",
         "att": "방배공원, 예술의전당, 사당, 서리풀공원"
     }, {
-        "restName": "일도씨닭갈비 미아점",
+        "name": "일도씨닭갈비 미아점",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -1848,7 +1848,7 @@ export const restList = [
         "parking": "X",
         "att": "롯데백화점 미아점, 북서울의 숲, 와이스퀘어"
     }, {
-        "restName": "아마 홍대점",
+        "name": "아마 홍대점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -1859,7 +1859,7 @@ export const restList = [
         "parking": "O",
         "att": "홍대거리, 이대거리, 신촌"
     }, {
-        "restName": "아마 신촌점",
+        "name": "아마 신촌점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -1870,7 +1870,7 @@ export const restList = [
         "parking": "X",
         "att": "홍대거리, 이대거리, 신촌"
     }, {
-        "restName": "대복 복전문점",
+        "name": "대복 복전문점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -1881,7 +1881,7 @@ export const restList = [
         "parking": "O",
         "att": "국립수목원, 아프리카예술박물관, 포천아트밸리"
     }, {
-        "restName": "히말라야정원",
+        "name": "히말라야정원",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "",
@@ -1892,7 +1892,7 @@ export const restList = [
         "parking": "O",
         "att": "경기도 문화의전당, 인계예술공원, 수원 올림픽공원"
     }, {
-        "restName": "메이필드호텔 룸서비스",
+        "name": "메이필드호텔 룸서비스",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -1903,7 +1903,7 @@ export const restList = [
         "parking": "O",
         "att": "강서습지생태공원, 행주산성, 아라마린센터"
     }, {
-        "restName": "메이필드호텔 라페스타",
+        "name": "메이필드호텔 라페스타",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식",
@@ -1914,7 +1914,7 @@ export const restList = [
         "parking": "O",
         "att": "아라마린센터, 강서습지생태공원"
     }, {
-        "restName": "메이필드호텔 낙원",
+        "name": "메이필드호텔 낙원",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -1925,7 +1925,7 @@ export const restList = [
         "parking": "O",
         "att": "행주산성, 아라마린센터, 롯데몰 김포공항점"
     }, {
-        "restName": "롯데호텔 룸서비스",
+        "name": "롯데호텔 룸서비스",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식",
@@ -1936,7 +1936,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수궁, 서울시청, 숭례문"
     }, {
-        "restName": "롯데호텔 라세느",
+        "name": "롯데호텔 라세느",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "뷔페식",
@@ -1947,7 +1947,7 @@ export const restList = [
         "parking": "O",
         "att": "서울광장, 청계천, 세운상가"
     }, {
-        "restName": "롯데호텔 페닌슐라 라운지",
+        "name": "롯데호텔 페닌슐라 라운지",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -1958,7 +1958,7 @@ export const restList = [
         "parking": "O",
         "att": "명동, 명동성당, 남대문시장"
     }, {
-        "restName": "인드라",
+        "name": "인드라",
         "friendly": "무슬림 프렌들리",
         "area": "경북",
         "foodType": "",
@@ -1969,7 +1969,7 @@ export const restList = [
         "parking": "O",
         "att": "죽도시장, 포항운하, 영일대해수욕장"
     }, {
-        "restName": "수엠부 동탄점",
+        "name": "수엠부 동탄점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "",
@@ -1980,7 +1980,7 @@ export const restList = [
         "parking": "O",
         "att": "반석사 근린공원, 동탄 센트럴파크, 동탄 여울공원"
     }, {
-        "restName": "인도하우스",
+        "name": "인도하우스",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "",
@@ -1991,7 +1991,7 @@ export const restList = [
         "parking": "O",
         "att": "경기도자박물관, 화담숲, 에버랜드"
     }, {
-        "restName": "일도씨닭갈비 광화문점",
+        "name": "일도씨닭갈비 광화문점",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -2002,7 +2002,7 @@ export const restList = [
         "parking": "O",
         "att": "광화문광장, 경복궁, 국립현대미술관"
     }, {
-        "restName": "운채 세번째 이야기",
+        "name": "운채 세번째 이야기",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2013,7 +2013,7 @@ export const restList = [
         "parking": "O",
         "att": "관음사, 치악산, 행구수변공원"
     }, {
-        "restName": "스위트인디아",
+        "name": "스위트인디아",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "",
@@ -2024,7 +2024,7 @@ export const restList = [
         "parking": "O",
         "att": "군산 근대역사박물관, 신흥동 일본식가옥, 군산 금강하구둑"
     }, {
-        "restName": "운채 ",
+        "name": "운채 ",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -2035,7 +2035,7 @@ export const restList = [
         "parking": "O",
         "att": "관음사, 치악산, 행구수변공원"
     }, {
-        "restName": "라즈 인천공항",
+        "name": "라즈 인천공항",
         "friendly": "무슬림 프렌들리",
         "area": "인천",
         "foodType": "",
@@ -2046,7 +2046,7 @@ export const restList = [
         "parking": "O",
         "att": "인천국제공항, 파라다이스시티호텔카지노, 스카이72"
     }, {
-        "restName": "신라호텔 콘티넨탈",
+        "name": "신라호텔 콘티넨탈",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -2057,7 +2057,7 @@ export const restList = [
         "parking": "O",
         "att": "국립극장, 이태원, DDP"
     }, {
-        "restName": "신라호텔 라연",
+        "name": "신라호텔 라연",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -2068,7 +2068,7 @@ export const restList = [
         "parking": "O",
         "att": "충무로, 남산공원, 남산골 한옥마을"
     }, {
-        "restName": "용장어요리전문점",
+        "name": "용장어요리전문점",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -2079,7 +2079,7 @@ export const restList = [
         "parking": "O",
         "att": "부산현대미술관, 을숙도생태공원, 다대포해수욕장"
     }, {
-        "restName": "함초간장게장",
+        "name": "함초간장게장",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -2090,7 +2090,7 @@ export const restList = [
         "parking": "X",
         "att": "명동, 명동성당, 남산서울타워"
     }, {
-        "restName": "춘천곰탕",
+        "name": "춘천곰탕",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2101,7 +2101,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강 처녀동상, 의암호, 중도att"
     }, {
-        "restName": "케르반 베이커리",
+        "name": "케르반 베이커리",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "",
@@ -2112,7 +2112,7 @@ export const restList = [
         "parking": "X",
         "att": "이태원 쇼핑거리, 전쟁기념관, 삼성미술관 리움"
     }, {
-        "restName": "케르반 파미에스테이션점",
+        "name": "케르반 파미에스테이션점",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "",
@@ -2123,7 +2123,7 @@ export const restList = [
         "parking": "O",
         "att": "세빛섬, 강남역 지하도상가"
     }, {
-        "restName": "케르반 스타필드 고양점",
+        "name": "케르반 스타필드 고양점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "",
@@ -2134,7 +2134,7 @@ export const restList = [
         "parking": "O",
         "att": "서오릉, 서삼릉"
     }, {
-        "restName": "포탈라레스토랑 홍대점",
+        "name": "포탈라레스토랑 홍대점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -2145,7 +2145,7 @@ export const restList = [
         "parking": "X",
         "att": "홍대 프리마켓, 연남동 공방거리"
     }, {
-        "restName": "명동정",
+        "name": "명동정",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -2156,7 +2156,7 @@ export const restList = [
         "parking": "O",
         "att": "명동, 남산 케이블카, 남산골 한옥마을"
     }, {
-        "restName": "뉴살라딘",
+        "name": "뉴살라딘",
         "friendly": "무슬림 자가 인증",
         "area": "대구",
         "foodType": "",
@@ -2167,7 +2167,7 @@ export const restList = [
         "parking": "O",
         "att": "대구수목원, 남평문씨본리세거지, 이월드"
     }, {
-        "restName": "아시안 라이브",
+        "name": "아시안 라이브",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -2178,7 +2178,7 @@ export const restList = [
         "parking": "O",
         "att": "스타필드 코엑스몰, 코엑스 아쿠아리움, 봉은사"
     }, {
-        "restName": "알펜시아호텔리조트 컨벤션센터",
+        "name": "알펜시아호텔리조트 컨벤션센터",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "뷔페식",
@@ -2189,7 +2189,7 @@ export const restList = [
         "parking": "O",
         "att": "알펜시아 리조트, 용평스키장"
     }, {
-        "restName": "동문 익스프레스(홍천 비발디파크)",
+        "name": "동문 익스프레스(홍천 비발디파크)",
         "friendly": "할랄 공식 인증",
         "area": "강원",
         "foodType": "아시아음식",
@@ -2200,7 +2200,7 @@ export const restList = [
         "parking": "O",
         "att": "홍천 비발디파크, 남노일강변유원지"
     }, {
-        "restName": "피자치킨&KAMPUNGKU",
+        "name": "피자치킨&KAMPUNGKU",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "말레이시아음식",
@@ -2211,7 +2211,7 @@ export const restList = [
         "parking": "X",
         "att": "남산타워, 명동문화의거리"
     }, {
-        "restName": "미가일식 ",
+        "name": "미가일식 ",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "일식",
@@ -2222,7 +2222,7 @@ export const restList = [
         "parking": "O",
         "att": "전주 한옥마을, 덕진공원"
     }, {
-        "restName": "세우고 횟집",
+        "name": "세우고 횟집",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "일식",
@@ -2233,7 +2233,7 @@ export const restList = [
         "parking": "O",
         "att": "전주 한옥마을, 덕진공원"
     }, {
-        "restName": "개인화로 미소",
+        "name": "개인화로 미소",
         "friendly": "포크프리",
         "area": "전북",
         "foodType": "한식",
@@ -2244,7 +2244,7 @@ export const restList = [
         "parking": "O",
         "att": "전주한옥마을, 전주동물원"
     }, {
-        "restName": "아멛 아시안 퀴진 ",
+        "name": "아멛 아시안 퀴진 ",
         "friendly": "무슬림 자가 인증",
         "area": "전북",
         "foodType": "아시아음식",
@@ -2255,7 +2255,7 @@ export const restList = [
         "parking": "O",
         "att": "전주한옥마을, 전주동물원"
     }, {
-        "restName": "코코마마 성산점",
+        "name": "코코마마 성산점",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2266,7 +2266,7 @@ export const restList = [
         "parking": "O",
         "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
-        "restName": "춘천옹심이",
+        "name": "춘천옹심이",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2277,7 +2277,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "소양강처녀닭갈비",
+        "name": "소양강처녀닭갈비",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2288,7 +2288,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "3대원조할매추어탕",
+        "name": "3대원조할매추어탕",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "한식",
@@ -2299,7 +2299,7 @@ export const restList = [
         "parking": "O",
         "att": "광한루, 춘향테마파크"
     }, {
-        "restName": "친절식당",
+        "name": "친절식당",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "한식",
@@ -2310,7 +2310,7 @@ export const restList = [
         "parking": "O",
         "att": "광한루, 춘향테마파크"
     }, {
-        "restName": "부산집",
+        "name": "부산집",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "한식",
@@ -2321,7 +2321,7 @@ export const restList = [
         "parking": "O",
         "att": "광한루, 춘향테마파크"
     }, {
-        "restName": "현식당",
+        "name": "현식당",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "한식",
@@ -2332,7 +2332,7 @@ export const restList = [
         "parking": "O",
         "att": "광한루원, 남원향토박물관, 만인의 총"
     }, {
-        "restName": "베지나랑 ",
+        "name": "베지나랑 ",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -2343,7 +2343,7 @@ export const restList = [
         "parking": "X",
         "att": "광안리해수욕장, 해운대해수욕장, 백스코, 민락공원, 동백공원"
     }, {
-        "restName": "코코마마",
+        "name": "코코마마",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2354,7 +2354,7 @@ export const restList = [
         "parking": "O",
         "att": "우도섬"
     }, {
-        "restName": "옹기촌",
+        "name": "옹기촌",
         "friendly": "포크프리",
         "area": "부산",
         "foodType": "한식",
@@ -2365,7 +2365,7 @@ export const restList = [
         "parking": "O",
         "att": "오륙도, 관안리해수욕장, 이기대수변공원, UN기념공원, 신선대"
     }, {
-        "restName": "나탄약선요리",
+        "name": "나탄약선요리",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -2376,7 +2376,7 @@ export const restList = [
         "parking": "O",
         "att": "부산시민공원, 삼정더파크(동물원), 사직구장"
     }, {
-        "restName": "슬로시티약초밥상",
+        "name": "슬로시티약초밥상",
         "friendly": "무슬림 프렌들리",
         "area": "전남",
         "foodType": "한식",
@@ -2387,7 +2387,7 @@ export const restList = [
         "parking": "O",
         "att": "가사문학관, 메타세콰이어길, 죽녹원"
     }, {
-        "restName": "무진장 해물탕",
+        "name": "무진장 해물탕",
         "friendly": "무슬림 프렌들리",
         "area": "전남",
         "foodType": "한식",
@@ -2398,7 +2398,7 @@ export const restList = [
         "parking": "O",
         "att": "가사문학관, 메타세콰이어길, 죽녹원"
     }, {
-        "restName": "안동인 안동찜닭",
+        "name": "안동인 안동찜닭",
         "friendly": "무슬림 프렌들리",
         "area": "경남",
         "foodType": "한식",
@@ -2409,7 +2409,7 @@ export const restList = [
         "parking": "O",
         "att": "수로왕릉, 수로왕비릉, 가야랜드, 김해가야테마파크"
     }, {
-        "restName": "행복을짓는수향밥상",
+        "name": "행복을짓는수향밥상",
         "friendly": "포크프리",
         "area": "부산",
         "foodType": "한식",
@@ -2420,7 +2420,7 @@ export const restList = [
         "parking": "O",
         "att": "다대포해수욕장낙조분수, 물운대유원지, 다대포해변공원, 아미산전망대"
     }, {
-        "restName": "행복을짓는수향촌밥상",
+        "name": "행복을짓는수향촌밥상",
         "friendly": "포크프리",
         "area": "부산",
         "foodType": "한식",
@@ -2431,7 +2431,7 @@ export const restList = [
         "parking": "O",
         "att": "민락공원, 광안리해수욕장, 백스코, 동백공원"
     }, {
-        "restName": "장수삼",
+        "name": "장수삼",
         "friendly": "포크프리",
         "area": "부산",
         "foodType": "한식",
@@ -2442,7 +2442,7 @@ export const restList = [
         "parking": "X",
         "att": "광안리해수욕장, 해운대해수욕장, 백스코, 민락공원, 동백공원"
     }, {
-        "restName": "제주대게회타운",
+        "name": "제주대게회타운",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2453,7 +2453,7 @@ export const restList = [
         "parking": "O",
         "att": "용두함, 용현구른다리, 용두암해안도로, 한라수목원, 사라봉공원, 용현구름다리, 탑동공연장"
     }, {
-        "restName": "용두암바당회국수",
+        "name": "용두암바당회국수",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2464,7 +2464,7 @@ export const restList = [
         "parking": "O",
         "att": "용두함, 용현구른다리, 용두암해안도로, 한라수목원, 사라봉공원, 용현구름다리, 탑동공연장"
     }, {
-        "restName": "제주랑",
+        "name": "제주랑",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2475,7 +2475,7 @@ export const restList = [
         "parking": "O",
         "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
-        "restName": "청운식당",
+        "name": "청운식당",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2486,7 +2486,7 @@ export const restList = [
         "parking": "O",
         "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
-        "restName": "춘천세종호텔",
+        "name": "춘천세종호텔",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -2497,7 +2497,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "김명자굴국밥",
+        "name": "김명자굴국밥",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2508,7 +2508,7 @@ export const restList = [
         "parking": "O",
         "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
-        "restName": "해촌",
+        "name": "해촌",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2519,7 +2519,7 @@ export const restList = [
         "parking": "O",
         "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
-        "restName": "성산보말죽칼국수",
+        "name": "성산보말죽칼국수",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2530,7 +2530,7 @@ export const restList = [
         "parking": "O",
         "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
-        "restName": "황태마을 ",
+        "name": "황태마을 ",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -2541,7 +2541,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "정가네소갈비",
+        "name": "정가네소갈비",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2552,7 +2552,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "점봉산산채",
+        "name": "점봉산산채",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2563,7 +2563,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "춘천원조숯불닭갈비 ",
+        "name": "춘천원조숯불닭갈비 ",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2574,7 +2574,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "황쓰도깨비집 숯불닭갈비",
+        "name": "황쓰도깨비집 숯불닭갈비",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2585,7 +2585,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "CJ프레시웨이 코이카연수센터점",
+        "name": "CJ프레시웨이 코이카연수센터점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "뷔페식",
@@ -2596,7 +2596,7 @@ export const restList = [
         "parking": "O",
         "att": "대왕저수지, 분당중앙공원, 신구대식물원"
     }, {
-        "restName": "산골애",
+        "name": "산골애",
         "friendly": "포크프리",
         "area": "부산",
         "foodType": "한식",
@@ -2607,7 +2607,7 @@ export const restList = [
         "parking": "O",
         "att": "대저생태공원, 현대미술관, 스타필드, 을숙도 생태공원"
     }, {
-        "restName": "서가네오리",
+        "name": "서가네오리",
         "friendly": "포크프리",
         "area": "부산",
         "foodType": "한식",
@@ -2618,7 +2618,7 @@ export const restList = [
         "parking": "O",
         "att": "가야산, 부산시민공원, 한국허치슨터미널, 부산항연안여객터미널"
     }, {
-        "restName": "한지붕다섯가족 ",
+        "name": "한지붕다섯가족 ",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2629,7 +2629,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "명동산골닭갈비",
+        "name": "명동산골닭갈비",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2640,7 +2640,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "준섭이네닭갈비 ",
+        "name": "준섭이네닭갈비 ",
         "friendly": "포크프리",
         "area": "강원",
         "foodType": "한식",
@@ -2651,7 +2651,7 @@ export const restList = [
         "parking": "O",
         "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
-        "restName": "둘레길숯불닭갈비 ",
+        "name": "둘레길숯불닭갈비 ",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "한식",
@@ -2662,7 +2662,7 @@ export const restList = [
         "parking": "O",
         "att": "남이섬, 자라섬"
     }, {
-        "restName": "약수한방삼계탕",
+        "name": "약수한방삼계탕",
         "friendly": "포크프리",
         "area": "광주",
         "foodType": "한식",
@@ -2673,7 +2673,7 @@ export const restList = [
         "parking": "O",
         "att": "담양죽녹원, 518기념문화센터"
     }, {
-        "restName": "무등관 ",
+        "name": "무등관 ",
         "friendly": "포크프리",
         "area": "광주",
         "foodType": "한식",
@@ -2684,7 +2684,7 @@ export const restList = [
         "parking": "O",
         "att": "무등산국립공원, 518기념문화센터"
     }, {
-        "restName": "할매 춘천닭갈비",
+        "name": "할매 춘천닭갈비",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "한식",
@@ -2695,7 +2695,7 @@ export const restList = [
         "parking": "O",
         "att": "남이섬, 자라섬"
     }, {
-        "restName": "안탈리아다이닝",
+        "name": "안탈리아다이닝",
         "friendly": "무슬림 프렌들리",
         "area": "경북",
         "foodType": "터키음식",
@@ -2706,7 +2706,7 @@ export const restList = [
         "parking": "O",
         "att": "첨성대, 월성지구, 반월성, 국립경주박물관, 경주오릉. 동궁괴월지, 황룡사지 ,성덕여왕릉 등 경주area 다수"
     }, {
-        "restName": "안탈리아",
+        "name": "안탈리아",
         "friendly": "무슬림 프렌들리",
         "area": "경북",
         "foodType": "터키음식",
@@ -2717,7 +2717,7 @@ export const restList = [
         "parking": "O",
         "att": "형성강 크루즈, 중명자연생태공원, 포스코 역사관"
     }, {
-        "restName": "알펜시아호텔리조트 몽블랑",
+        "name": "알펜시아호텔리조트 몽블랑",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "양식",
@@ -2728,7 +2728,7 @@ export const restList = [
         "parking": "O",
         "att": "알펜시아 리조트, 용평스키장"
     }, {
-        "restName": "다연닭갈비 ",
+        "name": "다연닭갈비 ",
         "friendly": "포크프리",
         "area": "광주",
         "foodType": "한식",
@@ -2739,7 +2739,7 @@ export const restList = [
         "parking": "O",
         "att": "아시아예술창작스튜디오, 큐브미술관, 518기념관"
     }, {
-        "restName": "살와 레스토랑",
+        "name": "살와 레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "대구",
         "foodType": "인도음식",
@@ -2750,7 +2750,7 @@ export const restList = [
         "parking": "X",
         "att": "팔공산, 송해공원, 학산공원, 대구수목원, 다산문화공원"
     }, {
-        "restName": "뉴살라딘 동성로 ",
+        "name": "뉴살라딘 동성로 ",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "인도음식",
@@ -2761,7 +2761,7 @@ export const restList = [
         "parking": "O",
         "att": "대구시립중앙도서관, 동성로로데오거리, 대구신천물놀이장"
     }, {
-        "restName": "헬로인디아",
+        "name": "헬로인디아",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -2772,7 +2772,7 @@ export const restList = [
         "parking": "O",
         "att": "홍대거리, 선유도공원, 연트럴파크, 경의선숲길공원"
     }, {
-        "restName": "러빙헛웰빙송촌점",
+        "name": "러빙헛웰빙송촌점",
         "friendly": "포크프리",
         "area": "대전",
         "foodType": "한식,인도음식",
@@ -2783,7 +2783,7 @@ export const restList = [
         "parking": "O",
         "att": "동춘당, 계족산황토길"
     }, {
-        "restName": "라가",
+        "name": "라가",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "",
@@ -2794,7 +2794,7 @@ export const restList = [
         "parking": "O",
         "att": "대구월드컵경기장/마산구장"
     }, {
-        "restName": "윌라라",
+        "name": "윌라라",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "말레이시아음식",
@@ -2805,7 +2805,7 @@ export const restList = [
         "parking": "O",
         "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
-        "restName": "알펜시아호텔리조트 플레이버스",
+        "name": "알펜시아호텔리조트 플레이버스",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "뷔페식",
@@ -2816,7 +2816,7 @@ export const restList = [
         "parking": "O",
         "att": "알펜시아 리조트, 용평스키장"
     }, {
-        "restName": "러빙헛",
+        "name": "러빙헛",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "한식",
@@ -2827,7 +2827,7 @@ export const restList = [
         "parking": "O",
         "att": "발공산, 대구시내, 두류공원"
     }, {
-        "restName": "겐지스 한양대점",
+        "name": "겐지스 한양대점",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -2838,7 +2838,7 @@ export const restList = [
         "parking": "X",
         "att": "뚝섬유원지, 서울숲, 동대문"
     }, {
-        "restName": "인도야시장",
+        "name": "인도야시장",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -2849,7 +2849,7 @@ export const restList = [
         "parking": "X",
         "att": "새빛섬, 현충원, 서울선릉, 국립중앙박물관"
     }, {
-        "restName": "델리난(델리다바)",
+        "name": "델리난(델리다바)",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식",
@@ -2860,7 +2860,7 @@ export const restList = [
         "parking": "X",
         "att": "수원남문, 화성행궁, 팔달문, 문화빌리지"
     }, {
-        "restName": "나마스테 해운대점",
+        "name": "나마스테 해운대점",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "인도음식,네팔음식",
@@ -2871,7 +2871,7 @@ export const restList = [
         "parking": "O",
         "att": "해운대, 백스코, 아쿠아리움, 동백공원, 선착장"
     }, {
-        "restName": "기꾸초밥",
+        "name": "기꾸초밥",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "일식",
@@ -2882,7 +2882,7 @@ export const restList = [
         "parking": "X",
         "att": "동구릉, 구리한강 시민공원,"
     }, {
-        "restName": "타지 펠리스(구.럭스코테크)",
+        "name": "타지 펠리스(구.럭스코테크)",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식",
@@ -2893,7 +2893,7 @@ export const restList = [
         "parking": "O",
         "att": "남양호, 융건릉, 월문온천"
     }, {
-        "restName": "스파이스빌리지",
+        "name": "스파이스빌리지",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식",
@@ -2904,7 +2904,7 @@ export const restList = [
         "parking": "X",
         "att": "신장그린공원, 이충레포츠공원, 부락산분수공원"
     }, {
-        "restName": "러빙헛제주",
+        "name": "러빙헛제주",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -2915,7 +2915,7 @@ export const restList = [
         "parking": "O",
         "att": "표선해수욕장, 성산일출봉, 천지연폭포, 정방폭포"
     }, {
-        "restName": "세종마을 치킨",
+        "name": "세종마을 치킨",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -2926,7 +2926,7 @@ export const restList = [
         "parking": "X",
         "att": "경복궁, 청와대, 사직단, 경희궁, 광화문, 청계광장"
     }, {
-        "restName": "난",
+        "name": "난",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식",
@@ -2937,7 +2937,7 @@ export const restList = [
         "parking": "O",
         "att": "화성행궁, 효원공원, 팔달문"
     }, {
-        "restName": "빛가람채식뷔페",
+        "name": "빛가람채식뷔페",
         "friendly": "무슬림 프렌들리",
         "area": "충북",
         "foodType": "뷔페식",
@@ -2948,7 +2948,7 @@ export const restList = [
         "parking": "O",
         "att": "계명산휴양림, 충주댐, 종댕이길"
     }, {
-        "restName": "케이비레스토랑할랄푸드",
+        "name": "케이비레스토랑할랄푸드",
         "friendly": "무슬림 자가 인증",
         "area": "경기",
         "foodType": "",
@@ -2959,7 +2959,7 @@ export const restList = [
         "parking": "O",
         "att": "김포조각공원, 다도박물관, 한강신도시 호수공원, 덕포진, 강화도"
     }, {
-        "restName": "KB  케밥",
+        "name": "KB  케밥",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "",
@@ -2970,7 +2970,7 @@ export const restList = [
         "parking": "O",
         "att": "김포조각공원, 다도박물관, 한강신도시 호수공원, 덕포진, 강화도"
     }, {
-        "restName": "버섯골",
+        "name": "버섯골",
         "friendly": "포크프리",
         "area": "대구",
         "foodType": "한식",
@@ -2981,7 +2981,7 @@ export const restList = [
         "parking": "O",
         "att": "도동서원, 화원동산, 핑크뮬리 코스모스"
     }, {
-        "restName": "델리팰리스",
+        "name": "델리팰리스",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -2992,7 +2992,7 @@ export const restList = [
         "parking": "O",
         "att": "양천향교, 우장산공원, 서울식물원"
     }, {
-        "restName": "옷살",
+        "name": "옷살",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -3003,7 +3003,7 @@ export const restList = [
         "parking": "O",
         "att": "덕수공원, 현충원, 상도그린공원, 보라매공원"
     }, {
-        "restName": "스타케이터링",
+        "name": "스타케이터링",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "한식",
@@ -3014,7 +3014,7 @@ export const restList = [
         "parking": "X",
         "att": "선유도공원, 여의도국회의사당, 당산역 수상택시, 샛강"
     }, {
-        "restName": "산촌 (고양점)",
+        "name": "산촌 (고양점)",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "한식",
@@ -3025,7 +3025,7 @@ export const restList = [
         "parking": "O",
         "att": "서서울CC, 올림픽CC, 보광사, 미륵불, 마장호수, 유일레져, 장옥진미술관"
     }, {
-        "restName": "긴자레스토랑",
+        "name": "긴자레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "경기",
         "foodType": "인도음식",
@@ -3036,7 +3036,7 @@ export const restList = [
         "parking": "X",
         "att": "안양중앙공원, 자유공원, 안양종합운동장, 학의천"
     }, {
-        "restName": "스카이킹덤 더 리본",
+        "name": "스카이킹덤 더 리본",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식",
@@ -3047,7 +3047,7 @@ export const restList = [
         "parking": "O",
         "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
     }, {
-        "restName": "인 스타일",
+        "name": "인 스타일",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식",
@@ -3058,7 +3058,7 @@ export const restList = [
         "parking": "O",
         "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
     }, {
-        "restName": "알라메종 와인 앤 다인",
+        "name": "알라메종 와인 앤 다인",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "양식",
@@ -3069,7 +3069,7 @@ export const restList = [
         "parking": "O",
         "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
     }, {
-        "restName": "인디안 커리 ",
+        "name": "인디안 커리 ",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "",
@@ -3080,7 +3080,7 @@ export const restList = [
         "parking": "O",
         "att": "한국잡월드, 판교테크노벨리, 율동공원"
     }, {
-        "restName": "(주)예티",
+        "name": "(주)예티",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "",
@@ -3091,7 +3091,7 @@ export const restList = [
         "parking": "O",
         "att": "홍대거리, 선유도공원, 와우공원, 서울월드컵경기장, 하늘공원"
     }, {
-        "restName": "여우골초밥",
+        "name": "여우골초밥",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "일식",
@@ -3102,7 +3102,7 @@ export const restList = [
         "parking": "O",
         "att": "홍대거리, 선유도공원, 와우공원, 서울월드컵경기장, 하늘공원"
     }, {
-        "restName": "동원참치",
+        "name": "동원참치",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "일식",
@@ -3113,7 +3113,7 @@ export const restList = [
         "parking": "O",
         "att": "국회의사당, 효창공원, 서울역, 용산전자상가, 이촌한강공원, 홍대거리"
     }, {
-        "restName": "미진",
+        "name": "미진",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "일식",
@@ -3124,7 +3124,7 @@ export const restList = [
         "parking": "O",
         "att": "홍대입구, 상암월드컵경기장, 평화의공원(갈대축제), 선유도공원"
     }, {
-        "restName": "푸드 익스체인지",
+        "name": "푸드 익스체인지",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식",
@@ -3135,7 +3135,7 @@ export const restList = [
         "parking": "O",
         "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
     }, {
-        "restName": "일미리금계찜닭 거제1호점 ",
+        "name": "일미리금계찜닭 거제1호점 ",
         "friendly": "포크프리",
         "area": "경남",
         "foodType": "한식",
@@ -3146,7 +3146,7 @@ export const restList = [
         "parking": "X",
         "att": "거제 바람의언덕, 포로수용수"
     }, {
-        "restName": "타지마할 창원마산레스토랑",
+        "name": "타지마할 창원마산레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "경남",
         "foodType": "인도음식",
@@ -3157,7 +3157,7 @@ export const restList = [
         "parking": "O",
         "att": "마산국화축제지, 마산돛섬, 마산야구장"
     }, {
-        "restName": "러빙헛 카페",
+        "name": "러빙헛 카페",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "",
@@ -3168,7 +3168,7 @@ export const restList = [
         "parking": "X",
         "att": "광평대군 묘역, 말죽거리, 서울선릉, 렉츠런파크"
     }, {
-        "restName": "러빙헛 서신점",
+        "name": "러빙헛 서신점",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "",
@@ -3179,7 +3179,7 @@ export const restList = [
         "parking": "O",
         "att": "전주 한옥마을, 덕진공원, 전주동물원"
     }, {
-        "restName": "러빙헛 영동점",
+        "name": "러빙헛 영동점",
         "friendly": "무슬림 프렌들리",
         "area": "충북",
         "foodType": "",
@@ -3190,7 +3190,7 @@ export const restList = [
         "parking": "O",
         "att": "반야사, 월유봉"
     }, {
-        "restName": "러빙헛효목점",
+        "name": "러빙헛효목점",
         "friendly": "무슬림 프렌들리",
         "area": "대구",
         "foodType": "한식",
@@ -3201,7 +3201,7 @@ export const restList = [
         "parking": "O",
         "att": "팔공산, 망우공원, 범어공원"
     }, {
-        "restName": "제주뚝배기",
+        "name": "제주뚝배기",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "한식",
@@ -3212,7 +3212,7 @@ export const restList = [
         "parking": "O",
         "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드, 광치기해변"
     }, {
-        "restName": "나니아 레스토랑",
+        "name": "나니아 레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "양식",
@@ -3223,7 +3223,7 @@ export const restList = [
         "parking": "O",
         "att": "제주조각공원, 주상전리, 군산오름, 중문해수욕장"
     }, {
-        "restName": "마하싯다커리",
+        "name": "마하싯다커리",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "인도음식",
@@ -3234,7 +3234,7 @@ export const restList = [
         "parking": "O",
         "att": "공지천, 명동닭갈비골목, 춘천중앙시장"
     }, {
-        "restName": "수엠부 인도음식점 평택점",
+        "name": "수엠부 인도음식점 평택점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식,네팔음식",
@@ -3245,7 +3245,7 @@ export const restList = [
         "parking": "X",
         "att": "바람새마을 소풍정원, 웃다리문화촌, 평택국제시장"
     }, {
-        "restName": "꼬끼옥",
+        "name": "꼬끼옥",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -3256,7 +3256,7 @@ export const restList = [
         "parking": "O",
         "att": "남이섬, 쁘띠프랑스, 제이드가든"
     }, {
-        "restName": "밸류하이엔드호텔",
+        "name": "밸류하이엔드호텔",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -3267,7 +3267,7 @@ export const restList = [
         "parking": "O",
         "att": "화성행궁, 공방거리, 수원화성"
     }, {
-        "restName": "봄베이브로이 판교",
+        "name": "봄베이브로이 판교",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식",
@@ -3278,7 +3278,7 @@ export const restList = [
         "parking": "O",
         "att": "백현동 카페문화거리, 한국잡월드, 분당중앙공원"
     }, {
-        "restName": "수엠부 인도음식점 광주점",
+        "name": "수엠부 인도음식점 광주점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식,네팔음식",
@@ -3289,7 +3289,7 @@ export const restList = [
         "parking": "X",
         "att": "중대물빛공원, 영은미술관,"
     }, {
-        "restName": "북문해물탕",
+        "name": "북문해물탕",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -3300,7 +3300,7 @@ export const restList = [
         "parking": "X",
         "att": "수원화성, 화성행궁, 만석공원"
     }, {
-        "restName": "청명쭈꾸미 철판구이",
+        "name": "청명쭈꾸미 철판구이",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -3311,7 +3311,7 @@ export const restList = [
         "parking": "O",
         "att": "신동카페거리, 수원수산시장"
     }, {
-        "restName": "덕담",
+        "name": "덕담",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "한식",
@@ -3322,7 +3322,7 @@ export const restList = [
         "parking": "O",
         "att": "수원곱창골목, 수원어린이교통공원, 서천생태공원"
     }, {
-        "restName": "고봉삼계탕 수원영통점",
+        "name": "고봉삼계탕 수원영통점",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "한식",
@@ -3333,7 +3333,7 @@ export const restList = [
         "parking": "O",
         "att": "영흥공원, 수원어린이교통공원, 영덕레스피아"
     }, {
-        "restName": "오리대가",
+        "name": "오리대가",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "한식",
@@ -3344,7 +3344,7 @@ export const restList = [
         "parking": "O",
         "att": "지동시장 순대타운, 수원화성박물관, 효원공원"
     }, {
-        "restName": "대왕삼계탕",
+        "name": "대왕삼계탕",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "한식",
@@ -3355,7 +3355,7 @@ export const restList = [
         "parking": "X",
         "att": "화성행궁, 수원화성, 수원통닭거리"
     }, {
-        "restName": "수정방코다리",
+        "name": "수정방코다리",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -3366,7 +3366,7 @@ export const restList = [
         "parking": "X",
         "att": "팔달문, 지동시장 순대타운, 못골종합시장"
     }, {
-        "restName": "통영굴사랑낙지사랑",
+        "name": "통영굴사랑낙지사랑",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "한식",
@@ -3377,7 +3377,7 @@ export const restList = [
         "parking": "X",
         "att": "공방거리, 수원통닭거리, 팔달문"
     }, {
-        "restName": "화레무 광명역점",
+        "name": "화레무 광명역점",
         "friendly": "포크프리",
         "area": "경기",
         "foodType": "아시아음식",
@@ -3388,7 +3388,7 @@ export const restList = [
         "parking": "O",
         "att": "광명동굴, 기형도문화공원, 이케아 광명점"
     }, {
-        "restName": "우리횟집",
+        "name": "우리횟집",
         "friendly": "무슬림 프렌들리",
         "area": "부산",
         "foodType": "한식",
@@ -3399,7 +3399,7 @@ export const restList = [
         "parking": "O",
         "att": "자갈치시장, 국제시장, 168계단"
     }, {
-        "restName": "그랜드 키친",
+        "name": "그랜드 키친",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "뷔페식",
@@ -3410,7 +3410,7 @@ export const restList = [
         "parking": "O",
         "att": "코엑스, 봉은사, 선정릉"
     }, {
-        "restName": "윤도훈 논현삼계탕365",
+        "name": "윤도훈 논현삼계탕365",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -3421,7 +3421,7 @@ export const restList = [
         "parking": "O",
         "att": "논현동먹자골목, 강남역, 국기원"
     }, {
-        "restName": "이지인디아",
+        "name": "이지인디아",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -3432,7 +3432,7 @@ export const restList = [
         "parking": "X",
         "att": "신촌이대거리, 경의선책거리"
     }, {
-        "restName": "오후청",
+        "name": "오후청",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -3443,7 +3443,7 @@ export const restList = [
         "parking": "O",
         "att": "남대문시장, 한국은행 화폐박물관, 덕수궁"
     }, {
-        "restName": "다페 레스토랑",
+        "name": "다페 레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -3454,7 +3454,7 @@ export const restList = [
         "parking": "X",
         "att": "상수카페거리, 홍대거리"
     }, {
-        "restName": "종로삼계탕",
+        "name": "종로삼계탕",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -3465,7 +3465,7 @@ export const restList = [
         "parking": "X",
         "att": "종묘, 인사동, 청계천"
     }, {
-        "restName": "종로설렁탕",
+        "name": "종로설렁탕",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -3476,7 +3476,7 @@ export const restList = [
         "parking": "X",
         "att": "종묘, 다시세운광장, 청계천"
     }, {
-        "restName": "전주식당",
+        "name": "전주식당",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -3487,7 +3487,7 @@ export const restList = [
         "parking": "X",
         "att": "청계천, 종각, 조계사"
     }, {
-        "restName": "서울원조아구찜",
+        "name": "서울원조아구찜",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -3498,7 +3498,7 @@ export const restList = [
         "parking": "O",
         "att": "익선동한옥거리, 낙원동아구찜거리, 운현궁"
     }, {
-        "restName": "장수하늘소인사점",
+        "name": "장수하늘소인사점",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -3509,7 +3509,7 @@ export const restList = [
         "parking": "X",
         "att": "인사동, 운현궁, 조계사"
     }, {
-        "restName": "형제육회본점",
+        "name": "형제육회본점",
         "friendly": "포크프리",
         "area": "서울",
         "foodType": "한식",
@@ -3520,7 +3520,7 @@ export const restList = [
         "parking": "X",
         "att": "광장시장, 종묘, 흥인지문"
     }, {
-        "restName": "(주)사마르칸트",
+        "name": "(주)사마르칸트",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "우즈베키스탄음식",
@@ -3531,7 +3531,7 @@ export const restList = [
         "parking": "X",
         "att": "한양성곽, 흥인지문, 두타"
     }, {
-        "restName": "파르투내",
+        "name": "파르투내",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "우즈베키스탄음식,러시아음식",
@@ -3542,7 +3542,7 @@ export const restList = [
         "parking": "X",
         "att": "DDP, 두타, 광희문"
     }, {
-        "restName": "나마스테인서울",
+        "name": "나마스테인서울",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -3553,7 +3553,7 @@ export const restList = [
         "parking": "X",
         "att": "DDP, 흥인지문, 두타"
     }, {
-        "restName": "사마르칸트시티",
+        "name": "사마르칸트시티",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "우즈베키스탄음식",
@@ -3564,7 +3564,7 @@ export const restList = [
         "parking": "X",
         "att": "DDP, 흥인지문, 두타"
     }, {
-        "restName": "카페 우즈베키스탄 (구 사마르칸트)",
+        "name": "카페 우즈베키스탄 (구 사마르칸트)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "우즈베키스탄음식,러시아음식",
@@ -3575,7 +3575,7 @@ export const restList = [
         "parking": "X",
         "att": "DDP, 두타, 광희문"
     }, {
-        "restName": "뿌자레스토랑",
+        "name": "뿌자레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "인도음식,네팔음식",
@@ -3586,7 +3586,7 @@ export const restList = [
         "parking": "X",
         "att": "DDP, 흥인지문, 두타"
     }, {
-        "restName": "송정",
+        "name": "송정",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "한식",
@@ -3597,7 +3597,7 @@ export const restList = [
         "parking": "X",
         "att": "동대문닭한마리골목, 광장시장, DDP"
     }, {
-        "restName": "카이로바베큐",
+        "name": "카이로바베큐",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "이집트음식,아랍음식",
@@ -3608,7 +3608,7 @@ export const restList = [
         "parking": "X",
         "att": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
     }, {
-        "restName": "자프란 바비큐",
+        "name": "자프란 바비큐",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "인도음식",
@@ -3619,7 +3619,7 @@ export const restList = [
         "parking": "X",
         "att": "경리단길, 블루스퀘어, 리움 삼성미술관"
     }, {
-        "restName": "라자트 우즈벡 레스토랑",
+        "name": "라자트 우즈벡 레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "우즈베키스탄음식",
@@ -3630,7 +3630,7 @@ export const restList = [
         "parking": "X",
         "att": "현대카드스토리지, 이태원쇼핑거리, 이태원 우사단길"
     }, {
-        "restName": "케르반 카페",
+        "name": "케르반 카페",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "터키음식",
@@ -3641,7 +3641,7 @@ export const restList = [
         "parking": "X",
         "att": "경리단길, 이태원쇼핑거리, 전쟁기념관"
     }, {
-        "restName": "이태원 키친",
+        "name": "이태원 키친",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "말레이시아음식",
@@ -3652,7 +3652,7 @@ export const restList = [
         "parking": "X",
         "att": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
     }, {
-        "restName": "리틀인디아",
+        "name": "리틀인디아",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "인도음식",
@@ -3663,7 +3663,7 @@ export const restList = [
         "parking": "X",
         "att": "전쟁기념관, 경리단길, 남산야외식물원"
     }, {
-        "restName": "자프란 레스토랑",
+        "name": "자프란 레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "",
@@ -3674,7 +3674,7 @@ export const restList = [
         "parking": "X",
         "att": "이태원 우사단길, 리움 삼성미술관, 국립극장"
     }, {
-        "restName": "오리지날 팍인디아레스토랑",
+        "name": "오리지날 팍인디아레스토랑",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "파키스탄음식",
@@ -3685,7 +3685,7 @@ export const restList = [
         "parking": "X",
         "att": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
     }, {
-        "restName": "페트라",
+        "name": "페트라",
         "friendly": "무슬림 자가 인증",
         "area": "서울",
         "foodType": "",
@@ -3696,7 +3696,7 @@ export const restList = [
         "parking": "X",
         "att": "전쟁기념관, 경리단길, 이태원쇼핑거리"
     }, {
-        "restName": "봄베이브로이 울산",
+        "name": "봄베이브로이 울산",
         "friendly": "무슬림 프렌들리",
         "area": "울산",
         "foodType": "인도음식",
@@ -3707,7 +3707,7 @@ export const restList = [
         "parking": "O",
         "att": "태화강국가정원, 울산대교전망대, 울산대공원"
     }, {
-        "restName": "양원",
+        "name": "양원",
         "friendly": "무슬림 프렌들리",
         "area": "인천",
         "foodType": "아시아음식",
@@ -3718,7 +3718,7 @@ export const restList = [
         "parking": "O",
         "att": "청라호수공원, 차이나타운, 삼국지벽화거리"
     }, {
-        "restName": "화레무 송도점",
+        "name": "화레무 송도점",
         "friendly": "포크프리",
         "area": "인천",
         "foodType": "아시아음식",
@@ -3729,7 +3729,7 @@ export const restList = [
         "parking": "O",
         "att": "송도 센트럴공원, 소래포구, 소래습지생태공원"
     }, {
-        "restName": "봄베이브로이 송도",
+        "name": "봄베이브로이 송도",
         "friendly": "무슬림 프렌들리",
         "area": "인천",
         "foodType": "인도음식,네팔음식",
@@ -3740,7 +3740,7 @@ export const restList = [
         "parking": "O",
         "att": "송도 센트럴공원, 소래포구, 워터프론트 아암호수"
     }, {
-        "restName": "화레무 인천논현점",
+        "name": "화레무 인천논현점",
         "friendly": "포크프리",
         "area": "인천",
         "foodType": "아시아음식",
@@ -3751,7 +3751,7 @@ export const restList = [
         "parking": "O",
         "att": "소래포구, 소래습지생태공원, 시흥프리미엄아울렛"
     }, {
-        "restName": "와르다레스토랑",
+        "name": "와르다레스토랑",
         "friendly": "무슬림 프렌들리",
         "area": "제주",
         "foodType": "아랍음식",
@@ -3762,7 +3762,7 @@ export const restList = [
         "parking": "X",
         "att": "제주목관아, 관덕정, 동문재래시장"
     }, {
-        "restName": "아살람",
+        "name": "아살람",
         "friendly": "할랄 공식 인증",
         "area": "제주",
         "foodType": "아랍음식",
@@ -3773,7 +3773,7 @@ export const restList = [
         "parking": "O",
         "att": "관덕정, 용두암, 삼성혈"
     }, {
-        "restName": "옴레스토랑 광교점",
+        "name": "옴레스토랑 광교점",
         "friendly": "무슬림 프렌들리",
         "area": "경기",
         "foodType": "인도음식",
@@ -3784,7 +3784,7 @@ export const restList = [
         "parking": "O",
         "att": "광교호수공원, 광교역사공원, 롯에아울렛 광교점"
     }, {
-        "restName": "모로코코 카페",
+        "name": "모로코코 카페",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "모로코음식",
@@ -3795,7 +3795,7 @@ export const restList = [
         "parking": "O",
         "att": "전쟁기념관, 경리단길, 남산서울타워"
     }, {
-        "restName": "카사블랑카",
+        "name": "카사블랑카",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "모로코음식",
@@ -3806,7 +3806,7 @@ export const restList = [
         "parking": "O",
         "att": "전쟁기념관, 경리단길, 남산서울타워"
     }, {
-        "restName": "카페 다스티",
+        "name": "카페 다스티",
         "friendly": "할랄 공식 인증",
         "area": "서울",
         "foodType": "",

@@ -15,7 +15,7 @@ const Restaurant_result = () => {
             <div className="rst_result_prom"/>
             <div className="rst_result_cell">
                 <div>
-                    <div className="rst_result_name">{about.restName}</div>
+                    <div className="rst_result_name">{about.name}</div>
                     <div className="rst_result_position">{about.address}</div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import Modal_Restaurant from './Modal_Restaurant.js';
-import Item from './Restaurant_Item.js';
+import Item from './Item.js';
 
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
@@ -109,7 +109,7 @@ const Restaurant_list = () => {
                     </Modal_Restaurant>
                 </React.Fragment>
             </div>
-            <Item rlist={currentPosts(restList)}/>
+            <Item rlist={currentPosts(restList)} moveTo="restaurant"/>
             <Pagination
                 postsPerPage={postsPerPage}
                 start={numOfFirst}
