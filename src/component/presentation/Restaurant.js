@@ -2,12 +2,13 @@ import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import SubArea from './SubArea';
-import { serviceKey } from '../API/Key';
+import {serviceKey} from '../API/Key';
 
 import backicon from "../assets/backicon.png";
 
 const Restaurant = () => {
     const [data, setData] = useState();
+    const [area, setArea] = useState("");
     let areaList = [];
 
     const api = (code) => {
@@ -29,8 +30,8 @@ const Restaurant = () => {
     const subArea = (areaCode) => {
         let length = 10;
 
-        for (let key in areaCode){
-          areaList.push(areaCode[key].name)
+        for (let key in areaCode) {
+            areaList.push(areaCode[key].name)
         }
 
         return areaList;
@@ -52,44 +53,49 @@ const Restaurant = () => {
                 <button
                     className="itemList"
                     onClick={() => {
-                        api(1)
+                        api(1);
+                        setArea("서울");
                     }}>서울시</button>
                 <button
                     className="itemList"
                     onClick={() => {
-                        api(2)
+                        api(2);
+                        setArea("인천");
                     }}>인천시</button>
                 <button
                     className="itemList"
                     onClick={() => {
-                        api(3)
+                        api(3);
+                        setArea("대전");
                     }}>대전시</button>
                 <button
                     className="itemList"
                     onClick={() => {
-                        api(4)
+                        api(4);
+                        setArea("대구");
                     }}>대구시</button>
                 <button
                     className="itemList"
                     onClick={() => {
-                        api(5)
+                        api(5);
+                        setArea("광주");
                     }}>광주시</button>
                 <button
                     className="itemList"
                     onClick={() => {
-                        api(6)
+                        api(6);
+                        setArea("부산");
                     }}>부산시</button>
                 <button
                     className="itemList"
                     onClick={() => {
-                        api(39)
+                        api(39);
+                        setArea("제주");
                     }}>제주시</button>
             </div>
             <p className="findingplace">시/군/구</p>
             <div className="containerList2">
-                <SubArea
-                  citylist = {subArea(data)}
-                />
+                <SubArea citylist={subArea(data)} area={area}/>
             </div>
         </div>
     );

@@ -1,17 +1,28 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from "react-router-dom";
-import axios from 'axios';
+import {useHistory} from "react-router-dom";
 
-import backicon from "../assets/backicon.png";
-
-const SubArea = ({citylist}) => {
+const SubArea = ({citylist, area}) => {
+    const history = useHistory();
     const areaBtn = (list) => {
         let tmp = [];
-    
-        for (let i = 0; i < list.length; i++) {
-            tmp.push(<button className="itemList2" key={citylist[i]}>{citylist[i]}</button>)
+
+        const goList = (cityname)=>{
+            history.push({
+                pathname: '/restaurant_list',
+                search: `?sort=${cityname}`,
+                state:{
+                    city:cityname,
+                    area : area
+                }
+            })
         }
-    
+
+        for (let i = 0; i < list.length; i++) {
+            tmp.push(
+                    <button className="itemList2" key={citylist[i]} onClick={()=>goList(citylist[i])}>{citylist[i]}</button>
+            )
+        }
+
         return tmp;
     }
 
