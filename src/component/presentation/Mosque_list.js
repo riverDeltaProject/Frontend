@@ -37,6 +37,10 @@ const Mosque_list = () => {
       numOfLast = 9;
     }
 
+    if(numOfLast > parseInt(mosque.length/6)){
+        numOfLast = parseInt(mosque.length/6)
+    }
+
     return (
         <div>
             <Link to="./"><img className="backicon" src={backicon} alt="backicon"/></Link>

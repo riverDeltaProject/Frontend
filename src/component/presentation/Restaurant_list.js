@@ -12,17 +12,21 @@ import icon_self_certified from "../assets/icon_self_certified.png";
 import {restList} from "../API/rest"
 import Pagination from './Pagination.js';
 
+import Notfound from "../assets/notfound.png"
+
 const Restaurant_list = ({}) => {
+    const location = useLocation();
     const [modalOpen, setModalOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(6);
-    const location = useLocation();
+    const [area, setArea] = useState(location.state.area)
+    const [city, setCity] = useState(location.state.city)
 
-    const userLoc = location.state.area;
-    const subLoc = location.state.city;
+    console.log(location)
+    console.log(location.state)
 
     const locList = restList.filter(
-        key => (key.address.includes(userLoc) && key.address.includes(subLoc))
+        key => (key.address.includes(area) && key.address.includes(city))
     );
 
     const openModal = () => {
@@ -48,7 +52,7 @@ const Restaurant_list = ({}) => {
         numOfFirst = 1;
         if (numOfLast < lastPage) {
             numOfLast = 9;
-        } else{
+        } else {
             numOfLast = lastPage;
         }
     }
@@ -69,7 +73,10 @@ const Restaurant_list = ({}) => {
             </div>
             {
                 (locList.length === 0)
-                    ? <div className="noRes">검색 결과가 존재하지 않습니다.</div>
+                    ? <div className="errorMsg">
+                            <img src={Notfound} className="notFound"/>
+                            <div className="noRes">검색 결과가 존재하지 않습니다.</div>
+                        </div>
                     : <div>
                             <div className="btn_class_list">
                                 <form action="search.php" method="post">
