@@ -50,7 +50,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "경남 창원시 성산구 용지로 74 ",
         "phonenum": "055-263-4111",
-        "runtime": "11:30-22:00(브레이크 타임 15:00-17:00, 주말에는 브레이크 타임 없음)",
+        "runtime": "11:30-22:00(break 15:00-17:00, 주말에는 break 없음)",
         "holiday": "매주 월요일",
         "parking": "O",
         "att": "창원시립마산박물관"
@@ -88,7 +88,7 @@ export const restList =[
         "parking": "O",
         "att": "강남역, 선정릉"
     }, {
-        "name": "패밀리아 (임페리얼팰리스 호텔)",
+        "name": "패밀리아(임페리얼팰리스 호텔)",
         "friendly": "무슬림 프렌들리",
         "area": "서울",
         "foodType": "뷔페식",
@@ -127,7 +127,7 @@ export const restList =[
         "foodType": "중식",
         "address": "서울 중구 소공로 119 더 플라자호텔 3층 ",
         "phonenum": "02-310-7300",
-        "runtime": "11:30-22:00(브레이크 타임 14:30-18:00)",
+        "runtime": "11:30-22:00(break 14:30-18:00)",
         "holiday": "",
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
@@ -182,7 +182,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "서울 중구 명동길 73 ",
         "phonenum": "02-776-0677",
-        "runtime": "11:30-22:00(브레이크 타임 14:30-17:30)",
+        "runtime": "11:30-22:00(break 14:30-17:30)",
         "holiday": "",
         "parking": "O",
         "att": "명동, 청계천"
@@ -204,7 +204,7 @@ export const restList =[
         "foodType": "일식",
         "address": "서울 중구 을지로 30 롯데호텔서울 본관 38층",
         "phonenum": "02-317-7031",
-        "runtime": "11:30~22:00-(브레이크 타임 15:00-~18:00-)",
+        "runtime": "11:30~22:00-(break 15:00-~18:00-)",
         "holiday": "",
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
@@ -226,7 +226,7 @@ export const restList =[
         "foodType": "한식",
         "address": "서울 중구 을지로 30 롯데호텔서울 본관 38층",
         "phonenum": "02-317-7061",
-        "runtime": "11:30-22:00(브레이크 타임 14:30-18:00)",
+        "runtime": "11:30-22:00(break 14:30-18:00)",
         "holiday": "",
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
@@ -237,7 +237,7 @@ export const restList =[
         "foodType": "중식",
         "address": "서울 중구 을지로 30 롯데호텔서울 본관 37층",
         "phonenum": "02-317-7101",
-        "runtime": "11:30-22:00(브레이크 타임 14:30-18:00)",
+        "runtime": "11:30-22:00(break 14:30-18:00)",
         "holiday": "",
         "parking": "O",
         "att": "덕수궁, 청계천, 명동"
@@ -391,7 +391,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "서울 성북구 인촌로24길 27 ",
         "phonenum": "02-921-9982",
-        "runtime": "11:00-21:30(브레이크 타임 16:00-17:00)",
+        "runtime": "11:00-21:30(break 16:00-17:00)",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "세종대왕기념관, 서울 정릉"
@@ -402,7 +402,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "서울 동대문구 회기로19길 23 ",
         "phonenum": "02-968-9982",
-        "runtime": "11:00-~21:30(브레이크 타임 16:00-~17:00-)",
+        "runtime": "11:00-~21:30(break 16:00-~17:00-)",
         "holiday": "연중무휴",
         "parking": "X",
         "att": "세종대왕기념관, 홍릉수목원"
@@ -413,7 +413,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "서울 구로구 디지털로32길 79 ",
         "phonenum": "02-863-9982",
-        "runtime": "11:00-21:30(브레이크 타임 16:00-17:00, 주말에는 브레이크 타임 없음)",
+        "runtime": "11:00-21:30(break 16:00-17:00, 주말에는 break 없음)",
         "holiday": "명절 연휴",
         "parking": "O",
         "att": "보라매공원"
@@ -468,7 +468,7 @@ export const restList =[
         "foodType": "한식",
         "address": "서울 강남구 역삼로98길 23 ",
         "phonenum": "02-555-9173",
-        "runtime": "11:30-20:30(브레이크 타임 14:30-17:30)",
+        "runtime": "11:30-20:30(break 14:30-17:30)",
         "holiday": "명절",
         "parking": "O",
         "att": "봉은사, 코엑스, 선정릉"
@@ -490,7 +490,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "서울 강남구 삼성로100길 15 ",
         "phonenum": "02-562-7992",
-        "runtime": "주중(월-금요일) 10:30-22:00(브레이크 타임 15:00-17:00), 주말(토-일요일) 12:00-21:30",
+        "runtime": "주중(월-금요일) 10:30-22:00(break 15:00-17:00), 주말(토-일요일) 12:00-21:30",
         "holiday": "",
         "parking": "O",
         "att": "봉은사, 코엑스, 선정릉"
@@ -534,7 +534,7 @@ export const restList =[
         "foodType": "한식",
         "address": "서울 종로구 인사동12길 14-5 ",
         "phonenum": "02-735-7171",
-        "runtime": "11:30-21:00(브레이크 타임 15:00-17:00)",
+        "runtime": "11:30-21:00(break 15:00-17:00)",
         "holiday": "",
         "parking": "X",
         "att": "북촌한옥마을, 인사동"
@@ -622,7 +622,7 @@ export const restList =[
         "foodType": "한식",
         "address": "서울 마포구 월드컵북로1길 50 ",
         "phonenum": "02-334-5787",
-        "runtime": "11:00-22:00(브레이크 타임 15:00-17:00)",
+        "runtime": "11:00-22:00(break 15:00-17:00)",
         "holiday": "매주 일요일",
         "parking": "O",
         "att": "홍대, 선유도공원"
@@ -776,7 +776,7 @@ export const restList =[
         "foodType": "한식(사찰음식)",
         "address": "서울 종로구 우정국로 56 ",
         "phonenum": "02-733-2081",
-        "runtime": "11:30-22:00(브레이크 타임 15:00-22:00)",
+        "runtime": "11:30-22:00(break 15:00-22:00)",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "덕수궁, 청계천, 인사동"
@@ -952,7 +952,7 @@ export const restList =[
         "foodType": "한식",
         "address": "제주특별자치도 서귀포시 안덕면 창천중앙로24번길 16 춘심이네",
         "phonenum": "064-794-4010",
-        "runtime": "10:00~20:00, 브레이크타임 15:30~17:00",
+        "runtime": "10:00~20:00, break 15:30~17:00",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "용머리해안, 안덕계곡, 산방산"
@@ -974,7 +974,7 @@ export const restList =[
         "foodType": "일식",
         "address": "서울 종로구 새문안로5가길 7 3층",
         "phonenum": "189-949-4902",
-        "runtime": "10:30~22:00, 브레이크타임 15:00~17:00",
+        "runtime": "10:30~22:00, break 15:00~17:00",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "경복궁, 청와대 사랑채, 서촌마을"
@@ -1029,7 +1029,7 @@ export const restList =[
         "foodType": "일식",
         "address": "울산 남구 화합로 178 2층",
         "phonenum": "052-269-8634",
-        "runtime": "11:30-22:30, 브레이크타임 14:30-16:30",
+        "runtime": "11:30-22:30, break 14:30-16:30",
         "holiday": "명절",
         "parking": "O",
         "att": "태화강 대공원, 울산대공원, 장생포 고래생태체험관"
@@ -1051,7 +1051,7 @@ export const restList =[
         "foodType": "",
         "address": "울산 동구 방어진순환도로 652 테라스파크 B동 3층",
         "phonenum": "052-251-5010",
-        "runtime": "11:30-22:00, 브레이크타임 15:00-17:30",
+        "runtime": "11:30-22:00, break 15:00-17:30",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "방어진항, 대왕암공원, 울기등대"
@@ -1106,7 +1106,7 @@ export const restList =[
         "foodType": "",
         "address": "울산 동구 방어진순환도로 621 2층 샬리마 레스토랑",
         "phonenum": "052-233-0533",
-        "runtime": "11:00-22:00, 브레이크타임 14:00-17:00",
+        "runtime": "11:00-22:00, break 14:00-17:00",
         "holiday": "연중무휴",
         "parking": "X",
         "att": "방어진항, 대왕암공원, 울기등대"
@@ -1161,7 +1161,7 @@ export const restList =[
         "foodType": "",
         "address": "경남 창원시 성산구 용지로 75 전원상가 3층 305호",
         "phonenum": "055-275-5043",
-        "runtime": "11:00-22:00, 브레이크타임 15:00-17:00",
+        "runtime": "11:00-22:00, break 15:00-17:00",
         "holiday": "명절 당일",
         "parking": "O",
         "att": "용지호수공원, 장복산하늘마루길, 메타세콰이어아 가로수길"
@@ -1249,7 +1249,7 @@ export const restList =[
         "foodType": "한식",
         "address": "경기 과천시 죽바위로 37-24 1층 ",
         "phonenum": "02-502-8858",
-        "runtime": "12:00-20:30, 브레이크타임 14:30-18:00",
+        "runtime": "12:00-20:30, break 14:30-18:00",
         "holiday": "매주 월요일",
         "parking": "O",
         "att": "국립현대미술관 과천관, 서울랜드, 렛츠런파크 서울"
@@ -1304,7 +1304,7 @@ export const restList =[
         "foodType": "일식,한식",
         "address": "전북 군산시 비응안7길 13 새만금횟집",
         "phonenum": "063-464-1000",
-        "runtime": "11:00-22:00, 브레이크타임 15:00-17:00",
+        "runtime": "11:00-22:00, break 15:00-17:00",
         "holiday": "명절",
         "parking": "X",
         "att": "새만금방조제, 신시도 어촌체험마을, 선유도"
@@ -1469,7 +1469,7 @@ export const restList =[
         "foodType": "일식",
         "address": "전북 군산시 미원3길 13 ",
         "phonenum": "063-446-4613",
-        "runtime": "11:00-21:30, 브레이크타임 14:30-17:00",
+        "runtime": "11:00-21:30, break 14:30-17:00",
         "holiday": "명절",
         "parking": "O",
         "att": "군산근대역사박물관, 진포해양테마공원, 경암동철길마을"
@@ -1579,7 +1579,7 @@ export const restList =[
         "foodType": "한식",
         "address": "제주특별자치도 제주시 도남로16길 15 재영샤르빌 상가 101호",
         "phonenum": "064-753-3030",
-        "runtime": "09:00-21:00, 브레이크 타임 16:00-17:00",
+        "runtime": "09:00-21:00, break 16:00-17:00",
         "holiday": "2, 4주 수요일",
         "parking": "X",
         "att": "용두암, 이호테우해변, 삼성혈"
@@ -1678,7 +1678,7 @@ export const restList =[
         "foodType": "",
         "address": "경남 창원시 성산구 용지로 74 전원상가2층",
         "phonenum": "055-268-5342",
-        "runtime": "11:30-22:00, 브레이크타임(월~금) 15:00-17:00",
+        "runtime": "11:30-22:00, break(월~금) 15:00-17:00",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "경화역 벚꽃길, 진해군항마을역사길, 주남저수지 철새도래지"
@@ -1975,7 +1975,7 @@ export const restList =[
         "foodType": "",
         "address": "경기 화성시 노작로4길 18-15 1층 수엠부",
         "phonenum": "031-8015-2494",
-        "runtime": "11:00~21:00, 브레이크타임 15:00~17:00",
+        "runtime": "11:00~21:00, break 15:00~17:00",
         "holiday": "",
         "parking": "O",
         "att": "반석사 근린공원, 동탄 센트럴파크, 동탄 여울공원"
@@ -2030,7 +2030,7 @@ export const restList =[
         "foodType": "한식",
         "address": "강원 원주시 고문골길 47 운채 첫번째 이야기",
         "phonenum": "033-747-1993",
-        "runtime": "11:10~20:40, 브레이크타임 주중 15:30~16:30, 주말 16:00~17:00, 월요일",
+        "runtime": "11:10~20:40, break 주중 15:30~16:30, 주말 16:00~17:00, 월요일",
         "holiday": "매주 월요일, 명절",
         "parking": "O",
         "att": "관음사, 치악산, 행구수변공원"
@@ -2173,7 +2173,7 @@ export const restList =[
         "foodType": "",
         "address": "서울 강남구 봉은사로 524 인터컨티넨탈 서울 코엑스 2층",
         "phonenum": "02-3430-8620",
-        "runtime": "11:30~22:00, 브레이크 타임 14:30~17:30",
+        "runtime": "11:30~22:00, break 14:30~17:30",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "스타필드 코엑스몰, 코엑스 아쿠아리움, 봉은사"
@@ -2338,7 +2338,7 @@ export const restList =[
         "foodType": "한식",
         "address": "부산 수영구 광안해변로370번길 9-32 9층",
         "phonenum": "070-4177-5555",
-        "runtime": "오전11:30~오후9:00 (브레이크타임 오후3시~5시)",
+        "runtime": "오전11:30~오후9:00 (break 오후3시~5시)",
         "holiday": "",
         "parking": "X",
         "att": "광안리해수욕장, 해운대해수욕장, 백스코, 민락공원, 동백공원"
@@ -2371,7 +2371,7 @@ export const restList =[
         "foodType": "한식",
         "address": "부산 부산진구 성지곡로51번길 4 ",
         "phonenum": "051-504-7733",
-        "runtime": "오후12시~오후9:30(브레이크타임 오후3~5시)",
+        "runtime": "오후12시~오후9:30(break 오후3~5시)",
         "holiday": "",
         "parking": "O",
         "att": "부산시민공원, 삼정더파크(동물원), 사직구장"
@@ -2602,7 +2602,7 @@ export const restList =[
         "foodType": "한식",
         "address": "부산 강서구 명지오션시티1로 173 3층 산골애",
         "phonenum": "051-292-5599",
-        "runtime": "오전 11:30~22:00(평일만 오후3시부터 오후 5시까지 브레이크타임)",
+        "runtime": "오전 11:30~22:00(평일만 오후3시부터 오후 5시까지 break)",
         "holiday": "",
         "parking": "O",
         "att": "대저생태공원, 현대미술관, 스타필드, 을숙도 생태공원"
@@ -2712,7 +2712,7 @@ export const restList =[
         "foodType": "터키음식",
         "address": "경북 포항시 남구 대이로83번길 9-3 1층 안탈리아",
         "phonenum": "054-777-3001",
-        "runtime": "오전11시~오후10시 (오후3시~5시 브레이크타임)",
+        "runtime": "오전11시~오후10시 (오후3시~5시 break)",
         "holiday": "매주 일요일",
         "parking": "O",
         "att": "형성강 크루즈, 중명자연생태공원, 포스코 역사관"
@@ -2877,7 +2877,7 @@ export const restList =[
         "foodType": "일식",
         "address": "경기 구리시 안골로 91 기꾸초밥",
         "phonenum": "031-551-0667",
-        "runtime": "오전12:00~오후4:30, 오후4:30 ~ 오후5:00(브레이크타임), 오후5:00~오후10:30, 라스트오더 오후10:00",
+        "runtime": "오전12:00~오후4:30, 오후4:30 ~ 오후5:00(break), 오후5:00~오후10:30, 라스트오더 오후10:00",
         "holiday": "",
         "parking": "X",
         "att": "동구릉, 구리한강 시민공원,"
@@ -3108,7 +3108,7 @@ export const restList =[
         "foodType": "일식",
         "address": "서울 마포구 공덕동 467 지2층롯데캐슬B204호",
         "phonenum": "02-701-7233",
-        "runtime": "오전11시~오후10시(브레이크타임 오후3시~4시50분)",
+        "runtime": "오전11시~오후10시(break 오후3시~4시50분)",
         "holiday": "매주 일요일",
         "parking": "O",
         "att": "국회의사당, 효창공원, 서울역, 용산전자상가, 이촌한강공원, 홍대거리"
@@ -3119,7 +3119,7 @@ export const restList =[
         "foodType": "일식",
         "address": "서울 마포구 동교로 213 1층(동교동)",
         "phonenum": "02-324-4848",
-        "runtime": "오후12시~밤12시(브레이크타임 오후3시~4시30분)",
+        "runtime": "오후12시~밤12시(break 오후3시~4시30분)",
         "holiday": "명절",
         "parking": "O",
         "att": "홍대입구, 상암월드컵경기장, 평화의공원(갈대축제), 선유도공원"
@@ -3141,7 +3141,7 @@ export const restList =[
         "foodType": "한식",
         "address": "경남 거제시 서문로 70 삼성빌딩2 층",
         "phonenum": "055-632-8877",
-        "runtime": "오전11시~오후10시 (오후3시~5시 브레이크타임)",
+        "runtime": "오전11시~오후10시 (오후3시~5시 break)",
         "holiday": "",
         "parking": "X",
         "att": "거제 바람의언덕, 포로수용수"
@@ -3152,7 +3152,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "경남 창원시 마산회원구 합성동 85-5 85-5  ",
         "phonenum": "055-242-1947",
-        "runtime": "오전 11시30분~오후 10시 (3시-5시 브레이크타임)",
+        "runtime": "오전 11시30분~오후 10시 (3시-5시 break)",
         "holiday": "2, 4주 화요일",
         "parking": "O",
         "att": "마산국화축제지, 마산돛섬, 마산야구장"
@@ -3339,7 +3339,7 @@ export const restList =[
         "foodType": "한식",
         "address": "경기 수원시 팔달구 인계동 954-2 오리대가",
         "phonenum": "050-713-9352",
-        "runtime": "11:30~21:30 (브레이크타임 15:00~17:00)",
+        "runtime": "11:30~21:30 (break 15:00~17:00)",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "지동시장 순대타운, 수원화성박물관, 효원공원"
@@ -3438,7 +3438,7 @@ export const restList =[
         "foodType": "한식",
         "address": "서울 중구 남대문로1길 26-10 1층 오후청",
         "phonenum": "02-777-0342",
-        "runtime": "11:00~21:30 (브레이크 타임 15:00~17:00)",
+        "runtime": "11:00~21:30 (break 15:00~17:00)",
         "holiday": "매주 일요일 및 명절 휴무",
         "parking": "O",
         "att": "남대문시장, 한국은행 화폐박물관, 덕수궁"
@@ -3504,7 +3504,7 @@ export const restList =[
         "foodType": "한식",
         "address": "서울시 종로구 인사동길 34-1 ",
         "phonenum": "02-735-9929",
-        "runtime": "11:30~21:30 (브레이크 타임 평일 15:00~17:00)",
+        "runtime": "11:30~21:30 (break 평일 15:00~17:00)",
         "holiday": "매주 일요일",
         "parking": "X",
         "att": "인사동, 운현궁, 조계사"
@@ -3581,7 +3581,7 @@ export const restList =[
         "foodType": "인도음식,네팔음식",
         "address": "서울시 중구 을지로6가 18-71 4층 ",
         "phonenum": "02-2274-2922",
-        "runtime": "11:00~23:00(브레이크 타임 평일 15:00~17:00)",
+        "runtime": "11:00~23:00(break 평일 15:00~17:00)",
         "holiday": "",
         "parking": "X",
         "att": "DDP, 흥인지문, 두타"
@@ -3658,7 +3658,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "서울시 용산구 우사단로10길 21 ",
         "phonenum": "02-793-5416",
-        "runtime": "11:00~21:30 (브레이크 타임 15:00~16:30)",
+        "runtime": "11:00~21:30 (break 15:00~16:30)",
         "holiday": "",
         "parking": "X",
         "att": "전쟁기념관, 경리단길, 남산야외식물원"
@@ -3702,7 +3702,7 @@ export const restList =[
         "foodType": "인도음식",
         "address": "울산 남구 삼산중로74번길 30-1 삼산동 1524-6",
         "phonenum": "052-260-7828",
-        "runtime": "10:30~22:00 (브레이크 타임 15:00~17:00)",
+        "runtime": "10:30~22:00 (break 15:00~17:00)",
         "holiday": "연중무휴",
         "parking": "O",
         "att": "태화강국가정원, 울산대교전망대, 울산대공원"
@@ -3768,7 +3768,7 @@ export const restList =[
         "foodType": "아랍음식",
         "address": "제주특별자치도 제주시 중앙로2길 7 1층 아살람",
         "phonenum": "064-751-1225",
-        "runtime": "12:00~22:00 (브레이크 타임 15:00~17:00)",
+        "runtime": "12:00~22:00 (break 15:00~17:00)",
         "holiday": "매주 목요일",
         "parking": "O",
         "att": "관덕정, 용두암, 삼성혈"

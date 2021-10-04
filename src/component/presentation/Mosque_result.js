@@ -59,17 +59,20 @@ const Mosque_result = () => {
             <div className="mosque_result_prom"/>
             <div className="rst_result_cell">
                 <div>
-                    <div id="mosqueTitle">
+                    <div className="Title">
                         <div className="rst_result_name">{about.name}</div>
                         <div className="subInfo">모스크</div>
                     </div>
-                    <div className="infoItem">
-                        <div>국적</div>
-                        <div>{about.nation}</div>
-                    </div>
-                    <div className="infoItem">
-                        <div>주소</div>
-                        <div>{about.address}</div>
+
+                    <div className="Items">
+                        <div className="infoItem">
+                            <div>국적</div>
+                            <div>{about.nation}</div>
+                        </div>
+                        <div className="infoItem">
+                            <div>주소</div>
+                            <div>{about.address}</div>
+                        </div>
                     </div>
                 </div>
             </div>

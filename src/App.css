@@ -455,7 +455,7 @@ html {
 .rst_result_position ,.infoItem>*{
   padding: 0 1rem;
   font-size: 1.6rem;
-  margin : 0 0 1rem 0 ;
+  margin : 0 0 1.5rem 0;
 }
 
 .infoItem *:first-child{
@@ -881,12 +881,12 @@ html {
   border-radius: 30px;
 }
 
-#mosqueTitle{
+.Title{
   text-align: center;
   margin: 2rem;
 }
 
-#mosqueTitle *{
+.Title *{
   display: inline;
 }
 
@@ -897,13 +897,14 @@ html {
 }
 
 .infoItem{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  width: 95%;
+  grid-template-columns: 3fr 5fr;
 }
 
 .infoItem * {
   display: inline;
+  min-width: 10%;
 }
 
 /* pagination */
@@ -936,4 +937,26 @@ a{
 .noRes{
   font-size: 2rem;
   text-align: center;
+}
+
+.notFound{
+  width:8rem;
+  height: auto;
+  margin:3rem;
+}
+
+.errorMsg{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Items{
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
 }

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Route, Link, useHistory} from 'react-router-dom';
 
-function Restaurant_Item({rlist, moveTo}) {
+function Restaurant_Item({rlist, moveTo, setArea, setCity}) {
     const history = useHistory();
     const [rstData, setResData] = useState([]);
     const [linkName, setLinkName] = useState("");
@@ -9,14 +9,13 @@ function Restaurant_Item({rlist, moveTo}) {
 
     const goDetail = (rkey) => {
         const data = rlist[rkey];
-        const link = rlist[rkey].name;
 
-        setResData(data);
-        setLinkName(link);
+        setResData(rlist[rkey]);
+        setLinkName(rlist[rkey].name);
 
         history.push({
             pathname: `/${moveTo}_result`,
-            search: `?sort=${link}`,
+            search: `?sort=${linkName}`,
             state: {
                 data: data
             }
