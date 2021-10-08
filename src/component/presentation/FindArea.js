@@ -1,14 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import {Link} from "react-router-dom";
+import React, {useState} from 'react';
+import {Link, useLocation, useHistory} from "react-router-dom";
 import axios from 'axios';
 import SubArea from './SubArea';
 import {serviceKey} from '../API/Key';
 
 import backicon from "../assets/backicon.png";
 
-const Restaurant = () => {
+const FindArea = () => {
+    const history = useHistory();
+    const location = useLocation();
     const [data, setData] = useState();
     const [area, setArea] = useState("");
+    let moveTo = location.state.moveTo;
     let areaList = [];
 
     const api = (code) => {
@@ -28,8 +31,6 @@ const Restaurant = () => {
     }
 
     const subArea = (areaCode) => {
-        let length = 10;
-
         for (let key in areaCode) {
             areaList.push(areaCode[key].name)
         }
@@ -95,10 +96,10 @@ const Restaurant = () => {
             </div>
             <p className="findingplace">시/군/구</p>
             <div className="containerList2">
-                <SubArea citylist={subArea(data)} area={area}/>
+                <SubArea citylist={subArea(data)} area={area} moveTo={moveTo}/>
             </div>
         </div>
     );
 };
 
-export default Restaurant;
+export default FindArea;

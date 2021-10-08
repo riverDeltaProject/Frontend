@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {Route, Link, useHistory} from 'react-router-dom';
+import React, {useState} from 'react';
+import {useHistory} from 'react-router-dom';
 
-function Restaurant_Item({rlist, moveTo, setArea, setCity}) {
+function Item({rlist, moveTo, area, city}) {
     const history = useHistory();
     const [rstData, setResData] = useState([]);
     const [linkName, setLinkName] = useState("");
@@ -17,7 +17,10 @@ function Restaurant_Item({rlist, moveTo, setArea, setCity}) {
             pathname: `/${moveTo}_result`,
             search: `?sort=${linkName}`,
             state: {
-                data: data
+                data : data,
+                area : area,
+                city : city,
+                moveTo : moveTo
             }
         })
     }
@@ -42,4 +45,4 @@ function Restaurant_Item({rlist, moveTo, setArea, setCity}) {
     </div>);
 }
 
-export default Restaurant_Item;
+export default Item;

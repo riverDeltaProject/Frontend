@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, useLocation} from "react-router-dom";
+import {useLocation, useHistory} from "react-router-dom";
 import Modal_Restaurant from './Modal_Restaurant.js';
 import Item from './Item.js';
 import backicon from "../assets/backicon.png";
@@ -14,16 +14,14 @@ import Pagination from './Pagination.js';
 
 import Notfound from "../assets/notfound.png"
 
-const Restaurant_list = ({}) => {
+const Restaurant_list = () => {
+    const history = useHistory();
     const location = useLocation();
     const [modalOpen, setModalOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(6);
-    const [area, setArea] = useState(location.state.area)
-    const [city, setCity] = useState(location.state.city)
-
-    console.log(location)
-    console.log(location.state)
+    const [postsPerPage] = useState(6);
+    const [area] = useState(location.state.area)
+    const [city] = useState(location.state.city)
 
     const locList = restList.filter(
         key => (key.address.includes(area) && key.address.includes(city))
@@ -57,9 +55,18 @@ const Restaurant_list = ({}) => {
         }
     }
 
+    const goSearch=()=>{
+      history.push({
+        pathname:`./searchArea`,
+        state:{
+          moveTo : location.state.moveTo
+        }
+      })
+    }
+
     return (
         <div>
-            <Link to="./restaurant"><img className="backicon" src={backicon} alt="backicon"/></Link>
+            <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
             <h1 className="header2">식당</h1>
             <div className="restaurant_promotion">
                 <div className="promotion_text">
@@ -132,9 +139,8 @@ const Restaurant_list = ({}) => {
                                     </Modal_Restaurant>
                                 </React.Fragment>
                             </div>
-                            <Item rlist={currentPosts(locList)} moveTo="restaurant"></Item>
+                            <Item rlist={currentPosts(locList)} moveTo="restaurant" area={area} city={city}></Item>
                             <Pagination
-                                postsPerPage={postsPerPage}
                                 start={numOfFirst}
                                 last={numOfLast}
                                 paginate={setCurrentPage}></Pagination>
