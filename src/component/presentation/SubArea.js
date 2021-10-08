@@ -3,6 +3,8 @@ import {useHistory} from "react-router-dom";
 
 const SubArea = ({citylist, area, moveTo}) => {
     const history = useHistory();
+
+    console.log(citylist)
     const areaBtn = (list) => {
         let tmp = [];
 
