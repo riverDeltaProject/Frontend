@@ -395,8 +395,19 @@ html {
   border: solid gray 1px;
 }
 
-
 .itemList2, .itemList{
+  cursor: pointer;
+}
+
+
+.itemList3 {
+  width: 7rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 30px;
+  border: solid gray 1px;
   cursor: pointer;
 }
 

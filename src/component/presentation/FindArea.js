@@ -24,7 +24,7 @@ const FindArea = () => {
                 const areaCode = res.data.response.body.items.item;
                 // areaCode는 즉각적인 반응이 잘 일어나는 데 비해 useState를 이용한 data는 항상 한발짝 느리다. 왜 그럴까? 이번
                 // 렌더링에서 setData로 값을 설정하고, 그 다음 렌더링에서 해당 값이 반영되기 때문
-
+                console.log(res.data.response)
                 setData(areaCode);
                 subArea(areaCode);
             })
