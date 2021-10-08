@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {Link, useLocation} from "react-router-dom";
+import {useLocation, useHistory} from "react-router-dom";
 
 import backicon from "../assets/backicon.png";
 
@@ -13,10 +13,16 @@ const options = {
 }
 
 const Restaurant_result = () => {
+    const history = useHistory();
     const location = useLocation();
     const container = useRef(null);
 
-    const about = location.state.data;
+    const beforeState = location.state;
+
+    const about = beforeState.data;
+    const area = beforeState.area;
+    const city = beforeState.city;
+    const moveTo = beforeState.moveTo;
     
     useEffect(() => {
         const map = new window
@@ -50,9 +56,21 @@ const Restaurant_result = () => {
         return() => {};
     }, [])
 
+    const goBack = ()=>{
+        history.push({
+            pathname:`/restaurant_list`,
+            search:`?sort=${location.state.city}`,
+            state:{
+                area:area,
+                city:city,
+                moveTo:moveTo
+            }
+        })
+    }
+
     return (
         <div>
-            <Link to="./restaurant_list"><img className="backicon" src={backicon} alt="backicon"/></Link>
+            <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
             <div className="rst_result_prom"/>
             <div className="rst_result_cell">
                 <div>

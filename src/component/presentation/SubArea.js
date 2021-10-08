@@ -1,18 +1,19 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {useHistory} from "react-router-dom";
 
-const SubArea = ({citylist, area}) => {
+const SubArea = ({citylist, area, moveTo}) => {
     const history = useHistory();
     const areaBtn = (list) => {
         let tmp = [];
 
         const goList = (cityname)=>{
             history.push({
-                pathname: '/restaurant_list',
+                pathname: `/${moveTo}_list`,
                 search: `?sort=${cityname}`,
                 state:{
                     city:cityname,
-                    area : area
+                    area : area,
+                    moveTo:moveTo
                 }
             })
         }
