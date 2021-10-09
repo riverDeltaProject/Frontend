@@ -62,11 +62,19 @@ const Mosque_list = () => {
                         <div className="placetype">
                             <div>
                                 <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                <p>모스크</p>
+                                <p>성원</p>
                             </div>
                             <div>
                                 <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
                                 <p>기도실</p>
+                            </div>
+                            <div>
+                                <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                <p>예배소</p>
+                            </div>
+                            <div>
+                                <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                <p>기도처</p>
                             </div>
                         </div>
                     </Modal_Mosque>
