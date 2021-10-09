@@ -24,7 +24,7 @@ function Item({rlist, moveTo, area, city}) {
             }
         })
     }
-
+    
     for (let rkey in rlist) {
         rlist_tmp.push(
             <div  key={rkey} className="rst_list_cell" onClick={() => goDetail(rkey)}>

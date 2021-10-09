@@ -22,6 +22,7 @@ const Restaurant_list = () => {
     const [postsPerPage] = useState(6);
     const [area] = useState(location.state.area)
     const [city] = useState(location.state.city)
+    const [optionList, setOption] = useState([])
 
     // 지역에 맞게 리스트 추려내기
     const locList = restList.filter(
@@ -31,11 +32,13 @@ const Restaurant_list = () => {
     const openModal = () => {
         setModalOpen(true);
     }
+
     const closeModal = () => {
+        setOption([])
         setModalOpen(false);
     }
 
-    // Pagination
+    // const changeList = (list(optionList)) Pagination
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
@@ -67,9 +70,9 @@ const Restaurant_list = () => {
         })
     }
 
-    // 필터
+    // 필터 후에 여러 개 추가 만들기
     let target;
-    let foodList = [[], []]
+    let foodList = [[], []];
     const sel_Food = (e) => {
         if (e.target.tagName === "BUTTON") {
             target = e.target.innerText;
@@ -79,31 +82,30 @@ const Restaurant_list = () => {
             target = e.target.parentNode.nextSibling.innerText;
             foodList[1] = target
         }
-        console.log(list(foodList))
+
+        setOption(foodList);
     }
 
     //필터에 선택한 항목대로 리스트 만들기
     const list = (foodList) => {
-        let result = [];
+        let result = locList;
 
-        if (foodList[0].length === 1) {
-            result = locList.filter(key => key.foodType.includes(foodList[0][0]))
-        }
-        else{
-            result = [];
-            for(let i = 0; i<foodList[0].length; i++){
-                let tmp = locList.filter(key => key.foodType.includes(foodList[0][i]))
-                result.push(...tmp)
-            }
-        }
+        if (foodList.length === 0) {
+            return
+        } else {
+            // result = locList.filter(key => key.foodType.includes(foodList[0][0]))
 
-        if (foodList[1].length != 0) {
-            console.log("Enter");
-            result = result.filter(key => key.friendly.includes(foodList[1]))
-        }
+            // if (foodList[1].length != 0) {
+            //     console.log("Entered!")
+            //     result = result.filter(key => key.friendly.includes(foodList[1]))
+            // }
+            result = result.filter(key => key.foodType.includes(foodList[0][0]))
 
-        return result
+            return result
+        }
     }
+
+    console.log(list(optionList))
 
     return (
         <div>
