@@ -12,7 +12,7 @@ import mosqueicon from "../assets/mosqueicon.png";
 const Mosque_list = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(6);
-
+    const [option, setOption] = useState("");
     const [modalOpen, setModalOpen] = useState(false);
 
     const openModal = () => {
@@ -21,7 +21,7 @@ const Mosque_list = () => {
     const closeModal = () => {
         setModalOpen(false);
     }
-    
+
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
@@ -32,14 +32,39 @@ const Mosque_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
-    if(numOfFirst<=0){
-      numOfFirst = 1;
-      numOfLast = 9;
+    if (numOfFirst <= 0) {
+        numOfFirst = 1;
+        numOfLast = 9;
     }
 
-    if(numOfLast > parseInt(mosque.length/6)){
-        numOfLast = parseInt(mosque.length/6)
+    if (numOfLast > parseInt(mosque.length / 6)) {
+        numOfLast = parseInt(mosque.length / 6)
     }
+
+    // 필터
+    let target;
+    let mosqType = "";
+    const sel_mosq = (e) => {
+
+        target = e.target.parentNode.nextSibling.innerText;
+        mosqType = target
+
+        setOption(mosqType);
+    }
+
+    const makList = () =>{
+        let result = mosque;
+
+        if (option === ""){
+            return
+        } else {
+            result = result.filter(key => key.type.includes(option))
+            console.log(result)
+            return result
+        }
+    }
+
+    console.log(makList())
 
     return (
         <div>
@@ -61,19 +86,19 @@ const Mosque_list = () => {
                     <Modal_Mosque open={modalOpen} close={closeModal} header="필터">
                         <div className="placetype">
                             <div>
-                                <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
                                 <p>성원</p>
                             </div>
                             <div>
-                                <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
                                 <p>기도실</p>
                             </div>
                             <div>
-                                <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
                                 <p>예배소</p>
                             </div>
                             <div>
-                                <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
                                 <p>기도처</p>
                             </div>
                         </div>

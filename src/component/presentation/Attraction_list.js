@@ -11,30 +11,26 @@ import icon_att_leports from "../assets/icon_att_leports.png";
 import icon_att_culture from "../assets/icon_att_culture.png";
 import icon_att_shop from "../assets/icon_att_shop.png";
 import icon_att_stay from "../assets/icon_att_stay.png";
-import {serviceKey} from '../API/Key';
+import {attList} from "../API/attList.js"
+import Item from './Item.js';
 import axios from 'axios';
 
 const Attraction_list = () => {
     const history = useHistory();
     const location = useLocation();
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
     const [area, setArea] = useState("");
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(6);
+
     let moveTo = location.state.moveTo;
-    let areaList = [];
-    let areaCode = 1;
 
-    useEffect(() => {
-        const areaCode = 1;
-        const cityCode = 1;
-        const url = `http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=15&areaCode=${areaCode}&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`;
+    useEffect(()=>{
+        // let abortController = new AbortController()
 
-        axios
-            .get(url)
-            .then((res) => {
-                console.log(res.data.response)
-                const areaCode = res.data.response.body.items.item;
-                setData(areaCode);
-            })
+        // return ()=>{
+        //     abortController.abort()
+        // }
     })
 
     const [modalOpen, setModalOpen] = useState(false);
@@ -46,6 +42,8 @@ const Attraction_list = () => {
         setModalOpen(false);
     }
 
+    const locList = attList(1, 1).then(res => setData(res))
+
     // 뒤로 돌아가기 버튼
     const goSearch = () => {
         history.push({
@@ -55,6 +53,27 @@ const Attraction_list = () => {
             }
         })
     }
+
+    // const indexOfLast = currentPage * postsPerPage;
+    // const indexOfFirst = indexOfLast - postsPerPage;
+
+    // const currentPosts = (tmp) => {
+    //     return tmp.slice(indexOfFirst, indexOfLast);
+    // }
+
+    // let numOfFirst = currentPage - 4;
+    // let numOfLast = currentPage + 4;
+
+    // let lastPage = parseInt(locList.length / 6) + 1;
+
+    // if (numOfFirst <= 0) {
+    //     numOfFirst = 1;
+    //     if (numOfLast < lastPage) {
+    //         numOfLast = 9;
+    //     } else {
+    //         numOfLast = lastPage;
+    //     }
+    // }
 
     return (
         <div>
@@ -107,6 +126,7 @@ const Attraction_list = () => {
                     </Modal_Attraction>
                 </React.Fragment>
             </div>
+            {/* <Item rlist={currentPosts(data)} moveTo={moveTo} area={area} city={"강남"}></Item> */}
         </div>
     );
 };
