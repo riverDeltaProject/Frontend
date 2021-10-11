@@ -59,7 +59,6 @@ const Mosque_list = () => {
             return
         } else {
             result = result.filter(key => key.type.includes(option))
-            console.log(result)
             return result
         }
     }
