@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
 import { Link } from "react-router-dom";
-import Modal_Mosque from './Modal_Mosque.js';
 import Mosque_list_axios from './Mosque_list_axios.js';
 
 import backicon from "../assets/backicon.png";
 import icon_filter from "../assets/icon_filter.png"
 import mosqueicon from "../assets/mosqueicon.png";
+
+import icon_reset from "../assets/icon_reset.png";
 
 const Mosque_list = () => {
 
@@ -35,18 +36,33 @@ const Mosque_list = () => {
        </form>
        <React.Fragment>
             <button className="button_filter" onClick={ openModal }><img className="icon_filter" src={icon_filter} alt="icon_filter" /></button>
-            <Modal_Mosque open={ modalOpen } close={ closeModal } header="필터">
-              <div className="placetype">
-                <div>
-                 <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon" /></button>
-                 <p>모스크</p>
-                </div>
-                <div>
-                 <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon" /></button>
-                 <p>기도실</p>
-                </div>
-              </div>
-            </Modal_Mosque>
+
+            <div className={ modalOpen ? 'openModal modal' : 'modal' }>
+            { modalOpen ? (
+                <section>
+                    <header>
+                        <img className="icon_reset" src={icon_reset} alt="icon_reset" />
+                        <p className="header_modal_mosque">필터</p>
+                    </header>
+                    <main>
+                      <div className="placetype">
+                        <div>
+                          <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon" /></button>
+                          <p>모스크</p>
+                        </div>
+                        <div>
+                          <button><img className="icon_mosque" src={mosqueicon} alt="mosqueicon" /></button>
+                          <p>기도실</p>
+                        </div>
+                      </div>
+                    </main>
+                    <footer className="footer_modal_mosque">
+                        <button className="close" onClick={closeModal}> 취소 </button>
+                        <button className="close" onClick={closeModal}> 적용 </button>
+                    </footer>
+                </section>
+            ) : null }
+        </div>
         </React.Fragment>
       </div>
       <Mosque_list_axios />
