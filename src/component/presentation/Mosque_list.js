@@ -14,12 +14,30 @@ const Mosque_list = () => {
     const [postsPerPage, setPostsPerPage] = useState(6);
     const [option, setOption] = useState("");
     const [modalOpen, setModalOpen] = useState(false);
+    const [filter, setFilter] = useState(false);
 
     const openModal = () => {
         setModalOpen(true);
     }
+
     const closeModal = () => {
         setModalOpen(false);
+    }
+
+    const setModal = () => {
+        setFilter(true);
+        setModalOpen(false);
+    }
+
+    const makeList = () => {
+        let result = mosque;
+
+        if (option === "") {
+            return
+        } else {
+            result = result.filter(key => key.type.includes(option))
+            return result
+        }
     }
 
     const indexOfLast = currentPage * postsPerPage;
@@ -36,9 +54,11 @@ const Mosque_list = () => {
         numOfFirst = 1;
         numOfLast = 9;
     }
+    
+    let mainArr = filter?makeList():mosque
 
-    if (numOfLast > parseInt(mosque.length / 6)) {
-        numOfLast = parseInt(mosque.length / 6)
+    if (numOfLast > parseInt(mainArr.length / 6)) {
+        numOfLast = parseInt(mainArr.length / 6)
     }
 
     // 필터
@@ -51,19 +71,6 @@ const Mosque_list = () => {
 
         setOption(mosqType);
     }
-
-    const makList = () =>{
-        let result = mosque;
-
-        if (option === ""){
-            return
-        } else {
-            result = result.filter(key => key.type.includes(option))
-            return result
-        }
-    }
-
-    console.log(makList())
 
     return (
         <div>
@@ -82,43 +89,60 @@ const Mosque_list = () => {
                 </form>
                 <React.Fragment>
                     <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                    <div className={ modalOpen ? 'openModal modal' : 'modal' }>
-                    { modalOpen ? (
-                        <section>
-                            <header>
-                                <img className="icon_reset" src={icon_reset} alt="icon_reset" />
-                                <p className="header_modal_mosque">필터</p>
-                            </header>
-                            <main>
-                                <div className="placetype">
-                                    <div>
-                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                        <p>성원</p>
-                                    </div>
-                                    <div>
-                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                        <p>기도실</p>
-                                    </div>
-                                    <div>
-                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                        <p>예배소</p>
-                                    </div>
-                                    <div>
-                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                        <p>기도처</p>
-                                    </div>
-                                </div>
-                            </main>
-                            <footer className="footer_modal_mosque">
-                                <button className="close" onClick={closeModal}> 취소 </button>
-                                <button className="close" onClick={closeModal}> 적용 </button>
-                            </footer>
-                        </section>
-                    ) : null }
+                    <div
+                        className={modalOpen
+                            ? 'openModal modal'
+                            : 'modal'}>
+                        {
+                            modalOpen
+                                ? (
+                                    <section>
+                                        <header>
+                                            <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
+                                            <p className="header_modal_mosque">필터</p>
+                                        </header>
+                                        <main>
+                                            <div className="placetype">
+                                                <div>
+                                                    <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                    <p>성원</p>
+                                                </div>
+                                                <div>
+                                                    <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                    <p>기도실</p>
+                                                </div>
+                                                <div>
+                                                    <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                    <p>예배소</p>
+                                                </div>
+                                                <div>
+                                                    <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                    <p>기도처</p>
+                                                </div>
+                                            </div>
+                                        </main>
+                                        <footer className="footer_modal_mosque">
+                                            <button className="close" onClick={closeModal}>
+                                                취소
+                                            </button>
+                                            <button className="close" onClick={setModal}>
+                                                적용
+                                            </button>
+                                        </footer>
+                                    </section>
+                                )
+                                : null
+                        }
                     </div>
                 </React.Fragment>
             </div>
-            <Item rlist={currentPosts(mosque)} moveTo="mosque"/>
+
+            <Item
+                rlist={filter
+                    ? currentPosts(makeList())
+                    : currentPosts(mosque)}
+                moveTo="mosque"/>
+
             <Pagination
                 postsPerPage={postsPerPage}
                 start={numOfFirst}
