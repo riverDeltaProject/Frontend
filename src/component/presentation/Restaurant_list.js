@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {useLocation, useHistory} from "react-router-dom";
-import Modal_Restaurant from './Modal_Restaurant.js';
 import Item from './Item.js';
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
@@ -9,6 +8,7 @@ import icon_halal_certified from "../assets/icon_halal_certified.png";
 import icon_muslim_friendly from "../assets/icon_muslim_friendly.png";
 import icon_pork_free from "../assets/icon_pork_free.png";
 import icon_self_certified from "../assets/icon_self_certified.png";
+import icon_reset from "../assets/icon_reset.png";
 import {restList} from "../API/rest"
 import Pagination from './Pagination.js';
 
@@ -95,7 +95,7 @@ const Restaurant_list = () => {
     const sel_Food = (e) => {
         if (e.target.tagName === "BUTTON") {
             target = e.target.innerText;
-            if (!option.type.includes(target)) 
+          if (!option.type.includes(target)) 
                 setOption((tmp) => ({
                     ...tmp,
                     "type": option
