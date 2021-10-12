@@ -5,25 +5,26 @@ import Modal_Attraction from './Modal_Attraction.js';
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
 import icon_filter from "../assets/icon_filter.png";
+import icon_reset from "../assets/icon_reset.png";
 import icon_att from "../assets/icon_att.png";
 import icon_att_show from "../assets/icon_att_show.png";
 import icon_att_leports from "../assets/icon_att_leports.png";
 import icon_att_culture from "../assets/icon_att_culture.png";
 import icon_att_shop from "../assets/icon_att_shop.png";
 import icon_att_stay from "../assets/icon_att_stay.png";
-
 import {serviceKey} from '../API/Key';
 import {attList} from "../API/attList.js"
-import Item from './Item.js';
+import Item from './Item_att.js';
 import axios from 'axios';
 
 const Attraction_list = () => {
     const history = useHistory();
     const location = useLocation();
-    const [data, setData] = useState([]);
     const [area, setArea] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
+    const [maindata, setMainData] = useState([]);
     const [postsPerPage] = useState(6);
+    const [filter, setFilter] = useState(false);
 
     let moveTo = location.state.moveTo;
 
@@ -44,28 +45,30 @@ const Attraction_list = () => {
         setModalOpen(false);
     }
 
-    // const locList = attList(1, 1).then(res => setData(res))
-    const attList = async (areaCode, cityCode) => {
+    const setModal = () => {
+        setFilter(true);
+        setModalOpen(false);
+    }
+
+    let attList = async (areaCode, cityCode) => {
         const url = `http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=12&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`;
         try {
             const {data: res} = await axios.get(url)
             const list = res.response.body.items.item;
+
+            console.log("res : ", res)
             return list
         } catch (err) {
             console.log(err);
         }
     }
-    
-    console.log(attList(1,1))
 
-    // let p1 = () => {     return new Promise((areaCode, cityCode) => { const url =
-    // `http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=12&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`;
-    // axios             .get(url)             .then((res) => { const areaItem =
-    // res.data.response.body.items.item; areaCode는 즉각적인 반응이 잘 일어나는 데 비해 useState를
-    // 이용한 data는 항상 한발짝 느리다. 왜 그럴까? 이번 렌더링에서 setData로 값을 설정하고, 그 다음 렌더링에서 해당 값이 반영되기
-    // 때문 setData(areaItem);             });     }) } p1     .then((res) => {
-    // console.log(res)     })     .catch((err) => {         console.log(err)     })
-    // FindArea에서는 클릭 이벤트가 발생해야 돌아가기 때문에 렌더링이 한번만 일어남 뒤로 돌아가기 버튼
+    console.log(maindata)
+
+    attList(1, 1).then(data => setMainData(data))
+    
+    console.log(maindata)
+
     const goSearch = () => {
         history.push({
             pathname: `./searchArea`,
@@ -75,12 +78,24 @@ const Attraction_list = () => {
         })
     }
 
-    // const indexOfLast = currentPage * postsPerPage; const indexOfFirst =
-    // indexOfLast - postsPerPage; const currentPosts = (tmp) => {     return
-    // tmp.slice(indexOfFirst, indexOfLast); } let numOfFirst = currentPage - 4; let
-    // numOfLast = currentPage + 4; let lastPage = parseInt(locList.length / 6) + 1;
-    // if (numOfFirst <= 0) {     numOfFirst = 1;     if (numOfLast < lastPage) {
-    // numOfLast = 9;     } else {         numOfLast = lastPage;     } }
+    const indexOfLast = currentPage * postsPerPage;
+    const indexOfFirst = indexOfLast - postsPerPage;
+
+    const currentPosts = (tmp) => {
+        return tmp.slice(indexOfFirst, indexOfLast);
+    }
+    let numOfFirst = currentPage - 4;
+    let numOfLast = currentPage + 4;
+    let lastPage = parseInt(maindata.length / 6) + 1;
+
+    if (numOfFirst <= 0) {
+        numOfFirst = 1;
+        if (numOfLast < lastPage) {
+            numOfLast = 9;
+        } else {
+            numOfLast = lastPage;
+        }
+    }
 
     return (
         <div>
@@ -103,41 +118,63 @@ const Attraction_list = () => {
                 </form>
                 <React.Fragment>
                     <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                    <Modal_Attraction open={modalOpen} close={closeModal} header="테마">
-                        <div className="atttype">
-                            <div>
-                                <button><img className="icon_att" src={icon_att} alt="icon_att"/></button>
-                                <p>관광지</p>
-                            </div>
-                            <div>
-                                <button><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
-                                <p>문화시설</p>
-                            </div>
-                            <div>
-                                <button><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
-                                <p>행사/공연</p>
-                            </div>
-                            <div>
-                                <button><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
-                                <p>레포츠</p>
-                            </div>
-                            <div>
-                                <button><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
-                                <p>숙박</p>
-                            </div>
-                            <div>
-                                <button><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
-                                <p>쇼핑</p>
-                            </div>
-                        </div>
-                    </Modal_Attraction>
+                    <div
+                        className={modalOpen
+                            ? 'openModal modal'
+                            : 'modal'}>
+                        {
+                            modalOpen
+                                ? (
+                                    <section>
+                                        <header>
+                                            <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
+                                            <p className="header_modal_mosque">필터</p>
+                                        </header>
+                                        <main>
+                                            <div className="atttype">
+                                                <div>
+                                                    <button><img className="icon_att" src={icon_att} alt="icon_att"/></button>
+                                                    <p>관광지</p>
+                                                </div>
+                                                <div>
+                                                    <button><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
+                                                    <p>문화시설</p>
+                                                </div>
+                                                <div>
+                                                    <button><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
+                                                    <p>행사/공연</p>
+                                                </div>
+                                                <div>
+                                                    <button><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
+                                                    <p>레포츠</p>
+                                                </div>
+                                                <div>
+                                                    <button><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
+                                                    <p>숙박</p>
+                                                </div>
+                                                <div>
+                                                    <button><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
+                                                    <p>쇼핑</p>
+                                                </div>
+                                            </div>
+                                        </main>
+                                        <footer className="footer_modal_mosque">
+                                            <button className="close" onClick={closeModal}>
+                                                취소
+                                            </button>
+                                            <button className="close" onClick={setModal}>
+                                                적용
+                                            </button>
+                                        </footer>
+                                    </section>
+                                )
+                                : null
+                        }
+                    </div>
                 </React.Fragment>
             </div>
-            {/*  <Item rlist={currentPosts(data)} moveTo={moveTo} area={area} city={"강남"}></I
- *  tem>
+            <Item rlist={currentPosts(maindata)} moveTo={moveTo} area={area} city={"강남"}></Item>
 
- */
-            }
         </div>
     );
 };
