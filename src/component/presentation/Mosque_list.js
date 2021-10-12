@@ -21,6 +21,7 @@ const Mosque_list = () => {
     }
 
     const closeModal = () => {
+        setFilter(false);
         setModalOpen(false);
     }
 
@@ -29,14 +30,21 @@ const Mosque_list = () => {
         setModalOpen(false);
     }
 
+    const resetModal = () =>{
+        setOption("");
+        setFilter(false);
+    }
+
+    //필터 리스트
     const makeList = () => {
         let result = mosque;
 
         if (option === "") {
-            return
+            setFilter(false);
+            return;
         } else {
             result = result.filter(key => key.type.includes(option))
-            return result
+            return result;
         }
     }
 
@@ -55,7 +63,7 @@ const Mosque_list = () => {
         numOfLast = 9;
     }
     
-    let mainArr = filter?makeList():mosque
+    let mainArr = filter?makeList():mosque;
 
     if (numOfLast > parseInt(mainArr.length / 6)) {
         numOfLast = parseInt(mainArr.length / 6)
@@ -65,10 +73,8 @@ const Mosque_list = () => {
     let target;
     let mosqType = "";
     const sel_mosq = (e) => {
-
         target = e.target.parentNode.nextSibling.innerText;
         mosqType = target
-
         setOption(mosqType);
     }
 
@@ -98,7 +104,7 @@ const Mosque_list = () => {
                                 ? (
                                     <section>
                                         <header>
-                                            <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
+                                            <img className="icon_reset" src={icon_reset} alt="icon_reset" onClick={resetModal}/>
                                             <p className="header_modal_mosque">필터</p>
                                         </header>
                                         <main>

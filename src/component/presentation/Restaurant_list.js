@@ -40,7 +40,8 @@ const Restaurant_list = () => {
             ...tmp,
             "type" : [],
             "friendly" : ""
-        }))
+        }));
+        setFilter(false);
     }
 
     const closeModal = () => {
@@ -49,6 +50,7 @@ const Restaurant_list = () => {
             "type" : [],
             "friendly" : ""
         }))
+        setFilter(false);
         setModalOpen(false);
     }
 
@@ -56,6 +58,61 @@ const Restaurant_list = () => {
         setFilter(true);
         setModalOpen(false);
     }
+
+        // 필터 후에 여러 개 추가 만들기
+        let target;
+
+        const sel_Food = (e) => {
+            if (e.target.tagName === "BUTTON") {
+                target = e.target.innerText;
+                if (!option.type.includes(target)) 
+                    setOption((tmp) => ({
+                        ...tmp,
+                        "type": option
+                            .type
+                            .concat(target)
+                    }))
+            } else {
+                target = e.target.parentNode.nextSibling.innerText;
+                setOption((tmp) => ({
+                    ...tmp,
+                    "friendly": target
+                }))
+            }
+        }
+    
+        //필터에 선택한 항목대로 리스트 만들기 
+        const list = () => {
+            let result = locList;
+            let tmp = [];
+    
+            if ((option.friendly != "") && (option.type.length != 0)) {
+                for (let i = 0; i < option.type.length; i++) {
+                    if (i === 0)
+                        result = result.filter(key => key.foodType.includes(option.type[i]))
+                    else {
+                        tmp = locList.filter(key => key.foodType.includes(option.type[i]))
+                        result = result.concat(tmp)
+                    }
+                }
+                
+                result = result.filter(key => (key.friendly === option.friendly))
+            } else if ((option.friendly === "") && (option.type.length != 0)) {
+                for (let i = 0; i < option.type.length; i++) {
+                    if (i === 0)
+                        result = result.filter(key => key.foodType.includes(option.type[i]))
+                    else {
+                        tmp = locList.filter(key => key.foodType.includes(option.type[i]))
+                        result = result.concat(tmp)
+                    }
+                }
+            } else if ((option.friendly != "") && (option.type.length === 0)) {
+                result = result.filter(key => (key.friendly === option.friendly))
+            } else {
+                return result;
+            }
+            return result;
+        }
 
     // const changeList = (list(optionList)) Pagination
     const indexOfLast = currentPage * postsPerPage;
@@ -68,7 +125,9 @@ const Restaurant_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
-    let lastPage = parseInt(locList.length / 6) + 1;
+    let mainArr = filter?list():locList;
+
+    let lastPage = parseInt(mainArr.length / 6) + 1;
 
     if (numOfFirst <= 0) {
         numOfFirst = 1;
@@ -88,63 +147,6 @@ const Restaurant_list = () => {
             }
         })
     }
-
-    // 필터 후에 여러 개 추가 만들기
-    let target;
-
-    const sel_Food = (e) => {
-        if (e.target.tagName === "BUTTON") {
-            target = e.target.innerText;
-            if (!option.type.includes(target)) 
-                setOption((tmp) => ({
-                    ...tmp,
-                    "type": option
-                        .type
-                        .concat(target)
-                }))
-        } else {
-            target = e.target.parentNode.nextSibling.innerText;
-            setOption((tmp) => ({
-                ...tmp,
-                "friendly": target
-            }))
-        }
-    }
-
-    //필터에 선택한 항목대로 리스트 만들기 
-    const list = () => {
-        let result = locList;
-        let tmp = [];
-
-        if ((option.friendly != "") && (option.type.length != 0)) {
-            for (let i = 0; i < option.type.length; i++) {
-                if (i === 0)
-                    result = result.filter(key => key.foodType.includes(option.type[i]))
-                else {
-                    tmp = locList.filter(key => key.foodType.includes(option.type[i]))
-                    result = result.concat(tmp)
-                }
-            }
-            
-            result = result.filter(key => (key.friendly === option.friendly))
-        } else if ((option.friendly === "") && (option.type.length != 0)) {
-            for (let i = 0; i < option.type.length; i++) {
-                if (i === 0)
-                    result = result.filter(key => key.foodType.includes(option.type[i]))
-                else {
-                    tmp = locList.filter(key => key.foodType.includes(option.type[i]))
-                    result = result.concat(tmp)
-                }
-            }
-        } else if ((option.friendly != "") && (option.type.length === 0)) {
-            result = result.filter(key => (key.friendly === option.friendly))
-        } else {
-            return result;
-        }
-        return result;
-    }
-
-    console.log("list :", list())
 
     return (
         <div>
@@ -245,7 +247,7 @@ const Restaurant_list = () => {
                                     </div>
                                 </React.Fragment>
                             </div>
-                            <Item rlist={filter ? currentPosts(locList) : currentPosts(list())} moveTo="restaurant" area={area} city={city}></Item>
+                            <Item rlist={filter ?currentPosts(list()) :  currentPosts(locList)} moveTo="restaurant" area={area} city={city}></Item>
                             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
                         </div>
             }
