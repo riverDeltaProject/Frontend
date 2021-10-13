@@ -3,7 +3,6 @@ import {useHistory} from 'react-router-dom';
 
 function Item({rlist, moveTo, area, city}) {
     const history = useHistory();
-    const [rstData, setResData] = useState([]);
     const [linkName, setLinkName] = useState("");
     let rlist_tmp = [];
 
@@ -12,7 +11,6 @@ function Item({rlist, moveTo, area, city}) {
     const goDetail = (rkey) => {
         const data = rlist[rkey];
 
-        setResData(rlist[rkey]);
         setLinkName(rlist[rkey].name);
 
         history.push({

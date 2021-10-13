@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Link, useLocation, useHistory} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import axios from 'axios';
 import SubArea from './SubArea';
 import {serviceKey} from '../API/Key';
@@ -7,21 +7,23 @@ import {serviceKey} from '../API/Key';
 import backicon from "../assets/backicon.png";
 
 const FindArea = () => {
-    const history = useHistory();
     const location = useLocation();
-    const [areaCode, setAreaCode] = useState();
     const [data, setData] = useState();
     const [area, setArea] = useState("");
     const [input, setInput] = useState("");
-    const [localNum, setLocalNum] = useState({city: "", cityCode: ""});
+    const [localNum, setLocalNum] = useState({"area": "", "areaCode": ""});
     let moveTo = location.state.moveTo;
     let areaList = [];
 
-    const api = (code) => {
-        const areaCode = code;
-        const url = `http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode?ServiceKey=${serviceKey}&areaCode=${areaCode}&numOfRows=30&pageNo=1&MobileOS=ETC&MobileApp=AppTest`;
 
-        setAreaCode(areaCode);
+    const api = (code, e) => {
+        const url = `http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode?ServiceKey=${serviceKey}&areaCode=${code}&numOfRows=30&pageNo=1&MobileOS=ETC&MobileApp=AppTest`;
+
+        setLocalNum((tmp)=>({
+            ...tmp,
+            "area" : e.target.innerText,
+            "areaCode" : code
+        }));
 
         axios
             .get(url)
@@ -44,24 +46,6 @@ const FindArea = () => {
         setInput(e.target.value);
     }
 
-    // const setList = (e) => {
-    //     let targetData = subArea(data)
-    //     setLocalNum({city: '', cityCode: ''})
-
-    //     for (let i = 0; i < targetData.length; i++) {
-    //         if (targetData[i].includes(input)) {
-    //             console.log("Entered")
-    //             setLocalNum((prevState) => ({
-    //                 ...prevState,
-    //                 city : targetData[i],
-    //                 cityCode : i
-    //             }))
-    //         }
-    //     }
-
-    //     console.log(localNum)
-    // }
-
     return (
         <div>
             <Link to="./"><img className="backicon" src={backicon} alt="backicon"/></Link>
@@ -77,43 +61,43 @@ const FindArea = () => {
             <div className="containerList">
                 <button
                     className="itemList"
-                    onClick={() => {
-                        api(1);
-                    }}>서울시</button>
+                    onClick={(e) => {
+                        api(1, e);
+                    }}>서울</button>
                 <button
                     className="itemList"
-                    onClick={() => {
-                        api(2);
-                    }}>인천시</button>
+                    onClick={(e) => {
+                        api(2, e);
+                    }}>인천</button>
                 <button
                     className="itemList"
-                    onClick={() => {
-                        api(3);
-                    }}>대전시</button>
+                    onClick={(e) => {
+                        api(3, e);
+                    }}>대전</button>
                 <button
                     className="itemList"
-                    onClick={() => {
-                        api(4);
-                    }}>대구시</button>
+                    onClick={(e) => {
+                        api(4, e);
+                    }}>대구</button>
                 <button
                     className="itemList"
-                    onClick={() => {
-                        api(5);
-                    }}>광주시</button>
+                    onClick={(e) => {
+                        api(5, e);
+                    }}>광주</button>
                 <button
                     className="itemList"
-                    onClick={() => {
-                        api(6);
-                    }}>부산시</button>
+                    onClick={(e) => {
+                        api(6, e);
+                    }}>부산</button>
                 <button
                     className="itemList"
-                    onClick={() => {
-                        api(39);
-                    }}>제주시</button>
+                    onClick={(e) => {
+                        api(39, e);
+                    }}>제주</button>
             </div>
             <p className="findingplace">시/군/구</p>
             <div className="containerList2">
-                <SubArea citylist={subArea(data)} area={area} moveTo={moveTo}/>
+                <SubArea citylist={subArea(data)} area={localNum} moveTo={moveTo}/>
             </div>
         </div>
     );

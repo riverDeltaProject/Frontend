@@ -1,16 +1,14 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 
-function Item({rlist, moveTo, area, city}) {
+function Item({rlist, moveTo, code}) {
     const history = useHistory();
-    const [rstData, setResData] = useState([]);
     const [linkName, setLinkName] = useState("");
     let rlist_tmp = [];
 
     const goDetail = (rkey) => {
         const data = rlist[rkey];
 
-        setResData(rlist[rkey]);
         setLinkName(rlist[rkey].name);
 
         history.push({
@@ -18,8 +16,7 @@ function Item({rlist, moveTo, area, city}) {
             search: `?sort=${linkName}`,
             state: {
                 data : data,
-                area : area,
-                city : city,
+                code : code,
                 moveTo : moveTo
             }
         })

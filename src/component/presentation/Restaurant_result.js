@@ -20,8 +20,7 @@ const Restaurant_result = () => {
     const beforeState = location.state;
 
     const about = beforeState.data;
-    const area = beforeState.area;
-    const city = beforeState.city;
+    const code = beforeState.code;
     const moveTo = beforeState.moveTo;
     
     useEffect(() => {
@@ -59,10 +58,9 @@ const Restaurant_result = () => {
     const goBack = ()=>{
         history.push({
             pathname:`/restaurant_list`,
-            search:`?sort=${location.state.city}`,
+            search:`?sort=${location.state.code["city"]}`,
             state:{
-                area:area,
-                city:city,
+                code : code,
                 moveTo:moveTo
             }
         })

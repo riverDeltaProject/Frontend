@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useHistory, useLocation} from "react-router-dom";
-import Modal_Attraction from './Modal_Attraction.js';
 
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
@@ -13,7 +12,6 @@ import icon_att_culture from "../assets/icon_att_culture.png";
 import icon_att_shop from "../assets/icon_att_shop.png";
 import icon_att_stay from "../assets/icon_att_stay.png";
 import {serviceKey} from '../API/Key';
-import {attList} from "../API/attList.js"
 import Item from './Item_att.js';
 import axios from 'axios';
 
@@ -27,13 +25,10 @@ const Attraction_list = () => {
     const [filter, setFilter] = useState(false);
 
     let moveTo = location.state.moveTo;
+    const where = location.state.code;
 
     useEffect(() => {
-        let abortController = new AbortController()
-
-        return() => {
-            abortController.abort()
-        }
+        attList(where["areaCode"],where["cityCode"])
     })
 
     const [modalOpen, setModalOpen] = useState(false);
@@ -56,18 +51,12 @@ const Attraction_list = () => {
             const {data: res} = await axios.get(url)
             const list = res.response.body.items.item;
 
-            console.log("res : ", res)
-            return list
+            console.log("rendering!")
+            setMainData(list);
         } catch (err) {
             console.log(err);
         }
     }
-
-    console.log(maindata)
-
-    attList(1, 1).then(data => setMainData(data))
-    
-    console.log(maindata)
 
     const goSearch = () => {
         history.push({
@@ -84,6 +73,7 @@ const Attraction_list = () => {
     const currentPosts = (tmp) => {
         return tmp.slice(indexOfFirst, indexOfLast);
     }
+    
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
     let lastPage = parseInt(maindata.length / 6) + 1;
