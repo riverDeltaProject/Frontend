@@ -30,7 +30,7 @@ const Mosque_list = () => {
         setModalOpen(false);
     }
 
-    const resetModal = () =>{
+    const resetModal = () => {
         setOption("");
         setFilter(false);
     }
@@ -48,6 +48,7 @@ const Mosque_list = () => {
         }
     }
 
+    //Pagination
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
@@ -58,15 +59,19 @@ const Mosque_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
+    let mainArr = filter
+        ? makeList() //얘는 잘 돌아감
+        : mosque; //근데 얘는 왜?
+
+    let lastPage = parseInt(mainArr.keys.length / 6) + 1;
+
     if (numOfFirst <= 0) {
         numOfFirst = 1;
-        numOfLast = 9;
-    }
-    
-    let mainArr = filter?makeList():mosque;
-
-    if (numOfLast > parseInt(mainArr.length / 6)) {
-        numOfLast = parseInt(mainArr.length / 6)
+        if (numOfLast < lastPage) {
+            numOfLast = 9;
+        } else {
+            numOfLast = lastPage;
+        }
     }
 
     // 필터
@@ -104,7 +109,11 @@ const Mosque_list = () => {
                                 ? (
                                     <section>
                                         <header>
-                                            <img className="icon_reset" src={icon_reset} alt="icon_reset" onClick={resetModal}/>
+                                            <img
+                                                className="icon_reset"
+                                                src={icon_reset}
+                                                alt="icon_reset"
+                                                onClick={resetModal}/>
                                             <p className="header_modal_mosque">필터</p>
                                         </header>
                                         <main>
@@ -148,12 +157,7 @@ const Mosque_list = () => {
                     ? currentPosts(makeList())
                     : currentPosts(mosque)}
                 moveTo="mosque"/>
-
-            <Pagination
-                postsPerPage={postsPerPage}
-                start={numOfFirst}
-                last={numOfLast}
-                paginate={setCurrentPage}/>
+            <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );
 };

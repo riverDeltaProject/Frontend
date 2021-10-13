@@ -12,7 +12,6 @@ import icon_reset from "../assets/icon_reset.png";
 import {restList} from "../API/rest"
 import Pagination from './Pagination.js';
 
-import icon_reset from "../assets/icon_reset.png";
 import Notfound from "../assets/notfound.png"
 
 const Restaurant_list = () => {
@@ -21,34 +20,34 @@ const Restaurant_list = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(6);
-    const [area] = useState(location.state.area);
-    const [city] = useState(location.state.city);
     const [option, setOption] = useState({"type": [], "friendly": ""});
     const [filter, setFilter] = useState(false);
 
+    const where = location.state.code;
+
     // 지역에 맞게 리스트 추려내기
     const locList = restList.filter(
-        key => (key.address.includes(area) && key.address.includes(city))
+        key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
     );
 
     const openModal = () => {
         setModalOpen(true);
     }
 
-    const resetModal = () =>{
-        setOption((tmp)=>({
+    const resetModal = () => {
+        setOption((tmp) => ({
             ...tmp,
-            "type" : [],
-            "friendly" : ""
+            "type": [],
+            "friendly": ""
         }));
         setFilter(false);
     }
 
     const closeModal = () => {
-        setOption((tmp)=>({
+        setOption((tmp) => ({
             ...tmp,
-            "type" : [],
-            "friendly" : ""
+            "type": [],
+            "friendly": ""
         }))
         setFilter(false);
         setModalOpen(false);
@@ -59,60 +58,60 @@ const Restaurant_list = () => {
         setModalOpen(false);
     }
 
-        // 필터 후에 여러 개 추가 만들기
-        let target;
+    // 필터 후에 여러 개 추가 만들기
+    let target;
 
-        const sel_Food = (e) => {
-            if (e.target.tagName === "BUTTON") {
-                target = e.target.innerText;
-                if (!option.type.includes(target)) 
-                    setOption((tmp) => ({
-                        ...tmp,
-                        "type": option
-                            .type
-                            .concat(target)
-                    }))
-            } else {
-                target = e.target.parentNode.nextSibling.innerText;
+    const sel_Food = (e) => {
+        if (e.target.tagName === "BUTTON") {
+            target = e.target.innerText;
+            if (!option.type.includes(target)) 
                 setOption((tmp) => ({
                     ...tmp,
-                    "friendly": target
+                    "type": option
+                        .type
+                        .concat(target)
                 }))
-            }
+        } else {
+            target = e.target.parentNode.nextSibling.innerText;
+            setOption((tmp) => ({
+                ...tmp,
+                "friendly": target
+            }))
         }
-    
-        //필터에 선택한 항목대로 리스트 만들기 
-        const list = () => {
-            let result = locList;
-            let tmp = [];
-    
-            if ((option.friendly != "") && (option.type.length != 0)) {
-                for (let i = 0; i < option.type.length; i++) {
-                    if (i === 0)
-                        result = result.filter(key => key.foodType.includes(option.type[i]))
-                    else {
-                        tmp = locList.filter(key => key.foodType.includes(option.type[i]))
-                        result = result.concat(tmp)
-                    }
+    }
+
+    //필터에 선택한 항목대로 리스트 만들기
+    const list = () => {
+        let result = locList;
+        let tmp = [];
+
+        if ((option.friendly !== "") && (option.type.length !== 0)) {
+            for (let i = 0; i < option.type.length; i++) {
+                if (i === 0) 
+                    result = result.filter(key => key.foodType.includes(option.type[i]))
+                else {
+                    tmp = locList.filter(key => key.foodType.includes(option.type[i]))
+                    result = result.concat(tmp)
                 }
-                
-                result = result.filter(key => (key.friendly === option.friendly))
-            } else if ((option.friendly === "") && (option.type.length != 0)) {
-                for (let i = 0; i < option.type.length; i++) {
-                    if (i === 0)
-                        result = result.filter(key => key.foodType.includes(option.type[i]))
-                    else {
-                        tmp = locList.filter(key => key.foodType.includes(option.type[i]))
-                        result = result.concat(tmp)
-                    }
-                }
-            } else if ((option.friendly != "") && (option.type.length === 0)) {
-                result = result.filter(key => (key.friendly === option.friendly))
-            } else {
-                return result;
             }
+
+            result = result.filter(key => (key.friendly === option.friendly))
+        } else if ((option.friendly === "") && (option.type.length !== 0)) {
+            for (let i = 0; i < option.type.length; i++) {
+                if (i === 0) 
+                    result = result.filter(key => key.foodType.includes(option.type[i]))
+                else {
+                    tmp = locList.filter(key => key.foodType.includes(option.type[i]))
+                    result = result.concat(tmp)
+                }
+            }
+        } else if ((option.friendly !== "") && (option.type.length === 0)) {
+            result = result.filter(key => (key.friendly === option.friendly))
+        } else {
             return result;
         }
+        return result;
+    }
 
     // const changeList = (list(optionList)) Pagination
     const indexOfLast = currentPage * postsPerPage;
@@ -125,7 +124,9 @@ const Restaurant_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
-    let mainArr = filter?list():locList;
+    let mainArr = filter
+        ? list()
+        : locList;
 
     let lastPage = parseInt(mainArr.length / 6) + 1;
 
@@ -165,7 +166,7 @@ const Restaurant_list = () => {
             {
                 (locList.length === 0)
                     ? <div className="errorMsg">
-                            <img src={Notfound} className="notFound"/>
+                            <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
                             <div className="noRes">검색 결과가 존재하지 않습니다.</div>
                         </div>
                     : <div>
@@ -185,7 +186,11 @@ const Restaurant_list = () => {
                                                 ? (
                                                     <section>
                                                         <header>
-                                                            <img className="icon_reset" src={icon_reset} alt="icon_reset" onClick={resetModal}/>
+                                                            <img
+                                                                className="icon_reset"
+                                                                src={icon_reset}
+                                                                alt="icon_reset"
+                                                                onClick={resetModal}/>
                                                             <p className="header_modal_mosque">필터</p>
                                                         </header>
                                                         <main>
@@ -247,7 +252,12 @@ const Restaurant_list = () => {
                                     </div>
                                 </React.Fragment>
                             </div>
-                            <Item rlist={filter ?currentPosts(list()) :  currentPosts(locList)} moveTo="restaurant" area={area} city={city}></Item>
+                            <Item
+                                rlist={filter
+                                    ? currentPosts(list())
+                                    : currentPosts(locList)}
+                                moveTo="restaurant"
+                                code = {where}></Item>
                             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
                         </div>
             }
