@@ -90,6 +90,7 @@ const Attraction_list = () => {
             numOfLast = lastPage;
         }
     }
+
     return (
         <div>
             <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
