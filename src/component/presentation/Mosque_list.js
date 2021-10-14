@@ -63,7 +63,7 @@ const Mosque_list = () => {
         ? makeList() //얘는 잘 돌아감
         : mosque; //근데 얘는 왜?
 
-    let lastPage = parseInt(mainArr.keys.length / 6) + 1;
+    let lastPage = parseInt(mainArr.length / 6) + 1;
 
     if (numOfFirst <= 0) {
         numOfFirst = 1;
