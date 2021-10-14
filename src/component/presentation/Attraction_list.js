@@ -13,6 +13,7 @@ import icon_att_shop from "../assets/icon_att_shop.png";
 import icon_att_stay from "../assets/icon_att_stay.png";
 import {serviceKey} from '../API/Key';
 import Item from './Item_att.js';
+import Pagination from './Pagination.js';
 import axios from 'axios';
 
 const Attraction_list = () => {
@@ -28,8 +29,8 @@ const Attraction_list = () => {
     const where = location.state.code;
 
     useEffect(() => {
-        attList(where["areaCode"],where["cityCode"])
-    })
+        attList(where["areaCode"], where["cityCode"])
+    }, [])
 
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -51,7 +52,6 @@ const Attraction_list = () => {
             const {data: res} = await axios.get(url)
             const list = res.response.body.items.item;
 
-            console.log("rendering!")
             setMainData(list);
         } catch (err) {
             console.log(err);
@@ -66,17 +66,21 @@ const Attraction_list = () => {
             }
         })
     }
-
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
     const currentPosts = (tmp) => {
         return tmp.slice(indexOfFirst, indexOfLast);
     }
-    
+
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
-    let lastPage = parseInt(maindata.length / 6) + 1;
+
+    let mainArr = filter
+        ? null
+        : maindata;
+
+    let lastPage = parseInt(mainArr.length / 6) + 1;
 
     if (numOfFirst <= 0) {
         numOfFirst = 1;
@@ -86,7 +90,6 @@ const Attraction_list = () => {
             numOfLast = lastPage;
         }
     }
-
     return (
         <div>
             <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
@@ -163,8 +166,8 @@ const Attraction_list = () => {
                     </div>
                 </React.Fragment>
             </div>
-            <Item rlist={currentPosts(maindata)} moveTo={moveTo} area={area} city={"강남"}></Item>
-
+            <Item rlist={currentPosts(maindata)} moveTo={moveTo} code = {where}></Item>
+            <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );
 };
