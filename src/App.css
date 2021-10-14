@@ -447,6 +447,7 @@ html {
 .rst_result_cell {
   border-top: 0.3rem solid #f1f1f1;
   border-bottom: 0.3rem solid #f1f1f1;
+  padding : 0 0 3rem 0 ;
 }
 
 .rst_result_cell h1{
@@ -973,4 +974,30 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items:center;
+}
+
+.attr_list_cell>div{
+  padding: 1rem;
+  margin:0 1rem;
+  border-bottom: 2px solid #D8E9D7;
+}
+
+
+.attr_list_name {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: 0px;
+  background-color: transparent;
+  padding:0;
+}
+
+
+.attr_list_position {
+  font-size: 1.5rem;
+  margin : 0;
+}
+
+.attr_noResult{
+  font-size: 1.5rem;
+  text-align: center;
 }

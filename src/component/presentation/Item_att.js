@@ -17,6 +17,7 @@ function Item({rlist, moveTo, code}) {
             state: {
                 data : data,
                 code : code,
+                list : rlist,
                 moveTo : moveTo
             }
         })
