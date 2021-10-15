@@ -69,7 +69,9 @@ const Attraction_result = () => {
                 .code["city"]}`,
             state: {
                 code: code,
-                moveTo: moveTo
+                moveTo: moveTo,
+                deState : true,
+                optList : beforeState.filType
             }
         })
     }

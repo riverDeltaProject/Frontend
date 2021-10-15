@@ -17,13 +17,16 @@ import Notfound from "../assets/notfound.png"
 const Restaurant_list = () => {
     const history = useHistory();
     const location = useLocation();
+
+    const where = location.state.code;
+    const deState = location.state.deState;
+    const optionList = location.state.optList;
+    
     const [modalOpen, setModalOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(6);
-    const [option, setOption] = useState({"type": [], "friendly": ""});
-    const [filter, setFilter] = useState(false);
-
-    const where = location.state.code;
+    const [option, setOption] = useState(optionList);
+    const [filter, setFilter] = useState(deState);
 
     // 지역에 맞게 리스트 추려내기
     const locList = restList.filter(
@@ -257,8 +260,9 @@ const Restaurant_list = () => {
                                     ? currentPosts(list())
                                     : currentPosts(locList)}
                                 moveTo="restaurant"
-                                code = {where}></Item>
-                            <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
+                                filType={option}
+                                code={where}></Item>
+                            <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
                         </div>
             }
         </div>

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, {useEffect, useRef} from 'react';
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useHistory} from "react-router-dom";
 import {kakaoKey} from '../API/Key';
 
 import backicon from "../assets/backicon.png";
@@ -15,10 +15,12 @@ const options = {
 }
 
 const Mosque_result = () => {
+    const history = useHistory();
     const location = useLocation();
     const container = useRef(null);
 
     const about = location.state.data;
+    console.log(location.state.filType)
 
     useEffect(() => {
         const map = new window
@@ -53,9 +55,20 @@ const Mosque_result = () => {
         return() => {};
     }, [])
 
+    const goBack = ()=>{
+        history.push({
+            pathname:`/mosque_list`,
+            search:`?sort=mosque`,
+            state:{
+                deState : true,
+                optList : location.state.filType
+            }
+        })
+    }
+
     return (
         <div>
-            <Link to="./mosque_list"><img className="backicon" src={backicon} alt="backicon"/></Link>
+            <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
             <div className="mosque_result_prom"/>
             <div className="rst_result_cell">
                 <div>

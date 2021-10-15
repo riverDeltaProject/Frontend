@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import Item from './Item.js';
 import Pagination from './Pagination.js';
 import {mosque} from '../API/mosque_list'
@@ -10,11 +10,13 @@ import icon_filter from "../assets/icon_filter.png"
 import mosqueicon from "../assets/mosqueicon.png";
 
 const Mosque_list = () => {
+    const location = useLocation();
+
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(6);
     const [option, setOption] = useState("");
     const [modalOpen, setModalOpen] = useState(false);
-    const [filter, setFilter] = useState(false);
+    const [filter, setFilter] = useState(location.state.deState);
 
     const openModal = () => {
         setModalOpen(true);
@@ -156,6 +158,7 @@ const Mosque_list = () => {
                 rlist={filter
                     ? currentPosts(makeList())
                     : currentPosts(mosque)}
+                filType={option}
                 moveTo="mosque"/>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
