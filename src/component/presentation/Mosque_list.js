@@ -43,11 +43,11 @@ const Mosque_list = () => {
 
         if (option === "") {
             setFilter(false);
-            return;
         } else {
             result = result.filter(key => key.type.includes(option))
-            return result;
         }
+        
+        return result;
     }
 
     //Pagination
@@ -74,6 +74,13 @@ const Mosque_list = () => {
         } else {
             numOfLast = lastPage;
         }
+    } else if(numOfLast >= lastPage){
+        if ((numOfLast - 8) <= 0) {
+            numOfFirst = 1
+        } else {
+            numOfFirst = currentPage - 8;
+        }
+        numOfLast = lastPage;
     }
 
     // 필터

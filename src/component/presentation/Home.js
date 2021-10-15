@@ -12,6 +12,7 @@ const Home = () => {
 
     // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
     const [modalOpen, setModalOpen] = useState(false);
+    const [lang, setLang] = useState("KorService")
 
     const openModal = () => {
         setModalOpen(true);
@@ -20,11 +21,16 @@ const Home = () => {
         setModalOpen(false);
     }
 
+    const selectLang = (e)=>{
+        setLang(e.target.value)
+    }
+
     const clickBtn = (moveTo) => {
         history.push({
             pathname: `./searchArea`,
             state: {
-                moveTo: moveTo
+                moveTo: moveTo,
+                lang : lang
             }
         })
     }
@@ -43,16 +49,9 @@ const Home = () => {
             <React.Fragment>
                 <button className="lang" onClick={openModal}>Aa</button>
                 <Modal open={modalOpen} close={closeModal} header="언어 설정">
-                    <select className="langoption">
-                        <option>한국어</option>
-                        <option>English</option>
-                        <option>русский</option>
-                        <option>das Deutsche</option>
-                        <option>中文 繁体字</option>
-                        <option>中文 簡體字</option>
-                        <option>français</option>
-                        <option>にほんご</option>
-                        <option>español</option>
+                       <select className="langoption" onChange={selectLang}>
+                        <option value="KorService" >한국어</option>
+                        <option value="EngService" >English</option>
                     </select>
                 </Modal>
             </React.Fragment>

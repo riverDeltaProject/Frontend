@@ -20,7 +20,6 @@ const Mosque_result = () => {
     const container = useRef(null);
 
     const about = location.state.data;
-    console.log(location.state.filType)
 
     useEffect(() => {
         const map = new window

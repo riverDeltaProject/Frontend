@@ -10,6 +10,7 @@ import icon_pork_free from "../assets/icon_pork_free.png";
 import icon_self_certified from "../assets/icon_self_certified.png";
 import icon_reset from "../assets/icon_reset.png";
 import {restList} from "../API/rest"
+import {restEn} from "../API/restEn"
 import Pagination from './Pagination.js';
 
 import Notfound from "../assets/notfound.png"
@@ -21,7 +22,10 @@ const Restaurant_list = () => {
     const where = location.state.code;
     const deState = location.state.deState;
     const optionList = location.state.optList;
-    
+    const lang = location.state.lang;
+
+    console.log(lang)
+
     const [modalOpen, setModalOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(6);
@@ -29,9 +33,12 @@ const Restaurant_list = () => {
     const [filter, setFilter] = useState(deState);
 
     // 지역에 맞게 리스트 추려내기
-    const locList = restList.filter(
-        key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
-    );
+    let locList = (lang === "KorService")
+        ? restList.filter(
+            key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
+        ) : restEn.filter(
+            key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
+        );
 
     const openModal = () => {
         setModalOpen(true);
@@ -147,7 +154,8 @@ const Restaurant_list = () => {
         history.push({
             pathname: `./searchArea`,
             state: {
-                moveTo: location.state.moveTo
+                moveTo: location.state.moveTo,
+                lang: lang
             }
         })
     }
@@ -261,7 +269,9 @@ const Restaurant_list = () => {
                                     : currentPosts(locList)}
                                 moveTo="restaurant"
                                 filType={option}
-                                code={where}></Item>
+                                code={where}>
+                                lang={lang}
+                                </Item>
                             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
                         </div>
             }
