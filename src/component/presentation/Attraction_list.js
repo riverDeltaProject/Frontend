@@ -19,11 +19,12 @@ import axios from 'axios';
 const Attraction_list = () => {
     const history = useHistory();
     const location = useLocation();
-
+    
     let moveTo = location.state.moveTo;
     const where = location.state.code;
     const deState = location.state.deState;
     const optionList = location.state.optList;
+    const lang = location.state.lang;
 
     const [area, setArea] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
@@ -51,10 +52,12 @@ const Attraction_list = () => {
     }
 
     let attList = async (areaCode, cityCode) => {
-        const url = `http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=12&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`;
+        const url = `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=12&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`;
         try {
             const {data: res} = await axios.get(url)
             const list = res.response.body.items.item;
+
+            console.log(res)
 
             setMainData(list);
         } catch (err) {
@@ -81,7 +84,7 @@ const Attraction_list = () => {
     let numOfLast = currentPage + 4;
 
     let mainArr = filter
-        ? null
+        ? []
         : maindata;
 
     let lastPage = parseInt(mainArr.length / 6) + 1;
@@ -171,11 +174,7 @@ const Attraction_list = () => {
                     </div>
                 </React.Fragment>
             </div>
-            <Item
-                rlist={currentPosts(maindata)}
-                moveTo={moveTo}
-                code={where}
-                filType={option}></Item>
+            <Item rlist={currentPosts(maindata)} moveTo={moveTo} code = {where}></Item>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );

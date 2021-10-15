@@ -23,7 +23,7 @@ const Restaurant_result = () => {
     const code = beforeState.code;
     const moveTo = beforeState.moveTo;
 
-    console.log(beforeState.filType)
+    console.log(beforeState.lang)
     
     useEffect(() => {
         const map = new window
@@ -65,7 +65,8 @@ const Restaurant_result = () => {
                 code : code,
                 moveTo:moveTo,
                 deState : true,
-                optList : beforeState.filType
+                optList : beforeState.filType,
+                lang:beforeState.lang
             }
         })
     }

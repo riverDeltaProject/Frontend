@@ -9,15 +9,16 @@ import backicon from "../assets/backicon.png";
 const FindArea = () => {
     const location = useLocation();
     const [data, setData] = useState();
-    const [area, setArea] = useState("");
     const [input, setInput] = useState("");
     const [localNum, setLocalNum] = useState({"area": "", "areaCode": ""});
+    
+    const lang = location.state.lang;
+
     let moveTo = location.state.moveTo;
     let areaList = [];
 
-
     const api = (code, e) => {
-        const url = `http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode?ServiceKey=${serviceKey}&areaCode=${code}&numOfRows=30&pageNo=1&MobileOS=ETC&MobileApp=AppTest`;
+        const url = `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaCode?ServiceKey=${serviceKey}&areaCode=${code}&numOfRows=30&pageNo=1&MobileOS=ETC&MobileApp=AppTest`;
 
         setLocalNum((tmp)=>({
             ...tmp,
@@ -97,7 +98,7 @@ const FindArea = () => {
             </div>
             <p className="findingplace">시/군/구</p>
             <div className="containerList2">
-                <SubArea citylist={subArea(data)} area={localNum} moveTo={moveTo}/>
+                <SubArea citylist={subArea(data)} area={localNum} moveTo={moveTo} lang={lang}/>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 
-function Item({rlist, moveTo, code, filType}) {
+function Item({rlist, moveTo, code, filType, lang}) {
     const history = useHistory();
     const [linkName, setLinkName] = useState("");
     let rlist_tmp = [];
@@ -18,7 +18,8 @@ function Item({rlist, moveTo, code, filType}) {
                 data : data,
                 code : code,
                 moveTo : moveTo,
-                filType : filType
+                filType : filType,
+                lang : lang
             }
         })
     }

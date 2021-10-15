@@ -1,7 +1,7 @@
 import {React, useEffect, useState} from 'react';
 import {useHistory} from "react-router-dom";
 
-const SubArea = ({citylist, area, moveTo}) => {
+const SubArea = ({citylist, area, moveTo, lang}) => {
     const history = useHistory();
     const code = {
         "area": area["area"],
@@ -25,7 +25,8 @@ const SubArea = ({citylist, area, moveTo}) => {
                     moveTo: moveTo,
                     code: code,
                     defState : false,
-                    optList : {"type": [], "friendly": ""}
+                    optList : {"type": [], "friendly": ""},
+                    lang:lang
                 }
             })
         }
