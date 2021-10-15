@@ -71,6 +71,7 @@ const Attraction_result = () => {
                 code: code,
                 moveTo: moveTo,
                 deState : true,
+                lang : beforeState.lang,
                 optList : beforeState.filType
             }
         })
@@ -109,6 +110,35 @@ const Attraction_result = () => {
         }
     }
 
+    const attType = ()=>{
+        let type = ""
+        switch (beforeState.filType) {
+            case 14:
+                type="문화시설";
+                break;
+            case 15:
+                type="행사/공연/축제";
+                break;
+            case 25:
+                type="여행코스";
+                break;
+            case 28:
+                type="레포츠";
+                break;
+            case 32:
+                type="숙박";
+                break;
+            case 38:
+                type="쇼핑";
+                break;
+            default:
+                type="관광지";
+                break;
+        }
+
+        return type;
+    }
+
     return (
         <div>
             <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
@@ -117,7 +147,7 @@ const Attraction_result = () => {
                 <div>
                     <div className="Title">
                         <div className="rst_result_name">{about.title}</div>
-                        <div className="subInfo">{about.foodType}</div>
+                        <div className="subInfo">{attType()}</div>
                     </div>
                     <div className="Items">
                         <div className="infoItem longItem">

@@ -18,13 +18,10 @@ import Notfound from "../assets/notfound.png"
 const Restaurant_list = () => {
     const history = useHistory();
     const location = useLocation();
-
     const where = location.state.code;
     const deState = location.state.deState;
     const optionList = location.state.optList;
     const lang = location.state.lang;
-
-    console.log(lang)
 
     const [modalOpen, setModalOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
@@ -140,14 +137,21 @@ const Restaurant_list = () => {
 
     let lastPage = parseInt(mainArr.length / 6) + 1;
 
-    if (numOfFirst <= 0) {
+    if (numOfFirst <= 0) {  //numOfFirst가 1 이하로 내려가지 않도록
         numOfFirst = 1;
-        if (numOfLast < lastPage) {
-            numOfLast = 9;
-        } else {
+    }
+
+    if(lastPage<=9){
             numOfLast = lastPage;
+    } else {
+        if(currentPage<5){
+            numOfLast = 9;
+        } else if(lastPage<numOfLast){
+            numOfLast = lastPage;
+            numOfFirst = numOfLast-8;
         }
     }
+  
 
     // 뒤로 돌아가기 버튼
     const goSearch = () => {
@@ -263,14 +267,15 @@ const Restaurant_list = () => {
                                     </div>
                                 </React.Fragment>
                             </div>
+                            
                             <Item
                                 rlist={filter
                                     ? currentPosts(list())
                                     : currentPosts(locList)}
                                 moveTo="restaurant"
                                 filType={option}
-                                code={where}>
-                                lang={lang}
+                                code={where}
+                                lang={lang}>
                                 </Item>
                             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
                         </div>
