@@ -23,7 +23,9 @@ const SubArea = ({citylist, area, moveTo}) => {
                 search: `?sort=${target}`,
                 state: {
                     moveTo: moveTo,
-                    code: code
+                    code: code,
+                    defState : false,
+                    optList : {"type": [], "friendly": ""}
                 }
             })
         }

@@ -20,13 +20,22 @@ const Home = () => {
         setModalOpen(false);
     }
 
-    const clickBtn = (moveTo)=>{
-      history.push({
-        pathname:`./searchArea`,
-        state:{
-          moveTo : moveTo
-        }
-      })
+    const clickBtn = (moveTo) => {
+        history.push({
+            pathname: `./searchArea`,
+            state: {
+                moveTo: moveTo
+            }
+        })
+    }
+
+    const clickMos = (moveTo) => {
+        history.push({
+            pathname: `./mosque_list`,
+            state: {
+                deState: false
+            }
+        })
     }
 
     return (
@@ -37,6 +46,13 @@ const Home = () => {
                     <select className="langoption">
                         <option>한국어</option>
                         <option>English</option>
+                        <option>русский</option>
+                        <option>das Deutsche</option>
+                        <option>中文 繁体字</option>
+                        <option>中文 簡體字</option>
+                        <option>français</option>
+                        <option>にほんご</option>
+                        <option>español</option>
                     </select>
                 </Modal>
             </React.Fragment>
@@ -46,15 +62,27 @@ const Home = () => {
             <p className="findingplace">장소 찾기</p>
             <div className="container">
                 <div>
-                  <img className="item" src={restauranticon} alt="restauranticon" onClick={()=>{clickBtn("restaurant")}}/>
+                    <img
+                        className="item"
+                        src={restauranticon}
+                        alt="restauranticon"
+                        onClick={() => {
+                            clickBtn("restaurant")
+                        }}/>
                     <p>식당</p>
                 </div>
                 <div>
-                  <img className="item" src={attractionicon} alt="attractionicon"  onClick={()=>{clickBtn("attraction")}}/>
+                    <img
+                        className="item"
+                        src={attractionicon}
+                        alt="attractionicon"
+                        onClick={() => {
+                            clickBtn("attraction")
+                        }}/>
                     <p>관광지</p>
                 </div>
                 <div>
-                    <Link to="./mosque_list"><img className="item" src={mosqueicon} alt="mosqueicon"/></Link>
+                    <img className="item" src={mosqueicon} alt="mosqueicon" onClick={clickMos}/>
                     <p>모스크</p>
                 </div>
             </div>

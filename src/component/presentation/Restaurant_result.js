@@ -22,6 +22,8 @@ const Restaurant_result = () => {
     const about = beforeState.data;
     const code = beforeState.code;
     const moveTo = beforeState.moveTo;
+
+    console.log(beforeState.filType)
     
     useEffect(() => {
         const map = new window
@@ -61,7 +63,9 @@ const Restaurant_result = () => {
             search:`?sort=${location.state.code["city"]}`,
             state:{
                 code : code,
-                moveTo:moveTo
+                moveTo:moveTo,
+                deState : true,
+                optList : beforeState.filType
             }
         })
     }

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Link, useHistory, useLocation} from "react-router-dom";
+import {useHistory, useLocation} from "react-router-dom";
 
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
@@ -19,14 +19,18 @@ import axios from 'axios';
 const Attraction_list = () => {
     const history = useHistory();
     const location = useLocation();
+
+    let moveTo = location.state.moveTo;
+    const where = location.state.code;
+    const deState = location.state.deState;
+    const optionList = location.state.optList;
+
     const [area, setArea] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const [maindata, setMainData] = useState([]);
     const [postsPerPage] = useState(6);
-    const [filter, setFilter] = useState(false);
-
-    let moveTo = location.state.moveTo;
-    const where = location.state.code;
+    const [filter, setFilter] = useState(deState);
+    const [option, setOption] = useState(optionList);
 
     useEffect(() => {
         attList(where["areaCode"], where["cityCode"])
@@ -167,7 +171,11 @@ const Attraction_list = () => {
                     </div>
                 </React.Fragment>
             </div>
-            <Item rlist={currentPosts(maindata)} moveTo={moveTo} code = {where}></Item>
+            <Item
+                rlist={currentPosts(maindata)}
+                moveTo={moveTo}
+                code={where}
+                filType={option}></Item>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );
