@@ -22,8 +22,7 @@ const Restaurant_result = () => {
     const about = beforeState.data;
     const code = beforeState.code;
     const moveTo = beforeState.moveTo;
-
-    console.log(beforeState.lang)
+    const lang = beforeState.lang;
     
     useEffect(() => {
         const map = new window
@@ -36,7 +35,9 @@ const Restaurant_result = () => {
             .services
             .Geocoder();
 
-        geocoder.addressSearch(about.address, function (result, status) {
+        let str = (lang === "KorService")?about.address:about.address.match(/\((.*?)\)/)[1]
+
+        geocoder.addressSearch(str, function (result, status) {
             // 정상적으로 검색이 완료됐으면
             if (status === kakao.maps.services.Status.OK) {
 
@@ -66,7 +67,7 @@ const Restaurant_result = () => {
                 moveTo:moveTo,
                 deState : true,
                 optList : beforeState.filType,
-                lang:beforeState.lang
+                lang:lang
             }
         })
     }

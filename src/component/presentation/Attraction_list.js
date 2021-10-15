@@ -19,14 +19,13 @@ import axios from 'axios';
 const Attraction_list = () => {
     const history = useHistory();
     const location = useLocation();
-    
+
     let moveTo = location.state.moveTo;
     const where = location.state.code;
     const deState = location.state.deState;
     const optionList = location.state.optList;
     const lang = location.state.lang;
 
-    const [area, setArea] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const [maindata, setMainData] = useState([]);
     const [postsPerPage] = useState(6);
@@ -34,7 +33,7 @@ const Attraction_list = () => {
     const [option, setOption] = useState(optionList);
 
     useEffect(() => {
-        attList(where["areaCode"], where["cityCode"])
+        attList(where["areaCode"], where["cityCode"], option)
     }, [])
 
     const [modalOpen, setModalOpen] = useState(false);
@@ -48,11 +47,19 @@ const Attraction_list = () => {
 
     const setModal = () => {
         setFilter(true);
+        attList(where["areaCode"], where["cityCode"], option)
+        console.log(maindata)
+
         setModalOpen(false);
     }
 
-    let attList = async (areaCode, cityCode) => {
-        const url = `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=12&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`;
+    let attList = async (areaCode, cityCode, filType) => {
+        let url = (lang === "KorService")
+            ? `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=${filType}&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`
+            : null
+        // 영어 서비스에서는 URL이 한국 서비스와 다름. 그런데 여기서 시군구를 구분한 결과값이 나오지 않음. 검색하는 쪽에서 시군구를 검색하지
+        // 못한다는 제한으로는 가능할 듯
+
         try {
             const {data: res} = await axios.get(url)
             const list = res.response.body.items.item;
@@ -69,7 +76,8 @@ const Attraction_list = () => {
         history.push({
             pathname: `./searchArea`,
             state: {
-                moveTo: moveTo
+                moveTo: moveTo,
+                filType: option
             }
         })
     }
@@ -83,19 +91,53 @@ const Attraction_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
-    let mainArr = filter
-        ? []
-        : maindata;
 
-    let lastPage = parseInt(mainArr.length / 6) + 1;
+    let lastPage = parseInt(maindata.length / 6) + 1;
 
-    if (numOfFirst <= 0) {
+    if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
         numOfFirst = 1;
-        if (numOfLast < lastPage) {
+    }
+
+    if (lastPage <= 9) {
+        numOfLast = lastPage;
+    } else {
+        if (currentPage < 5) {
             numOfLast = 9;
-        } else {
+        } else if (lastPage < numOfLast) {
             numOfLast = lastPage;
+            numOfFirst = numOfLast - 8;
         }
+    }
+
+    // 필터
+    let target;
+    let attrType = 0;
+
+    const sel_attr = (e) => {
+        target = e.target.parentNode.nextSibling.innerText;
+
+        switch (target) {
+            case "문화시설":
+                attrType = 14;
+                break;
+            case "행사/공연/축제":
+                attrType = 15;
+                break;
+            case "레포츠":
+                attrType = 28;
+                break;
+            case "숙박":
+                attrType = 32;
+                break;
+            case "쇼핑":
+                attrType = 38;
+                break;
+            default:
+                attrType = 12;
+                break;
+        }
+
+        setOption(attrType);
     }
 
     return (
@@ -134,27 +176,27 @@ const Attraction_list = () => {
                                         <main>
                                             <div className="atttype">
                                                 <div>
-                                                    <button><img className="icon_att" src={icon_att} alt="icon_att"/></button>
+                                                    <button onClick={sel_attr}><img className="icon_att" src={icon_att} alt="icon_att"/></button>
                                                     <p>관광지</p>
                                                 </div>
                                                 <div>
-                                                    <button><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
+                                                    <button onClick={sel_attr}><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
                                                     <p>문화시설</p>
                                                 </div>
                                                 <div>
-                                                    <button><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
-                                                    <p>행사/공연</p>
+                                                    <button onClick={sel_attr}><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
+                                                    <p>행사/공연/축제</p>
                                                 </div>
                                                 <div>
-                                                    <button><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
+                                                    <button onClick={sel_attr}><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
                                                     <p>레포츠</p>
                                                 </div>
                                                 <div>
-                                                    <button><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
+                                                    <button onClick={sel_attr}><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
                                                     <p>숙박</p>
                                                 </div>
                                                 <div>
-                                                    <button><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
+                                                    <button onClick={sel_attr}><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
                                                     <p>쇼핑</p>
                                                 </div>
                                             </div>
@@ -174,7 +216,12 @@ const Attraction_list = () => {
                     </div>
                 </React.Fragment>
             </div>
-            <Item rlist={currentPosts(maindata)} moveTo={moveTo} code = {where}></Item>
+            <Item
+                rlist={currentPosts(maindata)}
+                moveTo={moveTo}
+                code={where}
+                filType={option}
+                lang={lang}></Item>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );

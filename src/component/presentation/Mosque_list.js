@@ -46,7 +46,7 @@ const Mosque_list = () => {
         } else {
             result = result.filter(key => key.type.includes(option))
         }
-        
+
         return result;
     }
 
@@ -65,27 +65,27 @@ const Mosque_list = () => {
         ? makeList() //얘는 잘 돌아감
         : mosque; //근데 얘는 왜?
 
-    let lastPage = parseInt(mainArr.length / 6) + 1;
+    let lastPage = parseInt(mainArr.length / 6);
 
-    if (numOfFirst <= 0) {
+    if (numOfFirst <= 0) {  //numOfFirst가 1 이하로 내려가지 않도록
         numOfFirst = 1;
-        if (numOfLast < lastPage) {
-            numOfLast = 9;
-        } else {
-            numOfLast = lastPage;
-        }
-    } else if(numOfLast >= lastPage){
-        if ((numOfLast - 8) <= 0) {
-            numOfFirst = 1
-        } else {
-            numOfFirst = currentPage - 8;
-        }
-        numOfLast = lastPage;
     }
 
+    if(lastPage<=9){
+            numOfLast = lastPage;
+    } else {
+        if(currentPage<5){
+            numOfLast = 9;
+        } else if(lastPage<numOfLast){
+            numOfLast = lastPage;
+            numOfFirst = numOfLast-8;
+        }
+    }
+  
     // 필터
     let target;
     let mosqType = "";
+
     const sel_mosq = (e) => {
         target = e.target.parentNode.nextSibling.innerText;
         mosqType = target
