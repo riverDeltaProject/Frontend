@@ -54,18 +54,13 @@ const Attraction_list = () => {
     }
 
     let attList = async (areaCode, cityCode, filType) => {
-        let url = (lang === "KorService")
-            ? `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=${filType}&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`
-            : null
+        let url = `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=${filType}&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`
         // 영어 서비스에서는 URL이 한국 서비스와 다름. 그런데 여기서 시군구를 구분한 결과값이 나오지 않음. 검색하는 쪽에서 시군구를 검색하지
         // 못한다는 제한으로는 가능할 듯
 
         try {
             const {data: res} = await axios.get(url)
             const list = res.response.body.items.item;
-
-            console.log(res)
-
             setMainData(list);
         } catch (err) {
             console.log(err);

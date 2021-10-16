@@ -26,8 +26,10 @@ const Home = () => {
     }
 
     const clickBtn = (moveTo) => {
+
+        let url = ((moveTo==="attraction")&&(lang==="EngService")) ? "./searcheng":"./searcharea";
         history.push({
-            pathname: `./searchArea`,
+            pathname: url,
             state: {
                 moveTo: moveTo,
                 lang : lang
