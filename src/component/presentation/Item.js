@@ -15,18 +15,22 @@ function Item({rlist, moveTo, code, filType, lang}) {
             pathname: `/${moveTo}_result`,
             search: `?sort=${linkName}`,
             state: {
-                data : data,
-                code : code,
-                moveTo : moveTo,
-                filType : filType,
-                lang : lang
+                data: data,
+                code: code,
+                moveTo: moveTo,
+                filType: filType,
+                lang: lang
             }
         })
     }
-    
+
     for (let rkey in rlist) {
         rlist_tmp.push(
-            <div  key={rkey} className="rst_list_cell" onClick={() => goDetail(rkey)}>
+            <div key={rkey} className="rst_list_cell" onClick={() => goDetail(rkey)}>
+                <img
+                    className="rst_list_img"
+                    src={rlist[rkey].firstimage}
+                    alt={"about attraction image"}/>
                 <div>
                     <button className="rst_list_name">
                         {rlist[rkey].name}

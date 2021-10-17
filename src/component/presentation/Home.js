@@ -21,18 +21,20 @@ const Home = () => {
         setModalOpen(false);
     }
 
-    const selectLang = (e)=>{
+    const selectLang = (e) => {
         setLang(e.target.value)
     }
 
     const clickBtn = (moveTo) => {
 
-        let url = ((moveTo==="attraction")&&(lang==="EngService")) ? "./searcheng":"./searcharea";
+        let url = ((moveTo === "attraction") && (lang === "EngService"))
+            ? "./searcheng"
+            : "./searcharea";
         history.push({
             pathname: url,
             state: {
                 moveTo: moveTo,
-                lang : lang
+                lang: lang
             }
         })
     }
@@ -48,18 +50,29 @@ const Home = () => {
 
     return (
         <div>
-            <React.Fragment>
-                <button className="lang" onClick={openModal}>Aa</button>
-                <Modal open={modalOpen} close={closeModal} header="언어 설정">
-                       <select className="langoption" onChange={selectLang}>
-                        <option value="KorService" >한국어</option>
-                        <option value="EngService" >English</option>
-                    </select>
-                </Modal>
-            </React.Fragment>
-
-            <h1 className="header">RIVERDELTA</h1>
-            <img className="mainicon" src={mainicon} alt="mainicon"/>
+            <div className="header">
+                <h1 >리버델타</h1>
+                <React.Fragment>
+                    <button className="lang" onClick={openModal}>Aa</button>
+                    <Modal open={modalOpen} close={closeModal} header="언어 설정">
+                        <select className="langoption" onChange={selectLang}>
+                            <option value="KorService">한국어</option>
+                            <option value="EngService">English</option>
+                        </select>
+                    </Modal>
+                </React.Fragment>
+            </div>
+            <div id="maindiv">
+                <div>
+                    <div>
+                        대충 모토
+                        <h3>리버델타의 정의를 설명하는 문구가 들어가면 됩니다</h3>
+                        뭔가 주저리주저리 들어가면 되는데 리버델타가 뭐하는 앱인지 있잖아 가족친화적이고 뭐 그런 거 있잖
+                    </div>
+                    <Link to="./Howto" className="howto2">어플리케이션 설치</Link>
+                </div>
+                <img className="mainicon" src={mainicon} alt="mainicon"/>
+            </div>
             <p className="findingplace">장소 찾기</p>
             <div className="container">
                 <div>
