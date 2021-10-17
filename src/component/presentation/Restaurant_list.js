@@ -33,7 +33,8 @@ const Restaurant_list = () => {
     let locList = (lang === "KorService")
         ? restList.filter(
             key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
-        ) : restEn.filter(
+        )
+        : restEn.filter(
             key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
         );
 
@@ -137,21 +138,20 @@ const Restaurant_list = () => {
 
     let lastPage = parseInt(mainArr.length / 6) + 1;
 
-    if (numOfFirst <= 0) {  //numOfFirst가 1 이하로 내려가지 않도록
+    if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
         numOfFirst = 1;
     }
 
-    if(lastPage<=9){
-            numOfLast = lastPage;
+    if (lastPage <= 9) {
+        numOfLast = lastPage;
     } else {
-        if(currentPage<5){
+        if (currentPage < 5) {
             numOfLast = 9;
-        } else if(lastPage<numOfLast){
+        } else if (lastPage < numOfLast) {
             numOfLast = lastPage;
-            numOfFirst = numOfLast-8;
+            numOfFirst = numOfLast - 8;
         }
     }
-  
 
     // 뒤로 돌아가기 버튼
     const goSearch = () => {
@@ -168,13 +168,13 @@ const Restaurant_list = () => {
         <div>
             <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
             <h1 className="header2">식당</h1>
-            <div className="restaurant_promotion">
-                <div className="promotion_text">
-                    <p className="name_restaurant">가게명</p>
+            <div className="att_prom">
+                <div className="prom_text_att">
+                    <p className="name_att">가게명</p>
                     <div>
-                        <p className="scoreposition">가게 위치</p>
+                        <p className="scorepos_att">가게 위치</p>
                         <img className="scorestar" src={scorestar} alt="scorestar"/>
-                        <p className="score">N.N점</p>
+                        <p className="score_att">N.N점</p>
                     </div>
                 </div>
             </div>
@@ -185,11 +185,9 @@ const Restaurant_list = () => {
                             <div className="noRes">검색 결과가 존재하지 않습니다.</div>
                         </div>
                     : <div>
-                            <div className="btn_class_list">
-                                <form action="search.php" method="post">
-                                    <input className="btn_text_list" type="text"/>
-                                    <input className="btn_submit_list" type="submit" value="SEARCH"/>
-                                </form>
+                            <div className="btn_class_att">
+                                <input className="btn_text_att" type="text"/>
+                                <input className="btn_submit_att" type="submit" value="SEARCH"/>
                                 <React.Fragment>
                                     <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
                                     <div
@@ -267,16 +265,16 @@ const Restaurant_list = () => {
                                     </div>
                                 </React.Fragment>
                             </div>
-                            
-                            <Item
-                                rlist={filter
-                                    ? currentPosts(list())
-                                    : currentPosts(locList)}
-                                moveTo="restaurant"
-                                filType={option}
-                                code={where}
-                                lang={lang}>
-                                </Item>
+                            <div className="list">
+                                <Item
+                                    rlist={filter
+                                        ? currentPosts(list())
+                                        : currentPosts(locList)}
+                                    moveTo="restaurant"
+                                    filType={option}
+                                    code={where}
+                                    lang={lang}></Item>
+                            </div>
                             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
                         </div>
             }

@@ -86,7 +86,6 @@ const Attraction_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
-
     let lastPage = parseInt(maindata.length / 6) + 1;
 
     if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
@@ -150,10 +149,8 @@ const Attraction_list = () => {
                 </div>
             </div>
             <div className="btn_class_att">
-                <form action="search.php" method="post">
                     <input className="btn_text_att" type="text"/>
                     <input className="btn_submit_att" type="submit" value="SEARCH"/>
-                </form>
                 <React.Fragment>
                     <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
                     <div
@@ -211,12 +208,14 @@ const Attraction_list = () => {
                     </div>
                 </React.Fragment>
             </div>
-            <Item
-                rlist={currentPosts(maindata)}
-                moveTo={moveTo}
-                code={where}
-                filType={option}
-                lang={lang}></Item>
+            <div className="list">
+                <Item
+                    rlist={currentPosts(maindata)}
+                    moveTo={moveTo}
+                    code={where}
+                    filType={option}
+                    lang={lang}></Item>
+            </div>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );

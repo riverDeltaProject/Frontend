@@ -67,21 +67,21 @@ const Mosque_list = () => {
 
     let lastPage = parseInt(mainArr.length / 6);
 
-    if (numOfFirst <= 0) {  //numOfFirst가 1 이하로 내려가지 않도록
+    if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
         numOfFirst = 1;
     }
 
-    if(lastPage<=9){
-            numOfLast = lastPage;
+    if (lastPage <= 9) {
+        numOfLast = lastPage;
     } else {
-        if(currentPage<5){
+        if (currentPage < 5) {
             numOfLast = 9;
-        } else if(lastPage<numOfLast){
+        } else if (lastPage < numOfLast) {
             numOfLast = lastPage;
-            numOfFirst = numOfLast-8;
+            numOfFirst = numOfLast - 8;
         }
     }
-  
+
     // 필터
     let target;
     let mosqType = "";
@@ -96,17 +96,16 @@ const Mosque_list = () => {
         <div>
             <Link to="./"><img className="backicon" src={backicon} alt="backicon"/></Link>
             <h1 className="header2">모스크</h1>
-            <div className="mosque_prom">
-                <div className="prom_text_mosque">
-                    <p className="name_mosque">모스크명</p>
-                    <p className="scorepos_mosque">가게 위치</p>
+            <div className="att_prom">
+                <div className="prom_text_att">
+                    <p className="name_att">모스크명</p>
+                    <p className="scorepos_att">가게 위치</p>
                 </div>
             </div>
-            <div className="btn_class_mosque">
-                <form action="search.php" method="post">
-                    <input className="btn_text_mosque" type="text"/>
-                    <input className="btn_submit_mosque" type="submit" value="SEARCH"/>
-                </form>
+            <div className="btn_class_att">
+                <input className="btn_text_att" type="text"/>
+                <input className="btn_submit_att" type="submit" value="SEARCH"/>
+
                 <React.Fragment>
                     <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
                     <div
@@ -160,13 +159,13 @@ const Mosque_list = () => {
                     </div>
                 </React.Fragment>
             </div>
-
-            <Item
-                rlist={filter
-                    ? currentPosts(makeList())
-                    : currentPosts(mosque)}
-                filType={option}
-                moveTo="mosque"/>
+            <div className="list">
+                <Item
+                    rlist={filter
+                        ? currentPosts(makeList())
+                        : currentPosts(mosque)}
+                    filType={option}
+                    moveTo="mosque"/></div>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );

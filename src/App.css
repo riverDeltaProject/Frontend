@@ -1,1003 +1,658 @@
-/* 메인 페이지 */
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html {
-  font-size: 62.5%;
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .header {
-  padding-bottom: 1rem;
-  border-bottom: 0.5rem solid  #D8E9D7;
-  margin-bottom: 2.7rem;
+    width: 84%;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 1% 8%;
+}
+
+.header > h1 {
+    display: inline;
+    color: #909090;
+    font-size: 1.5rem;
+}
+
+#maindiv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2%;
+    background-color: #c5e8c1;
+    width: 84%;
+    padding: 5% 8% 2%;
+    margin-bottom: 8%;
+}
+
+#maindiv > div {
+    width: 100%;
+    text-align: center;
+}
+
+#maindiv > div > div {
+    text-align: left;
+}
+
+#maindiv > div > div > * {
+    margin: 10% 0;
 }
 
 .mainicon {
-  width: 90%;
-  height: auto;
-  display: block;
-  margin: 0px auto;
-  border-bottom: 3.5rem solid white;
-}
-
-.findingplace {
-  font-size: 1.6rem;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .container {
-  display:flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  border-bottom: 1rem solid white;
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-size: 1.6rem;
-  text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    justify-content: space-around;
+    border-bottom: 1rem solid white;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > div > p {
+    width: 65%;
+    margin: 5% 0;
+    padding: 3% 0;
+    border-top: solid 4px #c5e8c1;
 }
 
 .item {
-  width: 72%;
-  height: auto;
-  background-color:  #D8E9D7;
-  border-radius: 25px;
-  border: 2px solid  #D8E9D7;
+    width: 72%;
+    height: auto;
+    background-color: #D8E9D7;
+    border-radius: 25px;
+    border: 2px solid #D8E9D7;
 }
 
 .item:hover {
-  background-color:  #C0DBBD;
-  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px inset;
+    background-color: #C0DBBD;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px inset;
 }
 
 .howto {
-  font-size: 1.2rem;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  background-color:  #D8E9D7;
-  z-index:99;
-  bottom:0px;
-  left:0px;
-  right:0px;
-  position:absoulte !important;
-  position:fixed;
-  padding: 0.4rem;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+    display: none;
 }
 
-.howto:hover {
-  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px inset;
+.howto2 {
+    width: 80%;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    padding: 5% 10%;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: #7b7b7b;
+    margin: 25% 0;
 }
 
-/* 모달창 */
-
-.modal {
-  /* 모달창 그 자체 */
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 99;
-  background-color: rgba(0, 0, 0, 0.6);
+.findingplace {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-weight: bolder;
 }
 
 .lang {
-  font-size: 1.6rem;
-  float: right;
-  margin-right: 1rem;
-  border: 0px;
-  background-color: transparent;
+    float: right;
+    font-size: 1.6rem;
+    border: 0;
+    background-color: transparent;
 }
 
 .langoption {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
-.modal button {
-  /* 모달창 x버튼 */
-  outline: none;
-  cursor: pointer;
-  border: 0;
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 5%;
+    padding: 0;
 }
 
-.modal > section {
-  /* 모달창 흰배경 */
-  width: 90%;
-  max-width: 450px;
-  margin:0 auto;
-  border-radius: .3rem;
-  background-color: #fff;
-  /* 팝업이 열릴때 스르륵 열리는 효과 */
-  animation: modal-show .3s;
-  overflow: hidden;
+.pagination * {
+    display: inline;
+    font-size: 1em;
+    padding: 3%;
+    cursor: pointer;
 }
 
-.modal > section > header {
-  /* 팝업창 헤더 */
-  position: relative;
-  padding: 16px 64px 16px 16px;
-  background-color: #f1f1f1;
-  font-size: 1.5rem;
-  font-weight: 700;
+.pagination * :hover {
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
-.modal > section > main {
-  /* 팝업창 내용 */
-  padding: 16px;
-  border-bottom: 1px solid #dee2e6;
-  border-top: 1px solid #dee2e6;
+a {
+    text-decoration: none;
 }
 
-.modal > section > footer {
-  /* 팝업창 아랫단 */
-  padding: 12px 16px;
-  text-align: right;
+.list {
+    width: 90%;
+    margin: 0 5%;
 }
 
-.modal > section > footer button {
-  /* close 버튼 */
-  padding: 6px 12px;
-  color: #fff;
-  background-color: #6c757d;
-  border-radius: 5px;
-  font-size: 13px;
-}
-
-.modal.openModal {
-  display: flex;
-  align-items: center;
-  /* 팝업이 열릴때 스르륵 열리는 효과 */
-  animation: modal-bg-show .3s;
-}
-@keyframes modal-show {
-  from {
-      opacity: 0;
-      margin-top: -50px;
-  }
-  to {
-      opacity: 1;
-      margin-top: 0;
-  }
-}
-@keyframes modal-bg-show {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-/* 음식점 위치 검색 페이지 */
-
-.header2 {
-  padding-bottom: 1rem;
-  border-bottom: 0.5rem solid  #D8E9D7;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.backicon {
-  width: 3rem;
-  height: auto;
-  margin-left: 1rem;
-  position: fixed;
-  z-index: 99;
-}
-
-.normalfont {
-  text-align: center;
-  font-size: 1.6rem;
-}
-
-.btn_class {
-  display:flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-  margin-bottom: 3rem;
-}
-
-.btn_text {
-  height: auto;
-  line-height: normal;
-  padding: .7em .8em;
-  border-color:  #C0DBBD;
-  border-radius: 20px;
-  border-width: medium;
-  margin-right: 1rem;
-    /* 클릭시 누르는 테두리 없애기 */
-  outline: 0;
- }
-
-.btn_submit {
-  background-color:  #C0DBBD;
-  color: white;
-  width: 7rem;
-  height: 4rem;
-  border: 0px;
-  border-radius: 20px;
-  cursor:pointer;
-  outline: 0;
- }
-
-.containerList{
-  width: 90%;
-  margin: 0px auto;
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.containerList2{
-  width: 90%;
-  margin: 0px auto;
-  display: none;
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.itemList {
-  width: 7.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 25px;
-}
-
-/* 식당 리스트 페이지 */
-
-.restaurant_promotion {
-  background-color:#f1f1f1;
-  width: 100%;
-  height: 20rem;
-  margin-bottom: 2rem;
-}
-
-.promotion_text{
-  float:right;
-  display:flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.name_restaurant{
- font-size: 3rem;
- margin-top: 1rem;
- margin-right: 1rem;
- margin-bottom: 8rem;
-}
-
-.scoreposition{
-  display: inline-block;
-  font-size: 1.6rem;
-}
-
-.scorestar {
-  display: inline-block;
-  height: 3.5rem;
-  width: auto;
-}
-
-.score {
-  display: inline-block;
-  font-size: 2.5rem;
-  margin-right: 1rem;
-}
-
-.btn_class_list {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-  margin-bottom: 3rem;
-}
-
-.btn_text_list {
-  height: auto;
-  line-height: normal;
-  padding: .7em .8em;
-  border-color:  #C0DBBD;
-  border-radius: 20px;
-  border-width: medium;
-  margin-right: 1rem;
-  /* 클릭시 누르는 테두리 없애기 */
-  outline: 0;
- }
-
-.btn_submit_list {
-  background-color:  #C0DBBD;
-  color: white;
-  width: 7rem;
-  height: 4rem;
-  border: 0px;
-  border-radius: 20px;
-  cursor:pointer;
-  outline: 0;
- }
-
-.icon_filter {
-  height: 4rem;
-}
-
-.button_filter{
-  background-color: transparent;
-  border: 0px;
+.list > div {
+    text-align: center;
 }
 
 .rst_list_cell {
-  padding: 0.5rem 1rem;
-  border: 2px solid #C0DBBD;
-  border-radius: 5px;
-  margin: 1rem 2rem;
+    display: inline-block;
+    width: 25%;
+    height: 250px;
+    margin: 1rem;
+    border-radius: 10px;
+    border: solid 1px #7b7b7b;
+}
+
+.rst_list_cell > div {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rst_list_img {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #f1f1f1;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .rst_list_name {
-  font-size: 2rem;
-  border: 0px;
-  background-color: transparent;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    color: #7b7b7b;
+    border: 0;
+    background-color: transparent;
 }
 
 .rst_list_position {
-  font-size: 1.6rem;
+    font-size: 0.6rem;
 }
 
-/* 식당 모달창 */
-
-.icon_reset {
-  position: absolute;
-  width: 2.5rem;
-  height: auto;
-}
-
-.header_modal_filter{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.footer_modal_filter{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.itemList2 {
-  width: 8rem;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 30px;
-  border: solid gray 1px;
-}
-
-.itemList2, .itemList{
-  cursor: pointer;
-}
-
-
-.itemList3 {
-  width: 7rem;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 30px;
-  border: solid gray 1px;
-  cursor: pointer;
-}
-
-
-.itemList2 :active, .itemList:active{
-  background-color: #C0DBBD;
-}
-
-.foodtype {
-  text-align: center;
-  font-size: 1.6rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.icon_halal {
-  width: 10rem;
-  height: auto;
-  background-color: transparent;
-}
-
-/* 개별 식당 페이지 */
-
-.rst_result_prom {
-  background-color:#f1f1f1;
-  width: 100%;
-  height: 20rem;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-
-.rst_result_cell {
-  border-top: 0.3rem solid #f1f1f1;
-  border-bottom: 0.3rem solid #f1f1f1;
-  padding : 0 0 3rem 0 ;
-}
-
-.rst_result_cell h1{
-  padding : 0 0 0 2rem;
-}
-
-.rst_result_name {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-size: 2.5rem;
-  font-weight: bolder;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-.rst_result_position ,.infoItem>*{
-  padding: 0 1rem;
-  font-size: 1.6rem;
-  margin : 0 0 1.5rem 0;
-}
-
-.infoItem *:first-child{
-  color: gray;
-}
-
-/* .myMap{
-  width: 100%;
-  margin: 0px auto;
-  height: 38rem;
-  border-bottom: 30px solid white;
-} */
-
-/* 관광지 위치 검색 페이지 */
-
-.header2 {
-  padding-bottom: 1rem;
-  border-bottom: 0.5rem solid  #D8E9D7;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
+.att_prom > *,
 .backicon {
-  width: 3rem;
-  height: auto;
-  margin-left: 1rem;
-  position: fixed;
-  z-index: 99;
-}
-
-.normalfont {
-  text-align: center;
-  font-size: 1.6rem;
+    display: none;
 }
 
 .btn_class_att {
-  display:flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-  margin-bottom: 3rem;
-}
-
-.btn_text_att {
-  height: auto;
-  line-height: normal;
-  padding: .7em .8em;
-  border-color:  #C0DBBD;
-  border-radius: 20px;
-  border-width: medium;
-  margin-right: 1rem;
-    /* 클릭시 누르는 테두리 없애기 */
-  outline: 0;
- }
-
-.btn_submit_att {
-  background-color:  #C0DBBD;
-  color: white;
-  width: 7rem;
-  height: 4rem;
-  border: 0px;
-  border-radius: 20px;
-  cursor:pointer;
-  outline: 0;
- }
-
-.container_att{
-  width: 90%;
-  margin: 0px auto;
-  display:flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.container_att2{
-  width: 90%;
-  margin: 0px auto;
-  display: none;
-  display:flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.item_att {
-  width: 7rem;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 25px;
-}
-
-.item_att2 {
-  width: 7rem;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  text-align: center;
-  background-color: transparent;
-  border: 0px;
-}
-
-/* 관광지 리스트 페이지 */
-
-.att_prom {
-  background-color:#f1f1f1;
-  width: 100%;
-  height: 20rem;
-  margin-bottom: 2rem;
-}
-
-.prom_text_att{
-  float:right;
-  display:flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.name_att{
- font-size: 3rem;
- margin-top: 1rem;
- margin-right: 1rem;
- margin-bottom: 8rem;
-}
-
-.scorepos_att{
-  display: inline-block;
-  font-size: 1.6rem;
-}
-
-.score_att {
-  display: inline-block;
-  font-size: 2.5rem;
-  margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn_class_att {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-  margin-bottom: 3rem;
+    width: 80%;
+    margin: 0 10%;
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.btn_submit_att {
+    padding: 6% 10%;
+    background-color: white;
+    border: solid 1px #7b7b7b;
+    border-radius: 30px;
+    font-weight: bolder;
 }
 
 .btn_text_att {
-  height: auto;
-  line-height: normal;
-  padding: .7em .8em;
-  border-color:  #C0DBBD;
-  border-radius: 20px;
-  border-width: medium;
-  margin-right: 1rem;
-  /* 클릭시 누르는 테두리 없애기 */
-  outline: 0;
- }
-
-.btn_submit_att {
-  background-color:  #C0DBBD;
-  color: white;
-  width: 7rem;
-  height: 4rem;
-  border: 0px;
-  border-radius: 20px;
-  cursor:pointer;
-  outline: 0;
- }
-
-.icon_filter {
-  height: 4rem;
+    padding: 1.8% 10%;
+    background-color: white;
+    border: solid 1px #7b7b7b;
+    border-radius: 30px;
 }
 
-/* 관광지 리스트 axios */
-
-.att_list_cell {
-  padding: 0.5rem 1rem;
-  border: 2px solid #C0DBBD;
-  border-radius: 5px;
-  margin: 1rem 2rem;
+.button_filter {
+    background-color: transparent;
+    border: 0;
 }
 
-.att_list_name {
-  font-size: 2rem;
-  border: 0px;
-  background-color: transparent;
+.button_filter > img {
+    width: 50%;
 }
 
-.att_list_position {
-  font-size: 1.6rem;
-}
+@media (max-width : 981px) {
+    html {
+        font-size: 62.5%;
+    }
 
-/* 관광지 모달창 */
+    .header {
+        padding-bottom: 1rem;
+        border-bottom: 0.5rem solid #D8E9D7;
+        margin-bottom: 2.7rem;
+        background-color: white;
+    }
 
-.icon_reset {
-  position: absolute;
-  width: 2.5rem;
-  height: auto;
-}
+    .header > h1 {
+        font-size: 3rem;
+    }
 
-.header_modal_att{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+    .mainicon {
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 
-.footer_modal_att{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+    #maindiv {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 
-.atttype {
-  text-align: center;
-  font-size: 1.6rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+    #maindiv > div {
+        display: none;
+    }
 
-.icon_att {
-  width: 10rem;
-  height: auto;
-  border-radius: 100px;
-  border: 2px solid #D8E9D7;
-  background-color: #D8E9D7;
-}
+    .findingplace {
+        text-align: left;
+        font-size: 1.6rem;
+        margin: 2rem 3.5rem;
+    }
 
-/* 개별 관광지 페이지 */
+    .container > div > p {
+        font-size: 2rem;
+        border-top: none;
+    }
 
-.att_result_prom {
-  background-color:#f1f1f1;
-  width: 100%;
-  height: 20rem;
-}
+    .lang {
+        margin: 1rem;
+    }
 
-.att_result_cell {
-  border-top: 0.3rem solid #f1f1f1;
-  border-bottom: 0.3rem solid #f1f1f1;
-}
+    .list {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.att_result_name {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-size: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
+    .rst_list_cell {
+        width: 85%;
+        height: auto;
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        border: 2px solid #C0DBBD;
+        border-radius: 5px;
+    }
 
-.att_result_position {
-  padding-left: 2rem;
-  font-size: 1.6rem;
-  padding-bottom: 2rem;
-}
+    .rst_list_cell > div {
+        display: block;
+    }
 
-/* .myMapAtt {
-  width: 100%;
-  margin: 0px auto;
-  height: 38rem;
-  border-bottom: 30px solid white;
-} */
+    .backicon {
+        width: 3rem;
+        height: auto;
+        margin: 1rem;
+        position: fixed;
+        z-index: 99;
+    }
 
+    .header2 {
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 0.5rem solid #D8E9D7;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
 
-/* 모스크 리스트 페이지 */
+    .att_prom {
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
 
-.mosque_prom {
-  background-color:#f1f1f1;
-  width: 100%;
-  height: 20rem;
-  margin-bottom: 2rem;
-}
+    .pagination * {
+        display: inline;
+        font-size: 1.5rem;
+        padding: 3%;
+        cursor: pointer;
+    }
 
-.prom_text_mosque{
-  float:right;
-  display:flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+    .pagination * :hover {
+        font-weight: bolder;
+        font-size: 2rem;
+    }
 
-.name_mosque{
- font-size: 3rem;
- margin-top: 1rem;
- margin-right: 1rem;
- margin-bottom: 9rem;
-}
+    .prom_text_att {
+        float: right;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
 
-.scorepos_mosque{
-  font-size: 1.6rem;
-}
+    .name_att {
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 8rem;
+    }
 
-.btn_class_mosque {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-  margin-bottom: 3rem;
-}
+    .scorepos_att {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
 
-.btn_text_mosque {
-  height: auto;
-  line-height: normal;
-  padding: .7em .8em;
-  border-color:  #C0DBBD;
-  border-radius: 20px;
-  border-width: medium;
-  margin-right: 1rem;
-  /* 클릭시 누르는 테두리 없애기 */
-  outline: 0;
- }
+    .score_att {
+        display: inline-block;
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
 
-.btn_submit_mosque {
-  background-color:  #C0DBBD;
-  color: white;
-  width: 7rem;
-  height: 4rem;
-  border: 0px;
-  border-radius: 20px;
-  cursor:pointer;
-  outline: 0;
- }
+    .backicon {
+        display: inline;
+    }
 
+    .btn_class_att {
+        width: 90%;
+        grid-gap: 20px;
+        margin: 0 auto;
+        padding: 0;
+    }
 
-/* 모스크 모달창 */
+    .btn_text_att {
+        width: 90%;
+        height: auto;
+        line-height: normal;
+        padding: 0.7em 0.8em;
+        border-color: #C0DBBD;
+        border-radius: 20px;
+        border-width: medium;
+        margin-right: 1rem;
+        /* 클릭시 누르는 테두리 없애기 */
+        outline: 0;
+    }
 
-.header_modal_mosque{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+    .btn_submit_att {
+        width: 100%;
+        background-color: #C0DBBD;
+        color: white;
+        padding: 1.2rem;
+        border: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        outline: 0;
+    }
 
-.footer_modal_mosque{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+    .button_filter > img {
+        width: 70%;
+    }
 
-.placetype {
-  text-align: center;
-  font-size: 1.6rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+    .icon_filter {
+        width: 15%;
+    }
 
-.icon_mosque {
-  width: 10rem;
-  height: auto;
-  border-radius: 100px;
-  border: 2px solid #D8E9D7;
-  background-color: #D8E9D7;
-}
+    .icon_filter img {
+        height: 5rem;
+    }
 
-/* 개별 모스크 페이지 */
+    .rst_list_img {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #f1f1f1;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 
-.mosque_result_prom {
-  background-color:#f1f1f1;
-  width: 100%;
-  height: 20rem;
-}
+    .rst_list_name {
+        font-size: 2rem;
+        color: black;
+        border: 0;
+        background-color: transparent;
+    }
 
-.mosque_result_cell {
-  border-top: 0.3rem solid #f1f1f1;
-  border-bottom: 0.3rem solid #f1f1f1;
-}
+    .rst_list_position {
+        font-size: 1.6rem;
+    }
 
-.mosque_result_name {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-shrink: 0;
-  font-size: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
+    .list {
+        width: 100%;
+    }
 
-.mosque_result_position {
-  padding-left: 2rem;
-  font-size: 1.6rem;
-  padding-bottom: 2rem;
-}
+    .list > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.myMapMosque {
-  width: 30rem;
-  margin : 0 auto;
-  height: 30rem;
-  border-radius: 30px;
-}
+    .scoreposition {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
 
-.Title{
-  text-align: center;
-  margin: 2rem;
-}
+    .scorestar {
+        display: inline-block;
+        height: 3.5rem;
+        width: auto;
+    }
 
-.Title *{
-  display: inline;
-}
+    .score {
+        display: inline-block;
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
 
-.subInfo{
-  padding:0 0 0 10px ;
-  font-size : 1.4rem;
-  color : gray;
-}
+    .header2 {
+        padding-bottom: 1rem;
+        border-bottom: 0.5rem solid #D8E9D7;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
 
-.infoItem{
-  display: grid;
-  width: 95%;
-  grid-template-columns: 3fr 5fr;
-}
+    .backicon {
+        width: 3rem;
+        height: auto;
+        margin-left: 1rem;
+        position: fixed;
+        z-index: 99;
+    }
 
-.infoItem * {
-  display: inline;
-  min-width: 10%;
-}
+    .normalfont {
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 0 0 1.5rem;
+    }
 
-/* pagination */
-.pagination{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:0 0 5% 0;
-  padding:0;
-}
+    .btn_class {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-bottom: 3rem;
+    }
 
-.pagination *{
-  display: inline;
-  font-size : 1.5rem;
-  padding: 3%;
-  cursor: pointer;
-}
+    .btn_text {
+        height: auto;
+        line-height: normal;
+        padding: 0.7em 0.8em;
+        border-color: #C0DBBD;
+        border-radius: 20px;
+        border-width: medium;
+        margin-right: 1rem;
+        /* 클릭시 누르는 테두리 없애기 */
+        outline: 0;
+    }
+    /* 모달창 */
 
+    .modal {
+        /* 모달창 그 자체 */
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 
-.pagination * :hover{
-  font-weight: bolder;
-  font-size : 2rem;
-}
+    .lang {
+        font-size: 1.6rem;
+        float: right;
+        margin-right: 1rem;
+        border: 0;
+        background-color: transparent;
+    }
 
-a{
-  text-decoration: none;
-}
+    .langoption {
+        font-size: 1.6rem;
+    }
 
-.noRes{
-  font-size: 2rem;
-  text-align: center;
-}
+    .modal button {
+        /* 모달창 x버튼 */
+        outline: none;
+        cursor: pointer;
+        border: 0;
+    }
 
-.notFound{
-  width:8rem;
-  height: auto;
-  margin:3rem;
-}
+    .modal > section {
+        /* 모달창 흰배경 */
+        width: 90%;
+        max-width: 450px;
+        margin: 0 auto;
+        border-radius: 0.3rem;
+        background-color: #fff;
+        /* 팝업이 열릴때 스르륵 열리는 효과 */
+        animation: modal-show 0.3s;
+        overflow: hidden;
+    }
 
-.errorMsg{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+    .modal > section > header {
+        /* 팝업창 헤더 */
+        position: relative;
+        padding: 16px 64px 16px 16px;
+        background-color: #f1f1f1;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
 
-.Items{
-  display: flex;
-  padding: 0.5rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-}
+    .modal > section > main {
+        /* 팝업창 내용 */
+        padding: 16px;
+        border-bottom: 1px solid #dee2e6;
+        border-top: 1px solid #dee2e6;
+    }
 
-.attr_list_cell>div{
-  padding: 1rem;
-  margin:0 1rem;
-  border-bottom: 2px solid #D8E9D7;
-}
+    .modal > section > footer {
+        /* 팝업창 아랫단 */
+        padding: 12px 16px;
+        text-align: right;
+    }
 
+    .modal > section > footer button {
+        /* close 버튼 */
+        padding: 6px 12px;
+        color: #fff;
+        background-color: #6c757d;
+        border-radius: 5px;
+        font-size: 13px;
+    }
 
-.attr_list_name {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  border: 0px;
-  background-color: transparent;
-  padding:0;
-}
+    .modal.openModal {
+        display: flex;
+        align-items: center;
+        /* 팝업이 열릴때 스르륵 열리는 효과 */
+        animation: modal-bg-show 0.3s;
+    }
 
+    .btn_submit {
+        background-color: #C0DBBD;
+        color: white;
+        width: 7rem;
+        height: 4rem;
+        border: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        outline: 0;
+    }
 
-.attr_list_position {
-  font-size: 1.5rem;
-  margin : 0;
-}
+    .containerList {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
 
-.attr_noResult{
-  font-size: 1.5rem;
-  text-align: center;
+    .containerList2 {
+        width: 90%;
+        margin: 0 auto;
+        display: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .itemList {
+        width: 7.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 25px;
+    }
+
+    .itemList2 {
+        width: 8rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 30px;
+        border: solid gray 1px;
+    }
 }
