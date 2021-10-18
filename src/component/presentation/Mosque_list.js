@@ -9,6 +9,8 @@ import backicon from "../assets/backicon.png";
 import icon_filter from "../assets/icon_filter.png"
 import mosqueicon from "../assets/mosqueicon.png";
 
+import headerImg from "../assets/mosque_header.JPG"
+
 const Mosque_list = () => {
     const location = useLocation();
 
@@ -94,7 +96,11 @@ const Mosque_list = () => {
 
     return (
         <div>
-            <Link to="./"><img className="backicon" src={backicon} alt="backicon"/></Link>
+            <Link to="./">
+                <img className="backicon" src={backicon} alt="backicon"/>
+            </Link>
+            <img src={headerImg} className="headerImg" alt="Mosque list" />
+           
             <h1 className="header2">모스크</h1>
             <div className="att_prom">
                 <div className="prom_text_att">

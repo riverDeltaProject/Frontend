@@ -14,6 +14,8 @@ import {restEn} from "../API/restEn"
 import Pagination from './Pagination.js';
 
 import Notfound from "../assets/notfound.png"
+import headerImg from "../assets/restaurant_header.JPG"
+
 
 const Restaurant_list = () => {
     const history = useHistory();
@@ -167,6 +169,9 @@ const Restaurant_list = () => {
     return (
         <div>
             <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
+            
+            <img src={headerImg} className="headerImg" alt="Restraunt list" />
+            
             <h1 className="header2">식당</h1>
             <div className="att_prom">
                 <div className="prom_text_att">

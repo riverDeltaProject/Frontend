@@ -66,7 +66,7 @@ const Mosque_result = () => {
     }
 
     return (
-        <div>
+        <div className="resultContainer">
             <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
             <div className="mosque_result_prom"/>
             <div className="rst_result_cell">

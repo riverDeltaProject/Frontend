@@ -11,7 +11,7 @@ function Item({rlist, moveTo, code}) {
             for(let rkey in rlist) {
                 tmp.push(
                     <div key={rkey} className="attr_list_cell">
-                        <div>
+                        <div className="att_info">
                             <button className="attr_list_name">
                                 {rlist[rkey].name}
                             </button>
