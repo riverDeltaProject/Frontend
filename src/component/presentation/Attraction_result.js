@@ -70,9 +70,9 @@ const Attraction_result = () => {
             state: {
                 code: code,
                 moveTo: moveTo,
-                deState : true,
-                lang : beforeState.lang,
-                optList : beforeState.filType
+                deState: true,
+                lang: beforeState.lang,
+                optList: beforeState.filType
             }
         })
     }
@@ -85,7 +85,7 @@ const Attraction_result = () => {
             key => key.address.includes(code["city"]) && key.area.includes(code["area"])
         );
 
-        if(tmp.length === 0){
+        if (tmp.length === 0) {
             tmp = restList.filter(key => key.area.includes(code["area"]))
         }
 
@@ -110,29 +110,29 @@ const Attraction_result = () => {
         }
     }
 
-    const attType = ()=>{
+    const attType = () => {
         let type = ""
         switch (beforeState.filType) {
             case 14:
-                type="문화시설";
+                type = "문화시설";
                 break;
             case 15:
-                type="행사/공연/축제";
+                type = "행사/공연/축제";
                 break;
             case 25:
-                type="여행코스";
+                type = "여행코스";
                 break;
             case 28:
-                type="레포츠";
+                type = "레포츠";
                 break;
             case 32:
-                type="숙박";
+                type = "숙박";
                 break;
             case 38:
-                type="쇼핑";
+                type = "쇼핑";
                 break;
             default:
-                type="관광지";
+                type = "관광지";
                 break;
         }
 
@@ -140,31 +140,36 @@ const Attraction_result = () => {
     }
 
     return (
-        <div>
+        <div className="resultContainer">
             <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
-            <img className="rst_result_prom" src={about.firstimage} alt={about.title}></img>
-            <div className="rst_result_cell">
-                <div>
-                    <div className="Title">
-                        <div className="rst_result_name">{about.title}</div>
-                        <div className="subInfo">{attType()}</div>
-                    </div>
-                    <div className="Items">
-                        <div className="infoItem longItem">
-                            <div>주소</div>
-                            <div>{about.addr1}</div>
+            <div className="resultHeader">
+                <h1>{about.title}</h1>
+            </div>
+            <div className="resultBody">
+                <div className="infoContainer">
+                    <img className="rst_result_prom" src={about.firstimage} alt={about.title}></img>
+                    <div className="rst_result_cell">
+                        <div className="Title">
+                            <div className="rst_result_name">{about.title}</div>
+                            <div className="subInfo">{attType()}</div>
+                        </div>
+                        <div className="Items">
+                            <div className="infoItem longItem">
+                                <div>주소</div>
+                                <div>{about.addr1}</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="rst_result_cell">
-                <h1>오시는 길</h1>
-                <div className='myMapMosque' ref={container}/>
-            </div>
-            <div className="rst_result_cell">
-                <h1>주변 식당</h1>
-                <Item rlist={currentPosts()} code={code}/>
-                <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
+                <div className="rst_result_cell">
+                    <h1>오시는 길</h1>
+                    <div className='myMapMosque' ref={container}/>
+                </div>
+                <div className="rst_result_cell">
+                    <h1>주변 식당</h1>
+                    <Item rlist={currentPosts()} code={code}/>
+                    <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
+                </div>
             </div>
         </div>
     );

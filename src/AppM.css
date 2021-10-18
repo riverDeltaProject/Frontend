@@ -1,0 +1,755 @@
+@media (max-width : 981px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .headerImg {
+        display: none;
+    }
+
+    .header {
+        padding-bottom: 1rem;
+        border-bottom: 0.5rem solid #D8E9D7;
+        margin-bottom: 2.7rem;
+        background-color: white;
+    }
+
+    .header > h1 {
+        font-size: 3rem;
+    }
+
+    .mainicon {
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #maindiv {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #maindiv > div {
+        display: none;
+    }
+
+    .container {
+        margin-top: 1rem;
+    }
+
+    .container > div > p {
+        font-size: 2rem;
+        border-top: none;
+        text-align: center;
+        width: 80%;
+    }
+
+    .findingplace {
+        text-align: left;
+        width: 96%;
+        margin-left: 4%;
+        font-size: 2rem;
+    }
+
+    .lang {
+        margin: 1rem;
+    }
+
+    .list {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rst_list_cell {
+        width: 85%;
+        height: auto;
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        border: 2px solid #C0DBBD;
+        border-radius: 5px;
+    }
+
+    .rst_list_cell > div {
+        display: block;
+    }
+
+    .backicon {
+        width: 3rem;
+        height: auto;
+        margin: 1rem;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .header2 {
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 0.5rem solid #D8E9D7;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .att_prom {
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .pagination * {
+        display: inline;
+        font-size: 1.5rem;
+        padding: 3%;
+        cursor: pointer;
+    }
+
+    .pagination * :hover {
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    .prom_text_att {
+        float: right;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .name_att {
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    .scorepos_att {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
+
+    .score_att {
+        display: inline-block;
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    .backicon {
+        display: inline;
+    }
+
+    .btn_class_att {
+        width: 90%;
+        grid-gap: 20px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .btn_text_att {
+        width: 90%;
+        height: auto;
+        line-height: normal;
+        padding: 0.7em 0.8em;
+        border-color: #C0DBBD;
+        border-radius: 20px;
+        border-width: medium;
+        margin-right: 1rem;
+        /* 클릭시 누르는 테두리 없애기 */
+        outline: 0;
+    }
+
+    .btn_submit_att {
+        width: 100%;
+        background-color: #C0DBBD;
+        color: white;
+        padding: 1.2rem;
+        border: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        outline: 0;
+    }
+    .icon_reset {
+        position: absolute;
+        width: 2.5rem;
+        height: auto;
+    }
+
+    .header_modal_att {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .footer_modal_att {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .atttype {
+        text-align: center;
+        font-size: 1.6rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .icon_att {
+        width: 10rem;
+        height: auto;
+        border-radius: 100px;
+        border: 2px solid #D8E9D7;
+        background-color: #D8E9D7;
+    }
+
+    .button_filter {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .button_filter > img {
+        width: 100%;
+    }
+
+    .icon_filter {
+        width: 25%;
+    }
+
+    .icon_filter img {
+        height: 7rem;
+    }
+
+    .rst_list_img {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #f1f1f1;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .rst_list_name {
+        font-size: 2rem;
+        color: black;
+        border: 0;
+        background-color: transparent;
+    }
+
+    .rst_list_position {
+        font-size: 1.6rem;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .list > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scoreposition {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
+
+    .scorestar {
+        display: inline-block;
+        height: 3.5rem;
+        width: auto;
+    }
+
+    .score {
+        display: inline-block;
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    .header2 {
+        padding-bottom: 1rem;
+        border-bottom: 0.5rem solid #D8E9D7;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .backicon {
+        width: 3rem;
+        height: auto;
+        margin-left: 1rem;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .normalfont {
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 0 0 1.5rem;
+    }
+
+    .btn_class {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-bottom: 3rem;
+    }
+
+    .btn_text {
+        height: auto;
+        line-height: normal;
+        padding: 0.7em 0.8em;
+        border-color: #C0DBBD;
+        border-radius: 20px;
+        border-width: medium;
+        margin-right: 1rem;
+        /* 클릭시 누르는 테두리 없애기 */
+        outline: 0;
+    }
+    /* 모달창 */
+
+    .modal {
+        /* 모달창 그 자체 */
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .lang {
+        font-size: 1.6rem;
+        float: right;
+        margin-right: 1rem;
+        border: 0;
+        background-color: transparent;
+    }
+
+    .langoption {
+        font-size: 1.6rem;
+    }
+
+    .modal button {
+        /* 모달창 x버튼 */
+        outline: none;
+        cursor: pointer;
+        border: 0;
+    }
+
+    .modal > section {
+        /* 모달창 흰배경 */
+
+        overflow: auto;
+        width: 90%;
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: 0.3rem;
+        background-color: #fff;
+        /* 팝업이 열릴때 스르륵 열리는 효과 */
+        animation: modal-show 0.3s;
+        overflow: hidden;
+    }
+
+    .modal > section > header {
+        /* 팝업창 헤더 */
+        position: relative;
+        padding: 16px 64px 16px 16px;
+        background-color: #f1f1f1;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .modal > section > main {
+        /* 팝업창 내용 */
+        padding: 16px;
+        border-bottom: 1px solid #dee2e6;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .modal > section > footer {
+        /* 팝업창 아랫단 */
+        padding: 12px 16px;
+        text-align: right;
+    }
+
+    .modal > section > footer button {
+        /* close 버튼 */
+        padding: 6px 12px;
+        color: #fff;
+        background-color: #6c757d;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    .modal.openModal {
+        display: flex;
+        align-items: center;
+        /* 팝업이 열릴때 스르륵 열리는 효과 */
+        animation: modal-bg-show 0.3s;
+    }
+
+    .btn_submit {
+        background-color: #C0DBBD;
+        color: white;
+        width: 7rem;
+        height: 4rem;
+        border: 0;
+        border-radius: 20px;
+        cursor: pointer;
+        outline: 0;
+    }
+
+    .containerList {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .containerList2 {
+        width: 90%;
+        margin: 0 auto;
+        display: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .itemList {
+        width: 7.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 25px;
+    }
+
+    .itemList2 {
+        width: 8rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 30px;
+        border: solid gray 1px;
+    }
+
+    .subInfo {
+        padding: 0 0 0 10px;
+        font-size: 1.4rem;
+        color: gray;
+    }
+
+    .resultBody {
+        width: 100%;
+    }
+
+    .mosque_result_prom {
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 20rem;
+    }
+
+    .rst_result_prom {
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 20rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 0;
+    }
+
+    .rst_result_cell {
+        border-top: 0.3rem solid #f1f1f1;
+        border-bottom: 0.3rem solid #f1f1f1;
+        padding: 0 0 3rem;
+    }
+
+    .rst_result_cell h1 {
+        margin: 1rem 0;
+        padding: 0 0 0 2rem;
+    }
+
+    .rst_result_name {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .Title {
+        display: block;
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .Title * {
+        display: inline;
+    }
+
+    .infoItem {
+        display: grid;
+        width: 94%;
+        margin: 0 3%;
+        grid-template-columns: 3fr 5fr;
+    }
+
+    .infoItem * {
+        display: inline;
+        min-width: 10%;
+    }
+
+    .infoItem > *,
+    .rst_result_position {
+        padding: 0 1rem;
+        font-size: 1.6rem;
+        margin: 0 0 1.5rem;
+    }
+
+    .infoItem *:first-child {
+        color: gray;
+    }
+
+    .myMapMosque {
+        width: 30rem;
+        margin: 0 auto;
+        height: 30rem;
+        border-radius: 30px;
+    }
+
+    .attr_list_name {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .attr_list_position {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .attr_noResult {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .attr_list_cell > div {
+        padding: 1rem;
+        margin: 0 1rem;
+        border: none;
+        border-bottom: 2px solid #D8E9D7;
+    }
+
+    .rst_result_prom {
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 20rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .rst_result_cell {
+        border-top: 0.3rem solid #f1f1f1;
+        border-bottom: 0.3rem solid #f1f1f1;
+        padding: 0 0 3rem;
+    }
+
+    .rst_result_cell h1 {
+        padding: 0 0 0 2rem;
+        border: none;
+        color: black;
+        font-size: 2rem;
+    }
+
+    .rst_result_name {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .resultContainer {
+        width: 100%;
+    }
+
+    .resultHeader {
+        display: none;
+    }
+
+    .infoContainer {
+        display: block;
+        margin: 0 0 1rem;
+    }
+
+    .infoContainer > .rst_result_cell {
+        border: none;
+        padding: 0;
+    }
+
+    .attr_list_cell > div {
+        padding: 1rem;
+        margin: 0 3rem;
+        border-bottom: 2px solid #D8E9D7;
+    }
+
+    .attr_noResult {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .attr_list_name {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .attr_list_position {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .attr_noResult {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .langoption {
+        font-size: 1.6rem;
+    }
+
+    .item {
+        margin: 0;
+        padding: 0;
+
+        width: 70%;
+        height: auto;
+        background-color: #D8E9D7;
+        border-radius: 25px;
+        border: 2px solid #D8E9D7;
+    }
+
+    .itemList3 {
+        width: 7rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 30px;
+        border: solid gray 1px;
+        cursor: pointer;
+    }
+
+    .header_modal_mosque {
+        font-size: 1.6rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .footer_modal_mosque {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .placetype {
+        text-align: center;
+        font-size: 1.6rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .placetype > div > button {
+        margin: 0.3rem;
+    }
+
+    .icon_mosque {
+        width: 10rem;
+        height: auto;
+        border-radius: 100px;
+        border: 2px solid #D8E9D7;
+        background-color: #D8E9D7;
+    }
+
+    .langoption {
+        font-size: 1.6rem;
+    }
+
+    .foodtype {
+        text-align: center;
+        font-size: 1.6rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    .icon_halal {
+        width: 10rem;
+        height: auto;
+        background-color: transparent;
+    }
+}

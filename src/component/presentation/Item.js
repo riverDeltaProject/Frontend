@@ -31,7 +31,7 @@ function Item({rlist, moveTo, code, filType, lang}) {
                     className="rst_list_img"
                     src={rlist[rkey].firstimage}
                     alt={"about attraction image"}/>
-                <div>
+                <div className="bottom">
                     <button className="rst_list_name">
                         {rlist[rkey].name}
                     </button>

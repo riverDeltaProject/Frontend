@@ -11,6 +11,8 @@ import icon_att_leports from "../assets/icon_att_leports.png";
 import icon_att_culture from "../assets/icon_att_culture.png";
 import icon_att_shop from "../assets/icon_att_shop.png";
 import icon_att_stay from "../assets/icon_att_stay.png";
+import headerImg from "../assets/att_header.JPG"
+
 import {serviceKey} from '../API/Key';
 import Item from './Item_att.js';
 import Pagination from './Pagination.js';
@@ -137,6 +139,7 @@ const Attraction_list = () => {
     return (
         <div>
             <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
+            <img src={headerImg} className="headerImg" alt="Attraction list" />
             <h1 className="header2">관광지</h1>
             <div className="att_prom">
                 <div className="prom_text_att">
