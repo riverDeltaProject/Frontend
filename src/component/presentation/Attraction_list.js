@@ -112,25 +112,48 @@ const Attraction_list = () => {
     const sel_attr = (e) => {
         target = e.target.parentNode.nextSibling.innerText;
 
-        switch (target) {
-            case "문화시설":
-                attrType = 14;
-                break;
-            case "행사/공연/축제":
-                attrType = 15;
-                break;
-            case "레포츠":
-                attrType = 28;
-                break;
-            case "숙박":
-                attrType = 32;
-                break;
-            case "쇼핑":
-                attrType = 38;
-                break;
-            default:
-                attrType = 12;
-                break;
+        if (lang === "KorService") {
+            switch (target) {
+                case "문화시설":
+                    attrType = 14;
+                    break;
+                case "행사/공연/축제":
+                    attrType = 15;
+                    break;
+                case "레포츠":
+                    attrType = 28;
+                    break;
+                case "숙박":
+                    attrType = 32;
+                    break;
+                case "쇼핑":
+                    attrType = 38;
+                    break;
+                default:
+                    attrType = 12;
+                    break;
+            }
+        } else{
+            switch (target) {
+                case "문화시설":
+                    attrType = 78;
+                    break;
+                case "행사/공연/축제":
+                    attrType = 85;
+                    break;
+                case "레포츠":
+                    attrType = 75;
+                    break;
+                case "숙박":
+                    attrType = 80;
+                    break;
+                case "쇼핑":
+                    attrType = 79;
+                    break;
+                default:
+                    attrType = 76;
+                    break;
+            }
         }
 
         setOption(attrType);
@@ -139,7 +162,7 @@ const Attraction_list = () => {
     return (
         <div>
             <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
-            <img src={headerImg} className="headerImg" alt="Attraction list" />
+            <img src={headerImg} className="headerImg" alt="Attraction list"/>
             <h1 className="header2">관광지</h1>
             <div className="att_prom">
                 <div className="prom_text_att">
@@ -152,8 +175,8 @@ const Attraction_list = () => {
                 </div>
             </div>
             <div className="btn_class_att">
-                    <input className="btn_text_att" type="text"/>
-                    <input className="btn_submit_att" type="submit" value="SEARCH"/>
+                <input className="btn_text_att" type="text"/>
+                <input className="btn_submit_att" type="submit" value="SEARCH"/>
                 <React.Fragment>
                     <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
                     <div
