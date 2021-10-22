@@ -18,7 +18,7 @@ const SubArea = ({citylist, area, moveTo, lang}) => {
             code["city"] = target;
             code["cityCode"] = i+1
 
-            let type = (moveTo==="restaurant")?{"type": [], "friendly": ""}:12;
+            let type = (moveTo==="restaurant")?{"type": [], "friendly": ""}:((lang==="KorService")?12:76);
 
             history.push({
                 pathname: `/${moveTo}_list`,

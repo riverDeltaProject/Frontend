@@ -20,13 +20,25 @@ const Attraction_result = () => {
     const location = useLocation();
     const container = useRef(null);
     const [currentPage, setCurrentPage] = useState(1);
-    const [restaurant, setRestaurant] = useState([]);
     const [postsPerPage] = useState(6);
     const beforeState = location.state;
 
     const about = beforeState.data;
     const code = beforeState.code;
     const moveTo = beforeState.moveTo;
+
+    
+    const tmp = (beforeState.lang === "KorService")
+        ? [
+            "주소",
+            "오시는 길",
+            "주변 식당"
+        ]
+        : [
+            "Address",
+            "Way to Come",
+            "Nearby Restaurant"
+        ];
 
     useEffect(() => {
         const map = new window
@@ -131,6 +143,24 @@ const Attraction_result = () => {
             case 38:
                 type = "쇼핑";
                 break;
+            case 78:
+                type = "Cultural facility";
+                break;
+            case 85:
+                type = "Festival";
+                break;
+            case 75:
+                type = "Sports";
+                break;
+            case 80:
+                type = "Lodgment";
+                break;
+            case 79:
+                type = "Shopping";
+                break;
+            case 76:
+                type = "Cultural facility";
+                break;
             default:
                 type = "관광지";
                 break;
@@ -155,18 +185,18 @@ const Attraction_result = () => {
                         </div>
                         <div className="Items">
                             <div className="infoItem longItem">
-                                <div>주소</div>
+                                <div>{tmp[0]}</div>
                                 <div>{about.addr1}</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="rst_result_cell">
-                    <h1>오시는 길</h1>
+                    <h1>{tmp[1]}</h1>
                     <div className='myMapMosque' ref={container}/>
                 </div>
                 <div className="rst_result_cell">
-                    <h1>주변 식당</h1>
+                    <h1>{tmp[2]}</h1>
                     <Item rlist={currentPosts()} code={code}/>
                     <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
                 </div>

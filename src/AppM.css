@@ -1,6 +1,6 @@
 @media (max-width : 981px) {
     html {
-        font-size: 62.5%;
+        font-size: 40%;
     }
 
     .headerImg {
@@ -8,7 +8,7 @@
     }
 
     .header {
-        padding-bottom: 1rem;
+        padding-block: 2rem 1rem;
         border-bottom: 0.5rem solid #D8E9D7;
         margin-bottom: 2.7rem;
         background-color: white;
@@ -17,6 +17,28 @@
     .header > h1 {
         font-size: 3rem;
     }
+
+    .howto {
+        display: block;
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        background-color:  #D8E9D7;
+        z-index:99;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        position:absoulte !important;
+        position:fixed;
+        padding: 0.4rem;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+      }
+      
+      .howto:hover {
+        box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px inset;
+      }
 
     .mainicon {
         height: auto;

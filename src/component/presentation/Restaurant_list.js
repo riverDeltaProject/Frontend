@@ -172,7 +172,7 @@ const Restaurant_list = () => {
             
             <img src={headerImg} className="headerImg" alt="Restraunt list" />
             
-            <h1 className="header2">식당</h1>
+            <h1 className="header2">{(lang==="KorService")?"식당":"Restaurant"}</h1>
             <div className="att_prom">
                 <div className="prom_text_att">
                     <p className="name_att">가게명</p>

@@ -23,7 +23,27 @@ const Restaurant_result = () => {
     const code = beforeState.code;
     const moveTo = beforeState.moveTo;
     const lang = beforeState.lang;
-    
+
+    const tmp = (lang === "KorService")
+        ? [
+            "전화번호",
+            "휴무일",
+            "운영시간",
+            "주소",
+            "할랄 여부",
+            "주차",
+            "오시는 길"
+        ]
+        : [
+            "Phonenum",
+            "Holiday",
+            "Runtime",
+            "Address",
+            "Halal Friendly",
+            "Parking",
+            "Way to Come"
+        ];
+
     useEffect(() => {
         const map = new window
             .kakao
@@ -35,7 +55,11 @@ const Restaurant_result = () => {
             .services
             .Geocoder();
 
-        let str = (lang === "KorService")?about.address:about.address.match(/\((.*?)\)/)[1]
+        let str = (lang === "KorService")
+            ? about.address
+            : about
+                .address
+                .match(/\((.*?)\)/)[1]
 
         geocoder.addressSearch(str, function (result, status) {
             // 정상적으로 검색이 완료됐으면
@@ -58,16 +82,18 @@ const Restaurant_result = () => {
         return() => {};
     }, [])
 
-    const goBack = ()=>{
+    const goBack = () => {
         history.push({
-            pathname:`/restaurant_list`,
-            search:`?sort=${location.state.code["city"]}`,
-            state:{
-                code : code,
-                moveTo:moveTo,
-                deState : true,
-                optList : beforeState.filType,
-                lang:lang
+            pathname: `/restaurant_list`,
+            search: `?sort=${location
+                .state
+                .code["city"]}`,
+            state: {
+                code: code,
+                moveTo: moveTo,
+                deState: true,
+                optList: beforeState.filType,
+                lang: lang
             }
         })
     }
@@ -84,34 +110,34 @@ const Restaurant_result = () => {
                     </div>
                     <div className="Items">
                         <div className="infoItem">
-                            <div>전화번호</div>
+                            <div>{tmp[0]}</div>
                             <div>{about.phonenum}</div>
                         </div>
                         <div className="infoItem">
-                            <div>휴무일</div>
+                            <div>{tmp[1]}</div>
                             <div>{about.holiday}</div>
                         </div>
                         <div className="infoItem">
-                            <div>운영시간</div>
+                            <div>{tmp[2]}</div>
                             <div>{about.runtime}</div>
                         </div>
                         <div className="infoItem longItem">
-                            <div>주소</div>
+                            <div>{tmp[3]}</div>
                             <div>{about.address}</div>
                         </div>
                         <div className="infoItem">
-                            <div>Halal Friendly</div>
+                            <div>{tmp[4]}</div>
                             <div>{about.friendly}</div>
                         </div>
                         <div className="infoItem">
-                            <div>주차가능여부</div>
+                            <div>{tmp[5]}</div>
                             <div>{about.parking}</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="rst_result_cell">
-                <h1>오시는 길</h1>
+                <h1>{tmp[6]}</h1>
                 <div className='myMapMosque' ref={container}/>
             </div>
         </div>

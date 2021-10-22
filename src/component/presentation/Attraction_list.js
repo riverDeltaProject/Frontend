@@ -40,6 +40,32 @@ const Attraction_list = () => {
 
     const [modalOpen, setModalOpen] = useState(false);
 
+    const tmp = (lang === "KorService")
+        ? [
+            "관광지",
+            "필터",
+            "관광지",
+            "문화시설",
+            "행사/공연/축제",
+            "레포츠",
+            "숙박",
+            "쇼핑",
+            "취소",
+            "적용"
+        ]
+        : [
+            "Attraction",
+            "Filter",
+            "Attraction",
+            "Cultural facility",
+            "Festival",
+            "Sports",
+            "Lodgment",
+            "Shopping",
+            "Cancel",
+            "Apply"
+        ];
+
     const openModal = () => {
         setModalOpen(true);
     }
@@ -112,25 +138,48 @@ const Attraction_list = () => {
     const sel_attr = (e) => {
         target = e.target.parentNode.nextSibling.innerText;
 
-        switch (target) {
-            case "문화시설":
-                attrType = 14;
-                break;
-            case "행사/공연/축제":
-                attrType = 15;
-                break;
-            case "레포츠":
-                attrType = 28;
-                break;
-            case "숙박":
-                attrType = 32;
-                break;
-            case "쇼핑":
-                attrType = 38;
-                break;
-            default:
-                attrType = 12;
-                break;
+        if (lang === "KorService") {
+            switch (target) {
+                case "문화시설":
+                    attrType = 14;
+                    break;
+                case "행사/공연/축제":
+                    attrType = 15;
+                    break;
+                case "레포츠":
+                    attrType = 28;
+                    break;
+                case "숙박":
+                    attrType = 32;
+                    break;
+                case "쇼핑":
+                    attrType = 38;
+                    break;
+                default:
+                    attrType = 12;
+                    break;
+            }
+        } else {
+            switch (target) {
+                case "Cultural facility":
+                    attrType = 78;
+                    break;
+                case "Festival":
+                    attrType = 85;
+                    break;
+                case "Sports":
+                    attrType = 75;
+                    break;
+                case "Lodgment":
+                    attrType = 80;
+                    break;
+                case "Shopping":
+                    attrType = 79;
+                    break;
+                default:
+                    attrType = 76;
+                    break;
+            }
         }
 
         setOption(attrType);
@@ -139,8 +188,8 @@ const Attraction_list = () => {
     return (
         <div>
             <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
-            <img src={headerImg} className="headerImg" alt="Attraction list" />
-            <h1 className="header2">관광지</h1>
+            <img src={headerImg} className="headerImg" alt="Attraction list"/>
+            <h1 className="header2">{tmp[0]}</h1>
             <div className="att_prom">
                 <div className="prom_text_att">
                     <p className="name_att">관광지명</p>
@@ -152,8 +201,8 @@ const Attraction_list = () => {
                 </div>
             </div>
             <div className="btn_class_att">
-                    <input className="btn_text_att" type="text"/>
-                    <input className="btn_submit_att" type="submit" value="SEARCH"/>
+                <input className="btn_text_att" type="text"/>
+                <input className="btn_submit_att" type="submit" value="SEARCH"/>
                 <React.Fragment>
                     <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
                     <div
@@ -166,42 +215,42 @@ const Attraction_list = () => {
                                     <section>
                                         <header>
                                             <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
-                                            <p className="header_modal_mosque">필터</p>
+                                            <p className="header_modal_mosque">{tmp[1]}</p>
                                         </header>
                                         <main>
                                             <div className="atttype">
                                                 <div>
                                                     <button onClick={sel_attr}><img className="icon_att" src={icon_att} alt="icon_att"/></button>
-                                                    <p>관광지</p>
+                                                    <p>{tmp[2]}</p>
                                                 </div>
                                                 <div>
                                                     <button onClick={sel_attr}><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
-                                                    <p>문화시설</p>
+                                                    <p>{tmp[3]}</p>
                                                 </div>
                                                 <div>
                                                     <button onClick={sel_attr}><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
-                                                    <p>행사/공연/축제</p>
+                                                    <p>{tmp[4]}</p>
                                                 </div>
                                                 <div>
                                                     <button onClick={sel_attr}><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
-                                                    <p>레포츠</p>
+                                                    <p>{tmp[5]}</p>
                                                 </div>
                                                 <div>
                                                     <button onClick={sel_attr}><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
-                                                    <p>숙박</p>
+                                                    <p>{tmp[6]}</p>
                                                 </div>
                                                 <div>
                                                     <button onClick={sel_attr}><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
-                                                    <p>쇼핑</p>
+                                                    <p>{tmp[7]}</p>
                                                 </div>
                                             </div>
                                         </main>
                                         <footer className="footer_modal_mosque">
                                             <button className="close" onClick={closeModal}>
-                                                취소
+                                                {tmp[8]}
                                             </button>
                                             <button className="close" onClick={setModal}>
-                                                적용
+                                                {tmp[9]}
                                             </button>
                                         </footer>
                                     </section>

@@ -7,12 +7,43 @@ import attractionicon from "../assets/attractionicon.png"
 import restauranticon from "../assets/restauranticon.png"
 import mosqueicon from "../assets/mosqueicon.png"
 
+
+
 const Home = () => {
     const history = useHistory();
-
+    
     // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
     const [modalOpen, setModalOpen] = useState(false);
-    const [lang, setLang] = useState("KorService")
+    const [lang, setLang] = useState("KorService");
+
+    
+    const tmp = (lang === "KorService")
+        ? [
+            "리버델타",
+            "언어설정",
+            "대충모토",
+            "리버델타 정의 문구",
+            "뭔가 주저리주저리",
+            "어플리케이션 설치",
+            "장소 찾기",
+            "식당",
+            "관광지",
+            "모스크",
+            "APP 버전 사용 방법"
+        ]
+        : [
+            "RiverDelta",
+            "Langauge",
+            "aaa",
+            "bbb",
+            "ccc",
+            "Install Application",
+            "Find Place",
+            "Restaurant",
+            "Attraction",
+            "Mosque",
+            "How To Use Application Version"
+        ];
 
     const openModal = () => {
         setModalOpen(true);
@@ -27,9 +58,7 @@ const Home = () => {
 
     const clickBtn = (moveTo) => {
 
-        let url = ((moveTo === "attraction") && (lang === "EngService"))
-            ? "./searcheng"
-            : "./searcharea";
+        let url = "./searcharea";
         history.push({
             pathname: url,
             state: {
@@ -43,7 +72,8 @@ const Home = () => {
         history.push({
             pathname: `./mosque_list`,
             state: {
-                deState: false
+                deState: false,
+                lang: lang
             }
         })
     }
@@ -51,10 +81,10 @@ const Home = () => {
     return (
         <div>
             <div className="header">
-                <h1 >리버델타</h1>
+                <h1>{tmp[0]}</h1>
                 <React.Fragment>
                     <button className="lang" onClick={openModal}>Aa</button>
-                    <Modal open={modalOpen} close={closeModal} header="언어 설정">
+                    <Modal open={modalOpen} close={closeModal} header={tmp[1]}>
                         <select className="langoption" onChange={selectLang}>
                             <option value="KorService">한국어</option>
                             <option value="EngService">English</option>
@@ -65,15 +95,15 @@ const Home = () => {
             <div id="maindiv">
                 <div>
                     <div>
-                        대충 모토
-                        <h3>리버델타의 정의를 설명하는 문구가 들어가면 됩니다</h3>
-                        뭔가 주저리주저리 들어가면 되는데 리버델타가 뭐하는 앱인지 있잖아 가족친화적이고 뭐 그런 거 있잖
+                        {tmp[2]}
+                        <h3>{tmp[3]}</h3>
+                        {tmp[4]}
                     </div>
-                    <Link to="./Howto" className="howto2">어플리케이션 설치</Link>
+                    <Link to="./Howto" className="howto2">{tmp[5]}</Link>
                 </div>
                 <img className="mainicon" src={mainicon} alt="mainicon"/>
             </div>
-            <p className="findingplace">장소 찾기</p>
+            <p className="findingplace">{tmp[6]}</p>
             <div className="container">
                 <div>
                     <img
@@ -83,7 +113,7 @@ const Home = () => {
                         onClick={() => {
                             clickBtn("restaurant")
                         }}/>
-                    <p>식당</p>
+                    <p>{tmp[7]}</p>
                 </div>
                 <div>
                     <img
@@ -93,14 +123,14 @@ const Home = () => {
                         onClick={() => {
                             clickBtn("attraction")
                         }}/>
-                    <p>관광지</p>
+                    <p>{tmp[8]}</p>
                 </div>
                 <div>
                     <img className="item" src={mosqueicon} alt="mosqueicon" onClick={clickMos}/>
-                    <p>모스크</p>
+                    <p>{tmp[9]}</p>
                 </div>
             </div>
-            <Link to="./Howto" className="howto">App 버전 사용 방법</Link>
+            <Link to="./Howto" className="howto">{tmp[10]}</Link>
         </div>
     );
 };
