@@ -9,7 +9,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "",
         "parking": "X",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 용산동6가, 서울 용산구 이태원동"
     }, {
         "name": "미스터케밥 2호점",
         "friendly": "할랄 공식 인증",
@@ -20,7 +21,8 @@ export const restList =[
         "runtime": "08:00-05:00",
         "holiday": "",
         "parking": "X",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 용산동6가, 서울 용산구 이태원동"
     }, {
         "name": "카파도키아",
         "friendly": "무슬림 자가 인증",
@@ -31,7 +33,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "범어사"
+        "attName": "범어사",
+        "attAddress": "부산 금정구 범어사로 250 범어사"
     }, {
         "name": "올리브레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -42,7 +45,8 @@ export const restList =[
         "runtime": "10.30-22:00",
         "holiday": "",
         "parking": "O",
-        "att": "송도센트럴파크"
+        "attName": "송도센트럴파크",
+        "attAddress": "인천 연수구 컨벤시아대로 160"
     }, {
         "name": "봄베이인도요리전문점",
         "friendly": "무슬림 프렌들리",
@@ -53,7 +57,8 @@ export const restList =[
         "runtime": "11:30-22:00(break 15:00-17:00, 주말에는 break 없음)",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "창원시립마산박물관"
+        "attName": "창원시립마산박물관",
+        "attAddress": "경남 창원시 마산합포구 문신길 105 마산시립박물관"
     }, {
         "name": "고향먹거리",
         "friendly": "무슬림 프렌들리",
@@ -64,7 +69,8 @@ export const restList =[
         "runtime": "09:00-21:00",
         "holiday": "1, 3주 수요일",
         "parking": "O",
-        "att": "안목해변, 오죽헌, 강릉 선교장"
+        "attName": "안목해변, 오죽헌, 강릉 선교장",
+        "attAddress": "강원 강릉시 창해로14번길 20-1,강원 강릉시 율곡로3139번길 24 오죽헌,강원 강릉시 운정길 63 선교장"
     }, {
         "name": "라마앤바바나 서면점",
         "friendly": "무슬림 프렌들리",
@@ -75,7 +81,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "명절 당일",
         "parking": "O",
-        "att": "이기대 도시자연공원, 오륙도 스카이워크"
+        "attName": "이기대 도시자연공원, 오륙도 스카이워크",
+        "attAddress": "부산 남구 용호동 산122,부산 남구 오륙도로 137"
     }, {
         "name": "미가미",
         "friendly": "무슬림 프렌들리",
@@ -86,7 +93,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "명절 연휴",
         "parking": "O",
-        "att": "강남역, 선정릉"
+        "attName": "강남역, 선정릉",
+        "attAddress": "서울 강남구 강남대로 396,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "패밀리아(임페리얼팰리스 호텔)",
         "friendly": "무슬림 프렌들리",
@@ -97,7 +105,8 @@ export const restList =[
         "runtime": "07:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "봉은사, 코엑스, 선정릉"
+        "attName": "봉은사, 코엑스, 선정릉",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "깔리",
         "friendly": "무슬림 프렌들리",
@@ -108,7 +117,8 @@ export const restList =[
         "runtime": "12:00-21:30",
         "holiday": "",
         "parking": "X",
-        "att": "창덕궁과 후원, 창경궁, 대학로"
+        "attName": "창덕궁과 후원, 창경궁, 대학로",
+        "attAddress": "서울 종로구 창경궁로 185 창경궁,서울 종로구 창경궁로 185 창경궁,서울 종로구 동숭동"
     }, {
         "name": "세븐스퀘어(더 플라자호텔)",
         "friendly": "무슬림 프렌들리",
@@ -119,7 +129,8 @@ export const restList =[
         "runtime": "06:00-22:00",
         "holiday": "",
         "parking": "O",
-        "att": "덕수궁, 청계천, 명동"
+        "attName": "덕수궁, 청계천, 명동",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 퇴계로 126"
     }, {
         "name": "도원 (더 플라자호텔)",
         "friendly": "무슬림 프렌들리",
@@ -130,7 +141,8 @@ export const restList =[
         "runtime": "11:30-22:00(break 14:30-18:00)",
         "holiday": "",
         "parking": "O",
-        "att": "덕수궁, 청계천, 명동"
+        "attName": "덕수궁, 청계천, 명동",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 퇴계로 126"
     }, {
         "name": "옴 레스토랑 마포/공덕점",
         "friendly": "무슬림 프렌들리",
@@ -141,7 +153,8 @@ export const restList =[
         "runtime": "11:00-22:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "효창공원"
+        "attName": "효창공원",
+        "attAddress": "서울 용산구 효창동"
     }, {
         "name": "옴 레스토랑 광화문점",
         "friendly": "무슬림 프렌들리",
@@ -152,7 +165,8 @@ export const restList =[
         "runtime": "11:00-21:30",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "북촌한옥마을, 경복궁"
+        "attName": "북촌한옥마을, 경복궁",
+        "attAddress": "서울 종로구 계동길 37,서울 종로구 사직로 161 경복궁"
     }, {
         "name": "인도로가는길",
         "friendly": "무슬림 프렌들리",
@@ -163,7 +177,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "",
         "parking": "X",
-        "att": "종묘, 인사동"
+        "attName": "종묘, 인사동",
+        "attAddress": "서울 종로구 종로 157,서울 종로구 인사동"
     }, {
         "name": "새실",
         "friendly": "무슬림 프렌들리",
@@ -174,7 +189,8 @@ export const restList =[
         "runtime": "11:00~21:00",
         "holiday": "2, 4주 일요일",
         "parking": "O",
-        "att": "청도 와인터널, 대구 수성유원지"
+        "attName": "청도 와인터널, 대구 수성유원지",
+        "attAddress": "경북 청도군 화양읍 송금길 100,대구광역시 수성구 두산동 512"
     }, {
         "name": "타지",
         "friendly": "무슬림 프렌들리",
@@ -185,7 +201,8 @@ export const restList =[
         "runtime": "11:30-22:00(break 14:30-17:30)",
         "holiday": "",
         "parking": "O",
-        "att": "명동, 청계천"
+        "attName": "명동, 청계천",
+        "attAddress": "서울 중구 퇴계로 126,서울 종로구 창신동"
     }, {
         "name": "마지",
         "friendly": "무슬림 프렌들리",
@@ -196,7 +213,8 @@ export const restList =[
         "runtime": "11:30-21:00(월-토요일), 12:00-20:30(일요일)",
         "holiday": "명절 당일",
         "parking": "O",
-        "att": "서래마을"
+        "attName": "서래마을",
+        "attAddress": "서울 서초구 반포4동"
     }, {
         "name": "모모야마 (롯데호텔서울)",
         "friendly": "무슬림 프렌들리",
@@ -207,7 +225,8 @@ export const restList =[
         "runtime": "11:30~22:00-(break 15:00-~18:00-)",
         "holiday": "",
         "parking": "O",
-        "att": "덕수궁, 청계천, 명동"
+        "attName": "덕수궁, 청계천, 명동",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울특별시 중구 명동"
     }, {
         "name": "피에르 가니에르 서울(롯데호텔서울)",
         "friendly": "무슬림 프렌들리",
@@ -218,7 +237,8 @@ export const restList =[
         "runtime": "12:00-15:00 점심, 18:00-22:00 저녁",
         "holiday": "",
         "parking": "O",
-        "att": "덕수궁, 청계천, 명동"
+        "attName": "덕수궁, 청계천, 명동",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 명동"
     }, {
         "name": "무궁화 (롯데호텔서울)",
         "friendly": "무슬림 프렌들리",
@@ -229,7 +249,8 @@ export const restList =[
         "runtime": "11:30-22:00(break 14:30-18:00)",
         "holiday": "",
         "parking": "O",
-        "att": "덕수궁, 청계천, 명동"
+        "attName": "덕수궁, 청계천, 명동",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 명동"
     }, {
         "name": "도림 (롯데호텔서울)",
         "friendly": "무슬림 프렌들리",
@@ -240,7 +261,8 @@ export const restList =[
         "runtime": "11:30-22:00(break 14:30-18:00)",
         "holiday": "",
         "parking": "O",
-        "att": "덕수궁, 청계천, 명동"
+        "attName": "덕수궁, 청계천, 명동",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 명동"
     }, {
         "name": "페르시안궁전",
         "friendly": "무슬림 프렌들리",
@@ -251,7 +273,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "대학로, 창덕궁과 후원"
+        "attName": "대학로, 창덕궁과 후원",
+        "attAddress": "서울 종로구 동숭동,서울 종로구 창경궁로 185 창경궁"
     }, {
         "name": "원조할매복국",
         "friendly": "무슬림 프렌들리",
@@ -262,7 +285,8 @@ export const restList =[
         "runtime": "07:00-21:00",
         "holiday": "명절 당일",
         "parking": "O",
-        "att": "해운대해수욕장, 동백섬, 해운대 달맞이길"
+        "attName": "해운대해수욕장, 동백섬, 해운대 달맞이길",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 우동 710-1,부산 해운대구 우동"
     }, {
         "name": "남이섬꼬꼬춘천닭갈비",
         "friendly": "무슬림 프렌들리",
@@ -273,7 +297,8 @@ export const restList =[
         "runtime": "주중(월-금요일) 09:00~20:00, 주말 09:00~22:00(토-일요일)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "남이섬, 제이드가든, 가평레일파크"
+        "attName": "남이섬, 제이드가든, 가평레일파크",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1,강원 춘천시 남산면 햇골길 80 제이드가든수목원,경기 가평군 가평읍 장터길 14"
     }, {
         "name": "럭치미",
         "friendly": "무슬림 프렌들리",
@@ -284,7 +309,8 @@ export const restList =[
         "runtime": "11:00-22:30",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "여의도샛강생태공원"
+        "attName": "여의도샛강생태공원",
+        "attAddress": "서울 영등포구 여의도동 49"
     }, {
         "name": "포렌 레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -295,7 +321,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "",
         "parking": "X",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "델리인디아",
         "friendly": "무슬림 프렌들리",
@@ -306,7 +333,8 @@ export const restList =[
         "runtime": "11:00-22:30",
         "holiday": "",
         "parking": "O",
-        "att": "홍대, 상수동, 합정동"
+        "attName": "홍대, 상수동, 합정동",
+        "attAddress": "서울 마포구 와우산로 94,서울 마포구 상수동,서울 마포구 합정동"
     }, {
         "name": "마더인디아",
         "friendly": "무슬림 프렌들리",
@@ -317,7 +345,8 @@ export const restList =[
         "runtime": "11:00-21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "여의도 한강공원, 63 스퀘어"
+        "attName": "여의도 한강공원, 63 스퀘어",
+        "attAddress": "서울 영등포구 여의동로 330 한강사업본부 여의도안내센터,서울 영등포구 63로 50 한화금융센터_63"
     }, {
         "name": "오샬",
         "friendly": "무슬림 프렌들리",
@@ -328,7 +357,8 @@ export const restList =[
         "runtime": "11:30-21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "세종대왕기념관, 서울 정릉"
+        "attName": "세종대왕기념관, 서울 정릉",
+        "attAddress": "서울 동대문구 회기로 56,서울 성북구 정릉동"
     }, {
         "name": "키친오브인디아",
         "friendly": "무슬림 프렌들리",
@@ -339,7 +369,8 @@ export const restList =[
         "runtime": "주중(월-금요일) 11:30-22:00, 주말(토-일요일) 및 공holiday 12:00-22:00",
         "holiday": "",
         "parking": "O",
-        "att": "롯데월드, 올림픽공원"
+        "attName": "롯데월드, 올림픽공원",
+        "attAddress": "서울 송파구 올림픽로 240,서울 송파구 올림픽로 424"
     }, {
         "name": "두르가 의정부점",
         "friendly": "무슬림 프렌들리",
@@ -350,7 +381,8 @@ export const restList =[
         "runtime": "10:00-21:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "의정부 부대찌개거리"
+        "attName": "의정부 부대찌개거리",
+        "attAddress": "경기 의정부시 태평로137번길 22-1"
     }, {
         "name": "두르가 종각점",
         "friendly": "무슬림 프렌들리",
@@ -361,7 +393,8 @@ export const restList =[
         "runtime": "11:00-21:30",
         "holiday": "",
         "parking": "X",
-        "att": "광화문광장, 인사동, 청계천"
+        "attName": "광화문광장, 인사동, 청계천",
+        "attAddress": "서울 종로구 세종대로 172,서울 종로구 인사동,서울 종로구 창신동"
     }, {
         "name": "두르가 본점",
         "friendly": "무슬림 프렌들리",
@@ -372,7 +405,8 @@ export const restList =[
         "runtime": "11:00-21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "광화문광장, 인사동, 청계천"
+        "attName": "광화문광장, 인사동, 청계천",
+        "attAddress": "서울 종로구 세종대로 172,서울 종로구 인사동,서울 종로구 창신동"
     }, {
         "name": "두르가 여의도점",
         "friendly": "무슬림 프렌들리",
@@ -383,7 +417,8 @@ export const restList =[
         "runtime": "10:30-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "여의도 한강공원, 63 스퀘어"
+        "attName": "여의도 한강공원, 63 스퀘어",
+        "attAddress": "서울 영등포구 여의동로 330 한강사업본부 여의도안내센터,서울 영등포구 63로 50 한화금융센터_63"
     }, {
         "name": "베나레스 본점",
         "friendly": "무슬림 프렌들리",
@@ -394,7 +429,8 @@ export const restList =[
         "runtime": "11:00-21:30(break 16:00-17:00)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "세종대왕기념관, 서울 정릉"
+        "attName": "세종대왕기념관, 서울 정릉",
+        "attAddress": "서울 동대문구 회기로 56,서울 성북구 아리랑로19길 116"
     }, {
         "name": "베나레스 경희대점",
         "friendly": "무슬림 프렌들리",
@@ -405,7 +441,8 @@ export const restList =[
         "runtime": "11:00-~21:30(break 16:00-~17:00-)",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "세종대왕기념관, 홍릉수목원"
+        "attName": "세종대왕기념관, 홍릉수목원",
+        "attAddress": "서울 동대문구 회기로 56,서울 동대문구 회기로 57"
     }, {
         "name": "베나레스 구로디지털점(룸서비스)",
         "friendly": "무슬림 프렌들리",
@@ -416,7 +453,8 @@ export const restList =[
         "runtime": "11:00-21:30(break 16:00-17:00, 주말에는 break 없음)",
         "holiday": "명절 연휴",
         "parking": "O",
-        "att": "보라매공원"
+        "attName": "보라매공원",
+        "attAddress": "서울 동작구 여의대방로20길 33"
     }, {
         "name": "비나 2호점",
         "friendly": "무슬림 프렌들리",
@@ -427,7 +465,8 @@ export const restList =[
         "runtime": "11:00-21:00",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "세종대왕기념관, 서울 정릉"
+        "attName": "세종대왕기념관, 서울 정릉",
+        "attAddress": "서울 동대문구 회기로 56,서울 성북구 아리랑로19길 116"
     }, {
         "name": "비나 1호점",
         "friendly": "무슬림 프렌들리",
@@ -438,7 +477,8 @@ export const restList =[
         "runtime": "11:00-21:00",
         "holiday": "",
         "parking": "O",
-        "att": "세종대왕기념관, 서울 정릉"
+        "attName": "세종대왕기념관, 서울 정릉",
+        "attAddress": "서울 동대문구 회기로 56,서울 성북구 아리랑로19길 116"
     }, {
         "name": "탄두리카",
         "friendly": "무슬림 프렌들리",
@@ -449,7 +489,8 @@ export const restList =[
         "runtime": "10:30-22:00",
         "holiday": "",
         "parking": "X",
-        "att": "관악산 낙성대공원"
+        "attName": "관악산 낙성대공원",
+        "attAddress": "서울 관악구 낙성대로 77 낙성대공원"
     }, {
         "name": "헬로 인디아 알와하",
         "friendly": "무슬림 프렌들리",
@@ -460,7 +501,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "해운대해수욕장, 동백섬, 해운대 달맞이길"
+        "attName": "해운대해수욕장, 동백섬, 해운대 달맞이길",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 우동 710-1,부산 해운대구 달맞이길 190"
     }, {
         "name": "채근담",
         "friendly": "무슬림 프렌들리",
@@ -471,7 +513,8 @@ export const restList =[
         "runtime": "11:30-20:30(break 14:30-17:30)",
         "holiday": "명절",
         "parking": "O",
-        "att": "봉은사, 코엑스, 선정릉"
+        "attName": "봉은사, 코엑스, 선정릉",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "술탄케밥",
         "friendly": "할랄 공식 인증",
@@ -482,7 +525,8 @@ export const restList =[
         "runtime": "11:00-24:00 일-목요일, 11:00-02:00 금-토요일",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "루나아시아",
         "friendly": "무슬림 프렌들리",
@@ -493,7 +537,8 @@ export const restList =[
         "runtime": "주중(월-금요일) 10:30-22:00(break 15:00-17:00), 주말(토-일요일) 12:00-21:30",
         "holiday": "",
         "parking": "O",
-        "att": "봉은사, 코엑스, 선정릉"
+        "attName": "봉은사, 코엑스, 선정릉",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "수엠부",
         "friendly": "무슬림 프렌들리",
@@ -504,7 +549,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "수원화성, 화성행궁"
+        "attName": "수원화성, 화성행궁",
+        "attAddress": "경기 수원시 장안구 영화동 320-2,경기 수원시 팔달구 정조로 825"
     }, {
         "name": "아건 레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -515,7 +561,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "",
         "parking": "X",
-        "att": "서대문독립공원"
+        "attName": "서대문독립공원",
+        "attAddress": "서울 서대문구 통일로 247 독립문역"
     }, {
         "name": "화덕닭갈비 가평점",
         "friendly": "무슬림 프렌들리",
@@ -526,7 +573,8 @@ export const restList =[
         "runtime": "09:00-19:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "남이섬, 제이드가든, 가평레일파크"
+        "attName": "남이섬, 제이드가든, 가평레일파크",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1,강원 춘천시 남산면 햇골길 80 제이드가든수목원,경기 가평군 가평읍 장터길 14"
     }, {
         "name": "오세계향",
         "friendly": "무슬림 프렌들리",
@@ -537,7 +585,8 @@ export const restList =[
         "runtime": "11:30-21:00(break 15:00-17:00)",
         "holiday": "",
         "parking": "X",
-        "att": "북촌한옥마을, 인사동"
+        "attName": "북촌한옥마을, 인사동",
+        "attAddress": "서울 종로구 계동길 37,서울 종로구 인사동"
     }, {
         "name": "진보닭갈비(구, 소양강)",
         "friendly": "무슬림 프렌들리",
@@ -548,7 +597,8 @@ export const restList =[
         "runtime": "09:30-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "강촌레일파크 김유정역, 소양강스카이워크, 물레길"
+        "attName": "강촌레일파크 김유정역, 소양강스카이워크, 물레길",
+        "attAddress": "강원 춘천시 신동면 김유정로 1383,강원 춘천시 영서로 2663 소양강스카이워크,강원 춘천시 스포츠타운길 113-1"
     }, {
         "name": "동명항생선숯불구이",
         "friendly": "무슬림 프렌들리",
@@ -559,7 +609,8 @@ export const restList =[
         "runtime": "주중(월-금요일) 10:30-21:00, 주말(토-일요일) 10:00-21:00",
         "holiday": "매주 화요일",
         "parking": "O",
-        "att": "영랑호, 아바이마을"
+        "attName": "영랑호, 아바이마을",
+        "attAddress": "강원 속초시 장사동,강원 속초시 청호로 122"
     }, {
         "name": "아시안 패밀리 레스토랑 동문",
         "friendly": "할랄 공식 인증",
@@ -570,7 +621,8 @@ export const restList =[
         "runtime": "주중(월-금요일) 09:40-19:30, 주말(토-일요일) 09:40-20:30, 성수기에는 30분 연장 영업",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "남이섬, 제이드가든, 가평레일파크"
+        "attName": "남이섬, 제이드가든, 가평레일파크",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1,강원 춘천시 남산면 햇골길 80 제이드가든수목원,경기 가평군 가평읍 장터길 14"
     }, {
         "name": "쌀람",
         "friendly": "무슬림 자가 인증",
@@ -581,7 +633,8 @@ export const restList =[
         "runtime": "12:00-22:00",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "안나푸르나레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -592,7 +645,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "공holiday",
         "parking": "X",
-        "att": "웅진플레이도시 워터도시, 웅진플레이도시 실내스키장"
+        "attName": "웅진플레이도시 워터도시, 웅진플레이도시 실내스키장",
+        "attAddress": "경기 부천시 조마루로 2,경기 부천시 조마루로 2"
     }, {
         "name": "선사복집",
         "friendly": "무슬림 프렌들리",
@@ -603,7 +657,8 @@ export const restList =[
         "runtime": "10:00-23:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "서울암사동유적"
+        "attName": "서울암사동유적",
+        "attAddress": "서울 강동구 올림픽로 875 암사선사유적전시관"
     }, {
         "name": "에이큐브호텔",
         "friendly": "무슬림 프렌들리",
@@ -614,7 +669,8 @@ export const restList =[
         "runtime": "07:00-10:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "흥인지문, 동대문역사문화공원"
+        "attName": "흥인지문, 동대문역사문화공원",
+        "attAddress": "서울 종로구 종로 288 흥인지문,서울 중구 신당동 853"
     }, {
         "name": "춘자대구탕",
         "friendly": "무슬림 프렌들리",
@@ -625,7 +681,8 @@ export const restList =[
         "runtime": "11:00-22:00(break 15:00-17:00)",
         "holiday": "매주 일요일",
         "parking": "O",
-        "att": "홍대, 선유도공원"
+        "attName": "홍대, 선유도공원",
+        "attAddress": "서울 마포구 와우산로 94,서울 영등포구 선유로 343"
     }, {
         "name": "포탈라레스토랑 종로점",
         "friendly": "무슬림 프렌들리",
@@ -636,7 +693,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "마지막 월요일",
         "parking": "X",
-        "att": "종묘, 청계천"
+        "attName": "종묘, 청계천",
+        "attAddress": "서울 종로구 종로 157, 서울 종로구 창신동"
     }, {
         "name": "마칸레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -647,7 +705,8 @@ export const restList =[
         "runtime": "10:30-22:00",
         "holiday": "매주 화요일",
         "parking": "O",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "바바인디아",
         "friendly": "무슬림 프렌들리",
@@ -658,7 +717,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "명절 당일",
         "parking": "O",
-        "att": "강남역, 선정릉"
+        "attName": "강남역, 선정릉",
+        "attAddress": "서울 강남구 강남대로 396,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "향적원",
         "friendly": "무슬림 프렌들리",
@@ -669,7 +729,8 @@ export const restList =[
         "runtime": "10:30-20:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "경주 불국사, 경주 석굴암"
+        "attName": "경주 불국사, 경주 석굴암",
+        "attAddress": "경북 경주시 불국로 385 불국사,경북 경주시 불국로 873-243 석굴암"
     }, {
         "name": "이드",
         "friendly": "할랄 공식 인증",
@@ -680,7 +741,8 @@ export const restList =[
         "runtime": "11:30-21:00",
         "holiday": "",
         "parking": "O",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "꾸스꾸스",
         "friendly": "무슬림 프렌들리",
@@ -691,7 +753,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "",
         "parking": "X",
-        "att": "북촌한옥마을, 경복궁"
+        "attName": "북촌한옥마을, 경복궁",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "뉴타지마할",
         "friendly": "무슬림 자가 인증",
@@ -702,7 +765,8 @@ export const restList =[
         "runtime": "08:00-22:00",
         "holiday": "",
         "parking": "O",
-        "att": "오이도"
+        "attName": "오이도",
+        "attAddress": "경기 시흥시 정왕동 오이도"
     }, {
         "name": "파크카페 ",
         "friendly": "무슬림 프렌들리",
@@ -713,7 +777,8 @@ export const restList =[
         "runtime": "11:30-21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "IFC몰, 여의도공원"
+        "attName": "IFC몰, 여의도공원",
+        "attAddress": "서울 영등포구 국제금융로 10 IFC몰 B1,서울 영등포구 여의공원로 68 여의도공원관리사무소"
     }, {
         "name": "마리무슬림푸드",
         "friendly": "무슬림 자가 인증",
@@ -724,7 +789,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "",
         "parking": "X",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "바라지레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -735,7 +801,8 @@ export const restList =[
         "runtime": "10:00-~22:000",
         "holiday": "2, 4주 화요일",
         "parking": "O",
-        "att": "경상감영공원, 대구 근대골목"
+        "attName": "경상감영공원, 대구 근대골목",
+        "attAddress": "대구 중구 경상감영길 99 경상감영공원,대구 중구 국채보상로 567-1"
     }, {
         "name": "두르가 김해점",
         "friendly": "무슬림 프렌들리",
@@ -746,7 +813,8 @@ export const restList =[
         "runtime": "09:00~22:00",
         "holiday": "2, 4주 화요일",
         "parking": "X",
-        "att": "김해수로왕릉"
+        "attName": "김해수로왕릉",
+        "attAddress": "경남 김해시 가락로93번길 26"
     }, {
         "name": "뉴살라딘",
         "friendly": "무슬림 자가 인증",
@@ -757,7 +825,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "1, 3주 월요일",
         "parking": "X",
-        "att": "김광석다시그리기길, 경상감영공원"
+        "attName": "김광석다시그리기길, 경상감영공원",
+        "attAddress": "대구 중구 대봉동 6-11,대구 중구 경상감영길 99 경상감영공원"
     }, {
         "name": "만나 닭갈비",
         "friendly": "무슬림 프렌들리",
@@ -768,7 +837,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "매주 수요일",
         "parking": "X",
-        "att": "박경리문학공원"
+        "attName": "박경리문학공원",
+        "attAddress": "강원 원주시 토지길 1"
     }, {
         "name": "발우공양",
         "friendly": "무슬림 프렌들리",
@@ -779,7 +849,8 @@ export const restList =[
         "runtime": "11:30-22:00(break 15:00-22:00)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "덕수궁, 청계천, 인사동"
+        "attName": "덕수궁, 청계천, 인사동",
+        "attAddress": "서울 중구 세종대로 99 덕수궁, 서울 종로구 창신동,서울 종로구 인사동"
     }, {
         "name": "케르반레스토랑 이태원점",
         "friendly": "할랄 공식 인증",
@@ -790,7 +861,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "미스터케밥",
         "friendly": "할랄 공식 인증",
@@ -801,7 +873,8 @@ export const restList =[
         "runtime": "24시간",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "국립중앙박물관, 이태원 쇼핑거리"
+        "attName": "국립중앙박물관, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "케르반 익스프레스 GFC",
         "friendly": "무슬림 프렌들리",
@@ -812,7 +885,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "봉은사, 코엑스, 선정릉"
+        "attName": "봉은사, 코엑스, 선정릉",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "케르반레스토랑 코엑스점",
         "friendly": "할랄 공식 인증",
@@ -823,7 +897,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "봉은사, 코엑스, 선정릉"
+        "attName": "봉은사, 코엑스, 선정릉",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "롯데호텔월드 룸서비스",
         "friendly": "무슬림 프렌들리",
@@ -834,7 +909,8 @@ export const restList =[
         "runtime": "24시간",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "롯데월드, 올림픽공원"
+        "attName": "롯데월드, 올림픽공원",
+        "attAddress": "서울 송파구 올림픽로 240,서울 송파구 올림픽로 424"
     }, {
         "name": "흙시루",
         "friendly": "포크프리",
@@ -845,7 +921,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "해동 용궁사"
+        "attName": "해동 용궁사",
+        "attAddress": "부산 기장군 기장읍 용궁길 86 해동용궁사"
     }, {
         "name": "바다풍경",
         "friendly": "무슬림 프렌들리",
@@ -856,7 +933,8 @@ export const restList =[
         "runtime": "09:00-23:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "용두암, 한라수목원, 제주민속박물관"
+        "attName": "용두암, 한라수목원, 제주민속박물관",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 수목원길 72,제주 서귀포시 표선면 민속해안로 631-34"
     }, {
         "name": "비하니",
         "friendly": "무슬림 프렌들리",
@@ -867,7 +945,8 @@ export const restList =[
         "runtime": "11.30-23:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "부평역지하상가"
+        "attName": "부평역지하상가",
+        "attAddress": "인천 부평구 부평대로 69 부평역지하상가"
     }, {
         "name": "테라스 그린",
         "friendly": "무슬림 자가 인증",
@@ -878,7 +957,8 @@ export const restList =[
         "runtime": "09:30-18:00(계절별로 마감시간 상이함)",
         "holiday": "",
         "parking": "O",
-        "att": "한국민속촌, 에버랜드"
+        "attName": "한국민속촌, 에버랜드",
+        "attAddress": "경기 용인시 기흥구 민속촌로 90 한국민속촌,경기 용인시 처인구 포곡읍 에버랜드로 199"
     }, {
         "name": "라지마할",
         "friendly": "무슬림 프렌들리",
@@ -889,7 +969,8 @@ export const restList =[
         "runtime": "11:30-22:30",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "한라수목원, 이호테우해변"
+        "attName": "한라수목원, 이호테우해변",
+        "attAddress": "제주 제주시 수목원길 72,제주 제주시 이호일동"
     }, {
         "name": "펀자브인도요리전문점 ",
         "friendly": "무슬림 프렌들리",
@@ -900,7 +981,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "3주 월요일",
         "parking": "O",
-        "att": "해운대해수욕장, 동백섬, 해운대 달맞이길"
+        "attName": "해운대해수욕장, 동백섬, 해운대 달맞이길",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 우동 710-1,부산 해운대구 달맞이길 190"
     }, {
         "name": "타지마할 인 코리아",
         "friendly": "무슬림 프렌들리",
@@ -911,7 +993,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "수성유원지, 힐크레스트"
+        "attName": "수성유원지, 힐크레스트",
+        "attAddress": "대구 수성구 두산동 512,대구 달성군 가창면 가창로 1003"
     }, {
         "name": "바다잔치",
         "friendly": "무슬림 프렌들리",
@@ -922,7 +1005,8 @@ export const restList =[
         "runtime": "08:00-21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "용두암, 제주도 민속 자연사 박물관, 삼성혈"
+        "attName": "용두암, 제주도 민속 자연사 박물관, 삼성혈",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 삼성로 22,제주 제주시 삼성로 22"
     }, {
         "name": "라마다프라자제주호텔 한식당 탐모라",
         "friendly": "무슬림 프렌들리",
@@ -933,7 +1017,8 @@ export const restList =[
         "runtime": "조식 06:30~10:00, 중식 12:00~14:30, 석식 18:00~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "용두암, 사려니숲길, 한라자연생태공원"
+        "attName": "용두암, 사려니숲길, 한라자연생태공원",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 봉개동 산64-5,제주 서귀포시 성산읍 금백조로 446"
     }, {
         "name": "라마다프라자제주호텔 더블루뷔페레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -944,7 +1029,8 @@ export const restList =[
         "runtime": "조식 06:30~10:00, 중식 12:00~14:30, 석식 18:00~21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "용두암, 사려니숲길, 한라자연생태공원"
+        "attName": "용두암, 사려니숲길, 한라자연생태공원",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 봉개동 산64-5,제주 서귀포시 성산읍 금백조로 446"
     }, {
         "name": "춘심이네",
         "friendly": "무슬림 프렌들리",
@@ -955,7 +1041,8 @@ export const restList =[
         "runtime": "10:00~20:00, break 15:30~17:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "용머리해안, 안덕계곡, 산방산"
+        "attName": "용머리해안, 안덕계곡, 산방산",
+        "attAddress": "제주 서귀포시 안덕면 사계리 112-3,제주 서귀포시 안덕면 감산리 1946,제주 서귀포시 안덕면"
     }, {
         "name": "바그다드",
         "friendly": "무슬림 프렌들리",
@@ -966,7 +1053,8 @@ export const restList =[
         "runtime": "11:00~23:00",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "삼성혈, 동문시장, 용두암"
+        "attName": "삼성혈, 동문시장, 용두암",
+        "attAddress": "제주 제주시 삼성로 22,제주 제주시 동문로 16,제주 제주시 용담이동"
     }, {
         "name": "일품당 프리미엄",
         "friendly": "무슬림 프렌들리",
@@ -977,7 +1065,8 @@ export const restList =[
         "runtime": "10:30~22:00, break 15:00~17:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "경복궁, 청와대 사랑채, 서촌마을"
+        "attName": "경복궁, 청와대 사랑채, 서촌마을",
+        "attAddress": "서울 종로구 사직로 161 경복궁,서울 종로구 효자동 150,서울 종로구 필운대로 45"
     }, {
         "name": "케르반 서울역점",
         "friendly": "무슬림 프렌들리",
@@ -988,7 +1077,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "서울로 7017, 남대문시장, 명동난타극장"
+        "attName": "서울로 7017, 남대문시장, 명동난타극장",
+        "attAddress": "서울 중구 청파로 432,서울 중구 남대문시장4길 21,서울 중구 명동길 26 유네스코회관"
     }, {
         "name": "대가야삼계탕",
         "friendly": "포크프리",
@@ -999,7 +1089,8 @@ export const restList =[
         "runtime": "09:00-10:30(하절기), 10:00-22:30(동절기)",
         "holiday": "명절",
         "parking": "O",
-        "att": "태화강대공원, 울산대공원, 울산대교 전망대"
+        "attName": "태화강대공원, 울산대공원, 울산대교 전망대",
+        "attAddress": "울산 중구 태화강국가정원길 231-2,울산 남구 대공원로 94,울산 동구 봉수로 155-1"
     }, {
         "name": "해수전복",
         "friendly": "무슬림 프렌들리",
@@ -1010,7 +1101,8 @@ export const restList =[
         "runtime": "10:00-22:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "장생포 고래문화마을, 장생포 고래박물관, 장생포 고래바다여행선"
+        "attName": "장생포 고래문화마을, 장생포 고래박물관, 장생포 고래바다여행선",
+        "attAddress": "울산광역시 남구 매암동 209-1, 울산광역시 남구 장생포고래로 244, 울산광역시 남구 야음장생포동 장생포고래로 210"
     }, {
         "name": "와사비",
         "friendly": "무슬림 프렌들리",
@@ -1021,7 +1113,8 @@ export const restList =[
         "runtime": "11:30-22:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "울산디자인거리, 태화강 대공원, 신화마을"
+        "attName": "울산디자인거리, 태화강 대공원, 신화마을",
+        "attAddress": "울산 남구 삼산동,울산 남구 대공원로 94,울산 남구 여천로80번길 24-8"
     }, {
         "name": "다미헌",
         "friendly": "무슬림 프렌들리",
@@ -1032,7 +1125,8 @@ export const restList =[
         "runtime": "11:30-22:30, break 14:30-16:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "태화강 대공원, 울산대공원, 장생포 고래생태체험관"
+        "attName": "태화강 대공원, 울산대공원, 장생포 고래생태체험관",
+        "attAddress": "울산 남구 대공원로 94,울산 남구 장생포고래로 244"
     }, {
         "name": "커피숍 사라(더 플레이트)",
         "friendly": "무슬림 프렌들리",
@@ -1043,7 +1137,8 @@ export const restList =[
         "runtime": "07:00-21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "현대예술공원, 대왕암공원, 울기등대"
+        "attName": "현대예술공원, 대왕암공원, 울기등대",
+        "attAddress": "울산 동구 서부동 1028-1,울산 동구 일산동 산907,울산 동구 등대로 155"
     }, {
         "name": "벨라모티",
         "friendly": "무슬림 프렌들리",
@@ -1054,7 +1149,8 @@ export const restList =[
         "runtime": "11:30-22:00, break 15:00-17:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "방어진항, 대왕암공원, 울기등대"
+        "attName": "방어진항, 대왕암공원, 울기등대",
+        "attAddress": "울산 동구 성끝길 2,울산 동구 일산동 산907,울산 동구 등대로 155"
     }, {
         "name": "인도방랑기",
         "friendly": "무슬림 프렌들리",
@@ -1065,7 +1161,8 @@ export const restList =[
         "runtime": "10:30-22:00",
         "holiday": "1, 3주 월요일",
         "parking": "O",
-        "att": "하중도, 불로동고분군, 아양기찻길"
+        "attName": "하중도, 불로동고분군, 아양기찻길",
+        "attAddress": "대구 북구 노곡동 665,대구 동구 불로동 산1-16,대구 동구 지저동"
     }, {
         "name": "함양옻닭",
         "friendly": "포크프리",
@@ -1076,7 +1173,8 @@ export const restList =[
         "runtime": "11:30-21:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "태화강대공원, 울산대공원, 울산대교 전망대"
+        "attName": "태화강대공원, 울산대공원, 울산대교 전망대",
+        "attAddress": "울산광역시 중구 태화동 969-12, 울산 남구 대공원로 94,울산 동구 봉수로 155-1"
     }, {
         "name": "쉐라톤서울디큐브시티호텔 룸서비스",
         "friendly": "무슬림 프렌들리",
@@ -1087,7 +1185,8 @@ export const restList =[
         "runtime": "10:30-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "문래창작촌 , 구로동 중국인거리, 마리오아울렛"
+        "attName": "문래창작촌 , 구로동 중국인거리, 마리오아울렛",
+        "attAddress": "서울 영등포구 도림로128가길 13-8,서울 구로구 디지털로26길,서울 금천구 디지털로 185 마리오아울렛1관"
     }, {
         "name": "삼수장어 신천동로점",
         "friendly": "무슬림 프렌들리",
@@ -1098,7 +1197,8 @@ export const restList =[
         "runtime": "11:30-21:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "김광석다시그리기길, 서문시장, 대구근대골목"
+        "attName": "김광석다시그리기길, 서문시장, 대구근대골목",
+        "attAddress": "대구 중구 대봉동 6-11,대구 중구 달성로 50 서문시장,대구 중구 남성로"
     }, {
         "name": "샬리마 레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -1109,7 +1209,8 @@ export const restList =[
         "runtime": "11:00-22:00, break 14:00-17:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "방어진항, 대왕암공원, 울기등대"
+        "attName": "방어진항, 대왕암공원, 울기등대",
+        "attAddress": "울산 동구 성끝길 2,울산 동구 일산동 산907,울산 동구 등대로 155"
     }, {
         "name": "타라",
         "friendly": "무슬림 프렌들리",
@@ -1120,7 +1221,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "동성로, 향촌문화관, 달성공원"
+        "attName": "동성로, 향촌문화관, 달성공원",
+        "attAddress": "대구 중구 용덕동 12,대구 중구 중앙대로 449,대구 중구 달성공원로 35 달성공원"
     }, {
         "name": "사마르칸트",
         "friendly": "무슬림 프렌들리",
@@ -1131,7 +1233,8 @@ export const restList =[
         "runtime": "11:00-24:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "산복도로 초량이바구길, 국제시장, 보수동 책방골목"
+        "attName": "산복도로 초량이바구길, 국제시장, 보수동 책방골목",
+        "attAddress": "부산 동구 초량동 865-48,부산 중구 신창동4가,부산 중구 대청로 67-1"
     }, {
         "name": "사마르칸트",
         "friendly": "무슬림 프렌들리",
@@ -1142,7 +1245,8 @@ export const restList =[
         "runtime": "11:00-21:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "주얼리패션타운, 경상감영공원, 북성로공구박물관"
+        "attName": "주얼리패션타운, 경상감영공원, 북성로공구박물관",
+        "attAddress": "대구 중구 경상감영길 176 패션쥬얼리 전문타운,대구 중구 경상감영길 99 경상감영공원"
     }, {
         "name": "서울삼계탕",
         "friendly": "포크프리",
@@ -1153,7 +1257,8 @@ export const restList =[
         "runtime": "10:00-22:30",
         "holiday": "명절",
         "parking": "X",
-        "att": "태종대유원지, 국립해양박물관, 송도 스카이워크"
+        "attName": "태종대유원지, 국립해양박물관, 송도 스카이워크",
+        "attAddress": "부산 영도구 전망로 24,부산 영도구 해양로301번길 45,부산 서구 암남동 129-4"
     }, {
         "name": "마하라자",
         "friendly": "무슬림 프렌들리",
@@ -1164,7 +1269,8 @@ export const restList =[
         "runtime": "11:00-22:00, break 15:00-17:00",
         "holiday": "명절 당일",
         "parking": "O",
-        "att": "용지호수공원, 장복산하늘마루길, 메타세콰이어아 가로수길"
+        "attName": "용지호수공원, 장복산하늘마루길, 메타세콰이어아 가로수길",
+        "attAddress": "경남 창원시 성산구 용지동,경남 창원시 진해구 장복산길 56-42,경남 창원시 성산구 외동반림로248번길 31"
     }, {
         "name": "뉴리틀인디아 김해점",
         "friendly": "무슬림 프렌들리",
@@ -1175,7 +1281,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "김해수로왕릉, 김해가야테마파크, 클레이아크 김해미술관"
+        "attName": "김해수로왕릉, 김해가야테마파크, 클레이아크 김해미술관",
+        "attAddress": "경남 김해시 가락로93번길 26,경남 김해시 가야테마길 161,경남 김해시 진례면 진례로 275-51 클레이아크"
     }, {
         "name": "뉴리틀인디아 부산역점 ",
         "friendly": "무슬림 프렌들리",
@@ -1186,7 +1293,8 @@ export const restList =[
         "runtime": "10:00-23:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "초량이바구길, 자갈치시장, 흰여울문화마을"
+        "attName": "초량이바구길, 자갈치시장, 흰여울문화마을",
+        "attAddress": "부산 동구 초량동 865-48,부산 중구 자갈치해안로 52 자갈치시장,부산 영도구 영선동4가 605-3"
     }, {
         "name": "뉴리틀인디아 남포점",
         "friendly": "무슬림 프렌들리",
@@ -1197,7 +1305,8 @@ export const restList =[
         "runtime": "10:00-23:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "BIFF 광장, 부산 트릭아이미술관, 자갈치시장"
+        "attName": "BIFF 광장, 부산 트릭아이미술관, 자갈치시장",
+        "attAddress": "부산 중구 비프광장로,부산 중구 대청로126번길 12 부산영화체험박물관 2F 트릭아이뮤지엄 부산,부산 중구 자갈치해안로 52 자갈치시장"
     }, {
         "name": "미가",
         "friendly": "무슬림 프렌들리",
@@ -1208,7 +1317,8 @@ export const restList =[
         "runtime": "08:00-20:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "설악 워터피아, 속초관광수산시장, 설악산 권금금"
+        "attName": "설악 워터피아, 속초관광수산시장, 설악산 권금금",
+        "attAddress": "강원 속초시 미시령로2983번길 111,강원 속초시 중앙로147번길 12,강원 속초시 설악동 산41"
     }, {
         "name": "(주)파티나라하이비스",
         "friendly": "무슬림 자가 인증",
@@ -1219,7 +1329,8 @@ export const restList =[
         "runtime": "06:30-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "판타스틱 공연, 덕수궁 돌담길, 서울역사박물관"
+        "attName": "판타스틱 공연, 덕수궁 돌담길, 서울역사박물관",
+        "attAddress": "서울 종로구 대학로 146 4층 판타스틱전용관,서울 중구 세종대로19길 24 영국대사관,서울 종로구 새문안로 55"
     }, {
         "name": "발리우드",
         "friendly": "무슬림 프렌들리",
@@ -1230,7 +1341,8 @@ export const restList =[
         "runtime": "12:00-22:00(수-월요일), 17:00-22:00(화요일)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "광안리해수욕장, 광안대교, 광안리 해변 테마거리"
+        "attName": "광안리해수욕장, 광안대교, 광안리 해변 테마거리",
+        "attAddress": "부산 수영구 광안해변로 219,부산 수영구 민락동,부산 수영구 민락동"
     }, {
         "name": "송정꽃게집",
         "friendly": "무슬림 프렌들리",
@@ -1241,7 +1353,8 @@ export const restList =[
         "runtime": "09:00-21:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "꽃지해수욕장, 안면도자연휴양림, 리솜오션캐슬"
+        "attName": "꽃지해수욕장, 안면도자연휴양림, 리솜오션캐슬",
+        "attAddress": "충남 태안군 안면읍 승언리,충남 태안군 안면읍 안면대로 3195-6 안면도자연휴양림,충남 태안군 안면읍 꽃지해안로 204"
     }, {
         "name": "러빙헛채식부페",
         "friendly": "무슬림 프렌들리",
@@ -1252,7 +1365,8 @@ export const restList =[
         "runtime": "12:00-20:30, break 14:30-18:00",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "국립현대미술관 과천관, 서울랜드, 렛츠런파크 서울"
+        "attName": "국립현대미술관 과천관, 서울랜드, 렛츠런파크 서울",
+        "attAddress": "경기 과천시 광명로 313 국립현대미술관,경기 과천시 광명로 181,경기 과천시 경마공원대로 107"
     }, {
         "name": "별난오리",
         "friendly": "포크프리",
@@ -1263,7 +1377,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "북촌한옥마을, 경복궁"
+        "attName": "북촌한옥마을, 경복궁",
+        "attAddress": "서울 종로구 계동길 37,서울 종로구 삼청로 102-12"
     }, {
         "name": "두바이",
         "friendly": "무슬림 자가 인증",
@@ -1274,7 +1389,8 @@ export const restList =[
         "runtime": "12:00-23:00(일-목요일), 12:00-01:00(금-토요일)",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "전쟁기념관, 경리단길, 이태원 쇼핑거리"
+        "attName": "전쟁기념관, 경리단길, 이태원 쇼핑거리",
+        "attAddress": "서울 용산구 이태원로 29 전쟁기념관,서울 용산구 이태원동,서울 용산구 이태원로 177"
     }, {
         "name": "고마대구탕",
         "friendly": "무슬림 프렌들리",
@@ -1285,7 +1401,8 @@ export const restList =[
         "runtime": "24시간",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "광안리 해변 테마거리, 광안대교, 광안리 바닷빛미술관"
+        "attName": "광안리 해변 테마거리, 광안대교, 광안리 바닷빛미술관",
+        "attAddress": "부산 수영구 민락동,부산 수영구 민락동,부산 수영구 광안해변로 219"
     }, {
         "name": "피스트",
         "friendly": "무슬림 프렌들리",
@@ -1296,7 +1413,8 @@ export const restList =[
         "runtime": "아침 뷔페 06:30-10:00(월-일요일), 점심 뷔페 12:00-14:30(월-금요일), 11:00-13:00, 13:30-15:30(토-일요일), 저녁 뷔페 18:00-21:",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "문래창작촌 , 구로동 중국인거리, 마리오아울렛"
+        "attName": "문래창작촌 , 구로동 중국인거리, 마리오아울렛",
+        "attAddress": "서울 영등포구 도림로128가길 13-8,서울 구로구 공원로 73-1,서울 금천구 디지털로9길 23 마리오2 패션타워"
     }, {
         "name": "새만금횟집",
         "friendly": "무슬림 프렌들리",
@@ -1307,7 +1425,8 @@ export const restList =[
         "runtime": "11:00-22:00, break 15:00-17:00",
         "holiday": "명절",
         "parking": "X",
-        "att": "새만금방조제, 신시도 어촌체험마을, 선유도"
+        "attName": "새만금방조제, 신시도 어촌체험마을, 선유도",
+        "attAddress": "전북 군산시 비응도동,전북 군산시 옥도면 신시도리 120,서울 영등포구 선유로 343"
     }, {
         "name": "타지팰리스",
         "friendly": "무슬림 자가 인증",
@@ -1318,7 +1437,8 @@ export const restList =[
         "runtime": "11:00-22:00(일-목요일), 11:00-22:30(금-토요일)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "이태원 쇼핑거리, 리움 삼성미술관, 남산 케이블카"
+        "attName": "이태원 쇼핑거리, 리움 삼성미술관, 남산 케이블카",
+        "attAddress": "서울 용산구 이태원로 177,서울 용산구 이태원로55길 60-16,서울 중구 소파로 83"
     }, {
         "name": "엄마곰탕",
         "friendly": "포크프리",
@@ -1329,7 +1449,8 @@ export const restList =[
         "runtime": "10:00-21:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "분황사, 천군동 동서삼층석탑 , 경주월드 어뮤즈먼트"
+        "attName": "분황사, 천군동 동서삼층석탑 , 경주월드 어뮤즈먼트",
+        "attAddress": "경북 경주시 분황로 94-11 분황사,경북 경주시 천군동 550-1,경경북 경주시 보문로 544 경주월드/서라벌청소년수련관"
     }, {
         "name": "남한강",
         "friendly": "포크프리",
@@ -1340,7 +1461,8 @@ export const restList =[
         "runtime": "10:00-20:00",
         "holiday": "명절",
         "parking": "X",
-        "att": "청풍문화재단지, 청풍호관광모노레일, 청풍랜드"
+        "attName": "청풍문화재단지, 청풍호관광모노레일, 청풍랜드",
+        "attAddress": "충북 제천시 청풍면 청풍호로 2048 청풍문화재단지,충북 제천시 청풍면 청풍명월로 879-17,충북 제천시 청풍면 청풍호로50길 6"
     }, {
         "name": "닭이봉 원조춘천닭갈비",
         "friendly": "포크프리",
@@ -1351,7 +1473,8 @@ export const restList =[
         "runtime": "11:00-21:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "옛길박물관, 문경새재도립공원, 문경도자기박물관"
+        "attName": "옛길박물관, 문경새재도립공원, 문경도자기박물관",
+        "attAddress": "경북 문경시 문경읍 상초리 243-2,경북 문경시 문경읍 새재로 932,경북 문경시 문경읍 문경대로 2416"
     }, {
         "name": "봉학골가든",
         "friendly": "포크프리",
@@ -1362,7 +1485,9 @@ export const restList =[
         "runtime": "10:00-21:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "봉학골산림욕장, 백야자연휴양림, 감곡매괴성모순례지성당"
+        "attName": "봉학골산림욕장, 백야자연휴양림, 감곡매괴성모순례지성당",
+        "attAddress": "충북 음성군 음성읍 용광로230번길 138,충북 음성군 금왕읍 백야리 산13,충북 음성군 감곡면 성당길 10"
+
     }, {
         "name": "봄베이브로이 BIFC점",
         "friendly": "무슬림 프렌들리",
@@ -1373,7 +1498,8 @@ export const restList =[
         "runtime": "10:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "부산타워, 40계단 문화관광테마거리, 광복로문화패션거리"
+        "attName": "부산타워, 40계단 문화관광테마거리, 광복로문화패션거리",
+        "attAddress": "부산 사하구 신산로 187,부산 중구 중앙동4가,부산 중구 광복로 72-1"
     }, {
         "name": "아자방",
         "friendly": "포크프리",
@@ -1384,7 +1510,8 @@ export const restList =[
         "runtime": "11:30-21:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "창원시립마산문신미술관, 마산어시장, 창동예술촌"
+        "attName": "창원시립마산문신미술관, 마산어시장, 창동예술촌",
+        "attAddress": "경남 창원시 마산합포구 문신길 147,경남 창원시 마산합포구 복요리로 7,경남 창원시 마산합포구 오동서6길 24"
     }, {
         "name": "백제령",
         "friendly": "포크프리",
@@ -1395,7 +1522,8 @@ export const restList =[
         "runtime": "11:30~21:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "창동예술촌, 오동동 아구찜거리, 가고파 꼬부랑길 벽화마을"
+        "attName": "창동예술촌, 오동동 아구찜거리, 가고파 꼬부랑길 벽화마을",
+        "attAddress": "경남 창원시 마산합포구 오동서6길 24,오동동 아구찜거리,가고파 꼬부랑길 벽화마을"
     }, {
         "name": "구르카 레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -1406,7 +1534,8 @@ export const restList =[
         "runtime": "10:30-22:30",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "명동, 청계천, 남대문시장"
+        "attName": "명동, 청계천, 남대문시장",
+        "attAddress": "서울 중구 퇴계로 126,서울 종로구 창신동,서울 중구 남대문시장4길 21"
     }, {
         "name": "카페 더 가든",
         "friendly": "무슬림 프렌들리",
@@ -1417,7 +1546,8 @@ export const restList =[
         "runtime": "09:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "강원랜드 카지노, 삼탄아트마인, 정암사"
+        "attName": "강원랜드 카지노, 삼탄아트마인, 정암사",
+        "attAddress": "강원 정선군 사북읍 하이원길 265 강원랜드,강원 정선군 고한읍 함백산로 1445-44,강원 정선군 고한읍 함백산로 1410"
     }, {
         "name": "섬진강애재첩",
         "friendly": "무슬림 프렌들리",
@@ -1428,7 +1558,8 @@ export const restList =[
         "runtime": "06:00-21:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "순천만국가정원, 순천만습지, 아랫장"
+        "attName": "순천만국가정원, 순천만습지, 아랫장",
+        "attAddress": "전남 순천시 국가정원1호길 47,전남 순천시 순천만길 513-25,전남 순천시 장평로 60"
     }, {
         "name": "삼대원조나주곰탕 태양집2호점",
         "friendly": "포크프리",
@@ -1439,7 +1570,8 @@ export const restList =[
         "runtime": "07:00-21:00",
         "holiday": "1, 3주 일요일, 명절",
         "parking": "X",
-        "att": "춤추는 바다분수, 갓바위, 국립해양문화재연구소"
+        "attName": "춤추는 바다분수, 갓바위, 국립해양문화재연구소",
+        "attAddress": "전남 목포시 미항로 115,전남 목포시 용해동 산86-24,전남 목포시 남농로 136"
     }, {
         "name": "벚꽃나들버섯집",
         "friendly": "포크프리",
@@ -1450,7 +1582,8 @@ export const restList =[
         "runtime": "10:00-22:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "대구수목원, 마비정벽화마을, 남평문씨본리세거지"
+        "attName": "대구수목원, 마비정벽화마을, 남평문씨본리세거지",
+        "attAddress": "대구 달서구 화암로 342 대구수목원관리사무소,대구 달성군 화원읍 마비정길 262-5,대구 달성군 화원읍 인흥3길 16"
     }, {
         "name": "롤링힐스호텔 블루사파이어",
         "friendly": "무슬림 프렌들리",
@@ -1461,7 +1594,8 @@ export const restList =[
         "runtime": "조식뷔페 06:30-10:00(월-목요일), 07:00-10:00(금-일요일 및 공holiday), 석식 뷔페 18:00-22:00, 단품 메뉴 11:30-21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "제부도, 궁평항, 융건릉"
+        "attName": "제부도, 궁평항, 융건릉",
+        "attAddress": "경기 화성시 서신면 제부리,경기 화성시 서신면 궁평항로 1049-24,경기 화성시 안녕동 187-39"
     }, {
         "name": "가시리",
         "friendly": "무슬림 프렌들리",
@@ -1472,7 +1606,8 @@ export const restList =[
         "runtime": "11:00-21:30, break 14:30-17:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "군산근대역사박물관, 진포해양테마공원, 경암동철길마을"
+        "attName": "군산근대역사박물관, 진포해양테마공원, 경암동철길마을",
+        "attAddress": "전북 군산시 해망로 240,전북 군산시 내항2길 32 진포해양테마공원,전북 군산시 경촌4길 14"
     }, {
         "name": "궁중삼계탕",
         "friendly": "포크프리",
@@ -1483,7 +1618,8 @@ export const restList =[
         "runtime": "10:30-21:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "인천문학경기장, 인천차이나타운, 짜장면박물관"
+        "attName": "인천문학경기장, 인천차이나타운, 짜장면박물관",
+        "attAddress": "인천 미추홀구 매소홀로 618,인천 중구 차이나타운로26번길 12-17,인천 중구 차이나타운로 56-14"
     }, {
         "name": "어부",
         "friendly": "무슬림 프렌들리",
@@ -1494,7 +1630,8 @@ export const restList =[
         "runtime": "16:00-02:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "해운대해수욕장, 더베이 101, 해운대 달맞이길"
+        "attName": "해운대해수욕장, 더베이 101, 해운대 달맞이길",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 동백로 52 더베이101,부산 해운대구 달맞이길 190"
     }, {
         "name": "옥미아구찜",
         "friendly": "무슬림 프렌들리",
@@ -1505,7 +1642,8 @@ export const restList =[
         "runtime": "11:00-21:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "해운대 달맞이길, 누리마루 APEC 하우스, 영화의전당"
+        "attName": "해운대 달맞이길, 누리마루 APEC 하우스, 영화의전당",
+        "attAddress": "부산 해운대구 달맞이길 190,부산 해운대구 동백로 116 누리마루APEC하우스,부산 해운대구 수영강변대로 120 영화의전당"
     }, {
         "name": "알라딘케밥",
         "friendly": "무슬림 자가 인증",
@@ -1516,7 +1654,8 @@ export const restList =[
         "runtime": "10:30-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "송도센트럴파크, 인천광역시립박물관, 인천상륙작전기념관"
+        "attName": "송도센트럴파크, 인천광역시립박물관, 인천상륙작전기념관",
+        "attAddress": "인천 연수구 컨벤시아대로 160,인천 연수구 청량로160번길 26 인천시립박물관,인천 연수구 청량로 138"
     }, {
         "name": "삼수장어 두산오거리점",
         "friendly": "무슬림 프렌들리",
@@ -1527,7 +1666,8 @@ export const restList =[
         "runtime": "11:30-21:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "수성못, 힐크레스트, 가창찐빵거리"
+        "attName": "수성못, 힐크레스트, 가창찐빵거리",
+        "attAddress": "대구 수성구 두산동,대구 달성군 가창면 가창로 1003,대구 달성군 가창면 가창로 1099 가창옛날찐빵집손만두"
     }, {
         "name": "남천숯불장어구이",
         "friendly": "무슬림 프렌들리",
@@ -1538,7 +1678,8 @@ export const restList =[
         "runtime": "10:30-24:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "이기대 도시자연공원, 삼주 다이아몬드베이, 광안대교"
+        "attName": "이기대 도시자연공원, 삼주 다이아몬드베이, 광안대교",
+        "attAddress": "부산 남구 용호동 산122,부산 남구 분포로 101 용호만유람선터미널,부산 수영구 민락동"
     }, {
         "name": "목석원",
         "friendly": "포크프리",
@@ -1549,7 +1690,8 @@ export const restList =[
         "runtime": "09:00-19:00",
         "holiday": "월 2회 비정기적 휴무",
         "parking": "O",
-        "att": "하회동 탈박물관, 병산서원, 하회마을"
+        "attName": "하회동 탈박물관, 병산서원, 하회마을",
+        "attAddress": "경북 안동시 풍천면 전서로 206 박물관,경북 안동시 풍천면 병산길 386,경북 안동시 풍천면 전서로 186"
     }, {
         "name": "안동집",
         "friendly": "포크프리",
@@ -1560,7 +1702,8 @@ export const restList =[
         "runtime": "09:00-19:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "하회동 탈박물관, 부용대, 하회마을"
+        "attName": "하회동 탈박물관, 부용대, 하회마을",
+        "attAddress": "경북 안동시 풍천면 전서로 206 박물관,경북 안동시 풍천면 병산길 386,경북 안동시 풍천면 전서로 186"
     }, {
         "name": "하회맛집",
         "friendly": "포크프리",
@@ -1571,7 +1714,8 @@ export const restList =[
         "runtime": "09:30-20:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "하회동 탈박물관, 하회마을, 옥연정사"
+        "attName": "하회동 탈박물관, 하회마을, 옥연정사",
+        "attAddress":"경북 안동시 풍천면 전서로 206 박물관,경북 안동시 풍천면 전서로 186,경북 안동시 풍천면 광덕솔밭길 86"
     }, {
         "name": "대원가",
         "friendly": "무슬림 프렌들리",
@@ -1582,7 +1726,8 @@ export const restList =[
         "runtime": "09:00-21:00, break 16:00-17:00",
         "holiday": "2, 4주 수요일",
         "parking": "X",
-        "att": "용두암, 이호테우해변, 삼성혈"
+        "attName": "용두암, 이호테우해변, 삼성혈",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 이호일동,제주 제주시 삼성로 22"
     }, {
         "name": "러빙헛스마일",
         "friendly": "무슬림 프렌들리",
@@ -1593,7 +1738,8 @@ export const restList =[
         "runtime": "11:30-21:00",
         "holiday": "1, 3, 2, 4",
         "parking": "O",
-        "att": "양재 시민의 숲, 양재동화훼공판장 , 헌인릉"
+        "attName": "양재 시민의 숲, 양재동화훼공판장 , 헌인릉",
+        "attAddress": "서울 서초구 매헌로 99,서울 서초구 강남대로 27,서울 서초구 내곡동 1-3081"
     }, {
         "name": "레인보우",
         "friendly": "무슬림 프렌들리",
@@ -1604,7 +1750,8 @@ export const restList =[
         "runtime": "06:30-19:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "금오산도립공원, 금오지, 금오랜드"
+        "attName": "금오산도립공원, 금오지, 금오랜드",
+        "attAddress": "경북 구미시 남통동 288-2,경남 하동군 금남면 진정리,경북 구미시 금오산로 341"
     }, {
         "name": "그랜드 힐튼 서울 에이트리움 카페",
         "friendly": "무슬림 프렌들리",
@@ -1615,7 +1762,8 @@ export const restList =[
         "runtime": "12:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "안산자락길, 안산벚꽃동산, 상암 디지털미디어시티"
+        "attName": "안산자락길, 안산벚꽃동산, 상암 디지털미디어시티",
+        "attAddress": "서울 서대문구 봉원동 산1,서울 서대문구 연희동,서울 마포구 상암동"
     }, {
         "name": "그랜드 힐튼 서울 뷔페레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -1626,7 +1774,8 @@ export const restList =[
         "runtime": "조식 07:00-10:00(월-토요일), 07:00-10:30(일요일 및 공holiday), 중식 12:00-14:30(월-토요일), 12:00-15:00(일요일 및 공holiday), 석식 18:",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "안산자락길, 안산벚꽃동산, 상암 디지털미디어시티"
+        "attName": "안산자락길, 안산벚꽃동산, 상암 디지털미디어시티",
+        "attAddress": "서울 서대문구 봉원동 산1,서울 서대문구 연희동,서울 마포구 상암동"
     }, {
         "name": "연화정삼계탕",
         "friendly": "포크프리",
@@ -1637,7 +1786,8 @@ export const restList =[
         "runtime": "10:00-21:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "국립대구과학관, 비슬산군립공원, 도동서원"
+        "attName": "국립대구과학관, 비슬산군립공원, 도동서원",
+        "attAddress": "대구 달성군 유가읍 테크노대로6길 20,대구 달성군 유가읍 양리,대구 달성군 구지면 도동서원로 1"
     }, {
         "name": "주왕산삼계탕",
         "friendly": "포크프리",
@@ -1648,7 +1798,8 @@ export const restList =[
         "runtime": "10:00-21:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "국립대구과학관, 비슬산군립공원, 도동서원"
+        "attName": "국립대구과학관, 비슬산군립공원, 도동서원",
+        "attAddress": "대구 달성군 유가읍 테크노대로6길 20,대구 달성군 유가읍 양리,대구 달성군 구지면 도동서원로 1"
     }, {
         "name": "원조현풍박소선할매집곰탕",
         "friendly": "포크프리",
@@ -1659,7 +1810,8 @@ export const restList =[
         "runtime": "09:00-21:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "국립대구과학관, 비슬산군립공원, 도동서원"
+        "attName": "국립대구과학관, 비슬산군립공원, 도동서원",
+        "attAddress": "대구 달성군 유가읍 테크노대로6길 20,대구 달성군 유가읍 양리,대구 달성군 구지면 도동서원로 1"
     }, {
         "name": "보문호반오리 ",
         "friendly": "포크프리",
@@ -1670,7 +1822,8 @@ export const restList =[
         "runtime": "10:00-21:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "신라왕경숲, 황룡사지, 경주 동궁과 월지"
+        "attName": "신라왕경숲, 황룡사지, 경주 동궁과 월지",
+        "attAddress": "경북 경주시 구황동,경북 경주시 구황동,경북 경주시 원화로 102 안압지"
     }, {
         "name": "타지마할 인도요리전문점",
         "friendly": "무슬림 프렌들리",
@@ -1681,7 +1834,8 @@ export const restList =[
         "runtime": "11:30-22:00, break(월~금) 15:00-17:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "경화역 벚꽃길, 진해군항마을역사길, 주남저수지 철새도래지"
+        "attName": "경화역 벚꽃길, 진해군항마을역사길, 주남저수지 철새도래지",
+        "attAddress": "경남 창원시 진해구 진해대로 663 경화동자율방범대,경남 창원시 진해구 편백로 25-1,경남 창원시 의창구 동읍 대산면 일원"
     }, {
         "name": "봄베이 브로이 해운대점",
         "friendly": "무슬림 프렌들리",
@@ -1692,7 +1846,8 @@ export const restList =[
         "runtime": "11:00-11:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "해운대해수욕장, 부산아쿠아리움, 동백공원"
+        "attName": "해운대해수욕장, 부산아쿠아리움, 동백공원",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 해운대해변로 266,부산 해운대구 동백로 99"
     }, {
         "name": "봄베이 브로이 문현점",
         "friendly": "무슬림 프렌들리",
@@ -1703,7 +1858,8 @@ export const restList =[
         "runtime": "10:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "국제금융센터(BIFC) 63층 스카이라운지, 전포동 카페거리, 서면먹자골목"
+        "attName": "국제금융센터(BIFC) 63층 스카이라운지, 전포동 카페거리, 서면먹자골목",
+        "attAddress": "서울 중구 명동11길 19 전국은행연합회,부산 부산진구 서전로38번길 43-8 1층,부산 부산진구 부전동"
     }, {
         "name": "무궁화(롯데호텔부산)",
         "friendly": "무슬림 프렌들리",
@@ -1714,7 +1870,8 @@ export const restList =[
         "runtime": "12:00-15:00(점심), 18:00-22:00(저녁)",
         "holiday": "",
         "parking": "O",
-        "att": "부산시민공원, 전포 카페거리, 서면 먹자골목"
+        "attName": "부산시민공원, 전포 카페거리, 서면 먹자골목",
+        "attAddress": "부산 부산진구 시민공원로 73,부산 부산진구 동천로 92,부산 부산진구 부전동"
     }, {
         "name": "마살라인디안레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -1725,7 +1882,8 @@ export const restList =[
         "runtime": "11:30-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "한국만화박물관, 웅진플레이도시 워터도시, 아인스월드"
+        "attName": "한국만화박물관, 웅진플레이도시 워터도시, 아인스월드",
+        "attAddress": "경기 부천시 길주로 1,경기 부천시 조마루로 2,경기 안산시 단원구 광덕1로 193 스카이프라자"
     }, {
         "name": "수버인도네팔요리점",
         "friendly": "무슬림 프렌들리",
@@ -1736,7 +1894,8 @@ export const restList =[
         "runtime": "11:00-22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "오창호수공원, 청주백제유물전시관, 국립청주박물관"
+        "attName": "오창호수공원, 청주백제유물전시관, 국립청주박물관",
+        "attAddress": "충북 청주시 청원구 오창읍 오창공원로 311,충북 청주시 흥덕구 1순환로438번길 9 백제유물전시관,충북 청주시 상당구 명암로 143 국립청주박물관"
     }, {
         "name": "복진면",
         "friendly": "무슬림 프렌들리",
@@ -1747,7 +1906,8 @@ export const restList =[
         "runtime": "10:00~22:00",
         "holiday": "",
         "parking": "O",
-        "att": "백운호수, 매봉산, 청계사"
+        "attName": "백운호수, 매봉산, 청계사",
+        "attAddress": "경기 의왕시 학의동,강원 영월군 상동읍,경기 의왕시 청계로 475 청계사"
     }, {
         "name": "머노까머나 송도2호점",
         "friendly": "무슬림 프렌들리",
@@ -1758,7 +1918,8 @@ export const restList =[
         "runtime": "10:30~10:00",
         "holiday": "",
         "parking": "O",
-        "att": "트라이볼, 센트럴파크, 솔찬공원"
+        "attName": "트라이볼, 센트럴파크, 솔찬공원",
+        "attAddress": "인천 연수구 인천타워대로 250,인천 연수구 컨벤시아대로 160,인천 연수구 컨벤시아대로391번길 20"
     }, {
         "name": "머노까머나 송도1호점",
         "friendly": "무슬림 프렌들리",
@@ -1769,7 +1930,8 @@ export const restList =[
         "runtime": "10:30~10:00",
         "holiday": "",
         "parking": "O",
-        "att": "송도 센트럴파크, 커넬위크, 솔찬공원"
+        "attName": "송도 센트럴파크, 커넬위크, 솔찬공원",
+        "attAddress": "인천 연수구 컨벤시아대로 160,인천 연수구 아트센터대로 107,인천 연수구 컨벤시아대로391번길 20"
     }, {
         "name": "머노까머나 신촌점",
         "friendly": "무슬림 프렌들리",
@@ -1780,7 +1942,8 @@ export const restList =[
         "runtime": "11:00~10:30",
         "holiday": "",
         "parking": "X",
-        "att": "홍대거리, 이대, 신촌거리"
+        "attName": "홍대거리, 이대, 신촌거리",
+        "attAddress": "서울 마포구 서교동,서울 서대문구 이화여대길 52,서울 마포구 와우산로37길 35"
     }, {
         "name": "머노까머나 대학로점",
         "friendly": "무슬림 프렌들리",
@@ -1791,7 +1954,8 @@ export const restList =[
         "runtime": "11:00~22:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "창덕궁, 대학로, 낙산공원"
+        "attName": "창덕궁, 대학로, 낙산공원",
+        "attAddress": "서울 종로구 율곡로 99,서울 종로구 동숭동,서울 종로구 낙산길 41"
     }, {
         "name": "할랄 인디안레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -1802,7 +1966,8 @@ export const restList =[
         "runtime": "11:00~23:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "김포국제조각공원, 대명항, 다도박물관"
+        "attName": "김포국제조각공원, 대명항, 다도박물관",
+        "attAddress": "경기 김포시 월곶면 고막리 435-14,경기 김포시 대곶면 대명리,경기 김포시 월곶면 애기봉로275번길 187-49"
     }, {
         "name": "일도씨닭갈비 목동점",
         "friendly": "포크프리",
@@ -1813,7 +1978,8 @@ export const restList =[
         "runtime": "10:00-22:00",
         "holiday": "",
         "parking": "O",
-        "att": "목동종합운동장, 선유도공원"
+        "attName": "목동종합운동장, 선유도공원",
+        "attAddress": "서울 양천구 안양천로 939,서울 영등포구 선유로 343"
     }, {
         "name": "일도씨닭갈비 분당점",
         "friendly": "포크프리",
@@ -1824,7 +1990,8 @@ export const restList =[
         "runtime": "10:10~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "수원화성, 한국민속촌, 에버랜드"
+        "attName": "수원화성, 한국민속촌, 에버랜드",
+        "attAddress": "경기 수원시 장안구 영화동 320-2,경기 용인시 기흥구 민속촌로 90 한국민속촌,경기 용인시 처인구 포곡읍 에버랜드로 199"
     }, {
         "name": "일도씨닭갈비 방배점",
         "friendly": "포크프리",
@@ -1835,7 +2002,8 @@ export const restList =[
         "runtime": "11:00~23:00",
         "holiday": "",
         "parking": "O",
-        "att": "방배공원, 예술의전당, 사당, 서리풀공원"
+        "attName": "방배공원, 예술의전당, 사당, 서리풀공원",
+        "attAddress": "서울 서초구 방배동 산24-2,서울 서초구 남부순환로 2406,서울 동작구 사당동,서울 서초구 서초동 1005-6"
     }, {
         "name": "일도씨닭갈비 미아점",
         "friendly": "포크프리",
@@ -1846,7 +2014,8 @@ export const restList =[
         "runtime": "11:00~24:00",
         "holiday": "",
         "parking": "X",
-        "att": "롯데백화점 미아점, 북서울의 숲, 와이스퀘어"
+        "attName": "롯데백화점 미아점, 북서울의 숲, 와이스퀘어",
+        "attAddress": "서울 강북구 도봉로 62 롯데백화점미아점,서울 강북구 월계로 173,서울 강북구 도봉로 52"
     }, {
         "name": "아마 홍대점",
         "friendly": "무슬림 프렌들리",
@@ -1857,7 +2026,8 @@ export const restList =[
         "runtime": "11:30~23:30",
         "holiday": "",
         "parking": "O",
-        "att": "홍대거리, 이대거리, 신촌"
+        "attName": "홍대거리, 이대거리, 신촌",
+        "attAddress": "서울 마포구 서교동,서울 서대문구 창천동,서울 서대문구 신촌로 90"
     }, {
         "name": "아마 신촌점",
         "friendly": "무슬림 프렌들리",
@@ -1868,7 +2038,8 @@ export const restList =[
         "runtime": "11:30~23:30",
         "holiday": "",
         "parking": "X",
-        "att": "홍대거리, 이대거리, 신촌"
+        "attName": "홍대거리, 이대거리, 신촌",
+        "attAddress": "서울 마포구 서교동,서울 서대문구 창천동,서울 서대문구 신촌로 90"
     }, {
         "name": "대복 복전문점",
         "friendly": "무슬림 프렌들리",
@@ -1879,7 +2050,8 @@ export const restList =[
         "runtime": "10:00~22:00",
         "holiday": "1, 3주 일요일",
         "parking": "O",
-        "att": "국립수목원, 아프리카예술박물관, 포천아트밸리"
+        "attName": "국립수목원, 아프리카예술박물관, 포천아트밸리",
+        "attAddress": "경기 포천시 소흘읍 광릉수목원로 415,경기 포천시 소흘읍 광릉수목원로 967,경기 포천시 신북면 아트밸리로 234"
     }, {
         "name": "히말라야정원",
         "friendly": "무슬림 프렌들리",
@@ -1890,7 +2062,8 @@ export const restList =[
         "runtime": "11:30~23:00",
         "holiday": "",
         "parking": "O",
-        "att": "경기도 문화의전당, 인계예술공원, 수원 올림픽공원"
+        "attName": "경기도 문화의전당, 인계예술공원, 수원 올림픽공원",
+        "attAddress": "경기 수원시 팔달구 효원로307번길 20 경기아트센터,경기 수원시 팔달구 동수원로 335 경기도문화의전당,경기 수원시 권선구 효원로256번길 16"
     }, {
         "name": "메이필드호텔 룸서비스",
         "friendly": "무슬림 프렌들리",
@@ -1901,7 +2074,8 @@ export const restList =[
         "runtime": "주중 12:00~15:00(점심), 18:00~22:00(저녁) / 주말 12:00~22:00",
         "holiday": "",
         "parking": "O",
-        "att": "강서습지생태공원, 행주산성, 아라마린센터"
+        "attName": "강서습지생태공원, 행주산성, 아라마린센터",
+        "attAddress": "서울 강서구 방화동 2-15,경기 고양시 덕양구 행주내동 산26-1,경기 김포시 고촌읍 아라육로270번길 73 아라마린센터"
     }, {
         "name": "메이필드호텔 라페스타",
         "friendly": "무슬림 프렌들리",
@@ -1912,7 +2086,8 @@ export const restList =[
         "runtime": "24시간",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "아라마린센터, 강서습지생태공원"
+        "attName": "아라마린센터, 강서습지생태공원",
+        "attAddress": "경기 김포시 고촌읍 아라육로270번길 73 아라마린센터,서울 강서구 방화동 2-15"
     }, {
         "name": "메이필드호텔 낙원",
         "friendly": "무슬림 프렌들리",
@@ -1923,7 +2098,8 @@ export const restList =[
         "runtime": "주중 12:00~15:00(점심), 18:00~22:00(저녁) / 주말 11:30~14:30(점심), 18:00~22:00(저녁)",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "행주산성, 아라마린센터, 롯데몰 김포공항점"
+        "attName": "행주산성, 아라마린센터, 롯데몰 김포공항점",
+        "attAddress": "경기 고양시 덕양구 행주내동 산26-1,경기 김포시 고촌읍 아라육로270번길 73 아라마린센터,서울 강서구 하늘길 77 김포공항역"
     }, {
         "name": "롯데호텔 룸서비스",
         "friendly": "무슬림 프렌들리",
@@ -1934,7 +2110,8 @@ export const restList =[
         "runtime": "24시간",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "덕수궁, 서울시청, 숭례문"
+        "attName": "덕수궁, 서울시청, 숭례문",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 중구 세종대로 110 서울특별시청,서울 중구 세종대로 40"
     }, {
         "name": "롯데호텔 라세느",
         "friendly": "무슬림 프렌들리",
@@ -1945,7 +2122,8 @@ export const restList =[
         "runtime": "월~금요일 06:00~10:00(아침), 11:30~14:30(점심), 18:00~22:00(금 17:30~22:00, 저녁) / 토~일요일, 공holiday 06:00~10:00(아침),",
         "holiday": "",
         "parking": "O",
-        "att": "서울광장, 청계천, 세운상가"
+        "attName": "서울광장, 청계천, 세운상가",
+        "attAddress": "서울 중구 을지로 12 시청광장지하쇼핑센터,서울 종로구 창신동,서울 종로구 청계천로 159"
     }, {
         "name": "롯데호텔 페닌슐라 라운지",
         "friendly": "무슬림 프렌들리",
@@ -1956,7 +2134,8 @@ export const restList =[
         "runtime": "08:00~24:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "명동, 명동성당, 남대문시장"
+        "attName": "명동, 명동성당, 남대문시장",
+        "attAddress": "서울 중구 명동2가,서울 중구 명동길 74,서울 중구 남대문시장4길 21"
     }, {
         "name": "인드라",
         "friendly": "무슬림 프렌들리",
@@ -1967,7 +2146,8 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "1, 3주 월요일",
         "parking": "O",
-        "att": "죽도시장, 포항운하, 영일대해수욕장"
+        "attName": "죽도시장, 포항운하, 영일대해수욕장",
+        "attAddress": "경북 포항시 북구 죽도시장13길 13 포항수산종합어시장,경북 포항시 남구 해도동  537,경북 포항시 북구 두호동 685-1"
     }, {
         "name": "수엠부 동탄점",
         "friendly": "무슬림 프렌들리",
@@ -1978,7 +2158,8 @@ export const restList =[
         "runtime": "11:00~21:00, break 15:00~17:00",
         "holiday": "",
         "parking": "O",
-        "att": "반석사 근린공원, 동탄 센트럴파크, 동탄 여울공원"
+        "attName": "반석사 근린공원, 동탄 센트럴파크, 동탄 여울공원",
+        "attAddress": "경기 화성시 노작로4길 18-38,경기 화성시 동탄공원로2길 22,경기 화성시 오산동 1060"
     }, {
         "name": "인도하우스",
         "friendly": "포크프리",
@@ -1989,7 +2170,8 @@ export const restList =[
         "runtime": "11:30~22:00",
         "holiday": "매주 화요일",
         "parking": "O",
-        "att": "경기도자박물관, 화담숲, 에버랜드"
+        "attName": "경기도자박물관, 화담숲, 에버랜드",
+        "attAddress": "경기 이천시 신둔면 도자예술로6번길 121,경기 광주시 도척면 도척윗로 278-1,경기 용인시 처인구 포곡읍 에버랜드로 199"
     }, {
         "name": "일도씨닭갈비 광화문점",
         "friendly": "포크프리",
@@ -2000,7 +2182,8 @@ export const restList =[
         "runtime": "10:00-22:00",
         "holiday": "",
         "parking": "O",
-        "att": "광화문광장, 경복궁, 국립현대미술관"
+        "attName": "광화문광장, 경복궁, 국립현대미술관",
+        "attAddress": "서울 종로구 세종대로 172,서울 종로구 사직로 161 경복궁,서울 종로구 삼청로 30"
     }, {
         "name": "운채 세번째 이야기",
         "friendly": "포크프리",
@@ -2011,7 +2194,8 @@ export const restList =[
         "runtime": "11:00~20:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "관음사, 치악산, 행구수변공원"
+        "attName": "관음사, 치악산, 행구수변공원",
+        "attAddress": "강원 원주시 행구로 533,강원 원주시 소초면 무쇠점2길 26,강원 원주시 행구로 362"
     }, {
         "name": "스위트인디아",
         "friendly": "무슬림 프렌들리",
@@ -2022,9 +2206,10 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "군산 근대역사박물관, 신흥동 일본식가옥, 군산 금강하구둑"
+        "attName": "군산 근대역사박물관, 신흥동 일본식가옥, 군산 금강하구둑",
+        "attAddress": "전북 군산시 해망로 240,전북 군산시 구영1길 17,전북 군산시 성산면 철새로 120"
     }, {
-        "name": "운채 ",
+        "name": "운채",
         "friendly": "무슬림 프렌들리",
         "area": "강원",
         "foodType": "한식",
@@ -2033,7 +2218,8 @@ export const restList =[
         "runtime": "11:10~20:40, break 주중 15:30~16:30, 주말 16:00~17:00, 월요일",
         "holiday": "매주 월요일, 명절",
         "parking": "O",
-        "att": "관음사, 치악산, 행구수변공원"
+        "attName": "관음사, 치악산, 행구수변공원",
+        "attAddress": "강원 원주시 행구로 533,강원 원주시 소초면 무쇠점2길 26,강원 원주시 행구로 362"
     }, {
         "name": "라즈 인천공항",
         "friendly": "무슬림 프렌들리",
@@ -2044,7 +2230,8 @@ export const restList =[
         "runtime": "11:00~10:00",
         "holiday": "",
         "parking": "O",
-        "att": "인천국제공항, 파라다이스시티호텔카지노, 스카이72"
+        "attName": "인천국제공항, 파라다이스시티호텔카지노, 스카이72",
+        "attAddress": "인천 중구 공항로 271 인천국제공항역,인천 중구 영종해안남로321번길 186,인천 중구 영종해안북로847번길 42"
     }, {
         "name": "신라호텔 콘티넨탈",
         "friendly": "무슬림 프렌들리",
@@ -2055,7 +2242,8 @@ export const restList =[
         "runtime": "12:00~14:30(점심), 18:00~22:00(저녁)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "국립극장, 이태원, DDP"
+        "attName": "국립극장, 이태원, DDP",
+        "attAddress": "서울 중구 장충단로 59,서울 용산구 이태원동,서울 중구 을지로 281"
     }, {
         "name": "신라호텔 라연",
         "friendly": "무슬림 프렌들리",
@@ -2066,7 +2254,8 @@ export const restList =[
         "runtime": "12:00~14:30(점심), 18:00~22:00(저녁)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "충무로, 남산공원, 남산골 한옥마을"
+        "attName": "충무로, 남산공원, 남산골 한옥마을",
+        "attAddress": "서울 중구 퇴계로 199,서울 중구 삼일대로 231,서울 중구 퇴계로34길 28 남산골한옥마을"
     }, {
         "name": "용장어요리전문점",
         "friendly": "무슬림 프렌들리",
@@ -2077,7 +2266,8 @@ export const restList =[
         "runtime": "11:30~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "부산현대미술관, 을숙도생태공원, 다대포해수욕장"
+        "attName": "부산현대미술관, 을숙도생태공원, 다대포해수욕장",
+        "attAddress": "부산 사하구 낙동남로 1191,부산 사하구 하단동 1207,부산 사하구 다대동"
     }, {
         "name": "함초간장게장",
         "friendly": "무슬림 프렌들리",
@@ -2088,7 +2278,8 @@ export const restList =[
         "runtime": "11:00-23:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "명동, 명동성당, 남산서울타워"
+        "attName": "명동, 명동성당, 남산서울타워",
+        "attAddress": "서울 중구 명동2가,서울 중구 명동길 74,서울 용산구 남산공원길 105"
     }, {
         "name": "춘천곰탕",
         "friendly": "포크프리",
@@ -2099,7 +2290,8 @@ export const restList =[
         "runtime": "09:00~21:00",
         "holiday": "2, 4,",
         "parking": "O",
-        "att": "소양강 처녀동상, 의암호, 중도att"
+        "attName": "소양강 처녀동상, 의암호, 중도attName",
+        "attAddress": "강원 춘천시 영서로 2675,강원 춘천시 서면,강원 춘천시 스포츠타운길223번길 95 1층"
     }, {
         "name": "케르반 베이커리",
         "friendly": "할랄 공식 인증",
@@ -2110,7 +2302,8 @@ export const restList =[
         "runtime": "09:00~23:20",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "이태원 쇼핑거리, 전쟁기념관, 삼성미술관 리움"
+        "attName": "이태원 쇼핑거리, 전쟁기념관, 삼성미술관 리움",
+        "attAddress": "서울 용산구 이태원동,서울 용산구 이태원로 29 전쟁기념관,서울 용산구 이태원로55길 60-16"
     }, {
         "name": "케르반 파미에스테이션점",
         "friendly": "할랄 공식 인증",
@@ -2121,7 +2314,8 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "세빛섬, 강남역 지하도상가"
+        "attName": "세빛섬, 강남역 지하도상가",
+        "attAddress": "서울 서초구 올림픽대로 2085-14 세빛섬,서울 강남구 강남대로 지하 396 강남역지하쇼핑센터"
     }, {
         "name": "케르반 스타필드 고양점",
         "friendly": "무슬림 프렌들리",
@@ -2132,7 +2326,8 @@ export const restList =[
         "runtime": "10:00~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "서오릉, 서삼릉"
+        "attName": "서오릉, 서삼릉",
+        "attAddress": "경기 고양시 덕양구 서오릉로 334-32,경기 고양시 덕양구 서삼릉길 233-126"
     }, {
         "name": "포탈라레스토랑 홍대점",
         "friendly": "무슬림 프렌들리",
@@ -2143,7 +2338,8 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "홍대 프리마켓, 연남동 공방거리"
+        "attName": "홍대 프리마켓, 연남동 공방거리",
+        "attAddress": "서울 마포구 와우산로21길 19-3,서울 마포구 성미산로27길 34 3층 302호"
     }, {
         "name": "명동정",
         "friendly": "무슬림 프렌들리",
@@ -2154,7 +2350,8 @@ export const restList =[
         "runtime": "11:00~23:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "명동, 남산 케이블카, 남산골 한옥마을"
+        "attName": "명동, 남산 케이블카, 남산골 한옥마을",
+        "attAddress": "서울 중구 명동2가,서울 중구 소파로 83,서울 중구 퇴계로34길 28 남산골한옥마을"
     }, {
         "name": "뉴살라딘",
         "friendly": "무슬림 자가 인증",
@@ -2165,7 +2362,8 @@ export const restList =[
         "runtime": "11:00~23:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "대구수목원, 남평문씨본리세거지, 이월드"
+        "attName": "대구수목원, 남평문씨본리세거지, 이월드",
+        "attAddress": "대구 달서구 화암로 342 대구수목원관리사무소,대구 달성군 화원읍 인흥3길 16,대구 달서구 두류공원로 200 이월드"
     }, {
         "name": "아시안 라이브",
         "friendly": "무슬림 프렌들리",
@@ -2176,7 +2374,8 @@ export const restList =[
         "runtime": "11:30~22:00, break 14:30~17:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "스타필드 코엑스몰, 코엑스 아쿠아리움, 봉은사"
+        "attName": "스타필드 코엑스몰, 코엑스 아쿠아리움, 봉은사",
+        "attAddress": "서울 강남구 봉은사로 524,서울 강남구 영동대로 513,서울 강남구 봉은사로 531 봉은사"
     }, {
         "name": "알펜시아호텔리조트 컨벤션센터",
         "friendly": "무슬림 프렌들리",
@@ -2187,7 +2386,8 @@ export const restList =[
         "runtime": "예약 확인",
         "holiday": "",
         "parking": "O",
-        "att": "알펜시아 리조트, 용평스키장"
+        "attName": "알펜시아 리조트, 용평스키장",
+        "attAddress": "강원 평창군 대관령면 솔봉로 287 강원도개발공사,강원 평창군 대관령면 올림픽로 715"
     }, {
         "name": "동문 익스프레스(홍천 비발디파크)",
         "friendly": "할랄 공식 인증",
@@ -2198,7 +2398,8 @@ export const restList =[
         "runtime": "스키장 주간 운영 시 08:00 ~ 16:30\n스키장 주/심야 운영 시 08:00 ~ 24:00",
         "holiday": "",
         "parking": "O",
-        "att": "홍천 비발디파크, 남노일강변유원지"
+        "attName": "홍천 비발디파크, 남노일강변유원지",
+        "attAddress": "강원 홍천군 서면 한치골길 262,강원 홍천군 남면 남노일리 369"
     }, {
         "name": "피자치킨&KAMPUNGKU",
         "friendly": "무슬림 자가 인증",
@@ -2209,9 +2410,10 @@ export const restList =[
         "runtime": "오전10:00~오후9:30",
         "holiday": "",
         "parking": "X",
-        "att": "남산타워, 명동문화의거리"
+        "attName": "남산타워, 명동문화의거리",
+        "attAddress": "부산 금정구 학산로7번길 17,서울 중구 명동2가"
     }, {
-        "name": "미가일식 ",
+        "name": "미가일식",
         "friendly": "무슬림 프렌들리",
         "area": "전북",
         "foodType": "일식",
@@ -2220,7 +2422,8 @@ export const restList =[
         "runtime": "오전 10:00~오후 10:00",
         "holiday": "",
         "parking": "O",
-        "att": "전주 한옥마을, 덕진공원"
+        "attName": "전주 한옥마을, 덕진공원"
+        
     }, {
         "name": "세우고 횟집",
         "friendly": "무슬림 프렌들리",
@@ -2231,7 +2434,7 @@ export const restList =[
         "runtime": "오후3:00~오후11:00",
         "holiday": "",
         "parking": "O",
-        "att": "전주 한옥마을, 덕진공원"
+        "attName": "전주 한옥마을, 덕진공원"
     }, {
         "name": "개인화로 미소",
         "friendly": "포크프리",
@@ -2242,7 +2445,7 @@ export const restList =[
         "runtime": "매일 16:30 - 24:00",
         "holiday": "",
         "parking": "O",
-        "att": "전주한옥마을, 전주동물원"
+        "attName": "전주한옥마을, 전주동물원"
     }, {
         "name": "아멛 아시안 퀴진 ",
         "friendly": "무슬림 자가 인증",
@@ -2253,7 +2456,7 @@ export const restList =[
         "runtime": "오전 11:00~호우9:00",
         "holiday": "",
         "parking": "O",
-        "att": "전주한옥마을, 전주동물원"
+        "attName": "전주한옥마을, 전주동물원"
     }, {
         "name": "코코마마 성산점",
         "friendly": "무슬림 프렌들리",
@@ -2264,7 +2467,7 @@ export const restList =[
         "runtime": "오전10:00~오후10:00(라스트오더 오후8시)",
         "holiday": "",
         "parking": "O",
-        "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
+        "attName": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
         "name": "춘천옹심이",
         "friendly": "포크프리",
@@ -2275,7 +2478,7 @@ export const restList =[
         "runtime": "오전9:30~오후8:00",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "소양강처녀닭갈비",
         "friendly": "포크프리",
@@ -2286,7 +2489,7 @@ export const restList =[
         "runtime": "오전9시30분~오후9시",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "3대원조할매추어탕",
         "friendly": "무슬림 프렌들리",
@@ -2297,7 +2500,7 @@ export const restList =[
         "runtime": "오전7:40~오후7:00",
         "holiday": "",
         "parking": "O",
-        "att": "광한루, 춘향테마파크"
+        "attName": "광한루, 춘향테마파크"
     }, {
         "name": "친절식당",
         "friendly": "무슬림 프렌들리",
@@ -2308,7 +2511,7 @@ export const restList =[
         "runtime": "매일 07:00 - 21:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "광한루, 춘향테마파크"
+        "attName": "광한루, 춘향테마파크"
     }, {
         "name": "부산집",
         "friendly": "무슬림 프렌들리",
@@ -2319,7 +2522,7 @@ export const restList =[
         "runtime": "매일 16:00 - 02:00",
         "holiday": "",
         "parking": "O",
-        "att": "광한루, 춘향테마파크"
+        "attName": "광한루, 춘향테마파크"
     }, {
         "name": "현식당",
         "friendly": "무슬림 프렌들리",
@@ -2330,7 +2533,7 @@ export const restList =[
         "runtime": "매일 07:30 - 20:00",
         "holiday": "",
         "parking": "O",
-        "att": "광한루원, 남원향토박물관, 만인의 총"
+        "attName": "광한루원, 남원향토박물관, 만인의 총"
     }, {
         "name": "베지나랑 ",
         "friendly": "무슬림 프렌들리",
@@ -2341,7 +2544,7 @@ export const restList =[
         "runtime": "오전11:30~오후9:00 (break 오후3시~5시)",
         "holiday": "",
         "parking": "X",
-        "att": "광안리해수욕장, 해운대해수욕장, 백스코, 민락공원, 동백공원"
+        "attName": "광안리해수욕장, 해운대해수욕장, 백스코, 민락공원, 동백공원"
     }, {
         "name": "코코마마",
         "friendly": "무슬림 프렌들리",
@@ -2352,7 +2555,7 @@ export const restList =[
         "runtime": "오전11:30~오후3:00",
         "holiday": "",
         "parking": "O",
-        "att": "우도섬"
+        "attName": "우도섬"
     }, {
         "name": "옹기촌",
         "friendly": "포크프리",
@@ -2363,7 +2566,7 @@ export const restList =[
         "runtime": "오전11:30~오후10:00",
         "holiday": "명절, 휴가철",
         "parking": "O",
-        "att": "오륙도, 관안리해수욕장, 이기대수변공원, UN기념공원, 신선대"
+        "attName": "오륙도, 관안리해수욕장, 이기대수변공원, UN기념공원, 신선대"
     }, {
         "name": "나탄약선요리",
         "friendly": "무슬림 프렌들리",
@@ -2374,7 +2577,7 @@ export const restList =[
         "runtime": "오후12시~오후9:30(break 오후3~5시)",
         "holiday": "",
         "parking": "O",
-        "att": "부산시민공원, 삼정더파크(동물원), 사직구장"
+        "attName": "부산시민공원, 삼정더파크(동물원), 사직구장"
     }, {
         "name": "슬로시티약초밥상",
         "friendly": "무슬림 프렌들리",
@@ -2385,7 +2588,7 @@ export const restList =[
         "runtime": "오전8:00~오후8:00",
         "holiday": "",
         "parking": "O",
-        "att": "가사문학관, 메타세콰이어길, 죽녹원"
+        "attName": "가사문학관, 메타세콰이어길, 죽녹원"
     }, {
         "name": "무진장 해물탕",
         "friendly": "무슬림 프렌들리",
@@ -2396,7 +2599,7 @@ export const restList =[
         "runtime": "오전10:00~오후9:00",
         "holiday": "",
         "parking": "O",
-        "att": "가사문학관, 메타세콰이어길, 죽녹원"
+        "attName": "가사문학관, 메타세콰이어길, 죽녹원"
     }, {
         "name": "안동인 안동찜닭",
         "friendly": "무슬림 프렌들리",
@@ -2407,7 +2610,7 @@ export const restList =[
         "runtime": "오전11시~오후11시",
         "holiday": "1, 3주 목요일",
         "parking": "O",
-        "att": "수로왕릉, 수로왕비릉, 가야랜드, 김해가야테마파크"
+        "attName": "수로왕릉, 수로왕비릉, 가야랜드, 김해가야테마파크"
     }, {
         "name": "행복을짓는수향밥상",
         "friendly": "포크프리",
@@ -2418,7 +2621,7 @@ export const restList =[
         "runtime": "오전9시~오후10시30분",
         "holiday": "",
         "parking": "O",
-        "att": "다대포해수욕장낙조분수, 물운대유원지, 다대포해변공원, 아미산전망대"
+        "attName": "다대포해수욕장낙조분수, 물운대유원지, 다대포해변공원, 아미산전망대"
     }, {
         "name": "행복을짓는수향촌밥상",
         "friendly": "포크프리",
@@ -2429,7 +2632,7 @@ export const restList =[
         "runtime": "오전9시~오후10시",
         "holiday": "",
         "parking": "O",
-        "att": "민락공원, 광안리해수욕장, 백스코, 동백공원"
+        "attName": "민락공원, 광안리해수욕장, 백스코, 동백공원"
     }, {
         "name": "장수삼",
         "friendly": "포크프리",
@@ -2440,7 +2643,7 @@ export const restList =[
         "runtime": "오전11시~오후8시",
         "holiday": "매주 화요일",
         "parking": "X",
-        "att": "광안리해수욕장, 해운대해수욕장, 백스코, 민락공원, 동백공원"
+        "attName": "광안리해수욕장, 해운대해수욕장, 백스코, 민락공원, 동백공원"
     }, {
         "name": "제주대게회타운",
         "friendly": "무슬림 프렌들리",
@@ -2451,7 +2654,7 @@ export const restList =[
         "runtime": "오전10:00~오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "용두함, 용현구른다리, 용두암해안도로, 한라수목원, 사라봉공원, 용현구름다리, 탑동공연장"
+        "attName": "용두함, 용현구른다리, 용두암해안도로, 한라수목원, 사라봉공원, 용현구름다리, 탑동공연장"
     }, {
         "name": "용두암바당회국수",
         "friendly": "무슬림 프렌들리",
@@ -2462,7 +2665,7 @@ export const restList =[
         "runtime": "오전9:00~오후9:00",
         "holiday": "",
         "parking": "O",
-        "att": "용두함, 용현구른다리, 용두암해안도로, 한라수목원, 사라봉공원, 용현구름다리, 탑동공연장"
+        "attName": "용두함, 용현구른다리, 용두암해안도로, 한라수목원, 사라봉공원, 용현구름다리, 탑동공연장"
     }, {
         "name": "제주랑",
         "friendly": "무슬림 프렌들리",
@@ -2473,7 +2676,7 @@ export const restList =[
         "runtime": "오전8:00~오후8:00",
         "holiday": "",
         "parking": "O",
-        "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
+        "attName": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
         "name": "청운식당",
         "friendly": "무슬림 프렌들리",
@@ -2484,7 +2687,7 @@ export const restList =[
         "runtime": "오번8:00~오후9:00",
         "holiday": "",
         "parking": "O",
-        "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
+        "attName": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
         "name": "춘천세종호텔",
         "friendly": "무슬림 프렌들리",
@@ -2495,7 +2698,7 @@ export const restList =[
         "runtime": "오전7:00~오후3:00",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "김명자굴국밥",
         "friendly": "무슬림 프렌들리",
@@ -2506,7 +2709,7 @@ export const restList =[
         "runtime": "오전6:00~오후9:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
+        "attName": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
         "name": "해촌",
         "friendly": "무슬림 프렌들리",
@@ -2517,7 +2720,7 @@ export const restList =[
         "runtime": "오전7:30~오후10:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
+        "attName": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
         "name": "성산보말죽칼국수",
         "friendly": "무슬림 프렌들리",
@@ -2528,7 +2731,7 @@ export const restList =[
         "runtime": "오전7:30~오후8:00",
         "holiday": "매주 화요일",
         "parking": "O",
-        "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
+        "attName": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
         "name": "황태마을 ",
         "friendly": "무슬림 프렌들리",
@@ -2539,7 +2742,7 @@ export const restList =[
         "runtime": "오전8:00~오후21:30",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "정가네소갈비",
         "friendly": "포크프리",
@@ -2550,7 +2753,7 @@ export const restList =[
         "runtime": "오후4:30~오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "점봉산산채",
         "friendly": "포크프리",
@@ -2561,7 +2764,7 @@ export const restList =[
         "runtime": "오전11시~오후9시40분",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "춘천원조숯불닭갈비 ",
         "friendly": "포크프리",
@@ -2572,7 +2775,7 @@ export const restList =[
         "runtime": "오전10:00~오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "황쓰도깨비집 숯불닭갈비",
         "friendly": "포크프리",
@@ -2583,7 +2786,7 @@ export const restList =[
         "runtime": "오전10:00~새벽 4:00",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "CJ프레시웨이 코이카연수센터점",
         "friendly": "무슬림 프렌들리",
@@ -2594,7 +2797,7 @@ export const restList =[
         "runtime": "07:00~20:30",
         "holiday": "",
         "parking": "O",
-        "att": "대왕저수지, 분당중앙공원, 신구대식물원"
+        "attName": "대왕저수지, 분당중앙공원, 신구대식물원"
     }, {
         "name": "산골애",
         "friendly": "포크프리",
@@ -2605,7 +2808,7 @@ export const restList =[
         "runtime": "오전 11:30~22:00(평일만 오후3시부터 오후 5시까지 break)",
         "holiday": "",
         "parking": "O",
-        "att": "대저생태공원, 현대미술관, 스타필드, 을숙도 생태공원"
+        "attName": "대저생태공원, 현대미술관, 스타필드, 을숙도 생태공원"
     }, {
         "name": "서가네오리",
         "friendly": "포크프리",
@@ -2616,7 +2819,7 @@ export const restList =[
         "runtime": "오전10시~오후10시",
         "holiday": "",
         "parking": "O",
-        "att": "가야산, 부산시민공원, 한국허치슨터미널, 부산항연안여객터미널"
+        "attName": "가야산, 부산시민공원, 한국허치슨터미널, 부산항연안여객터미널"
     }, {
         "name": "한지붕다섯가족 ",
         "friendly": "포크프리",
@@ -2627,7 +2830,7 @@ export const restList =[
         "runtime": "오전11:30~오후9:00",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "명동산골닭갈비",
         "friendly": "포크프리",
@@ -2638,7 +2841,7 @@ export const restList =[
         "runtime": "오전10:00~오후11:00",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "준섭이네닭갈비 ",
         "friendly": "포크프리",
@@ -2649,7 +2852,7 @@ export const restList =[
         "runtime": "매일 10:00 - 21:00",
         "holiday": "",
         "parking": "O",
-        "att": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
+        "attName": "소양강, 스카이워크, 공지천, 강촌역, 레일바이크, 문학촌, 산토리니 카페"
     }, {
         "name": "둘레길숯불닭갈비 ",
         "friendly": "포크프리",
@@ -2660,7 +2863,7 @@ export const restList =[
         "runtime": "오전11시~오후9시",
         "holiday": "",
         "parking": "O",
-        "att": "남이섬, 자라섬"
+        "attName": "남이섬, 자라섬"
     }, {
         "name": "약수한방삼계탕",
         "friendly": "포크프리",
@@ -2671,7 +2874,7 @@ export const restList =[
         "runtime": "매일 09:30 - 21:30",
         "holiday": "",
         "parking": "O",
-        "att": "담양죽녹원, 518기념문화센터"
+        "attName": "담양죽녹원, 518기념문화센터"
     }, {
         "name": "무등관 ",
         "friendly": "포크프리",
@@ -2682,7 +2885,7 @@ export const restList =[
         "runtime": "오전10:00~오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "무등산국립공원, 518기념문화센터"
+        "attName": "무등산국립공원, 518기념문화센터"
     }, {
         "name": "할매 춘천닭갈비",
         "friendly": "포크프리",
@@ -2693,7 +2896,7 @@ export const restList =[
         "runtime": "오전7:30~오후7:30",
         "holiday": "",
         "parking": "O",
-        "att": "남이섬, 자라섬"
+        "attName": "남이섬, 자라섬"
     }, {
         "name": "안탈리아다이닝",
         "friendly": "무슬림 프렌들리",
@@ -2704,7 +2907,7 @@ export const restList =[
         "runtime": "오후12시~오후9:30",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "첨성대, 월성지구, 반월성, 국립경주박물관, 경주오릉. 동궁괴월지, 황룡사지 ,성덕여왕릉 등 경주area 다수"
+        "attName": "첨성대, 월성지구, 반월성, 국립경주박물관, 경주오릉. 동궁괴월지, 황룡사지 ,성덕여왕릉 등 경주area 다수"
     }, {
         "name": "안탈리아",
         "friendly": "무슬림 프렌들리",
@@ -2715,7 +2918,7 @@ export const restList =[
         "runtime": "오전11시~오후10시 (오후3시~5시 break)",
         "holiday": "매주 일요일",
         "parking": "O",
-        "att": "형성강 크루즈, 중명자연생태공원, 포스코 역사관"
+        "attName": "형성강 크루즈, 중명자연생태공원, 포스코 역사관"
     }, {
         "name": "알펜시아호텔리조트 몽블랑",
         "friendly": "무슬림 프렌들리",
@@ -2726,7 +2929,7 @@ export const restList =[
         "runtime": "조식 7:00 AM ~ 11:00 AM\n중.석식 12:00 PM ~ 10:00  Last Order 9:30 PM",
         "holiday": "",
         "parking": "O",
-        "att": "알펜시아 리조트, 용평스키장"
+        "attName": "알펜시아 리조트, 용평스키장"
     }, {
         "name": "다연닭갈비 ",
         "friendly": "포크프리",
@@ -2737,7 +2940,7 @@ export const restList =[
         "runtime": "오전11:00~오후11:00",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "아시아예술창작스튜디오, 큐브미술관, 518기념관"
+        "attName": "아시아예술창작스튜디오, 큐브미술관, 518기념관"
     }, {
         "name": "살와 레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -2748,7 +2951,7 @@ export const restList =[
         "runtime": "아침10시~저녁11시",
         "holiday": "",
         "parking": "X",
-        "att": "팔공산, 송해공원, 학산공원, 대구수목원, 다산문화공원"
+        "attName": "팔공산, 송해공원, 학산공원, 대구수목원, 다산문화공원"
     }, {
         "name": "뉴살라딘 동성로 ",
         "friendly": "무슬림 프렌들리",
@@ -2759,7 +2962,7 @@ export const restList =[
         "runtime": "오전11시~오후11시",
         "holiday": "",
         "parking": "O",
-        "att": "대구시립중앙도서관, 동성로로데오거리, 대구신천물놀이장"
+        "attName": "대구시립중앙도서관, 동성로로데오거리, 대구신천물놀이장"
     }, {
         "name": "헬로인디아",
         "friendly": "무슬림 프렌들리",
@@ -2770,7 +2973,7 @@ export const restList =[
         "runtime": "오전11:00~오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "홍대거리, 선유도공원, 연트럴파크, 경의선숲길공원"
+        "attName": "홍대거리, 선유도공원, 연트럴파크, 경의선숲길공원"
     }, {
         "name": "러빙헛웰빙송촌점",
         "friendly": "포크프리",
@@ -2781,7 +2984,7 @@ export const restList =[
         "runtime": "오전11:30~오후8:30",
         "holiday": "",
         "parking": "O",
-        "att": "동춘당, 계족산황토길"
+        "attName": "동춘당, 계족산황토길"
     }, {
         "name": "라가",
         "friendly": "무슬림 프렌들리",
@@ -2792,7 +2995,7 @@ export const restList =[
         "runtime": "오전 11:30~오후3:00, 오후5:00~9:30",
         "holiday": "1, 3주 월요일",
         "parking": "O",
-        "att": "대구월드컵경기장/마산구장"
+        "attName": "대구월드컵경기장/마산구장"
     }, {
         "name": "윌라라",
         "friendly": "무슬림 프렌들리",
@@ -2803,7 +3006,7 @@ export const restList =[
         "runtime": "오전12:00~오후8:30",
         "holiday": "",
         "parking": "O",
-        "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
+        "attName": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드"
     }, {
         "name": "알펜시아호텔리조트 플레이버스",
         "friendly": "무슬림 프렌들리",
@@ -2814,7 +3017,7 @@ export const restList =[
         "runtime": "조식 06:30 AM ~ 11:00 AM\n중.석식 12:00 PM ~ 10:00 PM Last Order 9:30 PM",
         "holiday": "",
         "parking": "O",
-        "att": "알펜시아 리조트, 용평스키장"
+        "attName": "알펜시아 리조트, 용평스키장"
     }, {
         "name": "러빙헛",
         "friendly": "무슬림 프렌들리",
@@ -2825,7 +3028,7 @@ export const restList =[
         "runtime": "오전 11:30 ~오후 8:30 (4시~5시 휴식)",
         "holiday": "매주 일요일",
         "parking": "O",
-        "att": "발공산, 대구시내, 두류공원"
+        "attName": "발공산, 대구시내, 두류공원"
     }, {
         "name": "겐지스 한양대점",
         "friendly": "무슬림 프렌들리",
@@ -2836,7 +3039,7 @@ export const restList =[
         "runtime": "오번11시~오후10시",
         "holiday": "",
         "parking": "X",
-        "att": "뚝섬유원지, 서울숲, 동대문"
+        "attName": "뚝섬유원지, 서울숲, 동대문"
     }, {
         "name": "인도야시장",
         "friendly": "무슬림 프렌들리",
@@ -2847,7 +3050,7 @@ export const restList =[
         "runtime": "오전11:30~오후10:00",
         "holiday": "",
         "parking": "X",
-        "att": "새빛섬, 현충원, 서울선릉, 국립중앙박물관"
+        "attName": "새빛섬, 현충원, 서울선릉, 국립중앙박물관"
     }, {
         "name": "델리난(델리다바)",
         "friendly": "무슬림 프렌들리",
@@ -2858,7 +3061,7 @@ export const restList =[
         "runtime": "오전10시~오후10시",
         "holiday": "",
         "parking": "X",
-        "att": "수원남문, 화성행궁, 팔달문, 문화빌리지"
+        "attName": "수원남문, 화성행궁, 팔달문, 문화빌리지"
     }, {
         "name": "나마스테 해운대점",
         "friendly": "무슬림 프렌들리",
@@ -2869,7 +3072,7 @@ export const restList =[
         "runtime": "오전11시~오후11시 (예약시연장가능)",
         "holiday": "",
         "parking": "O",
-        "att": "해운대, 백스코, 아쿠아리움, 동백공원, 선착장"
+        "attName": "해운대, 백스코, 아쿠아리움, 동백공원, 선착장"
     }, {
         "name": "기꾸초밥",
         "friendly": "무슬림 프렌들리",
@@ -2880,7 +3083,7 @@ export const restList =[
         "runtime": "오전12:00~오후4:30, 오후4:30 ~ 오후5:00(break), 오후5:00~오후10:30, 라스트오더 오후10:00",
         "holiday": "",
         "parking": "X",
-        "att": "동구릉, 구리한강 시민공원,"
+        "attName": "동구릉, 구리한강 시민공원,"
     }, {
         "name": "타지 펠리스(구.럭스코테크)",
         "friendly": "무슬림 프렌들리",
@@ -2891,7 +3094,7 @@ export const restList =[
         "runtime": "오전11:00~오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "남양호, 융건릉, 월문온천"
+        "attName": "남양호, 융건릉, 월문온천"
     }, {
         "name": "스파이스빌리지",
         "friendly": "무슬림 프렌들리",
@@ -2902,7 +3105,7 @@ export const restList =[
         "runtime": "오전11시~오후10시",
         "holiday": "",
         "parking": "X",
-        "att": "신장그린공원, 이충레포츠공원, 부락산분수공원"
+        "attName": "신장그린공원, 이충레포츠공원, 부락산분수공원"
     }, {
         "name": "러빙헛제주",
         "friendly": "무슬림 프렌들리",
@@ -2913,7 +3116,7 @@ export const restList =[
         "runtime": "오전11:30~오후7:00",
         "holiday": "",
         "parking": "O",
-        "att": "표선해수욕장, 성산일출봉, 천지연폭포, 정방폭포"
+        "attName": "표선해수욕장, 성산일출봉, 천지연폭포, 정방폭포"
     }, {
         "name": "세종마을 치킨",
         "friendly": "포크프리",
@@ -2924,7 +3127,7 @@ export const restList =[
         "runtime": "오후2시~새벽1시",
         "holiday": "",
         "parking": "X",
-        "att": "경복궁, 청와대, 사직단, 경희궁, 광화문, 청계광장"
+        "attName": "경복궁, 청와대, 사직단, 경희궁, 광화문, 청계광장"
     }, {
         "name": "난",
         "friendly": "무슬림 프렌들리",
@@ -2935,7 +3138,7 @@ export const restList =[
         "runtime": "오전11시~오후10시",
         "holiday": "",
         "parking": "O",
-        "att": "화성행궁, 효원공원, 팔달문"
+        "attName": "화성행궁, 효원공원, 팔달문"
     }, {
         "name": "빛가람채식뷔페",
         "friendly": "무슬림 프렌들리",
@@ -2946,7 +3149,7 @@ export const restList =[
         "runtime": "오전11:00~오후3:00",
         "holiday": "명절",
         "parking": "O",
-        "att": "계명산휴양림, 충주댐, 종댕이길"
+        "attName": "계명산휴양림, 충주댐, 종댕이길"
     }, {
         "name": "케이비레스토랑할랄푸드",
         "friendly": "무슬림 자가 인증",
@@ -2957,7 +3160,7 @@ export const restList =[
         "runtime": "오전10:00-오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "김포조각공원, 다도박물관, 한강신도시 호수공원, 덕포진, 강화도"
+        "attName": "김포조각공원, 다도박물관, 한강신도시 호수공원, 덕포진, 강화도"
     }, {
         "name": "KB  케밥",
         "friendly": "무슬림 프렌들리",
@@ -2968,7 +3171,7 @@ export const restList =[
         "runtime": "오전10:00-오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "김포조각공원, 다도박물관, 한강신도시 호수공원, 덕포진, 강화도"
+        "attName": "김포조각공원, 다도박물관, 한강신도시 호수공원, 덕포진, 강화도"
     }, {
         "name": "버섯골",
         "friendly": "포크프리",
@@ -2979,7 +3182,7 @@ export const restList =[
         "runtime": "오전10시~오후10시",
         "holiday": "",
         "parking": "O",
-        "att": "도동서원, 화원동산, 핑크뮬리 코스모스"
+        "attName": "도동서원, 화원동산, 핑크뮬리 코스모스"
     }, {
         "name": "델리팰리스",
         "friendly": "무슬림 프렌들리",
@@ -2990,7 +3193,7 @@ export const restList =[
         "runtime": "오전11시~오후2시, 오후5시~오후10시",
         "holiday": "",
         "parking": "O",
-        "att": "양천향교, 우장산공원, 서울식물원"
+        "attName": "양천향교, 우장산공원, 서울식물원"
     }, {
         "name": "옷살",
         "friendly": "무슬림 프렌들리",
@@ -3001,7 +3204,7 @@ export const restList =[
         "runtime": "오전11시~오후10시",
         "holiday": "",
         "parking": "O",
-        "att": "덕수공원, 현충원, 상도그린공원, 보라매공원"
+        "attName": "덕수공원, 현충원, 상도그린공원, 보라매공원"
     }, {
         "name": "스타케이터링",
         "friendly": "할랄 공식 인증",
@@ -3012,7 +3215,7 @@ export const restList =[
         "runtime": "오전9시~오후6시",
         "holiday": "",
         "parking": "X",
-        "att": "선유도공원, 여의도국회의사당, 당산역 수상택시, 샛강"
+        "attName": "선유도공원, 여의도국회의사당, 당산역 수상택시, 샛강"
     }, {
         "name": "산촌 (고양점)",
         "friendly": "포크프리",
@@ -3023,7 +3226,7 @@ export const restList =[
         "runtime": "오전11:00~오후7:00(재료소진시 조기마감)",
         "holiday": "",
         "parking": "O",
-        "att": "서서울CC, 올림픽CC, 보광사, 미륵불, 마장호수, 유일레져, 장옥진미술관"
+        "attName": "서서울CC, 올림픽CC, 보광사, 미륵불, 마장호수, 유일레져, 장옥진미술관"
     }, {
         "name": "긴자레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -3034,7 +3237,7 @@ export const restList =[
         "runtime": "11:30 ~ 14:00 / 16:00 ~ 21:30 / 월요일 오후 4오픈",
         "holiday": "",
         "parking": "X",
-        "att": "안양중앙공원, 자유공원, 안양종합운동장, 학의천"
+        "attName": "안양중앙공원, 자유공원, 안양종합운동장, 학의천"
     }, {
         "name": "스카이킹덤 더 리본",
         "friendly": "무슬림 프렌들리",
@@ -3045,7 +3248,7 @@ export const restList =[
         "runtime": "디너: 18:00 – 22:00 (Last order 21:00)",
         "holiday": "",
         "parking": "O",
-        "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
+        "attName": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
     }, {
         "name": "인 스타일",
         "friendly": "무슬림 프렌들리",
@@ -3056,7 +3259,7 @@ export const restList =[
         "runtime": "조식 06:30 - 10:00",
         "holiday": "",
         "parking": "O",
-        "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
+        "attName": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
     }, {
         "name": "알라메종 와인 앤 다인",
         "friendly": "무슬림 프렌들리",
@@ -3067,7 +3270,7 @@ export const restList =[
         "runtime": "런치 11:30 - 15:00 / 디너 17:30 – 22:00",
         "holiday": "",
         "parking": "O",
-        "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
+        "attName": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
     }, {
         "name": "인디안 커리 ",
         "friendly": "무슬림 프렌들리",
@@ -3078,7 +3281,7 @@ export const restList =[
         "runtime": "오전11:00~오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "한국잡월드, 판교테크노벨리, 율동공원"
+        "attName": "한국잡월드, 판교테크노벨리, 율동공원"
     }, {
         "name": "(주)예티",
         "friendly": "무슬림 프렌들리",
@@ -3089,7 +3292,7 @@ export const restList =[
         "runtime": "오전10시~새벽2시(주문은 11시부터)",
         "holiday": "",
         "parking": "O",
-        "att": "홍대거리, 선유도공원, 와우공원, 서울월드컵경기장, 하늘공원"
+        "attName": "홍대거리, 선유도공원, 와우공원, 서울월드컵경기장, 하늘공원"
     }, {
         "name": "여우골초밥",
         "friendly": "무슬림 프렌들리",
@@ -3100,7 +3303,7 @@ export const restList =[
         "runtime": "오전10:30~오후10:30",
         "holiday": "명절",
         "parking": "O",
-        "att": "홍대거리, 선유도공원, 와우공원, 서울월드컵경기장, 하늘공원"
+        "attName": "홍대거리, 선유도공원, 와우공원, 서울월드컵경기장, 하늘공원"
     }, {
         "name": "동원참치",
         "friendly": "무슬림 프렌들리",
@@ -3111,7 +3314,7 @@ export const restList =[
         "runtime": "오전11시~오후10시(break 오후3시~4시50분)",
         "holiday": "매주 일요일",
         "parking": "O",
-        "att": "국회의사당, 효창공원, 서울역, 용산전자상가, 이촌한강공원, 홍대거리"
+        "attName": "국회의사당, 효창공원, 서울역, 용산전자상가, 이촌한강공원, 홍대거리"
     }, {
         "name": "미진",
         "friendly": "무슬림 프렌들리",
@@ -3122,7 +3325,7 @@ export const restList =[
         "runtime": "오후12시~밤12시(break 오후3시~4시30분)",
         "holiday": "명절",
         "parking": "O",
-        "att": "홍대입구, 상암월드컵경기장, 평화의공원(갈대축제), 선유도공원"
+        "attName": "홍대입구, 상암월드컵경기장, 평화의공원(갈대축제), 선유도공원"
     }, {
         "name": "푸드 익스체인지",
         "friendly": "무슬림 프렌들리",
@@ -3133,7 +3336,7 @@ export const restList =[
         "runtime": "[조식] 월-금 06:30 ~ 10:00 / 토-일 06:30 ~ 10:30\n[중식] 월-일 12:00 ~ 14:30 [석식] 월-금 18:30 ~ 21:30 / 토 1부 17:3",
         "holiday": "",
         "parking": "O",
-        "att": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
+        "attName": "이태원, 남산, 명동, 여의도한강공원, 경복궁, 국립중앙박물관, 홍대, 남대문시장"
     }, {
         "name": "일미리금계찜닭 거제1호점 ",
         "friendly": "포크프리",
@@ -3144,7 +3347,7 @@ export const restList =[
         "runtime": "오전11시~오후10시 (오후3시~5시 break)",
         "holiday": "",
         "parking": "X",
-        "att": "거제 바람의언덕, 포로수용수"
+        "attName": "거제 바람의언덕, 포로수용수"
     }, {
         "name": "타지마할 창원마산레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -3155,7 +3358,7 @@ export const restList =[
         "runtime": "오전 11시30분~오후 10시 (3시-5시 break)",
         "holiday": "2, 4주 화요일",
         "parking": "O",
-        "att": "마산국화축제지, 마산돛섬, 마산야구장"
+        "attName": "마산국화축제지, 마산돛섬, 마산야구장"
     }, {
         "name": "러빙헛 카페",
         "friendly": "포크프리",
@@ -3166,7 +3369,7 @@ export const restList =[
         "runtime": "오전11시~오후9시",
         "holiday": "",
         "parking": "X",
-        "att": "광평대군 묘역, 말죽거리, 서울선릉, 렉츠런파크"
+        "attName": "광평대군 묘역, 말죽거리, 서울선릉, 렉츠런파크"
     }, {
         "name": "러빙헛 서신점",
         "friendly": "무슬림 프렌들리",
@@ -3177,7 +3380,7 @@ export const restList =[
         "runtime": "평일 12:00~15:00, 주말 12:00~15:00",
         "holiday": "1, 3주 일요일",
         "parking": "O",
-        "att": "전주 한옥마을, 덕진공원, 전주동물원"
+        "attName": "전주 한옥마을, 덕진공원, 전주동물원"
     }, {
         "name": "러빙헛 영동점",
         "friendly": "무슬림 프렌들리",
@@ -3188,7 +3391,7 @@ export const restList =[
         "runtime": "오전11:30~오후8:30",
         "holiday": "매주 수요일",
         "parking": "O",
-        "att": "반야사, 월유봉"
+        "attName": "반야사, 월유봉"
     }, {
         "name": "러빙헛효목점",
         "friendly": "무슬림 프렌들리",
@@ -3199,7 +3402,7 @@ export const restList =[
         "runtime": "오전 11시 ~ 오후 7시",
         "holiday": "",
         "parking": "O",
-        "att": "팔공산, 망우공원, 범어공원"
+        "attName": "팔공산, 망우공원, 범어공원"
     }, {
         "name": "제주뚝배기",
         "friendly": "무슬림 프렌들리",
@@ -3210,7 +3413,7 @@ export const restList =[
         "runtime": "오전7:30~오후8:30",
         "holiday": "",
         "parking": "O",
-        "att": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드, 광치기해변"
+        "attName": "성산일출봉, 섭지코지, 표선해수욕장, 일출랜드, 광치기해변"
     }, {
         "name": "나니아 레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -3221,7 +3424,7 @@ export const restList =[
         "runtime": "조식 오전7:00~오전11:00/런치 오전12:00~오후3:30/디너 오후5:00~오후10:00",
         "holiday": "",
         "parking": "O",
-        "att": "제주조각공원, 주상전리, 군산오름, 중문해수욕장"
+        "attName": "제주조각공원, 주상전리, 군산오름, 중문해수욕장"
     }, {
         "name": "마하싯다커리",
         "friendly": "무슬림 프렌들리",
@@ -3232,7 +3435,7 @@ export const restList =[
         "runtime": "11:30~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "공지천, 명동닭갈비골목, 춘천중앙시장"
+        "attName": "공지천, 명동닭갈비골목, 춘천중앙시장"
     }, {
         "name": "수엠부 인도음식점 평택점",
         "friendly": "무슬림 프렌들리",
@@ -3243,7 +3446,7 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "바람새마을 소풍정원, 웃다리문화촌, 평택국제시장"
+        "attName": "바람새마을 소풍정원, 웃다리문화촌, 평택국제시장"
     }, {
         "name": "꼬끼옥",
         "friendly": "무슬림 프렌들리",
@@ -3254,7 +3457,7 @@ export const restList =[
         "runtime": "평일 09:00~20:00, 주말 09:00~22:00",
         "holiday": "",
         "parking": "O",
-        "att": "남이섬, 쁘띠프랑스, 제이드가든"
+        "attName": "남이섬, 쁘띠프랑스, 제이드가든"
     }, {
         "name": "밸류하이엔드호텔",
         "friendly": "무슬림 프렌들리",
@@ -3265,7 +3468,7 @@ export const restList =[
         "runtime": "24시간",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "화성행궁, 공방거리, 수원화성"
+        "attName": "화성행궁, 공방거리, 수원화성"
     }, {
         "name": "봄베이브로이 판교",
         "friendly": "무슬림 프렌들리",
@@ -3276,7 +3479,7 @@ export const restList =[
         "runtime": "10:30~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "백현동 카페문화거리, 한국잡월드, 분당중앙공원"
+        "attName": "백현동 카페문화거리, 한국잡월드, 분당중앙공원"
     }, {
         "name": "수엠부 인도음식점 광주점",
         "friendly": "무슬림 프렌들리",
@@ -3287,7 +3490,7 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "중대물빛공원, 영은미술관,"
+        "attName": "중대물빛공원, 영은미술관,"
     }, {
         "name": "북문해물탕",
         "friendly": "무슬림 프렌들리",
@@ -3298,7 +3501,7 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "매월 첫째 월요일",
         "parking": "X",
-        "att": "수원화성, 화성행궁, 만석공원"
+        "attName": "수원화성, 화성행궁, 만석공원"
     }, {
         "name": "청명쭈꾸미 철판구이",
         "friendly": "무슬림 프렌들리",
@@ -3309,7 +3512,7 @@ export const restList =[
         "runtime": "10:00~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "신동카페거리, 수원수산시장"
+        "attName": "신동카페거리, 수원수산시장"
     }, {
         "name": "덕담",
         "friendly": "포크프리",
@@ -3320,7 +3523,7 @@ export const restList =[
         "runtime": "11:30~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "수원곱창골목, 수원어린이교통공원, 서천생태공원"
+        "attName": "수원곱창골목, 수원어린이교통공원, 서천생태공원"
     }, {
         "name": "고봉삼계탕 수원영통점",
         "friendly": "포크프리",
@@ -3331,7 +3534,7 @@ export const restList =[
         "runtime": "10:30~21:30",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "영흥공원, 수원어린이교통공원, 영덕레스피아"
+        "attName": "영흥공원, 수원어린이교통공원, 영덕레스피아"
     }, {
         "name": "오리대가",
         "friendly": "포크프리",
@@ -3342,7 +3545,7 @@ export const restList =[
         "runtime": "11:30~21:30 (break 15:00~17:00)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "지동시장 순대타운, 수원화성박물관, 효원공원"
+        "attName": "지동시장 순대타운, 수원화성박물관, 효원공원"
     }, {
         "name": "대왕삼계탕",
         "friendly": "포크프리",
@@ -3353,7 +3556,7 @@ export const restList =[
         "runtime": "10:00~21:00",
         "holiday": "매월 첫째, 셋째 일요일",
         "parking": "X",
-        "att": "화성행궁, 수원화성, 수원통닭거리"
+        "attName": "화성행궁, 수원화성, 수원통닭거리"
     }, {
         "name": "수정방코다리",
         "friendly": "무슬림 프렌들리",
@@ -3364,7 +3567,7 @@ export const restList =[
         "runtime": "10:30~22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "팔달문, 지동시장 순대타운, 못골종합시장"
+        "attName": "팔달문, 지동시장 순대타운, 못골종합시장"
     }, {
         "name": "통영굴사랑낙지사랑",
         "friendly": "무슬림 프렌들리",
@@ -3375,7 +3578,7 @@ export const restList =[
         "runtime": "10:00~21:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "공방거리, 수원통닭거리, 팔달문"
+        "attName": "공방거리, 수원통닭거리, 팔달문"
     }, {
         "name": "화레무 광명역점",
         "friendly": "포크프리",
@@ -3386,7 +3589,7 @@ export const restList =[
         "runtime": "17:00~01:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "광명동굴, 기형도문화공원, 이케아 광명점"
+        "attName": "광명동굴, 기형도문화공원, 이케아 광명점"
     }, {
         "name": "우리횟집",
         "friendly": "무슬림 프렌들리",
@@ -3397,7 +3600,7 @@ export const restList =[
         "runtime": "09:00~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "자갈치시장, 국제시장, 168계단"
+        "attName": "자갈치시장, 국제시장, 168계단"
     }, {
         "name": "그랜드 키친",
         "friendly": "무슬림 프렌들리",
@@ -3408,7 +3611,7 @@ export const restList =[
         "runtime": "평일 점심 11:30~14:30 , 저녁 18:00~21:30, 주말 운영 시간 매장에 문의",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "코엑스, 봉은사, 선정릉"
+        "attName": "코엑스, 봉은사, 선정릉"
     }, {
         "name": "윤도훈 논현삼계탕365",
         "friendly": "포크프리",
@@ -3419,7 +3622,7 @@ export const restList =[
         "runtime": "24시간 운영(일요일 21:00~월요일 09:00 휴식시간)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "논현동먹자골목, 강남역, 국기원"
+        "attName": "논현동먹자골목, 강남역, 국기원"
     }, {
         "name": "이지인디아",
         "friendly": "무슬림 프렌들리",
@@ -3430,7 +3633,7 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "신촌이대거리, 경의선책거리"
+        "attName": "신촌이대거리, 경의선책거리"
     }, {
         "name": "오후청",
         "friendly": "포크프리",
@@ -3441,7 +3644,7 @@ export const restList =[
         "runtime": "11:00~21:30 (break 15:00~17:00)",
         "holiday": "매주 일요일 및 명절 휴무",
         "parking": "O",
-        "att": "남대문시장, 한국은행 화폐박물관, 덕수궁"
+        "attName": "남대문시장, 한국은행 화폐박물관, 덕수궁"
     }, {
         "name": "다페 레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -3452,7 +3655,7 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "매월 둘째, 넷째 월요일",
         "parking": "X",
-        "att": "상수카페거리, 홍대거리"
+        "attName": "상수카페거리, 홍대거리"
     }, {
         "name": "종로삼계탕",
         "friendly": "포크프리",
@@ -3463,7 +3666,7 @@ export const restList =[
         "runtime": "11:00~21:00",
         "holiday": "매주 일요일 및 명절 휴무",
         "parking": "X",
-        "att": "종묘, 인사동, 청계천"
+        "attName": "종묘, 인사동, 청계천"
     }, {
         "name": "종로설렁탕",
         "friendly": "포크프리",
@@ -3474,7 +3677,7 @@ export const restList =[
         "runtime": "00:00~24:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "종묘, 다시세운광장, 청계천"
+        "attName": "종묘, 다시세운광장, 청계천"
     }, {
         "name": "전주식당",
         "friendly": "무슬림 프렌들리",
@@ -3485,7 +3688,7 @@ export const restList =[
         "runtime": "07:30~20:30",
         "holiday": "매월 첫째, 셋째 일요일",
         "parking": "X",
-        "att": "청계천, 종각, 조계사"
+        "attName": "청계천, 종각, 조계사"
     }, {
         "name": "서울원조아구찜",
         "friendly": "무슬림 프렌들리",
@@ -3496,7 +3699,7 @@ export const restList =[
         "runtime": "10:00~01:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "익선동한옥거리, 낙원동아구찜거리, 운현궁"
+        "attName": "익선동한옥거리, 낙원동아구찜거리, 운현궁"
     }, {
         "name": "장수하늘소인사점",
         "friendly": "포크프리",
@@ -3507,7 +3710,7 @@ export const restList =[
         "runtime": "11:30~21:30 (break 평일 15:00~17:00)",
         "holiday": "매주 일요일",
         "parking": "X",
-        "att": "인사동, 운현궁, 조계사"
+        "attName": "인사동, 운현궁, 조계사"
     }, {
         "name": "형제육회본점",
         "friendly": "포크프리",
@@ -3518,7 +3721,7 @@ export const restList =[
         "runtime": "09:00~22:50",
         "holiday": "매주 수요일",
         "parking": "X",
-        "att": "광장시장, 종묘, 흥인지문"
+        "attName": "광장시장, 종묘, 흥인지문"
     }, {
         "name": "(주)사마르칸트",
         "friendly": "무슬림 자가 인증",
@@ -3529,7 +3732,7 @@ export const restList =[
         "runtime": "10:00~22:00",
         "holiday": "매월 둘째 화요일",
         "parking": "X",
-        "att": "한양성곽, 흥인지문, 두타"
+        "attName": "한양성곽, 흥인지문, 두타"
     }, {
         "name": "파르투내",
         "friendly": "무슬림 프렌들리",
@@ -3540,7 +3743,7 @@ export const restList =[
         "runtime": "10:00~23:00",
         "holiday": "매월 첫째, 셋째 월요일",
         "parking": "X",
-        "att": "DDP, 두타, 광희문"
+        "attName": "DDP, 두타, 광희문"
     }, {
         "name": "나마스테인서울",
         "friendly": "무슬림 프렌들리",
@@ -3551,7 +3754,7 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "DDP, 흥인지문, 두타"
+        "attName": "DDP, 흥인지문, 두타"
     }, {
         "name": "사마르칸트시티",
         "friendly": "무슬림 프렌들리",
@@ -3562,7 +3765,7 @@ export const restList =[
         "runtime": "월~목요일 10:00~23:00, 금~일요일 09:00~23:00",
         "holiday": "",
         "parking": "X",
-        "att": "DDP, 흥인지문, 두타"
+        "attName": "DDP, 흥인지문, 두타"
     }, {
         "name": "카페 우즈베키스탄 (구 사마르칸트)",
         "friendly": "무슬림 프렌들리",
@@ -3573,7 +3776,7 @@ export const restList =[
         "runtime": "10:00~22:00",
         "holiday": "매월 둘째, 넷째 화요일",
         "parking": "X",
-        "att": "DDP, 두타, 광희문"
+        "attName": "DDP, 두타, 광희문"
     }, {
         "name": "뿌자레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -3584,7 +3787,7 @@ export const restList =[
         "runtime": "11:00~23:00(break 평일 15:00~17:00)",
         "holiday": "",
         "parking": "X",
-        "att": "DDP, 흥인지문, 두타"
+        "attName": "DDP, 흥인지문, 두타"
     }, {
         "name": "송정",
         "friendly": "무슬림 프렌들리",
@@ -3595,7 +3798,7 @@ export const restList =[
         "runtime": "10:30~22:30",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "동대문닭한마리골목, 광장시장, DDP"
+        "attName": "동대문닭한마리골목, 광장시장, DDP"
     }, {
         "name": "카이로바베큐",
         "friendly": "무슬림 자가 인증",
@@ -3606,7 +3809,7 @@ export const restList =[
         "runtime": "11:00~23:0",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
+        "attName": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
     }, {
         "name": "자프란 바비큐",
         "friendly": "무슬림 자가 인증",
@@ -3617,7 +3820,7 @@ export const restList =[
         "runtime": "12:00~21:30",
         "holiday": "매주 수요일",
         "parking": "X",
-        "att": "경리단길, 블루스퀘어, 리움 삼성미술관"
+        "attName": "경리단길, 블루스퀘어, 리움 삼성미술관"
     }, {
         "name": "라자트 우즈벡 레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -3628,7 +3831,7 @@ export const restList =[
         "runtime": "12:00~23:00, 금요일 14:00~23:00",
         "holiday": "매주 월요일",
         "parking": "X",
-        "att": "현대카드스토리지, 이태원쇼핑거리, 이태원 우사단길"
+        "attName": "현대카드스토리지, 이태원쇼핑거리, 이태원 우사단길"
     }, {
         "name": "케르반 카페",
         "friendly": "무슬림 자가 인증",
@@ -3639,7 +3842,7 @@ export const restList =[
         "runtime": "평일 12:00~20:00, 금~일요일 11:00~20:00",
         "holiday": "",
         "parking": "X",
-        "att": "경리단길, 이태원쇼핑거리, 전쟁기념관"
+        "attName": "경리단길, 이태원쇼핑거리, 전쟁기념관"
     }, {
         "name": "이태원 키친",
         "friendly": "무슬림 자가 인증",
@@ -3650,7 +3853,7 @@ export const restList =[
         "runtime": "11:00~23:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
+        "attName": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
     }, {
         "name": "리틀인디아",
         "friendly": "무슬림 자가 인증",
@@ -3661,7 +3864,7 @@ export const restList =[
         "runtime": "11:00~21:30 (break 15:00~16:30)",
         "holiday": "",
         "parking": "X",
-        "att": "전쟁기념관, 경리단길, 남산야외식물원"
+        "attName": "전쟁기념관, 경리단길, 남산야외식물원"
     }, {
         "name": "자프란 레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -3672,7 +3875,7 @@ export const restList =[
         "runtime": "12:00~21:30",
         "holiday": "매주 수요일",
         "parking": "X",
-        "att": "이태원 우사단길, 리움 삼성미술관, 국립극장"
+        "attName": "이태원 우사단길, 리움 삼성미술관, 국립극장"
     }, {
         "name": "오리지날 팍인디아레스토랑",
         "friendly": "무슬림 자가 인증",
@@ -3683,7 +3886,7 @@ export const restList =[
         "runtime": "11:00~23:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
+        "attName": "이태원 우사단길, 이태원쇼핑거리, 전쟁기념관"
     }, {
         "name": "페트라",
         "friendly": "무슬림 자가 인증",
@@ -3694,7 +3897,7 @@ export const restList =[
         "runtime": "11:00~22:00",
         "holiday": "연중무휴",
         "parking": "X",
-        "att": "전쟁기념관, 경리단길, 이태원쇼핑거리"
+        "attName": "전쟁기념관, 경리단길, 이태원쇼핑거리"
     }, {
         "name": "봄베이브로이 울산",
         "friendly": "무슬림 프렌들리",
@@ -3705,7 +3908,7 @@ export const restList =[
         "runtime": "10:30~22:00 (break 15:00~17:00)",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "태화강국가정원, 울산대교전망대, 울산대공원"
+        "attName": "태화강국가정원, 울산대교전망대, 울산대공원"
     }, {
         "name": "양원",
         "friendly": "무슬림 프렌들리",
@@ -3716,7 +3919,7 @@ export const restList =[
         "runtime": "16:00~24:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "청라호수공원, 차이나타운, 삼국지벽화거리"
+        "attName": "청라호수공원, 차이나타운, 삼국지벽화거리"
     }, {
         "name": "화레무 송도점",
         "friendly": "포크프리",
@@ -3727,7 +3930,7 @@ export const restList =[
         "runtime": "17:00~01:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "송도 센트럴공원, 소래포구, 소래습지생태공원"
+        "attName": "송도 센트럴공원, 소래포구, 소래습지생태공원"
     }, {
         "name": "봄베이브로이 송도",
         "friendly": "무슬림 프렌들리",
@@ -3738,7 +3941,7 @@ export const restList =[
         "runtime": "11:30~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "송도 센트럴공원, 소래포구, 워터프론트 아암호수"
+        "attName": "송도 센트럴공원, 소래포구, 워터프론트 아암호수"
     }, {
         "name": "화레무 인천논현점",
         "friendly": "포크프리",
@@ -3749,7 +3952,7 @@ export const restList =[
         "runtime": "17:00~01:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "소래포구, 소래습지생태공원, 시흥프리미엄아울렛"
+        "attName": "소래포구, 소래습지생태공원, 시흥프리미엄아울렛"
     }, {
         "name": "와르다레스토랑",
         "friendly": "무슬림 프렌들리",
@@ -3760,7 +3963,7 @@ export const restList =[
         "runtime": "12:00~22:00",
         "holiday": "매주 일요일",
         "parking": "X",
-        "att": "제주목관아, 관덕정, 동문재래시장"
+        "attName": "제주목관아, 관덕정, 동문재래시장"
     }, {
         "name": "아살람",
         "friendly": "할랄 공식 인증",
@@ -3771,7 +3974,7 @@ export const restList =[
         "runtime": "12:00~22:00 (break 15:00~17:00)",
         "holiday": "매주 목요일",
         "parking": "O",
-        "att": "관덕정, 용두암, 삼성혈"
+        "attName": "관덕정, 용두암, 삼성혈"
     }, {
         "name": "옴레스토랑 광교점",
         "friendly": "무슬림 프렌들리",
@@ -3782,7 +3985,7 @@ export const restList =[
         "runtime": "10:00~22:00",
         "holiday": "연중무휴",
         "parking": "O",
-        "att": "광교호수공원, 광교역사공원, 롯에아울렛 광교점"
+        "attName": "광교호수공원, 광교역사공원, 롯에아울렛 광교점"
     }, {
         "name": "모로코코 카페",
         "friendly": "무슬림 프렌들리",
@@ -3793,7 +3996,7 @@ export const restList =[
         "runtime": "12:00~22:00",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "전쟁기념관, 경리단길, 남산서울타워"
+        "attName": "전쟁기념관, 경리단길, 남산서울타워"
     }, {
         "name": "카사블랑카",
         "friendly": "무슬림 프렌들리",
@@ -3804,7 +4007,7 @@ export const restList =[
         "runtime": "12:00~22:00",
         "holiday": "매주 월요일",
         "parking": "O",
-        "att": "전쟁기념관, 경리단길, 남산서울타워"
+        "attName": "전쟁기념관, 경리단길, 남산서울타워"
     }, {
         "name": "카페 다스티",
         "friendly": "할랄 공식 인증",
@@ -3815,6 +4018,6 @@ export const restList =[
         "runtime": "08:00~18:00",
         "holiday": "매주 일요일",
         "parking": "X",
-        "att": "남산서울타워, 안중근의사기념관, 명동"
+        "attName": "남산서울타워, 안중근의사기념관, 명동"
     }
 ]

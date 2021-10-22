@@ -20,6 +20,28 @@ const Mosque_list = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [filter, setFilter] = useState(location.state.deState);
 
+    const tmp = (location.state.lang === "KorService")
+    ? [
+        "모스크",
+        "필터",
+        "성원",
+        "기도실",
+        "예배소",
+        "기도처",
+        "취소",
+        "적용"
+    ]
+    : [
+        "Mosque",
+        "Filter",
+        "Mosque",
+        "Prayer room",
+        "Place of Worship",
+        "Place of Prayer",
+        "Cancel",
+        "Apply"
+    ];
+
     const openModal = () => {
         setModalOpen(true);
     }
@@ -101,7 +123,7 @@ const Mosque_list = () => {
             </Link>
             <img src={headerImg} className="headerImg" alt="Mosque list" />
            
-            <h1 className="header2">모스크</h1>
+            <h1 className="header2">{tmp[0]}</h1>
             <div className="att_prom">
                 <div className="prom_text_att">
                     <p className="name_att">모스크명</p>
@@ -128,34 +150,34 @@ const Mosque_list = () => {
                                                 src={icon_reset}
                                                 alt="icon_reset"
                                                 onClick={resetModal}/>
-                                            <p className="header_modal_mosque">필터</p>
+                                            <p className="header_modal_mosque">{tmp[1]}</p>
                                         </header>
                                         <main>
                                             <div className="placetype">
                                                 <div>
                                                     <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                    <p>성원</p>
+                                                    <p>{tmp[2]}</p>
                                                 </div>
                                                 <div>
                                                     <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                    <p>기도실</p>
+                                                    <p>{tmp[3]}</p>
                                                 </div>
                                                 <div>
                                                     <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                    <p>예배소</p>
+                                                    <p>{tmp[4]}</p>
                                                 </div>
                                                 <div>
                                                     <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                    <p>기도처</p>
+                                                    <p>{tmp[5]}</p>
                                                 </div>
                                             </div>
                                         </main>
                                         <footer className="footer_modal_mosque">
                                             <button className="close" onClick={closeModal}>
-                                                취소
+                                                {tmp[6]}
                                             </button>
                                             <button className="close" onClick={setModal}>
-                                                적용
+                                                {tmp[7]}
                                             </button>
                                         </footer>
                                     </section>

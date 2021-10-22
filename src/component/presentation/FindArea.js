@@ -17,6 +17,34 @@ const FindArea = () => {
     let moveTo = location.state.moveTo;
     let areaList = [];
 
+    const tmp = (lang === "KorService")
+        ? [
+            "위치설정",
+            "도시를 선택하세요",
+            "광역시",
+            "서울",
+            "인천",
+            "대전",
+            "대구",
+            "광주",
+            "부산",
+            "제주",
+            "시/군/구"
+        ]
+        : [
+            "Location Setting",
+            "Choose a City",
+            "Metropolitan",
+            "Seoul",
+            "Incheon",
+            "Daejeon",
+            "Daegu",
+            "Gwangju",
+            "Busan",
+            "Jeju",
+            "City/Country"
+        ];
+
     const api = (code, e) => {
         const url = `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaCode?ServiceKey=${serviceKey}&areaCode=${code}&numOfRows=30&pageNo=1&MobileOS=ETC&MobileApp=AppTest`;
 
@@ -50,53 +78,47 @@ const FindArea = () => {
     return (
         <div>
             <Link to="./"><img className="backicon" src={backicon} alt="backicon"/></Link>
-            <h1 className="header2">위치설정</h1>
-            <p className="normalfont">찾고 싶은 위치 및 장소를 입력하세요</p>
-            <div className="btn_class">
-                <div>
-                    <input className="btn_text" type="text" onChange={getInput}/>
-                    <input className="btn_submit" type="submit" value="SEARCH"/>
-                </div>
-            </div>
-            <p className="findingplace">광역시</p>
+            <h1 className="header2">{tmp[0]}</h1>
+            <p className="normalfont">{tmp[1]}</p>
+            <p className="findingplace">{tmp[2]}</p>
             <div className="containerList">
                 <button
                     className="itemList"
                     onClick={(e) => {
                         api(1, e);
-                    }}>서울</button>
+                    }}>{tmp[3]}</button>
                 <button
                     className="itemList"
                     onClick={(e) => {
                         api(2, e);
-                    }}>인천</button>
+                    }}>{tmp[4]}</button>
                 <button
                     className="itemList"
                     onClick={(e) => {
                         api(3, e);
-                    }}>대전</button>
+                    }}>{tmp[5]}</button>
                 <button
                     className="itemList"
                     onClick={(e) => {
                         api(4, e);
-                    }}>대구</button>
+                    }}>{tmp[6]}</button>
                 <button
                     className="itemList"
                     onClick={(e) => {
                         api(5, e);
-                    }}>광주</button>
+                    }}>{tmp[7]}</button>
                 <button
                     className="itemList"
                     onClick={(e) => {
                         api(6, e);
-                    }}>부산</button>
+                    }}>{tmp[8]}</button>
                 <button
                     className="itemList"
                     onClick={(e) => {
                         api(39, e);
-                    }}>제주</button>
+                    }}>{tmp[9]}</button>
             </div>
-            <p className="findingplace">시/군/구</p>
+            <p className="findingplace">{tmp[10]}</p>
             <div className="containerList2">
                 <SubArea citylist={subArea(data)} area={localNum} moveTo={moveTo} lang={lang}/>
             </div>

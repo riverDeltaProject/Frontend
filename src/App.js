@@ -6,7 +6,6 @@ import { Route } from 'react-router-dom';
 
 import Home from './component/presentation/Home.js';
 import searchArea from './component/presentation/FindArea';
-import searchAreaEng from './component/presentation/FindAreaEng';
 import Restaurant_list from './component/presentation/Restaurant_list';
 import Restaurant_result from './component/presentation/Restaurant_result.js';
 import Attraction_list from './component/presentation/Attraction_list';
@@ -19,7 +18,6 @@ function App() {
     <div>
       <Route path="/" component={Home} exact />
       <Route path="/searcharea" component={searchArea} />
-      <Route path="/searcheng" component={searchAreaEng} />
       <Route path='/restaurant_list' component={Restaurant_list} />
       <Route path="/restaurant_result" component={Restaurant_result} />
       <Route path="/attraction_list" component={Attraction_list}/>

@@ -21,6 +21,18 @@ const Mosque_result = () => {
 
     const about = location.state.data;
 
+    const tmp = (location.state.lang === "KorService")
+    ? [
+        "국적",
+        "주소",
+        "오시는 길"
+    ]
+    : [
+        "Nation",
+        "Address",
+        "Way to Come"
+    ];
+
     useEffect(() => {
         const map = new window
             .kakao
@@ -78,18 +90,18 @@ const Mosque_result = () => {
 
                     <div className="Items">
                         <div className="infoItem">
-                            <div>국적</div>
+                            <div>{tmp[0]}</div>
                             <div>{about.nation}</div>
                         </div>
                         <div className="infoItem">
-                            <div>주소</div>
+                            <div>{tmp[1]}</div>
                             <div>{about.address}</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="rst_result_cell">
-                <h1>오시는 길</h1>
+                <h1>{tmp[2]}</h1>
                 <div className='myMapMosque' ref={container}/>
             </div>
         </div>
