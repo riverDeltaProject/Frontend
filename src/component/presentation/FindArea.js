@@ -12,7 +12,7 @@ const FindArea = () => {
     const [data, setData] = useState();
     const [input, setInput] = useState("");
     const [localNum, setLocalNum] = useState({"area": "", "areaCode": ""});
-    
+
     const lang = location.state.lang;
 
     let moveTo = location.state.moveTo;
@@ -49,10 +49,10 @@ const FindArea = () => {
     const api = (code, e) => {
         const url = `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaCode?ServiceKey=${serviceKey}&areaCode=${code}&numOfRows=30&pageNo=1&MobileOS=ETC&MobileApp=AppTest`;
 
-        setLocalNum((tmp)=>({
+        setLocalNum((tmp) => ({
             ...tmp,
-            "area" : e.target.innerText,
-            "areaCode" : code
+            "area": e.target.innerText,
+            "areaCode": code
         }));
 
         axios
@@ -72,22 +72,22 @@ const FindArea = () => {
         return areaList;
     }
 
-    
-    const goBack = ()=>{
+    const goBack = () => {
         history.push({
-            pathname:`/`,
-            search:``,
-            state:{
-                lang : lang
+            pathname: `/`,
+            search: ``,
+            state: {
+                lang: lang
             }
         })
     }
 
-
     return (
         <div>
-            <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
-            <h1 className="header2">{tmp[0]}</h1>
+            <div className="header2">
+                <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
+                <h1>{tmp[0]}</h1>
+            </div>
             <p className="normalfont">{tmp[1]}</p>
             <p className="findingplace">{tmp[2]}</p>
             <div className="containerList">

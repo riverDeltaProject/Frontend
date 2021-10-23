@@ -45,7 +45,9 @@ const SubArea = ({citylist, area, moveTo, lang}) => {
         let procList = "";
 
         for (let i = 0; i < list.length; i++) {
-            if ((citylist[i].includes('gu')) && (citylist[i] !=="Jung-gu")) {
+            if(lang === "KorService"){
+                procList = citylist[i];
+            }else if ((citylist[i].includes('gu')) && (citylist[i] !=="Jung-gu")) {
                 procList = citylist[i].replace('-gu',"");
             } else if((citylist[i].includes('gu')) && (citylist[i] ==="Jung-gu")){
                 procList = "Jung-gu";
