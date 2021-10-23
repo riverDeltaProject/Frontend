@@ -56,6 +56,7 @@ body {
 
 #maindiv > div > div {
     text-align: left;
+    line-height: 50px;
 }
 
 #maindiv > div > div > * {
@@ -64,6 +65,7 @@ body {
 
 .mainicon {
     width: 100%;
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
