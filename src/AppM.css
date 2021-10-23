@@ -473,7 +473,8 @@
     }
 
     .itemList {
-        width: 7.5rem;
+        width: 15rem;
+        padding: 1rem 0;
         margin-bottom: 1rem;
         font-size: 1.6rem;
         text-align: center;
@@ -482,7 +483,8 @@
     }
 
     .itemList2 {
-        width: 8rem;
+        width: 15rem;
+        padding: 1rem 0;
         margin-bottom: 1rem;
         font-size: 1.6rem;
         text-align: center;

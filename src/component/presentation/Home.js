@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, useHistory} from "react-router-dom";
+import {Link, useLocation, useHistory} from "react-router-dom";
 import Modal from './Modal.js';
 
 import mainicon from "../assets/mainicon.png"
@@ -10,20 +10,20 @@ import mosqueicon from "../assets/mosqueicon.png"
 
 
 const Home = () => {
+    const location = useLocation();
     const history = useHistory();
     
     // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
     const [modalOpen, setModalOpen] = useState(false);
-    const [lang, setLang] = useState("KorService");
+    const [lang, setLang] = useState((location.state === undefined)?"KorService":location.state.lang);
 
     
     const tmp = (lang === "KorService")
         ? [
             "리버델타",
             "언어설정",
-            "대충모토",
-            "리버델타 정의 문구",
-            "뭔가 주저리주저리",
+            "좋은 식사가 좋은 여행을 만듭니다",
+            "다음과 같은 한국 속담이 있습니다: 금강산도 식후경이다. 좋은 경치도 배가 불러야 눈에 들어온다는 뜻입니다. 우리는 한국을 방문하는 모두가 편안한 한 끼를 먹을 수 있도록, 여행지와 할랄 식당 사이의 동선을 안내합니다. 당신의 여행이 더욱 다채롭기를 바라며, 리버델타.",
             "어플리케이션 설치",
             "장소 찾기",
             "식당",
@@ -34,7 +34,6 @@ const Home = () => {
         : [
             "RiverDelta",
             "Langauge",
-            "aaa",
             "bbb",
             "ccc",
             "Install Application",
@@ -95,15 +94,14 @@ const Home = () => {
             <div id="maindiv">
                 <div>
                     <div>
-                        {tmp[2]}
-                        <h3>{tmp[3]}</h3>
-                        {tmp[4]}
+                        <h3>{tmp[2]}</h3>
+                        {tmp[3]}
                     </div>
-                    <Link to="./Howto" className="howto2">{tmp[5]}</Link>
+                    <Link to="./Howto" className="howto2">{tmp[4]}</Link>
                 </div>
                 <img className="mainicon" src={mainicon} alt="mainicon"/>
             </div>
-            <p className="findingplace">{tmp[6]}</p>
+            <p className="findingplace">{tmp[5]}</p>
             <div className="container">
                 <div>
                     <img
@@ -113,7 +111,7 @@ const Home = () => {
                         onClick={() => {
                             clickBtn("restaurant")
                         }}/>
-                    <p>{tmp[7]}</p>
+                    <p>{tmp[6]}</p>
                 </div>
                 <div>
                     <img
@@ -123,14 +121,14 @@ const Home = () => {
                         onClick={() => {
                             clickBtn("attraction")
                         }}/>
-                    <p>{tmp[8]}</p>
+                    <p>{tmp[7]}</p>
                 </div>
                 <div>
                     <img className="item" src={mosqueicon} alt="mosqueicon" onClick={clickMos}/>
-                    <p>{tmp[9]}</p>
+                    <p>{tmp[8]}</p>
                 </div>
             </div>
-            <Link to="./Howto" className="howto">{tmp[10]}</Link>
+            <Link to="./Howto" className="howto">{tmp[9]}</Link>
         </div>
     );
 };

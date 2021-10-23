@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useHistory} from "react-router-dom";
 import axios from 'axios';
 import SubArea from './SubArea';
 import {serviceKey} from '../API/Key';
@@ -8,6 +8,7 @@ import backicon from "../assets/backicon.png";
 
 const FindArea = () => {
     const location = useLocation();
+    const history = useHistory();
     const [data, setData] = useState();
     const [input, setInput] = useState("");
     const [localNum, setLocalNum] = useState({"area": "", "areaCode": ""});
@@ -71,13 +72,21 @@ const FindArea = () => {
         return areaList;
     }
 
-    const getInput = (e) => {
-        setInput(e.target.value);
+    
+    const goBack = ()=>{
+        history.push({
+            pathname:`/`,
+            search:``,
+            state:{
+                lang : lang
+            }
+        })
     }
+
 
     return (
         <div>
-            <Link to="./"><img className="backicon" src={backicon} alt="backicon"/></Link>
+            <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
             <h1 className="header2">{tmp[0]}</h1>
             <p className="normalfont">{tmp[1]}</p>
             <p className="findingplace">{tmp[2]}</p>
