@@ -46,7 +46,6 @@ body {
 .header > h1 {
     font-family: 'HSGaeulSenggak20';
     display: inline;
-
     color: #909090;
     font-size: 1.5rem;
 }
@@ -61,15 +60,23 @@ body {
     padding: 0 8%;
 }
 
-.header_list > h1 {
+.headerTitle{
+    width:100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header_list>div>img{
+    width:2rem;
+    margin-right: 15px;
+}
+
+.header_list > div>  h1 {
     font-family: 'HSGaeulSenggak20';
     display: inline;
     color: #909090;
     font-size: 1.5rem;
-}
-
-.header_list>div{
-    width: 5%;
 }
 
 #maindiv {
@@ -283,7 +290,7 @@ a {
 .button_filter {
     background-color: transparent;
     border: 0;
-    width:100%;
+    width: 3rem;
 }
 
 .button_filter > img {
@@ -435,10 +442,11 @@ a {
 .modal > section > header {
     /* 팝업창 헤더 */
     position: relative;
-    padding: 16px 64px 16px 16px;
+    display: flex;
+    padding: 16px;
     background-color: #f1f1f1;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: bolder;
 }
 
 .modal > section > main {
@@ -766,3 +774,24 @@ a {
 .btn_class_M{
     display: none;
 }
+
+
+.notFound{
+    width:8rem;
+    height: auto;
+    margin:3rem;
+  }
+  
+  .errorMsg{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  
+.noRes{
+    font-size: 2rem;
+    text-align: center;
+  }

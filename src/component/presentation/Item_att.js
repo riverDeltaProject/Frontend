@@ -28,7 +28,6 @@ function Item({rlist, moveTo, code, filType, lang}) {
 
     for (let rkey in rlist) {
 
-        console.log(rlist[rkey].firstimage)
         rlist_tmp.push(
             <div key={rkey} className="rst_list_cell" onClick={() => goDetail(rkey)}>
                 <img

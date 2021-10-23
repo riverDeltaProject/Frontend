@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
+import noImg from "../assets/noImg.png"
 
 function Item({rlist, moveTo, code, filType, lang}) {
     const history = useHistory();
@@ -29,7 +30,7 @@ function Item({rlist, moveTo, code, filType, lang}) {
             <div key={rkey} className="rst_list_cell" onClick={() => goDetail(rkey)}>
                 <img
                     className="rst_list_img"
-                    src={rlist[rkey].firstimage}
+                    src={(rlist[rkey].firstimage === undefined)?noImg : rlist[rkey].firstimage}
                     alt={"about attraction image"}/>
                 <div className="bottom">
                     <button className="rst_list_name">

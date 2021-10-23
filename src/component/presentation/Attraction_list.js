@@ -12,6 +12,8 @@ import icon_att_culture from "../assets/icon_att_culture.png";
 import icon_att_shop from "../assets/icon_att_shop.png";
 import icon_att_stay from "../assets/icon_att_stay.png";
 import headerImg from "../assets/att_header.JPG"
+import Notfound from "../assets/notfound.png"
+import homeIcon from "../assets/homeIcon.png"
 
 import {serviceKey} from '../API/Key';
 import Item from './Item_att.js';
@@ -33,6 +35,7 @@ const Attraction_list = () => {
     const [postsPerPage] = useState(6);
     const [filter, setFilter] = useState(deState);
     const [option, setOption] = useState(optionList);
+    const [dataSet, setDataSet] = useState()
 
     useEffect(() => {
         attList(where["areaCode"], where["cityCode"], option)
@@ -76,7 +79,6 @@ const Attraction_list = () => {
     const setModal = () => {
         setFilter(true);
         attList(where["areaCode"], where["cityCode"], option)
-        console.log(maindata)
 
         setModalOpen(false);
     }
@@ -108,6 +110,9 @@ const Attraction_list = () => {
     const indexOfFirst = indexOfLast - postsPerPage;
 
     const currentPosts = (tmp) => {
+        console.log(tmp.length)
+        console.log(tmp)
+       
         return tmp.slice(indexOfFirst, indexOfLast);
     }
 
@@ -183,6 +188,16 @@ const Attraction_list = () => {
         }
 
         setOption(attrType);
+    }
+
+    const goBack = () => {
+        history.push({
+            pathname: `/`,
+            search: ``,
+            state: {
+                lang: lang
+            }
+        })
     }
 
     return (
@@ -262,7 +277,9 @@ const Attraction_list = () => {
                 </div>
             </div>
             <div className="header_list">
-                <h1>{tmp[0]}</h1>
+                <div className="headerTitle">
+                    <img src={homeIcon} alt={homeIcon} onClick={goBack}/>
+                    <h1>{tmp[0]}</h1></div>
                 <div className="btn_class_att">
                     <React.Fragment>
                         <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
@@ -322,15 +339,24 @@ const Attraction_list = () => {
                     </React.Fragment>
                 </div>
             </div>
-            <div className="list">
-                <Item
-                    rlist={currentPosts(maindata)}
-                    moveTo={moveTo}
-                    code={where}
-                    filType={option}
-                    lang={lang}></Item>
-            </div>
-            <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
+            {
+                (currentPosts(maindata) === undefined)
+                    ? <div className="errorMsg">
+                            <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
+                            <div className="noRes">{tmp[1]}</div>
+                        </div>
+                    : <div>
+                            <div className="list">
+                                <Item
+                                    rlist={currentPosts(maindata)}
+                                    moveTo={moveTo}
+                                    code={where}
+                                    filType={option}
+                                    lang={lang}></Item>
+                            </div>
+                            <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
+                        </div>
+            }
         </div>
     );
 };
