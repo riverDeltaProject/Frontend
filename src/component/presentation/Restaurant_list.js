@@ -16,7 +16,6 @@ import Pagination from './Pagination.js';
 import Notfound from "../assets/notfound.png"
 import headerImg from "../assets/restaurant_header.JPG"
 
-
 const Restaurant_list = () => {
     const history = useHistory();
     const location = useLocation();
@@ -30,6 +29,54 @@ const Restaurant_list = () => {
     const [postsPerPage] = useState(6);
     const [option, setOption] = useState(optionList);
     const [filter, setFilter] = useState(deState);
+
+    const tmp = (lang === "KorService")
+        ? [
+            "식당",
+            "검색 결과가 존재하지 않습니다",
+            "필터",
+            "음식 종류",
+            "뷔페",
+            "아시아",
+            "양식",
+            "인도",
+            "네팔",
+            "일식",
+            "중식",
+            "터키",
+            "한식",
+            "그 외",
+            "할랄 유형",
+            "할랄 공식 인증",
+            "무슬림 프렌들리",
+            "포크프리",
+            "무슬림 자가 인증",
+            "취소",
+            "적용"
+        ]
+        : [
+            "Restaurant",
+            "No Result",
+            "Filter",
+            "Food Type",
+            "Buffet",
+            "Asia",
+            "Western Food",
+            "India",
+            "Nepal",
+            "Japan",
+            "China",
+            "Turkey",
+            "Korea",
+            "Etc",
+            "Halal Standard",
+            "Halal Certified",
+            "Muslim Friendly",
+            "Pork Free",
+            "Self Certified",
+            "Cancel",
+            "Apply"
+        ];
 
     // 지역에 맞게 리스트 추려내기
     let locList = (lang === "KorService")
@@ -168,11 +215,92 @@ const Restaurant_list = () => {
 
     return (
         <div>
-            <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
-            
-            <img src={headerImg} className="headerImg" alt="Restraunt list" />
-            
-            <h1 className="header2">{(lang==="KorService")?"식당":"Restaurant"}</h1>
+            <img src={headerImg} className="headerImg" alt="Restraunt list"/>
+
+            <div className="header2">
+                <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
+
+                <h1>{tmp[0]}</h1>
+
+                <div className="btn_class_M">
+                    <React.Fragment>
+                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
+                        <div
+                            className={modalOpen
+                                ? 'openModal modal'
+                                : 'modal'}>
+                            {
+                                modalOpen
+                                    ? (
+                                        <section>
+                                            <header>
+                                                <img
+                                                    className="icon_reset"
+                                                    src={icon_reset}
+                                                    alt="icon_reset"
+                                                    onClick={resetModal}/>
+                                                <p className="header_modal_mosque">{tmp[2]}</p>
+                                            </header>
+                                            <main>
+                                                <p className="langoption">{tmp[3]}</p>
+                                                <div>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[4]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[5]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[6]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[7]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[8]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[9]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[10]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[11]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[12]}</button>
+                                                    <button className="itemList3" onClick={sel_Food}>{tmp[13]}</button>
+                                                    {/* 3개 이하: 말레이시아, 모로코, 아랍, 이집트, 중동식, 중식, 튀니지, 파키스탄, 프랑스, 우즈베키스탄 분류없음 */}
+                                                </div>
+                                                <p className="langoption">{tmp[14]}</p>
+                                                <div className="foodtype">
+                                                    <div>
+                                                        <button onClick={sel_Food}><img
+                                                            className="icon_halal"
+                                                            src={icon_halal_certified}
+                                                            alt="icon_halal_certified"/></button>
+                                                        <p>{tmp[15]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_Food}><img
+                                                            className="icon_halal"
+                                                            src={icon_muslim_friendly}
+                                                            alt="icon_muslim_friendly"/></button>
+                                                        <p>{tmp[16]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_Food}><img className="icon_halal" src={icon_pork_free} alt="icon_pork_free"/></button>
+                                                        <p>{tmp[17]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_Food}><img
+                                                            className="icon_halal"
+                                                            src={icon_self_certified}
+                                                            alt="icon_self_certified"/></button>
+                                                        <p>{tmp[18]}</p>
+                                                    </div>
+                                                </div>
+                                            </main>
+                                            <footer className="footer_modal_mosque">
+                                                <button className="close" onClick={closeModal}>
+                                                    {tmp[19]}
+                                                </button>
+                                                <button className="close" onClick={setModal}>
+                                                    {tmp[20]}
+                                                </button>
+                                            </footer>
+                                        </section>
+                                    )
+                                    : null
+                            }
+                        </div>
+                    </React.Fragment>
+                </div>
+            </div>
             <div className="att_prom">
                 <div className="prom_text_att">
                     <p className="name_att">가게명</p>
@@ -187,89 +315,91 @@ const Restaurant_list = () => {
                 (locList.length === 0)
                     ? <div className="errorMsg">
                             <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
-                            <div className="noRes">검색 결과가 존재하지 않습니다.</div>
+                            <div className="noRes">{tmp[1]}</div>
                         </div>
                     : <div>
-                            <div className="btn_class_att">
-                                <input className="btn_text_att" type="text"/>
-                                <input className="btn_submit_att" type="submit" value="SEARCH"/>
-                                <React.Fragment>
-                                    <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                                    <div
-                                        className={modalOpen
-                                            ? 'openModal modal'
-                                            : 'modal'}>
-                                        {
-                                            modalOpen
-                                                ? (
-                                                    <section>
-                                                        <header>
-                                                            <img
-                                                                className="icon_reset"
-                                                                src={icon_reset}
-                                                                alt="icon_reset"
-                                                                onClick={resetModal}/>
-                                                            <p className="header_modal_mosque">필터</p>
-                                                        </header>
-                                                        <main>
-                                                            <p className="langoption">음식 종류</p>
-                                                            <div>
-                                                                <button className="itemList3" onClick={sel_Food}>뷔페</button>
-                                                                <button className="itemList3" onClick={sel_Food}>아시아</button>
-                                                                <button className="itemList3" onClick={sel_Food}>양식</button>
-                                                                <button className="itemList3" onClick={sel_Food}>인도</button>
-                                                                <button className="itemList3" onClick={sel_Food}>네팔</button>
-                                                                <button className="itemList3" onClick={sel_Food}>일식</button>
-                                                                <button className="itemList3" onClick={sel_Food}>중식</button>
-                                                                <button className="itemList3" onClick={sel_Food}>터키</button>
-                                                                <button className="itemList3" onClick={sel_Food}>한식</button>
-                                                                <button className="itemList3" onClick={sel_Food}>그 외</button>
-                                                                {/* 3개 이하: 말레이시아, 모로코, 아랍, 이집트, 중동식, 중식, 튀니지, 파키스탄, 프랑스, 우즈베키스탄 분류없음 */}
-                                                            </div>
-                                                            <p className="langoption">Halal Standard</p>
-                                                            <div className="foodtype">
+                            <div className="header_list">
+                                <h1>{tmp[0]}</h1>
+                                <div className="btn_class_att">
+                                    <React.Fragment>
+                                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
+                                        <div
+                                            className={modalOpen
+                                                ? 'openModal modal'
+                                                : 'modal'}>
+                                            {
+                                                modalOpen
+                                                    ? (
+                                                        <section>
+                                                            <header>
+                                                                <img
+                                                                    className="icon_reset"
+                                                                    src={icon_reset}
+                                                                    alt="icon_reset"
+                                                                    onClick={resetModal}/>
+                                                                <p className="header_modal_mosque">{tmp[2]}</p>
+                                                            </header>
+                                                            <main>
+                                                                <p className="langoption">{tmp[3]}</p>
                                                                 <div>
-                                                                    <button onClick={sel_Food}><img
-                                                                        className="icon_halal"
-                                                                        src={icon_halal_certified}
-                                                                        alt="icon_halal_certified"/></button>
-                                                                    <p>할랄 공식 인증</p>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[4]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[5]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[6]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[7]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[8]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[9]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[10]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[11]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[12]}</button>
+                                                                    <button className="itemList3" onClick={sel_Food}>{tmp[13]}</button>
+                                                                    {/* 3개 이하: 말레이시아, 모로코, 아랍, 이집트, 중동식, 중식, 튀니지, 파키스탄, 프랑스, 우즈베키스탄 분류없음 */}
                                                                 </div>
-                                                                <div>
-                                                                    <button onClick={sel_Food}><img
-                                                                        className="icon_halal"
-                                                                        src={icon_muslim_friendly}
-                                                                        alt="icon_muslim_friendly"/></button>
-                                                                    <p>무슬림 프렌들리</p>
+                                                                <p className="langoption">{tmp[14]}</p>
+                                                                <div className="foodtype">
+                                                                    <div>
+                                                                        <button onClick={sel_Food}><img
+                                                                            className="icon_halal"
+                                                                            src={icon_halal_certified}
+                                                                            alt="icon_halal_certified"/></button>
+                                                                        <p>{tmp[15]}</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button onClick={sel_Food}><img
+                                                                            className="icon_halal"
+                                                                            src={icon_muslim_friendly}
+                                                                            alt="icon_muslim_friendly"/></button>
+                                                                        <p>{tmp[16]}</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button onClick={sel_Food}><img className="icon_halal" src={icon_pork_free} alt="icon_pork_free"/></button>
+                                                                        <p>{tmp[17]}</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button onClick={sel_Food}><img
+                                                                            className="icon_halal"
+                                                                            src={icon_self_certified}
+                                                                            alt="icon_self_certified"/></button>
+                                                                        <p>{tmp[18]}</p>
+                                                                    </div>
                                                                 </div>
-                                                                <div>
-                                                                    <button onClick={sel_Food}><img className="icon_halal" src={icon_pork_free} alt="icon_pork_free"/></button>
-                                                                    <p>포크프리</p>
-                                                                </div>
-                                                                <div>
-                                                                    <button onClick={sel_Food}><img
-                                                                        className="icon_halal"
-                                                                        src={icon_self_certified}
-                                                                        alt="icon_self_certified"/></button>
-                                                                    <p>무슬림 자가 인증</p>
-                                                                </div>
-                                                            </div>
-                                                        </main>
-                                                        <footer className="footer_modal_mosque">
-                                                            <button className="close" onClick={closeModal}>
-                                                                취소
-                                                            </button>
-                                                            <button className="close" onClick={setModal}>
-                                                                적용
-                                                            </button>
-                                                        </footer>
-                                                    </section>
-                                                )
-                                                : null
-                                        }
-                                    </div>
-                                </React.Fragment>
+                                                            </main>
+                                                            <footer className="footer_modal_mosque">
+                                                                <button className="close" onClick={closeModal}>
+                                                                    {tmp[19]}
+                                                                </button>
+                                                                <button className="close" onClick={setModal}>
+                                                                    {tmp[20]}
+                                                                </button>
+                                                            </footer>
+                                                        </section>
+                                                    )
+                                                    : null
+                                            }
+                                        </div>
+                                    </React.Fragment>
+                                </div>
                             </div>
+
                             <div className="list">
                                 <Item
                                     rlist={filter

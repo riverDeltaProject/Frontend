@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useHistory} from "react-router-dom";
 import Item from './Item.js';
 import Pagination from './Pagination.js';
 import {mosque} from '../API/mosque_list'
@@ -13,6 +13,7 @@ import headerImg from "../assets/mosque_header.JPG"
 
 const Mosque_list = () => {
     const location = useLocation();
+    const history = useHistory();
 
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(6);
@@ -21,26 +22,26 @@ const Mosque_list = () => {
     const [filter, setFilter] = useState(location.state.deState);
 
     const tmp = (location.state.lang === "KorService")
-    ? [
-        "모스크",
-        "필터",
-        "성원",
-        "기도실",
-        "예배소",
-        "기도처",
-        "취소",
-        "적용"
-    ]
-    : [
-        "Mosque",
-        "Filter",
-        "Mosque",
-        "Prayer room",
-        "Place of Worship",
-        "Place of Prayer",
-        "Cancel",
-        "Apply"
-    ];
+        ? [
+            "모스크",
+            "필터",
+            "성원",
+            "기도실",
+            "예배소",
+            "기도처",
+            "취소",
+            "적용"
+        ]
+        : [
+            "Mosque",
+            "Filter",
+            "Mosque",
+            "Prayer room",
+            "Place of Worship",
+            "Place of Prayer",
+            "Cancel",
+            "Apply"
+        ];
 
     const openModal = () => {
         setModalOpen(true);
@@ -115,77 +116,141 @@ const Mosque_list = () => {
         mosqType = target
         setOption(mosqType);
     }
+    
+    const goBack = ()=>{
+        history.push({
+            pathname:`/`,
+            search:``,
+            state:{
+                lang : location.state.lang
+            }
+        })
+    }
 
     return (
         <div>
-            <Link to="./">
-                <img className="backicon" src={backicon} alt="backicon"/>
-            </Link>
-            <img src={headerImg} className="headerImg" alt="Mosque list" />
-           
-            <h1 className="header2">{tmp[0]}</h1>
+            <img src={headerImg} className="headerImg" alt="Mosque list"/>
+
+            <div className="header2">
+                <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
+                <h1>{tmp[0]}</h1>
+                <div className="btn_class_M">
+                    <React.Fragment>
+                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
+                        <div
+                            className={modalOpen
+                                ? 'openModal modal'
+                                : 'modal'}>
+                            {
+                                modalOpen
+                                    ? (
+                                        <section>
+                                            <header>
+                                                <img
+                                                    className="icon_reset"
+                                                    src={icon_reset}
+                                                    alt="icon_reset"
+                                                    onClick={resetModal}/>
+                                                <p className="header_modal_mosque">{tmp[1]}</p>
+                                            </header>
+                                            <main>
+                                                <div className="placetype">
+                                                    <div>
+                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                        <p>{tmp[2]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                        <p>{tmp[3]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                        <p>{tmp[4]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                        <p>{tmp[5]}</p>
+                                                    </div>
+                                                </div>
+                                            </main>
+                                            <footer className="footer_modal_mosque">
+                                                <button className="close" onClick={closeModal}>
+                                                    {tmp[6]}
+                                                </button>
+                                                <button className="close" onClick={setModal}>
+                                                    {tmp[7]}
+                                                </button>
+                                            </footer>
+                                        </section>
+                                    )
+                                    : null
+                            }
+                        </div>
+                    </React.Fragment>
+                </div>
+            </div>
             <div className="att_prom">
                 <div className="prom_text_att">
                     <p className="name_att">모스크명</p>
                     <p className="scorepos_att">가게 위치</p>
                 </div>
             </div>
-            <div className="btn_class_att">
-                <input className="btn_text_att" type="text"/>
-                <input className="btn_submit_att" type="submit" value="SEARCH"/>
-
-                <React.Fragment>
-                    <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                    <div
-                        className={modalOpen
-                            ? 'openModal modal'
-                            : 'modal'}>
-                        {
-                            modalOpen
-                                ? (
-                                    <section>
-                                        <header>
-                                            <img
-                                                className="icon_reset"
-                                                src={icon_reset}
-                                                alt="icon_reset"
-                                                onClick={resetModal}/>
-                                            <p className="header_modal_mosque">{tmp[1]}</p>
-                                        </header>
-                                        <main>
-                                            <div className="placetype">
-                                                <div>
-                                                    <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                    <p>{tmp[2]}</p>
+            <div className="header_list">
+                <h1>{tmp[0]}</h1>
+                <div className="btn_class_att">
+                    <React.Fragment>
+                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
+                        <div
+                            className={modalOpen
+                                ? 'openModal modal'
+                                : 'modal'}>
+                            {
+                                modalOpen
+                                    ? (
+                                        <section>
+                                            <header>
+                                                <img
+                                                    className="icon_reset"
+                                                    src={icon_reset}
+                                                    alt="icon_reset"
+                                                    onClick={resetModal}/>
+                                                <p className="header_modal_mosque">{tmp[1]}</p>
+                                            </header>
+                                            <main>
+                                                <div className="placetype">
+                                                    <div>
+                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                        <p>{tmp[2]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                        <p>{tmp[3]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                        <p>{tmp[4]}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                                        <p>{tmp[5]}</p>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                    <p>{tmp[3]}</p>
-                                                </div>
-                                                <div>
-                                                    <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                    <p>{tmp[4]}</p>
-                                                </div>
-                                                <div>
-                                                    <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                    <p>{tmp[5]}</p>
-                                                </div>
-                                            </div>
-                                        </main>
-                                        <footer className="footer_modal_mosque">
-                                            <button className="close" onClick={closeModal}>
-                                                {tmp[6]}
-                                            </button>
-                                            <button className="close" onClick={setModal}>
-                                                {tmp[7]}
-                                            </button>
-                                        </footer>
-                                    </section>
-                                )
-                                : null
-                        }
-                    </div>
-                </React.Fragment>
+                                            </main>
+                                            <footer className="footer_modal_mosque">
+                                                <button className="close" onClick={closeModal}>
+                                                    {tmp[6]}
+                                                </button>
+                                                <button className="close" onClick={setModal}>
+                                                    {tmp[7]}
+                                                </button>
+                                            </footer>
+                                        </section>
+                                    )
+                                    : null
+                            }
+                        </div>
+                    </React.Fragment>
+                </div>
             </div>
             <div className="list">
                 <Item

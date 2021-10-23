@@ -1,6 +1,13 @@
 @font-face {
     font-family: 'HSGaeulSenggak20';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSGaeulSenggak20.woff') format('woff');
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSGaeulSenggak20.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,7 +15,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'HSGaeulSenggak20';
+    font-family: 'GowunDodum-Regular';
 }
 
 html {
@@ -27,6 +34,9 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     width: 84%;
     background-color: #f3f3f3;
     margin: 0;
@@ -34,9 +44,32 @@ body {
 }
 
 .header > h1 {
+    font-family: 'HSGaeulSenggak20';
+    display: inline;
+
+    color: #909090;
+    font-size: 1.5rem;
+}
+
+.header_list {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 73%;
+    background-color: none;
+    margin: 0 auto;
+    padding: 0 8%;
+}
+
+.header_list > h1 {
+    font-family: 'HSGaeulSenggak20';
     display: inline;
     color: #909090;
     font-size: 1.5rem;
+}
+
+.header_list>div{
+    width: 5%;
 }
 
 #maindiv {
@@ -128,6 +161,7 @@ body {
 }
 
 .findingplace {
+    font-family: 'HSGaeulSenggak20';
     text-align: center;
     font-size: 1.5rem;
     margin: 2rem 0;
@@ -135,15 +169,14 @@ body {
 }
 
 .lang {
-    float: right;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     border: 0;
     background-color: transparent;
 }
 
 .langoption {
     font-size: 1.6rem;
-    margin:1rem 0;
+    margin: 1rem 0;
 }
 
 .pagination {
@@ -173,32 +206,41 @@ a {
 
 .list {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 auto;
 }
 
 .list > div {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .rst_list_cell {
-    display: inline-block;
+    display: grid;
+    flex-direction: column;
+    grid-gap: 10px;
+    grid-template-rows: 5fr 1fr;
     width: 25%;
-    height: 250px;
+    height: 330px;
+    overflow: hidden;
     margin: 1rem;
     border-radius: 10px;
     border: solid 1px #7b7b7b;
 }
 
 .rst_list_cell > div {
-    padding: 0.3rem 0.5rem;
+    padding: 0 0.5rem;
     display: flex;
+    height:100%;
     justify-content: space-between;
     align-items: center;
 }
 
 .rst_list_img {
+    overflow: hidden;
     width: 100%;
-    height: 80%;
+    height: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #f1f1f1;
@@ -208,7 +250,7 @@ a {
 
 .rst_list_name {
     font-weight: bolder;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     color: #7b7b7b;
     border: 0;
     background-color: transparent;
@@ -221,21 +263,6 @@ a {
 .att_prom > *,
 .backicon {
     display: none;
-}
-
-.btn_class_att {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn_class_att {
-    width: 80%;
-    margin: 0 10%;
-    padding: 0 2%;
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
-    grid-gap: 20px;
 }
 
 .btn_submit_att {
@@ -256,10 +283,11 @@ a {
 .button_filter {
     background-color: transparent;
     border: 0;
+    width:100%;
 }
 
 .button_filter > img {
-    width: 50%;
+    width: 100%;
 }
 
 .headerImg {
@@ -351,8 +379,8 @@ a {
 
 .attr_list_cell > div {
     padding: 1rem;
-    margin: 1rem 1rem;
-    border : #909090 solid 1px;
+    margin: 1rem;
+    border: #909090 solid 1px;
 }
 
 .attr_list_name {
@@ -368,113 +396,7 @@ a {
     margin: 0;
 }
 
-
 .modal {
-    /* 모달창 그 자체 */
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .lang {
-    font-size: 1.6rem;
-    float: right;
-    margin-right: 1rem;
-    border: 0px;
-    background-color: transparent;
-  }
-  
-  .langoption {
-    font-size: 1.6rem;
-  }
-  
-  .modal button {
-    /* 모달창 x버튼 */
-    outline: none;
-    cursor: pointer;
-    border: 0;
-  }
-  
-  .modal > section {
-    /* 모달창 흰배경 */
-    width: 50%;
-    max-width: 50%;
-    margin:0 auto;
-    border-radius: .3rem;
-    background-color: #fff;
-    /* 팝업이 열릴때 스르륵 열리는 효과 */
-    animation: modal-show .3s;
-    overflow: hidden;
-  }
-  
-  .modal > section > header {
-    /* 팝업창 헤더 */
-    position: relative;
-    padding: 16px 64px 16px 16px;
-    background-color: #f1f1f1;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  
-  .modal > section > main {
-    /* 팝업창 내용 */
-    padding: 16px;
-    border-bottom: 1px solid #dee2e6;
-    border-top: 1px solid #dee2e6;
-  }
-  
-  .modal > section > footer {
-    /* 팝업창 아랫단 */
-    padding: 12px 16px;
-    text-align: right;
-  }
-  
-  .modal > section > footer button {
-    /* close 버튼 */
-    padding: 6px 12px;
-    color: #fff;
-    background-color: #6c757d;
-    border-radius: 5px;
-    font-size: 13px;
-  }
-  
-  .modal.openModal {
-    display: flex;
-    align-items: center;
-    /* 팝업이 열릴때 스르륵 열리는 효과 */
-    animation: modal-bg-show .3s;
-  }
-  @keyframes modal-show {
-    from {
-        opacity: 0;
-        margin-top: -50px;
-    }
-    to {
-        opacity: 1;
-        margin-top: 0;
-    }
-  }
-  @keyframes modal-bg-show {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-  }
-  
-.langoption {
-    font-size: 1rem;
-  }
-  
-  /* 모달창 */
-
-  .modal {
     /* 모달창 그 자체 */
     display: none;
     position: fixed;
@@ -486,12 +408,102 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.lang {
+
+.langoption {
     font-size: 1.6rem;
-    float: right;
-    margin-right: 1rem;
+}
+
+.modal button {
+    /* 모달창 x버튼 */
+    outline: none;
+    cursor: pointer;
     border: 0;
-    background-color: transparent;
+}
+
+.modal > section {
+    /* 모달창 흰배경 */
+    width: 50%;
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-show 0.3s;
+    overflow: hidden;
+}
+
+.modal > section > header {
+    /* 팝업창 헤더 */
+    position: relative;
+    padding: 16px 64px 16px 16px;
+    background-color: #f1f1f1;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.modal > section > main {
+    /* 팝업창 내용 */
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+}
+
+.modal > section > footer {
+    /* 팝업창 아랫단 */
+    padding: 12px 16px;
+    text-align: right;
+}
+
+.modal > section > footer button {
+    /* close 버튼 */
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #6c757d;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.modal.openModal {
+    display: flex;
+    align-items: center;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-bg-show 0.3s;
+}
+@keyframes modal-show {
+    from {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes modal-bg-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.langoption {
+    font-size: 1rem;
+}
+
+/* 모달창 */
+
+.modal {
+    /* 모달창 그 자체 */
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .langoption {
@@ -563,7 +575,7 @@ a {
 }
 
 .header_modal_att {
-    font-size:1rem;
+    font-size: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -612,13 +624,6 @@ a {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.lang {
-    font-size: 1rem;
-    float: right;
-    margin-right: 1rem;
-    border: 0;
-    background-color: transparent;
-}
 
 .langoption {
     font-size: 1rem;
@@ -682,6 +687,8 @@ a {
     animation: modal-bg-show 0.3s;
 }
 
+
+
 .itemList3 {
     width: 7rem;
     margin-bottom: 1rem;
@@ -694,7 +701,7 @@ a {
 }
 
 .header_modal_mosque {
-    font-size:1rem;
+    font-size: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -723,15 +730,13 @@ a {
     flex-shrink: 0;
 }
 
-.placetype > div > button{
-    margin:0.3rem;
+.placetype > div > button {
+    margin: 0.3rem;
 }
 
-
-.placetype > div > p{
-    font-size : 1rem;
+.placetype > div > p {
+    font-size: 1rem;
 }
-
 
 .icon_mosque {
     width: 6rem;
@@ -740,7 +745,6 @@ a {
     border: 2px solid #D8E9D7;
     background-color: #D8E9D7;
 }
-
 
 .foodtype {
     text-align: center;
@@ -757,4 +761,8 @@ a {
     width: 6rem;
     height: auto;
     background-color: transparent;
+}
+
+.btn_class_M{
+    display: none;
 }
