@@ -87,6 +87,7 @@ const FindArea = () => {
             <div className="header2">
                 <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
                 <h1>{tmp[0]}</h1>
+                <div className="btn_class_M"></div>
             </div>
             <p className="normalfont">{tmp[1]}</p>
             <p className="findingplace">{tmp[2]}</p>

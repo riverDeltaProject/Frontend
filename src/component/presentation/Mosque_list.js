@@ -8,6 +8,7 @@ import icon_reset from "../assets/icon_reset.png";
 import backicon from "../assets/backicon.png";
 import icon_filter from "../assets/icon_filter.png"
 import mosqueicon from "../assets/mosqueicon.png";
+import homeIcon from "../assets/homeIcon.png"
 
 import headerImg from "../assets/mosque_header.JPG"
 
@@ -116,13 +117,13 @@ const Mosque_list = () => {
         mosqType = target
         setOption(mosqType);
     }
-    
-    const goBack = ()=>{
+
+    const goBack = () => {
         history.push({
-            pathname:`/`,
-            search:``,
-            state:{
-                lang : location.state.lang
+            pathname: `/`,
+            search: ``,
+            state: {
+                lang: location.state.lang
             }
         })
     }
@@ -196,7 +197,10 @@ const Mosque_list = () => {
                 </div>
             </div>
             <div className="header_list">
-                <h1>{tmp[0]}</h1>
+                <div className="headerTitle">
+                    <img src={homeIcon} alt={homeIcon} onClick={goBack}/>
+                    <h1>{tmp[0]}</h1>
+                </div>
                 <div className="btn_class_att">
                     <React.Fragment>
                         <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
