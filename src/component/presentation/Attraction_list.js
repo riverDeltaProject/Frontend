@@ -102,7 +102,8 @@ const Attraction_list = () => {
             pathname: `./searchArea`,
             state: {
                 moveTo: moveTo,
-                filType: option
+                filType: option,
+                lang: lang
             }
         })
     }
@@ -110,16 +111,21 @@ const Attraction_list = () => {
     const indexOfFirst = indexOfLast - postsPerPage;
 
     const currentPosts = (tmp) => {
-        console.log(tmp.length)
-        console.log(tmp)
-       
-        return tmp.slice(indexOfFirst, indexOfLast);
+        if (tmp === undefined) {
+            return []
+        } else if (Object.keys(tmp)[0] !== "0") {
+            return tmp
+        } else {
+            return tmp.slice(indexOfFirst, indexOfLast);
+        }
     }
 
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
-    let lastPage = parseInt(maindata.length / 6) + 1;
+    let lastPage = (maindata === undefined)
+        ? 0
+        : parseInt(maindata.length / 6) + 1;
 
     if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
         numOfFirst = 1;
@@ -279,7 +285,8 @@ const Attraction_list = () => {
             <div className="header_list">
                 <div className="headerTitle">
                     <img src={homeIcon} alt={homeIcon} onClick={goBack}/>
-                    <h1>{tmp[0]}</h1></div>
+                    <h1>{tmp[0]}</h1>
+                </div>
                 <div className="btn_class_att">
                     <React.Fragment>
                         <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
