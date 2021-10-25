@@ -1,10 +1,12 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {useLocation, useHistory} from "react-router-dom";
-import {restList} from '../API/rest'
-import Item from "./SubItem"
+import {restKor} from '../API/rest'
+import {restEn} from '../API/restEn'
+import Item from "./SubItem_rest"
 
 import backicon from "../assets/backicon.png";
 import Pagination from './Pagination';
+import noImg from "../assets/noImg.png"
 
 const {kakao} = window;
 const options = {
@@ -92,13 +94,14 @@ const Attraction_result = () => {
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
+    const tmpRest = (beforeState.lang === "KorService")?restKor:restEn;
     const sugglist = () => {
-        let tmp = restList.filter(
+        let tmp = tmpRest.filter(
             key => key.address.includes(code["city"]) && key.area.includes(code["area"])
         );
 
         if (tmp.length === 0) {
-            tmp = restList.filter(key => key.area.includes(code["area"]))
+            tmp = tmpRest.filter(key => key.area.includes(code["area"]))
         }
 
         return tmp
@@ -177,7 +180,7 @@ const Attraction_result = () => {
             </div>
             <div className="resultBody">
                 <div className="infoContainer">
-                    <img className="rst_result_prom" src={about.firstimage} alt={about.title}></img>
+                    <img className="rst_result_prom" src={(about.firstimage === undefined)?noImg:about.firstimage} alt={about.title}></img>
                     <div className="rst_result_cell">
                         <div className="Title">
                             <div className="rst_result_name">{about.title}</div>

@@ -104,7 +104,7 @@
 
     .backicon {
         width: 3rem;
-        margin-inline:3%;
+        margin-inline: 3%;
         display: block;
     }
 
@@ -113,7 +113,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem 0;
-        width:94%;
+        width: 94%;
         width: 100%;
         border-bottom: 0.5rem solid #D8E9D7;
         margin: 0.5rem 0;
@@ -169,7 +169,6 @@
         font-size: 2.5rem;
         margin-right: 1rem;
     }
-
 
     .btn_class_att {
         width: 90%;
@@ -449,7 +448,7 @@
     .itemList {
         width: 15rem;
         padding: 1rem 0;
-        margin: 0 1rem 1rem 1rem;
+        margin: 0 1rem 1rem;
         font-size: 1.6rem;
         text-align: center;
         background-color: transparent;
@@ -459,8 +458,7 @@
     .itemList2 {
         width: 15rem;
         padding: 1rem 0;
-        margin: 0 1rem 1rem 1rem;
-        margin-bottom: 1rem;
+        margin: 0 1rem 1rem;
         font-size: 1.6rem;
         text-align: center;
         background-color: transparent;
@@ -758,19 +756,24 @@
 
     .btn_class_M {
         display: block;
-        width:5rem;
-        margin-inline:3%;
+        width: 5rem;
+        margin-inline: 3%;
     }
 
-    
-  .modal > section > header {
-    /* 팝업창 헤더 */
-    position: relative;
-    display: flex;
-    padding: 16px;
-    background-color: #f1f1f1;
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  
+    .modal > section > header {
+        /* 팝업창 헤더 */
+        position: relative;
+        display: flex;
+        padding: 16px;
+        background-color: #f1f1f1;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .rst_result_cell > p {
+        text-align: center;
+        margin: 2rem 0;
+        padding: 0 2rem;
+        font-size: 1.6rem;
+    }
 }

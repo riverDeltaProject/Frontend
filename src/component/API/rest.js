@@ -1,4 +1,4 @@
-export const restList =[
+export const restKor =[
     {
         "name": "우스마니아",
         "friendly": "무슬림 자가 인증",
