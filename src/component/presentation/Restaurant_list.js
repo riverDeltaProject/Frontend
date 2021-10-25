@@ -9,7 +9,7 @@ import icon_muslim_friendly from "../assets/icon_muslim_friendly.png";
 import icon_pork_free from "../assets/icon_pork_free.png";
 import icon_self_certified from "../assets/icon_self_certified.png";
 import icon_reset from "../assets/icon_reset.png";
-import {restList} from "../API/rest"
+import {restKor} from "../API/rest"
 import {restEn} from "../API/restEn"
 import Pagination from './Pagination.js';
 
@@ -81,7 +81,7 @@ const Restaurant_list = () => {
 
     // 지역에 맞게 리스트 추려내기
     let locList = (lang === "KorService")
-        ? restList.filter(
+        ? restKor.filter(
             key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
         )
         : restEn.filter(

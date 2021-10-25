@@ -42,19 +42,10 @@ const SubArea = ({citylist, area, moveTo, lang}) => {
             })
         }
 
-        let procList = "";
 
         for (let i = 0; i < list.length; i++) {
-            if(lang === "KorService"){
-                procList = citylist[i];
-            }else if ((citylist[i].includes('gu')) && (citylist[i] !=="Jung-gu")) {
-                procList = citylist[i].replace('-gu',"");
-            } else if((citylist[i].includes('gu')) && (citylist[i] ==="Jung-gu")){
-                procList = "Jung-gu";
-            }
-
             tmp.push(
-                <button className="itemList2" key={citylist[i]} onClick={(e) => goList(e, i)}>{procList}</button>
+                <button className="itemList2" key={citylist[i]} onClick={(e) => goList(e, i)}>{citylist[i]}</button>
             )
         }
 

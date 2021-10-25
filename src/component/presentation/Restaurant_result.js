@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {useLocation, useHistory} from "react-router-dom";
+import Item from "./SubItem_att"
 
 import backicon from "../assets/backicon.png";
 
@@ -9,7 +10,7 @@ const options = {
         .kakao
         .maps
         .LatLng(33.450701, 126.570667),
-    level: 3
+    level: 7
 }
 
 const Restaurant_result = () => {
@@ -32,7 +33,11 @@ const Restaurant_result = () => {
             "주소",
             "할랄 여부",
             "주차",
-            "오시는 길"
+            "오시는 길",
+            "지도를 확대하거나 축소해보세요.",
+            "주변 관광지의 위치가 노란 별로 표시됩니다.",
+            "주변 관광지"
+
         ]
         : [
             "Phonenum",
@@ -41,8 +46,20 @@ const Restaurant_result = () => {
             "Address",
             "Halal Friendly",
             "Parking",
-            "Way to Come"
+            "Way to Come",
+            "Zoom in or zoom out on the map.",
+            "The location of nearby tourist attractions is indicated by a yellow star.",
+            "Nearby Attractions"
         ];
+
+        
+        const attLoc = about
+            .attAddress
+            .split(",");
+
+        const attName = about
+            .attName
+            .split(",");
 
     useEffect(() => {
         const map = new window
@@ -60,6 +77,53 @@ const Restaurant_result = () => {
             : about
                 .address
                 .match(/\((.*?)\)/)[1]
+
+        // 주변 관광지 표시
+
+        const imageSize = new kakao
+            .maps
+            .Size(24, 35);
+
+        let imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+        for (let i = 0; i < attLoc.length; i++) {
+            let markerImg = new kakao
+                .maps
+                .MarkerImage(imageSrc, imageSize);
+
+            //마커 내용 표시
+            let iwContent = `<div style="padding:5px; font-weight:bolder; font-size:13px;"> ${attName[i]} </div>`;
+            let iwRemoveable = true;
+
+            let infoWin = new
+            kakao
+                .maps
+                .InfoWindow({content: iwContent, removable: iwRemoveable});
+
+            geocoder.addressSearch(attLoc[i], function (result, status) {
+                // 정상적으로 검색이 완료됐으면
+                if (status === kakao.maps.services.Status.OK) {
+
+                    let coords = new kakao
+                        .maps
+                        .LatLng(result[0].y, result[0].x);
+
+                    // 결과값으로 받은 위치를 마커로 표시합니다
+                    let marker = new kakao
+                        .maps
+                        .Marker({map: map, position: coords, title: attName[i], image: markerImg});
+
+                    marker.setMap(map);
+                    kakao
+                        .maps
+                        .event
+                        .addListener(marker, 'click', () => {
+                            infoWin.open(map, marker)
+                        })
+                    map.setCenter(coords);
+
+                }
+            })
+        }
 
         geocoder.addressSearch(str, function (result, status) {
             // 정상적으로 검색이 완료됐으면
@@ -139,6 +203,12 @@ const Restaurant_result = () => {
             <div className="rst_result_cell">
                 <h1>{tmp[6]}</h1>
                 <div className='myMapMosque' ref={container}/>
+                <p>{tmp[7]}</p>
+                <p>{tmp[8]}</p>
+            </div>
+            <div className="rst_result_cell">
+                <h1>{tmp[9]}</h1>
+                <Item rlistName={attName} rlistAddress={attLoc} lang={lang}/>
             </div>
         </div>
     );
