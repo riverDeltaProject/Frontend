@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 
-function Item({rlist, moveTo, code}) {
+function Item({rlist, moveTo, code, lang}) {
     const suggestion = () => {
         let tmp = [];
 
         if (rlist.length === 0) {
-            tmp.push(<div className="attr_noResult">주변 식당이 없습니다</div>)
+            tmp.push(<div className="attr_noResult">{(lang==="KorService")?"주변 관광지가 없습니다":"No Result"}</div>)
         } else{
             for(let rkey in rlist) {
                 tmp.push(

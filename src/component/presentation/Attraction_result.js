@@ -29,47 +29,28 @@ const Attraction_result = () => {
     const code = beforeState.code;
     const moveTo = beforeState.moveTo;
 
-    
     const tmp = (beforeState.lang === "KorService")
-        ? [
-            "주소",
-            "오시는 길",
-            "주변 식당"
-        ]
-        : [
-            "Address",
-            "Way to Come",
-            "Nearby Restaurant"
-        ];
+        ? ["주소", "오시는 길", "주변 식당"]
+        : ["Address", "Way to Come", "Nearby Restaurant"];
 
     useEffect(() => {
+
         const map = new window
             .kakao
             .maps
             .Map(container.current, options);
 
-        const geocoder = new kakao
+        // const geocoder = new kakao     .maps     .services     .Geocoder();4
+        let coords = new kakao
             .maps
-            .services
-            .Geocoder();
+            .LatLng(about.mapy, about.mapx);
+        // 결과값으로 받은 위치를 마커로 표시합니다
+        let marker = new kakao
+            .maps
+            .Marker({map: map, position: coords});
 
-        geocoder.addressSearch(about.addr1, function (result, status) {
-            // 정상적으로 검색이 완료됐으면
-            if (status === kakao.maps.services.Status.OK) {
-
-                let coords = new kakao
-                    .maps
-                    .LatLng(result[0].y, result[0].x);
-
-                // 결과값으로 받은 위치를 마커로 표시합니다
-                let marker = new kakao
-                    .maps
-                    .Marker({map: map, position: coords});
-
-                marker.setMap(map);
-                map.setCenter(coords);
-            }
-        })
+        marker.setMap(map);
+        map.setCenter(coords);
 
         return() => {};
     }, [])
@@ -94,7 +75,9 @@ const Attraction_result = () => {
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
-    const tmpRest = (beforeState.lang === "KorService")?restKor:restEn;
+    const tmpRest = (beforeState.lang === "KorService")
+        ? restKor
+        : restEn;
     const sugglist = () => {
         let tmp = tmpRest.filter(
             key => key.address.includes(code["city"]) && key.area.includes(code["area"])
@@ -180,7 +163,13 @@ const Attraction_result = () => {
             </div>
             <div className="resultBody">
                 <div className="infoContainer">
-                    <img className="rst_result_prom" src={(about.firstimage === undefined)?noImg:about.firstimage} alt={about.title}></img>
+                    <img
+                        className="rst_result_prom"
+                        src={(
+                            about.firstimage === undefined)
+                            ? noImg
+                            : about.firstimage}
+                        alt={about.title}></img>
                     <div className="rst_result_cell">
                         <div className="Title">
                             <div className="rst_result_name">{about.title}</div>
@@ -200,7 +189,7 @@ const Attraction_result = () => {
                 </div>
                 <div className="rst_result_cell">
                     <h1>{tmp[2]}</h1>
-                    <Item rlist={currentPosts()} code={code}/>
+                    <Item rlist={currentPosts()} code={code} lang={beforeState.lang}/>
                     <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
                 </div>
             </div>

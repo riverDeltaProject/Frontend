@@ -12,6 +12,8 @@ import mosqueicon from "../assets/mosqueicon.png"
 const Home = () => {
     const location = useLocation();
     const history = useHistory();
+
+    console.log(location.state)
     
     // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
     const [modalOpen, setModalOpen] = useState(false);
@@ -34,8 +36,8 @@ const Home = () => {
         : [
             "RiverDelta",
             "Langauge",
-            "bbb",
-            "ccc",
+            "A good meal makes a good trip",
+            "There is a Korean saying: Food before Mt. Geumgang. It means a good view can only be enjoyed when you are full. We guide the route between travel destinations and halal restaurants so that everyone who visits Korea can enjoy a comfortable meal. We hope to make your trip more colorful, River Delta",
             "Install Application",
             "Find Place",
             "Restaurant",
