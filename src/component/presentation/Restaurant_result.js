@@ -119,7 +119,6 @@ const Restaurant_result = () => {
                         .addListener(marker, 'click', () => {
                             infoWin.open(map, marker)
                         })
-                    map.setCenter(coords);
 
                 }
             })
