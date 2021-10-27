@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import {Link, useLocation, useHistory} from "react-router-dom";
 import Item from './Item.js';
 import Pagination from './Pagination.js';
-import {mosque} from '../API/mosque_list'
+import {mosque} from '../API/mosque_list';
+import { mosqueEn } from '../API/mosque_En.js';
 
 import icon_reset from "../assets/icon_reset.png";
 import backicon from "../assets/backicon.png";
@@ -22,7 +23,9 @@ const Mosque_list = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [filter, setFilter] = useState(location.state.deState);
 
-    const tmp = (location.state.lang === "KorService")
+    const lang = location.state.lang;
+
+    const tmp = (lang === "KorService")
         ? [
             "모스크",
             "필터",
@@ -65,7 +68,7 @@ const Mosque_list = () => {
 
     //필터 리스트
     const makeList = () => {
-        let result = mosque;
+        let result = (lang === "KorService") ? mosque : mosqueEn;
 
         if (option === "") {
             setFilter(false);
@@ -87,9 +90,11 @@ const Mosque_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
+    let aboutList = (lang==="KorService")? mosque:mosqueEn;
+
     let mainArr = filter
         ? makeList() //얘는 잘 돌아감
-        : mosque; //근데 얘는 왜?
+        : aboutList; //근데 얘는 왜?
 
     let lastPage = parseInt(mainArr.length / 6);
 
@@ -122,6 +127,7 @@ const Mosque_list = () => {
 
     const sel_mosq = (e) => {
         target = e.target.parentNode.nextSibling.innerText;
+        console.log(target)
         mosqType = target
         setOption(mosqType);
     }
@@ -268,10 +274,10 @@ const Mosque_list = () => {
                 <Item
                     rlist={filter
                         ? currentPosts(makeList())
-                        : currentPosts(mosque)}
+                        : currentPosts(aboutList)}
                     filType={option}
                     moveTo="mosque"
-                    lang={location.state.lang}/></div>
+                    lang={lang}/></div>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );

@@ -4,6 +4,8 @@ import {Link, useLocation, useHistory} from "react-router-dom";
 import {kakaoKey} from '../API/Key';
 
 import backicon from "../assets/backicon.png";
+import noImg from "../assets/noImg.png"
+
 
 const {kakao} = window;
 const options = {
@@ -25,12 +27,14 @@ const Mosque_result = () => {
     ? [
         "국적",
         "주소",
-        "오시는 길"
+        "오시는 길",
+        "유형"
     ]
     : [
         "Nation",
         "Address",
-        "Way to Come"
+        "Way to Come",
+        "type"
     ];
 
     useEffect(() => {
@@ -72,7 +76,8 @@ const Mosque_result = () => {
             search:`?sort=mosque`,
             state:{
                 deState : true,
-                optList : location.state.filType
+                optList : location.state.filType,
+                lang : location.state.lang
             }
         })
     }
@@ -80,29 +85,43 @@ const Mosque_result = () => {
     return (
         <div className="resultContainer">
             <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
-            <div className="mosque_result_prom"/>
-            <div className="rst_result_cell">
-                <div>
-                    <div className="Title">
-                        <div className="rst_result_name">{about.name}</div>
-                        <div className="subInfo">모스크</div>
-                    </div>
-
-                    <div className="Items">
-                        <div className="infoItem">
-                            <div>{tmp[0]}</div>
-                            <div>{about.nation}</div>
+            <div className="resultHeader">
+                <h1>{about.name}</h1>
+            </div>
+            <div className="resultBody">
+                <div className="infoContainer">
+                    <img
+                        className="rst_result_prom"
+                        src={(
+                            about.firstimage === undefined)
+                            ? noImg
+                            : about.firstimage}
+                        alt={about.title}></img>
+                    <div className="rst_result_cell">
+                        <div className="Title">
+                            <div className="rst_result_name">{about.name}</div>
+                            <div className="subInfo">{about.type}</div>
                         </div>
-                        <div className="infoItem">
-                            <div>{tmp[1]}</div>
-                            <div>{about.address}</div>
+                        <div className="Items">
+                            <div className="infoItem longItem">
+                                <div>{tmp[3]}</div>
+                                <div>{about.type}</div>
+                            </div>
+                            <div className="infoItem longItem">
+                                <div>{tmp[0]}</div>
+                                <div>{about.nation}</div>
+                            </div>
+                            <div className="infoItem longItem">
+                                <div>{tmp[1]}</div>
+                                <div>{about.address}</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="rst_result_cell">
-                <h1>{tmp[2]}</h1>
-                <div className='myMapMosque' ref={container}/>
+                <div className="rst_result_cell">
+                    <h1>{tmp[2]}</h1>
+                    <div className='myMapMosque' ref={container}/>
+                </div>
             </div>
         </div>
     );
