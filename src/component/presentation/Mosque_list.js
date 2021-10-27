@@ -108,6 +108,14 @@ const Mosque_list = () => {
         }
     }
 
+    if (lastPage === currentPage){
+        if((numOfFirst-8)<=0){
+            numOfFirst = 1;
+        } else{
+            numOfFirst = currentPage-8
+        }
+    }
+
     // 필터
     let target;
     let mosqType = "";
@@ -262,7 +270,8 @@ const Mosque_list = () => {
                         ? currentPosts(makeList())
                         : currentPosts(mosque)}
                     filType={option}
-                    moveTo="mosque"/></div>
+                    moveTo="mosque"
+                    lang={location.state.lang}/></div>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );

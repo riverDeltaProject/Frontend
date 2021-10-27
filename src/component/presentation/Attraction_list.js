@@ -127,20 +127,39 @@ const Attraction_list = () => {
         ? 0
         : parseInt(maindata.length / 6) + 1;
 
-    if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
-        numOfFirst = 1;
-    }
-
-    if (lastPage <= 9) {
-        numOfLast = lastPage;
-    } else {
-        if (currentPage < 5) {
-            numOfLast = 9;
-        } else if (lastPage < numOfLast) {
-            numOfLast = lastPage;
-            numOfFirst = numOfLast - 8;
+        console.log(maindata)
+    
+    if (maindata === undefined){        //데이터가 아예 없을 경우
+        numOfFirst = null
+        numOfLast = null
+    } else if(Object.keys(maindata)[0] === "0"){        //데이터가 1개 이상일 경우
+        if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
+            numOfFirst = 1;
         }
+
+        if (lastPage <= 9) {
+            numOfLast = lastPage;
+        } else {
+            if (currentPage < 5) {
+                numOfLast = 9;
+            } else if (lastPage < numOfLast) {
+                numOfLast = lastPage;
+                numOfFirst = numOfLast - 8;
+            }
+        }
+
+        if (lastPage === currentPage) {
+            if ((numOfFirst - 8) <= 0) {
+                numOfFirst = 1;
+            } else {
+                numOfFirst = currentPage - 8;
+            }
+        }
+    } else {            //데이터가 1개일 경우
+        numOfFirst = 1
+        numOfLast = 1
     }
+    
 
     // 필터
     let target;
@@ -361,6 +380,7 @@ const Attraction_list = () => {
                                     filType={option}
                                     lang={lang}></Item>
                             </div>
+
                             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
                         </div>
             }
