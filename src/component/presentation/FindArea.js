@@ -5,6 +5,8 @@ import SubArea from './SubArea';
 import {serviceKey} from '../API/Key';
 
 import backicon from "../assets/backicon.png";
+import homeIcon from "../assets/homeIcon.png"
+import background from "../assets/searchBackground.png"
 
 const FindArea = () => {
     const location = useLocation();
@@ -83,54 +85,65 @@ const FindArea = () => {
     }
 
     return (
-        <div>
+        <div className="FindingCon">
+        <img src={background} alt="background Img" id="backImg" />
+            <div className="findingHeader">
+                <img src={homeIcon} alt={homeIcon} onClick={goBack}/>
+                <h1>{tmp[0]}</h1>
+            </div>
             <div className="header2">
                 <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
                 <h1>{tmp[0]}</h1>
                 <div className="btn_class_M"></div>
             </div>
             <p className="normalfont">{tmp[1]}</p>
-            <p className="findingplace">{tmp[2]}</p>
-            <div className="containerList">
-                <button
-                    className="itemList"
-                    onClick={(e) => {
-                        api(1, e);
-                    }}>{tmp[3]}</button>
-                <button
-                    className="itemList"
-                    onClick={(e) => {
-                        api(2, e);
-                    }}>{tmp[4]}</button>
-                <button
-                    className="itemList"
-                    onClick={(e) => {
-                        api(3, e);
-                    }}>{tmp[5]}</button>
-                <button
-                    className="itemList"
-                    onClick={(e) => {
-                        api(4, e);
-                    }}>{tmp[6]}</button>
-                <button
-                    className="itemList"
-                    onClick={(e) => {
-                        api(5, e);
-                    }}>{tmp[7]}</button>
-                <button
-                    className="itemList"
-                    onClick={(e) => {
-                        api(6, e);
-                    }}>{tmp[8]}</button>
-                <button
-                    className="itemList"
-                    onClick={(e) => {
-                        api(39, e);
-                    }}>{tmp[9]}</button>
-            </div>
-            <p className="findingplace">{tmp[10]}</p>
-            <div className="containerList2">
-                <SubArea citylist={subArea(data)} area={localNum} moveTo={moveTo} lang={lang}/>
+            <div className="findContainer">
+                <div>
+                    <p className="findingplace">{tmp[2]}</p>
+                    <div className="containerList">
+                        <button
+                            className="itemList"
+                            onClick={(e) => {
+                                api(1, e);
+                            }}>{tmp[3]}</button>
+                        <button
+                            className="itemList"
+                            onClick={(e) => {
+                                api(2, e);
+                            }}>{tmp[4]}</button>
+                        <button
+                            className="itemList"
+                            onClick={(e) => {
+                                api(3, e);
+                            }}>{tmp[5]}</button>
+                        <button
+                            className="itemList"
+                            onClick={(e) => {
+                                api(4, e);
+                            }}>{tmp[6]}</button>
+                        <button
+                            className="itemList"
+                            onClick={(e) => {
+                                api(5, e);
+                            }}>{tmp[7]}</button>
+                        <button
+                            className="itemList"
+                            onClick={(e) => {
+                                api(6, e);
+                            }}>{tmp[8]}</button>
+                        <button
+                            className="itemList"
+                            onClick={(e) => {
+                                api(39, e);
+                            }}>{tmp[9]}</button>
+                    </div>
+                </div>
+                <div>
+                    <p className="findingplace">{tmp[10]}</p>
+                    <div className="containerList2">
+                        <SubArea citylist={subArea(data)} area={localNum} moveTo={moveTo} lang={lang}/>
+                    </div>
+                </div>
             </div>
         </div>
     );

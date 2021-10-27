@@ -35,7 +35,7 @@ body {
 
 .header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     width: 84%;
     background-color: #f3f3f3;
@@ -52,7 +52,7 @@ body {
 
 .header_list {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     width: 73%;
     background-color: none;
@@ -60,19 +60,19 @@ body {
     padding: 0 8%;
 }
 
-.headerTitle{
-    width:100%;
+.headerTitle {
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.header_list>div>img{
-    width:2rem;
+.header_list > div > img {
+    width: 2rem;
     margin-right: 15px;
 }
 
-.header_list > div>  h1 {
+.header_list > div > h1 {
     font-family: 'HSGaeulSenggak20';
     display: inline;
     color: #909090;
@@ -170,7 +170,7 @@ body {
 .findingplace {
     font-family: 'HSGaeulSenggak20';
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 2rem 0;
     font-weight: bolder;
 }
@@ -239,7 +239,7 @@ a {
 .rst_list_cell > div {
     padding: 0 0.5rem;
     display: flex;
-    height:100%;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -260,7 +260,7 @@ a {
     font-size: 0.8rem;
     color: #7b7b7b;
     border: 0;
-    background-color: transparent;
+    background-color: white;
 }
 
 .rst_list_position {
@@ -288,7 +288,7 @@ a {
 }
 
 .button_filter {
-    background-color: transparent;
+    background-color: white;
     border: 0;
     width: 3rem;
 }
@@ -394,7 +394,7 @@ a {
     font-size: 1rem;
     font-weight: bolder;
     border: 0;
-    background-color: transparent;
+    background-color: white;
     padding: 0;
 }
 
@@ -414,7 +414,6 @@ a {
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
 
 .langoption {
     font-size: 1.6rem;
@@ -612,12 +611,16 @@ a {
     flex-shrink: 0;
 }
 
-.atttype > div > button, .foodtype > div > button, .placetype > div > button{
+.atttype > div > button,
+.foodtype > div > button,
+.placetype > div > button {
     background-color: white;
 }
 
-.atttype > div, .foodtype > div, .placetype > div{
-    margin:1.2rem
+.atttype > div,
+.foodtype > div,
+.placetype > div {
+    margin: 1.2rem;
 }
 
 .icon_att {
@@ -639,7 +642,6 @@ a {
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
 
 .langoption {
     font-size: 1rem;
@@ -703,14 +705,14 @@ a {
     animation: modal-bg-show 0.3s;
 }
 
-
-
 .itemList3 {
+    position: relative;
+    z-index: 10;
     width: 7rem;
     margin-bottom: 1rem;
     font-size: 1rem;
     text-align: center;
-    background-color: transparent;
+    background-color: white;
     border-radius: 30px;
     border: solid gray 1px;
     cursor: pointer;
@@ -776,37 +778,105 @@ a {
 .icon_halal {
     width: 6rem;
     height: auto;
-    background-color: transparent;
+    background-color: white;
 }
 
-.btn_class_M{
+.btn_class_M {
     display: none;
 }
 
-
-.notFound{
-    width:8rem;
+.notFound {
+    width: 8rem;
     height: auto;
-    margin:3rem;
-  }
-  
-  .errorMsg{
+    margin: 3rem;
+}
+
+.errorMsg {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+}
 
-  
-.noRes{
+.noRes {
     font-size: 2rem;
     text-align: center;
-  }
+}
 
-  .rst_result_cell>p{
-      text-align: center;
-    padding: 0 0 0.8rem 0;
+.rst_result_cell > p {
+    text-align: center;
+    padding: 0 0 0.8rem;
     margin: 1.5rem 0;
     font-size: 1.6rem;
-  }
+}
+
+
+.itemList {
+    width: 5rem;
+    padding: 0.5rem 0;
+    margin: 0 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.itemList2 {
+    width: 6.5rem;
+    padding: 0.5rem 0;
+    margin: 0 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    border: solid gray 1px;
+}
+
+.findContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.normalfont{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-block: 1rem;
+}
+
+.findingHeader{
+    width:100%;
+    height: 10%;
+    margin:1rem 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.findingHeader>img{
+    width:4%;
+    height: 4%;
+    margin : 0 10px 0 0;
+}
+
+.findingHeader>h1{
+    font-size: 1.5rem;
+}
+
+.FindingCon{
+    width:78%;
+    padding-top:2rem;
+    margin:0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#backImg{
+    position: fixed;
+    z-index: -1;
+    bottom:0;
+    left:0
+}

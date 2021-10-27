@@ -3,6 +3,8 @@ import {useLocation, useHistory} from "react-router-dom";
 import Item from "./SubItem_att"
 
 import backicon from "../assets/backicon.png";
+import Notfound from "../assets/notfound.png"
+import noImg from "../assets/noImg.png"
 
 const {kakao} = window;
 const options = {
@@ -36,7 +38,8 @@ const Restaurant_result = () => {
             "오시는 길",
             "지도를 확대하거나 축소해보세요.",
             "주변 관광지의 위치가 노란 별로 표시됩니다.",
-            "주변 관광지"
+            "주변 관광지",
+            "주변 관광지가 없습니다."
 
         ]
         : [
@@ -49,15 +52,21 @@ const Restaurant_result = () => {
             "Way to Come",
             "Zoom in or zoom out on the map.",
             "The location of nearby tourist attractions is indicated by a yellow star.",
-            "Nearby Attractions"
+            "Nearby Attractions",
+            "No Result"
         ];
 
-        
-        const attLoc = about
+    console.log(about.attAddress)
+
+    const attLoc = (about.attAddress === undefined)
+        ? null
+        : about
             .attAddress
             .split(",");
 
-        const attName = about
+    const attName = (about.attAddress === undefined)
+        ? null
+        : about
             .attName
             .split(",");
 
@@ -85,43 +94,46 @@ const Restaurant_result = () => {
             .Size(24, 35);
 
         let imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
-        for (let i = 0; i < attLoc.length; i++) {
-            let markerImg = new kakao
-                .maps
-                .MarkerImage(imageSrc, imageSize);
 
-            //마커 내용 표시
-            let iwContent = `<div style="padding:5px; font-weight:bolder; font-size:13px;"> ${attName[i]} </div>`;
-            let iwRemoveable = true;
+        if (attLoc !== null) {
+            for (let i = 0; i < attLoc.length; i++) {
+                let markerImg = new kakao
+                    .maps
+                    .MarkerImage(imageSrc, imageSize);
 
-            let infoWin = new
-            kakao
-                .maps
-                .InfoWindow({content: iwContent, removable: iwRemoveable});
+                //마커 내용 표시
+                let iwContent = `<div style="padding:5px; font-weight:bolder; font-size:13px;"> ${attName[i]} </div>`;
+                let iwRemoveable = true;
 
-            geocoder.addressSearch(attLoc[i], function (result, status) {
-                // 정상적으로 검색이 완료됐으면
-                if (status === kakao.maps.services.Status.OK) {
+                let infoWin = new
+                kakao
+                    .maps
+                    .InfoWindow({content: iwContent, removable: iwRemoveable});
 
-                    let coords = new kakao
-                        .maps
-                        .LatLng(result[0].y, result[0].x);
+                geocoder.addressSearch(attLoc[i], function (result, status) {
+                    // 정상적으로 검색이 완료됐으면
+                    if (status === kakao.maps.services.Status.OK) {
 
-                    // 결과값으로 받은 위치를 마커로 표시합니다
-                    let marker = new kakao
-                        .maps
-                        .Marker({map: map, position: coords, title: attName[i], image: markerImg});
+                        let coords = new kakao
+                            .maps
+                            .LatLng(result[0].y, result[0].x);
 
-                    marker.setMap(map);
-                    kakao
-                        .maps
-                        .event
-                        .addListener(marker, 'click', () => {
-                            infoWin.open(map, marker)
-                        })
+                        // 결과값으로 받은 위치를 마커로 표시합니다
+                        let marker = new kakao
+                            .maps
+                            .Marker({map: map, position: coords, title: attName[i], image: markerImg});
 
-                }
-            })
+                        marker.setMap(map);
+                        kakao
+                            .maps
+                            .event
+                            .addListener(marker, 'click', () => {
+                                infoWin.open(map, marker)
+                            })
+
+                    }
+                })
+            }
         }
 
         geocoder.addressSearch(str, function (result, status) {
@@ -162,10 +174,26 @@ const Restaurant_result = () => {
     }
 
     return (
-        <div>
+        <div className="resultContainer">
             <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
-            <div className="rst_result_prom"/>
-            <div className="rst_result_cell">
+            <div className="resultHeader">
+                <h1>{about.name}</h1>
+            </div>
+            <div className="resultBody">
+                <div className="infoContainer">
+                    <img
+                        className="rst_result_prom"
+                        src={(
+                            about.firstimage === undefined)
+                            ? noImg
+                            : about.firstimage}
+                        alt={about.title}></img>
+                    <div className="rst_result_cell">
+                        <div className="Title">
+                            <div className="rst_result_name">{about.title}</div>
+                            <div className="subInfo">{}</div>
+                        </div>
+                        <div className="rst_result_cell">
                 <div>
                     <div className="Title">
                         <div className="rst_result_name">{about.name}</div>
@@ -198,18 +226,27 @@ const Restaurant_result = () => {
                         </div>
                     </div>
                 </div>
+                    </div>
+                </div>
             </div>
             <div className="rst_result_cell">
-                <h1>{tmp[6]}</h1>
+                <h1>{tmp[1]}</h1>
                 <div className='myMapMosque' ref={container}/>
-                <p>{tmp[7]}</p>
-                <p>{tmp[8]}</p>
             </div>
             <div className="rst_result_cell">
                 <h1>{tmp[9]}</h1>
-                <Item rlistName={attName} rlistAddress={attLoc} lang={lang}/>
+                {
+                    (about.attAddress === undefined)
+                        ? <div className="errorMsg">
+                                <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
+                                <div className="noRes">{tmp[10]}</div>
+                            </div>
+                        : <Item rlistName={attName} rlistAddress={attLoc} lang={lang}/>
+                }
+
             </div>
         </div>
+    </div>
     );
 };
 

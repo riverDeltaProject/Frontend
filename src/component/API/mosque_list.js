@@ -548,7 +548,7 @@ export const mosque = [
             "type": "예배소",
             "name": "이슬람 영남대 경산센터",
             "address": "경북 경산시 대학로 280 중앙기기센터 분관",
-            "nation": "다nation"
+            "nation": "다국적"
         }, {
             "type": "예배소",
             "name": "이슬람 알-아즈하르 경산센터",
@@ -613,7 +613,7 @@ export const mosque = [
             "type": "기도처",
             "name": "경북대학교 예배소",
             "address": "대구 북구 대현로 3길 17-25",
-            "nation": "다nation"
+            "nation": "다국적"
         }, {
             "type": "기도처",
             "name": "한양대학교 예배소",
@@ -638,17 +638,17 @@ export const mosque = [
             "type": "기도처",
             "name": "부산대학교 예배소",
             "address": "부산 금정구 부산대학로 63번길 2 부산대 웅비관A 906호",
-            "nation": "다nation"
+            "nation": "다국적"
         }, {
             "type": "기도처",
             "name": "부경대학교 예배소",
             "address": "부산 남구 용소로 45 부경대학교 이슬람예배소",
-            "nation": "다nation"
+            "nation": "다국적"
         }, {
             "type": "기도처",
             "name": "신라대학교 예배소",
             "address": "부산 사상구 백양대로700번길 140글로벌센터",
-            "nation": "다nation"
+            "nation": "다국적"
         }, {
             "type": "기도처",
             "name": "울산대학교 예배소",
@@ -658,7 +658,7 @@ export const mosque = [
             "type": "기도처",
             "name": "영산대학교 예배소",
             "address": "부산 해운대구 반송순환로 142 영산대 학생생활관 B 1층 H7002 이슬람전용기도실",
-            "nation": "다nation"
+            "nation": "다국적"
         }, {
             "type": "기도처",
             "name": "이화여대 다문화명상실",
