@@ -87,13 +87,14 @@
 
     .rst_list_cell {
         width: 85%;
-        height: auto;
+        height: 20%;
+        max-height: 70px;
         display: grid;
         grid-gap: 2%;
         grid-template-columns: 1fr 4fr;
         align-items: center;
         text-align: left;
-        padding: 0.5rem 1rem;
+        padding: 1.3rem 1rem 0.5rem 1rem;
         border: 2px solid #C0DBBD;
         border-radius: 5px;
     }
@@ -262,6 +263,7 @@
 
     .rst_list_img {
         width: 100%;
+        height: 100%;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         background-color: #f1f1f1;
@@ -630,12 +632,6 @@
     .infoContainer > .rst_result_cell {
         border: none;
         padding: 0;
-    }
-
-    .attr_list_cell > div {
-        padding: 1rem;
-        margin: 0 3rem;
-        border-bottom: 2px solid #D8E9D7;
     }
 
     .attr_noResult {

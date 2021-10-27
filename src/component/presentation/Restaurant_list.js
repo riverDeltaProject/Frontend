@@ -202,6 +202,14 @@ const Restaurant_list = () => {
             numOfFirst = numOfLast - 8;
         }
     }
+    
+    if (lastPage === currentPage){
+        if((numOfFirst-8)<=0){
+            numOfFirst = 1;
+        } else{
+            numOfFirst = currentPage-8
+        }
+    }
 
     // 뒤로 돌아가기 버튼
     const goSearch = () => {
