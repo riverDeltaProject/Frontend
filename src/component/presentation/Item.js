@@ -30,7 +30,7 @@ function Item({rlist, moveTo, code, filType, lang}) {
             <div key={rkey} className="rst_list_cell" onClick={() => goDetail(rkey)}>
                 <img
                     className="rst_list_img"
-                    src={(rlist[rkey].firstimage === undefined)?noImg : rlist[rkey].firstimage}
+                    src={(rlist[rkey].imgurl === undefined)?noImg : rlist[rkey].imgurl}
                     alt={"about attraction image"}/>
                 <div className="bottom">
                     <button className="rst_list_name">

@@ -89,6 +89,7 @@ const Restaurant_list = () => {
         );
 
     const openModal = () => {
+        setFilter(false);
         setModalOpen(true);
     }
 

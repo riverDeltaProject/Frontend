@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link, useLocation, useHistory} from "react-router-dom";
 import Modal from './Modal.js';
 
@@ -19,6 +19,9 @@ const Home = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [lang, setLang] = useState((location.state === undefined)?"KorService":location.state.lang);
 
+    useEffect(()=>{
+        console.log(lang)
+    })
     
     const tmp = (lang === "KorService")
         ? [
