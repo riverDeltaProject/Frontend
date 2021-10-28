@@ -77,9 +77,9 @@ const Mosque_result = () => {
                     <img
                         className="rst_result_prom"
                         src={(
-                            about.firstimage === undefined)
+                            about.imgurl === undefined)
                             ? noImg
-                            : about.firstimage}
+                            : about.imgurl}
                         alt={about.title}></img>
                     <div className="rst_result_cell">
                         <div className="Title">
