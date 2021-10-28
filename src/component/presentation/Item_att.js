@@ -8,8 +8,6 @@ function Item({rlist, moveTo, code, filType, langData, i18n}) {
     const [linkName, setLinkName] = useState("");
     let rlist_tmp = [];
 
-    const tmp = (lang === "KorService")?"검색 결과가 존재하지 않습니다":"No Result";
-
     const goDetail = (rkey) => {
         let data = []
 
@@ -24,7 +22,7 @@ function Item({rlist, moveTo, code, filType, langData, i18n}) {
         }
 
         history.push({
-            pathname: `/${moveTo}_result`,
+            pathname: `/${moveTo}res`,
             search: `?sort=${linkName}`,
             state: {
                 data: data,
@@ -32,7 +30,8 @@ function Item({rlist, moveTo, code, filType, langData, i18n}) {
                 list: rlist,
                 moveTo: moveTo,
                 filType: filType,
-                lang: lang
+                langData: langData,
+                i18n : i18n
             }
         })
     }
@@ -62,8 +61,8 @@ function Item({rlist, moveTo, code, filType, langData, i18n}) {
         } else {
             rlist_tmp.push(
                 <div className="errorMsg">
-                            <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
-                            <div className="noRes">{tmp}</div>
+                            <img src={Notfound} className="notFound" alt={langData.noRes}/>
+                            <div className="noRes">{langData.noRes}</div>
                         </div>
             )
         }

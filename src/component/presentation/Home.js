@@ -1,4 +1,3 @@
-
 import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
 import Modal from './Modal.js';
@@ -18,7 +17,6 @@ const Home = () => {
     // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)
     const [modalOpen, setModalOpen] = useState(false);
     const [allData, setAllData] = useState([]);
-
 
     useEffect(() => {
         if (i18n.language === 'en') {
@@ -51,7 +49,7 @@ const Home = () => {
                 <div>
                     <div>
                         <h3>{allData.mainTitle}</h3>
-                        {allData.usbTitle}
+                        {allData.subTitle}
                     </div>
                     <Link to="./Howto" className="howto2">{allData.setApp}</Link>
                 </div>

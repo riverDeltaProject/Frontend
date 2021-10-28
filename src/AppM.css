@@ -495,7 +495,6 @@
     }
 
     .rst_result_cell {
-        border-top: 0.3rem solid #f1f1f1;
         border-bottom: 0.3rem solid #f1f1f1;
         padding: 0 0 3rem;
     }
@@ -516,6 +515,10 @@
         font-weight: bolder;
         padding-top: 2rem;
         padding-bottom: 1rem;
+    }
+
+    .Title_PC {
+        display: none;
     }
 
     .Title {
@@ -580,7 +583,6 @@
         padding: 1rem;
         margin: 0 1rem;
         border: none;
-        border-bottom: 2px solid #D8E9D7;
     }
 
     .rst_result_prom {
@@ -592,7 +594,7 @@
     }
 
     .rst_result_cell {
-        border-top: 0.3rem solid #f1f1f1;
+        display: block;
         border-bottom: 0.3rem solid #f1f1f1;
         padding: 0 0 3rem;
     }

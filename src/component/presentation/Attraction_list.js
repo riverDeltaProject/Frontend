@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useHistory, useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
@@ -21,7 +21,6 @@ import Pagination from './Pagination.js';
 import axios from 'axios';
 
 const Attraction_list = () => {
-    const history = useHistory();
     const location = useLocation();
 
     let moveTo = location.state.moveTo;
@@ -60,7 +59,9 @@ const Attraction_list = () => {
     }
 
     let attList = async (areaCode, cityCode, filType) => {
-        let lang = (i18n === 'kr')? "KorService" : "EngService";
+        let lang = (i18n === 'kr')
+            ? "KorService"
+            : "EngService";
         let url = `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=${filType}&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`
         // 영어 서비스에서는 URL이 한국 서비스와 다름. 그런데 여기서 시군구를 구분한 결과값이 나오지 않음. 검색하는 쪽에서 시군구를 검색하지
         // 못한다는 제한으로는 가능할 듯
@@ -74,16 +75,6 @@ const Attraction_list = () => {
         }
     }
 
-    const goSearch = () => {
-        history.push({
-            pathname: `./searchArea`,
-            state: {
-                moveTo: moveTo,
-                filType: option,
-                langData: langData
-            }
-        })
-    }
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
@@ -104,12 +95,10 @@ const Attraction_list = () => {
         ? 0
         : parseInt(maindata.length / 6) + 1;
 
-        console.log(maindata)
-    
-    if (maindata === undefined){        //데이터가 아예 없을 경우
+    if (maindata === undefined) { //데이터가 아예 없을 경우
         numOfFirst = null
         numOfLast = null
-    } else if(Object.keys(maindata)[0] === "0"){        //데이터가 1개 이상일 경우
+    } else if (Object.keys(maindata)[0] === "0") { //데이터가 1개 이상일 경우
         if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
             numOfFirst = 1;
         }
@@ -132,11 +121,10 @@ const Attraction_list = () => {
                 numOfFirst = currentPage - 8;
             }
         }
-    } else {            //데이터가 1개일 경우
+    } else { //데이터가 1개일 경우
         numOfFirst = 1
         numOfLast = 1
     }
-    
 
     // 필터
     let target;
@@ -192,22 +180,20 @@ const Attraction_list = () => {
         setOption(attrType);
     }
 
-    const goBack = () => {
-        history.push({
-            pathname: `/`,
-            search: ``,
-            state: {
-                langData: langData
-            }
-        })
-    }
-
     return (
         <div>
             <img src={headerImg} className="headerImg" alt="Attraction list"/>
-
             <div className="header2">
-                <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
+                <Link
+                    to={{
+                        pathname: `./search`,
+                        state: {
+                            moveTo: moveTo,
+                            filType: option,
+                            langData: langData
+                        }
+                    }}>
+                    <img className="backicon" src={backicon} alt="backicon"/></Link>
                 <h1>{langData.attrTitle}</h1>
                 <div className="btn_class_M">
                     <React.Fragment>
@@ -280,11 +266,20 @@ const Attraction_list = () => {
             </div>
             <div className="header_list">
                 <div className="headerTitle">
-                    <img src={homeIcon} alt={homeIcon} onClick={goBack}/>
+                    <Link
+                        to={{
+                            pathname: `/`,
+                            search: ``,
+                            state: {
+                                langData: langData,
+                                i18n: i18n
+                            }
+                        }}>
+                        <img src={homeIcon} alt={homeIcon}/></Link>
                     <h1>{langData.attrTitle}</h1>
                 </div>
                 <div className="btn_class_att">
-                <React.Fragment>
+                    <React.Fragment>
                         <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
                         <div
                             className={modalOpen
@@ -356,7 +351,7 @@ const Attraction_list = () => {
                                     code={where}
                                     filType={option}
                                     langData={langData}
-                                    i18n = {i18n}></Item>
+                                    i18n={i18n}></Item>
                             </div>
 
                             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>

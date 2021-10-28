@@ -45,7 +45,7 @@ export const data = {
         phone : "Phonenum",
         holiday : "Holiday",
         runtime : "Runtime",
-        restAddr : "Address",
+        addr : "Address",
         standard : "Halal Friendly",
         parking : "Parking",
         way : "Way to Come",
@@ -58,7 +58,15 @@ export const data = {
         fest : "Festival",
         sports : "Sports",
         lodg : "Lodgment",
-        shopping : "Shopping"
+        shopping : "Shopping",
+        nearbyRest : "Nearby Restaurant",
+        mosqTitle : "Mosque",
+        mosq : "Mosque",
+        prayerroom :  "Prayer room",
+        worship : "Place of Worship",
+        prayer : "Place of Prayer",
+        nation : "nation",
+        type : "type"
     },
     kr:{
         title : "리버델타",
@@ -106,7 +114,7 @@ export const data = {
         phone : "전화번호",
         holiday : "휴무일",
         runtime : "운영시간",
-        restAddr : "주소",
+        addr : "주소",
         standard : "할랄유형",
         parking : "주차",
         way : "오시는 길",
@@ -119,6 +127,14 @@ export const data = {
         fest : "행사/공연/축제",
         sports : "레포츠",
         lodg : "숙박",
-        shopping : "쇼핑"
+        shopping : "쇼핑",
+        nearbyRest : "주변 식당",
+        mosqTitle : "모스크",
+        mosq : "성원",
+        prayerroom :  "기도실",
+        worship : "예배소",
+        prayer : "기도처",
+        nation : "국적",
+        type : "유형"
     }
 }

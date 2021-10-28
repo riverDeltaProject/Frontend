@@ -1,7 +1,5 @@
-import axios from 'axios';
 import React, {useEffect, useRef} from 'react';
 import {Link, useLocation, useHistory} from "react-router-dom";
-import {kakaoKey} from '../API/Key';
 
 import backicon from "../assets/backicon.png";
 import noImg from "../assets/noImg.png"
@@ -17,25 +15,12 @@ const options = {
 }
 
 const Mosque_result = () => {
-    const history = useHistory();
     const location = useLocation();
     const container = useRef(null);
 
     const about = location.state.data;
-
-    const tmp = (location.state.lang === "KorService")
-    ? [
-        "국적",
-        "주소",
-        "오시는 길",
-        "유형"
-    ]
-    : [
-        "Nation",
-        "Address",
-        "Way to Come",
-        "type"
-    ];
+    const langData = location.state.langData;
+    const i18n = location.state.i18n;
 
     useEffect(() => {
         const map = new window
@@ -70,21 +55,20 @@ const Mosque_result = () => {
         return() => {};
     }, [])
 
-    const goBack = ()=>{
-        history.push({
-            pathname:`/mosque_list`,
+    return (
+        <div className="resultContainer">
+
+            <Link to={{
+            pathname:`/mosqlist`,
             search:`?sort=mosque`,
             state:{
                 deState : true,
                 optList : location.state.filType,
-                lang : location.state.lang
+                langData : location.state.langData,
+                i18n : i18n
             }
-        })
-    }
-
-    return (
-        <div className="resultContainer">
-            <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
+        }}>
+            <img className="backicon" src={backicon} alt="backicon"/></Link>
             <div className="resultHeader">
                 <h1>{about.name}</h1>
             </div>
@@ -104,22 +88,22 @@ const Mosque_result = () => {
                         </div>
                         <div className="Items">
                             <div className="infoItem longItem">
-                                <div>{tmp[3]}</div>
+                                <div>{langData.type}</div>
                                 <div>{about.type}</div>
                             </div>
                             <div className="infoItem longItem">
-                                <div>{tmp[0]}</div>
+                                <div>{langData.nation}</div>
                                 <div>{about.nation}</div>
                             </div>
                             <div className="infoItem longItem">
-                                <div>{tmp[1]}</div>
+                                <div>{langData.addr}</div>
                                 <div>{about.address}</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="rst_result_cell">
-                    <h1>{tmp[2]}</h1>
+                    <h1>{langData.way}</h1>
                     <div className='myMapMosque' ref={container}/>
                 </div>
             </div>

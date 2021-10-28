@@ -158,65 +158,67 @@ const Restaurant_result = () => {
                             : about.firstimage}
                         alt={about.title}></img>
                     <div className="rst_result_cell">
-                        <div className="Title">
+                        <div className="Title_PC">
                             <div className="rst_result_name">{about.title}</div>
-                            <div className="subInfo">{}</div>
+                            <div className="subInfo">{about.foodType}</div>
                         </div>
                         <div className="rst_result_cell">
                             <div>
                                 <div className="Title">
                                     <div className="rst_result_name">{about.name}</div>
-                            <div className="subInfo">{about.foodType}</div>
-                        </div>
-                        <div className="Items">
-                            <div className="infoItem">
-                                <div>{langData.phone}</div>
-                                <div>{about.phonenum}</div>
-                            </div>
-                            <div className="infoItem">
-                                <div>{langData.holiday}</div>
-                                <div>{about.holiday}</div>
-                            </div>
-                            <div className="infoItem">
-                                <div>{langData.runtime}</div>
-                                <div>{about.runtime}</div>
-                            </div>
-                            <div className="infoItem longItem">
-                                <div>{langData.restAddr}</div>
-                                <div>{about.address}</div>
-                            </div>
-                            <div className="infoItem">
-                                <div>{langData.standard}</div>
-                                <div>{about.friendly}</div>
-                            </div>
-                            <div className="infoItem">
-                                <div>{langData.parking}</div>
-                                <div>{about.parking}</div>
+                                    <div className="subInfo">{about.foodType}</div>
+                                </div>
+                                <div className="Items">
+                                    <div className="infoItem">
+                                        <div>{langData.phone}</div>
+                                        <div>{about.phonenum}</div>
+                                    </div>
+                                    <div className="infoItem">
+                                        <div>{langData.holiday}</div>
+                                        <div>{about.holiday}</div>
+                                    </div>
+                                    <div className="infoItem">
+                                        <div>{langData.runtime}</div>
+                                        <div>{about.runtime}</div>
+                                    </div>
+                                    <div className="infoItem longItem">
+                                        <div>{langData.addr}</div>
+                                        <div>{about.address}</div>
+                                    </div>
+                                    <div className="infoItem">
+                                        <div>{langData.standard}</div>
+                                        <div>{about.friendly}</div>
+                                    </div>
+                                    <div className="infoItem">
+                                        <div>{langData.parking}</div>
+                                        <div>{about.parking}</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="rst_result_cell">
-                <h1>{langData.way}</h1>
-                <div className='myMapMosque' ref={container}/>
-                <div className="normalfont">{langData.zoom}<br/>{langData.zoomLoc}</div>
-            </div>
-            <div className="rst_result_cell">
-                <h1>{langData.nearAttr}</h1>
-                {
-                    (about.attAddress === undefined)
-                        ? <div className="errorMsg">
-                                <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
-                                <div className="noRes">{langData.noRes}</div>
-                            </div>
-                        : <Item rlistName={attName} rlistAddress={attLoc} langData={langData}/>
-                }
-
+                
+                <div className="rstBottom">
+                        <div className="rst_result_cell">
+                            <h1>{langData.way}</h1>
+                            <div className='myMapMosque' ref={container}/>
+                            <div className="normalfont">{langData.zoom}<br/>{langData.zoomLoc}</div>
+                        </div>
+                        <div className="rst_result_cell">
+                            <h1>{langData.nearAttr}</h1>
+                            {
+                                (about.attAddress === undefined)
+                                    ? <div className="errorMsg">
+                                            <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
+                                            <div className="noRes">{langData.noRes}</div>
+                                        </div>
+                                    : <Item rlistName={attName} rlistAddress={attLoc} langData={langData}/>
+                            }
+                        </div>
+                    </div>
             </div>
         </div>
-    </div>
-</div>
     )
 }
 
