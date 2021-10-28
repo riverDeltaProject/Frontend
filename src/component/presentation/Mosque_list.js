@@ -3,7 +3,7 @@ import {Link, useLocation, useHistory} from "react-router-dom";
 import Item from './Item.js';
 import Pagination from './Pagination.js';
 import {mosque} from '../API/mosque_list';
-import { mosqueEn } from '../API/mosque_En.js';
+import {mosqueEn} from '../API/mosque_En.js';
 
 import icon_reset from "../assets/icon_reset.png";
 import backicon from "../assets/backicon.png";
@@ -68,7 +68,9 @@ const Mosque_list = () => {
 
     //필터 리스트
     const makeList = () => {
-        let result = (lang === "KorService") ? mosque : mosqueEn;
+        let result = (lang === "KorService")
+            ? mosque
+            : mosqueEn;
 
         if (option === "") {
             setFilter(false);
@@ -90,7 +92,9 @@ const Mosque_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
-    let aboutList = (lang==="KorService")? mosque:mosqueEn;
+    let aboutList = (lang === "KorService")
+        ? mosque
+        : mosqueEn;
 
     let mainArr = filter
         ? makeList() //얘는 잘 돌아감
@@ -113,11 +117,11 @@ const Mosque_list = () => {
         }
     }
 
-    if (lastPage === currentPage){
-        if((numOfFirst-8)<=0){
+    if (lastPage === currentPage) {
+        if ((numOfFirst - 8) <= 0) {
             numOfFirst = 1;
-        } else{
-            numOfFirst = currentPage-8
+        } else {
+            numOfFirst = currentPage - 8
         }
     }
 
