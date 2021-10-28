@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, useLocation, useHistory} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import Item from './Item.js';
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
@@ -18,10 +18,9 @@ import headerImg from "../assets/restaurant_header.JPG"
 import homeIcon from "../assets/homeIcon.png"
 
 const Restaurant_list = () => {
-    const history = useHistory();
     const location = useLocation();
 
-    const where = location.state.code;
+    const code = location.state.code;
     const deState = location.state.deState;
     const optionList = location.state.optList;
     const i18n = location.state.i18n;
@@ -33,15 +32,13 @@ const Restaurant_list = () => {
     const [option, setOption] = useState(optionList);
     const [filter, setFilter] = useState(deState);
 
-    console.log(where)
-
     // 지역에 맞게 리스트 추려내기
     let locList = (i18n === "kr")
         ? restKor.filter(
-            key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
+            key => (key.address.includes(code["area"]) && key.address.includes(code["city"]))
         )
         : restEn.filter(
-            key => (key.address.includes(where["area"]) && key.address.includes(where["city"]))
+            key => (key.address.includes(code["area"]) && key.address.includes(code["city"]))
         );
 
     const openModal = () => {
@@ -241,7 +238,7 @@ const Restaurant_list = () => {
         if ((numOfFirst - 8) <= 0) {
             numOfFirst = 1;
         } else {
-            numOfFirst = currentPage - 8
+            numOfFirst = currentPage - 8;
         }
     }
 
@@ -250,15 +247,14 @@ const Restaurant_list = () => {
             <img src={headerImg} className="headerImg" alt="Restraunt list"/>
 
             <div className="header2">
-                <Link
-                    to={{
-                        path: './search',
-                        state: {
-                            moveTo: location.state.moveTo,
-                            i18n: i18n,
-                            langData: langData
-                        }
-                    }}><img className="backicon" src={backicon} alt="backicon"/></Link>
+                <Link to={{
+                    pathname: `./search`,
+                    state: {
+                        moveTo: location.state.moveTo,
+                        langData: langData
+                    }
+                }}>
+                <img className="backicon" src={backicon} alt="backicon"/></Link>
 
                 <h1>{langData.restTitle}</h1>
 
@@ -300,7 +296,7 @@ const Restaurant_list = () => {
                                         : currentPosts(locList)}
                                     moveTo={location.state.moveTo}
                                     filType={option}
-                                    code={where}
+                                    code={code}
                                     langData={langData}
                                     i18n={i18n}></Item>
                             </div>
