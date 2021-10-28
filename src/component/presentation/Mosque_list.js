@@ -110,7 +110,6 @@ const Mosque_list = () => {
 
     const sel_mosq = (e) => {
         target = e.target.parentNode.nextSibling.innerText;
-        console.log(target)
         mosqType = target
         setOption(mosqType);
     }
@@ -168,31 +167,12 @@ const Mosque_list = () => {
         </div>
     </React.Fragment>
 
-    const goBack = () => {
-        history.push({
-            pathname: `/`,
-            search: ``,
-            state: {
-                langData: langData,
-                i18n: i18n
-            }
-        })
-    }
-
     return (
         <div>
             <img src={headerImg} className="headerImg" alt="Mosque list"/>
 
             <div className="header2">
-                <Link
-                    to={{
-                        pathname: `/`,
-                        search: ``,
-                        state: {
-                            langData: langData,
-                            i18n: i18n
-                        }
-                    }}>
+                <Link to="./">
                     <img className="backicon" src={backicon} alt="backicon"/></Link>
                 <h1>{langData.mosqTitle}</h1>
                 <div className="btn_class_M">{mosqFilter}</div>
@@ -205,7 +185,7 @@ const Mosque_list = () => {
             </div>
             <div className="header_list">
                 <div className="headerTitle">
-                    <img src={homeIcon} alt={homeIcon} onClick={goBack}/>
+                    <Link to="/"><img src={homeIcon} alt={homeIcon}/></Link>
                     <h1>{langData.mosqTitle}</h1>
                 </div>
                 <div className="btn_class_att">

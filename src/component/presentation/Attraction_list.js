@@ -180,6 +180,63 @@ const Attraction_list = () => {
         setOption(attrType);
     }
 
+    const attrFilter = <React.Fragment>
+        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
+        <div
+            className={modalOpen
+                ? 'openModal modal'
+                : 'modal'}>
+            {
+                modalOpen
+                    ? (
+                        <section>
+                            <header>
+                                <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
+                                <p className="header_modal_mosque">{langData.filter}</p>
+                            </header>
+                            <main>
+                                <div className="atttype">
+                                    <div>
+                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att} alt="icon_att"/></button>
+                                        <p>{langData.attraction}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
+                                        <p>{langData.cultFaci}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
+                                        <p>{langData.fest}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
+                                        <p>{langData.sports}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
+                                        <p>{langData.lodg}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
+                                        <p>{langData.shopping}</p>
+                                    </div>
+                                </div>
+                            </main>
+                            <footer className="footer_modal_mosque">
+                                <button className="close" onClick={closeModal}>
+                                    {langData.cancel}
+                                </button>
+                                <button className="close" onClick={setModal}>
+                                    {langData.apply}
+                                </button>
+                            </footer>
+                        </section>
+                    )
+                    : null
+            }
+        </div>
+    </React.Fragment>
+
     return (
         <div>
             <img src={headerImg} className="headerImg" alt="Attraction list"/>
@@ -189,70 +246,12 @@ const Attraction_list = () => {
                         pathname: `./search`,
                         state: {
                             moveTo: moveTo,
-                            filType: option,
                             langData: langData
                         }
                     }}>
                     <img className="backicon" src={backicon} alt="backicon"/></Link>
                 <h1>{langData.attrTitle}</h1>
-                <div className="btn_class_M">
-                    <React.Fragment>
-                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                        <div
-                            className={modalOpen
-                                ? 'openModal modal'
-                                : 'modal'}>
-                            {
-                                modalOpen
-                                    ? (
-                                        <section>
-                                            <header>
-                                                <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
-                                                <p className="header_modal_mosque">{langData.filter}</p>
-                                            </header>
-                                            <main>
-                                                <div className="atttype">
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att} alt="icon_att"/></button>
-                                                        <p>{langData.attraction}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
-                                                        <p>{langData.cultFaci}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
-                                                        <p>{langData.fest}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
-                                                        <p>{langData.sports}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
-                                                        <p>{langData.lodg}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
-                                                        <p>{langData.shopping}</p>
-                                                    </div>
-                                                </div>
-                                            </main>
-                                            <footer className="footer_modal_mosque">
-                                                <button className="close" onClick={closeModal}>
-                                                    {langData.cancel}
-                                                </button>
-                                                <button className="close" onClick={setModal}>
-                                                    {langData.apply}
-                                                </button>
-                                            </footer>
-                                        </section>
-                                    )
-                                    : null
-                            }
-                        </div>
-                    </React.Fragment>
-                </div>
+                <div className="btn_class_M">{attrFilter}</div>
             </div>
             <div className="att_prom">
                 <div className="prom_text_att">
@@ -266,75 +265,12 @@ const Attraction_list = () => {
             </div>
             <div className="header_list">
                 <div className="headerTitle">
-                    <Link
-                        to={{
-                            pathname: `/`,
-                            search: ``,
-                            state: {
-                                langData: langData,
-                                i18n: i18n
-                            }
-                        }}>
+                    <Link to="/">
                         <img src={homeIcon} alt={homeIcon}/></Link>
                     <h1>{langData.attrTitle}</h1>
                 </div>
                 <div className="btn_class_att">
-                    <React.Fragment>
-                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                        <div
-                            className={modalOpen
-                                ? 'openModal modal'
-                                : 'modal'}>
-                            {
-                                modalOpen
-                                    ? (
-                                        <section>
-                                            <header>
-                                                <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
-                                                <p className="header_modal_mosque">{langData.filter}</p>
-                                            </header>
-                                            <main>
-                                                <div className="atttype">
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att} alt="icon_att"/></button>
-                                                        <p>{langData.attraction}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
-                                                        <p>{langData.cultFaci}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
-                                                        <p>{langData.fest}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
-                                                        <p>{langData.sports}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
-                                                        <p>{langData.lodg}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_attr}><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
-                                                        <p>{langData.shopping}</p>
-                                                    </div>
-                                                </div>
-                                            </main>
-                                            <footer className="footer_modal_mosque">
-                                                <button className="close" onClick={closeModal}>
-                                                    {langData.cancel}
-                                                </button>
-                                                <button className="close" onClick={setModal}>
-                                                    {langData.apply}
-                                                </button>
-                                            </footer>
-                                        </section>
-                                    )
-                                    : null
-                            }
-                        </div>
-                    </React.Fragment>
+                    {attrFilter}
                 </div>
             </div>
             {

@@ -8,14 +8,7 @@ import backicon from "../assets/backicon.png";
 import Pagination from './Pagination';
 import noImg from "../assets/noImg.png"
 
-const {kakao} = window;
-const options = {
-    center: new window
-        .kakao
-        .maps
-        .LatLng(33.450701, 126.570667),
-    level: 3
-}
+import { kakao, options } from '../API/kakao';
 
 const Attraction_result = () => {
     const location = useLocation();
