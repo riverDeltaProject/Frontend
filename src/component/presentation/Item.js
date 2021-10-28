@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 import noImg from "../assets/noImg.png"
 
-function Item({rlist, moveTo, code, filType, lang}) {
+function Item({rlist, moveTo, code, filType, langData, i18n}) {
     const history = useHistory();
     const [linkName, setLinkName] = useState("");
     let rlist_tmp = [];
@@ -13,14 +13,15 @@ function Item({rlist, moveTo, code, filType, lang}) {
         setLinkName(rlist[rkey].name);
 
         history.push({
-            pathname: `/${moveTo}_result`,
+            pathname: `/${moveTo}res`,
             search: `?sort=${linkName}`,
             state: {
                 data: data,
                 code: code,
                 moveTo: moveTo,
                 filType: filType,
-                lang: lang
+                langData: langData,
+                i18n : i18n
             }
         })
     }

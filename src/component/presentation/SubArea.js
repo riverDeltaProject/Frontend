@@ -1,7 +1,7 @@
 import {React, useEffect, useState} from 'react';
 import {useHistory} from "react-router-dom";
 
-const SubArea = ({citylist, area, moveTo, lang}) => {
+const SubArea = ({langData, citylist, area, moveTo, i18n}) => {
     const history = useHistory();
     const code = {
         "area": area["area"],
@@ -9,6 +9,7 @@ const SubArea = ({citylist, area, moveTo, lang}) => {
         "city": "",
         "cityCode": ""
     }
+
 
     const areaBtn = (list) => {
         let tmp = [];
@@ -18,30 +19,30 @@ const SubArea = ({citylist, area, moveTo, lang}) => {
             code["city"] = target;
             code["cityCode"] = i + 1
 
-            let type = (moveTo === "restaurant")
+            let type = (moveTo === "rest")
                 ? {
                     "type": [],
                     "friendly": ""
                 }
                 : (
-                    (lang === "KorService")
+                    (i18n === "kr")
                         ? 12
                         : 76
                 );
 
             history.push({
-                pathname: `/${moveTo}_list`,
+                pathname: `/${moveTo}list`,
                 search: `?sort=${target}`,
                 state: {
+                    langData:langData,
                     moveTo: moveTo,
                     code: code,
                     defState: false,
                     optList: type,
-                    lang: lang
+                    i18n:i18n
                 }
             })
         }
-
 
         for (let i = 0; i < list.length; i++) {
             tmp.push(

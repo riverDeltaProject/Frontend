@@ -843,6 +843,7 @@ a {
     font-size: 1.2rem;
     text-align: center;
     margin-block: 1rem;
+    padding:1rem;
 }
 
 .findingHeader{

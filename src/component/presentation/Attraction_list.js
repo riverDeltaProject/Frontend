@@ -28,7 +28,8 @@ const Attraction_list = () => {
     const where = location.state.code;
     const deState = location.state.deState;
     const optionList = location.state.optList;
-    const lang = location.state.lang;
+    const langData = location.state.langData;
+    const i18n = location.state.i18n;
 
     const [currentPage, setCurrentPage] = useState(1);
     const [maindata, setMainData] = useState([]);
@@ -42,32 +43,6 @@ const Attraction_list = () => {
     }, [])
 
     const [modalOpen, setModalOpen] = useState(false);
-
-    const tmp = (lang === "KorService")
-        ? [
-            "관광지",
-            "필터",
-            "관광지",
-            "문화시설",
-            "행사/공연/축제",
-            "레포츠",
-            "숙박",
-            "쇼핑",
-            "취소",
-            "적용"
-        ]
-        : [
-            "Attraction",
-            "Filter",
-            "Attraction",
-            "Cultural facility",
-            "Festival",
-            "Sports",
-            "Lodgment",
-            "Shopping",
-            "Cancel",
-            "Apply"
-        ];
 
     const openModal = () => {
         setModalOpen(true);
@@ -85,6 +60,7 @@ const Attraction_list = () => {
     }
 
     let attList = async (areaCode, cityCode, filType) => {
+        let lang = (i18n === 'kr')? "KorService" : "EngService";
         let url = `http://api.visitkorea.or.kr/openapi/service/rest/${lang}/areaBasedList?ServiceKey=${serviceKey}&contentTypeId=${filType}&areaCode=${areaCode}&numOfRows=40&sigunguCode=${cityCode}&MobileOS=ETC&MobileApp=AppTest`
         // 영어 서비스에서는 URL이 한국 서비스와 다름. 그런데 여기서 시군구를 구분한 결과값이 나오지 않음. 검색하는 쪽에서 시군구를 검색하지
         // 못한다는 제한으로는 가능할 듯
@@ -104,7 +80,7 @@ const Attraction_list = () => {
             state: {
                 moveTo: moveTo,
                 filType: option,
-                lang: lang
+                langData: langData
             }
         })
     }
@@ -169,7 +145,7 @@ const Attraction_list = () => {
     const sel_attr = (e) => {
         target = e.target.parentNode.nextSibling.innerText;
 
-        if (lang === "KorService") {
+        if (i18n === 'kr') {
             switch (target) {
                 case "문화시설":
                     attrType = 14;
@@ -221,7 +197,7 @@ const Attraction_list = () => {
             pathname: `/`,
             search: ``,
             state: {
-                lang: lang
+                langData: langData
             }
         })
     }
@@ -232,7 +208,7 @@ const Attraction_list = () => {
 
             <div className="header2">
                 <img className="backicon" src={backicon} alt="backicon" onClick={goSearch}/>
-                <h1>{tmp[0]}</h1>
+                <h1>{langData.attrTitle}</h1>
                 <div className="btn_class_M">
                     <React.Fragment>
                         <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
@@ -246,42 +222,42 @@ const Attraction_list = () => {
                                         <section>
                                             <header>
                                                 <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
-                                                <p className="header_modal_mosque">{tmp[1]}</p>
+                                                <p className="header_modal_mosque">{langData.filter}</p>
                                             </header>
                                             <main>
                                                 <div className="atttype">
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att} alt="icon_att"/></button>
-                                                        <p>{tmp[2]}</p>
+                                                        <p>{langData.attraction}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
-                                                        <p>{tmp[3]}</p>
+                                                        <p>{langData.cultFaci}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
-                                                        <p>{tmp[4]}</p>
+                                                        <p>{langData.fest}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
-                                                        <p>{tmp[5]}</p>
+                                                        <p>{langData.sports}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
-                                                        <p>{tmp[6]}</p>
+                                                        <p>{langData.lodg}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
-                                                        <p>{tmp[7]}</p>
+                                                        <p>{langData.shopping}</p>
                                                     </div>
                                                 </div>
                                             </main>
                                             <footer className="footer_modal_mosque">
                                                 <button className="close" onClick={closeModal}>
-                                                    {tmp[8]}
+                                                    {langData.cancel}
                                                 </button>
                                                 <button className="close" onClick={setModal}>
-                                                    {tmp[9]}
+                                                    {langData.apply}
                                                 </button>
                                             </footer>
                                         </section>
@@ -305,10 +281,10 @@ const Attraction_list = () => {
             <div className="header_list">
                 <div className="headerTitle">
                     <img src={homeIcon} alt={homeIcon} onClick={goBack}/>
-                    <h1>{tmp[0]}</h1>
+                    <h1>{langData.attrTitle}</h1>
                 </div>
                 <div className="btn_class_att">
-                    <React.Fragment>
+                <React.Fragment>
                         <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
                         <div
                             className={modalOpen
@@ -320,42 +296,42 @@ const Attraction_list = () => {
                                         <section>
                                             <header>
                                                 <img className="icon_reset" src={icon_reset} alt="icon_reset"/>
-                                                <p className="header_modal_mosque">{tmp[1]}</p>
+                                                <p className="header_modal_mosque">{langData.filter}</p>
                                             </header>
                                             <main>
                                                 <div className="atttype">
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att} alt="icon_att"/></button>
-                                                        <p>{tmp[2]}</p>
+                                                        <p>{langData.attraction}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_culture} alt="icon_att_culture"/></button>
-                                                        <p>{tmp[3]}</p>
+                                                        <p>{langData.cultFaci}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_show} alt="icon_att_show"/></button>
-                                                        <p>{tmp[4]}</p>
+                                                        <p>{langData.fest}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_leports} alt="icon_att_leports"/></button>
-                                                        <p>{tmp[5]}</p>
+                                                        <p>{langData.sports}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_stay} alt="icon_att_stay"/></button>
-                                                        <p>{tmp[6]}</p>
+                                                        <p>{langData.lodg}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_attr}><img className="icon_att" src={icon_att_shop} alt="icon_att_shop"/></button>
-                                                        <p>{tmp[7]}</p>
+                                                        <p>{langData.shopping}</p>
                                                     </div>
                                                 </div>
                                             </main>
                                             <footer className="footer_modal_mosque">
                                                 <button className="close" onClick={closeModal}>
-                                                    {tmp[8]}
+                                                    {langData.cancel}
                                                 </button>
                                                 <button className="close" onClick={setModal}>
-                                                    {tmp[9]}
+                                                    {langData.apply}
                                                 </button>
                                             </footer>
                                         </section>
@@ -370,7 +346,7 @@ const Attraction_list = () => {
                 (currentPosts(maindata) === undefined)
                     ? <div className="errorMsg">
                             <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
-                            <div className="noRes">{tmp[1]}</div>
+                            <div className="noRes">{langData.noRes}</div>
                         </div>
                     : <div>
                             <div className="list">
@@ -379,7 +355,8 @@ const Attraction_list = () => {
                                     moveTo={moveTo}
                                     code={where}
                                     filType={option}
-                                    lang={lang}></Item>
+                                    langData={langData}
+                                    i18n = {i18n}></Item>
                             </div>
 
                             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
