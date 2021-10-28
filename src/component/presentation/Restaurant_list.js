@@ -128,6 +128,83 @@ const Restaurant_list = () => {
         return result;
     }
 
+    const filterModal = <React.Fragment>
+        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
+        <div
+            className={modalOpen
+                ? 'openModal modal'
+                : 'modal'}>
+            {
+                modalOpen
+                    ? (
+                        <section>
+                            <header>
+                                <img
+                                    className="icon_reset"
+                                    src={icon_reset}
+                                    alt="icon_reset"
+                                    onClick={resetModal}/>
+                                <p className="header_modal_mosque">{langData.filter}</p>
+                            </header>
+                            <main>
+                                <p className="i18noption">{langData.foodType}</p>
+                                <div>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.buffet}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.asia}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.western}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.india}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.nepal}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.japan}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.china}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.turkey}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.kor}</button>
+                                    <button className="itemList3" onClick={sel_Food}>{langData.etc}</button>
+                                    {/* 3개 이하: 말레이시아, 모로코, 아랍, 이집트, 중동식, 중식, 튀니지, 파키스탄, 프랑스, 우즈베키스탄 분류없음 */}
+                                </div>
+                                <p className="i18noption">{langData.standard}</p>
+                                <div className="foodtype">
+                                    <div>
+                                        <button onClick={sel_Food}><img
+                                            className="icon_halal"
+                                            src={icon_halal_certified}
+                                            alt="icon_halal_certified"/></button>
+                                        <p>{langData.certified}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_Food}><img
+                                            className="icon_halal"
+                                            src={icon_muslim_friendly}
+                                            alt="icon_muslim_friendly"/></button>
+                                        <p>{langData.MusFriendly}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_Food}><img className="icon_halal" src={icon_pork_free} alt="icon_pork_free"/></button>
+                                        <p>{langData.porkFree}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_Food}><img
+                                            className="icon_halal"
+                                            src={icon_self_certified}
+                                            alt="icon_self_certified"/></button>
+                                        <p>{langData.selfCerti}</p>
+                                    </div>
+                                </div>
+                            </main>
+                            <footer className="footer_modal_mosque">
+                                <button className="close" onClick={closeModal}>
+                                    {langData.cancel}
+                                </button>
+                                <button className="close" onClick={setModal}>
+                                    {langData.apply}
+                                </button>
+                            </footer>
+                        </section>
+                    )
+                    : null
+            }
+        </div>
+    </React.Fragment>
+
     // const changeList = (list(optionList)) Pagination
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
@@ -173,94 +250,20 @@ const Restaurant_list = () => {
             <img src={headerImg} className="headerImg" alt="Restraunt list"/>
 
             <div className="header2">
-                <Link to={{
-                    path : './search',
-                    state: {
-                        moveTo: location.state.moveTo,
-                        i18n: i18n,
-                        langData:langData
-                    }
-                }}><img className="backicon" src={backicon} alt="backicon"/></Link>
+                <Link
+                    to={{
+                        path: './search',
+                        state: {
+                            moveTo: location.state.moveTo,
+                            i18n: i18n,
+                            langData: langData
+                        }
+                    }}><img className="backicon" src={backicon} alt="backicon"/></Link>
 
                 <h1>{langData.restTitle}</h1>
 
                 <div className="btn_class_M">
-                    <React.Fragment>
-                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                        <div
-                            className={modalOpen
-                                ? 'openModal modal'
-                                : 'modal'}>
-                            {
-                                modalOpen
-                                    ? (
-                                        <section>
-                                            <header>
-                                                <img
-                                                    className="icon_reset"
-                                                    src={icon_reset}
-                                                    alt="icon_reset"
-                                                    onClick={resetModal}/>
-                                                <p className="header_modal_mosque">{langData.filter}</p>
-                                            </header>
-                                            <main>
-                                                <p className="i18noption">{langData.foodType}</p>
-                                                <div>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.buffet}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.asia}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.western}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.india}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.nepal}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.japan}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.china}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.turkey}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.kor}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.etc}</button>
-                                                    {/* 3개 이하: 말레이시아, 모로코, 아랍, 이집트, 중동식, 중식, 튀니지, 파키스탄, 프랑스, 우즈베키스탄 분류없음 */}
-                                                </div>
-                                                <p className="i18noption">{langData.standard}</p>
-                                                <div className="foodtype">
-                                                    <div>
-                                                        <button onClick={sel_Food}><img
-                                                            className="icon_halal"
-                                                            src={icon_halal_certified}
-                                                            alt="icon_halal_certified"/></button>
-                                                        <p>{langData.certified}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_Food}><img
-                                                            className="icon_halal"
-                                                            src={icon_muslim_friendly}
-                                                            alt="icon_muslim_friendly"/></button>
-                                                        <p>{langData.MusFriendly}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_Food}><img className="icon_halal" src={icon_pork_free} alt="icon_pork_free"/></button>
-                                                        <p>{langData.porkFree}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_Food}><img
-                                                            className="icon_halal"
-                                                            src={icon_self_certified}
-                                                            alt="icon_self_certified"/></button>
-                                                        <p>{langData.selfCerti}</p>
-                                                    </div>
-                                                </div>
-                                            </main>
-                                            <footer className="footer_modal_mosque">
-                                                <button className="close" onClick={closeModal}>
-                                                    {langData.cancel}
-                                                </button>
-                                                <button className="close" onClick={setModal}>
-                                                    {langData.apply}
-                                                </button>
-                                            </footer>
-                                        </section>
-                                    )
-                                    : null
-                            }
-                        </div>
-                    </React.Fragment>
+                    {filterModal}
                 </div>
             </div>
             <div className="att_prom">
@@ -279,82 +282,7 @@ const Restaurant_list = () => {
                     <h1>{langData.restTitle}</h1>
                 </div>
                 <div className="btn_class_att">
-                    <React.Fragment>
-                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                        <div
-                            className={modalOpen
-                                ? 'openModal modal'
-                                : 'modal'}>
-                            {
-                                modalOpen
-                                    ? (
-                                        <section>
-                                            <header>
-                                                <img
-                                                    className="icon_reset"
-                                                    src={icon_reset}
-                                                    alt="icon_reset"
-                                                    onClick={resetModal}/>
-                                                <p className="header_modal_mosque">{langData.filter}</p>
-                                            </header>
-                                            <main>
-                                                <p className="i18noption">{langData.foodType}</p>
-                                                <div>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.buffet}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.asia}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.western}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.india}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.nepal}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.japan}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.china}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.turkey}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.kor}</button>
-                                                    <button className="itemList3" onClick={sel_Food}>{langData.etc}</button>
-                                                    {/* 3개 이하: 말레이시아, 모로코, 아랍, 이집트, 중동식, 중식, 튀니지, 파키스탄, 프랑스, 우즈베키스탄 분류없음 */}
-                                                </div>
-                                                <p className="i18noption">{langData.standard}</p>
-                                                <div className="foodtype">
-                                                    <div>
-                                                        <button onClick={sel_Food}><img
-                                                            className="icon_halal"
-                                                            src={icon_halal_certified}
-                                                            alt="icon_halal_certified"/></button>
-                                                        <p>{langData.certified}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_Food}><img
-                                                            className="icon_halal"
-                                                            src={icon_muslim_friendly}
-                                                            alt="icon_muslim_friendly"/></button>
-                                                        <p>{langData.MusFriendly}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_Food}><img className="icon_halal" src={icon_pork_free} alt="icon_pork_free"/></button>
-                                                        <p>{langData.porkFree}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_Food}><img
-                                                            className="icon_halal"
-                                                            src={icon_self_certified}
-                                                            alt="icon_self_certified"/></button>
-                                                        <p>{langData.selfCerti}</p>
-                                                    </div>
-                                                </div>
-                                            </main>
-                                            <footer className="footer_modal_mosque">
-                                                <button className="close" onClick={closeModal}>
-                                                    {langData.cancel}
-                                                </button>
-                                                <button className="close" onClick={setModal}>
-                                                    {langData.apply}
-                                                </button>
-                                            </footer>
-                                        </section>
-                                    )
-                                    : null
-                            }
-                        </div>
-                    </React.Fragment>
+                    {filterModal}
                 </div>
             </div>
 

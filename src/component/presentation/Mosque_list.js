@@ -115,6 +115,59 @@ const Mosque_list = () => {
         setOption(mosqType);
     }
 
+    const mosqFilter = <React.Fragment>
+        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
+        <div
+            className={modalOpen
+                ? 'openModal modal'
+                : 'modal'}>
+            {
+                modalOpen
+                    ? (
+                        <section>
+                            <header>
+                                <img
+                                    className="icon_reset"
+                                    src={icon_reset}
+                                    alt="icon_reset"
+                                    onClick={resetModal}/>
+                                <p className="header_modal_mosque">{langData.filter}</p>
+                            </header>
+                            <main>
+                                <div className="placetype">
+                                    <div>
+                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                        <p>{langData.mosq}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                        <p>{langData.prayerroom}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                        <p>{langData.worship}</p>
+                                    </div>
+                                    <div>
+                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
+                                        <p>{langData.prayer}</p>
+                                    </div>
+                                </div>
+                            </main>
+                            <footer className="footer_modal_mosque">
+                                <button className="close" onClick={closeModal}>
+                                    {langData.cancel}
+                                </button>
+                                <button className="close" onClick={setModal}>
+                                    {langData.apply}
+                                </button>
+                            </footer>
+                        </section>
+                    )
+                    : null
+            }
+        </div>
+    </React.Fragment>
+
     const goBack = () => {
         history.push({
             pathname: `/`,
@@ -142,60 +195,7 @@ const Mosque_list = () => {
                     }}>
                     <img className="backicon" src={backicon} alt="backicon"/></Link>
                 <h1>{langData.mosqTitle}</h1>
-                <div className="btn_class_M">
-                    <React.Fragment>
-                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                        <div
-                            className={modalOpen
-                                ? 'openModal modal'
-                                : 'modal'}>
-                            {
-                                modalOpen
-                                    ? (
-                                        <section>
-                                            <header>
-                                                <img
-                                                    className="icon_reset"
-                                                    src={icon_reset}
-                                                    alt="icon_reset"
-                                                    onClick={resetModal}/>
-                                                <p className="header_modal_mosque">{langData.filter}</p>
-                                            </header>
-                                            <main>
-                                                <div className="placetype">
-                                                    <div>
-                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{langData.mosq}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{langData.prayerroom}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{langData.worship}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{langData.prayer}</p>
-                                                    </div>
-                                                </div>
-                                            </main>
-                                            <footer className="footer_modal_mosque">
-                                                <button className="close" onClick={closeModal}>
-                                                    {langData.cancel}
-                                                </button>
-                                                <button className="close" onClick={setModal}>
-                                                    {langData.apply}
-                                                </button>
-                                            </footer>
-                                        </section>
-                                    )
-                                    : null
-                            }
-                        </div>
-                    </React.Fragment>
-                </div>
+                <div className="btn_class_M">{mosqFilter}</div>
             </div>
             <div className="att_prom">
                 <div className="prom_text_att">
@@ -209,58 +209,7 @@ const Mosque_list = () => {
                     <h1>{langData.mosqTitle}</h1>
                 </div>
                 <div className="btn_class_att">
-                    <React.Fragment>
-                        <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
-                        <div
-                            className={modalOpen
-                                ? 'openModal modal'
-                                : 'modal'}>
-                            {
-                                modalOpen
-                                    ? (
-                                        <section>
-                                            <header>
-                                                <img
-                                                    className="icon_reset"
-                                                    src={icon_reset}
-                                                    alt="icon_reset"
-                                                    onClick={resetModal}/>
-                                                <p className="header_modal_mosque">{langData.filter}</p>
-                                            </header>
-                                            <main>
-                                                <div className="placetype">
-                                                    <div>
-                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{langData.mosq}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{langData.prayerroom}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{langData.worship}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{langData.prayer}</p>
-                                                    </div>
-                                                </div>
-                                            </main>
-                                            <footer className="footer_modal_mosque">
-                                                <button className="close" onClick={closeModal}>
-                                                    {langData.cancel}
-                                                </button>
-                                                <button className="close" onClick={setModal}>
-                                                    {langData.apply}
-                                                </button>
-                                            </footer>
-                                        </section>
-                                    )
-                                    : null
-                            }
-                        </div>
-                    </React.Fragment>
+                    {mosqFilter}
                 </div>
             </div>
             <div className="list">

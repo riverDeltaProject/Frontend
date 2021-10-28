@@ -94,7 +94,7 @@
         grid-template-columns: 1fr 4fr;
         align-items: center;
         text-align: left;
-        padding: 1.3rem 1rem 0.5rem 1rem;
+        padding: 1.3rem 1rem 0.5rem;
         border: 2px solid #C0DBBD;
         border-radius: 5px;
     }
@@ -103,9 +103,9 @@
         display: block;
     }
 
-    .backicon {
-        width: 3rem;
-        margin-inline: 3%;
+    .backicon,
+    .button_filter {
+        width: 4rem;
         display: block;
     }
 
@@ -113,9 +113,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 0;
+        padding: 1rem 3% 0 3%;
         width: 94%;
-        width: 100%;
         border-bottom: 0.5rem solid #D8E9D7;
         margin: 0.5rem 0;
         text-align: center;
@@ -201,6 +200,7 @@
         cursor: pointer;
         outline: 0;
     }
+
     .icon_reset {
         position: absolute;
         width: 2.5rem;
@@ -251,14 +251,6 @@
 
     .button_filter > img {
         width: 100%;
-    }
-
-    .icon_filter {
-        width: 25%;
-    }
-
-    .icon_filter img {
-        height: 7rem;
     }
 
     .rst_list_img {
@@ -373,7 +365,6 @@
 
     .modal > section {
         /* 모달창 흰배경 */
-
         overflow: auto;
         width: 90%;
         max-width: 80%;
@@ -390,6 +381,12 @@
         padding: 16px;
         border-bottom: 1px solid #dee2e6;
         border-top: 1px solid #dee2e6;
+    }
+
+    main > p {
+        font-size:1.5rem;
+        font-weight: bolder;
+        margin-block: 1rem;
     }
 
     .modal > section > footer {
@@ -723,7 +720,7 @@
     }
 
     .icon_mosque {
-        width: 10rem;
+        width: 8rem;
         height: auto;
         border-radius: 100px;
         border: 2px solid #D8E9D7;
@@ -732,6 +729,11 @@
 
     .langoption {
         font-size: 1.6rem;
+    }
+
+    .FindingCon{
+        padding:0;
+        margin:0;
     }
 
     .foodtype {
@@ -745,8 +747,12 @@
         flex-shrink: 0;
     }
 
+    .foodtype>div>p{
+        font-size:1.3rem;
+    }
+
     .icon_halal {
-        width: 10rem;
+        width: 8rem;
         height: auto;
         background-color: transparent;
     }
@@ -758,7 +764,6 @@
     .btn_class_M {
         display: block;
         width: 5rem;
-        margin-inline: 3%;
     }
 
     .modal > section > header {
@@ -778,24 +783,24 @@
         font-size: 1.6rem;
     }
 
-    .findingHeader{
+    .findingHeader {
         display: none;
     }
 
-    .FindingCon{
-        width:100%;
-        margin:0 auto;
+    .FindingCon {
+        width: 100%;
+        margin: 0 auto;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .findContainer{
+    .findContainer {
         display: block;
     }
 
-    #backImg{
+    #backImg {
         display: none;
     }
 }

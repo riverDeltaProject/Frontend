@@ -15,8 +15,8 @@ export default function SwitchLang({ i18n }) {
   return (
     <div className="switch-languages">
       <select value={currentLang} onChange={(e) => changeLanguage(e)}>
-        <option value="en">English</option>
         <option value="kr">한국어</option>
+        <option value="en">English</option>
       </select>
     </div>
   );
