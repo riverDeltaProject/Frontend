@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom';
 import noImg from "../assets/noImg.png"
 import Notfound from "../assets/notfound.png"
 
-function Item({rlist, moveTo, code, filType, lang}) {
+function Item({rlist, moveTo, code, filType, langData, i18n}) {
     const history = useHistory();
     const [linkName, setLinkName] = useState("");
     let rlist_tmp = [];

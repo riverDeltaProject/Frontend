@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {useLocation, useHistory} from "react-router-dom";
+import {useLocation, Link} from "react-router-dom";
 import Item from "./SubItem_att"
 
 import backicon from "../assets/backicon.png";
@@ -16,7 +16,6 @@ const options = {
 }
 
 const Restaurant_result = () => {
-    const history = useHistory();
     const location = useLocation();
     const container = useRef(null);
 
@@ -25,38 +24,8 @@ const Restaurant_result = () => {
     const about = beforeState.data;
     const code = beforeState.code;
     const moveTo = beforeState.moveTo;
-    const lang = beforeState.lang;
-
-    const tmp = (lang === "KorService")
-        ? [
-            "전화번호",
-            "휴무일",
-            "운영시간",
-            "주소",
-            "할랄 여부",
-            "주차",
-            "오시는 길",
-            "지도를 확대하거나 축소해보세요.",
-            "주변 관광지의 위치가 노란 별로 표시됩니다.",
-            "주변 관광지",
-            "주변 관광지가 없습니다."
-
-        ]
-        : [
-            "Phonenum",
-            "Holiday",
-            "Runtime",
-            "Address",
-            "Halal Friendly",
-            "Parking",
-            "Way to Come",
-            "Zoom in or zoom out on the map.",
-            "The location of nearby tourist attractions is indicated by a yellow star.",
-            "Nearby Attractions",
-            "No Result"
-        ];
-
-    console.log(about.attAddress)
+    const langData = beforeState.langData;
+    const i18n = beforeState.i18n;
 
     const attLoc = (about.attAddress === undefined)
         ? null
@@ -81,7 +50,7 @@ const Restaurant_result = () => {
             .services
             .Geocoder();
 
-        let str = (lang === "KorService")
+        let str = (i18n === "kr")
             ? about.address
             : about
                 .address
@@ -157,25 +126,25 @@ const Restaurant_result = () => {
         return() => {};
     }, [])
 
-    const goBack = () => {
-        history.push({
-            pathname: `/restaurant_list`,
-            search: `?sort=${location
-                .state
-                .code["city"]}`,
-            state: {
-                code: code,
-                moveTo: moveTo,
-                deState: true,
-                optList: beforeState.filType,
-                lang: lang
-            }
-        })
-    }
-
     return (
         <div className="resultContainer">
-            <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
+            <Link
+                to={{
+                    pathname: `/restlist`,
+                    search: `?sort=${location
+                        .state
+                        .code["city"]}`,
+                    state: {
+                        code: code,
+                        moveTo: moveTo,
+                        deState: true,
+                        optList: beforeState.filType,
+                        langData: langData,
+                        i18n: i18n
+                    }
+                }}>
+                <img className="backicon" src={backicon} alt="backicon"/>
+            </Link>
             <div className="resultHeader">
                 <h1>{about.name}</h1>
             </div>
@@ -194,60 +163,61 @@ const Restaurant_result = () => {
                             <div className="subInfo">{}</div>
                         </div>
                         <div className="rst_result_cell">
-                <div>
-                    <div className="Title">
-                        <div className="rst_result_name">{about.name}</div>
-                        <div className="subInfo">{about.foodType}</div>
-                    </div>
-                    <div className="Items">
-                        <div className="infoItem">
-                            <div>{tmp[0]}</div>
-                            <div>{about.phonenum}</div>
+                            <div>
+                                <div className="Title">
+                                    <div className="rst_result_name">{about.name}</div>
+                            <div className="subInfo">{about.foodType}</div>
                         </div>
-                        <div className="infoItem">
-                            <div>{tmp[1]}</div>
-                            <div>{about.holiday}</div>
+                        <div className="Items">
+                            <div className="infoItem">
+                                <div>{langData.phone}</div>
+                                <div>{about.phonenum}</div>
+                            </div>
+                            <div className="infoItem">
+                                <div>{langData.holiday}</div>
+                                <div>{about.holiday}</div>
+                            </div>
+                            <div className="infoItem">
+                                <div>{langData.runtime}</div>
+                                <div>{about.runtime}</div>
+                            </div>
+                            <div className="infoItem longItem">
+                                <div>{langData.restAddr}</div>
+                                <div>{about.address}</div>
+                            </div>
+                            <div className="infoItem">
+                                <div>{langData.standard}</div>
+                                <div>{about.friendly}</div>
+                            </div>
+                            <div className="infoItem">
+                                <div>{langData.parking}</div>
+                                <div>{about.parking}</div>
+                            </div>
                         </div>
-                        <div className="infoItem">
-                            <div>{tmp[2]}</div>
-                            <div>{about.runtime}</div>
-                        </div>
-                        <div className="infoItem longItem">
-                            <div>{tmp[3]}</div>
-                            <div>{about.address}</div>
-                        </div>
-                        <div className="infoItem">
-                            <div>{tmp[4]}</div>
-                            <div>{about.friendly}</div>
-                        </div>
-                        <div className="infoItem">
-                            <div>{tmp[5]}</div>
-                            <div>{about.parking}</div>
-                        </div>
-                    </div>
-                </div>
                     </div>
                 </div>
             </div>
             <div className="rst_result_cell">
-                <h1>{tmp[1]}</h1>
+                <h1>{langData.way}</h1>
                 <div className='myMapMosque' ref={container}/>
+                <div className="normalfont">{langData.zoom}<br/>{langData.zoomLoc}</div>
             </div>
             <div className="rst_result_cell">
-                <h1>{tmp[9]}</h1>
+                <h1>{langData.nearAttr}</h1>
                 {
                     (about.attAddress === undefined)
                         ? <div className="errorMsg">
                                 <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
-                                <div className="noRes">{tmp[10]}</div>
+                                <div className="noRes">{langData.noRes}</div>
                             </div>
-                        : <Item rlistName={attName} rlistAddress={attLoc} lang={lang}/>
+                        : <Item rlistName={attName} rlistAddress={attLoc} langData={langData}/>
                 }
 
             </div>
         </div>
     </div>
-    );
-};
+</div>
+    )
+}
 
-export default Restaurant_result;
+export default Restaurant_result
