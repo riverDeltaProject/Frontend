@@ -3,7 +3,7 @@ import {Link, useLocation, useHistory} from "react-router-dom";
 import Item from './Item.js';
 import Pagination from './Pagination.js';
 import {mosque} from '../API/mosque_list';
-import { mosqueEn } from '../API/mosque_En.js';
+import {mosqueEn} from '../API/mosque_En.js';
 
 import icon_reset from "../assets/icon_reset.png";
 import backicon from "../assets/backicon.png";
@@ -23,29 +23,8 @@ const Mosque_list = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [filter, setFilter] = useState(location.state.deState);
 
-    const lang = location.state.lang;
-
-    const tmp = (lang === "KorService")
-        ? [
-            "모스크",
-            "필터",
-            "성원",
-            "기도실",
-            "예배소",
-            "기도처",
-            "취소",
-            "적용"
-        ]
-        : [
-            "Mosque",
-            "Filter",
-            "Mosque",
-            "Prayer room",
-            "Place of Worship",
-            "Place of Prayer",
-            "Cancel",
-            "Apply"
-        ];
+    const langData = location.state.langData;
+    const i18n = location.state.i18n;
 
     const openModal = () => {
         setModalOpen(true);
@@ -68,7 +47,9 @@ const Mosque_list = () => {
 
     //필터 리스트
     const makeList = () => {
-        let result = (lang === "KorService") ? mosque : mosqueEn;
+        let result = (i18n === "kr")
+            ? mosque
+            : mosqueEn;
 
         if (option === "") {
             setFilter(false);
@@ -90,7 +71,9 @@ const Mosque_list = () => {
     let numOfFirst = currentPage - 4;
     let numOfLast = currentPage + 4;
 
-    let aboutList = (lang==="KorService")? mosque:mosqueEn;
+    let aboutList = (i18n === "kr")
+        ? mosque
+        : mosqueEn;
 
     let mainArr = filter
         ? makeList() //얘는 잘 돌아감
@@ -113,11 +96,11 @@ const Mosque_list = () => {
         }
     }
 
-    if (lastPage === currentPage){
-        if((numOfFirst-8)<=0){
+    if (lastPage === currentPage) {
+        if ((numOfFirst - 8) <= 0) {
             numOfFirst = 1;
-        } else{
-            numOfFirst = currentPage-8
+        } else {
+            numOfFirst = currentPage - 8
         }
     }
 
@@ -137,7 +120,8 @@ const Mosque_list = () => {
             pathname: `/`,
             search: ``,
             state: {
-                lang: location.state.lang
+                langData: langData,
+                i18n: i18n
             }
         })
     }
@@ -147,8 +131,17 @@ const Mosque_list = () => {
             <img src={headerImg} className="headerImg" alt="Mosque list"/>
 
             <div className="header2">
-                <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
-                <h1>{tmp[0]}</h1>
+                <Link
+                    to={{
+                        pathname: `/`,
+                        search: ``,
+                        state: {
+                            langData: langData,
+                            i18n: i18n
+                        }
+                    }}>
+                    <img className="backicon" src={backicon} alt="backicon"/></Link>
+                <h1>{langData.mosqTitle}</h1>
                 <div className="btn_class_M">
                     <React.Fragment>
                         <button className="button_filter" onClick={openModal}><img className="icon_filter" src={icon_filter} alt="icon_filter"/></button>
@@ -166,34 +159,34 @@ const Mosque_list = () => {
                                                     src={icon_reset}
                                                     alt="icon_reset"
                                                     onClick={resetModal}/>
-                                                <p className="header_modal_mosque">{tmp[1]}</p>
+                                                <p className="header_modal_mosque">{langData.filter}</p>
                                             </header>
                                             <main>
                                                 <div className="placetype">
                                                     <div>
                                                         <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{tmp[2]}</p>
+                                                        <p>{langData.mosq}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{tmp[3]}</p>
+                                                        <p>{langData.prayerroom}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{tmp[4]}</p>
+                                                        <p>{langData.worship}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{tmp[5]}</p>
+                                                        <p>{langData.prayer}</p>
                                                     </div>
                                                 </div>
                                             </main>
                                             <footer className="footer_modal_mosque">
                                                 <button className="close" onClick={closeModal}>
-                                                    {tmp[6]}
+                                                    {langData.cancel}
                                                 </button>
                                                 <button className="close" onClick={setModal}>
-                                                    {tmp[7]}
+                                                    {langData.apply}
                                                 </button>
                                             </footer>
                                         </section>
@@ -213,7 +206,7 @@ const Mosque_list = () => {
             <div className="header_list">
                 <div className="headerTitle">
                     <img src={homeIcon} alt={homeIcon} onClick={goBack}/>
-                    <h1>{tmp[0]}</h1>
+                    <h1>{langData.mosqTitle}</h1>
                 </div>
                 <div className="btn_class_att">
                     <React.Fragment>
@@ -232,34 +225,34 @@ const Mosque_list = () => {
                                                     src={icon_reset}
                                                     alt="icon_reset"
                                                     onClick={resetModal}/>
-                                                <p className="header_modal_mosque">{tmp[1]}</p>
+                                                <p className="header_modal_mosque">{langData.filter}</p>
                                             </header>
                                             <main>
                                                 <div className="placetype">
                                                     <div>
                                                         <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{tmp[2]}</p>
+                                                        <p>{langData.mosq}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{tmp[3]}</p>
+                                                        <p>{langData.prayerroom}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{tmp[4]}</p>
+                                                        <p>{langData.worship}</p>
                                                     </div>
                                                     <div>
                                                         <button onClick={sel_mosq}><img className="icon_mosque" src={mosqueicon} alt="mosqueicon"/></button>
-                                                        <p>{tmp[5]}</p>
+                                                        <p>{langData.prayer}</p>
                                                     </div>
                                                 </div>
                                             </main>
                                             <footer className="footer_modal_mosque">
                                                 <button className="close" onClick={closeModal}>
-                                                    {tmp[6]}
+                                                    {langData.cancel}
                                                 </button>
                                                 <button className="close" onClick={setModal}>
-                                                    {tmp[7]}
+                                                    {langData.apply}
                                                 </button>
                                             </footer>
                                         </section>
@@ -276,8 +269,9 @@ const Mosque_list = () => {
                         ? currentPosts(makeList())
                         : currentPosts(aboutList)}
                     filType={option}
-                    moveTo="mosque"
-                    lang={lang}/></div>
+                    moveTo="mosq"
+                    langData={langData}
+                    i18n={i18n}/></div>
             <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}></Pagination>
         </div>
     );

@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {useLocation, useHistory} from "react-router-dom";
+import {useLocation, Link} from "react-router-dom";
 import {restKor} from '../API/rest'
 import {restEn} from '../API/restEn'
 import Item from "./SubItem_rest"
@@ -18,7 +18,6 @@ const options = {
 }
 
 const Attraction_result = () => {
-    const history = useHistory();
     const location = useLocation();
     const container = useRef(null);
     const [currentPage, setCurrentPage] = useState(1);
@@ -28,13 +27,9 @@ const Attraction_result = () => {
     const about = beforeState.data;
     const code = beforeState.code;
     const moveTo = beforeState.moveTo;
-
-    const tmp = (beforeState.lang === "KorService")
-        ? ["주소", "오시는 길", "주변 식당"]
-        : ["Address", "Way to Come", "Nearby Restaurant"];
+    const langData = beforeState.langData;
 
     useEffect(() => {
-
         const map = new window
             .kakao
             .maps
@@ -55,29 +50,13 @@ const Attraction_result = () => {
         return() => {};
     }, [])
 
-    //돌아가기
-    const goBack = () => {
-        history.push({
-            pathname: `/Attraction_list`,
-            search: `?sort=${location
-                .state
-                .code["city"]}`,
-            state: {
-                code: code,
-                moveTo: moveTo,
-                deState: true,
-                lang: beforeState.lang,
-                optList: beforeState.filType
-            }
-        })
-    }
-
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
-    const tmpRest = (beforeState.lang === "KorService")
+    const tmpRest = (beforeState.i18n === "kr")
         ? restKor
         : restEn;
+
     const sugglist = () => {
         let tmp = tmpRest.filter(
             key => key.address.includes(code["city"]) && key.area.includes(code["area"])
@@ -157,7 +136,22 @@ const Attraction_result = () => {
 
     return (
         <div className="resultContainer">
-            <img className="backicon" src={backicon} alt="backicon" onClick={goBack}/>
+            <Link
+                to={{
+                    pathname: `/attrlist`,
+                    search: `?sort=${location
+                        .state
+                        .code["city"]}`,
+                    state: {
+                        code: code,
+                        moveTo: moveTo,
+                        deState: true,
+                        langData: beforeState.langData,
+                        i18n: beforeState.i18n,
+                        optList: beforeState.filType
+                    }
+                }}>
+                <img className="backicon" src={backicon} alt="backicon"/></Link>
             <div className="resultHeader">
                 <h1>{about.title}</h1>
             </div>
@@ -177,18 +171,18 @@ const Attraction_result = () => {
                         </div>
                         <div className="Items">
                             <div className="infoItem longItem">
-                                <div>{tmp[0]}</div>
+                                <div>{langData.addr}</div>
                                 <div>{about.addr1}</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="rst_result_cell">
-                    <h1>{tmp[1]}</h1>
+                    <h1>{langData.way}</h1>
                     <div className='myMapMosque' ref={container}/>
                 </div>
                 <div className="rst_result_cell">
-                    <h1>{tmp[2]}</h1>
+                    <h1>{langData.nearbyRest}</h1>
                     <Item rlist={currentPosts()} code={code} lang={beforeState.lang}/>
                     <Pagination start={numOfFirst} last={numOfLast} paginate={setCurrentPage}/>
                 </div>

@@ -49,7 +49,7 @@ const Home = () => {
                 <div>
                     <div>
                         <h3>{allData.mainTitle}</h3>
-                        {allData.usbTitle}
+                        {allData.subTitle}
                     </div>
                     <Link to="./Howto" className="howto2">{allData.setApp}</Link>
                 </div>
