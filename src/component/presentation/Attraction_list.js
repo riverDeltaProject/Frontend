@@ -48,6 +48,7 @@ const Attraction_list = () => {
         setModalOpen(true);
     }
     const closeModal = () => {
+        setFilter(false);
         setModalOpen(false);
     }
 
