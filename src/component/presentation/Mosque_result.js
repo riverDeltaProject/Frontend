@@ -25,7 +25,13 @@ const Mosque_result = () => {
             .services
             .Geocoder();
 
-        geocoder.addressSearch(about.address, function (result, status) {
+        let str = (i18n === "kr")
+            ? about.address
+            : about
+                .address
+                .match(/\((.*?)\)/)[1]
+        
+        geocoder.addressSearch(str, function (result, status) {
 
             // 정상적으로 검색이 완료됐으면
             if (status === kakao.maps.services.Status.OK) {

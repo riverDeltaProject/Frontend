@@ -3,7 +3,7 @@ export const restEn = [
         "name": " Bombay Grill (Haeundae branch) (봄베이 브로이 해운대점)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "",
+        "Food Type": "",
         "address": "30, Gunam-ro, Haeundae-gu, Busan(부산광역시 해운대구 구남로 30)",
         "phonenum": "010-6889-7818",
         "Website": null,
@@ -17,12 +17,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haeundae Beach, Busan Aquarium, Dongbaek Park",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 해운대해변로 266,부산 해운대구 동백로 99"
     }, {
         "name": " jejucheongun(청운식당)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "285, Ilchul-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주 서귀포시 성산읍 일출로 285)",
         "phonenum": "010-3087-3912",
         "Website": null,
@@ -36,14 +38,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seongsan Ilchulbong Peak, Seopjikoji, Pyoseon Beach, Ilchulbong Land",
+        "attAddress": "제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 성산읍 고성리, 제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 중산간동로 4150-30"
     }, {
         "name": "A La Maison Wine & Dine(알라메종 와인 앤 다인)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western",
-        "address": "Seoul Dragon City, 95, Cheongpa-ro 20-gil, Yongsan-gu, Seoul(서울 용산구 청파로20길 95 " +
-                "서울드래곤시티)",
+        "Food Type": "Western",
+        "address": "Seoul Dragon City, 95, Cheongpa-ro 20-gil, Yongsan-gu, Seoul(서울 용산구 청파로20길 95 서울드래곤시티)",
         "phonenum": "010-4543-1445",
         "Website": null,
         "runtime": "Lunch: 11:30–15:00 / Dinner: 17:30–22:00",
@@ -56,12 +59,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon, Namsan, Myeongdong, Yeouido Hangang Park, Gyeongbokgung Palace, National Museum of Korea, Hongdae, Namdaemun Market",
+        "attAddress": "서울 용산구 이태원동, 서울 용산구 남산공원길 105, 서울 영등포구 여의동로 330 한강사업본부 여의도안내센터, 서울 종로구 사직로 161 경복궁, 서울 용산구 서빙고로 137 국립중앙박물관, 서울 마포구 서교동, 서울 중구 남대문시장4길 21"
     }, {
         "name": "Aangan Restaurant(아건 레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "35, Ewhayeodae 3-gil, Seodaemun-gu, Seoul(서울 서대문구 이화여대3길 35)",
         "phonenum": "010-5643-2043",
         "Website": null,
@@ -75,12 +80,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seodaemun Independence Park",
+        "attAddress": "서울 서대문구 통일로 247 독립문역"
+
     }, {
         "name": "Acube Hotel(에이큐브호텔)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Buffet",
+        "Food Type": "Buffet",
         "address": "5, Dongho-ro 35-gil, Jung-gu, Seoul(서울 중구 동호로35길 5)",
         "phonenum": "010-9913-8143",
         "Website": null,
@@ -94,14 +102,16 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Heunginjimun Gate, Dongdaemun History and Culture Park",
+        "attAddress": "서울 종로구 종로 288 흥인지문,서울 중구 신당동 853"
+
     }, {
         "name": "Ahmed’s Asian Cuisine (아멛 아시안 퀴진 )",
         "friendly": "Self Certified",
         "area": "Jeollabuk-do",
-        "foodType": "Asian",
-        "address": "639, Baekje-daero, Deokjin-gu, Jeonju-si, Jeollabuk-do(전북 전주시 덕진구 백제대로 639 전북 " +
-                "전주시 덕진구 백제대로 639 ,(금암동 1589-1))",
+        "Food Type": "Asian",
+        "address": "639, Baekje-daero, Deokjin-gu, Jeonju-si, Jeollabuk-do(전북 전주시 덕진구 백제대로 639 전북 전주시 덕진구 백제대로 639 ,(금암동 1589-1))",
         "phonenum": "010-2834-6880",
         "Website": null,
         "runtime": "11:00–21:00",
@@ -114,14 +124,16 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jeonju Hanok Village, Jeonju Zoo",
+        "attAddress": "전북 전주시 완산구 기린대로 99, 전북 전주시 덕진구 소리로 68 전주동물원"
+
     }, {
         "name": "Ajabang(아자방)",
         "friendly": "Pork Free",
         "area": "Gyeongsangnam-do",
-        "foodType": "Korean Cuisine",
-        "address": "383-1, 3·15-daero, Masanhappo-gu, Changwon-si, Gyeongsangnam-do(경남 창원시 마산합포구 3" +
-                ".15대로 383-1)",
+        "Food Type": "Korean Cuisine",
+        "address": "383-1, 3·15-daero, Masanhappo-gu, Changwon-si, Gyeongsangnam-do(경남 창원시 마산합포구 3.15대로 383-1)",
         "phonenum": "010-2168-2255",
         "Website": null,
         "runtime": "11:30–21:30",
@@ -134,12 +146,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Changwon Masan Art Museum, Masan Fish Market, Changdong Art Village",
+        "attAddress": "경남 창원시 마산합포구 문신길 147,경남 창원시 마산합포구 복요리로 7,경남 창원시 마산합포구 오동서6길 24"
+
     }, {
         "name": "Aladdin Kebab(알라딘케밥)",
         "friendly": "Self Certified",
         "area": "Incheon",
-        "foodType": "",
+        "Food Type": "",
         "address": "1F, 187, Neungheodae-ro, Yeonsu-gu, Incheon(인천광역시 연수구 능허대로 187, 1층)",
         "phonenum": "010-5106-8031",
         "Website": null,
@@ -153,12 +168,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Songdo Central Park, Incheon Metropolitan City Museum, Incheon Landing Operati on Memorial Hall",
+        "attAddress": "인천 연수구 컨벤시아대로 160,인천 연수구 청량로160번길 26 인천시립박물관,인천 연수구 청량로 138"
+
     }, {
         "name": "AMMA(Hongdae)(아마 홍대점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "10, Yanghwa-ro 16-gil, Mapo-gu, Seoul(서울시 마포구 양화로16길 10)",
         "phonenum": "010-2908-9302",
         "Website": null,
@@ -172,12 +190,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae Street, Idae Street, Sinchon",
+        "attAddress": "서울 마포구 서교동,서울 서대문구 창천동,서울 서대문구 신촌로 90"
     }, {
         "name": "AMMA(Sinchon)(아마 신촌점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 24, Yonsei-ro 7-gil, Seodaemun-gu, Seoul(서울시 서대문구 연세로7길 24 2층)",
         "phonenum": "010-2908-9302",
         "Website": null,
@@ -191,14 +211,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae Street, Idae Street, Sinchon",
+        "attAddress": "서울 마포구 서교동,서울 서대문구 창천동,서울 서대문구 신촌로 90"
     }, {
         "name": "Andogjib(안동집)",
         "friendly": "Pork Free",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Korean Cuisine",
-        "address": "214-6, Jeonseo-ro, Pungcheon-myeon, Andong-si, Gyeongsangbuk-do(경북 안동시 풍천면 전서로" +
-                " 214-6)",
+        "Food Type": "Korean Cuisine",
+        "address": "214-6, Jeonseo-ro, Pungcheon-myeon, Andong-si, Gyeongsangbuk-do(경북 안동시 풍천면 전서로 214-6)",
         "phonenum": "010-6505-7852",
         "Website": null,
         "runtime": "9:00–19:00",
@@ -211,14 +232,16 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hahoe-dong Mask Museum, Buyongdae, Hahoe Village",
+        "attAddress": "경북 안동시 풍천면 전서로 206 박물관,경북 안동시 풍천면 병산길 386,경북 안동시 풍천면 전서로 186"
+
     }, {
         "name": "Andongin Andongzzimdak(안동인 안동찜닭)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangnam-do",
-        "foodType": "Korean Cuisine",
-        "address": "1F, 31, Saman-ro 217beon-gil, Gimhae-si, Gyeongsangnam-do(경남 김해시 삼안로 217번길 31 " +
-                "1층)",
+        "Food Type": "Korean Cuisine",
+        "address": "1F, 31, Saman-ro 217beon-gil, Gimhae-si, Gyeongsangnam-do(경남 김해시 삼안로 217번길 31 1층)",
         "phonenum": "010-6780-6989",
         "Website": null,
         "runtime": "11:00–23:00",
@@ -231,12 +254,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Royal Tomb of King Suro, Tomb of Queen Suro, Gaya Land, Gimhae Gaya Theme Park",
+        "attAddress": "경남 김해시 가락로93번길 26, 경남 김해시 구산동, 경남 김해시 인제로 368 가야랜드, 경남 김해시 가야테마길 161"
     }, {
         "name": "Annapurna Restaurant(안나푸르나레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "45, Buheung-ro 402beon-gil, Bucheon-si, Gyeonggi-do(경기 부천시 부흥로 402번길 45)",
         "phonenum": "010-3237-5390",
         "Website": null,
@@ -250,14 +275,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Woongjin Play City Water City, Woongjin Play City Indoor Ski Resort",
+        "attAddress": "경기 부천시 조마루로 2,경기 부천시 조마루로 2"
     }, {
         "name": "Antalya Dinning(안탈리아다이닝)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Turkish",
-        "address": "2F, B wing, 38, Poseok-ro 1095beon-gil, Gyeongju-si, Gyeongsangbuk-do(경북 경주시 포" +
-                "석로 1095번길 38, B동 2층)",
+        "Food Type": "Turkish",
+        "address": "2F, B wing, 38, Poseok-ro 1095beon-gil, Gyeongju-si, Gyeongsangbuk-do(경북 경주시 포석로 1095번길 38, B동 2층)",
         "phonenum": "010-8607-8780",
         "Website": null,
         "runtime": "12:00–21:30",
@@ -270,14 +296,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Cheomseongdae, Wolseong District, Banwolseong Fortress, Gyeongju National Museum, Gyeongju Oreung. Donggung Goewolji Pond, Hwangnyongsa Temple Site, Tomb of Queen Seongdeok",
+        "attAddress": "경북 경주시 인왕동 839-1, 경북 경주시 인왕동 438-2, 경북 경주시 일정로 186 국립경주박물관, 경북 경주시 탑동, 경북 경주시 원화로 102 안압지, 경북 경주시 구황동, 경북 경주시 조양동 산8"
     }, {
         "name": "Antalya(안탈리아)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Turkish",
-        "address": "1F, 9-3, Daei-ro 83beon-gil, Nam-gu, Pohang-si, Gyeongsangbuk-do(경북 포항시 남구 대이로" +
-                " 83번길 9-3 1층)",
+        "Food Type": "Turkish",
+        "address": "1F, 9-3, Daei-ro 83beon-gil, Nam-gu, Pohang-si, Gyeongsangbuk-do(경북 포항시 남구 대이로 83번길 9-3 1층)",
         "phonenum": "010-8607-8780",
         "Website": null,
         "runtime": "11:00–22:00 (Break: 15:00–17:00)",
@@ -290,12 +317,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hyeongseong River Cruise, Jungmyeong Ecological Park, POSCO History Museum",
+        "attAddress": "경북 포항시 남구 효자동, 경북 포항시 남구 연일읍 중명리 산16, 경북 포항시 남구 동해안로6213번길 14 포스코역사박물관"
     }, {
         "name": "ASALAM(아살람)",
         "friendly": "Halal Certified",
         "area": "Jeju",
-        "foodType": "Arab",
+        "Food Type": "Arab",
         "address": "7, Jungang-ro 2-gil, Jeju-si, Jeju-do (제주특별자치도 제주시 중앙로2길 7 )",
         "phonenum": "010-5090-1470",
         "Website": null,
@@ -309,17 +338,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwandeokjeong, Yongduam, Samseonghyeol",
+        "attAddress": "제주 제주시 관덕로 19 관덕정, 제주 제주시 용담이동, 제주 제주시 삼성로 22"
     }, {
         "name": "Asian Family Restaurant Dongmoon(아시안 패밀리 레스토랑 동문)",
         "friendly": "Halal Certified",
         "area": "Gangwon-do",
-        "foodType": "Asian",
+        "Food Type": "Asian",
         "address": "1, Namiseom-gil, Namsan-myeon, Chuncheon-si, Gangwon-do(강원 춘천시 남산면 남이섬길 1)",
         "phonenum": "031-580-8099",
         "Website": null,
-        "runtime": "Weekdays (Monday–Friday): 9:40–19:00, Weekends (Saturday-Sunday): 9:40–20:30, " +
-                "opening hours extended by 30 min in high season",
+        "runtime": "Weekdays (Monday–Friday): 9:40–19:00, Weekends (Saturday-Sunday): 9:40–20:30, opening hours extended by 30 min in high season",
         "Closed": "Open all year round",
         "No. of seats": 50,
         "parking": "O",
@@ -329,14 +359,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Nami Island, Jade Garden, Gapyeong Rail Park",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1,강원 춘천시 남산면 햇골길 80 제이드가든수목원,경기 가평군 가평읍 장터길 14"
     }, {
         "name": "Asian Live(아시안 라이브)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
-        "address": "2F, InterContinental Seoul COEX, 524, Bongeunsa-ro, Gangnam-gu, Seoul(서울시 강남구 " +
-                "봉은사로 524 인터컨티넨탈 서울 코엑스 2층)",
+        "Food Type": "",
+        "address": "2F, InterContinental Seoul COEX, 524, Bongeunsa-ro, Gangnam-gu, Seoul(서울시 강남구 봉은사로 524 인터컨티넨탈 서울 코엑스 2층)",
         "phonenum": "010-9218-6826",
         "Website": null,
         "runtime": "11:30–22:00, (Break: 14:30–17:30)",
@@ -349,12 +380,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Starfield COEX Mall, COEX Aquarium, Bongeunsa Temple",
+        "attAddress": "서울 강남구 봉은사로 524,서울 강남구 영동대로 513,서울 강남구 봉은사로 531 봉은사"
     }, {
         "name": "BaBa India(바바인디아)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "359, Gangnam-daero, Seocho-gu, Seoul(서울 서초구 강남대로 359)",
         "phonenum": "010-6892-0114",
         "Website": null,
@@ -368,12 +401,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gangnam Station, Seonjeongneung",
+        "attAddress": "서울 강남구 강남대로 396,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "Badajanchi(바다잔치)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "79 Tapdong-ro, Jeju-si, Jeju-do(제주도 제주시 탑동로 79)",
         "phonenum": "010-6789-9394",
         "Website": null,
@@ -387,12 +422,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yongduam Rock, Jeju Island Folklore and Natural History Museum, Samseonghyeol",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 삼성로 22,제주 제주시 삼성로 22"
     }, {
         "name": "Badapunggyeong(바다풍경)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "654, Seohaean-ro, Jeju-si, Jeju-do(제주도 제주시 서해안로 654)",
         "phonenum": "010-4180-4062",
         "Website": null,
@@ -406,14 +443,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yongduam Rock, Halla Arboretum, Jeju Folk Museum",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 수목원길 72,제주 서귀포시 표선면 민속해안로 631-34"
     }, {
         "name": "Baeckjeryung(백제령)",
         "friendly": "Pork Free",
         "area": "Gyeongsangnam-do",
-        "foodType": "Korean Cuisine",
-        "address": "383-4, 3·15-daero, Masanhappo-gu, Changwon-si, Gyeongsangnam-do(경남 창원시 마산합포구 3" +
-                ".15대로 383-4)",
+        "Food Type": "Korean Cuisine",
+        "address": "383-4, 3·15-daero, Masanhappo-gu, Changwon-si, Gyeongsangnam-do(경남 창원시 마산합포구 3.15대로 383-4)",
         "phonenum": "010-2168-2255",
         "Website": null,
         "runtime": "11:30–21:30",
@@ -426,12 +464,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Changdong Art Village, Odong-dong Agujjim Street, Gagopa Koburang-gil Mural Village",
+        "attAddress": "경남 창원시 마산합포구 오동서6길 24,오동동 아구찜거리,가고파 꼬부랑길 벽화마을"
     }, {
         "name": "Bagdad(바그다드)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "",
+        "Food Type": "",
         "address": "38, Seogwang-ro 32-gil, Jeju-si, Jeju-do(제주특별자치도 제주시 서광로 32길 38)",
         "phonenum": "010-8279-0315",
         "Website": null,
@@ -445,12 +485,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Samseonghyeol, Dongmun Market, Yongduam Rock",
+        "attAddress": "제주 제주시 삼성로 22,제주 제주시 동문로 16,제주 제주시 용담이동"
+
     }, {
         "name": "Balaji(바라지레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "73, Dongseong-ro, Jung-gu, Daegu(대구 중구 동성로 73)",
         "phonenum": "010-3047-1960",
         "Website": null,
@@ -464,12 +507,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeongsang Gamyeong Park, Daegu Modern Alley",
+        "attAddress": "대구 중구 경상감영길 99 경상감영공원,대구 중구 국채보상로 567-1"
     }, {
         "name": "Balwoo Gongyang(발우공양)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean (Temple Food) ",
+        "Food Type": "Korean (Temple Food) ",
         "address": "56, Ujeongguk-ro, Jongno-gu, Seoul(서울 종로구 우정국로 56)",
         "phonenum": "010-6237-0406",
         "Website": null,
@@ -483,14 +528,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksugung Palace, Cheonggyecheon Stream, Insadong",
+        "attAddress": "서울 중구 세종대로 99 덕수궁, 서울 종로구 창신동,서울 종로구 인사동"
     }, {
         "name": "Bela Moti(벨라모티)",
         "friendly": "Muslim Friendly",
         "area": "Ulsan",
-        "foodType": "",
-        "address": "3F, Terrace Park B Wing, 652, Bangeojinsunhwando-ro, Dong-gu, Ulsan(울산광역시 동구 방" +
-                "어진순환도로 652, 테라스파크 B동 3층)",
+        "Food Type": "",
+        "address": "3F, Terrace Park B Wing, 652, Bangeojinsunhwando-ro, Dong-gu, Ulsan(울산광역시 동구 방어진순환도로 652, 테라스파크 B동 3층)",
         "phonenum": "010-4569-2369",
         "Website": null,
         "runtime": "11:30–22:00, Break: 15:00–17:30",
@@ -503,12 +549,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bangeojinhang Port, Daewangam Park, Ulgi Lighthouse",
+        "attAddress": "울산 동구 성끝길 2,울산 동구 일산동 산907,울산 동구 등대로 155"
     }, {
         "name": "Benares (Gurodigital Branch)(베나레스 구로디지털점(룸서비스))",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "79, Digital-ro 32-gil, Guro-gu, Seoul(서울 구로구 디지털로 32길 79)",
         "phonenum": "010-8060-9983",
         "Website": null,
@@ -522,12 +570,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Boramae Park",
+        "attAddress": "서울 동작구 여의대방로20길 33"
     }, {
         "name": "Benares (Kyunghee Univ. Branch)(베나레스 경희대점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "23, Hoegi-ro 19-gil, Dongdaemun-gu, Seoul(서울 동대문구 회기로19길 23)",
         "phonenum": "010-8060-9983",
         "Website": null,
@@ -541,12 +591,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "King Sejong the Great Memorial Hall, Hongneung Arboretum",
+        "attAddress": "서울 동대문구 회기로 56,서울 동대문구 회기로 57"
     }, {
         "name": "Benares (Main Branch)(베나레스 본점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "27, Goryeodae-ro 24-gil, Seongbuk-gu, Seoul(서울 성북구 고려대로24길 27)",
         "phonenum": "010-8060-9983",
         "Website": null,
@@ -560,14 +612,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "King Sejong the Great Memorial Hall, Seoul Jeongneung",
+        "attAddress": "서울 동대문구 회기로 56,서울 성북구 아리랑로19길 116"
     }, {
         "name": "beoseosgol(버섯골)",
         "friendly": "Pork Free",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
-        "address": "Beoseotgol, 125, Nongong-ro 5-gil, Nongong-eup, Dalseong-gun, Daegu(대구 달성군 논공읍" +
-                " 논공로5길 125 버섯골)",
+        "Food Type": "Korean Cuisine",
+        "address": "Beoseotgol, 125, Nongong-ro 5-gil, Nongong-eup, Dalseong-gun, Daegu(대구 달성군 논공읍 논공로5길 125 버섯골)",
         "phonenum": "010-5142-0868",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -580,12 +633,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Dodong Seowon, Hwawon Dongsan",
+        "attAddress": "대구 달성군 구지면 도동서원로 1, 대구 달성군 화원읍 사문진로1길 40-14"
     }, {
         "name": "Bihanee(비하니)",
         "friendly": "Muslim Friendly",
         "area": "Incheon",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "13, Gwangjang-ro 24beon-gil, Bupyeong-gu, Incheon(인천 부평구 광장로24번길 13)",
         "phonenum": "010-6773-7933",
         "Website": null,
@@ -599,12 +654,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bupyeong Station Underground Shopping Mall",
+        "attAddress": "인천 부평구 부평대로 69 부평역지하상가"
     }, {
         "name": "Bina (Branch #1)(비나 1호점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "4, Anam-ro 2-gil, Dongdaemun-gu, Seoul(서울 동대문구 안암로 2길 4)",
         "phonenum": "010-7757-6809",
         "Website": null,
@@ -618,12 +675,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "King Sejong the Great Memorial Hall, Seoul Jeongneung",
+        "attAddress": "서울 동대문구 회기로 56,서울 성북구 아리랑로19길 116"
     }, {
         "name": "Bina (Branch #2) (비나 2호점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "3-42, Inchon-ro 24-gil, Seongbuk-gu, Seoul(서울 성북구 인촌로24길 3-42)",
         "phonenum": "010-7757-6809",
         "Website": null,
@@ -637,14 +696,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "King Sejong the Great Memorial Hall, Seoul Jeongneung",
+        "attAddress": "서울 동대문구 회기로 56,서울 성북구 아리랑로19길 116"
     }, {
         "name": "Bitgaram vegan buffet(빛가람채식뷔페)",
         "friendly": "Muslim Friendly",
         "area": "Chungcheongbuk-do",
-        "foodType": "Buffet",
-        "address": "Bitgaram vegan buffet, 256, Allim-ro, Chungju-si, Chungcheongbuk-do(충북 충주시 안림로" +
-                " 256 빛가람채식뷔페)",
+        "Food Type": "Buffet",
+        "address": "Bitgaram vegan buffet, 256, Allim-ro, Chungju-si, Chungcheongbuk-do(충북 충주시 안림로 256 빛가람채식뷔페)",
         "phonenum": "010-2259-5416",
         "Website": null,
         "runtime": "11:00–15:00",
@@ -657,12 +717,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyemyeongsan Recreational Forest, Chungju Dam, Jongdaengi-gil",
+        "attAddress": "충북 충주시 종민동 165, 충북 충주시 동량면 조동리 산180-11, 충북 충주시 충주호수로 1354"
     }, {
         "name": "Bokjinmyun(복진면)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "28, Dokjeongi-gil, Uiwang-si, Gyeonggi-do(경기도 의왕시 독정이길 28)",
         "phonenum": "010-9226-5579",
         "Website": null,
@@ -676,12 +738,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Baekun Lake, Maebongsan Mountain, Cheonggyesa Temple",
+        "attAddress": "경기 의왕시 학의동,강원 영월군 상동읍,경기 의왕시 청계로 475 청계사"
     }, {
         "name": "Bollywood(발리우드)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 9, Gwangnam-ro 130beon-gil, Suyeong-gu, Busan (부산광역시 수영구 광남로 130번길 9, 2층 )",
         "phonenum": "010-4993-9673",
         "Website": null,
@@ -695,12 +759,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwangalli Beach, Gwangan Bridge, Gwangalli Beach Theme Street",
+        "attAddress": "부산 수영구 광안해변로 219,부산 수영구 민락동,부산 수영구 민락동"
     }, {
         "name": "Bombay Brau BIFC Branch(봄베이브로이 BIFC점)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "",
+        "Food Type": "",
         "address": "75, Gwangbok-ro, Jung-gu, Busan(부산광역시 중구 광복로 75)",
         "phonenum": "010-8694-0143",
         "Website": null,
@@ -714,14 +780,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Busan Tower, 40-step Culture and Tourism Theme Street, Gwangbok-ro Culture and Fashion Street",
+        "attAddress": "부산 사하구 신산로 187,부산 중구 중앙동4가,부산 중구 광복로 72-1"
     }, {
         "name": "BOMBAY BRAU(봄베이브로이 판교)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
-        "address": "25, Pangyoyeok-ro 2beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do(경기도 성남시 분당구 " +
-                "판교역로 2번길 25)",
+        "Food Type": "Indian",
+        "address": "25, Pangyoyeok-ro 2beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do(경기도 성남시 분당구 판교역로 2번길 25)",
         "phonenum": "010-5687-7818",
         "Website": null,
         "runtime": "10:30–22:00",
@@ -734,14 +801,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Baekhyeon-dong Cafe Culture Street, Korea Job World, Bundang Central Park",
+        "attAddress": "경기 성남시 분당구 백현동, 경기 성남시 분당구 분당수서로 501, 경기 성남시 분당구 성남대로 550"
     }, {
         "name": "Bombay Grill (Munhyeon branch)(봄베이 브로이 문현점)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "",
-        "address": "3F, Busan International Finance Center Shopping Mall, 40, Munhyeongeumyung-ro," +
-                " Nam-gu, Busan(부산광역시 남구 문현금융로 40, 부산국제금융센터 상가 3층)",
+        "Food Type": "",
+        "address": "3F, Busan International Finance Center Shopping Mall, 40, Munhyeongeumyung-ro, Nam-gu, Busan(부산광역시 남구 문현금융로 40, 부산국제금융센터 상가 3층)",
         "phonenum": "010-6889-7818",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -754,12 +822,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "International Financial Center (BIFC) 63F Sky Lounge, Jeonpo-dong Cafe Street, Seomyeon Food Alley",
+        "attAddress": "서울 중구 명동11길 19 전국은행연합회,부산 부산진구 서전로38번길 43-8 1층,부산 부산진구 부전동"
     }, {
         "name": "Bombay Indian Restaurant(봄베이인도요리전문점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangnam-do",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "74, Yongji-ro, Seongsan-gu, Changwon-si, Gyeongsangnam-do(경남 창원시 성산구 용지로 74)",
         "phonenum": "055-263-4111",
         "Website": null,
@@ -773,12 +843,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Changwon Masan Museum",
+        "attAddress": "경남 창원시 마산합포구 문신길 105 마산시립박물관"
     }, {
         "name": "BOMBAYBRAU Ulsan(봄베이브로이 울산)",
         "friendly": "Muslim Friendly",
         "area": "Ulsan",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "3F, 30-1, Samsanjung-ro 74beon-gil, Nam-gu, Ulsan(울산광역시 남구 삼산중로 74번길30-1 3층)",
         "phonenum": "010-4559-6692",
         "Website": null,
@@ -792,12 +864,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Taehwagang National Garden, Ulsan Bridge Observatory, Ulsan Grand Park",
+        "attAddress": "울산 중구 태화강국가정원길 154, 울산 동구 봉수로 155-1, 울산 남구 대공원로 94"
     }, {
         "name": "BOMBAYBRAU(봄베이브로이 송도)",
         "friendly": "Muslim Friendly",
         "area": "Incheon",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "160, Central-ro, Yeonsu-gu, Incheon(인천광역시 연수구 센트럴로 160)",
         "phonenum": "010-6252-6685",
         "Website": null,
@@ -811,12 +885,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Songdo Central Park, Sorae Port, Waterfront Aam Lake",
+        "attAddress": "인천 연수구 컨벤시아대로 160, 인천 남동구 논현동 111-200, 인천 연수구 송도동 25"
     }, {
         "name": "Bomunhoban Ori(보문호반오리 )",
         "friendly": "Pork Free",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "504-14, Gyeonggam-ro, Gyeongju-si, Gyeongsangbuk-do(경북 경주시 경감로 504-14)",
         "phonenum": "010-9575-9999",
         "Website": null,
@@ -830,14 +906,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Silla Wanggyeong Forest, Hwangnyongsa Temple Site, Gyeongju Donggung Palace and Wolji Pond",
+        "attAddress": "경북 경주시 구황동,경북 경주시 구황동,경북 경주시 원화로 102 안압지"
     }, {
         "name": "Bonghakgoal Garden(봉학골가든)",
         "friendly": "Pork Free",
         "area": "Chungcheongbuk-do",
-        "foodType": "Korean Cuisine",
-        "address": "66, Yonggwang-ro 230beon-gil, Eumseong-eup, Eumseong-gun, Chungcheongbuk-do(충북" +
-                " 음성군 음성읍 용광로 230번길 66)",
+        "Food Type": "Korean Cuisine",
+        "address": "66, Yonggwang-ro 230beon-gil, Eumseong-eup, Eumseong-gun, Chungcheongbuk-do(충북 음성군 음성읍 용광로 230번길 66)",
         "phonenum": "010-5018-2949",
         "Website": null,
         "runtime": "10:00–21:00",
@@ -850,14 +927,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bonghakgol Forest Bathing Area, Baekya Natural Recreational Forest, Gamgok Maegae Holy Mother Pilgrimage Site",
+        "attAddress": "충북 음성군 음성읍 용광로230번길 138,충북 음성군 금왕읍 백야리 산13,충북 음성군 감곡면 성당길 10"
     }, {
         "name": "BUKMUN SEAFOOD(북문해물탕)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "27, Jeongjo-ro 922beon-gil, Jangan-gu, Suwon-si, Gyeonggi-do(경기도 수원시 장안구 정조로92" +
-                "2번길 27)",
+        "Food Type": "Korean Cuisine",
+        "address": "27, Jeongjo-ro 922beon-gil, Jangan-gu, Suwon-si, Gyeonggi-do(경기도 수원시 장안구 정조로922번길 27)",
         "phonenum": "010-5350-9976",
         "Website": null,
         "runtime": "11:00–22:00",
@@ -870,12 +948,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Suwon Hwaseong Fortress, Hwaseong Haenggung Palace, Manseok Park",
+        "attAddress": "경기 수원시 장안구 영화동 320-2, 경기 수원시 팔달구 정조로 825, 경기 수원시 장안구 송죽동 248"
     }, {
         "name": "Busanjip(부산집)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1411, Yocheon-ro, Namwon-si, Jeollabuk-do(전북 남원시 요천로 1411)",
         "phonenum": "010-4941-1428",
         "Website": null,
@@ -889,12 +969,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanghallu, Chunhyang Theme Park",
+        "attAddress": "전북 남원시 요천로 1447, 전북 남원시 양림길 43 춘향문화예술회관"
     }, {
         "name": "Butkkotnadeul Beoseotjip(벚꽃나들버섯집)",
         "friendly": "Pork Free",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "8, Okpo-ro, Okpo-eup, Dalseong-gun, Daegu(대구광역시 달성군 옥포면 옥포로 8)",
         "phonenum": "010-3813-1973",
         "Website": null,
@@ -908,12 +990,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daegu Arboretum, Mabijeong Mural Village, Nampyeongmun Family Headquarters",
+        "attAddress": "대구 달서구 화암로 342 대구수목원관리사무소,대구 달성군 화원읍 마비정길 262-5,대구 달성군 화원읍 인흥3길 16"
     }, {
         "name": "Byeollan Ori(별난오리)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "12, Jong-ro 46-gil, Jongno-gu, Seoul(서울특별시 종로구 종로46길 12)",
         "phonenum": "010-3384-1651",
         "Website": null,
@@ -927,12 +1011,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bukchon Hanok Village, Gyeongbokgung Palace",
+        "attAddress": "서울 종로구 계동길 37,서울 종로구 삼청로 102-12"
     }, {
         "name": "CAFÉ D'ASTI(카페 다스티)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "18, Toegye-ro 20-gil, Jung-gu, Seoul(서울시 중구 퇴계로 20길 18)",
         "phonenum": "",
         "Website": null,
@@ -946,14 +1032,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Namsan Seoul Tower, Ahn Jung-geun Memorial Hall, Myeong-dong",
+        "attAddress": "서울 용산구 남산공원길 105, 서울 중구 소월로 91, 서울 중구 명동2가"
     }, {
         "name": "Café The Garden(카페 더 가든)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Western",
-        "address": "3F, Kangwon Land High1 Grand Hotel Main Tower, 55, Gohan-ro, Gohan-eup, Jeongs" +
-                "eon-gun, Gangwon-do(강원도 정선군 고한읍 고한로 55, 강원랜드 메인호텔 3층)",
+        "Food Type": "Western",
+        "address": "3F, Kangwon Land High1 Grand Hotel Main Tower, 55, Gohan-ro, Gohan-eup, Jeongseon-gun, Gangwon-do(강원도 정선군 고한읍 고한로 55, 강원랜드 메인호텔 3층)",
         "phonenum": "010-3598-0166",
         "Website": null,
         "runtime": "9:00–22:00",
@@ -966,12 +1053,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Kangwon Land Casino, Samtan Art Mine, Jeongamsa Temple",
+        "attAddress": "강원 정선군 사북읍 하이원길 265 강원랜드,강원 정선군 고한읍 함백산로 1445-44,강원 정선군 고한읍 함백산로 1410"
     }, {
         "name": "Café Uzbekiston(카페 우즈베키스탄)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Uzbekista,Russian",
+        "Food Type": "Uzbekista,Russian",
         "address": "159-23, Mareunnae-ro, Jung-gu, Seoul(서울시 중구 마른내로159-23)",
         "phonenum": "",
         "Website": null,
@@ -985,12 +1074,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "DDP, Doota, Gwanghuimun",
+        "attAddress": "서울 중구 을지로 281, 서울 중구 장충단로 275 두산타워빌딩, 서울 중구 광희동2가"
     }, {
         "name": "CAIRO BBQ(카이로바베큐)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Egyptian,Arab",
+        "Food Type": "Egyptian,Arab",
         "address": "45, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울시 용산구 우사단로10길 45)",
         "phonenum": "",
         "Website": null,
@@ -1004,12 +1095,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon Usadan-gil, Itaewon Shopping Street, War Memorial of Korea",
+        "attAddress": "서울 용산구 한남동 763-7, 서울 용산구 이태원동, 서울 용산구 이태원로 29 전쟁기념관"
     }, {
         "name": "Cappadocia(카파도키아)",
         "friendly": "Self Certified",
         "area": "Busan",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "123-9, Geumdan-ro, Geumjeong-gu, Busan(부산 금정구 금단로 123-9)",
         "phonenum": "",
         "Website": null,
@@ -1023,12 +1116,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Beomeosa",
+        "attAddress": "부산 금정구 범어사로 250 범어사"
     }, {
         "name": "CASABLANCA(카사블랑카)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Moroccan",
+        "Food Type": "Moroccan",
         "address": "35, Sinheung-ro, Yongsan-gu, Seoul(서울시 용산구 신흥로 35)",
         "phonenum": "",
         "Website": null,
@@ -1042,12 +1137,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "War Memorial of Korea, Gyeongridan-gil, Namsan Seoul Tower",
+        "attAddress": "서울 용산구 이태원로 29 전쟁기념관, 서울 용산구 이태원동, 서울 용산구 남산공원길 105"
     }, {
         "name": "Chaegundaam(채근담)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "23, Yeoksam-ro 98-gil, Gangnam-gu, Seoul(서울 강남구 역삼로98길 23)",
         "phonenum": "02-555-9173",
         "Website": null,
@@ -1061,12 +1158,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bongeunsa Temple, COEX, Seonjeongneung Tomb",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "Chinjeol Restaurant(친절식당)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "4, Uichong-ro, Namwon-si, Jeollabuk-do(전북 남원시 의총로 4)",
         "phonenum": "010-8642-5103",
         "Website": null,
@@ -1080,12 +1179,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanghallu, Chunhyang Theme Park",
+        "attAddress": "전북 남원시 요천로 1447, 전북 남원시 양림길 43 춘향문화예술회관"
     }, {
         "name": "Chuncheon gomtang(춘천곰탕)",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "23, Soyangjeong-gil, Chuncheon-si, Gangwon-do(강원도 춘천시 소양로 1가 105-25)",
         "phonenum": "010-5216-4787",
         "Website": null,
@@ -1099,12 +1200,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang Maiden Statue, Uiamho Lake, Jungdo attName",
+        "attAddress": "강원 춘천시 영서로 2675,강원 춘천시 서면,강원 춘천시 스포츠타운길223번길 95 1층"
     }, {
         "name": "Chuncheon Ongsimi(춘천옹심이)",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1F, 69, Dangganjiju-gil, Chuncheon-si, Gangwon-do(강원 춘천시 당간지주길 69 1층)",
         "phonenum": "010-7238-7883",
         "Website": null,
@@ -1118,14 +1221,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 칠전동, 강원 춘천시 남산면 강촌로 150, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "CHUNCHEON SEJONG HOTEL(춘천세종호텔)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
-        "address": "Chuncheon Sejong Hotel, 31, Bonguisan-gil, Chuncheon-si, Gangwon-do(강원 춘천시 봉의산" +
-                "길31 춘천세종호텔)",
+        "Food Type": "Korean Cuisine",
+        "address": "Chuncheon Sejong Hotel, 31, Bonguisan-gil, Chuncheon-si, Gangwon-do(강원 춘천시 봉의산길31 춘천세종호텔)",
         "phonenum": "010-4736-2332",
         "Website": null,
         "runtime": "7:00–15:00",
@@ -1138,14 +1242,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "Chuncheon Wonjo Sutbul Dakgalbi(춘천원조숯불닭갈비 )",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
-        "address": "Chuncheon Wonjo Sutbul Dakgalbi, 9, Hyoja-ro, Chuncheon-si, Gangwon-do(강원 춘천시 " +
-                "효자로9 춘천원조숯불닭갈비)",
+        "Food Type": "Korean Cuisine",
+        "address": "Chuncheon Wonjo Sutbul Dakgalbi, 9, Hyoja-ro, Chuncheon-si, Gangwon-do(강원 춘천시 효자로9 춘천원조숯불닭갈비)",
         "phonenum": "010-2874-9271",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -1158,14 +1263,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "CHUNGMYUNG(청명쭈꾸미 철판구이)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "48, Gwonjung-ro 56beon-gil, Gwonseon-gu, Suwon-si, Gyeonggi-do(경기도 수원시 권선구 권중로" +
-                " 56번길 48)",
+        "Food Type": "Korean Cuisine",
+        "address": "48, Gwonjung-ro 56beon-gil, Gwonseon-gu, Suwon-si, Gyeonggi-do(경기도 수원시 권선구 권중로 56번길 48)",
         "phonenum": "",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -1178,12 +1284,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Sindong Cafe Street, Suwon Agricultural and Fishery Wholesale Market",
+        "attAddress": "경기 수원시 영통구 신동, 경기 수원시 권선구 권선동"
     }, {
         "name": "Chunja Daegu-tang(춘자대구탕)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "50, World Cup buk-ro 1-gil, Mapo-gu, Seoul(서울 마포구 월드컵북로1길 50)",
         "phonenum": "010-5323-2652",
         "Website": null,
@@ -1197,14 +1305,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae, Seonyudo Park",
+        "attAddress": "서울 마포구 와우산로 94,서울 영등포구 선유로 343"
     }, {
         "name": "Chunsimine(춘심이네)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
-        "address": "16, Changcheonjungang-ro 24beon-gil, Andeok-myeon, Seogwipo-si, Jeju-do(제주특별자치" +
-                "도 서귀포시 안덕면 창천중앙로24번길 16)",
+        "Food Type": "Korean Cuisine",
+        "address": "16, Changcheonjungang-ro 24beon-gil, Andeok-myeon, Seogwipo-si, Jeju-do(제주특별자치도 서귀포시 안덕면 창천중앙로24번길 16)",
         "phonenum": "010-5764-0080",
         "Website": null,
         "runtime": "10:00–20:00, Break: 15:30–17:00",
@@ -1217,14 +1326,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yongmeori Coast, Andeok Valley, Sanbangsan Mountain",
+        "attAddress": "제주 서귀포시 안덕면 사계리 112-3,제주 서귀포시 안덕면 감산리 1946,제주 서귀포시 안덕면"
     }, {
         "name": "Cjfreshway Koica(CJ프레시웨이 코이카연수센터점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Buffet",
-        "address": "1F, Cjfreshway, KOICA Training Center, 825, Daewangpangyo-ro, Sujeong-gu, Seon" +
-                "gnam-si, Gyeonggi-do(경기 성남시 수정구 대왕판교로825 한국국제협력단 연수센터1층 CJ식당)",
+        "Food Type": "Buffet",
+        "address": "1F, Cjfreshway, KOICA Training Center, 825, Daewangpangyo-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do(경기 성남시 수정구 대왕판교로825 한국국제협력단 연수센터1층 CJ식당)",
         "phonenum": "010-2782-2964",
         "Website": null,
         "runtime": "7:00–20:30",
@@ -1237,14 +1347,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daewang Reservoir, Bundang Central Park, Shingudae Botanical Garden",
+        "attAddress": ""
     }, {
         "name": "COCOMAMA(Sungsan)(코코마마 성산점)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
-        "address": "258-11, Ilchul-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주특별자치도 서귀포시 성산읍 일출로 258" +
-                "-11 .)",
+        "Food Type": "Korean Cuisine",
+        "address": "258-11, Ilchul-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주특별자치도 서귀포시 성산읍 일출로 258-11 .)",
         "phonenum": "010-8663-2457",
         "Website": null,
         "runtime": "10:00–22:00 (Last Order: 20:00)",
@@ -1257,14 +1368,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seongsan Ilchulbong Peak, Seopjikoji, Pyoseon Beach, Ilchulbong Land",
+        "attAddress": "제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 성산읍 고성리, 제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 중산간동로 4150-30"
     }, {
         "name": "COCOMAMA(코코마마)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
-        "address": "1F, 816, Udohaean-gil, Udo-myeon, Jeju-si, Jeju-do(제주특별자치도 제주시 우도면 우도해안길 816 1" +
-                "층)",
+        "Food Type": "Korean Cuisine",
+        "address": "1F, 816, Udohaean-gil, Udo-myeon, Jeju-si, Jeju-do(제주특별자치도 제주시 우도면 우도해안길 816 1층)",
         "phonenum": "010-2417-2388",
         "Website": null,
         "runtime": "11:30–15:00",
@@ -1277,14 +1389,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Udo Island",
+        "attAddress": "제주 제주시 우도면"
     }, {
         "name": "Coffee Shop Sara(커피숍 사라(더 플레이트))",
         "friendly": "Muslim Friendly",
         "area": "Ulsan",
-        "foodType": "",
-        "address": "1F, Hotel Hyundai by Lahan, 875, Bangeojinsunhwando-ro, Dong-gu, Ulsan(울산광역시 동" +
-                "구 방어진순환도로 875, 호텔현대 울산 1층)",
+        "Food Type": "",
+        "address": "1F, Hotel Hyundai by Lahan, 875, Bangeojinsunhwando-ro, Dong-gu, Ulsan(울산광역시 동구 방어진순환도로 875, 호텔현대 울산 1층)",
         "phonenum": "",
         "Website": null,
         "runtime": "7:00–21:30",
@@ -1297,12 +1410,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hyundai Art Park, Daewangam Park, Ulgi Lighthouse",
+        "attAddress": "울산 동구 서부동 1028-1,울산 동구 일산동 산907,울산 동구 등대로 155"
     }, {
         "name": "Continental(신라호텔 콘티넨탈)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "23F, 249, Dongho-ro, Jung-gu, Seoul(서울시 중구 동호로 249 23층)",
         "phonenum": "010-9230-7912",
         "Website": null,
@@ -1316,12 +1431,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Theater, Itaewon, DDP",
+        "attAddress": "서울 중구 장충단로 59,서울 용산구 이태원동,서울 중구 을지로 281"
     }, {
         "name": "Cous Cous(꾸스꾸스)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Tunisian",
+        "Food Type": "Tunisian",
         "address": "16-2, Jahamun-ro 5-gil, Jongno-gu, Seoul(서울 종로구 자하문로5길 16-2)",
         "phonenum": "010-4932-5762",
         "Website": null,
@@ -1335,12 +1452,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bukchon Hanok Village, Gyeongbokgung Palace",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "Dae Won Ga(대원가)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "15, Donam-ro 16-gil, Jeju-si, Jeju-do (제주특별자치도 제주시 도남로16길 15 )",
         "phonenum": "010-6644-0968",
         "Website": null,
@@ -1354,12 +1473,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yongduam, Iho Tewoo Beach, Samseonghyeol",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 이호일동,제주 제주시 삼성로 22"
     }, {
         "name": "Daebok Blowfish Restaurant(대복 복전문점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "12, Hoguk-ro 964beon-gil, Pocheon-si, Gyeonggi-do(경기도 포천시 호국로964번길 12)",
         "phonenum": "010-8928-9991",
         "Website": null,
@@ -1373,12 +1494,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Arboretum, African Art Museum, Pocheon Art Valley",
+        "attAddress": "경기 포천시 소흘읍 광릉수목원로 415,경기 포천시 소흘읍 광릉수목원로 967,경기 포천시 신북면 아트밸리로 234"
     }, {
         "name": "Daegaya Samgyetang(대가야삼계탕)",
         "friendly": "Pork Free",
         "area": "Ulsan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "21, Beonyeong-ro 150beon-gil, Nam-gu, Ulsan(울산광역시 남구 번영로 150번길)",
         "phonenum": "000-0000-0000",
         "Website": null,
@@ -1392,14 +1515,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Taehwagang Grand Park, Ulsan Grand Park, Ulsan Bridge Observatory",
+        "attAddress": "울산 중구 태화강국가정원길 231-2,울산 남구 대공원로 94,울산 동구 봉수로 155-1"
     }, {
         "name": "DAEWANG SAMGYETANG(대왕삼계탕)",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "6, Jeongjo-ro 841beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 정조로841" +
-                "번길 6)",
+        "Food Type": "Korean Cuisine",
+        "address": "6, Jeongjo-ro 841beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 정조로841번길 6)",
         "phonenum": "010-9036-0090",
         "Website": null,
         "runtime": "10:00–21:00",
@@ -1412,12 +1536,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hwaseong Haenggung Palace, Suwon Hwaseong Fortress, Suwon Chicken Street",
+        "attAddress": "경기 수원시 팔달구 정조로 825, 경기 수원시 장안구 영화동 320-2, 경기 수원시 팔달구 팔달로1가 46-2"
     }, {
         "name": "DAFHE RESTAURANT(다페 레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "#201, 3-12, Dongmak-ro 15-gil, Mapo-gu, Seoul(서울시 마포구 독막로15길 3-12 201호)",
         "phonenum": "",
         "Website": null,
@@ -1431,12 +1557,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Sangsu Cafe Street, Hongdae Street",
+        "attAddress": "서울 마포구 상수동  313-7, 서울 마포구 서교동"
     }, {
         "name": "Dakibong Wonjo Chuncheon Dakgalbi(닭이봉 원조춘천닭갈비)",
         "friendly": "Pork Free",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "195, Danggyo-ro, Mungyeong-si, Gyeongsangbuk-do(경북 문경시 당교로 195)",
         "phonenum": "010-7671-8055",
         "Website": null,
@@ -1450,12 +1578,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Old Road Museum, Mungyeong Saejae Provincial Park, Mungyeong Ceramics Museum",
+        "attAddress": "경북 문경시 문경읍 상초리 243-2,경북 문경시 문경읍 새재로 932,경북 문경시 문경읍 문경대로 2416"
     }, {
         "name": "Damiheon(다미헌)",
         "friendly": "Muslim Friendly",
         "area": "Ulsan",
-        "foodType": "Japanese",
+        "Food Type": "Japanese",
         "address": "178, Hwahap-ro, Nam-gu, Ulsan (울산광역시 남구 화합로178 )",
         "phonenum": "010-8549-0007",
         "Website": null,
@@ -1469,12 +1599,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Taehwagang Grand Park, Ulsan Grand Park, Jangsaengpo Whale Ecology Experience Center",
+        "attAddress": "울산 남구 대공원로 94,울산 남구 장생포고래로 244"
     }, {
         "name": "Darshan Namaste(나마스테인서울)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "2F, 309, Jong-ro, Jongno-gu, Seoul(서울시 종로구 종로 309 2층)",
         "phonenum": "",
         "Website": null,
@@ -1488,12 +1620,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "DDP, Heunginjimun, Doota",
+        "attAddress": "서울 중구 을지로 281, 서울 종로구 종로 288 흥인지문, 서울 중구 장충단로 275 두산타워빌딩"
     }, {
         "name": "DAYEON dak galbi(다연닭갈비 )",
         "friendly": "Pork Free",
         "area": "Gwangju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "787-5, Unnam-dong, Gwangsan-gu, Gwangju(광주 광산구 운남동 787-5)",
         "phonenum": "010-8006-3269",
         "Website": null,
@@ -1507,12 +1641,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Asian Art Studio, Cube Art Museum",
+        "attAddress": "광주 광산구 용진로 303, 광주 광산구 소촌로85번길 14-9 큐브미술관"
     }, {
         "name": "delhi dhaba(델리난(델리다바))",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "6-2, Maesan-ro, Paldal-gu, Suwon-si, Gyeonggi-do(경기 수원시 팔달구 매산로 6-2)",
         "phonenum": "010-2560-4050",
         "Website": null,
@@ -1526,12 +1662,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hwaseong Haenggung Palace, Paldalmun Gate",
+        "attAddress": "경기 수원시 팔달구 정조로 825, 경기 수원시 팔달구 정조로 780 팔달문"
     }, {
         "name": "Delhi India(델리인디아)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "8, Dongmak-ro 9-gil, Mapo-gu, Seoul(서울 마포구 독막로9길 8)",
         "phonenum": "010-8925-2109",
         "Website": null,
@@ -1545,14 +1683,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae, Sangsu-dong, Hapjeong-dong",
+        "attAddress": "서울 마포구 와우산로 94,서울 마포구 상수동,서울 마포구 합정동"
     }, {
         "name": "Delhi Palace(델리팰리스)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
-        "address": "#205, 2F, 269-15, Gonghang-daero, Gangseo-gu, Seoul(서울 강서구 공항대로 269-15 2층 205호" +
-                ")",
+        "Food Type": "Indian",
+        "address": "#205, 2F, 269-15, Gonghang-daero, Gangseo-gu, Seoul(서울 강서구 공항대로 269-15 2층 205호)",
         "phonenum": "010-2582-6527",
         "Website": null,
         "runtime": "11:00–14:00, 17:00–22:00",
@@ -1565,18 +1704,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yangcheon Hyanggyo Bridge, Ujangsan Park, Seoul Botanical Garden",
+        "attAddress": "서울 강서구 양천로47나길 53 양천향교, 서울 강서구 공항대로42길 51-22 강서청소년회관, 서울 강서구 마곡동로 161 서울식물원"
     }, {
         "name": "Dongmoon Express (Hongcheon Vivaldi Park)(동문 익스프레스(홍천 비발디파크))",
         "friendly": "Halal Certified",
         "area": "Gangwon-do",
-        "foodType": "Asian",
-        "address": "2F, 262, Hanchigol-gil, Seo-myeon, Hongcheon-gu, Gangwon-do(강원 홍천군 서면 한치골길 262" +
-                " 2층)",
+        "Food Type": "Asian",
+        "address": "2F, 262, Hanchigol-gil, Seo-myeon, Hongcheon-gu, Gangwon-do(강원 홍천군 서면 한치골길 262 2층)",
         "phonenum": "010-3221-1529",
         "Website": null,
-        "runtime": "For daytime ski operations: 8:00–16:30For both daytime and nighttime operation" +
-                "s: 8:00–24:00",
+        "runtime": "For daytime ski operations: 8:00–16:30For both daytime and nighttime operations: 8:00–24:00",
         "Closed": "",
         "No. of seats": 50,
         "parking": "O",
@@ -1586,12 +1725,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongcheon Vivaldi Park, Namnoil Riverside Amusement Park",
+        "attAddress": "강원 홍천군 서면 한치골길 262,강원 홍천군 남면 남노일리 369"
     }, {
         "name": "Dongmyeonghang Saengseon Sutbul Gui(동명항생선숯불구이)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "21, Beonyeong-ro 129beon-gil, Sokcho-si, Gangwon-do(강원 속초시 번영로 129번길 21)",
         "phonenum": "010-5791-5050",
         "Website": null,
@@ -1605,14 +1746,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yeongrangho Lake, Abai Village",
+        "attAddress": "강원 속초시 장사동,강원 속초시 청호로 122"
     }, {
         "name": "Dongwon Tuna(동원참치)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Japanese",
-        "address": "#204, 2B, Lotte Castle, 109, Mapo-daero, Mapo-gu, Seoul(서울 마포구 공덕동 467 지2층롯데캐슬" +
-                "B204호)",
+        "Food Type": "Japanese",
+        "address": "#204, 2B, Lotte Castle, 109, Mapo-daero, Mapo-gu, Seoul(서울 마포구 공덕동 467 지2층롯데캐슬 B204호)",
         "phonenum": "010-8756-6331",
         "Website": null,
         "runtime": "11:00–22:00 (Break: 15:00–16:50)",
@@ -1625,12 +1767,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Assembly Building, Hyochang Park, Seoul Station, Yongsan Electronics Market, Ichon Hangang Park, Hongdae Street",
+        "attAddress": "서울 영등포구 의사당대로 1, 서울 용산구 효창동, 서울 중구 한강대로 405 서울역, 서울 용산구 한강로2가, "
     }, {
         "name": "Dubai(두바이)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Middle Eastern",
+        "Food Type": "Middle Eastern",
         "address": "192, Itaewon-ro, Yongsan-gu, Seoul(서울특별시 용산구 이태원로 192)",
         "phonenum": "010-9123-1418",
         "Website": null,
@@ -1644,14 +1788,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "War Memorial of Korea, Gyeongridan-gil, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 이태원로 29 전쟁기념관,서울 용산구 이태원동,서울 용산구 이태원로 177"
     }, {
         "name": "DUCKDAM(덕담)",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "2F, Terrace Garden, 21, Cheongmyeongnam-ro 34beon-gil, Yeongtong-gu, Suwon-si," +
-                " Gyeonggi-do(경기도 수원시 영통구 청명남로34번길 21 테라스가든 2층)",
+        "Food Type": "Korean Cuisine",
+        "address": "2F, Terrace Garden, 21, Cheongmyeongnam-ro 34beon-gil, Yeongtong-gu, Suwon-si, Gyeonggi-do(경기도 수원시 영통구 청명남로34번길 21 테라스가든 2층)",
         "phonenum": "010-2922-9531",
         "Website": null,
         "runtime": "11:30–22:00",
@@ -1664,14 +1809,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Suwon Gopchang Alley, Suwon Children’s Transportation Park, Seocheon Ecological Park",
+        "attAddress": "경기 수원시 영통구 영통동, 경기 수원시 영통구 덕영대로 1570, 경기 용인시 기흥구 서천동 713"
     }, {
         "name": "Dullegil Sutbul Dakgalbi(둘레길숯불닭갈비 )",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "1F, 33, Gapyeongjebang-gil, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기 가평군 가평읍" +
-                " 가평제방길 33 1층)",
+        "Food Type": "Korean Cuisine",
+        "address": "1F, 33, Gapyeongjebang-gil, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기 가평군 가평읍 가평제방길 33 1층)",
         "phonenum": "010-6710-2085",
         "Website": null,
         "runtime": "11:00–21:00",
@@ -1684,12 +1830,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Nami Island, Jara Island",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1, 경기 가평군 가평읍 달전리 1-1"
     }, {
         "name": "Durga (Gimhae Branch)(두르가 김해점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangnam-do",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "38, Guji-ro 180beon-gil, Gimhae-si, Gyeongsangnam-do(경남 김해시 구지로180번길 38)",
         "phonenum": "010-6668-3812",
         "Website": null,
@@ -1703,12 +1851,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Tomb of King Gimhaesuro",
+        "attAddress": "경남 김해시 가락로93번길 26"
     }, {
         "name": "Durga (Jonggak-Branch)(두르가 종각점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "5, Jong-ro 8-gil, Jongno-gu, Seoul(서울 종로구 종로8길 5)",
         "phonenum": "010-9944-4786",
         "Website": null,
@@ -1722,12 +1872,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanghwamun Square, Insa-dong, Cheonggyecheon",
+        "attAddress": "서울 종로구 세종대로 172,서울 종로구 인사동,서울 종로구 창신동"
     }, {
         "name": "Durga (Main Branch) (두르가 본점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "19, Jong-ro, Jongno-gu, Seoul(서울 종로구 종로 19)",
         "phonenum": "010-9944-4786",
         "Website": null,
@@ -1741,12 +1893,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanghwamun Square, Insa-dong, Cheonggyecheon",
+        "attAddress": "서울 종로구 세종대로 172,서울 종로구 인사동,서울 종로구 창신동"
     }, {
         "name": "Durga (Uijeongbu Branch)(두르가 의정부점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "50, Taepyeong-ro 73beon-gil, Uijeongbu-si, Gyeonggi-do (경기도 의정부시 태평로73번길 50 )",
         "phonenum": "010-9944-4786",
         "Website": null,
@@ -1760,12 +1914,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Uijeongbu Budaejjigae Street",
+        "attAddress": "경기 의정부시 태평로137번길 22-1"
     }, {
         "name": "Durga (Yeouido Branch)(두르가 여의도점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "37, Gukjegeumyung-ro 2-gil, Yeongdeungpo-gu, Seoul(서울 영등포구 국제금융로2길 37)",
         "phonenum": "010-9944-4786",
         "Website": null,
@@ -1779,12 +1935,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yeouido Hangang Park, 63 Square",
+        "attAddress": "서울 영등포구 여의동로 330 한강사업본부 여의도안내센터,서울 영등포구 63로 50 한화금융센터_63"
     }, {
         "name": "Eid(이드)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "67, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울 용산구 우사단로10길 67)",
         "phonenum": "010-2995-8281",
         "Website": null,
@@ -1798,12 +1956,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "Eobu(어부)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "10, Gunam-ro 12beon-gil, Haeundae-gu, Busan(부산광역시 해운대구 구남로12번길 10)",
         "phonenum": "010-4939-8121",
         "Website": null,
@@ -1817,12 +1977,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haeundae Beach, The Bay 101, Haeundae Dalmaji-gil",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 동백로 52 더베이101,부산 해운대구 달맞이길 190"
     }, {
         "name": "Eomma Gomtang (엄마곰탕)",
         "friendly": "Pork Free",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "545-14, Bomun-ro, Gyeongju-si, Gyeongsangbuk-do(경북 경주시 보문로 545-14)",
         "phonenum": "010-3549-1767",
         "Website": null,
@@ -1836,12 +1998,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bunhwangsa Temple, East-West Three-story Stone Pagoda in Cheongun-dong, Gyeongju World Amusement",
+        "attAddress": "경북 경주시 분황로 94-11 분황사,경북 경주시 천군동 550-1,경경북 경주시 보문로 544 경주월드/서라벌청소년수련관"
     }, {
         "name": "EZINDIA(이지인디아)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "3F, 20, Yonsei-ro, Seodaemun-gu, Seoul(서울시 서대문구 연세로 20 3층)",
         "phonenum": "010-2720-4315",
         "Website": null,
@@ -1855,14 +2019,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Sinchon Idae Street, Gyeongui Seonchaek Street",
+        "attAddress": "서울 서대문구 창천동, 서울 마포구 와우산로37길 35"
     }, {
         "name": "Familia (Imperial Palace Hotel)(패밀리아 (임페리얼팰리스 호텔))",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Buffet",
-        "address": "1F, Imperial Palace Hotel, 640, Eonju-ro, Gangnam-gu, Seoul (서울 강남구 언주로 640, 임" +
-                "피리얼팰리스호텔 1층 )",
+        "Food Type": "Buffet",
+        "address": "1F, Imperial Palace Hotel, 640, Eonju-ro, Gangnam-gu, Seoul (서울 강남구 언주로 640, 임피리얼팰리스호텔 1층 )",
         "phonenum": "010-6202-9520",
         "Website": null,
         "runtime": "7:00–22:00",
@@ -1875,19 +2040,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bongeunsa Temple, COEX, Seonjeongneung Tomb",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "Feast(피스트)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Buffet",
-        "address": "41F, Sheraton Seoul D Cube City Hotel, 662, Gyeongin-ro, Guro-gu, Seoul(서울특별시 " +
-                "구로구 경인로 662, 쉐라톤서울 디큐브시티호텔 41층)",
+        "Food Type": "Buffet",
+        "address": "41F, Sheraton Seoul D Cube City Hotel, 662, Gyeongin-ro, Guro-gu, Seoul(서울특별시 구로구 경인로 662, 쉐라톤서울 디큐브시티호텔 41층)",
         "phonenum": "010-9322-2614",
         "Website": null,
-        "runtime": "Breakfast Buffet: 6:30–10:00 (Monday–Sunday), Lunch Buffet: 12:00–14:30 (Monda" +
-                "y–Friday), 11:00–13:00, 13:30–15:30 (Saturday–Sunday), Dinner Buffet: 18:00–21" +
-                ":30 (Monday–Friday), 17:30–19:30, 20:00–22:00 (Saturday), 18:00–21:30 (Sunday)",
+        "runtime": "Breakfast Buffet: 6:30–10:00 (Monday–Sunday), Lunch Buffet: 12:00–14:30 (Monday–Friday), 11:00–13:00, 13:30–15:30 (Saturday–Sunday), Dinner Buffet: 18:00–21:30 (Monday–Friday), 17:30–19:30, 20:00–22:00 (Saturday), 18:00–21:30 (Sunday)",
         "Closed": "Open all year round",
         "No. of seats": 160,
         "parking": "O",
@@ -1897,19 +2061,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Mullae Creative Village, Guro-dong Chinese Street, Mario Outlet",
+        "attAddress": "서울 영등포구 도림로128가길 13-8,서울 구로구 공원로 73-1,서울 금천구 디지털로9길 23 마리오2 패션타워"
     }, {
         "name": "Food Exchange(푸드 익스체인지)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
-        "address": "Seoul Dragon City, 95, Cheongpa-ro 20-gil, Yongsan-gu, Seoul(서울 용산구 청파로20길 95 " +
-                "서울드래곤시티)",
+        "Food Type": "Indian",
+        "address": "Seoul Dragon City, 95, Cheongpa-ro 20-gil, Yongsan-gu, Seoul(서울 용산구 청파로20길 95 서울드래곤시티)",
         "phonenum": "010-4543-1445",
         "Website": null,
-        "runtime": "(Breakfast) Monday–Friday: 6:30–10:00 / Saturday–Sunday: 6:30–10:30(Lunch) Mon" +
-                "day–Sunday: 12:00–14:30(Dinner) Monday–Friday: 18:30–21:30 / Saturday: First h" +
-                "alf at 17:30–19:30, second half at 20:00–22:00 / Sunday: 18:30–21:30",
+        "runtime": "(Breakfast) Monday–Friday: 6:30–10:00 / Saturday–Sunday: 6:30–10:30(Lunch) Monday–Sunday: 12:00–14:30(Dinner) Monday–Friday: 18:30–21:30 / Saturday: First half at 17:30–19:30, second half at 20:00–22:00 / Sunday: 18:30–21:30",
         "Closed": "",
         "No. of seats": 200,
         "parking": "O",
@@ -1919,12 +2082,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon, Namsan, Myeongdong, Yeouido Hangang Park, Gyeongbokgung Palace, National Museum of Korea, Hongdae, Namdaemun Market",
+        "attAddress": "서울 용산구 이태원동, 서울 용산구 남산공원길 105, 서울 중구 명동2가, 서울 영등포구 여의동로 330 한강사업본부 여의도안내센터, 서울 종로구 사직로 161 경복궁, 서울 용산구 서빙고로 137 국립중앙박물관, 서울 마포구 서교동, 서울 중구 남대문시장4길 21"
     }, {
         "name": "Foreign Restaurant(포렌 레스토랑)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "42, Usadan-ro, Yongsan-gu, Seoul(서울 용산구 우사단로 42)",
         "phonenum": "010-8745-6205",
         "Website": null,
@@ -1938,12 +2103,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "fortune(파르투내)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Uzbekista,Russian",
+        "Food Type": "Uzbekista,Russian",
         "address": "154, Mareunnae-ro, Jung-gu, Seoul(서울시 중구 마른내로 154)",
         "phonenum": "",
         "Website": null,
@@ -1957,14 +2124,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "DDP, Doota, Gwanghuimun",
+        "attAddress": "서울 중구 을지로 281, 서울 중구 장충단로 275 두산타워빌딩, 서울 중구 광희동2가"
     }, {
         "name": "Ganges Hanyang Uni.(겐지스 한양대점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
-        "address": "3F, Hanyang Jeil Building, 6, Sageundong-gil, Seongdong-gu, Seoul (서울 성동구 사근동길" +
-                " 6 한양제일빌딩 3층 )",
+        "Food Type": "",
+        "address": "3F, Hanyang Jeil Building, 6, Sageundong-gil, Seongdong-gu, Seoul (서울 성동구 사근동길 6 한양제일빌딩 3층 )",
         "phonenum": "010-2468-9392",
         "Website": null,
         "runtime": "11:00–22:00",
@@ -1977,12 +2145,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Ttukseom Park, Seoul Forest, Dongdaemun",
+        "attAddress": "서울 광진구 자양동 112, 서울 성동구 뚝섬로 273, 서울 종로구 종로 288 흥인지문"
     }, {
         "name": "Gasiri(가시리)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "Japanese",
+        "Food Type": "Japanese",
         "address": "13, Miwon 3-gil, Gunsan-si, Jeollabuk-do(군산시 미원3길 13)",
         "phonenum": "010-6514-4613",
         "Website": null,
@@ -1996,12 +2166,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gunsan Modern History Museum, Jinpo Marine Theme Park, Gyeongamdong Railroad Village",
+        "attAddress": "전북 군산시 해망로 240,전북 군산시 내항2길 32 진포해양테마공원,전북 군산시 경촌4길 14"
     }, {
         "name": "GOBONG SAMGYETANG(고봉삼계탕 수원영통점)",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "329, Yeongtong-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do(경기도 수원시 영통구 영통로 329)",
         "phonenum": "",
         "Website": null,
@@ -2015,12 +2187,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yeongheung Park, Suwon Children’s Transportation Park, Yeongdeok Respia",
+        "attAddress": "경기 수원시 영통구 영통동 20-1, 경기 수원시 영통구 덕영대로 1570, 경기 용인시 기흥구 흥덕1로 43"
     }, {
         "name": "Gohyang Meokgeori(고향먹거리)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "21, Geumseong-ro, Gangneung-si, Gangwon-do (강원 강릉시 금성로 21 )",
         "phonenum": "033-643-2828",
         "Website": null,
@@ -2034,14 +2208,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Anmok Beach, Ojukheon, Gangneung Seongyojang",
+        "attAddress": "강원 강릉시 창해로14번길 20-1,강원 강릉시 율곡로3139번길 24 오죽헌,강원 강릉시 운정길 63 선교장"
     }, {
         "name": "Goldjjimdak geoje1(일미리금계찜닭 거제1호점 )",
         "friendly": "Pork Free",
         "area": "Gyeongsangnam-do",
-        "foodType": "Korean Cuisine",
-        "address": "2F, Samsung Building, 70, Seomun-ro, Geoje-si, Gyeongsangnam-do(경남 거제시 서문로 70 " +
-                "삼성빌딩2 층)",
+        "Food Type": "Korean Cuisine",
+        "address": "2F, Samsung Building, 70, Seomun-ro, Geoje-si, Gyeongsangnam-do(경남 거제시 서문로 70 삼성빌딩2 층)",
         "phonenum": "010-4494-1775",
         "Website": null,
         "runtime": "11:00–22:00 (Break: 15:00–17:00)",
@@ -2054,12 +2229,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Geoje Wind Hill, Prisoner's Water",
+        "attAddress": "경남 거제시 남부면 갈곶리 산14-47, 경남 거제시 계룡로 61 거제포로수용소유적공원"
     }, {
         "name": "Goma Daegutang(고마대구탕)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "127, Gwanganhaebyeon-ro, Suyeong-gu, Busan(부산광역시 수영구 광안해변로 127)",
         "phonenum": "010-8536-3387",
         "Website": null,
@@ -2073,14 +2250,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwangalli Beach Theme Street, Gwangan Bridge, Gwangalli Ocean Light Museum",
+        "attAddress": "부산 수영구 민락동,부산 수영구 민락동,부산 수영구 광안해변로 219"
     }, {
         "name": "Grand Hilton Seoul Atrium Café(그랜드 힐튼 서울 에이트리움 카페)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine,Western",
-        "address": "Basement Lobby, Grand Hilton Seoul, 353, Yeonhui-ro, Seodaemun-gu, Seoul(서울특별시" +
-                " 서대문구 연희로 353, 그랜드힐튼 호텔 지하 로비층)",
+        "Food Type": "Korean Cuisine,Western",
+        "address": "Basement Lobby, Grand Hilton Seoul, 353, Yeonhui-ro, Seodaemun-gu, Seoul(서울특별시 서대문구 연희로 353, 그랜드힐튼 호텔 지하 로비층)",
         "phonenum": "010-9289-3137",
         "Website": null,
         "runtime": "12:00–22:00",
@@ -2093,19 +2271,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Ansan Jarak-gil, Ansan Cherry Blossom Garden, Sangam Digital Media City",
+        "attAddress": "서울 서대문구 봉원동 산1,서울 서대문구 연희동,서울 마포구 상암동"
     }, {
         "name": "Grand Hilton Seoul Buffet Restaurant(그랜드 힐튼 서울 뷔페레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Buffet",
-        "address": "Basement Lobby, Grand Hilton Seoul, 353, Yeonhui-ro, Seodaemun-gu, Seoul(서울특별시" +
-                " 서대문구 연희로 353, 그랜드힐튼 호텔 지하 로비층)",
+        "Food Type": "Buffet",
+        "address": "Basement Lobby, Grand Hilton Seoul, 353, Yeonhui-ro, Seodaemun-gu, Seoul(서울특별시 서대문구 연희로 353, 그랜드힐튼 호텔 지하 로비층)",
         "phonenum": "010-9289-3137",
         "Website": null,
-        "runtime": "Breakfast: 7:00–10:00 (Monday–Saturday), 7:00–10:30 (Sundays and holidays), Lu" +
-                "nch: 12:00–14:30 (Monday–Saturday), 12:00–15:00 (Sundays and holidays), Dinner" +
-                ": 18:00–21:30 (Monday–Friday), 17:30–21:30 (Saturday–Sunday and holidays)",
+        "runtime": "Breakfast: 7:00–10:00 (Monday–Saturday), 7:00–10:30 (Sundays and holidays), Lunch: 12:00–14:30 (Monday–Saturday), 12:00–15:00 (Sundays and holidays), Dinner: 18:00–21:30 (Monday–Friday), 17:30–21:30 (Saturday–Sunday and holidays)",
         "Closed": "Open all year round",
         "No. of seats": 210,
         "parking": "O",
@@ -2115,17 +2292,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Ansan Jarak-gil, Ansan Cherry Blossom Garden, Sangam Digital Media City",
+        "attAddress": "서울 서대문구 봉원동 산1,서울 서대문구 연희동,서울 마포구 상암동"
     }, {
         "name": "Grand Kitchen(그랜드 키친)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Buffet",
+        "Food Type": "Buffet",
         "address": "521, Teheran-ro, Gangnam-gu, Seoul(서울시 강남구 테헤란로 521)",
         "phonenum": "010-5115-7634",
         "Website": null,
-        "runtime": "Weekday lunch 11:30–14:30, dinner 18:00–21:30 Please contact the restaurant re" +
-                "garding the opening hours on weekends.",
+        "runtime": "Weekday lunch 11:30–14:30, dinner 18:00–21:30 Please contact the restaurant regarding the opening hours on weekends.",
         "Closed": "Open throughout the year",
         "No. of seats": 210,
         "parking": "O",
@@ -2135,12 +2313,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "COEX, Bongeunsa, Seonjeongneung",
+        "attAddress": "서울 강남구 영동대로 513, 서울 강남구 봉은사로 531 봉은사, 서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "GUNGJUNG SAMGYETANG(궁중삼계탕)",
         "friendly": "Pork Free",
         "area": "Incheon",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "23, Hagikso-ro 63beon-gil, Michuhol-gu, Incheon(인천광역시 남구 학익소로 63번길 23)",
         "phonenum": "010-9882-4586",
         "Website": null,
@@ -2154,12 +2334,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Incheon Munhak Stadium, Incheon Chinatown, Jajangmyeon Museum",
+        "attAddress": "인천 미추홀구 매소홀로 618,인천 중구 차이나타운로26번길 12-17,인천 중구 차이나타운로 56-14"
     }, {
         "name": "Gurkha Restaurant(구르카 레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "4F, 16-1, Myeongdong 10-gil, Jung-gu, Seoul(서울특별시 중구 명동10길 16-1, 4층)",
         "phonenum": "010-4595-8337",
         "Website": null,
@@ -2173,12 +2355,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Incheon Munhak Stadium, Incheon Chinatown, Jajangmyeon Museum",
+        "attAddress": "인천 미추홀구 매소홀로 618,인천 중구 차이나타운로26번길 12-17,인천 중구 차이나타운로 56-14"
     }, {
         "name": "Haechon(해촌)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "220, Ilchul-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주 서귀포시 성산읍 일출로 220)",
         "phonenum": "010-3693-0678",
         "Website": null,
@@ -2192,12 +2376,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seongsan Ilchulbong Peak, Seopjikoji, Pyoseon Beach, Ilchulbong Land",
+        "attAddress": "제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 성산읍 고성리, 제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 중산간동로 4150-30"
     }, {
         "name": "Haesu Jeonbok(해수전복)",
         "friendly": "Muslim Friendly",
         "area": "Ulsan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "37, Dotjil-ro, Nam-gu, Ulsan (울산광역시 남구 돋질로 37 )",
         "phonenum": "010-9392-1523",
         "Website": null,
@@ -2211,14 +2397,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jangsaengpo Whale Culture Village, Jangsaengpo Whale Museum, Jangsaengpo Whale Sea Tour",
+        "attAddress": "울산광역시 남구 매암동 209-1, 울산광역시 남구 장생포고래로 244, 울산광역시 남구 야음장생포동 장생포고래로 210"
     }, {
         "name": "Hahoematjib(하회맛집)",
         "friendly": "Pork Free",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Korean Cuisine",
-        "address": "214-6, Jeonseo-ro, Pungcheon-myeon, Andong-si, Gyeongsangbuk-do(경북 안동시 풍천면 전서로" +
-                " 214-6)",
+        "Food Type": "Korean Cuisine",
+        "address": "214-6, Jeonseo-ro, Pungcheon-myeon, Andong-si, Gyeongsangbuk-do(경북 안동시 풍천면 전서로 214-6)",
         "phonenum": "010-6330-9990",
         "Website": null,
         "runtime": "9:30–20:00",
@@ -2231,12 +2418,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hahoe-dong Mask Museum, Hahoe Village, Okyeonjeongsa Temple",
+        "attAddress": "경북 안동시 풍천면 전서로 206 박물관,경북 안동시 풍천면 전서로 186,경북 안동시 풍천면 광덕솔밭길 86"
     }, {
         "name": "HALAL INDIAN RESTAURANT(할랄 인디안레스토랑)",
         "friendly": "Self Certified",
         "area": "Gyeonggi-do",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 43, Jogang-ro, Tongjin-eup, Gimpo-si, Gyeonggi-do(경기도김포시 통진읍 조강로 43 2층)",
         "phonenum": "010-7598-4669",
         "Website": null,
@@ -2250,14 +2439,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gimpo International Sculpture Park, Daemyeong Port, Tea Ceremony Museum",
+        "attAddress": "경기 김포시 월곶면 고막리 435-14,경기 김포시 대곶면 대명리,경기 김포시 월곶면 애기봉로275번길 187-49"
     }, {
         "name": "Halmae Chuncheon Dakgalbi(할매 춘천닭갈비)",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "1F, 1108, Bukhangangbyeon-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기 가평군 가" +
-                "평읍 북한강변로 1108 1층)",
+        "Food Type": "Korean Cuisine",
+        "address": "1F, 1108, Bukhangangbyeon-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기 가평군 가평읍 북한강변로 1108 1층)",
         "phonenum": "010-8754-3523",
         "Website": null,
         "runtime": "7:30–19:30",
@@ -2270,12 +2460,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Nami Island, Jara Island",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1, 경기 가평군 가평읍 달전리 1-1"
     }, {
         "name": "Hamcho ganjanggejang(함초간장게장)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "27, Myeongdong 8ga-gil, Jung-gu, Seoul(서울시 중구 명동8가길 27)",
         "phonenum": "010-3467-7489",
         "Website": null,
@@ -2289,12 +2481,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Myeongdong, Myeongdong Cathedral, Namsan Seoul Tower",
+        "attAddress": "서울 중구 명동2가,서울 중구 명동길 74,서울 용산구 남산공원길 105"
     }, {
         "name": "Hamyang Otdak(함양옻닭)",
         "friendly": "Pork Free",
         "area": "Ulsan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "6, Wangsaeng-ro 40beon-gil, Nam-gu, Ulsan(울산광역시 남구 왕생로 40번길 6)",
         "phonenum": "010-4566-1117",
         "Website": null,
@@ -2308,12 +2502,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Taehwagang Grand Park, Ulsan Grand Park, Ulsan Bridge Observatory",
+        "attAddress": "울산광역시 중구 태화동 969-12, 울산 남구 대공원로 94,울산 동구 봉수로 155-1"
     }, {
         "name": "Hello India-Alwaha (Haeundae Branch) (헬로 인디아 알와하)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "23, Gunam-ro, Haeundae-gu, Busan(부산 해운대구 구남로 23)",
         "phonenum": "010-4516-2015",
         "Website": null,
@@ -2327,12 +2523,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haeundae Beach, Dongbaekseom Island, Haeundae Dalmaji-gil",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 우동 710-1,부산 해운대구 달맞이길 190"
     }, {
         "name": "HELLOINDIA(헬로인디아)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "#102, 1F, 9, Yeonnam-ro 3-gil, Mapo-gu, Seoul(서울 마포구 연남로3길 9 1층 102호)",
         "phonenum": "010-9686-2120",
         "Website": null,
@@ -2346,12 +2544,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae Street, Seonyudo Park, Gyeongui Line Forest Park",
+        "attAddress": "서울 마포구 서교동, 서울 영등포구 선유로 343, 서울 마포구 연남동"
     }, {
         "name": "Hibiscuss((주)파티나라하이비스)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Buffet",
+        "Food Type": "Buffet",
         "address": "2F, 102, Tongil-ro, Jung-gu, Seoul(서울특별시 중구 통일로 102, 2층)",
         "phonenum": "010-3158-5112",
         "Website": null,
@@ -2365,14 +2565,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Fantastic performance, Deoksugung Doldam-gil, Seoul Museum of History",
+        "attAddress": "서울 종로구 대학로 146 4층 판타스틱전용관,서울 중구 세종대로19길 24 영국대사관,서울 종로구 새문안로 55"
     }, {
         "name": "Himalaya Garden(히말라야정원)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
-        "address": "19, Gwongwang-ro 180beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 권광로" +
-                "180번길 19)",
+        "Food Type": "Indian",
+        "address": "19, Gwongwang-ro 180beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 권광로 180번길 19)",
         "phonenum": "010-2182-6870",
         "Website": null,
         "runtime": "11:30–23:00",
@@ -2385,12 +2586,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeonggi Cultural Center, Ingye Art Park, Suwon Olympic Park",
+        "attAddress": "경기 수원시 팔달구 효원로307번길 20 경기아트센터,경기 수원시 팔달구 동수원로 335 경기도문화의전당,경기 수원시 권선구 효원로256번길 16"
     }, {
         "name": "starcatering(스타케이터링 )",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "28, Noksapyeong-daero 46-gil, Yongsan-gu, Seoul (서울 용산구 녹사평대로46길 28)",
         "phonenum": "010-9788-7761",
         "Website": null,
@@ -2404,12 +2607,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "O",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "O"
+        "Halal-certified ingredients used": "O",
+        "attName": "Seonyudo Park, Yeouido National Assembly Building, Dangsan Station Water Taxi, Saetgang",
+        "attAddress": "서울 영등포구 선유로 343, 서울 영등포구 의사당대로 1, 서울 영등포구 당산동 101-2, 서울 영등포구 여의도동"
     }, {
         "name": "Hotel LOTTE room service(롯데호텔 룸서비스)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western",
+        "Food Type": "Western",
         "address": "30, Eulji-ro, Jung-gu, Seoul(서울시 중구 을지로30)",
         "phonenum": "010-2696-2306",
         "Website": null,
@@ -2423,14 +2628,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksugung Palace, Seoul City Hall, Sungnyemun",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 중구 세종대로 110 서울특별시청,서울 중구 세종대로 40"
     }, {
         "name": "Hurgsiru(흙시루)",
         "friendly": "Pork Free",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
-        "address": "28, Chaseong-ro 451beon-gil, Gijang-eup, Gijang-gun, Busan(부산 기장군 기장읍 차성로451번길" +
-                " 28)",
+        "Food Type": "Korean Cuisine",
+        "address": "28, Chaseong-ro 451beon-gil, Gijang-eup, Gijang-gun, Busan(부산 기장군 기장읍 차성로451번길 28)",
         "phonenum": "010-8524-2908",
         "Website": null,
         "runtime": "11:30–22:00",
@@ -2443,12 +2649,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haedong Yonggungsa Temple",
+        "attAddress": "부산 기장군 기장읍 용궁길 86 해동용궁사"
     }, {
         "name": "hwang's DoKkaebi house charcoal grilled chicken ribs(황쓰도깨비집 숯불닭갈비 )",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "11, Geumgang-ro 62beon-gil, Chuncheon-si, Gangwon-do(강원 춘천시 금강로 62번길 11)",
         "phonenum": "011-9050-2464",
         "Website": null,
@@ -2462,12 +2670,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "Hwangtae Maeul(황태마을 )",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "20-1, Chunghon-gil 8beon-gil, Chuncheon-si, Gangwon-do(강원 춘천시 충혼길8번길 20-1)",
         "phonenum": "010-7143-3356",
         "Website": null,
@@ -2481,14 +2691,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "HWAREMU(화레무 광명역점)",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Asian",
-        "address": "#116, Building 1, 22, Iljik-ro, Gwangmyeong-si, Gyeonggi-do(경기도 광명시 일직로 22 1동 " +
-                "116호)",
+        "Food Type": "Asian",
+        "address": "#116, Building 1, 22, Iljik-ro, Gwangmyeong-si, Gyeonggi-do(경기도 광명시 일직로 22 1동  116호)",
         "phonenum": "010-9643-1206",
         "Website": null,
         "runtime": "17:00–01:00",
@@ -2501,14 +2712,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwangmyeong Cave, Kihyeongdo Cultural Park, IKEA Gwangmyeong Branch",
+        "attAddress": "경기 광명시 가학로85번길 142, 경기 광명시 일직동 499, 경기 광명시 일직로 17 IKEA광명점"
     }, {
         "name": "HWAREMU(화레무 송도점)",
         "friendly": "Pork Free",
         "area": "Incheon",
-        "foodType": "Asian",
-        "address": "1F, Acria, 13, Sinsong-ro 125beon-gil, Yeonsu-gu, Incheon(인천광역시 연수구 신송로125번길 1" +
-                "3 아크리아 1층)",
+        "Food Type": "Asian",
+        "address": "1F, Acria, 13, Sinsong-ro 125beon-gil, Yeonsu-gu, Incheon(인천광역시 연수구 신송로125번길 13 아크리아 1층)",
         "phonenum": "",
         "Website": null,
         "runtime": "17:00–01:00",
@@ -2521,12 +2733,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Songdo Central Park, Sorae Port, Sorae Wetland Ecological Park",
+        "attAddress": "인천 연수구 컨벤시아대로 160, 인천 남동구 논현동 111-200, 인천 남동구 논현동 1-55"
     }, {
         "name": "HWAREMU(화레무 인천논현점)",
         "friendly": "Pork Free",
         "area": "Incheon",
-        "foodType": "Asian",
+        "Food Type": "Asian",
         "address": "1F, 77, Nongogae-ro, Namdong-gu, Incheon(인천광역시 남동구 논고개로 77 1층)",
         "phonenum": "010-9643-1206",
         "Website": null,
@@ -2540,12 +2754,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Sorae Port, Sorae Wetland Ecological Park",
+        "attAddress": "인천 남동구 논현동 111-200, 인천 남동구 논현동 1-55"
     }, {
         "name": "Hyangjeokwon(향적원)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Korean (Temple Food) ",
+        "Food Type": "Korean (Temple Food) ",
         "address": "131, Bulguk-ro, Gyeongju-si, Gyeongsangbuk-do(경북 경주시 불국로 131)",
         "phonenum": "010-3133-8460",
         "Website": null,
@@ -2559,12 +2775,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeongju Bulguksa Temple, Gyeongju Seokguram Grotto",
+        "attAddress": "경북 경주시 불국로 385 불국사,경북 경주시 불국로 873-243 석굴암"
     }, {
         "name": "Hyeon Restaurant(현식당)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "8, Uichong-ro, Namwon-si, Jeollabuk-do(전북 남원시 의총로 8)",
         "phonenum": "010-2445-6187",
         "Website": null,
@@ -2578,12 +2796,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanghalluwon Garden, Namwon Museum of Local Culture, People's Gun",
+        "attAddress": "전북 남원시 요천로 1447, 전북 남원시 양림길 14-9 남원향토박물관, 전북 남원시 만인로 3 만인의총"
     }, {
         "name": "Hyeongje Yukhoe(형제육회본점)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "200-1, Jong-ro, Jongno-gu, Seoul(서울시 종로구 종로 200-1)",
         "phonenum": "",
         "Website": null,
@@ -2597,12 +2817,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwangjang Market, Jongmyo Shrine, Heunginjimun Gate",
+        "attAddress": "서울 종로구 창경궁로 88, 서울 종로구 종로 157, 서울 종로구 종로 288 흥인지문"
     }, {
         "name": "ILDOSSI(Bangbae)(일도씨닭갈비 방배점)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "4, Bangbae-ro 8-gil, Seocho-gu, Seoul(서울시 서초구 방배로8길 4)",
         "phonenum": "010-4062-6372",
         "Website": null,
@@ -2616,14 +2838,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bangbae Park, Seoul Arts Center, Sadang, Seoripul Park",
+        "attAddress": "서울 서초구 방배동 산24-2,서울 서초구 남부순환로 2406,서울 동작구 사당동,서울 서초구 서초동 1005-6"
     }, {
         "name": "ILDOSSI(Bundang)(일도씨닭갈비 분당점)",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "3F, CGV Square, 20, Tancheonsang-ro 151beon-gil, Bundang-gu, Seongnam-si, Gyeo" +
-                "nggi-do(경기도 성남시 분당구 탄천상로151번길 20 CGV스퀘어 3층)",
+        "Food Type": "Korean Cuisine",
+        "address": "3F, CGV Square, 20, Tancheonsang-ro 151beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do(경기도 성남시 분당구 탄천상로151번길 20 CGV스퀘어 3층)",
         "phonenum": "010-4062-6372",
         "Website": null,
         "runtime": "10:10–22:00",
@@ -2636,14 +2859,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Suwon Hwaseong Fortress, Korean Folk Village, Everland",
+        "attAddress": "경기 수원시 장안구 영화동 320-2,경기 용인시 기흥구 민속촌로 90 한국민속촌,경기 용인시 처인구 포곡읍 에버랜드로 199"
     }, {
         "name": "ILDOSSI(Gwanghwamun)(일도씨닭갈비 광화문점)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
-        "address": "B2, Seoul Finance Center, 136, Sejong-daero, Jung-gu, Seoul(서울시 중구 세종대로 136 파이" +
-                "낸스센터 지하 2층)",
+        "Food Type": "Korean Cuisine",
+        "address": "B2, Seoul Finance Center, 136, Sejong-daero, Jung-gu, Seoul(서울시 중구 세종대로 136 파이낸스센터 지하 2층)",
         "phonenum": "010-3591-7209",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -2656,12 +2880,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanghwamun Square, Gyeongbokgung Palace, National Museum of Modern and Contemporary Art",
+        "attAddress": "서울 종로구 세종대로 172,서울 종로구 사직로 161 경복궁,서울 종로구 삼청로 30"
     }, {
         "name": "ILDOSSI(Mia)(일도씨닭갈비 미아점)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "8-13, Dobong-ro 10ga-gil, Gangbuk-gu, Seoul(서울시 강북구 도봉로10가길 8-13)",
         "phonenum": "010-4062-6372",
         "Website": null,
@@ -2675,14 +2901,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Lotte Department Store Mia Branch, North Seoul Forest, Y Square",
+        "attAddress": "서울 강북구 도봉로 62 롯데백화점미아점,서울 강북구 월계로 173,서울 강북구 도봉로 52"
     }, {
         "name": "ILDOSSI(Mokdong)(일도씨닭갈비 목동점)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
-        "address": "3F, Hyundai 41 Tower, 293, Mokdongdong-ro, Yangcheon-gu, Seoul(서울시 양천구 목동동로 29" +
-                "3 현대41타워 3층)",
+        "Food Type": "Korean Cuisine",
+        "address": "3F, Hyundai 41 Tower, 293, Mokdongdong-ro, Yangcheon-gu, Seoul(서울시 양천구 목동동로 293 현대41타워 3층)",
         "phonenum": "010-4062-6372",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -2695,12 +2922,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Mokdong Sports Complex, Seonyudo Park",
+        "attAddress": "서울 양천구 안양천로 939,서울 영등포구 선유로 343"
     }, {
         "name": "Ilpumdang Premium(일품당 프리미엄)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Japanese",
+        "Food Type": "Japanese",
         "address": "3F, Sejong Club, 1, Naesu-dong, Jongno-gu, Seoul(서울 종로구 내수동 1번지 세종클럽 3층)",
         "phonenum": "010-2585-0626",
         "Website": null,
@@ -2714,14 +2943,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeongbokgung Palace, Blue House Sarangchae, Seochon Village",
+        "attAddress": "서울 종로구 사직로 161 경복궁,서울 종로구 효자동 150,서울 종로구 필운대로 45"
     }, {
         "name": "In Style(인 스타일)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western",
-        "address": "In Style, 7F, Seoul Dragon City, (Hangang-ro 3-ga), 95, Cheongpa-ro 20-gil, Yo" +
-                "ngsan-gu, Seoul (서울 용산구 청파로20길 95 7층 인 스타일 (한강로3가, 서울드래곤시티))",
+        "Food Type": "Western",
+        "address": "In Style, 7F, Seoul Dragon City, (Hangang-ro 3-ga), 95, Cheongpa-ro 20-gil, Yongsan-gu, Seoul (서울 용산구 청파로20길 95 7층 인 스타일 (한강로3가, 서울드래곤시티))",
         "phonenum": "010-4543-1445",
         "Website": null,
         "runtime": "Breakfast: 6:30–10:00",
@@ -2734,12 +2964,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon, Namsan, Myeongdong, Yeouido Hangang Park, Gyeongbokgung Palace, National Museum of Korea, Hongdae, Namdaemun Market",
+        "attAddress": "서울 용산구 이태원동, 서울 용산구 남산공원길 105, 서울 영등포구 여의동로 330 한강사업본부 여의도안내센터, 서울 종로구 사직로 161 경복궁, 서울 용산구 서빙고로 137 국립중앙박물관, 서울 마포구 서교동, 서울 중구 남대문시장4길 21"
     }, {
         "name": "INDIA HOUSE(인도하우스)",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "",
+        "Food Type": "",
         "address": "648, Seoicheon-ro, Majang-myeon, Icheon-si, Gyeonggi-do(경기도 이천시 마장면 서이천로 648)",
         "phonenum": "010-4480-0912",
         "Website": null,
@@ -2753,14 +2985,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeonggi Ceramic Museum, Hwadam Forest, Everland",
+        "attAddress": "경기 이천시 신둔면 도자예술로6번길 121,경기 광주시 도척면 도척윗로 278-1,경기 용인시 처인구 포곡읍 에버랜드로 199"
     }, {
         "name": "INDIAN CURRY(인디안 커리 )",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "",
-        "address": "Sinyeong Palace Tower, 21, Hwangsaeul-ro 360beon-gil, Bundang-gu, Seongnam-si," +
-                " Gyeonggi-do (경기 성남시 분당구 서현동 246-2 신영팰리스타워 )",
+        "Food Type": "",
+        "address": "Sinyeong Palace Tower, 21, Hwangsaeul-ro 360beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do (경기 성남시 분당구 서현동 246-2 신영팰리스타워 )",
         "phonenum": "010-2879-2011",
         "Website": null,
         "runtime": "11:00–22:00",
@@ -2773,12 +3006,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Korea Job World, Pangyo Techno Valley, Yuldong Park",
+        "attAddress": "경기 성남시 분당구 분당수서로 501, 경기 성남시 분당구 대왕판교로645번길 12, 경기 성남시 분당구 문정로 72"
     }, {
         "name": "Indian Night Market(인도야시장)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "1F, 11-4, Gangnam-daero 96-gil, Gangnam-gu, Seoul(서울 강남구 강남대로96길 11-4 지상 1층)",
         "phonenum": "010-6550-4568",
         "Website": null,
@@ -2792,12 +3027,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Sebitseom, Hyeonchungwon, Seoul Seolleung, National Museum of Korea",
+        "attAddress": "서울 서초구 올림픽대로 2085-14 세빛섬, 서울 동작구 동작동 271-18, 서울 강남구 선릉로100길 1 선릉정릉, 서울 용산구 서빙고로 137 국립중앙박물관"
     }, {
         "name": "Indo Bangnanggi(인도방랑기)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "",
+        "Food Type": "",
         "address": "81, Daehak-ro, Buk-gu, Daegu(대구광역시 북구 대학로 81)",
         "phonenum": "010-9367-3207",
         "Website": null,
@@ -2811,14 +3048,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Loaded Island, Bulo-dong Tombs, Ayang Railway",
+        "attAddress": "대구 북구 노곡동 665,대구 동구 불로동 산1-16,대구 동구 지저동"
     }, {
         "name": "Indra(인드라)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangbuk-do",
-        "foodType": "",
-        "address": "1F, 93, Hyeongsangangbuk-ro, Nam-gu, Pohang-si, Gyeongsangbuk-do(경북 포항시 남구 형산강" +
-                "북로 93 1층)",
+        "Food Type": "",
+        "address": "1F, 93, Hyeongsangangbuk-ro, Nam-gu, Pohang-si, Gyeongsangbuk-do(경북 포항시 남구 형산강북로 93 1층)",
         "phonenum": "010-7134-1478",
         "Website": null,
         "runtime": "11:00–22:00",
@@ -2831,14 +3069,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jukdo Market, Pohang Canal, Yeongildae Beach",
+        "attAddress": "경북 포항시 북구 죽도시장13길 13 포항수산종합어시장,경북 포항시 남구 해도동  537,경북 포항시 북구 두호동 685-1"
     }, {
         "name": "InterContinental Alpensia Pyeongchang Resort(Montblanc)(알펜시아호텔리조트 몽블랑)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Western",
-        "address": "1F, Holiday Inn Resort Alpensia Pyeongchang, 325, Solbong-ro, Daegwallyeong-my" +
-                "eon, Pyeongchang-gun, Gangwon-do(강원도 평창군 대관령면 솔봉로 325 홀리데이인리조트호텔 1층)",
+        "Food Type": "Western",
+        "address": "1F, Holiday Inn Resort Alpensia Pyeongchang, 325, Solbong-ro, Daegwallyeong-myeon, Pyeongchang-gun, Gangwon-do(강원도 평창군 대관령면 솔봉로 325 홀리데이인리조트호텔 1층)",
         "phonenum": "010-4782-5990",
         "Website": null,
         "runtime": "Breakfast: 7:00–11:00Lunch and Dinner: 12:00–20:00Last Order: 21:30",
@@ -2851,14 +3090,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Alpensia Resort, Yongpyong Ski Resort",
+        "attAddress": "강원 평창군 대관령면 솔봉로 325, 강원 평창군 대관령면 올림픽로 715"
     }, {
         "name": "InterContinental Alpensia Pyeongchang Resort(Playbus)(알펜시아호텔리조트 플레이버스)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Buffet",
-        "address": "1F, InterContinental Alpensia Pyeongchang Resort, 325, Solbong-ro, Daegwallyeo" +
-                "ng-myeon, Pyeongchang-gun, Gangwon-do(강원도 평창군 대관령면 솔봉로 325 인터컨티넨탈 호텔 1층)",
+        "Food Type": "Buffet",
+        "address": "1F, InterContinental Alpensia Pyeongchang Resort, 325, Solbong-ro, Daegwallyeong-myeon, Pyeongchang-gun, Gangwon-do(강원도 평창군 대관령면 솔봉로 325 인터컨티넨탈 호텔 1층)",
         "phonenum": "010-4782-5990",
         "Website": null,
         "runtime": "Breakfast: 6:30–11:00Lunch and Dinner: 12:00–22:00Last Order: 21:30",
@@ -2871,14 +3111,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Alpensia Resort, Yongpyong Ski Resort",
+        "attAddress": "강원 평창군 대관령면 솔봉로 325, 강원 평창군 대관령면 올림픽로 715"
     }, {
         "name": "InterContinental Alpensia Pyeongchang Resort(알펜시아호텔리조트 컨벤션센터)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Buffet",
-        "address": "1F, InterContinental Alpensia Pyeongchang Resort, 325, Solbong-ro, Daegwallyeo" +
-                "ng-myeon, Pyeongchang-gun, Gangwon-do(강원도 평창군 대관령면 솔봉로 325 인터컨티넨탈 호텔 1층)",
+        "Food Type": "Buffet",
+        "address": "1F, InterContinental Alpensia Pyeongchang Resort, 325, Solbong-ro, Daegwallyeong-myeon, Pyeongchang-gun, Gangwon-do(강원도 평창군 대관령면 솔봉로 325 인터컨티넨탈 호텔 1층)",
         "phonenum": "010-5400-1537",
         "Website": null,
         "runtime": "Check reservations",
@@ -2891,12 +3132,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Alpensia Resort, Yongpyong Ski Resort",
+        "attAddress": "강원 평창군 대관령면 솔봉로 287 강원도개발공사,강원 평창군 대관령면 올림픽로 715"
     }, {
         "name": "ITAEWON KITCHEN(이태원 키친)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Malaysian",
+        "Food Type": "Malaysian",
         "address": "2F, 34, Usadan-ro, Yongsan-gu, Seoul,(서울시 용산구 우사단로 34 2층)",
         "phonenum": "",
         "Website": null,
@@ -2910,12 +3153,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon Usadan-gil, Itaewon Shopping Street, War Memorial of Korea",
+        "attAddress": "서울 용산구 이태원동, 서울 용산구 이태원동, 서울 용산구 이태원로 29 전쟁기념관"
     }, {
         "name": "Jangsu Hanulso(장수하늘소인사점)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "34-1, Insadong-gil, Jongno-gu, Seoul(서울시 종로구 인사동길 34-1)",
         "phonenum": "",
         "Website": null,
@@ -2929,12 +3174,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Insa-dong, Unhyeongung, Jogyesa Temple",
+        "attAddress": "서울 종로구 인사동, 서울 종로구 삼일대로 464 운현궁, 서울 종로구 우정국로 55"
     }, {
         "name": "Jangsusam(장수삼)",
         "friendly": "Pork Free",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1F, 7, Suyeongseong-ro 3beon-gil, Suyeong-gu, Busan(부산 수영구 수영성로3번길 7 1층)",
         "phonenum": "010-4157-7923",
         "Website": null,
@@ -2948,12 +3195,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwangalli Beach, Haeundae Beach, Baeksco, Millak Park, Dongbaek Park",
+        "attAddress": "부산 수영구 광안해변로 219, 부산 해운대구 우동, 부산 해운대구 APEC로 55, 부산 수영구 민락동 109, 부산 해운대구 동백로 99"
     }, {
         "name": "Japanese Wasabi(와사비)",
         "friendly": "Muslim Friendly",
         "area": "Ulsan",
-        "foodType": "Japanese",
+        "Food Type": "Japanese",
         "address": "117, Jeongdong-ro, Nam-gu, Ulsan(울산광역시 남구 정동로 117)",
         "phonenum": "010-3835-5542",
         "Website": null,
@@ -2967,12 +3216,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Ulsan Design Street, Taehwagang Grand Park, Shinhwa Village",
+        "attAddress": "울산 남구 삼산동,울산 남구 대공원로 94,울산 남구 여천로80번길 24-8"
     }, {
         "name": "Jeju Daege Hoe Town(제주대게회타운)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "638, Seohaean-ro, Jeju-si, Jeju-do(제주 제주시 서해안로 638)",
         "phonenum": "010-9986-0844",
         "Website": null,
@@ -2986,14 +3237,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yongduam Rock, Yonghyeon Gudari Bridge, Yongduam Coastal Road, Halla Arboretum, Sarabong Park, Yonghyeon Cloud Bridge, Tapdong Performance Hall",
+        "attAddress": "제주 제주시 용담이동, ?, 제주 제주시 수목원길 72,  제주 제주시 사라봉길 75, 제주 제주시 용담이동 2581, 제주 제주시 중앙로 2"
     }, {
         "name": "Jejuddukbaeki(제주뚝배기)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
-        "address": "Jejuddukbaeki, 1, Ilchul-ro 255beon-gil, Seongsan-eup, Seogwipo-si, Jeju-do(제주" +
-                "특별자치도 서귀포시 성산읍 일출로255번길 1 제주뚝배기)",
+        "Food Type": "Korean Cuisine",
+        "address": "Jejuddukbaeki, 1, Ilchul-ro 255beon-gil, Seongsan-eup, Seogwipo-si, Jeju-do(제주특별자치도 서귀포시 성산읍 일출로255번길 1 제주뚝배기)",
         "phonenum": "010-9772-7558",
         "Website": null,
         "runtime": "7:30–20:30",
@@ -3006,14 +3258,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seongsan Ilchulbong, Seopjikoji, Pyoseon Beach, Ilchulbong Land, Gwangchigi Beach",
+        "attAddress": "제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 성산읍 고성리, 제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 중산간동로 4150-30, 제주 서귀포시 성산읍 고성리 224-33"
     }, {
         "name": "JEJURANG(제주랑)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
-        "address": "14, Seongsanjungang-ro 40beon-gil, Seongsan-eup, Seogwipo-si, Jeju-do(제주 서귀포시 " +
-                "성산읍 성산중앙로 40번길 14)",
+        "Food Type": "Korean Cuisine",
+        "address": "14, Seongsanjungang-ro 40beon-gil, Seongsan-eup, Seogwipo-si, Jeju-do(제주 서귀포시 성산읍 성산중앙로 40번길 14)",
         "phonenum": "010-9220-8308",
         "Website": null,
         "runtime": "8:00–20:00",
@@ -3026,12 +3279,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seongsan Ilchulbong Peak, Seopjikoji, Pyoseon Beach, Ilchulbong Land",
+        "attAddress": "제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 성산읍 고성리, 제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 중산간동로 4150-30"
     }, {
         "name": "Jeon Ju Sik Dang(전주식당)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "16-17, Supyo-ro 20-gil, Jongno-gu, Seoul(서울시 종로구 수표로20길 16-17)",
         "phonenum": "",
         "Website": null,
@@ -3045,14 +3300,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Cheonggyecheon Stream, Jonggak, Jogyesa Temple",
+        "attAddress": "서울 종로구 창신동, 서울 종로구 관철동, 서울 종로구 우정국로 55"
     }, {
         "name": "Jeonggane Sogalbi(정가네소갈비)",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
-        "address": "Jeonggane Sogalbi, 6, Umuk-gil 56beon-gil, Chuncheon-si, Ganwon-do (강원 춘천시 우묵길" +
-                "56번길 6 정가네소갈비 )",
+        "Food Type": "Korean Cuisine",
+        "address": "Jeonggane Sogalbi, 6, Umuk-gil 56beon-gil, Chuncheon-si, Ganwon-do (강원 춘천시 우묵길56번길 6 정가네소갈비 )",
         "phonenum": "010-8255-1292",
         "Website": null,
         "runtime": "16:30–22:00",
@@ -3065,12 +3321,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "Jinbo Dakgalbi (previously Soyangyang)(진보닭갈비(구, 소양강))",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "4, Chunghon-gil 8beon-gil, Chuncheon-si, Gangwon-do( 강원 춘천시 충혼길 8번길 4)",
         "phonenum": "010-4283-0321",
         "Website": null,
@@ -3084,12 +3342,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gangchon Rail Park Gimyujeong Station, Soyanggang Skywalk, Mullegils",
+        "attAddress": "강원 춘천시 신동면 김유정로 1383,강원 춘천시 영서로 2663 소양강스카이워크,강원 춘천시 스포츠타운길 113-1"
     }, {
         "name": "Jongro Samgyetang(종로삼계탕)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "21, Jong-ro 8-gil, Jongno-gu, Seoul(서울시 종로구 종로8길 21)",
         "phonenum": "010-6206-1092",
         "Website": null,
@@ -3103,12 +3363,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jongmyo Shrine, Insa-dong, Cheonggyecheon",
+        "attAddress": "서울 종로구 종로 157, 서울 종로구 인사동, 서울 종로구 창신동"
     }, {
         "name": "Jongro Sulnongtang(종로설렁탕)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "110-1, Jong-ro, Jongno-gu, Seoul(서울시 종로구 종로 110-1)",
         "phonenum": "",
         "Website": null,
@@ -3122,14 +3384,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jongmyo Shrine, Dasuseun Square, Cheonggyecheon",
+        "attAddress": "서울 종로구 종로 157, 서울 종로구 장사동 2-1, 서울 종로구 창신동"
     }, {
         "name": "jumbongsansanchae(점봉산산채)",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
-        "address": "Jumbongsansanchae, 21, Umuk-gil 70beon-gil, Chuncheon-si, Ganwon-do(강원 춘천시 우묵길" +
-                "70번길 21 점봉산산채)",
+        "Food Type": "Korean Cuisine",
+        "address": "Jumbongsansanchae, 21, Umuk-gil 70beon-gil, Chuncheon-si, Ganwon-do(강원 춘천시 우묵길 70번길 21 점봉산산채)",
         "phonenum": "010-9824-2011",
         "Website": null,
         "runtime": "11:00–21:40",
@@ -3142,14 +3405,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "Junseobine Dakgalbi(준섭이네닭갈비 )",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
-        "address": "1F, 14, Geumbyeonguisuk-gil, Sindong-myeon, Chuncheon-si, Gangwon-do(강원 춘천시 신동" +
-                "면 금병의숙길 14 1층)",
+        "Food Type": "Korean Cuisine",
+        "address": "1F, 14, Geumbyeonguisuk-gil, Sindong-myeon, Chuncheon-si, Gangwon-do(강원 춘천시 신동면 금병의숙길 14 1층)",
         "phonenum": "010-7760-1111",
         "Website": null,
         "runtime": "Daily: 10:00–21:00",
@@ -3162,12 +3426,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "Juwangsan Samgyetang(주왕산삼계탕)",
         "friendly": "Pork Free",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "584, Biseul-ro, Hyeonpung-eup, Dalseong-gun, Daegu(대구광역시 달성군 현풍면 비슬로 584)",
         "phonenum": "010-2834-0103",
         "Website": null,
@@ -3181,12 +3447,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daegu National Science Museum, Biseulsan County Park, Dodongseowon",
+        "attAddress": "대구 달성군 유가읍 테크노대로6길 20,대구 달성군 유가읍 양리,대구 달성군 구지면 도동서원로 1"
     }, {
         "name": "Kali Indian Restaurant(깔리)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "43, Daehak-ro 11-gil, Jongno-gu, Seoul(서울 종로구 대학로11길 43)",
         "phonenum": "010-2514-7226",
         "Website": null,
@@ -3200,14 +3468,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Changdeokgung Palace and Howon, Changgyeonggung Palace, Daehak-ro",
+        "attAddress": "서울 종로구 창경궁로 185 창경궁,서울 종로구 창경궁로 185 창경궁,서울 종로구 동숭동"
     }, {
         "name": "KB Kebab(KB 케밥)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "",
-        "address": "KB Kebab, 40, Jogang-ro, Tongjin-eup, Gimpo-si, Gyeonggi-do(경기 김포시 통진읍 조강로 40 " +
-                "KB 케밥)",
+        "Food Type": "",
+        "address": "KB Kebab, 40, Jogang-ro, Tongjin-eup, Gimpo-si, Gyeonggi-do(경기 김포시 통진읍 조강로 40 KB 케밥)",
         "phonenum": "010-9319-6616",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -3220,12 +3489,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gimpo Sculpture Park, Tea Ceremony Museum, Hangang New Town Lake Park, Deokpojin, Ganghwado",
+        "attAddress": "경기 김포시 월곶면 고막리 435-14, 경기 김포시 월곶면 애기봉로275번길 187-49, 경기 김포시 김포한강8로 302, 경기 김포시 대곶면 신안리 산105, 인천 강화군 불은면 삼동암리 산327-5"
     }, {
         "name": "KB RESTAURANT&HALAL FOOD(케이비레스토랑할랄푸드)",
         "friendly": "Self Certified",
         "area": "Gyeonggi-do",
-        "foodType": "",
+        "Food Type": "",
         "address": "1B, 42, Jogang-ro, Tongjin-eup, Gimpo-si, Gyeonggi-do(경기 김포시 통진읍 조강로 42 지하1층)",
         "phonenum": "010-9319-6616",
         "Website": null,
@@ -3239,12 +3510,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gimpo Sculpture Park, Tea Ceremony Museum, Hangang New Town Lake Park, Deokpojin, Ganghwado",
+        "attAddress": "경기 김포시 월곶면 고막리 435-14, 경기 김포시 월곶면 애기봉로275번길 187-49, 경기 김포시 김포한강8로 302, 경기 김포시 대곶면 신안리 산105, 인천 강화군 불은면 삼동암리 산327-5"
     }, {
         "name": "KERVAN Famille Station Branch(케르반 파미에스테이션점)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, FP216, 205, Sapyeong-daero, Seocho-gu, Seoul(서울시 서초구 사평대로 205 2층 FP216)",
         "phonenum": "010-4523-6987",
         "Website": null,
@@ -3258,14 +3531,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Sebitseom, Gangnam Station Underpass Shopping Mall",
+        "attAddress": "서울 서초구 올림픽대로 2085-14 세빛섬,서울 강남구 강남대로 지하 396 강남역지하쇼핑센터"
     }, {
         "name": "KERVAN Starfiled Goyang Branch(케르반 스타필드 고양점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "",
-        "address": "3F, 1955, Goyang-daero, Deogyang-gu, Goyang-si, Gyeonggi-do(경기도 고양시 덕양구 고양대로 1" +
-                "955 3층)",
+        "Food Type": "",
+        "address": "3F, 1955, Goyang-daero, Deogyang-gu, Goyang-si, Gyeonggi-do(경기도 고양시 덕양구 고양대로 1955 3층)",
         "phonenum": "010-4523-6987",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -3278,12 +3552,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seooreung, Seosamneung",
+        "attAddress": "경기 고양시 덕양구 서오릉로 334-32,경기 고양시 덕양구 서삼릉길 233-126"
     }, {
         "name": "KERVAN Turkish Bakery(케르반 베이커리)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "1F, 204, Itaewon-ro, Yongsan-gu, Seoul(서울시 용산구 이태원로 204 1층)",
         "phonenum": "010-4523-6987",
         "Website": null,
@@ -3297,12 +3573,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon Shopping Street, War Memorial of Korea, Leeum Samsung Museum of Art",
+        "attAddress": "서울 용산구 이태원동,서울 용산구 이태원로 29 전쟁기념관,서울 용산구 이태원로55길 60-16"
     }, {
         "name": "Kervan Turkish Restaurant (Itaewon Branch)(케르반레스토랑 이태원점)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "190, Itaewon-ro, Yongsan-gu, Seoul(서울 용산구 이태원로 190)",
         "phonenum": "010-4523-6987",
         "Website": null,
@@ -3316,12 +3594,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "Kervan Turkish Restaurant (Kervan Express GFC)(케르반 익스프레스 GFC)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "152, Teheran-ro, Gangnam-gu, Seoul (서울 강남구 테헤란로 152 )",
         "phonenum": "010-4523-6987",
         "Website": null,
@@ -3335,12 +3615,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bongeunsa Temple, COEX, Seonjeongneung Tomb",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "KERVAN(케르반 카페)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "17, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울시 용산구 우사단로10길 17)",
         "phonenum": "",
         "Website": null,
@@ -3354,12 +3636,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeongridan-gil, Itaewon Shopping Street, War Memorial of Korea",
+        "attAddress": "서울 용산구 이태원동, 서울 용산구 이태원동, 서울 용산구 이태원로 29 전쟁기념관"
     }, {
         "name": "Kervan_Seoul Station(케르반 서울역점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "3F, 18, Toegye-ro Jung-gu, Seoul(서울특별시 중구 퇴계로 18, 3층)",
         "phonenum": "010-4523-6987",
         "Website": null,
@@ -3373,12 +3657,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seoullo 7017, Namdaemun Market, Myeongdong Nanta Theater",
+        "attAddress": "서울 중구 청파로 432,서울 중구 남대문시장4길 21,서울 중구 명동길 26 유네스코회관"
     }, {
         "name": "Kerven Turkish Restaurant (COEX Mall Branch)(케르반레스토랑 코엑스점)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "513, Yeongdong-daero, Gangnam-gu, Seoul (서울 강남구 영동대로 513 )",
         "phonenum": "010-4523-6987",
         "Website": null,
@@ -3392,12 +3678,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bongeunsa Temple, COEX, Seonjeongneung Tomb",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "kikusushi(기꾸초밥)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Japanese",
+        "Food Type": "Japanese",
         "address": "91, Angol-ro, Guri-si, Gyeonggi-do(경기 구리시 안골로 91)",
         "phonenum": "010-2456-5054",
         "Website": null,
@@ -3411,14 +3699,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Donggureung, Guri Han River Citizen's Park,",
+        "attAddress": "경기 구리시 동구릉로 197, 경기 구리시 코스모스길14번길 249"
     }, {
         "name": "Kimmyeongja Gulgukbap(김명자굴국밥)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
-        "address": "46-1, Seongsanjungang-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주 서귀포시 성산읍 성산중앙로" +
-                " 46-1)",
+        "Food Type": "Korean Cuisine",
+        "address": "46-1, Seongsanjungang-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주 서귀포시 성산읍 성산중앙로 46-1)",
         "phonenum": "010-5418-7585",
         "Website": null,
         "runtime": "6:00–21:00",
@@ -3431,14 +3720,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seongsan Ilchulbong Peak, Seopjikoji, Pyoseon Beach, Ilchulbong Land",
+        "attAddress": "제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 성산읍 고성리, 제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 중산간동로 4150-30"
     }, {
         "name": "KINZA RESTAURANT(긴자레스토랑)",
         "friendly": "Self Certified",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
-        "address": "3F, 19, Pyeongchon-daero 217beon-gil, Dongan-gu, Anyang-si, Gyeonggi-do(경기 안양시" +
-                " 동안구 평촌대로217번길 19 3층)",
+        "Food Type": "Indian",
+        "address": "3F, 19, Pyeongchon-daero 217beon-gil, Dongan-gu, Anyang-si, Gyeonggi-do(경기 동안구 평촌대로217번길 19 3층)",
         "phonenum": "010-6400-2203",
         "Website": null,
         "runtime": "11:30–14:00 / 16:00–21:30 / Monday opening at 16:00",
@@ -3451,17 +3741,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Anyang Central Park, Jayu Park, Anyang Sports Complex, Hakuicheon",
+        "attAddress": "경기 안양시 동안구 관평로 149, 경기 안양시 동안구 평촌대로 76 평촌아트홀, 경기 안양시 동안구 평촌대로 389, 경기 안양시 동안구 비산동"
     }, {
         "name": "Kitchen of India(키친오브인디아)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "336, Olympic-ro, Songpa-gu, Seoul (서울 송파구 올림픽로 336 )",
         "phonenum": "010-3239-2418",
         "Website": null,
-        "runtime": "Weekdays (Monday–Friday): 11:30–22:00, Weekends (Saturday–Sunday) and Holidays" +
-                ": 12:00–22:00",
+        "runtime": "Weekdays (Monday–Friday): 11:30–22:00, Weekends (Saturday–Sunday) and Holidays: 12:00–22:00",
         "Closed": "",
         "No. of seats": 7,
         "parking": "O",
@@ -3471,14 +3762,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Lotte World, Olympic Park",
+        "attAddress": "서울 송파구 올림픽로 240,서울 송파구 올림픽로 424"
     }, {
         "name": "Kko Kki Ok(꼬끼옥)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "1078-19, Bukhangangbyeon-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기도 가평군 가" +
-                "평읍 북한강변로 1078-19)",
+        "Food Type": "Korean Cuisine",
+        "address": "1078-19, Bukhangangbyeon-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기도 가평군 가평읍 북한강변로 1078-19)",
         "phonenum": "010-5454-0239",
         "Website": null,
         "runtime": "Weekdays 9:00–20:00, weekends 9:00–22:00",
@@ -3491,19 +3783,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Nami Island, Petite France, Jade Garden",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1, 경기 가평군 청평면 호반로 1063, 강원 춘천시 남산면 햇골길 80 제이드가든수목원"
     }, {
         "name": "La seine(롯데호텔 라세느)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Buffet",
+        "Food Type": "Buffet",
         "address": "1F, Main Tower, 30, Eulji-ro, Jung-gu, Seoul(서울시 중구 을지로30 메인타워 1층)",
         "phonenum": "010-2696-2306",
         "Website": null,
-        "runtime": "Monday–Friday: 6:00–10:00 (Breakfast), 11:30–14:30 (Lunch), 18:00–22:00 (Frida" +
-                "y: 17:30–22:00, Dinner) / Saturday–Sunday, holidays 6:00–10:00 (Breakfast), 11" +
-                ":30–13:30 (Lunch, first half), 14:00–16:00 (Lunch, second half), 17:30–19:30 (" +
-                "Dinner, first half), 20:00–22:00 (Dinner, second half)",
+        "runtime": "Monday–Friday: 6:00–10:00 (Breakfast), 11:30–14:30 (Lunch), 18:00–22:00 (Friday: 17:30–22:00, Dinner) / Saturday–Sunday, holidays 6:00–10:00 (Breakfast), 11:30–13:30 (Lunch, first half), 14:00–16:00 (Lunch, second half), 17:30–19:30 (Dinner, first half), 20:00–22:00 (Dinner, second half)",
         "Closed": "",
         "No. of seats": 270,
         "parking": "O",
@@ -3513,12 +3804,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seoul Plaza, Cheonggyecheon, Sewoon Shopping Center",
+        "attAddress": "서울 중구 을지로 12 시청광장지하쇼핑센터,서울 종로구 창신동,서울 종로구 청계천로 159"
     }, {
         "name": "La yeon(신라호텔 라연)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "23F, 249, Dongho-ro, Jung-gu, Seoul(서울시 중구 동호로 249 23층)",
         "phonenum": "010-9230-7912",
         "Website": null,
@@ -3532,12 +3825,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Chungmuro, Namsan Park, Namsangol Hanok Village",
+        "attAddress": "서울 중구 퇴계로 199,서울 중구 삼일대로 231,서울 중구 퇴계로34길 28 남산골한옥마을"
     }, {
         "name": "Laxmi(럭치미)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "837, Gyeongin-ro, Yeongdeungpo-gu, Seoul(서울 영등포구 경인로 837)",
         "phonenum": "010-4727-3220",
         "Website": null,
@@ -3551,12 +3846,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yeouido Saetgang Ecological Park",
+        "attAddress": "서울 영등포구 여의도동 49"
     }, {
         "name": "LAZZAT(라자트 우즈벡 레스토랑)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Uzbekista",
+        "Food Type": "Uzbekista",
         "address": "3F, 37, Usadan-ro, Yongsan-gu, Seoul,(서울시 용산구 우사단로 37 3층)",
         "phonenum": "",
         "Website": null,
@@ -3570,12 +3867,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hyundai Card Storage, Itaewon Shopping Street, Itaewon Usadan-gil",
+        "attAddress": "서울 용산구 이태원로 248 B2, 서울 용산구 이태원동, 서울 용산구 보광로 126 2층"
     }, {
         "name": "little india seoul(리틀인디아)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "21, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울시 용산구 우사단로10길 21)",
         "phonenum": "",
         "Website": null,
@@ -3589,12 +3888,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "War Memorial of Korea, Gyeongridan-gil, Namsan Outdoor Botanical Garden",
+        "attAddress": "서울 용산구 이태원로 29 전쟁기념관, 서울 용산구 이태원동, 서울 용산구 이태원동 259-16"
     }, {
         "name": "Lotte Hotel World Room Service(롯데호텔월드 룸서비스)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western (Room Service)",
+        "Food Type": "Western (Room Service)",
         "address": "240, Olympic-ro, Songpa-gu, Seoul(서울 송파구 올림픽로 240)",
         "phonenum": "010-9047-0077",
         "Website": null,
@@ -3608,12 +3909,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Lotte World, Olympic Park",
+        "attAddress": "서울 송파구 올림픽로 240,서울 송파구 올림픽로 424"
     }, {
         "name": "Loving Hut Smile(러빙헛스마일)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western",
+        "Food Type": "Western",
         "address": "18, Nonhyeon-ro 6-gil, Gangnam-gu, Seoul(서울특별시 강남구 논현로6길 18)",
         "phonenum": "010-8542-0502",
         "Website": null,
@@ -3627,12 +3930,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yangjae Citizen's Forest, Yangjae Dong Flower Market, Heoninneung",
+        "attAddress": "서울 서초구 매헌로 99,서울 서초구 강남대로 27,서울 서초구 내곡동 1-3081"
     }, {
         "name": "Loving Hut Vegan Food(러빙헛채식부페)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "37-24, Jukbawi-ro, Gwacheon-si, Gyeonggi-do(경기 과천시 죽바위로 37-24)",
         "phonenum": "010-6268-8608",
         "Website": null,
@@ -3646,14 +3951,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwacheon National Museum of Modern and Contemporary Art, Seoul Land, Let's Run Park Seoul",
+        "attAddress": "경기 과천시 광명로 313 국립현대미술관,경기 과천시 광명로 181,경기 과천시 경마공원대로 107"
     }, {
         "name": "Loving hut(러빙헛 영동점)",
         "friendly": "Muslim Friendly",
         "area": "Chungcheongbuk-do",
-        "foodType": "",
-        "address": "Loving hut, 319-1, Yongsan-ro, Yongsan-myeon, Yeongdong-gun, Chungcheongbuk-do" +
-                "(충북 영동군 용산면 용산로 319-1 러빙헛)",
+        "Food Type": "",
+        "address": "Loving hut, 319-1, Yongsan-ro, Yongsan-myeon, Yeongdong-gun, Chungcheongbuk-do(충북 영동군 용산면 용산로 319-1 러빙헛)",
         "phonenum": "010-9830-8139",
         "Website": null,
         "runtime": "11:30–20:30",
@@ -3666,12 +3972,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Banyasa Temple, Wolyubong Peak",
+        "attAddress": "충남 논산시 가야곡면 삼전길 104, 충북 영동군 황간면 원촌리"
     }, {
         "name": "LovingHut Café(러빙헛 카페)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "1F, 35, Gaepo-ro 22-gil, Gangnam-gu, Seoul (서울 강남구 개포로22길 35 1층 )",
         "phonenum": "010-6217-2158",
         "Website": null,
@@ -3685,12 +3993,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwangpyeong Daegun Cemetery, Maljuk Street, Seoul Seolleung, Let's Run Park",
+        "attAddress": "서울 강남구 광평로31길 20, 서울 서초구 양재동, 서울 강남구 선릉로100길 1 선릉정릉, 경기 과천시 경마공원대로 107"
     }, {
         "name": "Lovinghut hyomok(러빙헛효목점)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "34, Hwarang-ro 25-gil, Dong-gu, Daegu(대구 동구 화랑로25길 34 34 효목성당정문앞)",
         "phonenum": "010-8711-6998",
         "Website": null,
@@ -3704,14 +4014,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwangpyeong Daegun Cemetery, Maljuk Street, Seoul Seolleung, Let's Run Park",
+        "attAddress": "서울 강남구 광평로31길 20, 서울 서초구 양재동, 서울 강남구 선릉로100길 1 선릉정릉, 경기 과천시 경마공원대로 107"
     }, {
         "name": "LOVINGHUT Seoshin(러빙헛 서신점)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "",
-        "address": "1F, 61-13, Gamnamu-ro, Wansan-gu, Jeonju-si, Jeollabuk-do(전북 전주시 완산구 감나무로 61-1" +
-                "3 1층)",
+        "Food Type": "",
+        "address": "1F, 61-13, Gamnamu-ro, Wansan-gu, Jeonju-si, Jeollabuk-do(전북 전주시 완산구 감나무로 61-13 1층)",
         "phonenum": "010-2948-8881",
         "Website": null,
         "runtime": "12:00–15:00, Weekends: 12:00–15:00",
@@ -3724,12 +4035,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jeonju Hanok Village, Deokjin Park, Jeonju Zoo",
+        "attAddress": "전북 전주시 완산구 기린대로 99, 전북 전주시 덕진구 권삼득로 390 전주덕진공원"
     }, {
         "name": "Lovinghut(러빙헛)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "Lovinghut, 217, Jungang-daero, Nam-gu, Daegu(대구 남구 중앙대로 217 러빙헛)",
         "phonenum": "010-6507-5310",
         "Website": null,
@@ -3743,14 +4056,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Palgongsan, Daegu city center, Duryu Park",
+        "attAddress": "경북 군위군 부계면 동산리, 대구 북구 칠성동2가 302-155, 대구 달서구 공원순환로 36"
     }, {
         "name": "Lovinghutjeju(러빙헛제주)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
-        "address": "7036, Iljudong-ro, Namwon-eup, Seogwipo-si, Jeju-do(제주특별자치도 서귀포시 남원읍 일주동로 7036" +
-                ")",
+        "Food Type": "Korean Cuisine",
+        "address": "7036, Iljudong-ro, Namwon-eup, Seogwipo-si, Jeju-do(제주특별자치도 서귀포시 남원읍 일주동로 7036)",
         "phonenum": "010-4696-9006",
         "Website": null,
         "runtime": "11:30–19:00",
@@ -3763,17 +4077,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Pyoseon Beach, Seongsan Ilchulbong, Cheonjiyeon Falls, Jeongbang Falls",
+        "attAddress": "제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 천지동 667-7, 제주 서귀포시 칠십리로214번길 37"
     }, {
         "name": "Luna Asia(루나아시아)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "15, Samseong-ro 100-gil, Gangnam-gu, Seoul(서울 강남구 삼성로100길 15)",
         "phonenum": "010-5417-3464",
         "Website": null,
-        "runtime": "Weekdays (Monday–Friday) 10:30–22:00 (Break: 15:00–17:00, Weekends (Saturday–S" +
-                "unday): 12:00–21:30",
+        "runtime": "Weekdays (Monday–Friday) 10:30–22:00 (Break: 15:00–17:00, Weekends (Saturday–Sunday): 12:00–21:30",
         "Closed": "",
         "No. of seats": 60,
         "parking": "O",
@@ -3783,12 +4098,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bongeunsa Temple, COEX, Seonjeongneung Tomb",
+        "attAddress": "서울 강남구 봉은사로 531 봉은사,서울 강남구 영동대로 513,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "Maharaja Indian Restaurant(마하라자)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangnam-do",
-        "foodType": "",
+        "Food Type": "",
         "address": "75, Yongji-ro, Seongsan-gu, Changwon-si, Gyeongsangnam-do (경남 창원시 성산구 용지로 75 )",
         "phonenum": "010-2265-0454",
         "Website": null,
@@ -3802,14 +4119,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jiji Lake Park, Jangboksan Haneulmaru-gil, Metasequoia Garosu-gil",
+        "attAddress": "경남 창원시 성산구 용지동,경남 창원시 진해구 장복산길 56-42,경남 창원시 성산구 외동반림로248번길 31"
     }, {
         "name": "Mahasiddha Curry(마하싯다커리)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Indian",
-        "address": "#201, Building 2, 18, Jungang-ro 67beon-gil, Chuncheon-si, Gangwon-do(강원도 춘천시 " +
-                "중앙로67번길 18 2동 201호)",
+        "Food Type": "Indian",
+        "address": "#201, Building 2, 18, Jungang-ro 67beon-gil, Chuncheon-si, Gangwon-do(강원도 춘천시 중앙로67번길 18 2동 201호)",
         "phonenum": "010-2130-3461",
         "Website": null,
         "runtime": "11:30–22:00",
@@ -3822,12 +4140,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gongjicheon Stream, Myeongdong Dakgalbi Alley, Chuncheon Jungang Market",
+        "attAddress": "강원 춘천시 근화동 690-1, 강원 춘천시 금강로62번길 9-1, 강원 춘천시 죽림동 13-2"
     }, {
         "name": "Maji(마지)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean (Temple Food) ",
+        "Food Type": "Korean (Temple Food) ",
         "address": "19, Jahamun-ro 5-gil, Jongno-gu, Seoul(서울 종로구 자하문로5길 19)",
         "phonenum": "010-8770-5258",
         "Website": null,
@@ -3841,12 +4161,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seorae Village",
+        "attAddress": "서울 서초구 반포4동"
     }, {
         "name": "Makan Restaurant(마칸레스토랑)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "52, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울 용산구 우사단로10길 52)",
         "phonenum": "010-7570-2231",
         "Website": null,
@@ -3860,12 +4182,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "Manna Dakgalbi(만나 닭갈비)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "2, Seombatdeul 2-gil, Wonju-si, Gangwon-do(강원 원주시 무실동 섬밭들2길 2)",
         "phonenum": "010-5046-5776",
         "Website": null,
@@ -3879,12 +4203,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Parkgyeongni Literature Park",
+        "attAddress": "강원 원주시 토지길 1"
     }, {
         "name": "MANOKAMANA(Daehakro)(머노까머나 대학로점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 236, Changgyeonggung-ro, Jongno-gu, Seoul(서울시 종로구 창경궁로 236 2층)",
         "phonenum": "010-7688-8850",
         "Website": null,
@@ -3898,12 +4224,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Changdeokgung Palace, Daehak-ro, Naksan Park",
+        "attAddress": "서울 종로구 율곡로 99,서울 종로구 동숭동,서울 종로구 낙산길 41"
     }, {
         "name": "MANOKAMANA(Shinchon)(머노까머나 신촌점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 13, Yonsei-ro 11-gil, Seodaemun-gu, Seoul(서울시 서대문구 연세로11길 13 2층)",
         "phonenum": "010-7688-8850",
         "Website": null,
@@ -3917,12 +4245,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae Street, Ewha University, Sinchon Street",
+        "attAddress": "서울 마포구 서교동,서울 서대문구 이화여대길 52,서울 마포구 와우산로37길 35"
     }, {
         "name": "MANOKAMANA(Songdo-1)(머노까머나 송도1호점)",
         "friendly": "Muslim Friendly",
         "area": "Incheon",
-        "foodType": "",
+        "Food Type": "",
         "address": "1F, G wing, 107, Haedoji-ro, Yeonsu-gu, Incheon(인천광역시 연수구 해돋이로 107 G동 1층)",
         "phonenum": "010-7688-8850",
         "Website": null,
@@ -3936,14 +4266,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Songdo Central Park, Canal Week, Solchan Park",
+        "attAddress": "인천 연수구 컨벤시아대로 160,인천 연수구 아트센터대로 107,인천 연수구 컨벤시아대로391번길 20"
     }, {
         "name": "MANOKAMANA(Songdo-2)(머노까머나 송도2호점)",
         "friendly": "Muslim Friendly",
         "area": "Incheon",
-        "foodType": "",
-        "address": "B1, C wing, 33-3, Songdogwahak-ro 16beon-gil, Yeonsu-gu, Incheon(인천광역시 연수구 송도과" +
-                "학로16번길 33-3 C동 지하 1층)",
+        "Food Type": "",
+        "address": "B1, C wing, 33-3, Songdogwahak-ro 16beon-gil, Yeonsu-gu, Incheon(인천광역시 연수구 송도과학로16번길 33-3 C동 지하 1층)",
         "phonenum": "010-7688-8850",
         "Website": null,
         "runtime": "10:30–10:00",
@@ -3956,14 +4287,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Triball, Central Park, Solchan Park",
+        "attAddress": "인천 연수구 인천타워대로 250,인천 연수구 컨벤시아대로 160,인천 연수구 컨벤시아대로391번길 20"
     }, {
         "name": "Masala Indian Restaurant(마살라인디안레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Western",
-        "address": "3F, 30, Seokcheon-ro 169beon-gil, Bucheon-si, Gyeonggi-do(경기 부천시 석천로 169번길 30," +
-                " 3층)",
+        "Food Type": "Western",
+        "address": "3F, 30, Seokcheon-ro 169beon-gil, Bucheon-si, Gyeonggi-do(경기 부천시 석천로 169번길 30, 3층)",
         "phonenum": "010-8994-9555",
         "Website": null,
         "runtime": "11:30–22:00",
@@ -3976,14 +4308,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Korea Manga Museum, Woongjin Play City Water City, Ain's World",
+        "attAddress": "경기 부천시 길주로 1,경기 부천시 조마루로 2,경기 안산시 단원구 광덕1로 193 스카이프라자"
     }, {
         "name": "Mayfield hotel Lafesta(메이필드호텔 라페스타)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western",
-        "address": "1F, Mayfield Hotel Main Building, 94, Banghwa-daero, Gangseo-gu, Seoul(서울시 강서구" +
-                " 방화대로 94)",
+        "Food Type": "Western",
+        "address": "1F, Mayfield Hotel Main Building, 94, Banghwa-daero, Gangseo-gu, Seoul(서울시 강서구 방화대로 94)",
         "phonenum": "010-4137-0747",
         "Website": null,
         "runtime": "24 hr",
@@ -3996,18 +4329,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Amarin Center, Gangseo Wetland Ecological Park",
+        "attAddress": "경기 김포시 고촌읍 아라육로270번길 73 아라마린센터,서울 강서구 방화동 2-15"
     }, {
         "name": "Mayfield hotel Nakwon(메이필드호텔 낙원)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
-        "address": "1F, Mayfield Hotel Main Building, 94 Banghwa-daero, Gangseo-gu, Seoul(서울시 강서구 " +
-                "방화대로 94 본관 1층)",
+        "Food Type": "",
+        "address": "1F, Mayfield Hotel Main Building, 94 Banghwa-daero, Gangseo-gu, Seoul(서울시 강서구 방화대로 94 본관 1층)",
         "phonenum": "010-4137-0747",
         "Website": null,
-        "runtime": "Weekdays: 12:00–15:00 (Lunch), 18:00–22:00 (Dinner) / Weekends: 11:30–14:30 (L" +
-                "unch), 18:00–22:00 (Dinner)",
+        "runtime": "Weekdays: 12:00–15:00 (Lunch), 18:00–22:00 (Dinner) / Weekends: 11:30–14:30 (Lunch), 18:00–22:00 (Dinner)",
         "Closed": "Every Monday",
         "No. of seats": 140,
         "parking": "O",
@@ -4017,14 +4350,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haengjusanseong Fortress, Amarin Center, Lotte Mall Gimpo Airport Branch",
+        "attAddress": "경기 고양시 덕양구 행주내동 산26-1,경기 김포시 고촌읍 아라육로270번길 73 아라마린센터,서울 강서구 하늘길 77 김포공항역"
     }, {
         "name": "Mayfield hotel room service(메이필드호텔 룸서비스)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
-        "address": "1F, Mayfield Hotel Annex Hanok, 94, Banghwa-daero, Gangseo-gu, Seoul(서울시 강서구 방" +
-                "화대로 94 별관 한옥 1층)",
+        "Food Type": "Korean Cuisine",
+        "address": "1F, Mayfield Hotel Annex Hanok, 94, Banghwa-daero, Gangseo-gu, Seoul(서울시 강서구 방화대로 94 별관 한옥 1층)",
         "phonenum": "010-4137-0747",
         "Website": null,
         "runtime": "Weekdays: 12:00–15:00 (Lunch), 18:00–22:00 (Dinner) / Weekends: 12:00–22:00",
@@ -4037,14 +4371,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gangseo Wetland Ecological Park, Haengjusanseong Fortress, Amarin Center",
+        "attAddress": "서울 강서구 방화동 2-15,경기 고양시 덕양구 행주내동 산26-1,경기 김포시 고촌읍 아라육로270번길 73 아라마린센터"
     }, {
         "name": "MIGA ILSIK(미가일식 )",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "Japanese",
-        "address": "Miga Ilsik, 2F, 12-8, Majeon 1-gil, Wansan-gu, Jeonju-si, Jeollabuk-do (전북 전주시" +
-                " 완산구 마전1길 12-8 2층 미가일식 )",
+        "Food Type": "Japanese",
+        "address": "Miga Ilsik, 2F, 12-8, Majeon 1-gil, Wansan-gu, Jeonju-si, Jeollabuk-do (전북 전주시 완산구 마전1길 12-8 2층 미가일식 )",
         "phonenum": "010-2060-0252",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -4057,12 +4392,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jeonju Hanok Village, Deokjin Park",
+        "attAddress": "전북 전주시 완산구 기린대로 99, 전북 전주시 덕진구 권삼득로 390 전주덕진공원"
     }, {
         "name": "Miga(미가)",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "41, Sinheung 2-gil, Sokcho-si, Gangwon-do(강원도 속초시 신흥2길 41)",
         "phonenum": "010-6370-9686",
         "Website": null,
@@ -4076,12 +4413,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seorak Waterpia, Sokcho Tourist and Fisheries Market, Seoraksan Gwongeumeum",
+        "attAddress": "강원 속초시 미시령로2983번길 111,강원 속초시 중앙로147번길 12,강원 속초시 설악동 산41"
     }, {
         "name": "Migami(미가미)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Japanese",
+        "Food Type": "Japanese",
         "address": "331, Gangnam-daero, Seocho-gu, Seoul(서울 서초구 강남대로 331)",
         "phonenum": "010-3225-1771",
         "Website": null,
@@ -4095,12 +4434,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gangnam Station, Seonjeongneung",
+        "attAddress": "서울 강남구 강남대로 396,서울 강남구 선릉로100길 1 선릉정릉"
     }, {
         "name": "Mijin(미진)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Japanese",
+        "Food Type": "Japanese",
         "address": "1F, (Donggyo-dong), 213, Donggyo-ro, Mapo-gu, Seoul(서울 마포구 동교로 213 1층(동교동))",
         "phonenum": "010-2324-4848",
         "Website": null,
@@ -4114,14 +4455,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongik University Entrance, Sangam World Cup Stadium, Peace Park (Reed Festival), Seonyudo Park",
+        "attAddress": "서울 마포구 양화로 160 홍대입구역, 서울 마포구 성산동 515-39, 서울 마포구 증산로 32, 서울 영등포구 선유로 343"
     }, {
         "name": "Moksukwon(목석원)",
         "friendly": "Pork Free",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Korean Cuisine",
-        "address": "1599, Jeonseo-ro, Pungcheon-myeon, Andong-si, Gyeongsangbuk-do(경북 안동시 풍천면 전서로 " +
-                "1599)",
+        "Food Type": "Korean Cuisine",
+        "address": "1599, Jeonseo-ro, Pungcheon-myeon, Andong-si, Gyeongsangbuk-do(경북 안동시 풍천면 전서로 1599)",
         "phonenum": "010-2726-1911",
         "Website": null,
         "runtime": "9:00–19:00",
@@ -4134,14 +4476,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hahoe-dong Mask Museum, Byeongsan Seowon, Hahoe Village",
+        "attAddress": "경북 안동시 풍천면 전서로 206 박물관,경북 안동시 풍천면 병산길 386,경북 안동시 풍천면 전서로 186"
     }, {
         "name": "Momoyama (Lotte Hotel Seoul)(모모야마 (롯데호텔서울))",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Japanese",
-        "address": "38F, Lotte Hotel Seoul (Main Tower), 30, Eulji-ro, Jung-gu, Seoul(서울 중구 을지로 30" +
-                " 롯데호텔서울 본관 38층)",
+        "Food Type": "Japanese",
+        "address": "38F, Lotte Hotel Seoul (Main Tower), 30, Eulji-ro, Jung-gu, Seoul(서울 중구 을지로 30 롯데호텔서울 본관 38층)",
         "phonenum": "010-2696-2306",
         "Website": null,
         "runtime": "11:30–22:00 (Break: 15:00–18:00)",
@@ -4154,12 +4497,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksugung Palace, Cheonggyecheon Stream, Myeongdong",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울특별시 중구 명동"
     }, {
         "name": "MOROCOCOCAFE(모로코코 카페)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Moroccan",
+        "Food Type": "Moroccan",
         "address": "34, Sinheung-ro, Yongsan-gu, Seoul(서울시 용산구 신흥로 34)",
         "phonenum": "",
         "Website": null,
@@ -4173,12 +4518,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "War Memorial of Korea, Gyeongridan-gil, Namsan Seoul Tower",
+        "attAddress": "서울 용산구 이태원로 29 전쟁기념관, 서울 용산구 이태원동, 서울 용산구 남산공원길 10"
     }, {
         "name": "Mother India(마더인디아)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "86, Gukjegeumyung-ro, Yeongdeungpo-gu, Seoul (서울 영등포구 국제금융로 86 )",
         "phonenum": "010-2664-8295",
         "Website": null,
@@ -4192,12 +4539,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yeouido Hangang Park, 63 Square",
+        "attAddress": "서울 영등포구 여의동로 330 한강사업본부 여의도안내센터,서울 영등포구 63로 50 한화금융센터_63"
     }, {
         "name": "Mr. Kebab (Branch #2) (미스터케밥 2호점)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "42, Usadan-ro, Yongsan-gu, Seoul (서울 용산구 우사단로42)",
         "phonenum": "070-7532-1997",
         "Website": null,
@@ -4211,12 +4560,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 용산동6가, 서울 용산구 이태원동"
     }, {
         "name": "Mr.Kebab(미스터케밥)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "192, Itaewon-ro, Yongsan-gu, Seoul(서울 용산구 이태원로 192)",
         "phonenum": "010-4523-6987",
         "Website": null,
@@ -4230,12 +4581,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "mudungkwn(무등관 )",
         "friendly": "Pork Free",
         "area": "Gwangju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1F, 191-1, Munheung-dong, Buk-gu, Gwangju(광주 북구 문흥동 191-1 1층)",
         "phonenum": "010-3645-4557",
         "Website": null,
@@ -4249,14 +4602,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Mudeungsan National Park, 518 Memorial Cultural Center",
+        "attAddress": "광주 북구 금곡동 산1-3, 광주 서구 내방로 152 5.18 기념문화관"
     }, {
         "name": "Mugunghwa (Lotte Hotel Seoul)(무궁화 (롯데호텔서울))",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
-        "address": "38F, Lotte Hotel Seoul (Main Tower), 30, Eulji-ro, Jung-gu, Seoul(서울 중구 을지로 30" +
-                " 롯데호텔서울 본관 38층)",
+        "Food Type": "Korean Cuisine",
+        "address": "38F, Lotte Hotel Seoul (Main Tower), 30, Eulji-ro, Jung-gu, Seoul(서울 중구 을지로 30 롯데호텔서울 본관 38층)",
         "phonenum": "010-2696-2306",
         "Website": null,
         "runtime": "11:30–22:00 (Break: 14:30–18:00)",
@@ -4269,14 +4623,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksugung Palace, Cheonggyecheon Stream, Myeongdong",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 명동"
     }, {
         "name": "mugunghwa(무궁화(롯데호텔부산))",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
-        "address": "43F, Lotte Hotel Busan, 772, Gaya-daero, Busanjin-gu, Busan (부산광역시 부산진구 가야대로 7" +
-                "72, 롯데호텔 43층 )",
+        "Food Type": "Korean Cuisine",
+        "address": "43F, Lotte Hotel Busan, 772, Gaya-daero, Busanjin-gu, Busan (부산광역시 부산진구 가야대로 772, 롯데호텔 43층 )",
         "phonenum": "010-5771-8108",
         "Website": null,
         "runtime": "12:00–15:00 (Lunch), 18:00–22:00 (Dinner)",
@@ -4289,14 +4644,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Busan Citizens Park, Jeonpo Cafe Street, Seomyeon Food Alley",
+        "attAddress": "부산 부산진구 시민공원로 73,부산 부산진구 동천로 92,부산 부산진구 부전동"
     }, {
         "name": "Mujinjang Haemultang(무진장 해물탕)",
         "friendly": "Muslim Friendly",
         "area": "Jeollanam-do",
-        "foodType": "Korean Cuisine",
-        "address": "7, Doldam-gil, Changpyeong-myeon, Damyang-gun, Jeollanam-do (전남 담양군 창평면 돌담길 7 " +
-                ")",
+        "Food Type": "Korean Cuisine",
+        "address": "7, Doldam-gil, Changpyeong-myeon, Damyang-gun, Jeollanam-do (전남 담양군 창평면 돌담길 7)",
         "phonenum": "010-2654-0311",
         "Website": null,
         "runtime": "10:00–21:00",
@@ -4309,12 +4665,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gasa Literature Museum, Metasequoia-gil, Juknokwon",
+        "attAddress": "전남 담양군 가사문학면 가사문학로 877, 전남 담양군 담양읍 학동리 633, 전남 담양군 담양읍 죽녹원로 119"
     }, {
         "name": "Murree Muslim Food(마리무슬림푸드)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Pakistani",
+        "Food Type": "Pakistani",
         "address": "20, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울 용산구 우사단로10길 20)",
         "phonenum": "010-5787-1436",
         "Website": null,
@@ -4328,12 +4686,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "Myeongdong Sangol Dakgalbi(명동산골닭갈비)",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1F, 133-8, Joyang-dong, Chuncheon-si, Gangwon-do(강원 춘천시 조양동 133-8 1층)",
         "phonenum": "010-8798-2872",
         "Website": null,
@@ -4347,12 +4707,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "Myongdongjeong(명동정)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1F, 299, Samil-daero, Jung-gu, Seoul(서울시 중구 삼일대로 299 1층)",
         "phonenum": "010-3467-7489",
         "Website": null,
@@ -4366,14 +4728,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Myeongdong, Namsan Cable Car, Namsangol Hanok Village",
+        "attAddress": "서울 중구 명동2가,서울 중구 소파로 83,서울 중구 퇴계로34길 28 남산골한옥마을"
     }, {
         "name": "Naan(난)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
-        "address": "2F, 45, Ingye-ro 166beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기 수원시 팔달구 인계로1" +
-                "66번길 45 2층)",
+        "Food Type": "Indian",
+        "address": "2F, 45, Ingye-ro 166beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기 수원시 팔달구 인계로 16번길 45 2층)",
         "phonenum": "010-8366-1090",
         "Website": null,
         "runtime": "11:00–23:00",
@@ -4386,12 +4749,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hwaseong Haenggung Palace, Hyowon Park, Paldalmun Gate",
+        "attAddress": "경기 수원시 팔달구 정조로 825, 경기 수원시 팔달구 동수원로 397, 경기 수원시 팔달구 동수원로 397, 경기 수원시 팔달구 정조로 780 팔달문"
     }, {
         "name": "namaste haeundae(나마스테 해운대점)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "7, Haeundaehaebyeon-ro 265beon-gil, Haeundae-gu, Busan(부산 해운대구 해운대해변로265번길 7)",
         "phonenum": "010-2239-1946",
         "Website": null,
@@ -4405,14 +4770,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haeundae, Baeksko, Aquarium, Camellia Park, Dock",
+        "attAddress": "부산 해운대구 우동, 부산 해운대구 APEC로 55, 부산 해운대구 해운대해변로 266, 부산 해운대구 동백로 99, 부산 해운대구 수영강변대로 93"
     }, {
         "name": "NAMCHEON SUTBUL JANGEO-GU-I (남천숯불장어구이)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
-        "address": "71-1, Hwangnyeong-daero 489beon-gil, Suyeong-gu, Busan(부산광역시 수영구 황령대로 489번길 71" +
-                "-1)",
+        "Food Type": "Korean Cuisine",
+        "address": "71-1, Hwangnyeong-daero 489beon-gil, Suyeong-gu, Busan(부산광역시 수영구 황령대로 489번길 71-1)",
         "phonenum": "010-9677-9276",
         "Website": null,
         "runtime": "10:30–24:00",
@@ -4425,14 +4791,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Igidae Urban Nature Park, Samju Diamond Bay, Gwangan Bridge",
+        "attAddress": "부산 남구 용호동 산122,부산 남구 분포로 101 용호만유람선터미널,부산 수영구 민락동"
     }, {
         "name": "Namhangang(남한강)",
         "friendly": "Pork Free",
         "area": "Chungcheongbuk-do",
-        "foodType": "Korean Cuisine",
-        "address": "5-4, Baesiron-ro, Cheongpung-myeon, Jecheon-si, Chungcheongbuk-do(충북 제천시 청풍면 배" +
-                "시론로 5-4)",
+        "Food Type": "Korean Cuisine",
+        "address": "5-4, Baesiron-ro, Cheongpung-myeon, Jecheon-si, Chungcheongbuk-do(충북 제천시 청풍면 배시론로 5-4)",
         "phonenum": "010-8879-0089",
         "Website": null,
         "runtime": "10:00–20:00",
@@ -4445,12 +4812,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Cheongpung Cultural Complex, Cheongpung Lake Tourist Monorail, Cheongpung Land",
+        "attAddress": "충북 제천시 청풍면 청풍호로 2048 청풍문화재단지,충북 제천시 청풍면 청풍명월로 879-17,충북 제천시 청풍면 청풍호로50길 6"
     }, {
         "name": "Namiok(화덕닭갈비 가평점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "264, Munhwa-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기 가평군 가평읍 문화로 264)",
         "phonenum": "010-2181-1686",
         "Website": null,
@@ -4464,14 +4833,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Nami Island, Jade Garden, Gapyeong Rail Park",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1,강원 춘천시 남산면 햇골길 80 제이드가든수목원,경기 가평군 가평읍 장터길 14"
     }, {
         "name": "Namisum Kkokko Chuncheon Dakgalbi (남이섬꼬꼬춘천닭갈비)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "1045, Bukhangangbyeon-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기 가평군 가평읍 북" +
-                "한강변로 1045)",
+        "Food Type": "Korean Cuisine",
+        "address": "1045, Bukhangangbyeon-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do(경기 가평군 가평읍 북한강변로 1045)",
         "phonenum": "010-6568-2127",
         "Website": null,
         "runtime": "Weekdays (Monday–Friday): 9:00–20:00, Weekends (Saturday–Sunday): 9:00–22:00",
@@ -4484,14 +4854,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Nami Island, Jade Garden, Gapyeong Rail Park",
+        "attAddress": "강원 춘천시 남산면 남이섬길 1,강원 춘천시 남산면 햇골길 80 제이드가든수목원,경기 가평군 가평읍 장터길 14"
     }, {
         "name": "Narnia Restaurant(나니아 레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Western",
-        "address": "Bayhill Pool & Villa, 13-33, Yerae-ro 396beon-gil, Seogwipo-si, Jeju-do (제주특별자" +
-                "치도 서귀포시 예래로396번길 13-33 베이힐풀앤빌라 내 )",
+        "Food Type": "Western",
+        "address": "Bayhill Pool & Villa, 13-33, Yerae-ro 396beon-gil, Seogwipo-si, Jeju-do (제주특별자치도 서귀포시 예래로396번길 13-33 베이힐풀앤빌라 내 )",
         "phonenum": "010-3338-6863",
         "Website": null,
         "runtime": "Breakfast: 7:00–11:00 / Lunch: 12:00–15:30 / Dinner: 17:00–22:00",
@@ -4504,12 +4875,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jeju Sculpture Park, Columnar Joint, Gunsan Oreum, Jungmun Beach",
+        "attAddress": "제주 서귀포시 안덕면 일주서로 1836, 제주 서귀포시 이어도로 36-24, 제주 서귀포시 색달동"
     }, {
         "name": "natan(나탄약선요리)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1F, 4, Seongjigok-ro 51beon-gil, Busanjin-gu, Busan(부산 부산진구 성지곡로51번길 4 1층)",
         "phonenum": "010-3596-3213",
         "Website": null,
@@ -4523,12 +4896,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Busan Citizens Park, Sajik Stadium",
+        "attAddress": "부산 부산진구 시민공원로 73, 부산 동래구 사직로 45"
     }, {
         "name": "New Little India (Nampo branch)(뉴리틀인디아 남포점)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "",
+        "Food Type": "",
         "address": "33-1, BIFF gwangjang-ro, Jung-gu, Busan(부산광역시 중구 비프광장로 33-1)",
         "phonenum": "010-8829-4127",
         "Website": null,
@@ -4542,12 +4917,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "BIFF Square, Busan Trick Eye Museum, Jagalchi Market",
+        "attAddress": "부산 중구 비프광장로,부산 중구 대청로126번길 12 부산영화체험박물관 2F 트릭아이뮤지엄 부산,부산 중구 자갈치해안로 52 자갈치시장"
     }, {
         "name": "New Little India(뉴리틀인디아 김해점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangnam-do",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 95, Garak-ro, Gimhae-si, Gyeongsangnam-do (경남 김해시 가락로 95 2층 )",
         "phonenum": "010-8829-4127",
         "Website": null,
@@ -4561,12 +4938,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gimhaesuro Royal Tomb, Gimhae Gaya Theme Park, Clayarch Gimhae Art Museum",
+        "attAddress": "경남 김해시 가락로93번길 26,경남 김해시 가야테마길 161,경남 김해시 진례면 진례로 275-51 클레이아크"
     }, {
         "name": "New Littleindia Busan Station(뉴리틀인디아 부산역점 )",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "",
+        "Food Type": "",
         "address": "1B, 205, Jungang-daero, Dong-gu, Busan (부산광역시 동구 중앙대로 205, 지하1층 )",
         "phonenum": "010-8829-4127",
         "Website": null,
@@ -4580,12 +4959,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Choryang Bagu-gil, Jagalchi Market, Huinnyeoul Culture Village",
+        "attAddress": "부산 동구 초량동 865-48,부산 중구 자갈치해안로 52 자갈치시장,부산 영도구 영선동4가 605-3"
     }, {
         "name": "New Saladin downtown(뉴살라딘 동성로 )",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "67, Dongseong-ro 3-gil, Jung-gu, Daegu(대구 중구 동성로3길 67)",
         "phonenum": "010-5472-9259",
         "Website": null,
@@ -4599,12 +4980,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daegu City Central Library, Dongseong Rodeo Street, Daegu Sincheon Water Playground",
+        "attAddress": "대구 중구 공평로10길 25 (동인동 2가), 대구 중구 용덕동 12, 대구 중구 대봉동 655-1"
     }, {
         "name": "New Saladin(뉴살라딘)",
         "friendly": "Self Certified",
         "area": "Daegu",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "79, Daehak-ro, Buk-gu, Daegu(대구 북구 대학로 79)",
         "phonenum": "010-3893-2255",
         "Website": null,
@@ -4618,12 +5001,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Kim Gwang-seok Redrawing Road, Gyeongsang Gamyeong Park",
+        "attAddress": "대구 중구 대봉동 6-11,대구 중구 경상감영길 99 경상감영공원"
     }, {
         "name": "New Salsdin(뉴살라딘)",
         "friendly": "Self Certified",
         "area": "Daegu",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "3F, 17, Gyedaedongmun-ro, Dalseo-gu, Daegu(대구광역시 달서구 계대동문로 17 3층)",
         "phonenum": "010-3893-2255",
         "Website": null,
@@ -4637,12 +5022,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daegu Arboretum, Nampyeongmun Family Headquarters, E-World",
+        "attAddress": "대구 달서구 화암로 342 대구수목원관리사무소,대구 달성군 화원읍 인흥3길 16,대구 달서구 두류공원로 200 이월드"
     }, {
         "name": "New Taj Mahal(뉴타지마할)",
         "friendly": "Self Certified",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "55, Damunhwa 1-gil, Danwon-gu, Ansan-si, Gyeonggi-do(경기 안산시 단원구 다문화1길 55)",
         "phonenum": "010-3725-1786",
         "Website": null,
@@ -4656,12 +5043,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Oido Island",
+        "attAddress": "경기 시흥시 정왕동 오이도"
     }, {
         "name": "O HOO CHUNG(오후청)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "26-10, Namdaemun-ro 1-gil, Jung-gu, Seoul(서울시 중구 남대문로1길 26-10)",
         "phonenum": "02-777-0342",
         "Website": null,
@@ -4675,12 +5064,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Namdaemun Market, Bank of Korea Currency Museum, Deoksugung Palace",
+        "attAddress": "서울 중구 남대문시장4길 21, 서울 중구 남대문로 39 한국은행, 서울 중구 세종대로 99 덕수궁"
     }, {
         "name": "Olive Restaurant(올리브레스토랑)",
         "friendly": "Self Certified",
         "area": "Incheon",
-        "foodType": "Arab",
+        "Food Type": "Arab",
         "address": "31, Ongnyeon-ro, Yeonsu-gu, Incheon(인천 연수구 옥련로 31)",
         "phonenum": "032-874-2800",
         "Website": null,
@@ -4694,12 +5085,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Songdo Central Park",
+        "attAddress": "인천 연수구 컨벤시아대로 160"
     }, {
         "name": "Om Restaurant & Café (Gwanghwamun Branch)(옴 레스토랑 광화문점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "103, Saemunan-ro, Jongno-gu, Seoul(서울 종로구 새문안로103)",
         "phonenum": "010-4767-5248",
         "Website": null,
@@ -4713,12 +5106,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bukchon Hanok Village, Gyeongbokgung Palace",
+        "attAddress": "서울 종로구 계동길 37,서울 종로구 사직로 161 경복궁"
     }, {
         "name": "Om Restaurant & Café (Mapo/ Gongdeuk Branch) (옴 레스토랑 마포/공덕점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "#201, 73, Mapo-daero, Mapo-gu, Seoul(서울 마포구 마포대로 73 201호)",
         "phonenum": "010-4767-5248",
         "Website": null,
@@ -4732,14 +5127,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hyochang Park",
+        "attAddress": "서울 용산구 효창동"
     }, {
         "name": "OM RESTAURANT(옴레스토랑 광교점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
-        "address": "#B223, Raon Zone, 2F, Avenue France, 85, Central town-ro, Yeongtong-gu, Suwon-" +
-                "si, Gyeonggi-do(경기도 수원시 영통구 센트럴타운로 85 아브뉴프랑 2층 라온존 B223호)",
+        "Food Type": "Indian",
+        "address": "#B223, Raon Zone, 2F, Avenue France, 85, Central town-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do(경기도 수원시 영통구 센트럴타운로 85 아브뉴프랑 2층 라온존 B223호)",
         "phonenum": "",
         "Website": null,
         "runtime": "10:00–22:00",
@@ -4752,14 +5148,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanggyo Lake Park, Gwanggyo History Park, Lotte Outlet Gwanggyo Branch",
+        "attAddress": "경기 수원시 영통구 광교호수로 165,경기 수원시 영통구 이의동 산13-88, 경기 수원시 영통구 도청로 10"
     }, {
         "name": "One roof five family(한지붕다섯가족 )",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
-        "address": "One roof five family, 397-20, Geumchon-ro, Dong-myeon, Chuncheon-si, Gangwon-d" +
-                "o(강원 춘천시 동면 금촌로 397-20 한지붕 다섯가족)",
+        "Food Type": "Korean Cuisine",
+        "address": "One roof five family, 397-20, Geumchon-ro, Dong-myeon, Chuncheon-si, Gangwon-do(강원 춘천시 동면 금촌로 397-20 한지붕 다섯가족)",
         "phonenum": "010-8919-7915",
         "Website": null,
         "runtime": "11:30–21:00",
@@ -4772,12 +5169,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 온의동, 강원 춘천시 남산면 강촌로 34, 강원 춘천시 남산면 강촌리, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면 순환대로 1154-97"
     }, {
         "name": "ONGGICHON(옹기촌)",
         "friendly": "Pork Free",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "Onggichon, 11, Suyeong-ro 358beon-gil, Nam-gu, Busan(부산 남구 대연동 29-12 옹기촌)",
         "phonenum": "010-2820-1322",
         "Website": null,
@@ -4791,12 +5190,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Oryukdo Island, Gwangalli Beach, Igidae Waterfront Park, UN Memorial Park, Sinseondae",
+        "attAddress": "부산 남구 용호동 936-941, 부산 수영구 광안해변로 219, 부산 남구 용호동 산122, 부산 남구 대연동 776-3, 신선대"
     }, {
         "name": "Ongmi Agujjim(옥미아구찜)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "35, Mangmibeonyeong-ro 55beon-gil, Suyeong-gu, Busan(부산광역시 수영구 망미번영로 55번길 35)",
         "phonenum": "010-9448-0258",
         "Website": null,
@@ -4810,14 +5211,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haeundae Dalmaji-gil, Nurimaru APEC House, Cinema Center",
+        "attAddress": "부산 해운대구 달맞이길 190,부산 해운대구 동백로 116 누리마루APEC하우스,부산 해운대구 수영강변대로 120 영화의전당"
     }, {
         "name": "ORI DAEGA RESTAURANT(오리대가)",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "27, Gyeongsu-daero 565beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 경" +
-                "수대로565번길 27)",
+        "Food Type": "Korean Cuisine",
+        "address": "27, Gyeongsu-daero 565beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 경수대로565번길 27)",
         "phonenum": "010-9917-3787",
         "Website": null,
         "runtime": "11:30–21:30 (break 15:00–17:00)",
@@ -4830,12 +5232,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jidong Market Sundae Town, Suwon Hwaseong Museum, Hyowon Park",
+        "attAddress": "경기 수원시 팔달구 창룡문로 3, 경기 수원시 팔달구 창룡대로 21 수원화성박물관, 경기 수원시 팔달구 동수원로 397"
     }, {
         "name": "Osegyehyang(오세계향)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "14-5, Insadong 12-gil, Jongno-gu, Seoul(서울 종로구 인사동12길 14-5)",
         "phonenum": "010-2202-2086",
         "Website": null,
@@ -4849,12 +5253,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bukchon Hanok Village, Insadong",
+        "attAddress": "서울 종로구 계동길 37,서울 종로구 인사동"
     }, {
         "name": "OTSAL(오샬)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "6, Inchon-ro 24-gil, Seongbuk-gu, Seoul(서울 성북구 인촌로24길 6)",
         "phonenum": "010-3779-3644",
         "Website": null,
@@ -4868,12 +5274,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "King Sejong the Great Memorial Hall, Seoul Jeongneung",
+        "attAddress": "서울 동대문구 회기로 56,서울 성북구 정릉동"
     }, {
         "name": "OTSAL(옷살)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "#104, 1B, 164, Gwanak-ro, Gwanak-gu, Seoul(서울 관악구 관악로 164 지하1층 104호)",
         "phonenum": "010-2582-6527",
         "Website": null,
@@ -4887,12 +5295,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksu Park, Hyeonchungwon, Sangdo Green Park, Boramae Park",
+        "attAddress": "서울 관악구 낙성대로 42, 서울 동작구 동작동 271-18, 서울 동작구 성대로17길 52 244-181, 서울 동작구 여의대방로20길 33"
     }, {
         "name": "PAK INDIA(오리지날 팍인디아레스토랑)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Pakistani",
+        "Food Type": "Pakistani",
         "address": "51, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울시 용산구 우사단로10길 51)",
         "phonenum": "",
         "Website": null,
@@ -4906,12 +5316,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon Usadan-gil, Itaewon Shopping Street, War Memorial of Korea",
+        "attAddress": ""
     }, {
         "name": "Park Cafe (파크카페 )",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western",
+        "Food Type": "Western",
         "address": "8, Yeoui-daero, Yeongdeungpo-gu, Seoul (서울 영등포구 여의대로 8 )",
         "phonenum": "010-4797-8424",
         "Website": null,
@@ -4925,12 +5337,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "IFC Mall, Yeouido Park",
+        "attAddress": "서울 영등포구 국제금융로 10 IFC몰 B1,서울 영등포구 여의공원로 68 여의도공원관리사무소"
     }, {
         "name": "peninsula(롯데호텔 페닌슐라 라운지)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "1F, Main Tower, 30, Eulji-ro, Jung-gu, Seoul(서울시 중구 을지로30 메인타워 1층)",
         "phonenum": "010-2696-2306",
         "Website": null,
@@ -4944,12 +5358,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Myeongdong, Myeongdong Cathedral, Namdaemun Market",
+        "attAddress": "서울 중구 명동2가,서울 중구 명동길 74,서울 중구 남대문시장4길 21"
     }, {
         "name": "Persian Palace (페르시안궁전)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "9, Seonggyungwan-ro 6-gil, Jongno-gu, Seoul(서울 종로구 성균관로6길 9)",
         "phonenum": "010-2735-6027",
         "Website": null,
@@ -4963,12 +5379,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daehak-ro, Changdeokgung Palace and Howon",
+        "attAddress": "서울 종로구 동숭동,서울 종로구 창경궁로 185 창경궁"
     }, {
         "name": "PETRA restaurant(페트라)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 33, Noksapyeong-daero 40-gil, Yongsan-gu, Seoul(서울시 용산구 녹사평대로 40길33 2층)",
         "phonenum": "010-4721-1328",
         "Website": null,
@@ -4982,14 +5400,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "War Memorial of Korea, Gyeongridan-gil, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 이태원로 29 전쟁기념관, 서울 용산구 이태원동, 서울 용산구 이태원동"
     }, {
         "name": "Pierre Gagnaire a Seoul (Lotte Hotel Seoul)(피에르 가니에르 서울(롯데호텔서울))",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "French",
-        "address": "35F, Lotte Hotel Seoul (Executive Tower), 30 Eulji-ro, Jung-gu, Seoul(서울 중구 을지" +
-                "로 30 롯데호텔 신관 35층)",
+        "Food Type": "French",
+        "address": "35F, Lotte Hotel Seoul (Executive Tower), 30 Eulji-ro, Jung-gu, Seoul(서울 중구 을지로 30 롯데호텔 신관 35층)",
         "phonenum": "010-2696-2306",
         "Website": null,
         "runtime": "Lunch: 12:00–15:00, Dinner: 18:00–22:00",
@@ -5002,12 +5421,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksugung Palace, Cheonggyecheon Stream, Myeongdong",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 명동"
     }, {
         "name": "Pizza Chicken&KAMPUNGKU(피자치킨&KAMPUNGKU)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Malaysian",
+        "Food Type": "Malaysian",
         "address": "1F, 25, Toegye-ro 20-gil, Jung-gu, Seoul,(서울 중구 퇴계로20길 25 1층)",
         "phonenum": "010-5317-0334",
         "Website": null,
@@ -5021,12 +5442,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Namsan Tower, Myeongdong Culture Street",
+        "attAddress": "부산 금정구 학산로7번길 17,서울 중구 명동2가"
     }, {
         "name": "POOJA 2(뿌자레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "4F, 13, Eulji-ro 43-gil, Jung-gu, Seoul(서울시 중구 을지로6가 18-71 4층)",
         "phonenum": "",
         "Website": null,
@@ -5040,12 +5463,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "DDP, Heunginjimun, Doota",
+        "attAddress": "서울 중구 을지로 281, 서울 종로구 종로 288 흥인지문, 서울 중구 장충단로 275 두산타워빌딩"
     }, {
         "name": "Potala Restaurant (Jongno-Branch)(포탈라레스토랑 종로점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "99, Cheonggyecheon-ro, Jongno-gu, Seoul(서울 종로구 청계천로 99)",
         "phonenum": "010-7188-5544",
         "Website": null,
@@ -5059,12 +5484,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jongmyo, Cheonggyecheon",
+        "attAddress": "서울 종로구 종로 157, 서울 종로구 창신동"
     }, {
         "name": "Potala Restaurant Hongdae branch(포탈라레스토랑 홍대점)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 13, World Cup buk-ro 4-gil, Mapo-gu, Seoul(서울시 마포구 월드컵북로4길 13 2층)",
         "phonenum": "010-7188-5544",
         "Website": null,
@@ -5078,14 +5505,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae Free Market, Yeonnam-dong Workshop Street",
+        "attAddress": "서울 마포구 와우산로21길 19-3,서울 마포구 성미산로27길 34 3층 302호"
     }, {
         "name": "Premium beef grill MISO(개인화로 미소)",
         "friendly": "Pork Free",
         "area": "Jeollabuk-do",
-        "foodType": "Korean Cuisine",
-        "address": "#201, 2F, 57, Hongsanbuk-ro, Wansan-gu, Jeonju-si, Jeollabuk-do(전북 전주시 완산구 홍산북" +
-                "로 57 201호 2F 층)",
+        "Food Type": "Korean Cuisine",
+        "address": "#201, 2F, 57, Hongsanbuk-ro, Wansan-gu, Jeonju-si, Jeollabuk-do(전북 전주시 완산구 홍산북로 57 201호 2F 층)",
         "phonenum": "063-221-7796",
         "Website": null,
         "runtime": "Daily: 16:30–24:00",
@@ -5098,12 +5526,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jeonju Hanok Village, Jeonju Zoo",
+        "attAddress": "전북 전주시 완산구 기린대로 99, 전북 전주시 덕진구 소리로 68 전주동물원"
     }, {
         "name": "Punjab Indian Restaurant (Haeundae Branch)(펀자브인도요리전문점 )",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "31, Gunam-ro, Haeundae-gu, Busan(부산 해운대구 구남로 31)",
         "phonenum": "010-3170-1947",
         "Website": null,
@@ -5117,12 +5547,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haeundae Beach, Dongbaekseom Island, Haeundae Dalmaji-gil",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 우동 710-1,부산 해운대구 달맞이길 190"
     }, {
         "name": "Raga Indian Restaurant(라가)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "",
+        "Food Type": "",
         "address": "1F, 45, Sinmae-ro 16-gil, Suseong-gu, Daegu(대구 수성구 신매로 16길 45 1층)",
         "phonenum": "010-2521-4886",
         "Website": null,
@@ -5136,14 +5568,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daegu World Cup Stadium",
+        "attAddress": "대구 수성구 유니버시아드로 180 대구종합경기장"
     }, {
         "name": "Rainbow(레인보우)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Western",
-        "address": "1F, Geumosan Hotel, 400, Geumosan-ro, Gumi-si, Gyeongsangbuk-do(경북 구미시 금오산로 40" +
-                "0, 호텔금오산 1층)",
+        "Food Type": "Western",
+        "address": "1F, Geumosan Hotel, 400, Geumosan-ro, Gumi-si, Gyeongsangbuk-do(경북 구미시 금오산로 400, 호텔금오산 1층)",
         "phonenum": "010-2529-6064",
         "Website": null,
         "runtime": "6:30–19:00",
@@ -5156,14 +5589,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Geumosan Provincial Park, Geumoji, Geumo Land",
+        "attAddress": "경북 구미시 남통동 288-2,경남 하동군 금남면 진정리,경북 구미시 금오산로 341"
     }, {
         "name": "Raj(라즈 인천공항)",
         "friendly": "Muslim Friendly",
         "area": "Incheon",
-        "foodType": "",
-        "address": "1F, IBC D.O. Ville, 72, Gonghang-ro 424beon-gil, Jung-gu, Incheon(인천광역시 중구 공항로" +
-                "424번길 72 IBC디오빌 1층)",
+        "Food Type": "",
+        "address": "1F, IBC D.O. Ville, 72, Gonghang-ro 424beon-gil, Jung-gu, Incheon(인천광역시 중구 공항로 424번길 72 IBC디오빌 1층)",
         "phonenum": "010-9423-0563",
         "Website": null,
         "runtime": "11:00–10:00",
@@ -5176,12 +5610,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Incheon International Airport, Paradise City Hotel Casino, Sky72",
+        "attAddress": "인천 중구 공항로 271 인천국제공항역,인천 중구 영종해안남로321번길 186,인천 중구 영종해안북로847번길 42"
     }, {
         "name": "Rajmahal(라지마할)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "43, Singwang-ro, Jeju-si, Jeju-do(제주도 제주시 신광로 43)",
         "phonenum": "010-2696-2393",
         "Website": null,
@@ -5195,12 +5631,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Halla Arboretum, Iho Tewoo Beach",
+        "attAddress": "제주 제주시 수목원길 72,제주 제주시 이호일동"
     }, {
         "name": "Rama & Bavana(라마앤바바나 서면점)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Asian",
+        "Food Type": "Asian",
         "address": "33, Jungang-daero 702beon-gil, Busanjin-gu, Busan(부산 부산진구 중앙대로702번길 33)",
         "phonenum": "010-4739-4654",
         "Website": null,
@@ -5214,12 +5652,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Igidae Urban Nature Park, Oryukdo Skywalk",
+        "attAddress": "부산 남구 용호동 산122,부산 남구 오륙도로 137"
     }, {
         "name": "Restaurant Indoro(인도로가는길)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "20, Insadong 5-gil, Jongno-gu, Seoul(서울 종로구 인사동5길 20)",
         "phonenum": "010-6713-1121",
         "Website": null,
@@ -5233,18 +5673,18 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jongmyo Shrine, Insadong",
+        "attAddress": "서울 종로구 종로 157,서울 종로구 인사동"
     }, {
         "name": "Rolling Hills Hotel Blue Sapphire(롤링힐스호텔 블루사파이어)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine,Buffet",
-        "address": "1F, Rolling Hills Hotel, 290, Sicheong-ro, Namyang-eup, Hwaseong-si, Gyeonggi-" +
-                "do(경기 화성시 남양읍 시청로 290, 롤링힐스호텔 1층)",
+        "Food Type": "Korean Cuisine,Buffet",
+        "address": "1F, Rolling Hills Hotel, 290, Sicheong-ro, Namyang-eup, Hwaseong-si, Gyeonggi-do(경기 화성시 남양읍 시청로 290, 롤링힐스호텔 1층)",
         "phonenum": "010-9231-2018",
         "Website": null,
-        "runtime": "Breakfast Buffet: 6:30–10:00 (Monday–Thursday), 7:00–10:00 (Friday–Sunday and " +
-                "holidays), Dinner Buffet: 18:00–22:00, A La Carte: 11:30–21:30",
+        "runtime": "Breakfast Buffet: 6:30–10:00 (Monday–Thursday), 7:00–10:00 (Friday–Sunday and holidays), Dinner Buffet: 18:00–22:00, A La Carte: 11:30–21:30",
         "Closed": "Open all year round",
         "No. of seats": 240,
         "parking": "O",
@@ -5254,14 +5694,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jebudo Island, Gungpyeong Port, Yonggeonneung Tomb",
+        "attAddress": "경기 화성시 서신면 제부리,경기 화성시 서신면 궁평항로 1049-24,경기 화성시 안녕동 187-39"
     }, {
         "name": "Room Service of Sheraton Seoul D Cube City Hotel(쉐라톤서울디큐브시티호텔 룸서비스)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western (Room Service)",
-        "address": "Sheraton Seoul D Cube City Hotel, 662, Gyeongin-ro, Guro-gu, Seoul(서울특별시 구로구 경" +
-                "인로 662, 쉐라톤서울디큐브시티호텔)",
+        "Food Type": "Western (Room Service)",
+        "address": "Sheraton Seoul D Cube City Hotel, 662, Gyeongin-ro, Guro-gu, Seoul(서울특별시 구로구 경인로 662, 쉐라톤서울디큐브시티호텔)",
         "phonenum": "010-9322-2614",
         "Website": null,
         "runtime": "10:30–22:00",
@@ -5274,12 +5715,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Mullae Creative Village, Guro-dong Chinese Street, Mario Outlet",
+        "attAddress": "서울 영등포구 도림로128가길 13-8,서울 구로구 디지털로26길,서울 금천구 디지털로 185 마리오아울렛1관"
     }, {
         "name": "Saemangeum Sushi Restaurant(새만금횟집)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "Korean Cuisine,Japanese",
+        "Food Type": "Korean Cuisine,Japanese",
         "address": "13, Bieungan 7-gil, Gunsan-si, Jeollabuk-do(전북 군산시 비응안7길 13)",
         "phonenum": "010-4602-1733",
         "Website": null,
@@ -5293,12 +5736,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Saemangeum Seawall, Sinsido Fishing Village Experience Village, Seonyudo Island",
+        "attAddress": "전북 군산시 비응도동,전북 군산시 옥도면 신시도리 120,서울 영등포구 선유로 343"
     }, {
         "name": "Saesil(새실)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangbuk-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "70, Gyeyang-ro, Gyeongsan-si, Gyeongsangbuk-do(경북 경산시 계양로 70)",
         "phonenum": "010-3501-0533",
         "Website": null,
@@ -5312,12 +5757,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Cheongdo Wine Tunnel, Daegu Suseong Amusement Park",
+        "attAddress": "경북 청도군 화양읍 송금길 100,대구광역시 수성구 두산동 512"
     }, {
         "name": "Salam (쌀람)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "39, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울 용산구 우사단로10길 39)",
         "phonenum": "010-5212-3413",
         "Website": null,
@@ -5331,12 +5778,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "SALWA Restaurant(살와 레스토랑)",
         "friendly": "Self Certified",
         "area": "Daegu",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "2F, 52, Seodang-ro 7-gil, Dalseo-gu, Daegu(대구 달서구 서당로7길 52, 2층)",
         "phonenum": "010-7747-0375",
         "Website": null,
@@ -5350,12 +5799,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Palgongsan, Songhae Park, Haksan Park, Daegu Arboretum, Dasan Cultural Park",
+        "attAddress": "경상북도 칠곡군 동명면 한티로 1034, 대구광역시 달성군 옥포면 기세리 306, 대구광역시 달서구 월성동 학산공원, 대구광역시 달서구 대곡동 화암로 342, 경상북도 고령군 다산면 호촌리 다산문화공원"
     }, {
         "name": "Samarkand(Busan)(사마르칸트)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "",
+        "Food Type": "",
         "address": "37, Daeyeong-ro 243beon-gil, Dong-gu, Busan(부산광역시 동구 초량동 대영로 243번길 37)",
         "phonenum": "010-2877-4734",
         "Website": null,
@@ -5369,12 +5820,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Sanbok Road Choryangbagu-gil, Gukje Market, Bosu-dong Bookstore Alley",
+        "attAddress": "부산 동구 초량동 865-48,부산 중구 신창동4가,부산 중구 대청로 67-1"
     }, {
         "name": "Samarkand(Daegu)(사마르칸트)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "",
+        "Food Type": "",
         "address": "59, Dongseong-ro, Jung-gu, Daegu(대구광역시 중구 동성로 59)",
         "phonenum": "010-2730-3846",
         "Website": null,
@@ -5388,12 +5841,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jewelry Fashion Town, Gyeongsang Gamyeong Park, Bukseongro Tool Museum",
+        "attAddress": "대구 중구 경상감영길 176 패션쥬얼리 전문타운,대구 중구 경상감영길 99 경상감영공원"
     }, {
         "name": "SAMARKANDCITY(사마르칸트시티)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Uzbekista",
+        "Food Type": "Uzbekista",
         "address": "2F, 16, Eulji-ro 42-gil, Jung-gu, Seoul(서울시 중구 을지로6가 42길 16 2층)",
         "phonenum": "",
         "Website": null,
@@ -5407,12 +5862,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "DDP, Heunginjimun, Doota",
+        "attAddress": "서울 중구 을지로 281, 서울 종로구 종로 288 흥인지문, 서울 중구 장충단로 275 두산타워빌딩"
     }, {
         "name": "Samdae Wonjo Halmae Chueotang(3대원조할매추어탕)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1467, Yocheon-ro, Namwon-si, Jeollabuk-do(전북 남원시 요천로 1467)",
         "phonenum": "010-2907-0535",
         "Website": null,
@@ -5426,12 +5883,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanghallu, Chunhyang Theme Park",
+        "attAddress": "전북 남원시 요천로 1447, 전북 남원시 양림길 43 춘향문화예술회관"
     }, {
         "name": "Samdae Wonjo Naju Gomtang Taeyangjip Branch No. 2(삼대원조나주곰탕 태양집2호점)",
         "friendly": "Pork Free",
         "area": "Jeollanam-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "14, Oryong 2-gil, Samhyang-eup, Muan-gun, Jeollanam-do(전남 무안군 삼향읍 오룡2길 14)",
         "phonenum": "010-3602-0297",
         "Website": null,
@@ -5445,12 +5904,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Dancing Sea Fountain, Gatbawi Rock, National Institute of Maritime Cultural Heritage",
+        "attAddress": "전남 목포시 미항로 115,전남 목포시 용해동 산86-24,전남 목포시 남농로 136"
     }, {
         "name": "Samsoo jang-eo(삼수장어 신천동로점)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "442, Sincheondong-ro, Suseong-gu, Daegu(대구광역시 수성구 신천동로 442)",
         "phonenum": "010-3529-7474",
         "Website": null,
@@ -5464,12 +5925,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Kim Gwang-seok Redrawing Road, Seomun Market, Daegu Modern Alley",
+        "attAddress": "대구 중구 대봉동 6-11,대구 중구 달성로 50 서문시장,대구 중구 남성로"
     }, {
         "name": "Samsoo Jangeo Dusan Ogeori Branch(삼수장어 두산오거리점)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "123, Muhak-ro, Suseong-gu, Daegu(대구광역시 수성구 무학로 123)",
         "phonenum": "010-3529-7474",
         "Website": null,
@@ -5483,12 +5946,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Suseongmot, Hillcrest, Gachang Steamed Bread Street",
+        "attAddress": "대구 수성구 두산동,대구 달성군 가창면 가창로 1003,대구 달성군 가창면 가창로 1099 가창옛날찐빵집손만두"
     }, {
         "name": "San-gol-e(산골애)",
         "friendly": "Pork Free",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "173, Myeongji ocean city 1-ro, Gangseo-gu, Busan(부산 강서구 명지오션시티1로 173)",
         "phonenum": "010-2810-5872",
         "Website": null,
@@ -5502,14 +5967,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daejeo Ecological Park, Contemporary Art Museum, Starfield, Eulsukdo Ecological Park",
+        "attAddress": "부산 강서구 대저1동 1-5, 부산 사하구 낙동남로 1191, 부산 강서구 명지국제6로 168, 부산 사하구 하단동 1207"
     }, {
         "name": "SANCHON(산촌 (고양점))",
         "friendly": "Pork Free",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "Sanchon, 234, Bogwang-ro, Deogyang-gu, Goyang-si, Gyeonggi-do(경기 고양시 덕양구 보광로 2" +
-                "34 산촌)",
+        "Food Type": "Korean Cuisine",
+        "address": "Sanchon, 234, Bogwang-ro, Deogyang-gu, Goyang-si, Gyeonggi-do(경기 고양시 덕양구 보광로 234 산촌)",
         "phonenum": "010-4304-1900",
         "Website": null,
         "runtime": "11:00–19:00 (may close early depending on the availability of ingredients)",
@@ -5522,14 +5988,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seo Seoul CC, Olympic CC, Bogwangsa Temple, Majang Lake, Jang Okjin Art Museum",
+        "attAddress": "경기 파주시 광탄면 혜음로 324, 경기 고양시 덕양구 혜음로 301, 경기 파주시 광탄면 보광로474번길 87, 경기 파주시 광탄면 기산로 259, 경기 양주시 장흥면 권율로 193"
     }, {
         "name": "Sejong Village Chicken(세종마을 치킨)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
-        "address": "Sejong Village Chicken, 24-1, Jahamun-ro 1-gil, Jongno-gu, Seoul(서울 종로구 자하문로1길" +
-                " 24-1 세종마을 치킨)",
+        "Food Type": "Korean Cuisine",
+        "address": "Sejong Village Chicken, 24-1, Jahamun-ro 1-gil, Jongno-gu, Seoul(서울 종로구 자하문로1길 24-1 세종마을 치킨)",
         "phonenum": "010-4374-9293",
         "Website": null,
         "runtime": "14:00–1:00",
@@ -5542,12 +6009,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeongbokgung Palace, Blue House, Sajikdan, Gyeonghuigung Palace, Gwanghwamun, Cheonggye Plaza",
+        "attAddress": "서울 종로구 사직로 161 경복궁, 서울 종로구 효자동 150, "
     }, {
         "name": "Seogane Ori(서가네오리)",
         "friendly": "Pork Free",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1&2F, 83-33, Gayagongwon-ro, Busanjin-gu, Busan(부산 부산진구 가야공원로 83-33 1, 2층)",
         "phonenum": "010-5055-5665",
         "Website": null,
@@ -5561,12 +6030,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gayasan Mountain, Busan Citizens Park, Hutchison Korea Terminal, Busan Port Coastal Passenger Terminal",
+        "attAddress": ""
     }, {
         "name": "SEOMJINGANG AE JAECHEOP(섬진강애재첩)",
         "friendly": "Muslim Friendly",
         "area": "Jeollanam-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "74, Palma 5-gil, Suncheon-si, Jeollanam-do(전남 순천시 팔마5길 74)",
         "phonenum": "010-8826-0126",
         "Website": null,
@@ -5580,14 +6051,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Suncheon Bay National Garden, Suncheon Bay Wetland, Lower Field",
+        "attAddress": "전남 순천시 국가정원1호길 47,전남 순천시 순천만길 513-25,전남 순천시 장평로 60"
     }, {
         "name": "Seongsan Bomaljuk Kalguksu(성산보말죽칼국수)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
-        "address": "#101, 5109, Iljudong-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주 서귀포시 성산읍 일주동로 5" +
-                "109 101호)",
+        "Food Type": "Korean Cuisine",
+        "address": "#101, 5109, Iljudong-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주 서귀포시 성산읍 일주동로 5109 101호)",
         "phonenum": "010-3242-2121",
         "Website": null,
         "runtime": "7:30–20:00",
@@ -5600,12 +6072,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seongsan Ilchulbong Peak, Seopjikoji, Pyoseon Beach, Ilchulbong Land",
+        "attAddress": "제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 성산읍 고성리, 제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 중산간동로 4150-30"
     }, {
         "name": "Seoul Wonjo Agujjim(서울원조아구찜)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "436-1, Samil-daero, Jongno-gu, Seoul(서울시 종로구 삼일대로 436-1)",
         "phonenum": "",
         "Website": null,
@@ -5619,14 +6093,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Ikseon-dong Hanok Street, Nakwon-dong Agujjim Street, Unhyeongung",
+        "attAddress": "서울 종로구 익선동, 서울 종로구 낙원동, 서울 종로구 삼일대로 464 운현궁"
     }, {
         "name": "Sewoogo tish sashimi(세우고 횟집)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "Japanese",
-        "address": "Sewoogo Fish Sashimi, 481, Jeonjucheondong-ro, Deokjin-gu, Jeonju-si, Jeollabu" +
-                "k-do(전북 전주시 덕진구 전주천동로 481 세우고횟집)",
+        "Food Type": "Japanese",
+        "address": "Sewoogo Fish Sashimi, 481, Jeonjucheondong-ro, Deokjin-gu, Jeonju-si, Jeollabuk-do(전북 전주시 덕진구 전주천동로 481 세우고횟집)",
         "phonenum": "010-6645-0006",
         "Website": null,
         "runtime": "15:00–23:00",
@@ -5639,12 +6114,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jeonju Hanok Village, Deokjin Park",
+        "attAddress": "전북 전주시 완산구 기린대로 99, 전북 전주시 덕진구 권삼득로 390 전주덕진공원"
     }, {
         "name": "Shalimar Restaurant(샬리마 레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Ulsan",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 621, Bangeojinsunhwando-ro, Dong-gu, Ulsan(울산 동구 방어진순환도로 621 2층)",
         "phonenum": "010-4125-9809",
         "Website": null,
@@ -5658,14 +6135,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Bangeojinhang Port, Daewangam Park, Ulgi Lighthouse",
+        "attAddress": "울산 동구 성끝길 2,울산 동구 일산동 산907,울산 동구 등대로 155"
     }, {
         "name": "Shubh Indian and Nepalese Restaurant(수버인도네팔요리점)",
         "friendly": "Muslim Friendly",
         "area": "Chungcheongbuk-do",
-        "foodType": "",
-        "address": "1F, 50, Jungsimsangeop 1-ro, Ochang-eup, Cheongwon-gu, Cheongju-si, Chungcheon" +
-                "gbuk-do(충북 청주시 청원구 오창읍 중심상업1로 50, 1층)",
+        "Food Type": "",
+        "address": "1F, 50, Jungsimsangeop 1-ro, Ochang-eup, Cheongwon-gu, Cheongju-si, Chungcheongbuk-do(충북 청주시 청원구 오창읍 중심상업1로 50, 1층)",
         "phonenum": "010-8260-9471",
         "Website": null,
         "runtime": "11:00–22:00",
@@ -5678,14 +6156,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Ochang Lake Park, Cheongju Baekje Relics Exhibition Hall, Cheongju National Museum",
+        "attAddress": "충북 청주시 청원구 오창읍 오창공원로 311,충북 청주시 흥덕구 1순환로438번길 9 백제유물전시관,충북 청주시 상당구 명암로 143 국립청주박물관"
     }, {
         "name": "Sky Kingdom - The Ribbon(스카이킹덤 더 리본)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Western",
-        "address": "Seoul Dragon City, 95, Cheongpa-ro 20-gil, Yongsan-gu, Seoul(서울 용산구 청파로20길 95 " +
-                "서울드래곤시티)",
+        "Food Type": "Western",
+        "address": "Seoul Dragon City, 95, Cheongpa-ro 20-gil, Yongsan-gu, Seoul(서울 용산구 청파로20길 95 서울드래곤시티)",
         "phonenum": "010-4543-1445",
         "Website": null,
         "runtime": "Dinner: 18:00–22:00 (Last Order: 21:00)",
@@ -5698,14 +6177,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon, Namsan, Myeongdong, Yeouido Hangang Park, Gyeongbokgung Palace, National Museum of Korea, Hongdae, Namdaemun Market",
+        "attAddress": "서울 용산구 이태원동, 서울 용산구 남산공원길 105, 서울 영등포구 여의동로 330 한강사업본부 여의도안내센터, 서울 종로구 사직로 161 경복궁, 서울 용산구 서빙고로 137 국립중앙박물관, 서울 마포구 서교동, 서울 중구 남대문시장4길 21"
     }, {
         "name": "Slow City Herb Table(슬로시티약초밥상)",
         "friendly": "Muslim Friendly",
         "area": "Jeollanam-do",
-        "foodType": "Korean Cuisine",
-        "address": "102, Doldam-gil, Changpyeong-myeon, Damyang-gun, Jeollanam-do (전남 담양군 창평면 돌담길 " +
-                "102 )",
+        "Food Type": "Korean Cuisine",
+        "address": "102, Doldam-gil, Changpyeong-myeon, Damyang-gun, Jeollanam-do (전남 담양군 창평면 돌담길 102 )",
         "phonenum": "010-2716-6312",
         "Website": null,
         "runtime": "8:00–20:00",
@@ -5718,12 +6198,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gasa Literature Museum, Metasequoia-gil, Juknokwon",
+        "attAddress": "전남 담양군 가사문학면 가사문학로 877, 전남 담양군 담양읍 학동리 633, 전남 담양군 담양읍 죽녹원로 119"
     }, {
         "name": "Song Jung(송정)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "11, Eulji-ro 38-gil, Jung-gu, Seoul(서울시 중구 을지로38길 11)",
         "phonenum": "",
         "Website": null,
@@ -5737,14 +6219,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Dongdaemun Chicken Hanmari Alley, Gwangjang Market, DDP",
+        "attAddress": "서울 종로구 종로5가 37-7, 서울 종로구 창경궁로 88, 서울 중구 을지로 281"
     }, {
         "name": "Songchon wellbeing Loving Hut(러빙헛웰빙송촌점)",
         "friendly": "Pork Free",
         "area": "Daejeon",
-        "foodType": "Korean Cuisine,Indian",
-        "address": "Loving Hut, (493-6, Jungni-dong), 23, Songchonbuk-ro, Daedeok-gu, Daejeon(대전 대" +
-                "덕구 송촌북로23(중리동493-6) 러빙헛)",
+        "Food Type": "Korean Cuisine,Indian",
+        "address": "Loving Hut, 23, Songchonbuk-ro, Daedeok-gu, Daejeon(대전 대덕구 송촌북로23 러빙헛)",
         "phonenum": "010-2209-9360",
         "Website": null,
         "runtime": "11:30–20:30",
@@ -5757,12 +6240,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Dongchundang, Gyejoksan Hwangto-gil",
+        "attAddress": "대전 대덕구 동춘당로 80 동춘당, 대전 대덕구 장동 산91"
     }, {
         "name": "Songjeong Kkotgejip(송정꽃게집)",
         "friendly": "Muslim Friendly",
         "area": "Chungcheongnam-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "46, Bangpo-ro, Anmyeon-eup, Taean-gun, Chungcheongnam-do(충남 태안군 안면읍 방포로 46)",
         "phonenum": "010-9003-3736",
         "Website": null,
@@ -5776,12 +6261,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Kkotji Beach, Anmyeondo Natural Recreational Forest, Resom Ocean Castle",
+        "attAddress": "충남 태안군 안면읍 승언리,충남 태안군 안면읍 안면대로 3195-6 안면도자연휴양림,충남 태안군 안면읍 꽃지해안로 204"
     }, {
         "name": "Soyanggang Cheonyeo Dakgalbi(소양강처녀닭갈비)",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1F, 2666, Yeongseo-ro, Chuncheon-si, Gangwon-do(강원 춘천시 영서로 2666 1층)",
         "phonenum": "010-7385-1203",
         "Website": null,
@@ -5795,12 +6282,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Soyanggang River, Skywalk, Gongjicheon Stream, Gangchon Station, Rail Bike, Munhak Village, Santorini Cafe",
+        "attAddress": "강원 춘천시 동면, 강원 춘천시 칠전동, 강원 춘천시 남산면 강촌로 150, 강원 춘천시 신동면 김유정로 1430-14, 강원 춘천시 동면순환대로 1154-97"
     }, {
         "name": "Spice Village(스파이스빌리지)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "2F, 17-1, Shopping-ro, Pyeongtaek-si, Gyeonggi-do(경기 평택시 쇼핑로 17-1, 2층)",
         "phonenum": "010-3391-1786",
         "Website": null,
@@ -5814,12 +6303,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Sinjang Neighborhood Park, Ichung Leports Park, Buraksan Fountain Park",
+        "attAddress": "경기 평택시 신장로 124, 경기 평택시 이충동, 경기 평택시 이충동 276-5"
     }, {
         "name": "Star Samarkand((주)사마르칸트)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Uzbekista",
+        "Food Type": "Uzbekista",
         "address": "14, Eulji-ro 42-gil, Jung-gu, Seoul(서울시 중구 을지로42길 14)",
         "phonenum": "",
         "Website": null,
@@ -5833,12 +6324,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hanyang Fortress Wall, Heunginjimun Gate, Doota",
+        "attAddress": "서울 중구 장충동2가 산14-21, 서울 종로구 종로 288 흥인지문, 서울 중구 장충단로 275 두산타워빌딩"
     }, {
         "name": "Suembu(수엠부 동탄점)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "",
+        "Food Type": "",
         "address": "18-15, Nojak-ro 4-gil, Hwaseong-si, Gyeonggi-do(경기도 화성시 노작로4길 18-15)",
         "phonenum": "010-3914-8863",
         "Website": null,
@@ -5852,12 +6345,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Banseoksa Temple Neighborhood Park, Dongtan Central Park, Dongtan Yeoul Park",
+        "attAddress": "경기 화성시 노작로4길 18-38,경기 화성시 동탄공원로2길 22,경기 화성시 오산동 1060"
     }, {
         "name": "Suhyang babsang builds happiness(행복을짓는수향밥상)",
         "friendly": "Pork Free",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "592, Dadae-ro, Saha-gu, Busan(부산 사하구 다대로 592)",
         "phonenum": "010-6219-0997",
         "Website": null,
@@ -5871,12 +6366,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Dadaepo Beach Sunset Fountain, Mulundae Amusement Park, Dadaepo Beach Park, Amisan Observatory",
+        "attAddress": "부산 사하구 몰운대1길 14, 부산 사하구 다대동, 부산 사하구 다대동, 부산 사하구 다대낙조2길 77"
     }, {
         "name": "Suhyangchon babsang builds happiness(행복을짓는수향촌밥상)",
         "friendly": "Pork Free",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "82, Gampo-ro, Suyeong-gu, Busan(부산 수영구 감포로 82)",
         "phonenum": "010-8941-9985",
         "Website": null,
@@ -5890,14 +6387,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Millak Park, Gwangalli Beach, Baeksco, Dongbaek Park",
+        "attAddress": "부산 수영구 광안해변로 219, 부산 해운대구 중동, 부산 해운대구 APEC로 55, 부산 수영구 민락동 109, 부산 해운대구 동백로 99"
     }, {
         "name": "SUJUNGBANG KODARI(수정방코다리)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
-        "address": "15, Jungbu-daero 7beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 팔달로3가" +
-                " 28-2)",
+        "Food Type": "Korean Cuisine",
+        "address": "15, Jungbu-daero 7beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 팔달로3가 28-2)",
         "phonenum": "010-4748-4744",
         "Website": null,
         "runtime": "10:30–22:00",
@@ -5910,12 +6408,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Paldalmun Gate, Jidong Market Sundae Town, Motgol Market",
+        "attAddress": "경기 수원시 팔달구 정조로 780 팔달문, 경기 수원시 팔달구 창룡문로 3, 경기 수원시 팔달구 수원천로258번길 10-12"
     }, {
         "name": "Sultan Kebab(술탄케밥)",
         "friendly": "Halal Certified",
         "area": "Seoul",
-        "foodType": "Turkish",
+        "Food Type": "Turkish",
         "address": "126, Bogwang-ro, Yongsan-gu, Seoul(서울 용산구 보광로 126)",
         "phonenum": "010-4523-6987",
         "Website": null,
@@ -5929,12 +6429,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 서빙고로 137 국립중앙박물관,서울 용산구 이태원로 177"
     }, {
         "name": "Sunsa Bokjip(선사복집)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Japanese",
+        "Food Type": "Japanese",
         "address": "811, Olympic-ro, Gangdong-gu, Seoul(서울 강동구 올림픽로 811)",
         "phonenum": "010-4459-1008",
         "Website": null,
@@ -5948,12 +6450,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seoul Amsa-dong Ruins",
+        "attAddress": "서울 강동구 올림픽로 875 암사선사유적전시관"
     }, {
         "name": "Sweetindia(스위트인디아)",
         "friendly": "Muslim Friendly",
         "area": "Jeollabuk-do",
-        "foodType": "",
+        "Food Type": "",
         "address": "36, Geoseok-gil, Gunsan-si, Jeollabuk-do(전북 군산시 거석길 36)",
         "phonenum": "010-8274-2010",
         "Website": null,
@@ -5967,12 +6471,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gunsan Museum of Modern History, Sinheung-dong Japanese House, Gunsan Geumgang Estuary",
+        "attAddress": "전북 군산시 해망로 240,전북 군산시 구영1길 17,전북 군산시 성산면 철새로 120"
     }, {
         "name": "SWOYAMBHU(수엠부 인도음식점 평택점 )",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "5-1, Pyeongtaek 2-ro, Pyeongtaek-si, Gyeonggi-do(경기도 평택시 평택2로 5-1)",
         "phonenum": "",
         "Website": null,
@@ -5986,14 +6492,15 @@ export const restEn = [
         "Hookah": "O",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Baramsaemaeul Picnic Garden, Utdari Cultural Village, Pyeongtaek International Market",
+        "attAddress": "경기 평택시 고덕면 새악길 43-62, 경기 평택시 서탄면 용소금각로 438-14, 경기 평택시 중앙시장로25번길 11-4"
     }, {
         "name": "Swoyambhu(수엠부)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian,Nepalese",
-        "address": "9, Maesan-ro 20beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do (경기 수원시 팔달구 매산로20번길 " +
-                "9 )",
+        "Food Type": "Indian,Nepalese",
+        "address": "9, Maesan-ro 20beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do (경기 수원시 팔달구 매산로20번길 9 )",
         "phonenum": "010-4239-3305",
         "Website": null,
         "runtime": "11:30–22:00",
@@ -6006,12 +6513,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Suwon Hwaseong Fortress, Hwaseong Haenggung Palace",
+        "attAddress": "경기 수원시 장안구 영화동 320-2,경기 수원시 팔달구 정조로 825"
     }, {
         "name": "SWO’ AMBHU(수엠부 인도음식점 광주점 )",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian,Nepalese",
+        "Food Type": "Indian,Nepalese",
         "address": "11-20, Gwangju-daero, Gwangju-si, Gyeonggi-do(경기도 광주시 광주대로 11-20)",
         "phonenum": "",
         "Website": null,
@@ -6025,12 +6534,14 @@ export const restEn = [
         "Hookah": "O",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jungdae Mulbit Park, Youngeun Museum of Art",
+        "attAddress": "경기 광주시 중대동 91, 경기 광주시 청석로 300"
     }, {
         "name": "Taj Mahal in Korea(타지마할 인 코리아)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "3224, Dalgubeol-daero, Suseong-gu, Daegu(대구 수성구 달구벌대로 3224)",
         "phonenum": "010-3923-1686",
         "Website": null,
@@ -6044,14 +6555,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Suseong Amusement Park, Hillcrest",
+        "attAddress": "대구 수성구 두산동 512,대구 달성군 가창면 가창로 1003"
     }, {
         "name": "TAJ PALACE (구. Luxcotech)(타지 펠리스(구.럭스코테크))",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
-        "address": "3, Hyangnam-eup, Hwaseong-si, Gyeonggi-do1F, 1128-1, 3.1manse-ro, Hyangnam-eup" +
-                ", Hwaseong-si, Gyeonggi-do(경기 화성시 향남읍 3.1만세로 1128-1, 1층)",
+        "Food Type": "Indian",
+        "address": "3, Hyangnam-eup, Hwaseong-si, Gyeonggi-do1F, 1128-1, 3.1manse-ro, Hyangnam-eup, Hwaseong-si, Gyeonggi-do(경기 화성시 향남읍 3.1만세로 1128-1, 1층)",
         "phonenum": "010-3391-1786",
         "Website": null,
         "runtime": "11:00–22:00",
@@ -6064,12 +6576,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Namyangho Lake, Yonggeonneung Tomb, Wolmun Hot Spring",
+        "attAddress": "경기 평택시 포승읍 원정리, 경기 화성시 안녕동 187-39, 경기 화성시 팔탄면 버들로1597번길 5"
     }, {
         "name": "Taj Palace(타지팰리스)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "39, Usadan-ro, Yongsan-gu, Seoul(서울특별시 용산구 우사단로 39)",
         "phonenum": "010-8491-3999",
         "Website": null,
@@ -6083,12 +6597,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon Shopping Street, Leeum Samsung Museum of Art, Namsan Cable Car",
+        "attAddress": "서울 용산구 이태원로 177,서울 용산구 이태원로55길 60-16,서울 중구 소파로 83"
     }, {
         "name": "Taj(타지)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "73, Myeongdong-gil, Jung-gu, Seoul(서울 중구 명동길 73)",
         "phonenum": "010-5265-4736",
         "Website": null,
@@ -6102,14 +6618,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Myeongdong, Cheonggyecheon",
+        "attAddress": "서울 중구 퇴계로 126,서울 종로구 창신동"
     }, {
         "name": "Tajmahal (타지마할)",
         "friendly": "Self Certified",
         "area": "Gyeongsangnam-do",
-        "foodType": "Indian",
-        "address": "3, Hapseongseo 7-gil, Masanhoewon-gu, Changwon-si, Gyeongsangnam-do, Republic " +
-                "of Korea",
+        "Food Type": "Indian",
+        "address": "3, Hapseongseo 7-gil, Masanhoewon-gu, Changwon-si, Gyeongsangnam-do, Republic of Korea(경상남도 창원시 마산회원구 합성서7길 3, 지상2층)",
         "phonenum": "010-7257-1979",
         "Website": null,
         "runtime": "11:30–22:00 (Break: 15:00–17:00)",
@@ -6122,12 +6639,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Masan Chrysanthemum Festival Site, Masan Dopseom Island, Masan Baseball Stadium",
+        "attAddress": "경남 창원시 마산합포구 수산1길 79 대계마을, 경남 창원시 마산합포구 월영동, 경남 창원시 마산회원구 삼호로 63 마산공설운동장"
     }, {
         "name": "Tajmahal changwon Indian restaurant(타지마할 창원인도레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Gyeongsangnam-do",
-        "foodType": "",
+        "Food Type": "",
         "address": "74, Yongji-ro, Seongsan-gu, Changwon-si, Gyeongsangnam-do (경남 창원시 성산구 용지로 74 )",
         "phonenum": "010-4092-6692",
         "Website": null,
@@ -6141,12 +6660,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeonghwa Station Cherry Blossom Road, Jinhae Gunhang Village Station Station Road, Junam Reservoir Migratory Bird Path",
+        "attAddress": "경남 창원시 진해구 진해대로 663 경화동자율방범대,경남 창원시 진해구 편백로 25-1,경남 창원시 의창구 동읍 대산면 일원"
     }, {
         "name": "Tammora, Jeju dining of Ramada Plaza Jeju(라마다프라자제주호텔 한식당 탐모라)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "66 Tapdong-ro, Jeju-si, Jeju-do(제주특별자치도 제주시 탑동로 66)",
         "phonenum": "010-7477-6605",
         "Website": null,
@@ -6160,12 +6681,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yongduam Rock, Saryeoni Forest Trail, Halla Natural Ecological Park",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 봉개동 산64-5,제주 서귀포시 성산읍 금백조로 446"
     }, {
         "name": "Tandoori Kha(탄두리카)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "73, Hoam-ro 24-gil, Gwanak-gu, Seoul(서울 관악구 호암로24길 73)",
         "phonenum": "010-5417-3464",
         "Website": null,
@@ -6179,12 +6702,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwanaksan Nakseong Grand Park",
+        "attAddress": "서울 관악구 낙성대로 77 낙성대공원"
     }, {
         "name": "Taoyuen (THE PLAZA HOTEL)(도원 (더 플라자호텔))",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Chinese",
+        "Food Type": "Chinese",
         "address": "3F, The Plaza Hotel, 119, Sogong-ro, Jung-gu, Seoul(서울 중구 소공로 119 더 플라자호텔 3층)",
         "phonenum": "010-6246-3559",
         "Website": null,
@@ -6198,12 +6723,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksugung Palace, Cheonggyecheon Stream, Myeongdong",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 퇴계로 126"
     }, {
         "name": "Tara(타라)",
         "friendly": "Muslim Friendly",
         "area": "Daegu",
-        "foodType": "",
+        "Food Type": "",
         "address": "2109-25, Dalgubeol-daero, Jung-gu, Daegu(대구광역시 중구 달구벌대로 2109-25)",
         "phonenum": "070-8977-8057",
         "Website": null,
@@ -6217,12 +6744,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Dongseong-ro, Hyangchon Cultural Center, Dalseong Park",
+        "attAddress": "대구 중구 용덕동 12,대구 중구 중앙대로 449,대구 중구 달성공원로 35 달성공원"
     }, {
         "name": "Terrace Green (테라스 그린)",
         "friendly": "Self Certified",
         "area": "Gyeonggi-do",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "90, Minsokchon-ro, Giheung-gu, Yongin-si, Gyeonggi-do (경기 용인시 기흥구 민속촌로 90 )",
         "phonenum": "010-4558-4038",
         "Website": null,
@@ -6236,12 +6765,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Korean Folk Village, Everland",
+        "attAddress": "경기 용인시 기흥구 민속촌로 90 한국민속촌,경기 용인시 처인구 포곡읍 에버랜드로 199"
     }, {
         "name": "The Blue, buffet restaurant of Ramada Plaza Jeju(라마다프라자제주호텔 더블루뷔페레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Western",
+        "Food Type": "Western",
         "address": "66 Tapdong-ro, Jeju-si, Jeju-do(제주특별자치도 제주시 탑동로 66)",
         "phonenum": "010-7477-6605",
         "Website": null,
@@ -6255,12 +6786,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yongduam Rock, Saryeoni Forest Trail, Halla Natural Ecological Park",
+        "attAddress": "제주 제주시 용담이동,제주 제주시 봉개동 산64-5,제주 서귀포시 성산읍 금백조로 446"
     }, {
         "name": "The Seven Square (THE PLAZA HOTEL)(세븐스퀘어(더 플라자호텔))",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Buffet",
+        "Food Type": "Buffet",
         "address": "2F, The Plaza Hotel, 119, Sogong-ro, Jung-gu, Seoul(서울 중구 소공로 119 더 플라자호텔 2층)",
         "phonenum": "010-6246-3559",
         "Website": null,
@@ -6274,14 +6807,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksugung Palace, Cheonggyecheon Stream, Myeongdong",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 퇴계로 126"
     }, {
         "name": "Toh Lim (Lotte Hotel Seoul)(도림 (롯데호텔서울))",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Chinese",
-        "address": "37F, Lotte Hotel Seoul (Main Tower), 30 Eulji-ro, Jung-gu, Seoul(서울 중구 을지로 30 " +
-                "롯데호텔서울 본관 37층)",
+        "Food Type": "Chinese",
+        "address": "37F, Lotte Hotel Seoul (Main Tower), 30 Eulji-ro, Jung-gu, Seoul(서울 중구 을지로 30 롯데호텔서울 본관 37층)",
         "phonenum": "010-2696-2306",
         "Website": null,
         "runtime": "11:30–22:00 (Break: 14:30–18:00)",
@@ -6294,12 +6828,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Deoksugung Palace, Cheonggyecheon Stream, Myeongdong",
+        "attAddress": "서울 중구 세종대로 99 덕수궁,서울 종로구 창신동,서울 중구 명동"
     }, {
         "name": "TONYOUNG OYSTER&OCTOPUS LOVE(통영굴사랑낙지사랑)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "53, Haenggung-ro, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 행궁로 53)",
         "phonenum": "010-2480-7791",
         "Website": null,
@@ -6313,12 +6849,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gongbang Street, Suwon Chicken Street, Paldalmun Gate",
+        "attAddress": "경기 수원시 팔달구 남창동, 경기 수원시 팔달구 팔달로1가 46-2, 경기 수원시 팔달구 정조로 780 팔달문"
     }, {
         "name": "U ri Sushi bar(우리횟집)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "52, Jagalchihaean-ro, Jung-gu, Busan (부산광역시 중구 자갈치해안로52 )",
         "phonenum": "",
         "Website": null,
@@ -6332,12 +6870,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jagalchi Market, Gukje Market, 168 Stairs",
+        "attAddress": "부산 중구 자갈치해안로 52 자갈치시장, 부산 중구 신창동4가, 부산 동구 영초길191번길 10-2"
     }, {
         "name": "Usmania(우스마니아)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Pakistani",
+        "Food Type": "Pakistani",
         "address": "34, Usadan-ro Yongsan-gu, Seoul(서울 용산구 우산단로 34)",
         "phonenum": "010-9135-7454",
         "Website": null,
@@ -6351,12 +6891,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "National Museum of Korea, Itaewon Shopping Street",
+        "attAddress": "서울 용산구 용산동6가, 서울 용산구 이태원동"
     }, {
         "name": "VALUE HIGH END HOTEL(밸류하이엔드호텔)",
         "friendly": "Muslim Friendly",
         "area": "Gyeonggi-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "299, Paldal-gu, Suwon-si, Gyeonggi-do(경기도 수원시 팔달구 299)",
         "phonenum": "",
         "Website": null,
@@ -6370,14 +6912,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hwaseong Haenggung Palace, Workshop Street, Suwon Hwaseong Fortress",
+        "attAddress": "경기 수원시 팔달구 정조로 825, 경기 수원시 팔달구 남창동, 경기 수원시 장안구 영화동 320-2"
     }, {
         "name": "vegenarang(베지나랑 )",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
-        "address": "9F, 9-32, Gwanganhaebyeon-ro 370beon-gil, Suyeong-gu, Busan(부산 수영구 광안해변로370번길 " +
-                "9-32 9층)",
+        "Food Type": "Korean Cuisine",
+        "address": "9F, 9-32, Gwanganhaebyeon-ro 370beon-gil, Suyeong-gu, Busan(부산 수영구 광안해변로370번길 9-32 9층)",
         "phonenum": "010-4557-3646",
         "Website": null,
         "runtime": "11:30–21:00 (Break: 15:00–17:00)",
@@ -6390,12 +6933,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwangalli Beach, Haeundae Beach, Baeksco, Millak Park, Dongbaek Park",
+        "attAddress": "부산 수영구 광안해변로 219, 부산 해운대구 중동, 부산 해운대구 APEC로 55, 부산 수영구 민락동 109, 부산 해운대구 동백로 99"
     }, {
         "name": "Wardah Restaurant(와르다레스토랑)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Arab",
+        "Food Type": "Arab",
         "address": "24-1, Gwandeok-ro 8-gil, Jeju-si, Jeju-do (제주특별자치도 제주시 관덕로8길 24-1 )",
         "phonenum": "064-751-1470",
         "Website": null,
@@ -6409,14 +6954,15 @@ export const restEn = [
         "Hookah": "O",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Jeju Mokgwana, Gwandeokjeong, Dongmun Traditional Market",
+        "attAddress": "제주 제주시 삼도이동, 제주 제주시 관덕로 19 관덕정, 제주 제주시 관덕로14길 20"
     }, {
         "name": "WILLALA(윌라라)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Malaysian",
-        "address": "Willala, 33, Seongsanjungang-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주특별자치도 서귀" +
-                "포시 성산읍 성산중앙로33 윌라라)",
+        "Food Type": "Malaysian",
+        "address": "Willala, 33, Seongsanjungang-ro, Seongsan-eup, Seogwipo-si, Jeju-do(제주특별자치도 서귀포시 성산읍 성산중앙로33 윌라라)",
         "phonenum": "010-8392-5120",
         "Website": null,
         "runtime": "00:00–20:30",
@@ -6429,12 +6975,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Seongsan Ilchulbong Peak, Seopjikoji, Pyoseon Beach, Ilchulbong Land",
+        "attAddress": "제주 서귀포시 성산읍 성산리 1, 제주 서귀포시 성산읍 고성리, 제주 서귀포시 표선면 표선리, 제주 서귀포시 성산읍 중산간동로 4150-30"
     }, {
         "name": "Wonjo Halmae Bokguk (원조할매복국)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1, Dalmaji-gil 62beon-gil, Haeundae-gu, Busan(부산 해운대구 달맞이길62번길 1)",
         "phonenum": "010-8987-6534",
         "Website": null,
@@ -6448,14 +6996,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Haeundae Beach, Dongbaekseom Island, Haeundae Dalmaji-gil",
+        "attAddress": "부산 해운대구 우동,부산 해운대구 우동 710-1,부산 해운대구 우동"
     }, {
         "name": "Wonjo Hyeonpung Parksoseon Halmaejip Gomtang(원조현풍박소선할매집곰탕)",
         "friendly": "Pork Free",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
-        "address": "56-1, Hyeonpungjungang-ro, Hyeonpung-eup, Dalseong-gun, Daegu(대구광역시 달성군 현풍중앙로 " +
-                "56-1)",
+        "Food Type": "Korean Cuisine",
+        "address": "56-1, Hyeonpungjungang-ro, Hyeonpung-eup, Dalseong-gun, Daegu(대구광역시 달성군 현풍중앙로 56-1)",
         "phonenum": "053-614-2143",
         "Website": null,
         "runtime": "9:00–21:00",
@@ -6468,12 +7017,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daegu National Science Museum, Biseulsan County Park, Dodongseowon",
+        "attAddress": "대구 달성군 유가읍 테크노대로6길 20,대구 달성군 유가읍 양리,대구 달성군 구지면 도동서원로 1"
     }, {
         "name": "Wonjo Seoul Samgyetang (서울삼계탕)",
         "friendly": "Pork Free",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "36, Nampo-gil, Jung-gu, Busan(부산광역시 중구 남포길 36)",
         "phonenum": "010-3595-7720",
         "Website": null,
@@ -6487,12 +7038,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Taejongdae Amusement Park, National Maritime Museum, Songdo Skywalk",
+        "attAddress": "부산 영도구 전망로 24,부산 영도구 해양로301번길 45,부산 서구 암남동 129-4"
     }, {
         "name": "woonche 3rd story(운채 세번째 이야기)",
         "friendly": "Pork Free",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "48, Gomungol-gil, Wonju-si, Gangwon-do(강원도 원주시 고문골길 48)",
         "phonenum": "010-7440-1993",
         "Website": null,
@@ -6506,12 +7059,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwaneumsa Temple, Chiaksan Mountain, Haenggu Waterfront Park",
+        "attAddress": "강원 원주시 행구로 533,강원 원주시 소초면 무쇠점2길 26,강원 원주시 행구로 362"
     }, {
         "name": "woonche(운채 )",
         "friendly": "Muslim Friendly",
         "area": "Gangwon-do",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "47, Gomungol-gil, Wonju-si, Gangwon-do(강원도 원주시 고문골길 47)",
         "phonenum": "010-7440-1994",
         "Website": null,
@@ -6525,12 +7080,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gwaneumsa Temple, Chiaksan Mountain, Haenggu Waterfront Park",
+        "attAddress": "강원 원주시 행구로 533,강원 원주시 소초면 무쇠점2길 26,강원 원주시 행구로 362"
     }, {
         "name": "YAKSUHANBANGSAMGYETANG(약수한방삼계탕)",
         "friendly": "Pork Free",
         "area": "Gwangju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "173, Bungmun-daero, Buk-gu, Gwangju(광주 북구 북문대로 173)",
         "phonenum": "010-9658-0005",
         "Website": null,
@@ -6544,12 +7101,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Damyang Juknokwon, 518 Memorial Cultural Center",
+        "attAddress": "전남 담양군 담양읍 죽녹원로 119, 광주 서구 내방로 152 5.18 기념문화관"
     }, {
         "name": "YANGWON(양원)",
         "friendly": "Muslim Friendly",
         "area": "Incheon",
-        "foodType": "Asian",
+        "Food Type": "Asian",
         "address": "28, Boseok-ro 12beonan-gil, Seo-gu, Incheon (인천광역시 서구 보석로12번안길 28 )",
         "phonenum": "010-5336-7515",
         "Website": null,
@@ -6563,12 +7122,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Cheongna Lake Park, Chinatown, Three Kingdoms Mural Street",
+        "attAddress": "인천 서구 청라대로 204, 인천 중구 차이나타운로26번길 12-17, 인천 중구 제물량로 262-15"
     }, {
         "name": "YeonHwajeong Samgyetang(연화정삼계탕)",
         "friendly": "Pork Free",
         "area": "Daegu",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "1596, Biseul-ro, Nongong-eup, Dalseong-gun, Daegu(대구광역시 달성군 논공읍 비슬로 1596)",
         "phonenum": "010-9684-7770",
         "Website": null,
@@ -6582,12 +7143,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Daegu National Science Museum, Biseulsan County Park, Dodongseowon",
+        "attAddress": "대구 달성군 유가읍 테크노대로6길 20,대구 달성군 유가읍 양리,대구 달성군 구지면 도동서원로 1"
     }, {
         "name": "Yeti((주)예티)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 10, Wausan-ro 18-gil, Mapo-gu, Seoul(서울 마포구 와우산로18길 10 서교동, 2층전체)",
         "phonenum": "010-7101-8848",
         "Website": null,
@@ -6601,12 +7164,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae Street, Seonyudo Park, Wow Park, Seoul World Cup Stadium, Haneul Park",
+        "attAddress": "서울 마포구 서교동, 서울 영등포구 선유로 343, 서울 마포구 창전동 3-245, 서울 마포구 성산동 515-39, 서울 마포구 하늘공원로 95"
     }, {
         "name": "Yong Jangeo Restaurant(용장어요리전문점)",
         "friendly": "Muslim Friendly",
         "area": "Busan",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "94, Nakdongnam-ro 682beon-gil, Ganseo-gu, Bussan(부산광역시 강서구 낙동남로682번길 94)",
         "phonenum": "010-5264-0146",
         "Website": null,
@@ -6620,12 +7185,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Busan Museum of Modern Art, Eulsukdo Ecological Park, Dadaepo Beach",
+        "attAddress": "부산 사하구 낙동남로 1191,부산 사하구 하단동 1207,부산 사하구 다대동"
     }, {
         "name": "Yongduam Badanghoe Guksu(용두암바당회국수)",
         "friendly": "Muslim Friendly",
         "area": "Jeju",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "614, Seohaean-ro, Jeju-si, Jeju-do(제주 제주시 서해안로 614)",
         "phonenum": "010-2699-0688",
         "Website": null,
@@ -6639,12 +7206,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Yongduam Rock, Yonghyeon Gudari Bridge, Yongduam Coastal Road, Halla Arboretum, Sarabong Park, Yonghyeon Cloud Bridge, Tapdong Performance Hall",
+        "attAddress": "제주 제주시 용담이동, ?, 제주 제주시 수목원길 72,  제주 제주시 사라봉길 75, 제주 제주시 용담이동 2581, 제주 제주시 중앙로 2"
     }, {
         "name": "Yoon Do-Hoon Nonhyeon Samgyetang(윤도훈 논현삼계탕365)",
         "friendly": "Pork Free",
         "area": "Seoul",
-        "foodType": "Korean Cuisine",
+        "Food Type": "Korean Cuisine",
         "address": "6, Sapyeong-daero 56-gil, Seocho-gu, Seoul(서울시 서초구 사령대로 56길6)",
         "phonenum": "010-5655-5238",
         "Website": null,
@@ -6658,14 +7227,15 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Nonhyeon-dong Food Alley, Gangnam Station, Kukkiwon",
+        "attAddress": "서울 강남구 논현동, 서울 강남구 강남대로 396, 서울 강남구 테헤란로7길 32 국기원"
     }, {
         "name": "YOUGOL SUSHI(여우골초밥)",
         "friendly": "Muslim Friendly",
         "area": "Seoul",
-        "foodType": "Japanese",
-        "address": "1F, 20, (Seogyo-dong), World Cup buk-ro 1-gil, Mapo-gu, Seoul(서울 마포구 월드컵북로1길 2" +
-                "0 (서교동,1F))",
+        "Food Type": "Japanese",
+        "address": "1F, 20, (Seogyo-dong), World Cup buk-ro 1-gil, Mapo-gu, Seoul(서울 마포구 월드컵북로1길 20 (서교동,1F))",
         "phonenum": "010-5407-8717",
         "Website": null,
         "runtime": "10:30–22:30",
@@ -6678,12 +7248,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Hongdae Street, Seonyudo Park, Wow Park, Seoul World Cup Stadium, Haneul Park",
+        "attAddress": "서울 마포구 서교동, 서울 영등포구 선유로 343, 서울 마포구 창전동 3-245, 서울 마포구 성산동 515-39, 서울 마포구 하늘공원로 95"
     }, {
         "name": "Zafran BBQ(자프란 바비큐)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "Indian",
+        "Food Type": "Indian",
         "address": "39, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울시 용산구 우사단로10길 39)",
         "phonenum": "",
         "Website": null,
@@ -6697,12 +7269,14 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Gyeongnidan-gil, Blue Square, Leeum Samsung Museum of Art",
+        "attAddress": "서울 용산구 이태원동, 서울 용산구 이태원로 294, 서울 용산구 이태원로55길 60-16"
     }, {
         "name": "Zafran Restaurant(자프란 레스토랑)",
         "friendly": "Self Certified",
         "area": "Seoul",
-        "foodType": "",
+        "Food Type": "",
         "address": "2F, 36, Usadan-ro 10-gil, Yongsan-gu, Seoul(서울시 용산구 우사단로10길 36 2층)",
         "phonenum": "",
         "Website": null,
@@ -6716,6 +7290,8 @@ export const restEn = [
         "Hookah": "X",
         "Alcohol-Free": "X",
         "Cooked by Muslim cooks": "X",
-        "Halal-certified ingredients used": "X"
+        "Halal-certified ingredients used": "X",
+        "attName": "Itaewon Usadan-gil, Leeum Samsung Museum of Art, National Theater",
+        "attAddress": "서울 용산구 이태원동, 서울 용산구 이태원로55길 60-16, 서울 중구 장충단로 59"
     }
 ]
