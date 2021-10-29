@@ -51,7 +51,6 @@ const Attraction_list = () => {
 
     const setModal = () => {
         setFilter(true);
-        console.log(option)
         attList(where["areaCode"], where["cityCode"], option)
 
         setModalOpen(false);
@@ -68,7 +67,6 @@ const Attraction_list = () => {
         try {
             const {data: res} = await axios.get(url)
             const list = res.response.body.items.item;
-            console.log(list)
             setMainData(list);
         } catch (err) {
             console.log(err);
@@ -125,6 +123,8 @@ const Attraction_list = () => {
         numOfFirst = 1
         numOfLast = 1
     }
+
+    const random = maindata[Math.floor(Math.random() * maindata.length)];
 
     // 필터
     let target;
@@ -254,16 +254,17 @@ const Attraction_list = () => {
                 <h1>{langData.attrTitle}</h1>
                 <div className="btn_class_M">{attrFilter}</div>
             </div>
-            <div className="att_prom">
-                <div className="prom_text_att">
-                    <p className="name_att">관광지명</p>
-                    <div>
-                        <p className="scorepos_att">관광지 위치</p>
-                        <img className="scorestar" src={scorestar} alt="scorestar"/>
-                        <p className="score_att">N.N점</p>
-                    </div>
-                </div>
-            </div>
+            {
+                (Object.keys(currentPosts(maindata))[0] !== "0")
+                    ? null
+                    : <div className="att_prom">
+                            <div className="prom_text_att">
+                                <h3>{langData.suggAttr}</h3>
+                                <p className="name_att">{random.title}</p>
+                            <p className="scorepos_att">{random.addr1}</p>
+                            </div>
+                        </div>
+            }
             <div className="header_list">
                 <div className="headerTitle">
                     <Link

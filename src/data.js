@@ -66,7 +66,9 @@ export const data = {
         worship : "Place of Worship",
         prayer : "Place of Prayer",
         nation : "nation",
-        type : "type"
+        type : "type",
+        suggRest : "Recommended restaurant",
+        suggAttr : "Recommended sightseeing spots"
     },
     kr:{
         title : "리버델타",
@@ -135,6 +137,8 @@ export const data = {
         worship : "예배소",
         prayer : "기도처",
         nation : "국적",
-        type : "유형"
+        type : "유형",
+        suggRest : "추천 식당",
+        suggAttr : "추천 관광지"
     }
 }

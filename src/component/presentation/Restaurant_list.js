@@ -41,7 +41,7 @@ const Restaurant_list = () => {
             key => (key.address.includes(code["area"]) && key.address.includes(code["city"]))
         );
 
-    console.log(Math.floor(Math.random()*locList.length))
+    const random = locList[Math.floor(Math.random() * locList.length)];
 
     const openModal = () => {
         setModalOpen(true);
@@ -207,7 +207,6 @@ const Restaurant_list = () => {
         </div>
     </React.Fragment>
 
-    // const changeList = (list(optionList)) Pagination
     const indexOfLast = currentPage * postsPerPage;
     const indexOfFirst = indexOfLast - postsPerPage;
 
@@ -270,14 +269,15 @@ const Restaurant_list = () => {
                 </div>
             </div>
             <div className="att_prom">
-                <div className="prom_text_att">
-                    <p className="name_att">가게명</p>
-                    <div>
-                        <p className="scorepos_att">가게 위치</p>
-                        <img className="scorestar" src={scorestar} alt="scorestar"/>
-                        <p className="score_att">N.N점</p>
-                    </div>
-                </div>
+                {
+                    (locList.length === 0)
+                        ? null
+                        : <div className="prom_text_att">
+                                <h3>{langData.suggRest}</h3>
+                                <p className="name_att">{random.name}</p>
+                                <p className="scorepos_att">{random.address}</p>
+                            </div>
+                }
             </div>
             <div className="header_list">
                 <div className="headerTitle">

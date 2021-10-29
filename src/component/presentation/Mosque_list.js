@@ -15,10 +15,9 @@ import headerImg from "../assets/mosque_header.JPG"
 
 const Mosque_list = () => {
     const location = useLocation();
-    const history = useHistory();
 
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(6);
+    const [postsPerPage, setPostsPerPage] = useState(9);
     const [option, setOption] = useState("");
     const [modalOpen, setModalOpen] = useState(false);
     const [filter, setFilter] = useState(location.state.deState);
@@ -79,7 +78,7 @@ const Mosque_list = () => {
         ? makeList() //얘는 잘 돌아감
         : aboutList; //근데 얘는 왜?
 
-    let lastPage = parseInt(mainArr.length / 6);
+    let lastPage = parseInt(mainArr.length / 9);
 
     if (numOfFirst <= 0) { //numOfFirst가 1 이하로 내려가지 않도록
         numOfFirst = 1;
@@ -177,7 +176,6 @@ const Mosque_list = () => {
                 <h1>{langData.mosqTitle}</h1>
                 <div className="btn_class_M">{mosqFilter}</div>
             </div>
-            <img src={headerImg} alt="headerImg" className="att_prom"/>
             <div className="header_list">
                 <div className="headerTitle">
                     <Link
