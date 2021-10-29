@@ -177,12 +177,7 @@ const Mosque_list = () => {
                 <h1>{langData.mosqTitle}</h1>
                 <div className="btn_class_M">{mosqFilter}</div>
             </div>
-            <div className="att_prom">
-                <div className="prom_text_att">
-                    <p className="name_att">모스크명</p>
-                    <p className="scorepos_att">가게 위치</p>
-                </div>
-            </div>
+            <img src={headerImg} alt="headerImg" className="att_prom"/>
             <div className="header_list">
                 <div className="headerTitle">
                     <Link

@@ -99,6 +99,17 @@
         border-radius: 5px;
     }
 
+    .rst_list_cell2 {
+        width: 85%;
+        height: 20%;
+        max-height: 140px;
+        display: flex;
+        align-items: center;
+        padding: 1.3rem 1rem;
+        border: 2px solid #C0DBBD;
+        border-radius: 5px;
+    }
+
     .rst_list_cell > div {
         display: block;
     }
@@ -125,10 +136,15 @@
     }
 
     .att_prom {
-        background-color: #f1f1f1;
+        display: block;
         width: 100%;
-        height: 20rem;
+        height: auto;
         margin-bottom: 2rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        overflow: hidden;
     }
 
     .pagination * {

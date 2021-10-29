@@ -12,14 +12,14 @@ export const mosque = [
         "name": "포천성원",
         "address": "경기도 포천시 소흘읍",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl": "https://t1.daumcdn.net/cfile/tistory/99BB1B3359F4465707"
     }, {
         "type": "성원",
         "name": "경기광주성원",
         "address": "경기도 광주시 역동로",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl": "https://t1.daumcdn.net/cfile/tistory/994C143359EDC17915"
     }, {
         "type": "성원",
@@ -134,14 +134,14 @@ export const mosque = [
         "name": "중랑구 기도실",
         "address": "서울 중랑구 봉화산로 8길 8 지하",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "영등포구 기도실",
         "address": "서울 영등포구 가마산로 31길 36-14",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
@@ -208,7 +208,7 @@ export const mosque = [
         "name": "신북 기도실",
         "address": "경기 포천시 신북면 신평2리 168-2",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
@@ -227,63 +227,63 @@ export const mosque = [
         "name": "옥정동 기도실",
         "address": "경기 양주시 옥정동 397-2",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "유양공단",
         "address": "경기 양주시 부흥로 1241번길 유양공단내",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "가납리 기도실",
         "address": "경기 양주시 광적면 가래비길 42 3층",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "상수리 기도실",
         "address": "경기 양주시 남면 화합로 619번길 106 2층",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "협동산업",
         "address": "경기 남양주시 의안로 240번길 31",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "마석 기도실",
         "address": "경기 남양주시 화도읍 가구단지 6길 49-7",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "진벌리 기도실",
         "address": "경기 남양주시 진전읍 진벌로 101-11",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "가곡로 기도실",
         "address": "경기 남양주시 화도읍 가곡로 89번길 9",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "월산리 기도실",
         "address": "경기 남양주시 화도읍 경춘로 달뫼3길 2-2",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
@@ -296,28 +296,28 @@ export const mosque = [
         "name": "망월동 기도실",
         "address": "경기 하남시 망월동 638-6",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "상대원동 기도실",
         "address": "경기 성남시 박석로 5번길 28 지하",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "삽다리 기도실",
         "address": "경기 파주시 교하읍 동패리 284-1",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "장항동 기도실",
         "address": "경기 고양시 노첨길 56",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
@@ -330,21 +330,21 @@ export const mosque = [
         "name": "팔거리 기도실",
         "address": "경기 김포시 대곳면 대곳북로 208",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "누산리 기도실",
         "address": "경기 김포시 양촌면 누산로 6번길",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "학운리 기도실",
         "address": "경기 김포시 양촌읍 학운리",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
@@ -375,7 +375,7 @@ export const mosque = [
         "name": "신천동 기도실",
         "address": "경기 시흥시 삼미시장 4길 27-1 금강빌딩 4층",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
@@ -406,42 +406,42 @@ export const mosque = [
         "name": "금오동 기도실",
         "address": "인천 서구 금오동",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "고잔동 기도실",
         "address": "인천 남동구 은청로 16-17",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "간석동 기도실",
         "address": "인천 남동구 만월북로 14 대원정밀 1층",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "대곡동 기도실",
         "address": "인천 서구 대곡로 154",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "오류동 기도실",
         "address": "인천 서구 원당대로 205번길 2층",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
         "name": "석남동 기도실",
         "address": "인천 서구 거북로 67-1 지하",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
@@ -466,7 +466,7 @@ export const mosque = [
         "name": "남동공단 (방글라데시)",
         "address": "인천 남동구 남동서로 83번길 21",
         "nation": "방글라데시",
-        "imgurl": "",
+        
         "imgurl" : undefined
     }, {
         "type": "기도실",
