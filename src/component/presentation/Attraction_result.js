@@ -8,7 +8,7 @@ import backicon from "../assets/backicon.png";
 import Pagination from './Pagination';
 import noImg from "../assets/noImg.png"
 
-import { kakao, options } from '../API/kakao';
+import {kakao, options} from '../API/kakao';
 
 const Attraction_result = () => {
     const location = useLocation();
@@ -129,34 +129,38 @@ const Attraction_result = () => {
 
     return (
         <div className="resultContainer">
-            <Link
-                to={{
-                    pathname: `/attrlist`,
-                    search: `?sort=${location
-                        .state
-                        .code["city"]}`,
-                    state: {
-                        code: code,
-                        moveTo: moveTo,
-                        deState: true,
-                        langData: beforeState.langData,
-                        i18n: beforeState.i18n,
-                        optList: beforeState.filType
-                    }
-                }}>
-                <img className="backicon" src={backicon} alt="backicon"/></Link>
+            <div className="resHeader">
+                <Link
+                    to={{
+                        pathname: `/attrlist`,
+                        search: `?sort=${location
+                            .state
+                            .code["city"]}`,
+                        state: {
+                            code: code,
+                            moveTo: moveTo,
+                            deState: true,
+                            langData: beforeState.langData,
+                            i18n: beforeState.i18n,
+                            optList: beforeState.filType
+                        }
+                    }}>
+                    <img className="backicon" src={backicon} alt="backicon"/></Link>
+            </div>
             <div className="resultHeader">
                 <h1>{about.title}</h1>
             </div>
             <div className="resultBody">
                 <div className="infoContainer">
-                    <img
-                        className="rst_result_prom"
-                        src={(
-                            about.firstimage === undefined)
-                            ? noImg
-                            : about.firstimage}
-                        alt={about.title}></img>
+
+                    <div className="rst_result_prom">
+                        <img
+                            src={(
+                                about.firstimage === undefined)
+                                ? noImg
+                                : about.firstimage}
+                            alt={about.title}></img>
+                    </div>
                     <div className="rst_result_cell">
                         <div className="Title">
                             <div className="rst_result_name">{about.title}</div>

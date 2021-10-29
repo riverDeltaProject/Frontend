@@ -42,7 +42,6 @@ const Restaurant_list = () => {
         );
 
     const openModal = () => {
-        setFilter(false);
         setModalOpen(true);
     }
 
@@ -99,9 +98,13 @@ const Restaurant_list = () => {
 
         if ((option.friendly !== "") && (option.type.length !== 0)) {
             for (let i = 0; i < option.type.length; i++) {
-                if (i === 0) 
-                    result = result.filter(key => key.foodType.includes(option.type[i]))
-                else {
+                if (i === 0) {
+                    result = result.filter(key => {
+                        key
+                            .foodType
+                            .includes(option.type[i])
+                    })
+                } else {
                     tmp = locList.filter(key => key.foodType.includes(option.type[i]))
                     result = result.concat(tmp)
                 }
@@ -247,14 +250,16 @@ const Restaurant_list = () => {
             <img src={headerImg} className="headerImg" alt="Restraunt list"/>
 
             <div className="header2">
-                <Link to={{
-                    pathname: `./search`,
-                    state: {
-                        moveTo: location.state.moveTo,
-                        langData: langData
-                    }
-                }}>
-                <img className="backicon" src={backicon} alt="backicon"/></Link>
+                <Link
+                    to={{
+                        pathname: `./search`,
+                        state: {
+                            moveTo: location.state.moveTo,
+                            langData: langData,
+                            i18n: i18n
+                        }
+                    }}>
+                    <img className="backicon" src={backicon} alt="backicon"/></Link>
 
                 <h1>{langData.restTitle}</h1>
 
@@ -274,7 +279,14 @@ const Restaurant_list = () => {
             </div>
             <div className="header_list">
                 <div className="headerTitle">
-                    <Link to="/"><img src={homeIcon} alt={homeIcon}/></Link>
+                    <Link
+                        to={{
+                            pathname: "/",
+                            state: {
+                                langData: langData,
+                                i18n: i18n
+                            }
+                        }}><img src={homeIcon} alt={homeIcon}/></Link>
                     <h1>{langData.restTitle}</h1>
                 </div>
                 <div className="btn_class_att">

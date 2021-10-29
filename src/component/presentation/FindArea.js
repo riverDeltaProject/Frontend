@@ -51,11 +51,25 @@ const FindArea = ({location}) => {
         <div className="FindingCon">
             <img src={background} alt="background Img" id="backImg"/>
             <div className="findingHeader">
-                <Link to="/"><img src={homeIcon} alt={homeIcon}/></Link>
+                <Link
+                    to={{
+                        pathname: "/",
+                        state: {
+                            langData: langData,
+                            i18n: i18n
+                        }
+                    }}><img src={homeIcon} alt={homeIcon}/></Link>
                 <h1>{langData.setLoc}</h1>
             </div>
             <div className="header2">
-                <Link to="/"><img className="backicon" src={backicon} alt="backicon"/></Link>
+                <Link
+                    to={{
+                        pathname: "/",
+                        state: {
+                            langData: langData,
+                            i18n: i18n
+                        }
+                    }}><img className="backicon" src={backicon} alt="backicon"/></Link>
                 <h1>{langData.setLoc}</h1>
                 <div className="btn_class_M"></div>
             </div>
@@ -105,7 +119,7 @@ const FindArea = ({location}) => {
                     <p className="findingplace">{langData.subCity}</p>
                     <div className="containerList2">
                         <SubArea
-                            langData = {langData}
+                            langData={langData}
                             citylist={subArea(maindata)}
                             area={localNum}
                             moveTo={moveTo}
