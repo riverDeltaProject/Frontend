@@ -10,7 +10,6 @@ const SubArea = ({langData, citylist, area, moveTo, i18n}) => {
         "cityCode": ""
     }
 
-
     const areaBtn = (list) => {
         let tmp = [];
 

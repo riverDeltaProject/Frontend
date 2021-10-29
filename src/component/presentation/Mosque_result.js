@@ -4,7 +4,7 @@ import {Link, useLocation, useHistory} from "react-router-dom";
 import backicon from "../assets/backicon.png";
 import noImg from "../assets/noImg.png"
 
-import { kakao, options } from '../API/kakao';
+import {kakao, options} from '../API/kakao';
 
 const Mosque_result = () => {
     const location = useLocation();
@@ -49,30 +49,33 @@ const Mosque_result = () => {
 
     return (
         <div className="resultContainer">
-
-            <Link to={{
-            pathname:`/mosqlist`,
-            search:`?sort=mosque`,
-            state:{
-                deState : true,
-                optList : location.state.filType,
-                langData : location.state.langData,
-                i18n : i18n
-            }
-        }}>
-            <img className="backicon" src={backicon} alt="backicon"/></Link>
+            <div className="resHeader">
+                <Link
+                    to={{
+                        pathname: `/mosqlist`,
+                        search: `?sort=mosque`,
+                        state: {
+                            deState: true,
+                            optList: location.state.filType,
+                            langData: location.state.langData,
+                            i18n: i18n
+                        }
+                    }}>
+                    <img className="backicon" src={backicon} alt="backicon"/></Link>
+            </div>
             <div className="resultHeader">
                 <h1>{about.name}</h1>
             </div>
             <div className="resultBody">
                 <div className="infoContainer">
-                    <img
-                        className="rst_result_prom"
-                        src={(
-                            about.imgurl === undefined)
-                            ? noImg
-                            : about.imgurl}
-                        alt={about.title}></img>
+                    <div className="rst_result_prom">
+                        <img
+                            src={(
+                                about.imgurl === undefined)
+                                ? noImg
+                                : about.imgurl}
+                            alt={about.title}></img>
+                    </div>
                     <div className="rst_result_cell">
                         <div className="Title">
                             <div className="rst_result_name">{about.name}</div>

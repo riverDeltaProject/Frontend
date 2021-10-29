@@ -6,7 +6,7 @@ import backicon from "../assets/backicon.png";
 import Notfound from "../assets/notfound.png"
 import noImg from "../assets/noImg.png"
 
-import { kakao, options } from '../API/kakao';
+import {kakao, options} from '../API/kakao';
 
 const Restaurant_result = () => {
     const location = useLocation();
@@ -121,35 +121,38 @@ const Restaurant_result = () => {
 
     return (
         <div className="resultContainer">
-            <Link
-                to={{
-                    pathname: `/restlist`,
-                    search: `?sort=${location
-                        .state
-                        .code["city"]}`,
-                    state: {
-                        code: code,
-                        moveTo: moveTo,
-                        deState: true,
-                        optList: beforeState.filType,
-                        langData: langData,
-                        i18n: i18n
-                    }
-                }}>
-                <img className="backicon" src={backicon} alt="backicon"/>
-            </Link>
+            <div className="resHeader">
+                <Link
+                    to={{
+                        pathname: `/restlist`,
+                        search: `?sort=${location
+                            .state
+                            .code["city"]}`,
+                        state: {
+                            code: code,
+                            moveTo: moveTo,
+                            deState: true,
+                            optList: beforeState.filType,
+                            i18n : i18n,
+                            langData: langData
+                        }
+                    }}>
+                    <img className="backicon" src={backicon} alt="backicon"/>
+                </Link>
+            </div>
             <div className="resultHeader">
                 <h1>{about.name}</h1>
             </div>
             <div className="resultBody">
                 <div className="infoContainer">
-                    <img
-                        className="rst_result_prom"
-                        src={(
-                            about.firstimage === undefined)
-                            ? noImg
-                            : about.firstimage}
-                        alt={about.title}></img>
+                    <div className="rst_result_prom">
+                        <img
+                            src={(
+                                about.firstimage === undefined)
+                                ? noImg
+                                : about.firstimage}
+                            alt={about.title}></img>
+                    </div>
                     <div className="rst_result_cell">
                         <div className="Title_PC">
                             <div className="rst_result_name">{about.title}</div>
@@ -191,25 +194,25 @@ const Restaurant_result = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="rstBottom">
-                        <div className="rst_result_cell">
-                            <h1>{langData.way}</h1>
-                            <div className='myMapMosque' ref={container}/>
-                            <div className="normalfont">{langData.zoom}<br/>{langData.zoomLoc}</div>
-                        </div>
-                        <div className="rst_result_cell">
-                            <h1>{langData.nearAttr}</h1>
-                            {
-                                (about.attAddress === undefined)
-                                    ? <div className="errorMsg">
-                                            <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
-                                            <div className="noRes">{langData.noRes}</div>
-                                        </div>
-                                    : <Item rlistName={attName} rlistAddress={attLoc} langData={langData}/>
-                            }
-                        </div>
+                    <div className="rst_result_cell">
+                        <h1>{langData.way}</h1>
+                        <div className='myMapMosque' ref={container}/>
+                        <div className="normalfont">{langData.zoom}<br/>{langData.zoomLoc}</div>
                     </div>
+                    <div className="rst_result_cell">
+                        <h1>{langData.nearAttr}</h1>
+                        {
+                            (about.attAddress === undefined)
+                                ? <div className="errorMsg">
+                                        <img src={Notfound} className="notFound" alt="검색 결과가 존재하지 않습니다"/>
+                                        <div className="noRes">{langData.noRes}</div>
+                                    </div>
+                                : <Item rlistName={attName} rlistAddress={attLoc} langData={langData}/>
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     )

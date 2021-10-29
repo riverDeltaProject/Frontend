@@ -35,7 +35,6 @@ const Attraction_list = () => {
     const [postsPerPage] = useState(6);
     const [filter, setFilter] = useState(deState);
     const [option, setOption] = useState(optionList);
-    const [dataSet, setDataSet] = useState()
 
     useEffect(() => {
         attList(where["areaCode"], where["cityCode"], option)
@@ -47,12 +46,12 @@ const Attraction_list = () => {
         setModalOpen(true);
     }
     const closeModal = () => {
-        setFilter(false);
         setModalOpen(false);
     }
 
     const setModal = () => {
         setFilter(true);
+        console.log(option)
         attList(where["areaCode"], where["cityCode"], option)
 
         setModalOpen(false);
@@ -69,6 +68,7 @@ const Attraction_list = () => {
         try {
             const {data: res} = await axios.get(url)
             const list = res.response.body.items.item;
+            console.log(list)
             setMainData(list);
         } catch (err) {
             console.log(err);
@@ -246,7 +246,8 @@ const Attraction_list = () => {
                         pathname: `./search`,
                         state: {
                             moveTo: moveTo,
-                            langData: langData
+                            langData: langData,
+                            i18n: i18n
                         }
                     }}>
                     <img className="backicon" src={backicon} alt="backicon"/></Link>
@@ -265,7 +266,14 @@ const Attraction_list = () => {
             </div>
             <div className="header_list">
                 <div className="headerTitle">
-                    <Link to="/">
+                    <Link
+                        to={{
+                            pathname: "/",
+                            state: {
+                                langData: langData,
+                                i18n: i18n
+                            }
+                        }}>
                         <img src={homeIcon} alt={homeIcon}/></Link>
                     <h1>{langData.attrTitle}</h1>
                 </div>
