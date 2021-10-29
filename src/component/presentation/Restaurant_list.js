@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link, useLocation} from "react-router-dom";
-import Item from './Item.js';
+import Item from './Item_rest.js';
 import backicon from "../assets/backicon.png";
 import scorestar from "../assets/scorestar.png";
 import icon_filter from "../assets/icon_filter.png"
@@ -40,6 +40,8 @@ const Restaurant_list = () => {
         : restEn.filter(
             key => (key.address.includes(code["area"]) && key.address.includes(code["city"]))
         );
+
+    console.log(Math.floor(Math.random()*locList.length))
 
     const openModal = () => {
         setModalOpen(true);
