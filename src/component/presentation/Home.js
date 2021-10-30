@@ -19,10 +19,10 @@ const Home = () => {
     const [allData, setAllData] = useState([]);
 
     useEffect(() => {
-        if (i18n.language === 'en') {
-            setAllData(data.en);
-        } else {
+        if (i18n.language === 'kr') {
             setAllData(data.kr);
+        } else {
+            setAllData(data.en);
         }
     }, [i18n.language])
 
@@ -31,7 +31,6 @@ const Home = () => {
     }
     const closeModal = () => {
         setModalOpen(false);
-
     }
 
     return (

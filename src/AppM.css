@@ -149,6 +149,10 @@
         overflow: hidden;
     }
 
+    .att_prom>*{
+        color:white;
+    }
+
     .pagination * {
         display: inline;
         font-size: 1.5rem;

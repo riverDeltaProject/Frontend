@@ -257,7 +257,7 @@ const Attraction_list = () => {
             {
                 (Object.keys(currentPosts(maindata))[0] !== "0")
                     ? null
-                    : <div className="att_prom">
+                    : <div className="att_prom" style={{backgroundImage:"url("+random.firstimage+")"}}>
                             <div className="prom_text_att">
                                 <h3>{langData.suggAttr}</h3>
                                 <p className="name_att">{random.title}</p>

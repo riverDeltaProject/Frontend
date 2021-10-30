@@ -31,6 +31,7 @@ const Restaurant_list = () => {
     const [postsPerPage] = useState(6);
     const [option, setOption] = useState(optionList);
     const [filter, setFilter] = useState(deState);
+    const [on, setOn] = useState(false);
 
     // 지역에 맞게 리스트 추려내기
     let locList = (i18n === "kr")
@@ -75,6 +76,9 @@ const Restaurant_list = () => {
     let target;
 
     const sel_Food = (e) => {
+        // if(on){     console.log("on");     e.target.classList.add("active"); } else{
+        // e.target.classList.remove("active"); }
+
         if (e.target.tagName === "BUTTON") {
             target = e.target.innerText;
             if (!option.type.includes(target)) 
@@ -115,9 +119,9 @@ const Restaurant_list = () => {
             result = result.filter(key => (key.friendly === option.friendly))
         } else if ((option.friendly === "") && (option.type.length !== 0)) {
             for (let i = 0; i < option.type.length; i++) {
-                if (i === 0) 
+                if (i === 0) {
                     result = result.filter(key => key.foodType.includes(option.type[i]))
-                else {
+                } else {
                     tmp = locList.filter(key => key.foodType.includes(option.type[i]))
                     result = result.concat(tmp)
                 }
@@ -150,12 +154,11 @@ const Restaurant_list = () => {
                             </header>
                             <main>
                                 <p className="i18noption">{langData.foodType}</p>
-                                <div>
+                                <div className="foodType">
                                     <button className="itemList3" onClick={sel_Food}>{langData.buffet}</button>
                                     <button className="itemList3" onClick={sel_Food}>{langData.asia}</button>
                                     <button className="itemList3" onClick={sel_Food}>{langData.western}</button>
                                     <button className="itemList3" onClick={sel_Food}>{langData.india}</button>
-                                    <button className="itemList3" onClick={sel_Food}>{langData.nepal}</button>
                                     <button className="itemList3" onClick={sel_Food}>{langData.japan}</button>
                                     <button className="itemList3" onClick={sel_Food}>{langData.china}</button>
                                     <button className="itemList3" onClick={sel_Food}>{langData.turkey}</button>

@@ -723,6 +723,13 @@ main>p{
     animation: modal-bg-show 0.3s;
 }
 
+.foodType{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .itemList3 {
     position: relative;
     z-index: 10;

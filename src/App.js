@@ -22,10 +22,10 @@ function App() {
     const [allData, setAllData] = useState([]);
 
     useEffect(() => {
-        if (i18n.language === 'en') {
-            setAllData(data.en);
+        if (i18n.language === 'kr') {
+            setAllData(data.kr);
         } else {
-            setAllData(data.fr);
+            setAllData(data.en);
         }
     }, [i18n.language]);
 
