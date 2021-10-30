@@ -19,10 +19,10 @@ const Home = () => {
     const [allData, setAllData] = useState([]);
 
     useEffect(() => {
-        if (i18n.language === 'kr') {
-            setAllData(data.kr);
-        } else {
+        if (i18n.language === 'en') {
             setAllData(data.en);
+        } else {
+            setAllData(data.kr);
         }
     }, [i18n.language])
 
@@ -50,7 +50,6 @@ const Home = () => {
                         <h3>{allData.mainTitle}</h3>
                         <p>{allData.subTitle}</p>
                     </div>
-                    <Link to="./Howto" className="howto2">{allData.setApp}</Link>
                 </div>
                 <img className="mainicon" src={mainicon} alt="mainicon"/>
             </div>

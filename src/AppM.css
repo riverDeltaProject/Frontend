@@ -88,7 +88,7 @@
     .rst_list_cell {
         width: 85%;
         height: 20%;
-        max-height: 140px;
+        max-height: 160px;
         display: grid;
         grid-gap: 2%;
         grid-template-columns: 1fr 4fr;
@@ -124,7 +124,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 3% 0 3%;
+        padding: 1rem 3% 0;
         width: 94%;
         border-bottom: 0.5rem solid #D8E9D7;
         margin: 0.5rem 0;
@@ -136,11 +136,12 @@
     }
 
     .att_prom {
-        background-color: #f1f1f1;
+        background-color: #96989b;
+        text-shadow: 0.5px 0.5px gray;
         display: block;
         width: 100%;
         height: auto;
-        padding-block: 1rem 2rem;
+        padding-block: 2rem 1rem;
         margin-bottom: 2rem;
         background-repeat: no-repeat;
         background-position: center center;
@@ -149,8 +150,8 @@
         overflow: hidden;
     }
 
-    .att_prom>*{
-        color:white;
+    .att_prom > * {
+        color: white;
     }
 
     .pagination * {
@@ -176,16 +177,16 @@
         text-align: right;
     }
 
-    .prom_text_att > h3{
+    .prom_text_att > h3 {
         font-family: 'HSGaeulSenggak20';
         font-size: 1.5rem;
-        margin-block:1rem;
+        margin-block: 1rem;
     }
 
     .name_att {
         font-size: 2.2rem;
         font-weight: bolder;
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 0.5rem;
     }
 
     .scorepos_att {
@@ -283,7 +284,7 @@
     }
 
     .rst_list_img {
-        width: 100%;
+        width: 10rem;
         height: 100%;
         max-height: 50px;
         border-top-left-radius: 0;
@@ -406,12 +407,12 @@
         overflow-y: scroll;
     }
 
-    .modal>section>main::-webkit-scrollbar{
-        width:1rem;
+    .modal > section > main::-webkit-scrollbar {
+        width: 1rem;
     }
 
-    .modal>section>main::-webkit-scrollbar-thumb{
-        height:30%;
+    .modal > section > main::-webkit-scrollbar-thumb {
+        height: 30%;
     }
 
     .modal > section > main {
@@ -422,7 +423,7 @@
     }
 
     main > p {
-        font-size:1.5rem;
+        font-size: 1.5rem;
         font-weight: bolder;
         margin-block: 1rem;
     }
@@ -507,6 +508,7 @@
     .subInfo {
         padding: 0 0 0 10px;
         font-size: 1.4rem;
+        font-weight: normal;
         color: gray;
     }
 
@@ -590,7 +592,7 @@
     }
 
     .myMapMosque {
-        width: 25rem;
+        width: 80%;
         margin: 0 auto;
         height: 25rem;
         border-radius: 30px;
@@ -629,7 +631,7 @@
         background-repeat: no-repeat;
         overflow: hidden;
     }
-    .rst_result_prom>img{
+    .rst_result_prom > img {
         height: 100%;
     }
 
@@ -663,8 +665,8 @@
         width: 100%;
     }
 
-    .resHeader{
-        padding: 1rem 3% 0 3%;
+    .resHeader {
+        padding: 1rem 3% 0;
     }
 
     .resultHeader {
@@ -778,9 +780,9 @@
         font-size: 1.6rem;
     }
 
-    .FindingCon{
-        padding:0;
-        margin:0;
+    .FindingCon {
+        padding: 0;
+        margin: 0;
     }
 
     .foodtype {
@@ -794,8 +796,8 @@
         flex-shrink: 0;
     }
 
-    .foodtype>div>p{
-        font-size:1.3rem;
+    .foodtype > div > p {
+        font-size: 1.3rem;
     }
 
     .icon_halal {
