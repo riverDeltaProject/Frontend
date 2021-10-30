@@ -147,14 +147,6 @@ const Restaurant_result = () => {
             </div>
             <div className="resultBody">
                 <div className="infoContainer">
-                    <div className="rst_result_prom">
-                        <img
-                            src={(
-                                about.firstimage === undefined)
-                                ? noImg
-                                : about.firstimage}
-                            alt={about.title}></img>
-                    </div>
                     <div className="rst_result_cell">
                         <div className="Title_PC">
                             <div className="rst_result_name">{about.title}</div>

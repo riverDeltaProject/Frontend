@@ -271,7 +271,7 @@ a {
     grid-gap: 10px;
     grid-template-rows: 5fr 1fr;
     width: 25%;
-    height: 330px;
+    height: 270px;
     overflow: hidden;
     margin: 1rem;
     border-radius: 10px;
@@ -396,10 +396,14 @@ a {
     display: none;
 }
 
+.subInfo{
+    margin-bottom: 10px;
+}
+
 .myMapMosque {
-    width: 30rem;
+    width: 80%;
     margin: 0 auto;
-    height: 30rem;
+    height: 20rem;
     border-radius: 30px;
 }
 
@@ -417,7 +421,7 @@ a {
     margin: 0 auto;
 }
 
-.rst_result_prom {
+.rst_result_prom>img {
     width: 100%;
     border-radius: 30px;
 }
