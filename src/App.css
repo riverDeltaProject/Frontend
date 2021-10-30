@@ -401,6 +401,10 @@ a {
     display: none;
 }
 
+.subInfo{
+    margin-bottom: 10px;
+}
+
 .myMapMosque {
     width: 80%;
     margin: 0 auto;
