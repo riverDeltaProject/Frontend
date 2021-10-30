@@ -4,7 +4,6 @@ import Item from "./SubItem_att"
 
 import backicon from "../assets/backicon.png";
 import Notfound from "../assets/notfound.png"
-import noImg from "../assets/noImg.png"
 
 import {kakao, options} from '../API/kakao';
 

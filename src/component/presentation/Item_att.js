@@ -39,7 +39,7 @@ function Item({rlist, moveTo, code, filType, langData, i18n}) {
     if (Object.keys(rlist)[0] !== "0") {
         if (Object.keys(rlist).length !== 0) {
             rlist_tmp.push(
-                <div key={0} className="rst_list_cell" onClick={() => goDetail(0)}>
+                <div key="0" className="rst_list_cell" onClick={() => goDetail(0) }>
                     <img
                         className="rst_list_img"
                         src={(
@@ -68,15 +68,14 @@ function Item({rlist, moveTo, code, filType, langData, i18n}) {
         }
     } else {
         for (let rkey in rlist) {
-
             rlist_tmp.push(
                 <div key={rkey} className="rst_list_cell" onClick={() => goDetail(rkey)}>
-                    <img
+                    <div
                         className="rst_list_img"
-                        src={(
+                        style={{backgroundImage : "url("+((
                             rlist[rkey].firstimage === undefined)
                             ? noImg
-                            : rlist[rkey].firstimage}
+                            : rlist[rkey].firstimage)+")"}}
                         alt={"about attraction image"}/>
 
                     <div>

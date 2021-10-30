@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, useLocation, useHistory} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import Item from './Item.js';
 import Pagination from './Pagination.js';
 import {mosque} from '../API/mosque_list';
@@ -17,7 +17,7 @@ const Mosque_list = () => {
     const location = useLocation();
 
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(9);
+    const postsPerPage = 9;
     const [option, setOption] = useState("");
     const [modalOpen, setModalOpen] = useState(false);
     const [filter, setFilter] = useState(location.state.deState);

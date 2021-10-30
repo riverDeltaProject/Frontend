@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {Link, useLocation, useHistory} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 import backicon from "../assets/backicon.png";
 import noImg from "../assets/noImg.png"
@@ -74,13 +74,10 @@ const Mosque_result = () => {
             </div>
             <div className="resultBody">
                 <div className="infoContainer">
-                    <div className="rst_result_prom">
-                        <img
-                            src={(
+                    <div className="rst_result_prom" style={{backgroundImage:"url("+((
                                 about.imgurl === undefined)
                                 ? noImg
-                                : about.imgurl}
-                            alt={about.title}></img>
+                                : about.imgurl)+")"}}>
                     </div>
                     <div className="rst_result_cell">
                         <div className="Title">

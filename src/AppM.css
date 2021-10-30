@@ -87,16 +87,23 @@
 
     .rst_list_cell {
         width: 85%;
-        height: 20%;
-        max-height: 160px;
+        height: 15%;
         display: grid;
         grid-gap: 2%;
         grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
         align-items: center;
         text-align: left;
-        padding: 1.3rem 1rem 0.5rem;
+        padding: 2rem 1rem;
         border: 2px solid #C0DBBD;
         border-radius: 5px;
+    }
+
+    .rst_list_cell > div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
     }
 
     .rst_list_cell2 {
@@ -108,10 +115,6 @@
         padding: 1.3rem 1rem;
         border: 2px solid #C0DBBD;
         border-radius: 5px;
-    }
-
-    .rst_list_cell > div {
-        display: block;
     }
 
     .backicon,
@@ -150,20 +153,21 @@
         overflow: hidden;
     }
 
-    .att_prom > * {
+    .prom_text_att > p, .prom_text_att>h3, .name_att {
         color: white;
     }
 
-    .pagination * {
-        display: inline;
-        font-size: 1.5rem;
-        padding: 3%;
-        cursor: pointer;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .pagination * :hover {
-        font-weight: bolder;
-        font-size: 2rem;
+    .pagination {
+        display: inline;
+        font-size: 2.3rem;
+        padding: 3%;
+        cursor: pointer;
     }
 
     .prom_text_att {
@@ -287,10 +291,13 @@
         width: 10rem;
         height: 100%;
         max-height: 50px;
+        margin : 0 auto;
+        padding : 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         background-color: #f1f1f1;
         background-position: center center;
+        background-size: 100%;
         background-repeat: no-repeat;
     }
 
@@ -528,6 +535,7 @@
         height: 20rem;
         background-position: center center;
         background-repeat: no-repeat;
+        background-size: 100%;
         border-radius: 0;
     }
 
@@ -619,7 +627,8 @@
     .attr_list_cell > div {
         padding: 1rem;
         margin: 0 1rem;
-        border: none;
+        border : none;
+        border-bottom: #C0DBBD solid 1px;
     }
 
     .rst_result_prom > img {

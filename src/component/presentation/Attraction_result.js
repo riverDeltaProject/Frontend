@@ -153,13 +153,10 @@ const Attraction_result = () => {
             <div className="resultBody">
                 <div className="infoContainer">
 
-                    <div className="rst_result_prom">
-                        <img
-                            src={(
+                    <div className="rst_result_prom" style={{backgroundImage:"url("+((
                                 about.firstimage === undefined)
                                 ? noImg
-                                : about.firstimage}
-                            alt={about.title}></img>
+                                : about.firstimage)+")"}}>
                     </div>
                     <div className="rst_result_cell">
                         <div className="Title">

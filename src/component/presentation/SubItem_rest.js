@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
-import {useHistory} from 'react-router-dom';
+import React from 'react';
 
-function Item({rlist, moveTo, code, lang}) {
+function Item({rlist, lang}) {
     const suggestion = () => {
         let tmp = [];
 

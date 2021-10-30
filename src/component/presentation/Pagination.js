@@ -7,10 +7,10 @@ const Pagination = ({start, last, paginate}) => {
     }
 
     return (
-        <ul className="pagination">
+        <ul>
             {
                 pageNumbers.map(number => (
-                    <li key={number}>
+                    <li key={number} className="pagination">
                         <span onClick={() => paginate(number)}>
                             {number}
                         </span>

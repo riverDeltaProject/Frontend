@@ -1,11 +1,8 @@
 import './App.css';
 import './AppM.css';
 
-import {React, useState, useEffect} from 'react';
+import {React} from 'react';
 import {Route, Switch} from 'react-router-dom';
-import {useTranslation} from 'react-i18next';
-
-import {data} from './data';
 
 import Home from './component/presentation/Home.js';
 import searchArea from './component/presentation/FindArea';
@@ -18,21 +15,10 @@ import Mosque_result from './component/presentation/Mosque_result';
 import Howto from './component/presentation/Howto';
 
 function App() {
-    const {i18n} = useTranslation();
-    const [allData, setAllData] = useState([]);
-
-    useEffect(() => {
-        if (i18n.language === 'kr') {
-            setAllData(data.kr);
-        } else {
-            setAllData(data.en);
-        }
-    }, [i18n.language]);
-
     return (
         <Route>
             <Switch>
-                <Route path="/" component={Home} exact={true} i18n={i18n}/>
+                <Route path="/" component={Home} exact={true}/>
                 <Route path="/search" component={searchArea}/>
                 <Route path='/restlist' component={Restaurant_list}/>
                 <Route path="/restres" component={Restaurant_result}/>

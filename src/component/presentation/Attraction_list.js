@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {Link, useLocation} from "react-router-dom";
 
 import backicon from "../assets/backicon.png";
-import scorestar from "../assets/scorestar.png";
 import icon_filter from "../assets/icon_filter.png";
 import icon_reset from "../assets/icon_reset.png";
 import icon_att from "../assets/icon_att.png";

@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Link, useLocation} from "react-router-dom";
 import Item from './Item_rest.js';
 import backicon from "../assets/backicon.png";
-import scorestar from "../assets/scorestar.png";
 import icon_filter from "../assets/icon_filter.png"
 import icon_halal_certified from "../assets/icon_halal_certified.png";
 import icon_muslim_friendly from "../assets/icon_muslim_friendly.png";
@@ -31,7 +30,6 @@ const Restaurant_list = () => {
     const [postsPerPage] = useState(6);
     const [option, setOption] = useState(optionList);
     const [filter, setFilter] = useState(deState);
-    const [on, setOn] = useState(false);
 
     // 지역에 맞게 리스트 추려내기
     let locList = (i18n === "kr")
