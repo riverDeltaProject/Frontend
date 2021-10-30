@@ -175,6 +175,7 @@ body {
 }
 
 .howto2 {
+    text-align: center;
     width: 50%;
     text-decoration: none;
     display: block;
@@ -421,9 +422,41 @@ a {
     background-color: #c5e8c1;
 }
 
-.resultBody {
+.resultBody{
+    width: 78%;
+    margin : 0 auto;
+}
+
+.expBody {
     width: 75%;
     margin: 0 auto;
+}
+
+.expBody >div> h2{
+    margin : 1rem 0;
+    padding : 0 0 1rem 0;
+    font-size : 1.2rem;
+    border-bottom: #f1f1f1 solid 2px;
+    text-align: center;
+}
+
+.explain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explain>p{
+    margin : 1rem 0;
+    font-size:1rem;
+}
+
+.explain>*{
+    margin-block: 1rem;
+}
+
+.explain>img{
+    width:30%;
 }
 
 .rst_result_prom>img{
@@ -442,7 +475,7 @@ a {
 .attr_list_cell > div {
     padding: 1rem;
     margin: 1rem;
-    width: 100%;
+    width: 90%;
     border: #909090 solid 1px;
 }
 
@@ -918,4 +951,8 @@ main > p {
     z-index: -1;
     bottom: 0;
     left: 0;
+}
+
+.att_info{
+    width: auto;
 }

@@ -523,7 +523,7 @@
     }
 
     .rst_result_prom {
-        background-color: #f1f1f1;
+        text-align: center;
         width: 100%;
         height: 20rem;
         background-position: center center;
@@ -622,17 +622,10 @@
         border: none;
     }
 
-    .rst_result_prom {
-        text-align: center;
-        background-color: white;
-        width: 100%;
-        height: 20rem;
-        background-position: center center;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
     .rst_result_prom > img {
         height: 100%;
+        width: auto;
+        border-radius: 0;
     }
 
     .rst_result_cell {
@@ -851,5 +844,21 @@
 
     #backImg {
         display: none;
+    }
+
+    .expBody {
+        width: 100%;
+    }
+
+    .expBody > div > h2 {
+        margin: 4rem 3rem 0;
+        font-size: 2rem;
+        padding : 1.5rem 0;
+        border-block: #f1f1f1 solid 2px;
+    }
+
+    .explain > p {
+        margin: 1rem 0;
+        font-size: 1.6rem;
     }
 }

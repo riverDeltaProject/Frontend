@@ -15,7 +15,7 @@ import Attraction_list from './component/presentation/Attraction_list';
 import Attraction_result from './component/presentation/Attraction_result';
 import Mosque_list from './component/presentation/Mosque_list';
 import Mosque_result from './component/presentation/Mosque_result';
-import FindArea from './component/presentation/FindArea';
+import Howto from './component/presentation/Howto';
 
 function App() {
     const {i18n} = useTranslation();
@@ -40,6 +40,7 @@ function App() {
                 <Route path="/attrres" component={Attraction_result}/>
                 <Route path="/mosqlist" component={Mosque_list}/>
                 <Route path="/mosqres" component={Mosque_result}/>
+                <Route path="/howto" component={Howto}/>
             </Switch>
         </Route>
     );

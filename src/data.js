@@ -68,7 +68,13 @@ export const data = {
         nation: "국적",
         type: "유형",
         suggRest: "추천 식당",
-        suggAttr: "추천 관광지"
+        suggAttr: "추천 관광지",
+        android : "안드로이드",
+        and1 : "1. 상단 메뉴 (점 세개) 를 열어 '홈 화면에 추가' 를 선택합니다.",
+        addicon : "2. 'RiverDelta' 로 이름을 변경하고 '추가'를 클릭합니다.",
+        end : "3. 홈화면에 추가된 것을 확인할 수 있습니다.",
+        ios : "애플",
+        ios1 : "1. 하단 메뉴 (화살표) 를 열어 '홈 화면에 추가' 를 선택합니다."
     },
     en: {
         title: "riverdelta",
@@ -141,6 +147,12 @@ export const data = {
         nation: "nation",
         type: "type",
         suggRest: "Recommended restaurant",
-        suggAttr: "Recommended sightseeing spots"
+        suggAttr: "Recommended sightseeing spots",
+        android : "Android",
+        and1 : "1. Open the top menu (three dots) and select 'Add to Home Screen'.",
+        addicon : "2. Rename it to 'RiverDelta' and click 'Add'.",
+        end : "3. You can see what has been added to the home screen.",
+        ios : "Apple",
+        ios1 : "1. Open the bottom menu (arrow) and select 'Add to Home Screen'."
     }
 }
