@@ -212,25 +212,18 @@ body {
     margin: 1rem 0;
 }
 
-.pagination {
-    list-style: none;
+
+ul {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 0 5%;
-    padding: 0;
+    justify-content: center;
 }
 
-.pagination * {
+.pagination {
     display: inline;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 3%;
     cursor: pointer;
-}
-
-.pagination * :hover {
-    font-weight: bolder;
-    font-size: 1.5rem;
 }
 
 a {
@@ -459,9 +452,13 @@ a {
     width:30%;
 }
 
-.rst_result_prom>img{
-    width: 100%;
-    border-radius: 30px;
+.rst_result_prom {
+    text-align: center;
+    height: 15rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 0;
 }
 
 .rst_result_cell h1 {

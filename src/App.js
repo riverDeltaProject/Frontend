@@ -26,7 +26,6 @@ function App() {
                 <Route path="/attrres" component={Attraction_result}/>
                 <Route path="/mosqlist" component={Mosque_list}/>
                 <Route path="/mosqres" component={Mosque_result}/>
-                <Route path="/howto" component={Howto}/>
             </Switch>
         </Route>
     );

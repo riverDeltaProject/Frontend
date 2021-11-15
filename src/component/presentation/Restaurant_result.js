@@ -71,8 +71,6 @@ const Restaurant_result = () => {
                     .maps
                     .InfoWindow({content: iwContent, removable: iwRemoveable});
 
-                console.log(str)
-
                 geocoder.addressSearch(attLoc[i], function (result, status) {
                     // 정상적으로 검색이 완료됐으면
                     if (status === kakao.maps.services.Status.OK) {

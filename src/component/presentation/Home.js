@@ -49,14 +49,6 @@ const Home = () => {
                     <div>
                         <h3>{allData.mainTitle}</h3>
                         <p>{allData.subTitle}</p>
-                        <Link
-                            to={{
-                                pathname: "./howto",
-                                state: {
-                                    i18n: i18n.language,
-                                    langData: allData
-                                }
-                            }}className="howto2">{allData.setApp}</Link>
                     </div>
                 </div>
                 <img className="mainicon" src={mainicon} alt="mainicon"/>
@@ -102,15 +94,6 @@ const Home = () => {
                     <p>{allData.mos}</p>
                 </div>
             </div>
-            <Link
-                to={{
-                    pathname: "./howto",
-                    state: {
-                        i18n: i18n.language,
-                        langData: allData
-                    }
-                }}
-                className="howto">{allData.howTo}</Link>
         </div>
     );
 };
